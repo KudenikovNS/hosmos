@@ -1,0 +1,242 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Left — Form */
+.formSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .formSide {
+    padding: var(--space-8);
+  }
+}
+
+.formInner {
+  width: 100%;
+  max-width: 384px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-10);
+}
+
+.logoIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logoText {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+}
+
+.title {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-3xl);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  color: var(--gray-900);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+  margin-bottom: var(--space-8);
+}
+
+.errorBox {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  border: 1px solid var(--red-200);
+  color: var(--red-700);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.passwordField {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: var(--space-3);
+  top: 36px;
+  color: var(--gray-400);
+}
+
+.passwordToggle:hover {
+  color: var(--gray-600);
+}
+
+.optionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-600);
+}
+
+.checkbox {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-300);
+}
+
+.forgot {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--blue-500);
+}
+
+.forgot:hover {
+  color: var(--blue-600);
+}
+
+.submit {
+  width: 100%;
+}
+
+.arrowIcon {
+  margin-left: var(--space-2);
+}
+
+.footer {
+  margin-top: var(--space-8);
+  text-align: center;
+}
+
+.footerText {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+
+.footerLink {
+  color: var(--blue-500);
+  font-weight: var(--fw-semibold);
+}
+
+.footerLink:hover {
+  color: var(--blue-600);
+}
+
+/* Right — Visual */
+.visualSide {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .visualSide {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(
+      to bottom right,
+      var(--blue-500),
+      var(--violet-600)
+    );
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-12);
+  }
+}
+
+.visualInner {
+  max-width: 448px;
+  color: #fff;
+}
+
+.visualTitle {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-3xl);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-6);
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.featureBadge {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureText {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-light);
+}
+
+.quoteCard {
+  margin-top: var(--space-12);
+  padding: var(--space-6);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: var(--radius-2xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quoteText {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-light);
+  font-style: italic;
+}
+
+.quoteRole {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  opacity: 0.7;
+}

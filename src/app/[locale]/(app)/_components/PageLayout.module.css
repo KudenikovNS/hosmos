@@ -1,0 +1,35 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Fill the viewport below the 64px sticky TopBar so the spinner is centered on the whole page */
+  min-height: calc(100vh - 64px);
+}
+.spinner {
+  height: 32px;
+  width: 32px;
+  color: var(--blue-500);
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-4);
+}
+@media (min-width: 768px) {
+  .body {
+    padding: var(--space-6);
+  }
+}
+@media (min-width: 1024px) {
+  .body {
+    padding: var(--space-8);
+  }
+}

@@ -1,0 +1,158 @@
+/* ── Top row: progress + badges ────────────────────────────── */
+/* Mobile: stack (progress full width, badges below). Desktop: single row. */
+.topRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+@media (min-width: 768px) {
+  .topRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+  }
+}
+.progressWrap {
+  flex: 1;
+  min-width: 0;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* ── Group card header ─────────────────────────────────────── */
+/* Tighter card padding on mobile (24px → 12px). Doubled selector beats
+   Card's own .padMd regardless of CSS-module injection order. */
+@media (max-width: 768px) {
+  .groupCard.groupCard {
+    padding: var(--space-3);
+  }
+}
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.groupIcon {
+  padding: var(--space-2);
+  border-radius: var(--radius-xl);
+  background: var(--blue-50);
+}
+.iconBlue {
+  color: var(--blue-500);
+}
+.groupInfo {
+  flex: 1;
+}
+.groupTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.groupMeta {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+.groupEsrs {
+  color: var(--blue-400);
+}
+.groupPct {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-family: var(--font-mono);
+  color: var(--gray-500);
+}
+
+/* ── Checklist items ───────────────────────────────────────── */
+/* Single column on phones, 2 on tablets, 3 on desktop — short labels fit. */
+.itemsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2) var(--space-4);
+}
+@media (min-width: 768px) {
+  .itemsList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .itemsList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+  user-select: none;
+}
+.item:hover {
+  background: var(--gray-50);
+}
+.iconDone {
+  color: var(--green-500);
+  flex-shrink: 0;
+}
+.iconTodo {
+  color: var(--gray-300);
+  flex-shrink: 0;
+}
+.itemLabel {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.itemLabelDone {
+  color: var(--gray-500);
+  text-decoration: line-through;
+}
+
+/* ── Save row ──────────────────────────────────────────────── */
+/* Mobile: full-width button, status message below. Desktop: inline row. */
+.saveRow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-2);
+}
+@media (min-width: 768px) {
+  .saveRow {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+}
+.btnIcon {
+  margin-right: var(--space-2);
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+.dirtyMsg {
+  color: var(--amber-500);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+}
+
+.footnote {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+  margin-top: var(--space-4);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

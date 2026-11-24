@@ -1,0 +1,178 @@
+.iconBlue {
+  color: var(--blue-500);
+}
+
+.goalsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.goalHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.goalBadges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.goalTitle {
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+}
+
+.goalStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.goalStat {
+  text-align: center;
+}
+.goalStatLabel {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+.goalStatValue {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-family: var(--font-mono);
+}
+.statBaseline {
+  color: var(--gray-500);
+}
+.statCurrent {
+  color: var(--blue-600);
+  font-weight: var(--fw-semibold);
+}
+.statTarget {
+  color: var(--green-600);
+}
+
+.goalFooter {
+  margin-top: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.iconGreen {
+  color: var(--green-500);
+}
+.iconYellow {
+  color: var(--yellow-500);
+}
+.goalFooterText {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+
+/* ─── Add / edit form ─────────────────────────────────────────────────────── */
+.formCard {
+  margin-bottom: var(--space-5);
+}
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.formTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+.formFull {
+  grid-column: 1 / -1;
+}
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-top: var(--space-6);
+}
+.toggleRow input {
+  width: 1rem;
+  height: 1rem;
+}
+.toggleLabel {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+.errorMsg {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--red-600, #dc2626);
+}
+.listTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+}
+.emptyList {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.goalActions {
+  display: flex;
+  gap: var(--space-2);
+}
+.btnIcon {
+  margin-right: var(--space-1);
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 519px) {
+  .formGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .toggleRow {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 520px) {
+  .goalsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .goalCard.goalCard {
+    padding: var(--space-3);
+  }
+}

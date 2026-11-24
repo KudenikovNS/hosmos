@@ -1,0 +1,989 @@
+{
+  "VSME-001": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-002": {
+    "esrs_reference": "ESRS 2 BP-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-003": {
+    "esrs_reference": "ESRS 2 BP-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-004": {
+    "esrs_reference": "ESRS 2 BP-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-005": {
+    "esrs_reference": "ESRS 2 BP-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-006": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-007": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-008": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-009": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-010": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-011": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-012": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-013": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-014": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-015": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-016": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-017": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-018": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-019": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-020": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-021": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-022": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-023": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-024": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-025": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-026": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-027": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-028": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-029": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-030": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-031": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-032": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-033": {
+    "esrs_reference": "ESRS E2-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Permits, statutory filings, EMS and incident records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-034": {
+    "esrs_reference": "ESRS E2-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Permits, statutory filings, EMS and incident records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-035": {
+    "esrs_reference": "ESRS E2-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Permits, statutory filings, EMS and incident records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-036": {
+    "esrs_reference": "ESRS E2-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Permits, statutory filings, EMS and incident records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-037": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-038": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-039": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-040": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-041": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-042": {
+    "esrs_reference": "ESRS E4-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Site register, coordinates and GIS screening",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-043": {
+    "esrs_reference": "ESRS E3-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Water bills/meters, withdrawal/discharge records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-044": {
+    "esrs_reference": "ESRS E3-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Water bills/meters, withdrawal/discharge records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-045": {
+    "esrs_reference": "ESRS E3-4",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Water bills/meters, withdrawal/discharge records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-046": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-047": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-048": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-049": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-050": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-051": {
+    "esrs_reference": "ESRS E5-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Waste notes, recycler invoices, material/procurement records",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-052": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-053": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-054": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-055": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-056": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-057": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-058": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-059": {
+    "esrs_reference": "ESRS S1-13",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-060": {
+    "esrs_reference": "ESRS S1-13",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-061": {
+    "esrs_reference": "ESRS S1-13",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-062": {
+    "esrs_reference": "ESRS S1-13",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-063": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-064": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-065": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-066": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-067": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-068": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-069": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-070": {
+    "esrs_reference": null,
+    "esrs_applicability": null,
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation (EU) 2025/1710",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en"
+  },
+  "VSME-071": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-072": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-073": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-074": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-075": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-076": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-077": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-078": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-079": {
+    "esrs_reference": "ESRS 2 GDR-A",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-080": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-081": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-082": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-083": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-084": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-085": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-086": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-087": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-088": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-089": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-090": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-091": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-092": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-093": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-094": {
+    "esrs_reference": "ESRS E1-7",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-095": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-096": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-097": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-098": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-099": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-100": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-101": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-102": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-103": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-104": {
+    "esrs_reference": "ESRS E1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-105": {
+    "esrs_reference": "ESRS E1-1",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Utility/fuel bills, meters, procurement/travel data, GHG model",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-106": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-107": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-108": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-109": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-110": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-111": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-112": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-113": {
+    "esrs_reference": "ESRS E1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "Risk register, scenarios, finance and site data",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-114": {
+    "esrs_reference": "ESRS S1-8",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-115": {
+    "esrs_reference": "ESRS S1-6",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-116": {
+    "esrs_reference": "ESRS S1-5",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-117": {
+    "esrs_reference": "ESRS S1-1",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-118": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-119": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-120": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-121": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-122": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-123": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-124": {
+    "esrs_reference": "ESRS S1-2",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-125": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-126": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-127": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-128": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-129": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-130": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-131": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-132": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-133": {
+    "esrs_reference": "ESRS S1-16",
+    "esrs_applicability": "Если тема существенна по double materiality; затем применяются соответствующие DR/datapoints",
+    "client_data_source": "HRIS, payroll, H&S, training, grievance and incident registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-134": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-135": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-136": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-137": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-138": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-139": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-140": {
+    "esrs_reference": "ESRS 2 SBM-1",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  },
+  "VSME-141": {
+    "esrs_reference": "ESRS 2 GOV-1; ESRS S1-8",
+    "esrs_applicability": "Обязательно для упрощенный ESRS; раскрытие связано с material IROs, где указано",
+    "client_data_source": "Corporate records, policies, board minutes, finance/legal/compliance registers",
+    "regulatory_status": "VSME Recommendation 2025/1710 действует; C(2026)5010 adopted, not yet in force at cutoff",
+    "official_source": "https://finance.ec.europa.eu/publications/commission-presents-voluntary-sustainability-reporting-standard-ease-burden-smes_en; https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010-annex_en.pdf"
+  }
+}

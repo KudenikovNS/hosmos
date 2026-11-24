@@ -1,0 +1,907 @@
+{
+  "VSME-001": {
+    "label": "Odabrana opcija izvještavanja",
+    "hint": "Odaberite OPTION A (samo osnovni modul) ili OPTION B (osnovni i sveobuhvatni modul) za ovo izvještajno razdoblje.",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Odaberite OPTION A (samo osnovni modul) ili OPTION B (osnovni i sveobuhvatni modul) i spremite izbor za izvještajno razdoblje."
+  },
+  "VSME-002": {
+    "label": "Objava izostavljena zbog osjetljivih informacija",
+    "hint": "Navedite svaku objavu izostavljenu zbog povjerljivih ili osjetljivih informacija, jednu po retku.",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Navedite svaku izostavljenu objavu i dokumentirajte da je izostavljena zbog povjerljivih ili osjetljivih informacija."
+  },
+  "VSME-003": {
+    "label": "Osnova za pripremu izvještaja",
+    "hint": "Odaberite obuhvaća li izvještaj samo poduzeće ili poduzeće s ovisnim društvima (konsolidirano).",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Navedite obuhvaća li izvještaj samo poduzeće ili i njegova ovisna društva te tu osnovu primijenite u cijelom izvještaju."
+  },
+  "VSME-004": {
+    "label": "Popis ovisnih društava",
+    "hint": "Navedite sva ovisna društva uključena u konsolidirani izvještaj, jedno po retku (samo za konsolidirani izvještaj).",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Za konsolidirani izvještaj navedite svako uključeno ovisno društvo s registriranom adresom i povežite ga s granicom izvještavanja."
+  },
+  "VSME-005": {
+    "label": "Registrirana adresa ovisnog društva",
+    "hint": "Unesite registriranu adresu svakog navedenog ovisnog društva: ulica, poštanski broj, grad, država.",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Za konsolidirani izvještaj navedite svako uključeno ovisno društvo s registriranom adresom i povežite ga s granicom izvještavanja."
+  },
+  "VSME-006": {
+    "label": "Pravni oblik",
+    "hint": "Odaberite pravni oblik poduzeća registriran prema nacionalnom pravu, npr. d.o.o., d.d.",
+    "guidance": "Smjernice VSME, t. 68: odaberite pravni oblik priznat zakonodavstvom države poduzeća."
+  },
+  "VSME-007": {
+    "label": "NACE šifra",
+    "hint": "Odaberite NACE šifru glavne djelatnosti na najdetaljnijoj razini; po potrebi dodajte druge šifre, jednu po retku.",
+    "guidance": "Smjernice VSME, t. 69–70: odaberite NACE šifru koja najbolje opisuje glavnu djelatnost, na najdetaljnijoj dostupnoj razini; po potrebi dodajte i druge šifre."
+  },
+  "VSME-008": {
+    "label": "Ukupna aktiva",
+    "hint": "Unesite ukupnu aktivu (zbroj bilance) u EUR za isto razdoblje kao izvještaj, iz financijskih izvještaja, npr. 1250000.",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Upotrijebite vrijednost za isto razdoblje kao izvještaj o održivosti, navedite valutu i uskladite je s financijskim izvještajima."
+  },
+  "VSME-009": {
+    "label": "Prihod",
+    "hint": "Unesite prihod (neto prihod od prodaje) u EUR za isto razdoblje, iz financijskih izvještaja, npr. 3400000.",
+    "guidance": "Smjernice za osnovni modul za ovaj podatak nemaju posebnu uputu za ispunjavanje. Upotrijebite vrijednost za isto razdoblje kao izvještaj o održivosti, navedite valutu i uskladite je s financijskim izvještajima."
+  },
+  "VSME-010": {
+    "label": "Broj zaposlenika",
+    "hint": "Unesite broj zaposlenika kao broj osoba ili ekvivalent punog radnog vremena (FTE), npr. 42, i navedite metodu.",
+    "guidance": "Smjernice VSME, t. 71–72: navedite je li riječ o broju osoba ili ekvivalentu punog radnog vremena (FTE). FTE izračunajte iz ugovorenog radnog vremena i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-011": {
+    "label": "Glavna država poslovanja",
+    "hint": "Unesite državu u kojoj poduzeće obavlja glavnu djelatnost, npr. Slovenija.",
+    "guidance": "Smjernice VSME, t. 73: za svaku značajnu lokaciju navedite adresu, poštanski broj, grad, državu i koordinate."
+  },
+  "VSME-012": {
+    "label": "Lokacija značajne imovine",
+    "hint": "Navedite lokaciju svake značajne imovine (adresa, poštanski broj, grad, država), jednu po retku.",
+    "guidance": "Smjernice VSME, t. 73: za svaku značajnu lokaciju navedite adresu, poštanski broj, grad, državu i koordinate."
+  },
+  "VSME-013": {
+    "label": "Geolokacija lokacija",
+    "hint": "Unesite koordinate (geografska širina, dužina) svake lokacije u vlasništvu, najmu ili upravljanju, npr. 46.0569, 14.5058.",
+    "guidance": "Smjernice VSME, t. 74–76: geolokaciju spremite kao točku za pojedinačnu lokaciju ili kao poligon za područje; obuhvatite sve lokacije u vlasništvu, najmu ili upravljanju."
+  },
+  "VSME-014": {
+    "label": "Certifikat ili oznaka",
+    "hint": "Unesite naziv certifikata ili oznake povezane s održivošću, npr. EU Ecolabel.",
+    "guidance": "Smjernice VSME, t. 77: zabilježite naziv certifikata ili oznake, izdavatelja, datum i, ako postoji, ocjenu; čuvajte dokaze."
+  },
+  "VSME-015": {
+    "label": "Izdavatelj certifikata",
+    "hint": "Unesite naziv tijela koje je izdalo certifikat ili oznaku, npr. certifikacijsko tijelo.",
+    "guidance": "Smjernice VSME, t. 77: zabilježite naziv certifikata ili oznake, izdavatelja, datum i, ako postoji, ocjenu; čuvajte dokaze."
+  },
+  "VSME-016": {
+    "label": "Datum certifikata",
+    "hint": "Unesite datum izdavanja ili posljednje obnove certifikata ili oznake.",
+    "guidance": "Smjernice VSME, t. 77: zabilježite naziv certifikata ili oznake, izdavatelja, datum i, ako postoji, ocjenu; čuvajte dokaze."
+  },
+  "VSME-017": {
+    "label": "Ocjena certifikata",
+    "hint": "Unesite dobivenu ocjenu ako je certifikat predviđa, npr. »Gold« ili »85/100«.",
+    "guidance": "Smjernice VSME, t. 77: zabilježite naziv certifikata ili oznake, izdavatelja, datum i, ako postoji, ocjenu; čuvajte dokaze."
+  },
+  "VSME-018": {
+    "label": "Prakse održivosti",
+    "hint": "Odaberite Da/Ne ima li poduzeće prakse održivosti i, ako ima, opišite ih (tema, mjera, cilj, rok).",
+    "guidance": "Smjernice VSME, t. 78–80: svaki unos zabilježite strukturirano: temu održivosti, mjeru ili obvezu te, ako postoje, cilj, odgovornu osobu, rok i javni URL."
+  },
+  "VSME-019": {
+    "label": "Politike održivosti",
+    "hint": "Odaberite Da/Ne ima li poduzeće politike održivosti i, ako ima, opišite ih (tema, mjera, cilj, rok).",
+    "guidance": "Smjernice VSME, t. 78–80: svaki unos zabilježite strukturirano: temu održivosti, mjeru ili obvezu te, ako postoje, cilj, odgovornu osobu, rok i javni URL."
+  },
+  "VSME-020": {
+    "label": "Javna dostupnost politika",
+    "hint": "Odaberite Da/Ne jesu li politike održivosti javno dostupne i, ako jesu, navedite URL.",
+    "guidance": "Smjernice VSME, t. 78–80: svaki unos zabilježite strukturirano: temu održivosti, mjeru ili obvezu te, ako postoje, cilj, odgovornu osobu, rok i javni URL."
+  },
+  "VSME-021": {
+    "label": "Buduće inicijative",
+    "hint": "Odaberite Da/Ne ima li poduzeće buduće inicijative ili planove održivosti i, ako ima, opišite ih (tema, mjera, cilj, rok).",
+    "guidance": "Smjernice VSME, t. 78–80: svaki unos zabilježite strukturirano: temu održivosti, mjeru ili obvezu te, ako postoje, cilj, odgovornu osobu, rok i javni URL."
+  },
+  "VSME-022": {
+    "label": "Ciljevi",
+    "hint": "Odaberite Da/Ne jesu li postavljeni ciljevi za praćenje provedbe i napretka i, ako jesu, opišite ih (tema, ciljna vrijednost, rok, odgovorna osoba).",
+    "guidance": "Smjernice VSME, t. 78–80: svaki unos zabilježite strukturirano: temu održivosti, mjeru ili obvezu te, ako postoje, cilj, odgovornu osobu, rok i javni URL."
+  },
+  "VSME-023": {
+    "label": "Potrošnja električne energije iz obnovljivih izvora",
+    "hint": "Unesite potrošnju obnovljive električne energije u MWh, npr. 120.5; ako postoje podaci, raščlanite po izvoru (sunce, vjetar itd.), jedan redak po izvoru.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-024": {
+    "label": "Potrošnja električne energije iz neobnovljivih izvora",
+    "hint": "Unesite potrošnju neobnovljive električne energije u MWh, npr. 340.0; ako postoje podaci, raščlanite po izvoru.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-025": {
+    "label": "Potrošnja obnovljivih goriva",
+    "hint": "Unesite potrošnju obnovljivih goriva u MWh, npr. 85.0; ako postoje podaci, raščlanite po izvoru (biomasa, bioplin itd.).",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-026": {
+    "label": "Potrošnja neobnovljivih goriva",
+    "hint": "Unesite potrošnju neobnovljivih goriva u MWh, npr. 210.0 (iz evidencije nabave goriva); ako postoje podaci, raščlanite po izvoru.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-027": {
+    "label": "Ukupna obnovljiva energija",
+    "hint": "Unesite ukupnu potrošnju obnovljive energije (električna energija i goriva) u MWh, npr. 205.5; ako postoje podaci, raščlanite po izvoru.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-028": {
+    "label": "Ukupna neobnovljiva energija",
+    "hint": "Unesite ukupnu potrošnju neobnovljive energije (električna energija i goriva) u MWh, npr. 550.0; ako postoje podaci, raščlanite po izvoru.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-029": {
+    "label": "Ukupna potrošnja energije",
+    "hint": "Unesite ukupnu potrošnju energije (obnovljive i neobnovljive) u MWh, npr. 755.5, obično iz računa za energiju i evidencije goriva.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-030": {
+    "label": "Bruto emisije stakleničkih plinova Scope 1",
+    "hint": "Unesite bruto emisije Scope 1 u tCO2e iz izvora u vlasništvu ili pod kontrolom (npr. izgaranje goriva), npr. 45.2.",
+    "guidance": "Smjernice VSME, t. 90–108: odredite organizacijsku granicu, uključite sve izravne izvore emisija u vlasništvu ili pod kontrolom, izračunajte CO2, CH4, N2O i druge relevantne plinove u tCO2e te čuvajte podatke o aktivnostima, izvor faktora, osnovu GWP i verziju izračuna."
+  },
+  "VSME-031": {
+    "label": "Emisije Scope 2 (prema lokaciji)",
+    "hint": "Unesite emisije Scope 2 u tCO2e od kupljene električne energije, topline, pare ili hlađenja, izračunane faktorom mreže (prema lokaciji), npr. 30.8.",
+    "guidance": "Smjernice VSME, t. 90–109: kupljenu električnu energiju, toplinu, paru i hlađenje izračunajte metodom temeljenom na lokaciji; čuvajte potrošnju, područje, godinu i faktor mreže. Scope 2 prema tržišnoj metodi može se prikazati zasebno ako postoje pouzdani ugovorni podaci."
+  },
+  "VSME-032": {
+    "label": "Intenzitet emisija stakleničkih plinova",
+    "hint": "Obično se izračunava automatski: (Scope 1 + Scope 2 prema lokaciji) podijeljeno s prihodom u EUR. Ako računate ručno, unesite rezultat u tCO2e/EUR.",
+    "guidance": "Smjernice VSME, t. 90–103: bruto emisije Scope 1 i Scope 2 (prema lokaciji) podijelite s prihodom u EUR za isto razdoblje; ne oduzimajte kompenzacije ni uklanjanja."
+  },
+  "VSME-033": {
+    "label": "Emisije onečišćujućih tvari u zrak",
+    "hint": "Navedite svaku tvar ispuštenu u zrak s količinom i jedinicom (npr. NOx, 1.2 t/god.), jednu po retku; samo ako vam je to izvještavanje propisano.",
+    "guidance": "Smjernice VSME, t. 110–133: najprije provjerite je li izvještavanje o onečišćujućim tvarima propisano zakonom ili se provodi u sustavu upravljanja okolišem. Svaku tvar zabilježite zasebno s medijem, količinom, jedinicom, postrojenjem, metodom i razdobljem; može se uputiti na javni izvor."
+  },
+  "VSME-034": {
+    "label": "Ispuštanja onečišćujućih tvari u vodu",
+    "hint": "Navedite svaku tvar ispuštenu u vodu s količinom i jedinicom (npr. KPK, 0.8 t/god.), jednu po retku; samo ako vam je to izvještavanje propisano.",
+    "guidance": "Smjernice VSME, t. 110–133: najprije provjerite je li izvještavanje o onečišćujućim tvarima propisano zakonom ili se provodi u sustavu upravljanja okolišem. Svaku tvar zabilježite zasebno s medijem, količinom, jedinicom, postrojenjem, metodom i razdobljem; može se uputiti na javni izvor."
+  },
+  "VSME-035": {
+    "label": "Emisije onečišćujućih tvari u tlo",
+    "hint": "Navedite svaku tvar ispuštenu u tlo s količinom i jedinicom, jednu po retku; samo ako vam je to izvještavanje propisano.",
+    "guidance": "Smjernice VSME, t. 110–133: najprije provjerite je li izvještavanje o onečišćujućim tvarima propisano zakonom ili se provodi u sustavu upravljanja okolišem. Svaku tvar zabilježite zasebno s medijem, količinom, jedinicom, postrojenjem, metodom i razdobljem; može se uputiti na javni izvor."
+  },
+  "VSME-036": {
+    "label": "Javna poveznica na podatke o onečišćenju",
+    "hint": "Unesite javni URL na kojem su objavljeni podaci o onečišćujućim tvarima, ako ih objavljujete putem javnog izvora.",
+    "guidance": "Smjernice VSME, t. 110–133: najprije provjerite je li izvještavanje o onečišćujućim tvarima propisano zakonom ili se provodi u sustavu upravljanja okolišem. Svaku tvar zabilježite zasebno s medijem, količinom, jedinicom, postrojenjem, metodom i razdobljem; može se uputiti na javni izvor."
+  },
+  "VSME-037": {
+    "label": "Lokacije u ili blizu područja osjetljivih za bioraznolikost",
+    "hint": "Cijelim brojem unesite koliko lokacija u vlasništvu, najmu ili upravljanju se nalazi u ili blizu priznatih područja osjetljivih za bioraznolikost, npr. 2.",
+    "guidance": "Smjernice VSME, t. 134–137: provjerite nalazi li se svaka lokacija u vlasništvu, najmu ili upravljanju u ili blizu priznatih područja osjetljivih za bioraznolikost; navedite broj lokacija i površinu u hektarima i čuvajte prostorne podatke."
+  },
+  "VSME-038": {
+    "label": "Površina lokacija u ili blizu područja osjetljivih za bioraznolikost",
+    "hint": "Unesite ukupnu površinu lokacija iz prethodnog polja u hektarima (ha), iz tlocrta ili zemljišnih knjiga, npr. 12.5.",
+    "guidance": "Smjernice VSME, t. 134–137: provjerite nalazi li se svaka lokacija u vlasništvu, najmu ili upravljanju u ili blizu priznatih područja osjetljivih za bioraznolikost; navedite broj lokacija i površinu u hektarima i čuvajte prostorne podatke."
+  },
+  "VSME-039": {
+    "label": "Ukupna uporaba zemljišta",
+    "hint": "Unesite ukupnu površinu zemljišta koju poduzeće koristi na svim lokacijama, u hektarima (ha), npr. 8.3. Svake godine koristite iste granice lokacija.",
+    "guidance": "Smjernice VSME, t. 138–141: površinu izračunajte u hektarima s dosljednim granicama lokacija i definicijama namjene zemljišta; razlikujte zapečaćene površine i površine usmjerene prirodi i dokumentirajte metodu kartiranja."
+  },
+  "VSME-040": {
+    "label": "Zapečaćena površina",
+    "hint": "Unesite ukupnu zapečaćenu (izgrađenu, asfaltiranu ili drukčije nepropusnu) površinu u hektarima (ha), npr. 3.1.",
+    "guidance": "Smjernice VSME, t. 138–141: površinu izračunajte u hektarima s dosljednim granicama lokacija i definicijama namjene zemljišta; razlikujte zapečaćene površine i površine usmjerene prirodi i dokumentirajte metodu kartiranja."
+  },
+  "VSME-041": {
+    "label": "Površina usmjerena prirodi na lokaciji",
+    "hint": "Unesite površinu usmjerenu prirodi (zelenu, obnovljenu ili prirodno održavanu) na vašim lokacijama, u hektarima (ha), npr. 1.8.",
+    "guidance": "Smjernice VSME, t. 138–141: površinu izračunajte u hektarima s dosljednim granicama lokacija i definicijama namjene zemljišta; razlikujte zapečaćene površine i površine usmjerene prirodi i dokumentirajte metodu kartiranja."
+  },
+  "VSME-042": {
+    "label": "Površina usmjerena prirodi izvan lokacije",
+    "hint": "Unesite površinu usmjerenu prirodi kojom poduzeće upravlja izvan svojih lokacija (npr. kompenzacijska ili obnovljena područja), u hektarima (ha), npr. 0.5.",
+    "guidance": "Smjernice VSME, t. 138–141: površinu izračunajte u hektarima s dosljednim granicama lokacija i definicijama namjene zemljišta; razlikujte zapečaćene površine i površine usmjerene prirodi i dokumentirajte metodu kartiranja."
+  },
+  "VSME-043": {
+    "label": "Ukupno zahvaćanje vode",
+    "hint": "Unesite ukupno zahvaćanje vode iz svih izvora u kubičnim metrima (m³), iz vodomjera ili računa, npr. 1250.",
+    "guidance": "Smjernice VSME, t. 142–149 i 154–158: zahvaćanje vode po mogućnosti uzmite iz vodomjera ili računa; za zajedničke prostore koristite dokumentiranu raspodjelu prema površini, broju zaposlenika ili drugom prikladnom ključu. Navedite u m³."
+  },
+  "VSME-044": {
+    "label": "Zahvaćanje vode u područjima visokog vodnog stresa",
+    "hint": "Unesite dio ukupnog zahvaćanja (m³) na lokacijama u područjima visokog vodnog stresa, npr. 400.",
+    "guidance": "Smjernice VSME, t. 142–158: vodni stres svake lokacije utvrdite prema podacima lokalnog tijela ili priznatog alata za procjenu vodnog rizika, a zahvaćanje na lokacijama s visokim vodnim stresom navedite zasebno u m³."
+  },
+  "VSME-045": {
+    "label": "Potrošnja vode",
+    "hint": "Unesite potrošnju vode u kubičnim metrima (m³): zahvaćanje umanjeno za vodu vraćenu iz značajnih proizvodnih procesa, npr. 300.",
+    "guidance": "Smjernice VSME, t. 150–155: potrošnju vode izračunajte kao zahvaćanje umanjeno za ispuštanje kod značajnih proizvodnih procesa; navedite u m³ i čuvajte očitanja, račune ili osnovu procjene."
+  },
+  "VSME-046": {
+    "label": "Primjena načela kružnog gospodarstva",
+    "hint": "Odaberite Da/Ne primjenjuje li poduzeće načela kružnog gospodarstva (sprječavanje, ponovna uporaba, popravak, recikliranje) i ukratko opišite kako.",
+    "guidance": "Smjernice VSME, t. 159: ukratko objasnite kako se načela kružnog gospodarstva primjenjuju na proizvode, materijale i otpad, npr. sprječavanje, ponovna uporaba, popravak ili recikliranje."
+  },
+  "VSME-047": {
+    "label": "Ukupno nastali otpad",
+    "hint": "Unesite ukupnu masu otpada nastalog u razdoblju u tonama, raščlanjeno po vrsti i načinu obrade, npr. 45.2.",
+    "guidance": "Smjernice VSME, t. 160–172: otpad navedite u tonama prema vrsti i načinu obrade. Razlikujte opasni i neopasni otpad, po mogućnosti koristite Europski katalog otpada i uskladite zbrojeve s pratećim listovima."
+  },
+  "VSME-048": {
+    "label": "Neopasni otpad",
+    "hint": "Unesite masu nastalog neopasnog otpada u tonama, iz evidencije otpada ili pratećih listova, npr. 38.0.",
+    "guidance": "Smjernice VSME, t. 160–172: otpad navedite u tonama prema vrsti i načinu obrade. Razlikujte opasni i neopasni otpad, po mogućnosti koristite Europski katalog otpada i uskladite zbrojeve s pratećim listovima."
+  },
+  "VSME-049": {
+    "label": "Opasni otpad",
+    "hint": "Unesite masu nastalog opasnog otpada u tonama, iz evidencije otpada ili pratećih listova, npr. 7.2.",
+    "guidance": "Smjernice VSME, t. 160–172: otpad navedite u tonama prema vrsti i načinu obrade. Razlikujte opasni i neopasni otpad, po mogućnosti koristite Europski katalog otpada i uskladite zbrojeve s pratećim listovima."
+  },
+  "VSME-050": {
+    "label": "Otpad upućen na recikliranje ili ponovnu uporabu",
+    "hint": "Unesite masu otpada upućenog na recikliranje ili ponovnu uporabu (ne na odlagalište ili spaljivanje) u tonama, npr. 20.5.",
+    "guidance": "Smjernice VSME, t. 160–172: otpad navedite u tonama prema vrsti i načinu obrade. Razlikujte opasni i neopasni otpad, po mogućnosti koristite Europski katalog otpada i uskladite zbrojeve s pratećim listovima."
+  },
+  "VSME-051": {
+    "label": "Godišnji maseni tok korištenih materijala",
+    "hint": "Unesite godišnju masu relevantnih materijala korištenih u proizvodnji u tonama (ili drugoj dosljednoj jedinici mase), npr. 150.0.",
+    "guidance": "Smjernice VSME, t. 173–174: navedite godišnju masu relevantnih materijala ako su tokovi materijala značajni; odredite uključene procese i kategorije materijala i koristite dosljednu jedinicu mase."
+  },
+  "VSME-052": {
+    "label": "Zaposlenici na neodređeno vrijeme",
+    "hint": "Unesite broj zaposlenika s ugovorom na neodređeno vrijeme kao broj osoba ili FTE (dosljedno jedna osnova), npr. 24.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-053": {
+    "label": "Zaposlenici na određeno vrijeme",
+    "hint": "Unesite broj zaposlenika s ugovorom na određeno vrijeme, na istoj osnovi kao za neodređeno, npr. 6.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-054": {
+    "label": "Zaposlenici — žene",
+    "hint": "Unesite broj zaposlenica kao broj osoba ili FTE, iz kadrovske evidencije ili obračuna plaća, npr. 15.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-055": {
+    "label": "Zaposlenici — muškarci",
+    "hint": "Unesite broj zaposlenika muškaraca kao broj osoba ili FTE, iz kadrovske evidencije ili obračuna plaća, npr. 18.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-056": {
+    "label": "Zaposlenici — drugi ili nenavedeni spol",
+    "hint": "Unesite broj zaposlenika čiji je spol drugi ili nije naveden, kao broj osoba ili FTE, npr. 1.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-057": {
+    "label": "Zaposlenici prema državi ugovora o radu",
+    "hint": "Unesite broj zaposlenika prema državi ugovora o radu, kao broj osoba ili FTE, jedan redak po državi, npr. 30.",
+    "guidance": "Smjernice VSME, t. 175–181: dosljedno koristite jednu osnovu — broj osoba ili FTE — i uskladite raščlambu s ukupnim brojem zaposlenih. Primijenite nacionalne definicije ugovora i zabilježite datum ili razdoblje prosjeka."
+  },
+  "VSME-058": {
+    "label": "Stopa fluktuacije zaposlenika",
+    "hint": "Unesite stopu fluktuacije u postotku: broj onih koji su otišli u razdoblju podijeljen s prosječnim brojem zaposlenih, puta 100, npr. 12.5.",
+    "guidance": "Smjernice VSME, t. 182–183: stopu fluktuacije izračunajte kao broj zaposlenika koji su otišli u razdoblju podijeljen s prosječnim brojem zaposlenih, puta 100; čuvajte brojnik i nazivnik."
+  },
+  "VSME-059": {
+    "label": "Evidentirane ozljede na radu",
+    "hint": "Unesite broj evidentiranih ozljeda na radu među zaposlenicima u razdoblju, npr. 3.",
+    "guidance": "Smjernice VSME, t. 187–191: definiciju »povezano s radom« dosljedno primijenite na rad na lokaciji, rad na daljinu i poslovna putovanja; čuvajte klasifikaciju slučajeva i dokaze."
+  },
+  "VSME-060": {
+    "label": "Stopa evidentiranih ozljeda na radu",
+    "hint": "Unesite stopu: evidentirane ozljede na radu podijeljene s ukupno odrađenim satima, puta 200 000, npr. 8.4.",
+    "guidance": "Smjernice VSME, t. 184–186: stopu izračunajte kao broj evidentiranih ozljeda na radu podijeljen s ukupno odrađenim satima, puta 200 000; čuvajte evidenciju ozljeda i sati rada."
+  },
+  "VSME-061": {
+    "label": "Smrtni slučajevi zbog ozljeda na radu",
+    "hint": "Unesite broj smrtnih slučajeva zaposlenika zbog ozljeda na radu u razdoblju, npr. 0.",
+    "guidance": "Smjernice VSME, t. 187–191: definiciju »povezano s radom« dosljedno primijenite na rad na lokaciji, rad na daljinu i poslovna putovanja; čuvajte klasifikaciju slučajeva i dokaze."
+  },
+  "VSME-062": {
+    "label": "Smrtni slučajevi zbog profesionalnih bolesti",
+    "hint": "Unesite broj smrtnih slučajeva zaposlenika zbog profesionalnih bolesti u razdoblju, npr. 0.",
+    "guidance": "Smjernice VSME, t. 187–191: definiciju »povezano s radom« dosljedno primijenite na rad na lokaciji, rad na daljinu i poslovna putovanja; čuvajte klasifikaciju slučajeva i dokaze."
+  },
+  "VSME-063": {
+    "label": "Poštivanje minimalne plaće",
+    "hint": "Odaberite Da/Ne primaju li svi zaposlenici najmanje zakonsku ili kolektivno ugovorenu minimalnu plaću u svakoj državi.",
+    "guidance": "Smjernice VSME, t. 192–193: najnižu primjenjivu plaću usporedite sa zakonskom ili kolektivno ugovorenom minimalnom plaćom u svakoj državi; pripravnike i učenike po potrebi izuzmite."
+  },
+  "VSME-064": {
+    "label": "Postotna razlika u plaćama žena i muškaraca",
+    "hint": "Unesite rodnu razliku u plaćama u postotku, prema prosječnoj bruto satnici žena i muškaraca, npr. 9.5.",
+    "guidance": "Smjernice VSME, t. 194–201: uključite sve zaposlenike, izračunajte prosječnu bruto satnicu po spolu i primijenite formulu razlike VSME; dokumentirajte uključene elemente plaće i preračun radnog vremena."
+  },
+  "VSME-065": {
+    "label": "Obuhvat kolektivnim ugovorima",
+    "hint": "Unesite udio zaposlenika obuhvaćenih kolektivnim ugovorima u postotku: obuhvaćeni podijeljeno s ukupno, puta 100, npr. 65.0.",
+    "guidance": "Smjernice VSME, t. 202–205: broj zaposlenika obuhvaćenih kolektivnim ugovorima podijelite s ukupnim brojem i pomnožite sa 100; računajte sve obuhvaćene, bez obzira na članstvo u sindikatu."
+  },
+  "VSME-066": {
+    "label": "Prosječni sati osposobljavanja — žene",
+    "hint": "Unesite prosječan godišnji broj sati osposobljavanja po zaposlenici, iz kadrovske evidencije ili evidencije osposobljavanja, npr. 12.5.",
+    "guidance": "Smjernice VSME, t. 192–205: prosječne sate osposobljavanja izračunajte iz obračuna plaća ili kadrovske evidencije za razdoblje, s dosljednim definicijama zaposlenika i spola; čuvajte brojnik, nazivnik i osnovu izračuna."
+  },
+  "VSME-067": {
+    "label": "Prosječni sati osposobljavanja — muškarci",
+    "hint": "Unesite prosječan godišnji broj sati osposobljavanja po zaposleniku muškarcu, iz kadrovske evidencije ili evidencije osposobljavanja, npr. 12.5.",
+    "guidance": "Smjernice VSME, t. 192–205: prosječne sate osposobljavanja izračunajte iz obračuna plaća ili kadrovske evidencije za razdoblje, s dosljednim definicijama zaposlenika i spola; čuvajte brojnik, nazivnik i osnovu izračuna."
+  },
+  "VSME-068": {
+    "label": "Prosječni sati osposobljavanja — drugi ili nenavedeni spol",
+    "hint": "Unesite prosječan godišnji broj sati osposobljavanja po zaposleniku drugog ili nenavedenog spola, iz kadrovske evidencije ili evidencije osposobljavanja, npr. 12.5.",
+    "guidance": "Smjernice VSME, t. 192–205: prosječne sate osposobljavanja izračunajte iz obračuna plaća ili kadrovske evidencije za razdoblje, s dosljednim definicijama zaposlenika i spola; čuvajte brojnik, nazivnik i osnovu izračuna."
+  },
+  "VSME-069": {
+    "label": "Osuđujuće presude za korupciju i podmićivanje",
+    "hint": "Unesite broj pravomoćnih presuda za kršenje zakona protiv korupcije i podmićivanja u razdoblju, npr. 0.",
+    "guidance": "Smjernice VSME, t. 206–209: uzmite u obzir pravomoćne presude i obvezne novčane kazne prema zakonima protiv korupcije i podmićivanja u razdoblju; čuvajte pravne reference i dokaze."
+  },
+  "VSME-070": {
+    "label": "Novčane kazne za korupciju i podmićivanje",
+    "hint": "Unesite ukupan iznos novčanih kazni za kršenje zakona protiv korupcije i podmićivanja u EUR, npr. 5000.",
+    "guidance": "Smjernice VSME, t. 206–209: uzmite u obzir pravomoćne presude i obvezne novčane kazne prema zakonima protiv korupcije i podmićivanja u razdoblju; čuvajte pravne reference i dokaze."
+  },
+  "VSME-071": {
+    "label": "Značajne skupine proizvoda i usluga",
+    "hint": "Ukratko opišite značajne skupine proizvoda i/ili usluga, u skladu s opisom poslovnog modela.",
+    "guidance": "Smjernice za sveobuhvatni modul (t. 212) za ovo nemaju posebnu detaljnu uputu. Ukratko opišite, istim opsegom i pojmovima kao u opisu poslovnog modela i strategije."
+  },
+  "VSME-072": {
+    "label": "Značajna tržišta",
+    "hint": "Ukratko opišite značajna tržišta (države ili regije) na kojima poduzeće posluje.",
+    "guidance": "Smjernice za sveobuhvatni modul (t. 212) za ovo nemaju posebnu detaljnu uputu. Ukratko opišite, istim opsegom i pojmovima kao u opisu poslovnog modela i strategije."
+  },
+  "VSME-073": {
+    "label": "Glavni poslovni odnosi",
+    "hint": "U nekoliko rečenica opišite glavne odnose s kupcima i dobavljačima: procijenjeni broj, sektore i područja ključnih dobavljača te glavne skupine kupaca ili kanale distribucije.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 212: opišite glavne odnose s kupcima i dobavljačima; navedite procijenjeni broj, sektore i područja ključnih dobavljača te glavne skupine kupaca ili kanale distribucije."
+  },
+  "VSME-074": {
+    "label": "Povezanost strategije s temama održivosti",
+    "hint": "Ukratko opišite dijelove poslovne strategije povezane s temama održivosti, istim pojmovima kao u opisu poslovnog modela.",
+    "guidance": "Smjernice za sveobuhvatni modul (t. 212) za ovo nemaju posebnu detaljnu uputu. Ukratko opišite, istim opsegom i pojmovima kao u opisu poslovnog modela i strategije."
+  },
+  "VSME-075": {
+    "label": "Detaljan opis praksi",
+    "hint": "Opišite prakse održivosti prema predlošku C2: za svaku temu, opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 213: koristite strukturirani predložak C2; svaki unos povežite s temom održivosti i zabilježite opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe."
+  },
+  "VSME-076": {
+    "label": "Detaljan opis politika",
+    "hint": "Opišite politike održivosti prema predlošku C2: za svaku temu, opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 213: koristite strukturirani predložak C2; svaki unos povežite s temom održivosti i zabilježite opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe."
+  },
+  "VSME-077": {
+    "label": "Detaljan opis budućih inicijativa",
+    "hint": "Opišite planirane inicijative prema predlošku C2: za svaku temu, opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 213: koristite strukturirani predložak C2; svaki unos povežite s temom održivosti i zabilježite opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe."
+  },
+  "VSME-078": {
+    "label": "Detaljan opis ciljeva",
+    "hint": "Opišite ciljeve održivosti prema predlošku C2: za svaki temu, opseg, svrhu, odgovornu razinu, ciljnu vrijednost, rok i status provedbe.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 213: koristite strukturirani predložak C2; svaki unos povežite s temom održivosti i zabilježite opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe."
+  },
+  "VSME-079": {
+    "label": "Najviša odgovorna razina",
+    "hint": "Unesite funkciju ili tijelo (npr. direktor, odbor za održivost, uprava) najviše odgovorno za provedbu svake prakse, politike ili inicijative.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 213: koristite strukturirani predložak C2; svaki unos povežite s temom održivosti i zabilježite opseg, svrhu, odgovornu razinu, cilj, rok i status provedbe."
+  },
+  "VSME-080": {
+    "label": "Scope 3, kategorija 1: Kupljena roba i usluge",
+    "hint": "Unesite emisije kategorije 1 (»Kupljena roba i usluge«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-081": {
+    "label": "Scope 3, kategorija 2: Kapitalna dobra",
+    "hint": "Unesite emisije kategorije 2 (»Kapitalna dobra«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-082": {
+    "label": "Scope 3, kategorija 3: Aktivnosti povezane s gorivom i energijom",
+    "hint": "Unesite emisije kategorije 3 (aktivnosti povezane s gorivom i energijom koje nisu u Scope 1 ili 2) u tCO2e, izračunane iz dokumentiranih količina i faktora, npr. 18.2.",
+    "guidance": "Smjernice VSME, t. 81–89: potrošnju navedite kao konačnu energiju u MWh. Sačuvajte izvornu količinu i jedinicu, preračunajte dokumentiranom ogrjevnom vrijednošću ili faktorom i ne prebijajte potrošenu energiju s proizvedenom."
+  },
+  "VSME-083": {
+    "label": "Scope 3, kategorija 4: Uzlazni prijevoz i distribucija",
+    "hint": "Unesite emisije kategorije 4 (»Uzlazni prijevoz i distribucija«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-084": {
+    "label": "Scope 3, kategorija 5: Otpad nastao u poslovanju",
+    "hint": "Unesite emisije kategorije 5 (»Otpad nastao u poslovanju«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-085": {
+    "label": "Scope 3, kategorija 6: Poslovna putovanja",
+    "hint": "Unesite emisije kategorije 6 (»Poslovna putovanja«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-086": {
+    "label": "Scope 3, kategorija 7: Putovanje zaposlenika na posao",
+    "hint": "Unesite emisije kategorije 7 (»Putovanje zaposlenika na posao«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-087": {
+    "label": "Scope 3, kategorija 8: Uzlazna imovina u najmu",
+    "hint": "Unesite emisije kategorije 8 (»Uzlazna imovina u najmu«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-088": {
+    "label": "Scope 3, kategorija 9: Silazni prijevoz i distribucija",
+    "hint": "Unesite emisije kategorije 9 (»Silazni prijevoz i distribucija«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-089": {
+    "label": "Scope 3, kategorija 10: Prerada prodanih proizvoda",
+    "hint": "Unesite emisije kategorije 10 (»Prerada prodanih proizvoda«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-090": {
+    "label": "Scope 3, kategorija 11: Uporaba prodanih proizvoda",
+    "hint": "Unesite emisije kategorije 11 (»Uporaba prodanih proizvoda«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-091": {
+    "label": "Scope 3, kategorija 12: Zbrinjavanje prodanih proizvoda na kraju vijeka",
+    "hint": "Unesite emisije kategorije 12 (»Zbrinjavanje prodanih proizvoda na kraju vijeka«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-092": {
+    "label": "Scope 3, kategorija 13: Silazna imovina u najmu",
+    "hint": "Unesite emisije kategorije 13 (»Silazna imovina u najmu«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-093": {
+    "label": "Scope 3, kategorija 14: Franšize",
+    "hint": "Unesite emisije kategorije 14 (»Franšize«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-094": {
+    "label": "Scope 3, kategorija 15: Ulaganja",
+    "hint": "Unesite emisije kategorije 15 (»Ulaganja«) u tCO2e, npr. 125.4 — samo ako ste provjerili svih 15 kategorija Scope 3 prema GHG Protocolu, ovu ocijenili značajnom i dokumentirali metodu izračuna.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 214–215: provjerite svih 15 kategorija Scope 3 prema GHG Protocolu, utvrdite značajne, dokumentirajte metodu izračuna i ovu kategoriju objavite samo u okviru potpune i jasno omeđene procjene Scope 3."
+  },
+  "VSME-095": {
+    "label": "Ciljna godina",
+    "hint": "Unesite ciljnu godinu ovog cilja smanjenja emisija (jedna godina, npr. 2030).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-096": {
+    "label": "Vrijednost u ciljnoj godini",
+    "hint": "Unesite vrijednost emisija koju planirate postići u ciljnoj godini, u jedinici cilja (npr. tCO2e), npr. 850.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-097": {
+    "label": "Bazna godina",
+    "hint": "Unesite baznu godinu prema kojoj se mjeri napredak (jedna godina, npr. 2020).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-098": {
+    "label": "Vrijednost bazne godine",
+    "hint": "Unesite vrijednost emisija u baznoj godini u istoj jedinici kao cilj (npr. tCO2e), npr. 1200.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-099": {
+    "label": "Jedinica cilja",
+    "hint": "Odaberite jedinicu cilja, npr. tCO2e (apsolutno) ili % smanjenja.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-100": {
+    "label": "Udio emisija Scope 1 obuhvaćen ciljem",
+    "hint": "Unesite u postotku koliki udio emisija Scope 1 obuhvaća cilj, npr. 100.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-101": {
+    "label": "Udio emisija Scope 2 obuhvaćen ciljem",
+    "hint": "Unesite u postotku koliki udio emisija Scope 2 obuhvaća cilj, npr. 100.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-102": {
+    "label": "Udio značajnih emisija Scope 3 obuhvaćen ciljem",
+    "hint": "Unesite u postotku koliki udio značajnih emisija Scope 3 obuhvaća cilj, npr. 60.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-103": {
+    "label": "Glavne mjere za postizanje cilja",
+    "hint": "U nekoliko rečenica opišite glavne planirane ili tekuće mjere za postizanje cilja (npr. prelazak na obnovljivu energiju, elektrifikacija voznog parka).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-104": {
+    "label": "Plan klimatske tranzicije",
+    "hint": "Ako poduzeće djeluje u sektoru s velikim utjecajem na klimu, opišite plan klimatske tranzicije: glavne mjere, ulaganja i ključne korake.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-105": {
+    "label": "Hoće li i kada biti donesen plan klimatske tranzicije",
+    "hint": "Odaberite »Da« ako planirate donijeti plan klimatske tranzicije (očekivanu godinu navedite u opisu) ili »Ne« ako ga ne planirate.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 216–227: postavite apsolutne ciljeve za Scope 1 i Scope 2 te, gdje je relevantno, za značajne emisije Scope 3; zabilježite baznu godinu i vrijednost, ciljnu godinu i vrijednost, jedinicu, obuhvat i glavne mjere. Bruto emisije vodite odvojeno od uklanjanja, izbjegnutih emisija i kompenzacija."
+  },
+  "VSME-106": {
+    "label": "Fizičke klimatske opasnosti",
+    "hint": "Navedite fizičke klimatske opasnosti relevantne za imovinu, aktivnosti ili lanac vrijednosti (npr. poplave, vrućine, suša), jednu po retku.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-107": {
+    "label": "Klimatski tranzicijski događaji",
+    "hint": "Navedite tranzicijske rizike relevantne za poslovanje (npr. regulatorne, tržišne ili tehnološke promjene), jedan po retku.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-108": {
+    "label": "Procjena izloženosti imovine, aktivnosti i lanca vrijednosti",
+    "hint": "Opišite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti na utvrđene opasnosti i događaje, s vremenskim horizontom i mjerama prilagodbe.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-109": {
+    "label": "Procjena osjetljivosti",
+    "hint": "Opišite koje klimatske opasnosti i tranzicijski događaji utječu na poduzeće i koliko je izloženo i osjetljivo.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-110": {
+    "label": "Vremenski horizont rizika",
+    "hint": "Odaberite vremenski horizont utvrđenih opasnosti i događaja: kratkoročni, srednjoročni ili dugoročni.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-111": {
+    "label": "Mjere prilagodbe",
+    "hint": "Opišite poduzete ili planirane mjere prilagodbe utvrđenim klimatskim opasnostima i tranzicijskim događajima.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-112": {
+    "label": "Mogući negativni financijski učinci",
+    "hint": "Opišite moguće negativne financijske učinke utvrđenih klimatskih opasnosti i tranzicijskih događaja na poduzeće.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-113": {
+    "label": "Razina rizika",
+    "hint": "Odaberite razinu rizika koja najbolje opisuje izloženost poduzeća.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 228–230: utvrdite fizičke klimatske opasnosti i tranzicijske događaje, procijenite izloženost i osjetljivost imovine, aktivnosti i lanca vrijednosti, rasporedite ih po kratkoročnom, srednjoročnom ili dugoročnom horizontu i dokumentirajte mjere prilagodbe."
+  },
+  "VSME-114": {
+    "label": "Omjer žena i muškaraca na rukovodećoj razini",
+    "hint": "Unesite omjer rukovoditeljica i rukovoditelja: broj žena podijeljen s brojem muškaraca, npr. 0.8.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 231–236: broj rukovoditeljica podijelite s brojem rukovoditelja; navedite korištenu razinu rukovođenja i čuvajte kadrovske dokaze."
+  },
+  "VSME-115": {
+    "label": "Samozaposleni bez osoblja koji rade isključivo za poduzeće",
+    "hint": "Unesite broj samozaposlenih osoba bez vlastitog osoblja koje rade isključivo za poduzeće, npr. 5.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 231–236: broj utvrdite prema definicijama iz smjernica i čuvajte kadrovske dokaze."
+  },
+  "VSME-116": {
+    "label": "Radnici agencija za privremeno zapošljavanje",
+    "hint": "Unesite broj radnika agencija za privremeno zapošljavanje angažiranih u razdoblju, npr. 12.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 231–236: broj utvrdite prema definicijama iz smjernica i čuvajte kadrovske dokaze."
+  },
+  "VSME-117": {
+    "label": "Kodeks ponašanja ili politika ljudskih prava za vlastitu radnu snagu",
+    "hint": "Odaberite »Da« ako poduzeće ima odobreni kodeks ponašanja ili politiku ljudskih prava za vlastitu radnu snagu, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-118": {
+    "label": "Politika obuhvaća dječji rad",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku o dječjem radu, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-119": {
+    "label": "Politika obuhvaća prisilni rad",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku o prisilnom radu, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-120": {
+    "label": "Politika obuhvaća trgovanje ljudima",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku o trgovanju ljudima, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-121": {
+    "label": "Politika obuhvaća diskriminaciju",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku o diskriminaciji, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-122": {
+    "label": "Politika obuhvaća sprječavanje nesreća",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku sprječavanja nesreća, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-123": {
+    "label": "Politika obuhvaća druge teme ljudskih prava",
+    "hint": "Odaberite »Da« ako poduzeće ima politiku o drugim temama ljudskih prava koje nisu navedene, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-124": {
+    "label": "Mehanizam za pritužbe vlastite radne snage",
+    "hint": "Odaberite »Da« ako poduzeće ima mehanizam za rješavanje pritužbi vlastite radne snage, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 237: odgovorite s Da ili Ne na temelju odobrenog kodeksa ponašanja, politike ljudskih prava, postupka dubinske analize ili postupka za pritužbe; zabilježite vlasnika dokumenta, datum odobrenja i opseg."
+  },
+  "VSME-125": {
+    "label": "Potvrđeni slučajevi dječjeg rada",
+    "hint": "Odaberite »Da« ako je u razdoblju bilo potvrđenih slučajeva dječjeg rada u vlastitoj radnoj snazi, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-126": {
+    "label": "Potvrđeni slučajevi prisilnog rada",
+    "hint": "Odaberite »Da« ako je u razdoblju bilo potvrđenih slučajeva prisilnog rada u vlastitoj radnoj snazi, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-127": {
+    "label": "Potvrđeni slučajevi trgovanja ljudima",
+    "hint": "Odaberite »Da« ako je u razdoblju bilo potvrđenih slučajeva trgovanja ljudima u vlastitoj radnoj snazi, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-128": {
+    "label": "Potvrđeni slučajevi diskriminacije",
+    "hint": "Odaberite »Da« ako je u razdoblju bilo potvrđenih slučajeva diskriminacije u vlastitoj radnoj snazi, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-129": {
+    "label": "Drugi teški incidenti u vezi s ljudskim pravima",
+    "hint": "Odaberite »Da« ako je u razdoblju bilo drugih potvrđenih teških incidenata u vezi s ljudskim pravima, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-130": {
+    "label": "Mjere u vezi s incidentima",
+    "hint": "Opišite mjere i postupke otklanjanja poduzete u vezi s potvrđenim incidentima u vezi s ljudskim pravima.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-131": {
+    "label": "Incidenti koji uključuju radnike u lancu vrijednosti",
+    "hint": "Odaberite »Da« ako je bilo potvrđenih teških incidenata u vezi s ljudskim pravima koji uključuju radnike u lancu vrijednosti, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-132": {
+    "label": "Incidenti koji uključuju pogođene zajednice",
+    "hint": "Odaberite »Da« ako je bilo potvrđenih teških incidenata u vezi s ljudskim pravima koji uključuju pogođene zajednice, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-133": {
+    "label": "Incidenti koji uključuju potrošače i krajnje korisnike",
+    "hint": "Odaberite »Da« ako je bilo potvrđenih teških incidenata u vezi s ljudskim pravima koji uključuju potrošače ili krajnje korisnike, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 238: slučaj se smatra potvrđenim ako ga potkrepljuje pravni postupak ili pritužba podnesena kroz formalni mehanizam; po potrebi opišite mjere otklanjanja."
+  },
+  "VSME-134": {
+    "label": "Prihodi od kontroverznog oružja",
+    "hint": "Unesite prihod poduzeća od kontroverznog oružja u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-135": {
+    "label": "Prihodi od uzgoja i proizvodnje duhana",
+    "hint": "Unesite prihod poduzeća od uzgoja i proizvodnje duhana u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-136": {
+    "label": "Prihodi od fosilnih goriva — ugljen",
+    "hint": "Unesite prihod poduzeća od fosilnih goriva (ugljen) u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-137": {
+    "label": "Prihodi od fosilnih goriva — nafta",
+    "hint": "Unesite prihod poduzeća od fosilnih goriva (nafta) u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-138": {
+    "label": "Prihodi od fosilnih goriva — plin",
+    "hint": "Unesite prihod poduzeća od fosilnih goriva (plin) u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-139": {
+    "label": "Prihodi od proizvodnje kemikalija (pesticidi, agrokemikalije)",
+    "hint": "Unesite prihod poduzeća od proizvodnje kemikalija poput pesticida i agrokemijskih proizvoda u izvještajnom razdoblju, u EUR (0 ako ga nema).",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u tom sektoru, a zatim navedite prihod za istu poslovnu godinu, usklađen s ukupnim prihodom."
+  },
+  "VSME-140": {
+    "label": "Isključenje iz referentnih vrijednosti EU usklađenih s Pariškim sporazumom",
+    "hint": "Odaberite »Da« ako je poduzeće prema primjenjivim kriterijima isključeno iz referentnih vrijednosti EU usklađenih s Pariškim sporazumom, inače »Ne«.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 239–241: prema navedenim pravnim definicijama i NACE šiframa provjerite djeluje li poduzeće u sektorima koji vode isključenju i navedite je li isključeno iz referentnih vrijednosti EU usklađenih s Pariškim sporazumom."
+  },
+  "VSME-141": {
+    "label": "Rodna raznolikost najvišeg upravljačkog tijela",
+    "hint": "Unesite rodni omjer u najvišem upravljačkom tijelu: broj žena podijeljen s brojem muškaraca, u postotku, npr. 40.",
+    "guidance": "Smjernice za sveobuhvatni modul, t. 242–244: utvrdite najviše upravljačko tijelo i izračunajte rodni omjer kao broj žena podijeljen s brojem muškaraca; čuvajte broj članova i datum."
+  },
+  "ESRS-001": {
+    "label": "Korištene prijelazne odredbe (phase-in); značajne teme, politike, mjere, ciljevi i pokazatelji zadržani tijekom phase-in",
+    "hint": "Opišite koje prijelazne odredbe koristite i koje značajne teme, politike, mjere, ciljeve i pokazatelje i dalje objavljujete tijekom phase-in."
+  },
+  "ESRS-002": {
+    "label": "Udio varijabilnih primitaka povezanih s održivošću, obilježja i odobrenje",
+    "hint": "Unesite udio varijabilnih primitaka povezanih s održivošću u postotku i opišite kako sustav funkcionira i tko ga je odobrio."
+  },
+  "ESRS-003": {
+    "label": "Pregled glavnih elemenata dubinske analize s uputama na objave",
+    "hint": "Povežite glavne elemente postupka dubinske analize s objavama u kojima je svaki opisan."
+  },
+  "ESRS-004": {
+    "label": "Procesi, rizici, kontrole, nalazi i otklanjanje",
+    "hint": "Opišite procese, glavne rizike, kontrole, nalaze i mjere otklanjanja u izvještavanju o održivosti."
+  },
+  "ESRS-005": {
+    "label": "Ključni dionici, uključivanje, interesi i utjecaj na strategiju",
+    "hint": "Navedite ključne dionike, kako ih uključujete, njihove interese i stavove te kako utječu na strategiju."
+  },
+  "ESRS-006": {
+    "label": "Značajni učinci, rizici i prilike; sadašnji i očekivani financijski učinci i otpornost",
+    "hint": "Opišite značajne učinke, rizike i prilike, njihove sadašnje i očekivane financijske učinke (iznosi ili rasponi) i otpornost strategije i poslovnog modela."
+  },
+  "ESRS-007": {
+    "label": "Metodologija utvrđivanja i procjene, pragovi, ulazni podaci, dionici i odlučivanje",
+    "hint": "Opišite kako utvrđujete i procjenjujete učinke, rizike i prilike: metodu, pragove, ulazne podatke, uključene dionike i način odlučivanja."
+  },
+  "ESRS-008": {
+    "label": "Popis značajnih učinaka, rizika i prilika te uključenih ili izostavljenih tema i zahtjeva za objavu, s razlozima",
+    "hint": "Navedite značajne učinke, rizike i prilike te uključene ili izostavljene teme i zahtjeve za objavu, s razlozima."
+  },
+  "ESRS-009": {
+    "label": "Definicija, metodologija, pretpostavke, izvori podataka i provjera pokazatelja specifičnih za poduzeće",
+    "hint": "Za svaki pokazatelj specifičan za poduzeće navedite definiciju, metodologiju, pretpostavke, izvore podataka i način provjere."
+  },
+  "ESRS-010": {
+    "label": "Politike ublažavanja klimatskih promjena i prilagodbe",
+    "hint": "Opišite politike ublažavanja klimatskih promjena i prilagodbe: što obuhvaćaju i tko je za njih odgovoran."
+  },
+  "ESRS-011": {
+    "label": "Mjere po polugama dekarbonizacije, dodijeljena sredstva, postignuta i očekivana smanjenja emisija",
+    "hint": "Unesite postignuto ili očekivano smanjenje emisija u tCO2e i opišite mjere po polugama dekarbonizacije i dodijeljena sredstva."
+  },
+  "ESRS-012": {
+    "label": "Rezultati analize otpornosti, sposobnost prilagodbe strategije i poslovnog modela, vremenski horizonti",
+    "hint": "Opišite rezultate i posljedice analize klimatske otpornosti, sposobnost prilagodbe strategije i poslovnog modela te razmatrane horizonte i scenarije."
+  },
+  "ESRS-013": {
+    "label": "Uklanjanje i skladištenje stakleničkih plinova u vlastitom poslovanju i lancu vrijednosti; ugljični krediti izvan lanca; metodologije",
+    "hint": "Unesite u tCO2e uklanjanje i skladištenje stakleničkih plinova u vlastitom poslovanju i lancu vrijednosti, ugljične kredite izvan lanca i korištene metodologije."
+  },
+  "ESRS-014": {
+    "label": "Vrsta, opseg, cijena i obuhvaćene količine internog određivanja cijene ugljika; usklađenost s financijskim izvještajima",
+    "hint": "Opišite internu cijenu ugljika: vrstu, opseg, cijenu po tCO2e, obuhvaćene količine i usklađenost s financijskim izvještajima."
+  },
+  "ESRS-015": {
+    "label": "Imovina i prihodi izloženi fizičkim i tranzicijskim rizicima te prilike; sadašnji i očekivani učinci",
+    "hint": "Opišite imovinu i prihode izložene fizičkim i tranzicijskim klimatskim rizicima te prilike; navedite sadašnje i očekivane financijske učinke (iznosi ili rasponi)."
+  },
+  "ESRS-016": {
+    "label": "Politike o onečišćenju, incidentima, tvarima koje izazivaju zabrinutost (SoC/SVHC) i mikroplastici",
+    "hint": "Opišite politike o onečišćenju, incidentima, tvarima koje izazivaju zabrinutost i vrlo zabrinjavajućim tvarima (SoC/SVHC) i mikroplastici."
+  },
+  "ESRS-017": {
+    "label": "Glavne mjere i sredstva za sprječavanje, smanjenje i sanaciju onečišćenja",
+    "hint": "Opišite glavne mjere za sprječavanje, smanjenje i sanaciju onečišćenja i sredstva za njih, uključujući iznose."
+  },
+  "ESRS-018": {
+    "label": "Ciljevi i napredak po onečišćujućoj tvari, mediju i lokaciji",
+    "hint": "Opišite ciljeve u vezi s onečišćenjem po tvari, mediju i lokaciji i napredak (količine i postotci)."
+  },
+  "ESRS-019": {
+    "label": "Količine proizvedene, korištene, nabavljene, ispuštene ili otpremljene s lokacija po razredu opasnosti",
+    "hint": "Unesite količine tvari koje izazivaju zabrinutost i vrlo zabrinjavajućih tvari koje se proizvode, koriste, nabavljaju, ispuštaju ili napuštaju lokacije, po razredu opasnosti, u kg ili t."
+  },
+  "ESRS-020": {
+    "label": "Politike o zahvaćanju, potrošnji, ispuštanju vode i područjima vodnog stresa",
+    "hint": "Opišite politike o zahvaćanju, potrošnji i ispuštanju vode, osobito u područjima vodnog stresa."
+  },
+  "ESRS-021": {
+    "label": "Glavne mjere i sredstva, osobito u područjima vodnog stresa",
+    "hint": "Opišite glavne mjere u vezi s vodom i sredstva za njih, osobito u područjima vodnog stresa."
+  },
+  "ESRS-022": {
+    "label": "Ciljevi za zahvaćanje, potrošnju, ispuštanje vode i područja vodnog stresa",
+    "hint": "Opišite ciljeve za zahvaćanje, potrošnju, ispuštanje vode i područja vodnog stresa (m³ ili %) i napredak."
+  },
+  "ESRS-023": {
+    "label": "Usklađenost strategije i poslovnog modela s ciljevima bioraznolikosti; plan, ovisnosti i otpornost",
+    "hint": "Opišite koliko su strategija i poslovni model usklađeni s ciljevima bioraznolikosti, plan tranzicije, ovisnosti o ekosustavima i otpornost."
+  },
+  "ESRS-024": {
+    "label": "Politike o pokretačima, učincima, ovisnostima i osjetljivim lokacijama",
+    "hint": "Opišite politike o pokretačima gubitka bioraznolikosti, učincima, ovisnostima i osjetljivim lokacijama."
+  },
+  "ESRS-025": {
+    "label": "Hijerarhija ublažavanja, obnova i kompenzacije, mjere i sredstva",
+    "hint": "Opišite mjere za bioraznolikost prema hijerarhiji ublažavanja, obnovu i kompenzacije te sredstva (iznosi, površine)."
+  },
+  "ESRS-026": {
+    "label": "Ciljevi, ekološki pragovi i znanstvena osnova, geografija i kompenzacije",
+    "hint": "Opišite ciljeve za bioraznolikost, ekološke pragove i njihovu znanstvenu osnovu, geografski obuhvat i korištenje kompenzacija."
+  },
+  "ESRS-027": {
+    "label": "Politike o ulaznim i izlaznim tokovima resursa, ekodizajnu i hijerarhiji otpada",
+    "hint": "Opišite politike o ulaznim i izlaznim tokovima resursa, ekodizajnu i hijerarhiji gospodarenja otpadom."
+  },
+  "ESRS-028": {
+    "label": "Glavne mjere i sredstva za kružno gospodarstvo i sprječavanje otpada",
+    "hint": "Opišite glavne mjere za kružno gospodarstvo i sprječavanje otpada te sredstva za njih."
+  },
+  "ESRS-029": {
+    "label": "Ciljevi za kružne materijale, trajnost i mogućnost recikliranja proizvoda i otpad",
+    "hint": "Opišite ciljeve za udio kružnih materijala, trajnost i mogućnost recikliranja proizvoda te otpad (% ili t) i napredak."
+  },
+  "ESRS-030": {
+    "label": "Ciljevi u vezi sa značajnim učincima, rizicima i prilikama za radnu snagu",
+    "hint": "Opišite ciljeve u vezi sa značajnim učincima, rizicima i prilikama za vlastitu radnu snagu i napredak."
+  },
+  "ESRS-031": {
+    "label": "Zaposlenici bez socijalne zaštite za bolest, nezaposlenost, ozljedu ili invaliditet i rodiljni dopust",
+    "hint": "Unesite broj ili udio zaposlenika bez socijalne zaštite u slučaju bolesti, nezaposlenosti, ozljede na radu ili invaliditeta te rodiljnog dopusta."
+  },
+  "ESRS-032": {
+    "label": "Postotak zaposlenika s invaliditetom (uz zakonska ograničenja)",
+    "hint": "Unesite postotak zaposlenika s invaliditetom, ako zakon dopušta objavu."
+  },
+  "ESRS-033": {
+    "label": "Zaposlenici s pravom na obiteljske dopuste i korištenje tih dopusta po spolu",
+    "hint": "Unesite broj ili udio zaposlenika s pravom na obiteljski dopust i udio onih koji su ga koristili, po spolu."
+  },
+  "ESRS-034": {
+    "label": "Politike, obuhvaćene skupine i obveze u području ljudskih prava",
+    "hint": "Opišite politike o radnicima u lancu vrijednosti, obuhvaćene skupine i obveze u području ljudskih prava."
+  },
+  "ESRS-035": {
+    "label": "Postupci uključivanja, kanali za pritužbe, zaštita od odmazde i pravni lijek",
+    "hint": "Opišite kako uključujete radnike u lancu vrijednosti, koji kanali za pritužbe postoje i kako se osigurava zaštita od odmazde i pravni lijek."
+  },
+  "ESRS-036": {
+    "label": "Mjere, sredstva, teški incidenti i učinkovitost",
+    "hint": "Opišite mjere i sredstva u vezi s radnicima u lancu vrijednosti, teške incidente (broj, iznosi) i učinkovitost mjera."
+  },
+  "ESRS-037": {
+    "label": "Kvalitativni i kvantitativni ciljevi i napredak",
+    "hint": "Opišite kvalitativne i kvantitativne ciljeve u vezi s radnicima u lancu vrijednosti i napredak."
+  },
+  "ESRS-038": {
+    "label": "Politike, obuhvaćene skupine i mjesta, uključujući autohtone narode",
+    "hint": "Opišite politike o pogođenim zajednicama, obuhvaćene skupine i mjesta, uključujući autohtone narode."
+  },
+  "ESRS-039": {
+    "label": "Uključivanje, kanali za pritužbe, zaštita i pravni lijek",
+    "hint": "Opišite kako uključujete pogođene zajednice, koji kanali za pritužbe postoje i kako se osigurava zaštita i pravni lijek."
+  },
+  "ESRS-040": {
+    "label": "Glavne mjere i sredstva, teški učinci i incidenti, učinkovitost",
+    "hint": "Opišite glavne mjere i sredstva u vezi s pogođenim zajednicama, teške učinke i incidente (broj, iznosi) i učinkovitost."
+  },
+  "ESRS-041": {
+    "label": "Kvalitativni i kvantitativni ciljevi i napredak",
+    "hint": "Opišite kvalitativne i kvantitativne ciljeve u vezi s pogođenim zajednicama i napredak."
+  },
+  "ESRS-042": {
+    "label": "Politike i obuhvaćene skupine u pogledu informiranja, sigurnosti i uključenosti",
+    "hint": "Opišite politike o potrošačima i krajnjim korisnicima: informiranje, sigurnost, uključenost i obuhvaćene skupine."
+  },
+  "ESRS-043": {
+    "label": "Uključivanje, kanali za pritužbe, zaštita i pravni lijek",
+    "hint": "Opišite kako uključujete potrošače i krajnje korisnike, koji kanali za pritužbe postoje i kako se osigurava zaštita i pravni lijek."
+  },
+  "ESRS-044": {
+    "label": "Mjere i sredstva, teški incidenti i učinkovitost",
+    "hint": "Opišite mjere i sredstva u vezi s potrošačima i krajnjim korisnicima, teške incidente (broj, iznosi) i učinkovitost."
+  },
+  "ESRS-045": {
+    "label": "Kvalitativni i kvantitativni ciljevi i napredak",
+    "hint": "Opišite kvalitativne i kvantitativne ciljeve u vezi s potrošačima i krajnjim korisnicima i napredak."
+  },
+  "ESRS-046": {
+    "label": "Korporativna kultura, borba protiv korupcije, zviždači, dobrobit životinja i politike prema dobavljačima",
+    "hint": "Opišite politike o korporativnoj kulturi, borbi protiv korupcije, zaštiti zviždača, dobrobiti životinja i dobavljačima."
+  },
+  "ESRS-047": {
+    "label": "Osposobljavanje, istrage, upravljanje dobavljačima i otklanjanje: mjere i sredstva",
+    "hint": "Opišite mjere i sredstva u području poslovnog ponašanja: osposobljavanje, istrage, upravljanje dobavljačima i otklanjanje (broj, %)."
+  },
+  "ESRS-048": {
+    "label": "Ciljevi i napredak u značajnim pitanjima poslovnog ponašanja",
+    "hint": "Opišite ciljeve u značajnim pitanjima poslovnog ponašanja i napredak."
+  },
+  "ESRS-049": {
+    "label": "Politički doprinosi, lobiranje, teme i odgovorni predstavnici",
+    "hint": "Navedite političke doprinose (iznosi) i opišite lobiranje, njegove teme i odgovorne predstavnike poduzeća."
+  },
+  "ESRS-050": {
+    "label": "Prosječni rok plaćanja, standardni uvjeti i kašnjenja, osobito prema MSP-ovima",
+    "hint": "Unesite prosječni rok plaćanja u danima, standardne uvjete plaćanja i udio zakašnjelih plaćanja, osobito prema malim i srednjim poduzećima."
+  }
+}

@@ -1,0 +1,740 @@
+/* Only breakpoint on this page: 768px.
+   Base rules below are the mobile defaults; all responsive overrides are
+   grouped in the "Responsive" section at the bottom. */
+
+/* ── Card header (icon box + title) ────────────────────────── */
+.cardHeader,
+.cardHeaderTight,
+.cardHeaderMd {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.cardHeader {
+  margin-bottom: var(--space-6);
+}
+.cardHeaderTight {
+  margin-bottom: var(--space-2);
+}
+.cardHeaderMd {
+  margin-bottom: var(--space-4);
+}
+
+.iconBox {
+  border-radius: var(--radius-xl);
+  padding: var(--space-2);
+}
+.iconBoxBlue {
+  background: var(--blue-50);
+}
+.iconBoxViolet {
+  background: var(--violet-50);
+}
+.iconBoxGreen {
+  background: var(--green-50);
+}
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconViolet {
+  color: var(--violet-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.headerGrow {
+  flex: 1;
+}
+.headerSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* ── Form layouts ──────────────────────────────────────────── */
+.formStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+/* ── Team members ──────────────────────────────────────────── */
+.rowStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.memberRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  transition: all 0.2s var(--ease-out);
+}
+.memberRow:hover {
+  background: var(--gray-50);
+}
+
+.avatar {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: linear-gradient(
+    to bottom right,
+    var(--blue-400),
+    var(--violet-400)
+  );
+}
+.avatarInitials {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  color: #fff;
+}
+
+.rowMain {
+  flex: 1;
+}
+.rowTitle {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+}
+.rowSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+.mutedNote {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* ── Team member management controls (T4.2a) ───────────────── */
+.memberControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.roleSelect {
+  min-height: 44px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--surface, #fff);
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+.roleSelect:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.rowError {
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--red-500);
+}
+.accessBanner {
+  border-radius: var(--radius-xl);
+  background: var(--gray-50);
+  padding: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+
+/* ── Billing / current plan ────────────────────────────────── */
+.currentPlan {
+  margin-bottom: var(--space-4);
+  border-radius: var(--radius-xl);
+  background: var(--gray-50);
+  padding: var(--space-5);
+}
+.currentPlanRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.planName {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+}
+.planHighlight {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+.planPriceCol {
+  text-align: right;
+}
+.planPrice {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+  color: var(--gray-900);
+}
+.planPeriod {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* Feature summary grid */
+.featureGrid {
+  margin-bottom: var(--space-5);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+.featureLine {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+}
+.featureLabelOk {
+  color: var(--gray-700);
+}
+.featureLabelOff {
+  color: var(--gray-400);
+}
+.iconOk {
+  color: var(--green-500);
+}
+.iconOff {
+  color: var(--gray-300);
+}
+.iconGray {
+  color: var(--gray-400);
+}
+.iconShrink {
+  flex-shrink: 0;
+}
+
+/* ── Plan selection modal ──────────────────────────────────── */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: var(--space-4);
+}
+.modalPanel {
+  max-height: 90vh;
+  width: 100%;
+  max-width: 48rem;
+  overflow-y: auto;
+  border-radius: var(--radius-2xl);
+  background: #fff;
+  padding: var(--space-4);
+}
+.modalTitle {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+  color: var(--gray-900);
+}
+.modalSubtitle {
+  margin-bottom: var(--space-6);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.modalActions {
+  margin-top: var(--space-6);
+  text-align: center;
+}
+
+.planCard,
+.planCardCurrent {
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--gray-200);
+  padding: var(--space-5);
+  transition: all 0.2s var(--ease-out);
+}
+.planCard:hover {
+  border-color: var(--blue-300);
+}
+.planCardCurrent {
+  border-color: var(--blue-500);
+  background: rgba(232, 240, 253, 0.5);
+}
+.planCardHeader {
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.planCardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.planCardPriceRow {
+  margin-bottom: var(--space-3);
+}
+.planCardPrice {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-3xl);
+  color: var(--gray-900);
+}
+.planCardPeriod {
+  margin-left: var(--space-1);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-400);
+}
+.planCardHighlight {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+.planCardFeatures {
+  margin-bottom: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1-5);
+}
+.fullBtn {
+  width: 100%;
+}
+.btnArrowIcon {
+  margin-left: var(--space-1);
+}
+
+/* ── Language card uses .twoCol ────────────────────────────── */
+
+/* ── Data integrations ─────────────────────────────────────── */
+.integrationStack {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.integrationRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gray-100);
+  padding: var(--space-3) var(--space-4);
+  transition: all 0.2s var(--ease-out);
+}
+.integrationRowConnected {
+  border-color: var(--green-200);
+  background: rgba(240, 253, 244, 0.5);
+}
+.integrationRowLocked {
+  background: rgba(249, 250, 251, 0.5);
+  opacity: 0.6;
+}
+.integrationRowDefault:hover {
+  border-color: var(--blue-200);
+  background: rgba(232, 240, 253, 0.3);
+}
+
+.integrationIconBox {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+}
+.integrationIconBoxConnected {
+  background: var(--green-100);
+}
+.integrationIconBoxLocked {
+  background: var(--gray-100);
+}
+.integrationIconBoxDefault {
+  background: var(--blue-50);
+}
+
+.connectedTag {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1-5);
+  color: var(--green-600);
+}
+.connectedTagText {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: 500;
+}
+
+/* ── Invoice scanner ───────────────────────────────────────── */
+.dropzone {
+  cursor: pointer;
+  border-radius: var(--radius-xl);
+  border: 2px dashed var(--gray-200);
+  padding: var(--space-8);
+  text-align: center;
+  transition: all 0.2s var(--ease-out);
+}
+.dropzone:hover {
+  border-color: var(--blue-300);
+  background: rgba(232, 240, 253, 0.2);
+}
+.dropzoneIcon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space-3);
+  color: var(--gray-300);
+}
+.dropzoneTitle {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: 500;
+  color: var(--gray-600);
+}
+.dropzoneSubtitle {
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+.uploadsSection {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.uploadsHeading {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+}
+.uploadRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  padding: var(--space-2-5) var(--space-3);
+}
+.iconMuted {
+  flex-shrink: 0;
+  color: var(--gray-400);
+}
+.uploadMain {
+  min-width: 0;
+  flex: 1;
+}
+.uploadName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: 500;
+  color: var(--gray-700);
+}
+.uploadMeta {
+  font-size: 11px;
+  color: var(--gray-400);
+}
+.uploadRight {
+  flex-shrink: 0;
+  text-align: right;
+}
+.uploadCo2 {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-600);
+}
+.uploadStatus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-1);
+}
+.statusText {
+  font-size: 10px;
+}
+.statusApproved {
+  color: var(--green-600);
+}
+.statusReview {
+  color: var(--amber-600);
+}
+.statusExtracted {
+  color: var(--blue-600);
+}
+.iconStatusApproved {
+  color: var(--green-500);
+}
+.iconStatusReview {
+  color: var(--amber-500);
+}
+.iconStatusExtracted {
+  color: var(--blue-500);
+}
+
+/* ── Save footer ───────────────────────────────────────────── */
+.saveRow {
+  display: flex;
+  gap: var(--space-3);
+}
+.saveIcon {
+  margin-right: var(--space-2);
+}
+
+/* ── T-C3: subscription state, readonly mirror, period toggle ── */
+.subState {
+  margin-bottom: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.subStateNote {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+.subStateWarn {
+  color: var(--amber-600, #d97706);
+}
+.subActions {
+  display: flex;
+  gap: var(--space-2);
+}
+.readonlyHint {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--amber-600, #d97706);
+}
+.modalNote {
+  margin-top: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  padding: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+  text-align: center;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Responsive — overrides grouped at the 768px breakpoint
+   ══════════════════════════════════════════════════════════════ */
+
+/* ≥768px — two-column forms & roomier modal padding */
+@media (min-width: 768px) {
+  .twoCol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .modalPanel {
+    padding: var(--space-8);
+  }
+}
+
+/* ≤768px — tighter card padding (24px → 12px). Doubled selector beats
+   Card's own .padMd regardless of CSS-module injection order. */
+@media (max-width: 767px) {
+  .card.card {
+    padding: var(--space-3);
+  }
+}
+
+/* ── Invitations, over-seat banner, grant disclosure (T4.2b) ───── */
+
+/* Over-seat banner — amber "attention", distinct from the red error tone. */
+.overSeatBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  border: 1px solid var(--amber-200);
+  border-radius: var(--radius-xl);
+  background: var(--amber-50);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--amber-900);
+}
+.overSeatIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--amber-600);
+}
+
+/* Grant disclosure (R-7) — informational blue, never an error. */
+.grantDisclosure {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-xl);
+  background: var(--blue-50);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--blue-800);
+}
+.grantDisclosureIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--blue-500);
+}
+
+/* Invite form + pending list */
+.inviteSection {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-100);
+  padding-top: var(--space-4);
+}
+.inviteHeading {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.inviteForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+.inviteEmail {
+  flex: 1 1 200px;
+  min-width: 0;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--surface, #fff);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-800);
+}
+.inviteEmail:disabled {
+  opacity: 0.6;
+}
+
+/* 402-on-trial → product upgrade block (never a red error). */
+.upgradeNote {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-xl);
+  background: var(--blue-50);
+  padding: var(--space-3) var(--space-4);
+}
+.upgradeNoteText {
+  flex: 1 1 220px;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--blue-800);
+}
+
+/* One-time invite-link reveal (§9.7) */
+.inviteUrlBox {
+  margin-top: var(--space-3);
+  border: 1px solid var(--green-200);
+  border-radius: var(--radius-xl);
+  background: var(--green-50);
+  padding: var(--space-4);
+}
+.inviteUrlTitle {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: var(--leading-sm);
+  color: var(--gray-800);
+}
+.inviteUrlWarn {
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--amber-700);
+}
+.inviteUrlRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+.inviteUrlInput {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--surface, #fff);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-mono, monospace);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-700);
+}
+.inviteUrlDismiss {
+  margin-top: var(--space-3);
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+  cursor: pointer;
+}
+.inviteUrlDismiss:hover {
+  color: var(--gray-700);
+}

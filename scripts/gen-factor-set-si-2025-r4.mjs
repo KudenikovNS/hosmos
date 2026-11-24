@@ -1,0 +1,228 @@
+#!/usr/bin/env node
+/**
+ * ONE-OFF GENERATOR — NOT part of the application runtime.
+ *
+ * Emits `drizzle/0023_factor_set_si_2025_r4.sql`: factor set `si-2025-r4` =
+ * every `emission_factor` row of `si-2025-r3` (read VERBATIM from 0020's
+ * VALUES list, re-keyed under the new set code) + the additions in
+ * `src/server/db/seed-data/factor-set-si-2025-r4.ts` + the ten set-scoped
+ * `unit_conversion` rows (re-keyed the same way).
+ *
+ *   npx tsx scripts/gen-factor-set-si-2025-r4.mjs
+ */
+import { readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { derivedId } from "../src/server/db/seed-data/derived-id.ts";
+import {
+  SI_2025_R4,
+  SI_2025_R4_ADDITIONS,
+  si2025R4FactorId,
+} from "../src/server/db/seed-data/factor-set-si-2025-r4.ts";
+
+const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const M0020 = path.join(REPO, "drizzle/0020_factor_set_si_2025_r3.sql");
+const OUT = path.join(REPO, "drizzle/0023_factor_set_si_2025_r4.sql");
+
+const COLUMNS = [
+  "id",
+  "factor_set_id",
+  "factor_code",
+  "factor_name",
+  "source_name",
+  "source_version",
+  "publication_date",
+  "applicable_year",
+  "geography",
+  "activity_type",
+  "input_unit",
+  "factor_value",
+  "output_unit",
+  "co2_value",
+  "gwp_basis",
+  "wtt_included",
+  "source_url",
+  "source_locator",
+  "licence",
+  "status",
+  "biogenic_treatment",
+];
+const CARRIED = 33;
+const CONVERSIONS = 10;
+
+function splitTuple(body) {
+  const out = [];
+  let cur = "",
+    inStr = false;
+  for (let i = 0; i < body.length; i++) {
+    const ch = body[i];
+    if (inStr) {
+      cur += ch;
+      if (ch === "'") {
+        if (body[i + 1] === "'") {
+          cur += "'";
+          i++;
+        } else inStr = false;
+      }
+    } else if (ch === "'") {
+      inStr = true;
+      cur += ch;
+    } else if (ch === ",") {
+      out.push(cur.trim());
+      cur = "";
+    } else cur += ch;
+  }
+  if (cur.trim()) out.push(cur.trim());
+  return out;
+}
+const unq = (tok) =>
+  tok === "NULL"
+    ? null
+    : tok.startsWith("'")
+      ? tok.slice(1, -1).replace(/''/g, "'")
+      : tok;
+const q = (v) =>
+  v === null || v === undefined
+    ? "NULL"
+    : typeof v === "boolean"
+      ? String(v)
+      : typeof v === "number"
+        ? String(v)
+        : `'${String(v).replace(/'/g, "''")}'`;
+
+// ── 1. the 33 rows of si-2025-r3, verbatim ──────────────────────────────────
+const sql0020 = readFileSync(M0020, "utf8");
+const block = sql0020.slice(sql0020.indexOf("INSERT INTO emission_factor"));
+const valuesBlock = block.slice(
+  block.indexOf(") VALUES") + ") VALUES".length,
+  block.indexOf("\nON CONFLICT"),
+);
+const tuples = [...valuesBlock.matchAll(/\n\s*\((.*)\)\s*,?\s*$/gm)].map((m) =>
+  splitTuple(m[1]),
+);
+if (tuples.length !== CARRIED)
+  throw new Error(
+    `expected ${CARRIED} si-2025-r3 rows in 0020, parsed ${tuples.length}`,
+  );
+const carried = tuples.map((toks) => {
+  if (toks.length !== COLUMNS.length)
+    throw new Error(`tuple has ${toks.length} columns: ${toks[2]}`);
+  const row = Object.fromEntries(COLUMNS.map((c, i) => [c, unq(toks[i])]));
+  row.applicable_year =
+    row.applicable_year === null ? null : Number(row.applicable_year);
+  row.wtt_included = row.wtt_included === "true";
+  return row;
+});
+
+// ── 2. the additions ─────────────────────────────────────────────────────────
+const all = [...carried, ...SI_2025_R4_ADDITIONS.map((r) => ({ ...r }))];
+const keys = new Set();
+for (const r of all) {
+  const k = [
+    r.activity_type,
+    r.geography,
+    r.input_unit,
+    r.applicable_year ?? "any",
+  ].join("|");
+  if (keys.has(k)) throw new Error(`duplicate resolution key ${k}`);
+  keys.add(k);
+}
+
+// ── 3. the ten scoped conversions ────────────────────────────────────────────
+const conv = [
+  ...sql0020.matchAll(
+    /\n\s*\('([0-9a-f-]{36})',\s*'([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'([^']+)',\s*'([^']*)',\s*'([^']*)'\)/g,
+  ),
+].map((m) => ({
+  from: m[2],
+  to: m[3],
+  multiplier: m[4],
+  context: m[5],
+  source: m[6],
+  notes: m[7],
+}));
+if (conv.length !== CONVERSIONS)
+  throw new Error(
+    `expected ${CONVERSIONS} scoped conversions in 0020, parsed ${conv.length}`,
+  );
+
+// ── 4. render ────────────────────────────────────────────────────────────────
+const setId = SI_2025_R4.id;
+const factorRows = all.map(
+  (r) =>
+    "  (" +
+    [si2025R4FactorId(r), setId, ...COLUMNS.slice(2).map((c) => r[c] ?? null)]
+      .map(q)
+      .join(", ") +
+    ")",
+);
+const convRows = conv.map((c) => {
+  const id = derivedId(
+    "unit_conversion",
+    c.from,
+    c.to,
+    c.context,
+    SI_2025_R4.code,
+  );
+  const source = c.source.replace(/si-2025(-r\d)?(-r\d)?/, SI_2025_R4.code);
+  return (
+    "  (" +
+    [id, c.from, c.to, c.multiplier, c.context, source, c.notes]
+      .map(q)
+      .join(", ") +
+    ")"
+  );
+});
+
+const header = `-- 0023_factor_set_si_2025_r4.sql — SLOVENIA 2025, REVISION 4: DISTRICT HEAT + SPEND.
+--
+-- GENERATED by \`scripts/gen-factor-set-si-2025-r4.mjs\` from
+-- \`src/server/db/seed-data/factor-set-si-2025-r4.ts\` (the additions) and the
+-- VALUES lists of 0020 (the 33 carried rows and the ten set-scoped natural-gas
+-- conversions). DO NOT EDIT BY HAND — rerun the generator;
+-- \`factor-set-si-2025-r4.test.ts\` proves this file and the module agree.
+--
+-- WHY (prod test 15.09.2026, партия 15). Purchased district heat had no factor
+-- under \`heat:heat_defra_default\` in si-2025-r3, so a district-heating row made
+-- the run fail and the revision unapprovable; and no active set carried the
+-- EXIOBASE per-€1000 spend factors since 0011, so Scope 3 spend was refused
+-- (\`NO_SPEND_FACTORS\`) on every plan. This revision adds the DESNZ 2024
+-- heat-and-steam default (0.1659 kg CO2e/kWh, GLOBAL, explicit international
+-- fallback — Slovenia publishes no purchased-heat factor) and the eight 0004
+-- commodities (EXIOBASE v3 2024, per €1 000) for 2024, 2025 and 2026.
+--
+-- DM-21: a released set is never edited, so this is a NEW set. Every other row
+-- is \`si-2025-r3\`'s, byte for byte, under a new set id, and the ten scoped
+-- conversions travel with the set. New periods pin this set (\`resolveFactorSet\`
+-- takes the newest \`published_at\`); existing pins are untouched. Idempotent:
+-- \`ON CONFLICT DO NOTHING\` everywhere, derived UUIDs. Additive only — PG 13.
+
+INSERT INTO factor_set (
+  id, code, name, description, status, published_at
+) VALUES
+  (${[setId, SI_2025_R4.code, SI_2025_R4.name, SI_2025_R4.description, "active", SI_2025_R4.publishedAt].map(q).join(", ")})
+ON CONFLICT (code) DO NOTHING;
+
+INSERT INTO emission_factor (
+  ${COLUMNS.join(", ")}
+) VALUES
+${factorRows.join(",\n")}
+ON CONFLICT DO NOTHING;
+
+INSERT INTO unit_conversion (
+  id, from_unit, to_unit, multiplier, activity_context, factor_set_id, source, notes
+)
+SELECT v.id::uuid, v.from_unit, v.to_unit, v.multiplier::numeric,
+       v.activity_context, s.id, v.source, v.notes
+FROM factor_set s
+CROSS JOIN (VALUES
+${convRows.join(",\n")}
+) AS v(id, from_unit, to_unit, multiplier, activity_context, source, notes)
+WHERE s.code = ${q(SI_2025_R4.code)}
+ON CONFLICT DO NOTHING;
+`;
+writeFileSync(OUT, header);
+console.log(
+  `wrote ${path.relative(REPO, OUT)}: ${all.length} factors, ${conv.length} conversions`,
+);

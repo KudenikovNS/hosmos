@@ -1,0 +1,907 @@
+{
+  "VSME-001": {
+    "label": "Gewählte Berichtsoption",
+    "hint": "Wählen Sie OPTION A (nur Basismodul) oder OPTION B (Basis- und umfassendes Modul) für diesen Berichtszeitraum.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Wählen Sie OPTION A (nur Basismodul) oder OPTION B (Basis- und umfassendes Modul) und speichern Sie die Wahl für den Berichtszeitraum."
+  },
+  "VSME-002": {
+    "label": "Wegen sensibler Informationen ausgelassene Angabe",
+    "hint": "Führen Sie jede wegen vertraulicher oder sensibler Informationen ausgelassene Angabe auf, eine pro Zeile.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Bestimmen Sie jede ausgelassene Angabe und dokumentieren Sie, dass sie wegen vertraulicher oder sensibler Informationen ausgelassen wurde."
+  },
+  "VSME-003": {
+    "label": "Grundlage der Berichterstellung",
+    "hint": "Wählen Sie, ob der Bericht nur das Unternehmen oder das Unternehmen mit seinen Tochterunternehmen (konsolidiert) umfasst.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Geben Sie an, ob der Bericht nur das Unternehmen oder auch seine Tochterunternehmen umfasst, und wenden Sie diese Grundlage im gesamten Bericht an."
+  },
+  "VSME-004": {
+    "label": "Liste der Tochterunternehmen",
+    "hint": "Führen Sie alle in den konsolidierten Bericht einbezogenen Tochterunternehmen auf, eines pro Zeile (nur bei konsolidierter Berichterstattung).",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Führen Sie bei einem konsolidierten Bericht jedes einbezogene Tochterunternehmen mit eingetragener Anschrift auf und ordnen Sie es der Berichtsgrenze zu."
+  },
+  "VSME-005": {
+    "label": "Eingetragene Anschrift des Tochterunternehmens",
+    "hint": "Geben Sie die eingetragene Anschrift jedes oben genannten Tochterunternehmens an: Straße, PLZ, Ort, Land.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Führen Sie bei einem konsolidierten Bericht jedes einbezogene Tochterunternehmen mit eingetragener Anschrift auf und ordnen Sie es der Berichtsgrenze zu."
+  },
+  "VSME-006": {
+    "label": "Rechtsform",
+    "hint": "Wählen Sie die nach nationalem Recht eingetragene Rechtsform des Unternehmens, z. B. d.o.o., d.d., s.p.",
+    "guidance": "VSME-Leitfaden, Abs. 68: Wählen Sie die Rechtsform, die nach dem Recht des Sitzlandes des Unternehmens anerkannt ist."
+  },
+  "VSME-007": {
+    "label": "NACE-Code",
+    "hint": "Wählen Sie den NACE-Code der Haupttätigkeit auf der detailliertesten Ebene; ergänzen Sie bei Bedarf weitere Codes, einen pro Zeile.",
+    "guidance": "VSME-Leitfaden, Abs. 69–70: Wählen Sie den NACE-Code, der die Haupttätigkeit am besten abbildet; nutzen Sie die detaillierteste verfügbare Ebene und ergänzen Sie bei Bedarf weitere Codes."
+  },
+  "VSME-008": {
+    "label": "Bilanzsumme",
+    "hint": "Geben Sie die Bilanzsumme in EUR für denselben Berichtszeitraum laut Jahresabschluss an, z. B. 1250000.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Verwenden Sie den Wert für denselben Berichtszeitraum wie der Nachhaltigkeitsbericht, nennen Sie die Währung und gleichen Sie ihn mit dem Jahresabschluss ab."
+  },
+  "VSME-009": {
+    "label": "Umsatz",
+    "hint": "Geben Sie den Umsatz (Nettoumsatzerlöse) in EUR für denselben Berichtszeitraum laut Jahresabschluss an, z. B. 3400000.",
+    "guidance": "Der Leitfaden zum Basismodul enthält für diesen Datenpunkt keine eigene Ausfüllanleitung. Verwenden Sie den Wert für denselben Berichtszeitraum wie der Nachhaltigkeitsbericht, nennen Sie die Währung und gleichen Sie ihn mit dem Jahresabschluss ab."
+  },
+  "VSME-010": {
+    "label": "Anzahl der Mitarbeitenden",
+    "hint": "Geben Sie die Zahl der Mitarbeitenden als Kopfzahl oder in Vollzeitäquivalenten (FTE) an, z. B. 42, und nennen Sie die Methode.",
+    "guidance": "VSME-Leitfaden, Abs. 71–72: Geben Sie an, ob es sich um die Kopfzahl oder um Vollzeitäquivalente (FTE) handelt. Berechnen Sie FTE aus der vertraglichen Arbeitszeit und halten Sie den Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-011": {
+    "label": "Hauptland der Geschäftstätigkeit",
+    "hint": "Geben Sie das Land an, in dem das Unternehmen seine Haupttätigkeit ausübt, z. B. Slowenien.",
+    "guidance": "VSME-Leitfaden, Abs. 73: Machen Sie die Angaben für jeden wesentlichen Standort: Adresse, Postleitzahl, Ort, Land und Koordinaten."
+  },
+  "VSME-012": {
+    "label": "Standort wesentlicher Vermögenswerte",
+    "hint": "Geben Sie den Standort jedes wesentlichen Vermögenswerts an (Adresse, PLZ, Ort, Land), einen pro Zeile.",
+    "guidance": "VSME-Leitfaden, Abs. 73: Machen Sie die Angaben für jeden wesentlichen Standort: Adresse, Postleitzahl, Ort, Land und Koordinaten."
+  },
+  "VSME-013": {
+    "label": "Geolokalisierung der Standorte",
+    "hint": "Geben Sie die Koordinaten (Breite, Länge) jedes Standorts im Eigentum, gemietet oder verwaltet an, z. B. 46.0569, 14.5058.",
+    "guidance": "VSME-Leitfaden, Abs. 74–76: Speichern Sie die Geolokalisierung als Punkt für einen einzelnen Standort oder als Polygon für eine Fläche; erfassen Sie alle Standorte im Eigentum, gemietet oder verwaltet."
+  },
+  "VSME-014": {
+    "label": "Zertifizierung oder Label",
+    "hint": "Geben Sie den Namen der nachhaltigkeitsbezogenen Zertifizierung oder des Labels an, z. B. EU Ecolabel.",
+    "guidance": "VSME-Leitfaden, Abs. 77: Erfassen Sie Name des Zertifikats oder Labels, ausstellende Stelle, Datum und gegebenenfalls Bewertung; bewahren Sie die Nachweise auf."
+  },
+  "VSME-015": {
+    "label": "Ausstellende Stelle",
+    "hint": "Geben Sie die Stelle an, die das Zertifikat oder Label ausgestellt hat, z. B. eine Zertifizierungsstelle.",
+    "guidance": "VSME-Leitfaden, Abs. 77: Erfassen Sie Name des Zertifikats oder Labels, ausstellende Stelle, Datum und gegebenenfalls Bewertung; bewahren Sie die Nachweise auf."
+  },
+  "VSME-016": {
+    "label": "Datum des Zertifikats",
+    "hint": "Geben Sie das Datum der Ausstellung oder letzten Verlängerung des Zertifikats oder Labels an.",
+    "guidance": "VSME-Leitfaden, Abs. 77: Erfassen Sie Name des Zertifikats oder Labels, ausstellende Stelle, Datum und gegebenenfalls Bewertung; bewahren Sie die Nachweise auf."
+  },
+  "VSME-017": {
+    "label": "Bewertung des Zertifikats",
+    "hint": "Geben Sie die erhaltene Bewertung an, falls das Zertifikat eine vorsieht, z. B. „Gold“ oder „85/100“.",
+    "guidance": "VSME-Leitfaden, Abs. 77: Erfassen Sie Name des Zertifikats oder Labels, ausstellende Stelle, Datum und gegebenenfalls Bewertung; bewahren Sie die Nachweise auf."
+  },
+  "VSME-018": {
+    "label": "Nachhaltigkeitspraktiken",
+    "hint": "Wählen Sie Ja/Nein, ob das Unternehmen Nachhaltigkeitspraktiken hat, und beschreiben Sie sie (Thema, Maßnahme, Ziel, Zeitrahmen).",
+    "guidance": "VSME-Leitfaden, Abs. 78–80: Erfassen Sie jeden Eintrag strukturiert: das behandelte Nachhaltigkeitsthema, die Maßnahme oder Verpflichtung sowie gegebenenfalls Ziel, Verantwortliche, Zeitrahmen und öffentliche URL."
+  },
+  "VSME-019": {
+    "label": "Nachhaltigkeitsrichtlinien",
+    "hint": "Wählen Sie Ja/Nein, ob das Unternehmen Nachhaltigkeitsrichtlinien hat, und beschreiben Sie sie (Thema, Maßnahme, Ziel, Zeitrahmen).",
+    "guidance": "VSME-Leitfaden, Abs. 78–80: Erfassen Sie jeden Eintrag strukturiert: das behandelte Nachhaltigkeitsthema, die Maßnahme oder Verpflichtung sowie gegebenenfalls Ziel, Verantwortliche, Zeitrahmen und öffentliche URL."
+  },
+  "VSME-020": {
+    "label": "Öffentliche Verfügbarkeit der Richtlinien",
+    "hint": "Wählen Sie Ja/Nein, ob die Nachhaltigkeitsrichtlinien öffentlich zugänglich sind, und geben Sie gegebenenfalls die URL an.",
+    "guidance": "VSME-Leitfaden, Abs. 78–80: Erfassen Sie jeden Eintrag strukturiert: das behandelte Nachhaltigkeitsthema, die Maßnahme oder Verpflichtung sowie gegebenenfalls Ziel, Verantwortliche, Zeitrahmen und öffentliche URL."
+  },
+  "VSME-021": {
+    "label": "Künftige Initiativen",
+    "hint": "Wählen Sie Ja/Nein, ob das Unternehmen künftige Nachhaltigkeitsinitiativen oder Pläne hat, und beschreiben Sie sie (Thema, Maßnahme, Ziel, Zeitrahmen).",
+    "guidance": "VSME-Leitfaden, Abs. 78–80: Erfassen Sie jeden Eintrag strukturiert: das behandelte Nachhaltigkeitsthema, die Maßnahme oder Verpflichtung sowie gegebenenfalls Ziel, Verantwortliche, Zeitrahmen und öffentliche URL."
+  },
+  "VSME-022": {
+    "label": "Ziele",
+    "hint": "Wählen Sie Ja/Nein, ob Ziele zur Überwachung von Umsetzung und Fortschritt festgelegt sind, und beschreiben Sie sie (Thema, Zielwert, Zeitrahmen, Verantwortliche).",
+    "guidance": "VSME-Leitfaden, Abs. 78–80: Erfassen Sie jeden Eintrag strukturiert: das behandelte Nachhaltigkeitsthema, die Maßnahme oder Verpflichtung sowie gegebenenfalls Ziel, Verantwortliche, Zeitrahmen und öffentliche URL."
+  },
+  "VSME-023": {
+    "label": "Stromverbrauch aus erneuerbaren Quellen",
+    "hint": "Geben Sie den Verbrauch an erneuerbarem Strom in MWh an, z. B. 120.5; wenn Daten vorliegen, nach Energiequelle (Sonne, Wind usw.) aufgeschlüsselt, eine Zeile pro Quelle.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-024": {
+    "label": "Stromverbrauch aus nicht erneuerbaren Quellen",
+    "hint": "Geben Sie den Verbrauch an nicht erneuerbarem Strom in MWh an, z. B. 340.0; wenn Daten vorliegen, nach Energiequelle aufgeschlüsselt.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-025": {
+    "label": "Verbrauch erneuerbarer Brennstoffe",
+    "hint": "Geben Sie den Verbrauch erneuerbarer Brennstoffe in MWh an, z. B. 85.0; wenn Daten vorliegen, nach Energiequelle (Biomasse, Biogas usw.) aufgeschlüsselt.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-026": {
+    "label": "Verbrauch nicht erneuerbarer Brennstoffe",
+    "hint": "Geben Sie den Verbrauch nicht erneuerbarer Brennstoffe in MWh an, z. B. 210.0 (aus Kraftstoffbelegen); wenn Daten vorliegen, nach Energiequelle aufgeschlüsselt.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-027": {
+    "label": "Erneuerbare Energie gesamt",
+    "hint": "Geben Sie den gesamten Verbrauch erneuerbarer Energie (Strom und Brennstoffe) in MWh an, z. B. 205.5; wenn Daten vorliegen, nach Energiequelle aufgeschlüsselt.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-028": {
+    "label": "Nicht erneuerbare Energie gesamt",
+    "hint": "Geben Sie den gesamten Verbrauch nicht erneuerbarer Energie (Strom und Brennstoffe) in MWh an, z. B. 550.0; wenn Daten vorliegen, nach Energiequelle aufgeschlüsselt.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-029": {
+    "label": "Gesamtenergieverbrauch",
+    "hint": "Geben Sie den gesamten Energieverbrauch (erneuerbar und nicht erneuerbar) in MWh an, z. B. 755.5, meist aus Energierechnungen und Brennstoffbelegen.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-030": {
+    "label": "Brutto-THG-Emissionen Scope 1",
+    "hint": "Geben Sie die Brutto-Emissionen Scope 1 in tCO2e aus Quellen im Eigentum oder unter Kontrolle an (z. B. Brennstoffverbrennung), z. B. 45.2.",
+    "guidance": "VSME-Leitfaden, Abs. 90–108: Legen Sie die Organisationsgrenze fest, beziehen Sie alle direkten Emissionsquellen im Eigentum oder unter Kontrolle ein, berechnen Sie CO2, CH4, N2O und weitere relevante Gase in tCO2e und bewahren Sie Aktivitätsdaten, Faktorquelle, GWP-Grundlage und Berechnungsversion auf."
+  },
+  "VSME-031": {
+    "label": "Scope-2-Emissionen (standortbasiert)",
+    "hint": "Geben Sie die Scope-2-Emissionen in tCO2e aus eingekauftem Strom, Wärme, Dampf oder Kälte an, berechnet mit dem Netzfaktor (standortbasiert), z. B. 30.8.",
+    "guidance": "VSME-Leitfaden, Abs. 90–109: Berechnen Sie eingekauften Strom, Wärme, Dampf und Kälte nach dem standortbasierten Ansatz; bewahren Sie Verbrauch, Region, Berichtsjahr und Netzfaktor auf. Marktbasiertes Scope 2 kann gesondert gezeigt werden, wenn verlässliche Vertragsdaten vorliegen."
+  },
+  "VSME-032": {
+    "label": "THG-Intensität",
+    "hint": "Wird meist automatisch berechnet: (Scope 1 + standortbasiertes Scope 2) geteilt durch den Umsatz in EUR. Bei manueller Berechnung das Ergebnis in tCO2e/EUR eingeben.",
+    "guidance": "VSME-Leitfaden, Abs. 90–103: Teilen Sie die Brutto-Emissionen aus Scope 1 und standortbasiertem Scope 2 durch den Umsatz in EUR desselben Berichtszeitraums; ziehen Sie keine Kompensationen oder Entnahmen ab."
+  },
+  "VSME-033": {
+    "label": "Schadstoffemissionen in die Luft",
+    "hint": "Führen Sie jeden in die Luft emittierten Schadstoff mit Menge und Einheit auf (z. B. NOx, 1.2 t/Jahr), einen pro Zeile; nur nötig, wenn diese Berichterstattung für Sie vorgeschrieben ist.",
+    "guidance": "VSME-Leitfaden, Abs. 110–133: Prüfen Sie zuerst, ob die Berichterstattung über Schadstoffe gesetzlich vorgeschrieben ist oder im Rahmen eines Umweltmanagementsystems erfolgt. Erfassen Sie jeden Schadstoff getrennt mit Medium, Menge, Einheit, Anlage, Methode und Berichtszeitraum; auf eine öffentliche Quelle kann verwiesen werden."
+  },
+  "VSME-034": {
+    "label": "Schadstoffeinleitungen ins Wasser",
+    "hint": "Führen Sie jeden ins Wasser eingeleiteten Schadstoff mit Menge und Einheit auf (z. B. CSB, 0.8 t/Jahr), einen pro Zeile; nur nötig, wenn diese Berichterstattung für Sie vorgeschrieben ist.",
+    "guidance": "VSME-Leitfaden, Abs. 110–133: Prüfen Sie zuerst, ob die Berichterstattung über Schadstoffe gesetzlich vorgeschrieben ist oder im Rahmen eines Umweltmanagementsystems erfolgt. Erfassen Sie jeden Schadstoff getrennt mit Medium, Menge, Einheit, Anlage, Methode und Berichtszeitraum; auf eine öffentliche Quelle kann verwiesen werden."
+  },
+  "VSME-035": {
+    "label": "Schadstoffemissionen in den Boden",
+    "hint": "Führen Sie jeden in den Boden gelangten Schadstoff mit Menge und Einheit auf, einen pro Zeile; nur nötig, wenn diese Berichterstattung für Sie vorgeschrieben ist.",
+    "guidance": "VSME-Leitfaden, Abs. 110–133: Prüfen Sie zuerst, ob die Berichterstattung über Schadstoffe gesetzlich vorgeschrieben ist oder im Rahmen eines Umweltmanagementsystems erfolgt. Erfassen Sie jeden Schadstoff getrennt mit Medium, Menge, Einheit, Anlage, Methode und Berichtszeitraum; auf eine öffentliche Quelle kann verwiesen werden."
+  },
+  "VSME-036": {
+    "label": "Öffentlicher Link zu Schadstoffangaben",
+    "hint": "Geben Sie die öffentliche URL an, unter der die Schadstoffangaben veröffentlicht sind, falls Sie sie dort berichten.",
+    "guidance": "VSME-Leitfaden, Abs. 110–133: Prüfen Sie zuerst, ob die Berichterstattung über Schadstoffe gesetzlich vorgeschrieben ist oder im Rahmen eines Umweltmanagementsystems erfolgt. Erfassen Sie jeden Schadstoff getrennt mit Medium, Menge, Einheit, Anlage, Methode und Berichtszeitraum; auf eine öffentliche Quelle kann verwiesen werden."
+  },
+  "VSME-037": {
+    "label": "Standorte in oder nahe biodiversitätssensiblen Gebieten",
+    "hint": "Geben Sie als ganze Zahl an, wie viele Standorte im Eigentum, gemietet oder verwaltet, in oder nahe anerkannten biodiversitätssensiblen Gebieten liegen, z. B. 2.",
+    "guidance": "VSME-Leitfaden, Abs. 134–137: Prüfen Sie jeden Standort im Eigentum, gemietet oder verwaltet, auf die Lage in oder nahe anerkannten biodiversitätssensiblen Gebieten; geben Sie Anzahl und Fläche in Hektar an und bewahren Sie die Geodaten auf."
+  },
+  "VSME-038": {
+    "label": "Fläche der Standorte in oder nahe biodiversitätssensiblen Gebieten",
+    "hint": "Geben Sie die Gesamtfläche der im vorigen Feld genannten Standorte in Hektar (ha) an, aus Lageplänen oder Grundbuchdaten, z. B. 12.5.",
+    "guidance": "VSME-Leitfaden, Abs. 134–137: Prüfen Sie jeden Standort im Eigentum, gemietet oder verwaltet, auf die Lage in oder nahe anerkannten biodiversitätssensiblen Gebieten; geben Sie Anzahl und Fläche in Hektar an und bewahren Sie die Geodaten auf."
+  },
+  "VSME-039": {
+    "label": "Gesamte Flächennutzung",
+    "hint": "Geben Sie die gesamte vom Unternehmen genutzte Fläche aller Standorte in Hektar (ha) an, z. B. 8.3. Verwenden Sie jedes Jahr dieselben Standortgrenzen.",
+    "guidance": "VSME-Leitfaden, Abs. 138–141: Berechnen Sie die Fläche in Hektar mit einheitlichen Standortgrenzen und Flächennutzungsdefinitionen; unterscheiden Sie versiegelte und naturnahe Flächen und dokumentieren Sie die Kartierungsmethode."
+  },
+  "VSME-040": {
+    "label": "Versiegelte Fläche",
+    "hint": "Geben Sie die gesamte versiegelte (bebaute, befestigte oder sonst undurchlässige) Fläche aller Standorte in Hektar (ha) an, z. B. 3.1.",
+    "guidance": "VSME-Leitfaden, Abs. 138–141: Berechnen Sie die Fläche in Hektar mit einheitlichen Standortgrenzen und Flächennutzungsdefinitionen; unterscheiden Sie versiegelte und naturnahe Flächen und dokumentieren Sie die Kartierungsmethode."
+  },
+  "VSME-041": {
+    "label": "Naturnahe Fläche am Standort",
+    "hint": "Geben Sie die naturnahe (begrünte, renaturierte oder naturnah bewirtschaftete) Fläche an Ihren Standorten in Hektar (ha) an, z. B. 1.8.",
+    "guidance": "VSME-Leitfaden, Abs. 138–141: Berechnen Sie die Fläche in Hektar mit einheitlichen Standortgrenzen und Flächennutzungsdefinitionen; unterscheiden Sie versiegelte und naturnahe Flächen und dokumentieren Sie die Kartierungsmethode."
+  },
+  "VSME-042": {
+    "label": "Naturnahe Fläche außerhalb des Standorts",
+    "hint": "Geben Sie die naturnahe Fläche an, die das Unternehmen außerhalb seiner Standorte bewirtschaftet (z. B. Ausgleichs- oder Renaturierungsflächen), in Hektar (ha), z. B. 0.5.",
+    "guidance": "VSME-Leitfaden, Abs. 138–141: Berechnen Sie die Fläche in Hektar mit einheitlichen Standortgrenzen und Flächennutzungsdefinitionen; unterscheiden Sie versiegelte und naturnahe Flächen und dokumentieren Sie die Kartierungsmethode."
+  },
+  "VSME-043": {
+    "label": "Gesamte Wasserentnahme",
+    "hint": "Geben Sie die gesamte Wasserentnahme aus allen Quellen in Kubikmetern (m³) an, aus Zählern oder Rechnungen, z. B. 1250.",
+    "guidance": "VSME-Leitfaden, Abs. 142–149 und 154–158: Ermitteln Sie die Wasserentnahme möglichst aus Zählern oder Rechnungen; verwenden Sie bei gemeinsam genutzten Räumen eine dokumentierte Aufteilung nach Fläche, Mitarbeitenden oder einem anderen geeigneten Schlüssel. Angabe in m³."
+  },
+  "VSME-044": {
+    "label": "Wasserentnahme in Gebieten mit hohem Wasserstress",
+    "hint": "Geben Sie den Anteil der Wasserentnahme (m³) an Standorten in Gebieten mit hohem Wasserstress an, z. B. 400.",
+    "guidance": "VSME-Leitfaden, Abs. 142–158: Bestimmen Sie den Wasserstress jedes Standorts mit Daten einer lokalen Behörde oder einem anerkannten Wasserrisiko-Tool und geben Sie die Entnahme an Standorten mit hohem Wasserstress gesondert in m³ an."
+  },
+  "VSME-045": {
+    "label": "Wasserverbrauch",
+    "hint": "Geben Sie den Wasserverbrauch in Kubikmetern (m³) an: Entnahme minus aus wesentlichen Produktionsprozessen zurückgeleitetes Wasser, z. B. 300.",
+    "guidance": "VSME-Leitfaden, Abs. 150–155: Berechnen Sie den Wasserverbrauch als Entnahme minus Ableitung für wesentliche Produktionsprozesse; Angabe in m³, Zähler-, Rechnungs- oder Schätzungsnachweise aufbewahren."
+  },
+  "VSME-046": {
+    "label": "Anwendung von Grundsätzen der Kreislaufwirtschaft",
+    "hint": "Wählen Sie Ja/Nein, ob das Unternehmen Grundsätze der Kreislaufwirtschaft (Vermeidung, Wiederverwendung, Reparatur, Recycling) anwendet, und beschreiben Sie kurz, wie.",
+    "guidance": "VSME-Leitfaden, Abs. 159: Erläutern Sie kurz, wie Grundsätze der Kreislaufwirtschaft auf Produkte, Materialien und Abfälle angewendet werden, etwa Vermeidung, Wiederverwendung, Reparatur oder Recycling."
+  },
+  "VSME-047": {
+    "label": "Gesamtes Abfallaufkommen",
+    "hint": "Geben Sie die Gesamtmasse der Abfälle im Berichtszeitraum in Tonnen an, aufgeschlüsselt nach Abfallart und Behandlungsweg, z. B. 45.2.",
+    "guidance": "VSME-Leitfaden, Abs. 160–172: Geben Sie Abfälle in Tonnen nach Abfallart und Behandlungsweg an. Unterscheiden Sie gefährliche und nicht gefährliche Abfälle, nutzen Sie möglichst das Europäische Abfallverzeichnis und gleichen Sie die Summen mit den Übergabenachweisen ab."
+  },
+  "VSME-048": {
+    "label": "Nicht gefährliche Abfälle",
+    "hint": "Geben Sie die Masse der nicht gefährlichen Abfälle in Tonnen an, aus Abfallaufzeichnungen oder Begleitscheinen, z. B. 38.0.",
+    "guidance": "VSME-Leitfaden, Abs. 160–172: Geben Sie Abfälle in Tonnen nach Abfallart und Behandlungsweg an. Unterscheiden Sie gefährliche und nicht gefährliche Abfälle, nutzen Sie möglichst das Europäische Abfallverzeichnis und gleichen Sie die Summen mit den Übergabenachweisen ab."
+  },
+  "VSME-049": {
+    "label": "Gefährliche Abfälle",
+    "hint": "Geben Sie die Masse der gefährlichen Abfälle in Tonnen an, aus Abfallaufzeichnungen oder Begleitscheinen, z. B. 7.2.",
+    "guidance": "VSME-Leitfaden, Abs. 160–172: Geben Sie Abfälle in Tonnen nach Abfallart und Behandlungsweg an. Unterscheiden Sie gefährliche und nicht gefährliche Abfälle, nutzen Sie möglichst das Europäische Abfallverzeichnis und gleichen Sie die Summen mit den Übergabenachweisen ab."
+  },
+  "VSME-050": {
+    "label": "Zum Recycling oder zur Wiederverwendung abgegebene Abfälle",
+    "hint": "Geben Sie die Masse der dem Recycling oder der Wiederverwendung zugeführten Abfälle (nicht deponiert oder verbrannt) in Tonnen an, z. B. 20.5.",
+    "guidance": "VSME-Leitfaden, Abs. 160–172: Geben Sie Abfälle in Tonnen nach Abfallart und Behandlungsweg an. Unterscheiden Sie gefährliche und nicht gefährliche Abfälle, nutzen Sie möglichst das Europäische Abfallverzeichnis und gleichen Sie die Summen mit den Übergabenachweisen ab."
+  },
+  "VSME-051": {
+    "label": "Jährlicher Massenstrom verwendeter Materialien",
+    "hint": "Geben Sie die jährliche Masse der in der Produktion verwendeten relevanten Materialien in Tonnen (oder einer anderen einheitlichen Masseneinheit) an, z. B. 150.0.",
+    "guidance": "VSME-Leitfaden, Abs. 173–174: Geben Sie die jährliche Masse der relevanten Materialien an, wenn die Materialströme wesentlich sind; legen Sie die einbezogenen Prozesse und Materialkategorien fest und verwenden Sie eine einheitliche Masseneinheit."
+  },
+  "VSME-052": {
+    "label": "Mitarbeitende mit unbefristetem Vertrag",
+    "hint": "Geben Sie die Zahl der Mitarbeitenden mit unbefristetem Vertrag als Kopfzahl oder FTE an (eine Grundlage durchgehend verwenden), z. B. 24.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-053": {
+    "label": "Mitarbeitende mit befristetem Vertrag",
+    "hint": "Geben Sie die Zahl der Mitarbeitenden mit befristetem Vertrag an, auf derselben Grundlage wie bei unbefristeten, z. B. 6.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-054": {
+    "label": "Mitarbeitende – Frauen",
+    "hint": "Geben Sie die Zahl der Mitarbeiterinnen als Kopfzahl oder FTE aus Personal- oder Lohnunterlagen an, z. B. 15.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-055": {
+    "label": "Mitarbeitende – Männer",
+    "hint": "Geben Sie die Zahl der Mitarbeiter als Kopfzahl oder FTE aus Personal- oder Lohnunterlagen an, z. B. 18.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-056": {
+    "label": "Mitarbeitende – anderes oder nicht angegebenes Geschlecht",
+    "hint": "Geben Sie die Zahl der Mitarbeitenden mit anderem oder nicht angegebenem Geschlecht als Kopfzahl oder FTE an, z. B. 1.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-057": {
+    "label": "Mitarbeitende nach Land des Arbeitsvertrags",
+    "hint": "Geben Sie die Zahl der Mitarbeitenden nach Land des Arbeitsvertrags als Kopfzahl oder FTE an, eine Zeile pro Land, z. B. 30.",
+    "guidance": "VSME-Leitfaden, Abs. 175–181: Verwenden Sie durchgehend eine Grundlage – Kopfzahl oder FTE – und gleichen Sie die Aufschlüsselung mit der Gesamtbelegschaft ab. Nutzen Sie die nationalen Vertragsdefinitionen und halten Sie Stichtag oder Mittelungszeitraum fest."
+  },
+  "VSME-058": {
+    "label": "Fluktuationsrate",
+    "hint": "Geben Sie die Fluktuationsrate in Prozent an: Ausgeschiedene im Zeitraum geteilt durch die durchschnittliche Beschäftigtenzahl mal 100, z. B. 12.5.",
+    "guidance": "VSME-Leitfaden, Abs. 182–183: Berechnen Sie die Fluktuationsrate als Anzahl der im Berichtszeitraum ausgeschiedenen Mitarbeitenden geteilt durch die durchschnittliche Beschäftigtenzahl mal 100; bewahren Sie Zähler und Nenner auf."
+  },
+  "VSME-059": {
+    "label": "Meldepflichtige Arbeitsunfälle",
+    "hint": "Geben Sie die Zahl der meldepflichtigen Arbeitsunfälle unter Mitarbeitenden im Berichtszeitraum an, z. B. 3.",
+    "guidance": "VSME-Leitfaden, Abs. 187–191: Wenden Sie die Definition „arbeitsbedingt“ einheitlich auf die Arbeit am Standort, Telearbeit und Dienstreisen an; bewahren Sie die Einstufung der Fälle und die Nachweise auf."
+  },
+  "VSME-060": {
+    "label": "Quote meldepflichtiger Arbeitsunfälle",
+    "hint": "Geben Sie die Unfallquote an: meldepflichtige Arbeitsunfälle geteilt durch die geleisteten Arbeitsstunden mal 200 000, z. B. 8.4.",
+    "guidance": "VSME-Leitfaden, Abs. 184–186: Berechnen Sie die Quote als meldepflichtige Arbeitsunfälle geteilt durch die geleisteten Arbeitsstunden mal 200 000; bewahren Sie Unfallaufzeichnungen und Arbeitsstunden auf."
+  },
+  "VSME-061": {
+    "label": "Todesfälle durch arbeitsbedingte Verletzungen",
+    "hint": "Geben Sie die Zahl der Todesfälle unter Mitarbeitenden durch arbeitsbedingte Verletzungen im Berichtszeitraum an, z. B. 0.",
+    "guidance": "VSME-Leitfaden, Abs. 187–191: Wenden Sie die Definition „arbeitsbedingt“ einheitlich auf die Arbeit am Standort, Telearbeit und Dienstreisen an; bewahren Sie die Einstufung der Fälle und die Nachweise auf."
+  },
+  "VSME-062": {
+    "label": "Todesfälle durch arbeitsbedingte Erkrankungen",
+    "hint": "Geben Sie die Zahl der Todesfälle unter Mitarbeitenden durch arbeitsbedingte Erkrankungen im Berichtszeitraum an, z. B. 0.",
+    "guidance": "VSME-Leitfaden, Abs. 187–191: Wenden Sie die Definition „arbeitsbedingt“ einheitlich auf die Arbeit am Standort, Telearbeit und Dienstreisen an; bewahren Sie die Einstufung der Fälle und die Nachweise auf."
+  },
+  "VSME-063": {
+    "label": "Einhaltung des Mindestlohns",
+    "hint": "Wählen Sie Ja/Nein, ob alle Mitarbeitenden mindestens den gesetzlichen oder tariflichen Mindestlohn des jeweiligen Landes erhalten.",
+    "guidance": "VSME-Leitfaden, Abs. 192–193: Vergleichen Sie die niedrigste anwendbare Vergütung mit dem gesetzlichen oder tariflichen Mindestlohn in jedem Berichtsland; Praktikanten und Auszubildende können gegebenenfalls ausgenommen werden."
+  },
+  "VSME-064": {
+    "label": "Prozentuales Lohngefälle zwischen Frauen und Männern",
+    "hint": "Geben Sie das geschlechtsspezifische Lohngefälle in Prozent an, anhand des durchschnittlichen Bruttostundenverdiensts von Frauen und Männern, z. B. 9.5.",
+    "guidance": "VSME-Leitfaden, Abs. 194–201: Beziehen Sie alle Mitarbeitenden ein, berechnen Sie den durchschnittlichen Bruttostundenverdienst nach Geschlecht und wenden Sie die VSME-Formel für das prozentuale Gefälle an; dokumentieren Sie die einbezogenen Vergütungsbestandteile und die Umrechnung der Arbeitszeit."
+  },
+  "VSME-065": {
+    "label": "Tarifbindung",
+    "hint": "Geben Sie den Anteil der von Tarifverträgen erfassten Mitarbeitenden in Prozent an: Erfasste geteilt durch Gesamtzahl mal 100, z. B. 65.0.",
+    "guidance": "VSME-Leitfaden, Abs. 202–205: Teilen Sie die Zahl der von Tarifverträgen erfassten Mitarbeitenden durch die Gesamtzahl und multiplizieren Sie mit 100; zählen Sie alle Erfassten, unabhängig von einer Gewerkschaftsmitgliedschaft."
+  },
+  "VSME-066": {
+    "label": "Durchschnittliche Schulungsstunden – Frauen",
+    "hint": "Geben Sie die durchschnittlichen jährlichen Schulungsstunden pro Mitarbeiterin aus HR- oder Schulungsunterlagen an, z. B. 12.5.",
+    "guidance": "VSME-Leitfaden, Abs. 192–205: Berechnen Sie die durchschnittlichen Schulungsstunden aus Lohn- oder Personalunterlagen des Berichtszeitraums mit einheitlichen Definitionen von Mitarbeitenden und Geschlecht; bewahren Sie Zähler, Nenner und Berechnungsgrundlage auf."
+  },
+  "VSME-067": {
+    "label": "Durchschnittliche Schulungsstunden – Männer",
+    "hint": "Geben Sie die durchschnittlichen jährlichen Schulungsstunden pro Mitarbeiter aus HR- oder Schulungsunterlagen an, z. B. 12.5.",
+    "guidance": "VSME-Leitfaden, Abs. 192–205: Berechnen Sie die durchschnittlichen Schulungsstunden aus Lohn- oder Personalunterlagen des Berichtszeitraums mit einheitlichen Definitionen von Mitarbeitenden und Geschlecht; bewahren Sie Zähler, Nenner und Berechnungsgrundlage auf."
+  },
+  "VSME-068": {
+    "label": "Durchschnittliche Schulungsstunden – anderes oder nicht angegebenes Geschlecht",
+    "hint": "Geben Sie die durchschnittlichen jährlichen Schulungsstunden pro Mitarbeitende mit anderem oder nicht angegebenem Geschlecht aus HR- oder Schulungsunterlagen an, z. B. 12.5.",
+    "guidance": "VSME-Leitfaden, Abs. 192–205: Berechnen Sie die durchschnittlichen Schulungsstunden aus Lohn- oder Personalunterlagen des Berichtszeitraums mit einheitlichen Definitionen von Mitarbeitenden und Geschlecht; bewahren Sie Zähler, Nenner und Berechnungsgrundlage auf."
+  },
+  "VSME-069": {
+    "label": "Verurteilungen wegen Korruption und Bestechung",
+    "hint": "Geben Sie die Zahl rechtskräftiger Verurteilungen wegen Verstößen gegen Gesetze zur Korruptions- und Bestechungsbekämpfung im Berichtszeitraum an, z. B. 0.",
+    "guidance": "VSME-Leitfaden, Abs. 206–209: Berücksichtigen Sie rechtskräftige Verurteilungen und zwingende Geldstrafen nach Gesetzen gegen Korruption und Bestechung im Berichtszeitraum; bewahren Sie Rechtsgrundlagen und Nachweise auf."
+  },
+  "VSME-070": {
+    "label": "Geldstrafen wegen Korruption und Bestechung",
+    "hint": "Geben Sie die Gesamtsumme der Geldstrafen wegen Verstößen gegen Gesetze zur Korruptions- und Bestechungsbekämpfung in EUR an, z. B. 5000.",
+    "guidance": "VSME-Leitfaden, Abs. 206–209: Berücksichtigen Sie rechtskräftige Verurteilungen und zwingende Geldstrafen nach Gesetzen gegen Korruption und Bestechung im Berichtszeitraum; bewahren Sie Rechtsgrundlagen und Nachweise auf."
+  },
+  "VSME-071": {
+    "label": "Wesentliche Produkt- und Dienstleistungsgruppen",
+    "hint": "Beschreiben Sie kurz die wesentlichen Produkt- und/oder Dienstleistungsgruppen, passend zur Beschreibung des Geschäftsmodells.",
+    "guidance": "Der Leitfaden zum umfassenden Modul (Abs. 212) enthält dafür keine eigene detaillierte Anleitung. Beschreiben Sie den Punkt knapp, mit demselben Umfang und denselben Begriffen wie in der Beschreibung von Geschäftsmodell und Strategie."
+  },
+  "VSME-072": {
+    "label": "Wesentliche Märkte",
+    "hint": "Beschreiben Sie kurz die wesentlichen Märkte (Länder oder Regionen), in denen das Unternehmen tätig ist.",
+    "guidance": "Der Leitfaden zum umfassenden Modul (Abs. 212) enthält dafür keine eigene detaillierte Anleitung. Beschreiben Sie den Punkt knapp, mit demselben Umfang und denselben Begriffen wie in der Beschreibung von Geschäftsmodell und Strategie."
+  },
+  "VSME-073": {
+    "label": "Wichtigste Geschäftsbeziehungen",
+    "hint": "Beschreiben Sie in einigen Sätzen die wichtigsten Kunden- und Lieferantenbeziehungen: geschätzte Anzahl, Branchen und Regionen der wichtigsten Lieferanten sowie die wichtigsten Kunden- oder Vertriebsgruppen.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 212: Beschreiben Sie die wichtigsten Kunden- und Lieferantenbeziehungen; nennen Sie die geschätzte Anzahl, Branchen und Regionen der wichtigsten Lieferanten sowie die wichtigsten Kunden- oder Vertriebsgruppen."
+  },
+  "VSME-074": {
+    "label": "Bezug der Strategie zu Nachhaltigkeitsthemen",
+    "hint": "Beschreiben Sie kurz die Teile Ihrer Geschäftsstrategie, die Nachhaltigkeitsthemen betreffen, mit denselben Begriffen wie in der Beschreibung des Geschäftsmodells.",
+    "guidance": "Der Leitfaden zum umfassenden Modul (Abs. 212) enthält dafür keine eigene detaillierte Anleitung. Beschreiben Sie den Punkt knapp, mit demselben Umfang und denselben Begriffen wie in der Beschreibung von Geschäftsmodell und Strategie."
+  },
+  "VSME-075": {
+    "label": "Ausführliche Beschreibung der Praktiken",
+    "hint": "Beschreiben Sie Ihre Nachhaltigkeitspraktiken nach der Vorlage C2: für jede Thema, Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 213: Verwenden Sie die strukturierte Vorlage C2; verknüpfen Sie jeden Eintrag mit dem betreffenden Nachhaltigkeitsthema und erfassen Sie Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand."
+  },
+  "VSME-076": {
+    "label": "Ausführliche Beschreibung der Richtlinien",
+    "hint": "Beschreiben Sie Ihre Nachhaltigkeitsrichtlinien nach der Vorlage C2: für jede Thema, Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 213: Verwenden Sie die strukturierte Vorlage C2; verknüpfen Sie jeden Eintrag mit dem betreffenden Nachhaltigkeitsthema und erfassen Sie Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand."
+  },
+  "VSME-077": {
+    "label": "Ausführliche Beschreibung künftiger Initiativen",
+    "hint": "Beschreiben Sie geplante Initiativen nach der Vorlage C2: für jede Thema, Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 213: Verwenden Sie die strukturierte Vorlage C2; verknüpfen Sie jeden Eintrag mit dem betreffenden Nachhaltigkeitsthema und erfassen Sie Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand."
+  },
+  "VSME-078": {
+    "label": "Ausführliche Beschreibung der Ziele",
+    "hint": "Beschreiben Sie Ihre Nachhaltigkeitsziele nach der Vorlage C2: für jedes Thema, Umfang, Zweck, verantwortliche Ebene, Zielwert, Zeitrahmen und Umsetzungsstand.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 213: Verwenden Sie die strukturierte Vorlage C2; verknüpfen Sie jeden Eintrag mit dem betreffenden Nachhaltigkeitsthema und erfassen Sie Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand."
+  },
+  "VSME-079": {
+    "label": "Höchste verantwortliche Ebene",
+    "hint": "Geben Sie die Funktion oder das Gremium an (z. B. Geschäftsführung, Nachhaltigkeitsausschuss, Vorstand), das für die Umsetzung jeder Praxis, Richtlinie oder Initiative zuständig ist.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 213: Verwenden Sie die strukturierte Vorlage C2; verknüpfen Sie jeden Eintrag mit dem betreffenden Nachhaltigkeitsthema und erfassen Sie Umfang, Zweck, verantwortliche Ebene, Ziel, Zeitrahmen und Umsetzungsstand."
+  },
+  "VSME-080": {
+    "label": "Scope 3, Kategorie 1: Eingekaufte Waren und Dienstleistungen",
+    "hint": "Geben Sie die Emissionen der Kategorie 1 („Eingekaufte Waren und Dienstleistungen“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-081": {
+    "label": "Scope 3, Kategorie 2: Investitionsgüter",
+    "hint": "Geben Sie die Emissionen der Kategorie 2 („Investitionsgüter“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-082": {
+    "label": "Scope 3, Kategorie 3: Brennstoff- und energiebezogene Aktivitäten",
+    "hint": "Geben Sie die Emissionen der Kategorie 3 (brennstoff- und energiebezogene Aktivitäten, nicht in Scope 1 oder 2 enthalten) in tCO2e an, berechnet aus dokumentierten Mengen und Umrechnungsfaktoren, z. B. 18.2.",
+    "guidance": "VSME-Leitfaden, Abs. 81–89: Geben Sie den Verbrauch als Endenergie in MWh an. Bewahren Sie Ausgangsmenge und -einheit auf, rechnen Sie mit einem dokumentierten Heizwert oder Umrechnungsfaktor um und verrechnen Sie verbrauchte nicht mit erzeugter Energie."
+  },
+  "VSME-083": {
+    "label": "Scope 3, Kategorie 4: Vorgelagerter Transport und Vertrieb",
+    "hint": "Geben Sie die Emissionen der Kategorie 4 („Vorgelagerter Transport und Vertrieb“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-084": {
+    "label": "Scope 3, Kategorie 5: Abfall aus dem Betrieb",
+    "hint": "Geben Sie die Emissionen der Kategorie 5 („Abfall aus dem Betrieb“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-085": {
+    "label": "Scope 3, Kategorie 6: Geschäftsreisen",
+    "hint": "Geben Sie die Emissionen der Kategorie 6 („Geschäftsreisen“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-086": {
+    "label": "Scope 3, Kategorie 7: Pendeln der Mitarbeitenden",
+    "hint": "Geben Sie die Emissionen der Kategorie 7 („Pendeln der Mitarbeitenden“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-087": {
+    "label": "Scope 3, Kategorie 8: Vorgelagerte geleaste Anlagen",
+    "hint": "Geben Sie die Emissionen der Kategorie 8 („Vorgelagerte geleaste Anlagen“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-088": {
+    "label": "Scope 3, Kategorie 9: Nachgelagerter Transport und Vertrieb",
+    "hint": "Geben Sie die Emissionen der Kategorie 9 („Nachgelagerter Transport und Vertrieb“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-089": {
+    "label": "Scope 3, Kategorie 10: Verarbeitung verkaufter Produkte",
+    "hint": "Geben Sie die Emissionen der Kategorie 10 („Verarbeitung verkaufter Produkte“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-090": {
+    "label": "Scope 3, Kategorie 11: Nutzung verkaufter Produkte",
+    "hint": "Geben Sie die Emissionen der Kategorie 11 („Nutzung verkaufter Produkte“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-091": {
+    "label": "Scope 3, Kategorie 12: Behandlung verkaufter Produkte am Ende der Lebensdauer",
+    "hint": "Geben Sie die Emissionen der Kategorie 12 („Behandlung verkaufter Produkte am Ende der Lebensdauer“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-092": {
+    "label": "Scope 3, Kategorie 13: Nachgelagerte geleaste Anlagen",
+    "hint": "Geben Sie die Emissionen der Kategorie 13 („Nachgelagerte geleaste Anlagen“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-093": {
+    "label": "Scope 3, Kategorie 14: Franchises",
+    "hint": "Geben Sie die Emissionen der Kategorie 14 („Franchises“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-094": {
+    "label": "Scope 3, Kategorie 15: Investitionen",
+    "hint": "Geben Sie die Emissionen der Kategorie 15 („Investitionen“) in tCO2e an, z. B. 125.4 – nur wenn Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol geprüft, diese als wesentlich eingestuft und die Berechnungsmethode dokumentiert haben.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 214–215: Prüfen Sie alle 15 Scope-3-Kategorien nach dem GHG Protocol, bestimmen Sie die wesentlichen, dokumentieren Sie die Berechnungsmethode und legen Sie diese Kategorie nur im Rahmen einer vollständigen, klar abgegrenzten Scope-3-Bewertung offen."
+  },
+  "VSME-095": {
+    "label": "Zieljahr",
+    "hint": "Geben Sie das Zieljahr dieses THG-Reduktionsziels an (ein Jahr, z. B. 2030).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-096": {
+    "label": "Wert im Zieljahr",
+    "hint": "Geben Sie den im Zieljahr angestrebten Emissionswert in der Einheit dieses Ziels an (z. B. tCO2e), z. B. 850.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-097": {
+    "label": "Basisjahr",
+    "hint": "Geben Sie das Basisjahr an, an dem der Fortschritt gemessen wird (ein Jahr, z. B. 2020).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-098": {
+    "label": "Wert im Basisjahr",
+    "hint": "Geben Sie den Emissionswert im Basisjahr in derselben Einheit wie das Ziel an (z. B. tCO2e), z. B. 1200.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-099": {
+    "label": "Einheit des Ziels",
+    "hint": "Wählen Sie die Einheit des Ziels, z. B. tCO2e (absolut) oder % Reduktion.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-100": {
+    "label": "Vom Ziel abgedeckter Anteil der Scope-1-Emissionen",
+    "hint": "Geben Sie in Prozent an, welchen Anteil Ihrer Scope-1-Emissionen das Ziel abdeckt, z. B. 100.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-101": {
+    "label": "Vom Ziel abgedeckter Anteil der Scope-2-Emissionen",
+    "hint": "Geben Sie in Prozent an, welchen Anteil Ihrer Scope-2-Emissionen das Ziel abdeckt, z. B. 100.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-102": {
+    "label": "Vom Ziel abgedeckter Anteil wesentlicher Scope-3-Emissionen",
+    "hint": "Geben Sie in Prozent an, welchen Anteil Ihrer wesentlichen Scope-3-Emissionen das Ziel abdeckt, z. B. 60.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-103": {
+    "label": "Wichtigste Maßnahmen zur Zielerreichung",
+    "hint": "Beschreiben Sie in einigen Sätzen die wichtigsten geplanten oder laufenden Maßnahmen zur Erreichung des Ziels (z. B. Umstieg auf erneuerbare Energie, Elektrifizierung der Flotte).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-104": {
+    "label": "Klimaübergangsplan",
+    "hint": "Wenn das Unternehmen in einem Sektor mit hoher Klimawirkung tätig ist, beschreiben Sie den Klimaübergangsplan: wichtigste Maßnahmen, Investitionen und Meilensteine.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-105": {
+    "label": "Ob und wann ein Klimaübergangsplan angenommen wird",
+    "hint": "Wählen Sie „Ja“, wenn Sie einen Klimaübergangsplan annehmen wollen (das erwartete Jahr in der Beschreibung angeben), oder „Nein“, wenn keiner geplant ist.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 216–227: Legen Sie absolute Ziele für Scope 1 und Scope 2 sowie gegebenenfalls für wesentliche Scope-3-Emissionen fest; erfassen Sie Basisjahr und -wert, Zieljahr und -wert, Einheit, Abdeckung und wichtigste Maßnahmen. Führen Sie Bruttoemissionen getrennt von Entnahmen, vermiedenen Emissionen und Kompensationen."
+  },
+  "VSME-106": {
+    "label": "Physische Klimagefahren",
+    "hint": "Geben Sie die für Ihre Vermögenswerte, Tätigkeiten oder Wertschöpfungskette relevanten physischen Klimagefahren an (z. B. Hochwasser, Hitze, Dürre), eine pro Zeile.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-107": {
+    "label": "Klimabezogene Übergangsereignisse",
+    "hint": "Geben Sie die für Ihr Geschäft relevanten Übergangsrisiken an (z. B. Regulierungs-, Markt- oder Technologieänderungen), eines pro Zeile.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-108": {
+    "label": "Bewertung der Exposition von Vermögenswerten, Tätigkeiten und Wertschöpfungskette",
+    "hint": "Beschreiben Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette gegenüber den ermittelten Gefahren und Ereignissen, mit Zeithorizont und Anpassungsmaßnahmen.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-109": {
+    "label": "Bewertung der Anfälligkeit",
+    "hint": "Beschreiben Sie, welche Klimagefahren und Übergangsereignisse das Unternehmen betreffen und wie exponiert und anfällig es ist.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-110": {
+    "label": "Zeithorizont des Risikos",
+    "hint": "Wählen Sie den Zeithorizont der ermittelten Gefahren und Ereignisse: kurz-, mittel- oder langfristig.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-111": {
+    "label": "Anpassungsmaßnahmen",
+    "hint": "Beschreiben Sie die ergriffenen oder geplanten Maßnahmen zur Anpassung an die ermittelten Klimagefahren und Übergangsereignisse.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-112": {
+    "label": "Mögliche nachteilige finanzielle Auswirkungen",
+    "hint": "Beschreiben Sie die möglichen nachteiligen finanziellen Auswirkungen der ermittelten Klimagefahren und Übergangsereignisse auf das Unternehmen.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-113": {
+    "label": "Risikoniveau",
+    "hint": "Wählen Sie das Risikoniveau, das die Exposition des Unternehmens am besten beschreibt.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 228–230: Bestimmen Sie physische Klimagefahren und Übergangsereignisse, bewerten Sie Exposition und Anfälligkeit von Vermögenswerten, Tätigkeiten und Wertschöpfungskette, ordnen Sie sie einem kurz-, mittel- oder langfristigen Zeithorizont zu und dokumentieren Sie Anpassungsmaßnahmen."
+  },
+  "VSME-114": {
+    "label": "Verhältnis von Frauen zu Männern auf Führungsebene",
+    "hint": "Geben Sie das Verhältnis weiblicher zu männlicher Führungskräfte an: Zahl der Frauen geteilt durch die Zahl der Männer, z. B. 0.8.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 231–236: Teilen Sie die Zahl der weiblichen durch die Zahl der männlichen Führungskräfte; geben Sie die verwendete Führungsebene an und bewahren Sie die Personalnachweise auf."
+  },
+  "VSME-115": {
+    "label": "Ausschließlich für das Unternehmen tätige Selbständige ohne Personal",
+    "hint": "Geben Sie die Zahl der Selbständigen ohne eigenes Personal an, die ausschließlich für das Unternehmen arbeiten, z. B. 5.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 231–236: Ermitteln Sie die Zahl nach den Definitionen des Leitfadens und bewahren Sie die Personalnachweise auf."
+  },
+  "VSME-116": {
+    "label": "Leiharbeitskräfte",
+    "hint": "Geben Sie die Zahl der im Berichtszeitraum eingesetzten Leiharbeitskräfte an, z. B. 12.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 231–236: Ermitteln Sie die Zahl nach den Definitionen des Leitfadens und bewahren Sie die Personalnachweise auf."
+  },
+  "VSME-117": {
+    "label": "Verhaltenskodex oder Menschenrechtspolitik für die eigene Belegschaft",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen einen genehmigten Verhaltenskodex oder eine Menschenrechtspolitik für die eigene Belegschaft hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-118": {
+    "label": "Richtlinie umfasst Kinderarbeit",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zu Kinderarbeit hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-119": {
+    "label": "Richtlinie umfasst Zwangsarbeit",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zu Zwangsarbeit hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-120": {
+    "label": "Richtlinie umfasst Menschenhandel",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zu Menschenhandel hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-121": {
+    "label": "Richtlinie umfasst Diskriminierung",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zu Diskriminierung hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-122": {
+    "label": "Richtlinie umfasst Unfallverhütung",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zur Unfallverhütung hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-123": {
+    "label": "Richtlinie umfasst weitere Menschenrechtsthemen",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen eine Richtlinie zu weiteren, oben nicht genannten Menschenrechtsthemen hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-124": {
+    "label": "Beschwerdemechanismus für die eigene Belegschaft",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen einen Beschwerdemechanismus für die eigene Belegschaft hat, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 237: Beantworten Sie die Frage mit Ja oder Nein auf Grundlage eines genehmigten Verhaltenskodex, einer Menschenrechtspolitik, eines Sorgfaltsprozesses oder eines Beschwerdeverfahrens; erfassen Sie Dokumentverantwortliche, Genehmigungsdatum und Geltungsbereich."
+  },
+  "VSME-125": {
+    "label": "Bestätigte Fälle von Kinderarbeit",
+    "hint": "Wählen Sie „Ja“, wenn es im Berichtszeitraum bestätigte Fälle von Kinderarbeit in der eigenen Belegschaft gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-126": {
+    "label": "Bestätigte Fälle von Zwangsarbeit",
+    "hint": "Wählen Sie „Ja“, wenn es im Berichtszeitraum bestätigte Fälle von Zwangsarbeit in der eigenen Belegschaft gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-127": {
+    "label": "Bestätigte Fälle von Menschenhandel",
+    "hint": "Wählen Sie „Ja“, wenn es im Berichtszeitraum bestätigte Fälle von Menschenhandel in der eigenen Belegschaft gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-128": {
+    "label": "Bestätigte Fälle von Diskriminierung",
+    "hint": "Wählen Sie „Ja“, wenn es im Berichtszeitraum bestätigte Fälle von Diskriminierung in der eigenen Belegschaft gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-129": {
+    "label": "Sonstige schwerwiegende Menschenrechtsvorfälle",
+    "hint": "Wählen Sie „Ja“, wenn es im Berichtszeitraum sonstige bestätigte schwerwiegende Menschenrechtsvorfälle gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-130": {
+    "label": "Maßnahmen zu den Vorfällen",
+    "hint": "Beschreiben Sie die Maßnahmen und Abhilfen, die zu den bestätigten Menschenrechtsvorfällen ergriffen wurden.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-131": {
+    "label": "Vorfälle bei Arbeitskräften in der Wertschöpfungskette",
+    "hint": "Wählen Sie „Ja“, wenn es bestätigte schwerwiegende Menschenrechtsvorfälle bei Arbeitskräften in der Wertschöpfungskette gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-132": {
+    "label": "Vorfälle bei betroffenen Gemeinschaften",
+    "hint": "Wählen Sie „Ja“, wenn es bestätigte schwerwiegende Menschenrechtsvorfälle bei betroffenen Gemeinschaften gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-133": {
+    "label": "Vorfälle bei Verbrauchern und Endnutzern",
+    "hint": "Wählen Sie „Ja“, wenn es bestätigte schwerwiegende Menschenrechtsvorfälle bei Verbrauchern oder Endnutzern gab, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 238: Ein Fall gilt als bestätigt, wenn er durch ein Gerichtsverfahren oder eine über ein formelles Verfahren eingereichte Beschwerde belegt ist; beschreiben Sie bei Bedarf die Abhilfemaßnahmen."
+  },
+  "VSME-134": {
+    "label": "Umsatz aus umstrittenen Waffen",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus umstrittenen Waffen im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-135": {
+    "label": "Umsatz aus Tabakanbau und -herstellung",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus Anbau und Herstellung von Tabak im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-136": {
+    "label": "Umsatz aus fossilen Brennstoffen – Kohle",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus fossilen Brennstoffen (Kohle) im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-137": {
+    "label": "Umsatz aus fossilen Brennstoffen – Öl",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus fossilen Brennstoffen (Öl) im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-138": {
+    "label": "Umsatz aus fossilen Brennstoffen – Gas",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus fossilen Brennstoffen (Gas) im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-139": {
+    "label": "Umsatz aus der Chemikalienherstellung (Pestizide, Agrochemikalien)",
+    "hint": "Geben Sie den Umsatz des Unternehmens aus der Herstellung von Chemikalien wie Pestiziden und Agrochemikalien im Berichtszeitraum in EUR an (0, wenn keiner).",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen im betreffenden Sektor tätig ist, und geben Sie dann den Umsatz desselben Geschäftsjahres an, abgeglichen mit dem Gesamtumsatz."
+  },
+  "VSME-140": {
+    "label": "Ausschluss aus den an Paris ausgerichteten EU-Referenzwerten",
+    "hint": "Wählen Sie „Ja“, wenn das Unternehmen nach den geltenden Kriterien von den an Paris ausgerichteten EU-Referenzwerten ausgeschlossen ist, sonst „Nein“.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 239–241: Prüfen Sie anhand der genannten Rechtsdefinitionen und NACE-Codes, ob das Unternehmen in Sektoren tätig ist, die zum Ausschluss führen, und geben Sie an, ob es von den an Paris ausgerichteten EU-Referenzwerten ausgeschlossen ist."
+  },
+  "VSME-141": {
+    "label": "Geschlechtervielfalt im höchsten Leitungsorgan",
+    "hint": "Geben Sie das Geschlechterverhältnis im höchsten Leitungsorgan an: Zahl der Frauen geteilt durch die Zahl der Männer, in Prozent, z. B. 40.",
+    "guidance": "Leitfaden zum umfassenden Modul, Abs. 242–244: Bestimmen Sie das höchste Leitungs- oder Aufsichtsorgan und berechnen Sie das Geschlechterverhältnis als Zahl der Frauen geteilt durch die Zahl der Männer; bewahren Sie Mitgliederzahlen und Stichtag auf."
+  },
+  "ESRS-001": {
+    "label": "Genutzte Übergangsbestimmungen (Phase-in); während des Phase-in beibehaltene wesentliche Themen, Richtlinien, Maßnahmen, Ziele und Kennzahlen",
+    "hint": "Beschreiben Sie, welche Übergangsbestimmungen Sie nutzen und welche wesentlichen Themen, Richtlinien, Maßnahmen, Ziele und Kennzahlen Sie während des Phase-in weiter berichten."
+  },
+  "ESRS-002": {
+    "label": "Anteil der nachhaltigkeitsbezogenen variablen Vergütung, Merkmale und Genehmigung",
+    "hint": "Geben Sie den Anteil der an Nachhaltigkeit gekoppelten variablen Vergütung in Prozent an und beschreiben Sie, wie das System funktioniert und wer es genehmigt hat."
+  },
+  "ESRS-003": {
+    "label": "Übersicht der wesentlichen Elemente der Sorgfaltspflicht mit Verweisen auf die Angaben",
+    "hint": "Ordnen Sie die wesentlichen Elemente Ihres Sorgfaltsprozesses den Angaben zu, in denen sie beschrieben sind."
+  },
+  "ESRS-004": {
+    "label": "Prozesse, Risiken, Kontrollen, Feststellungen und Abhilfe",
+    "hint": "Beschreiben Sie Prozesse, wesentliche Risiken, Kontrollen, Feststellungen und Abhilfemaßnahmen Ihrer Nachhaltigkeitsberichterstattung."
+  },
+  "ESRS-005": {
+    "label": "Wichtige Interessenträger, Einbindung, Interessen und Einfluss auf die Strategie",
+    "hint": "Nennen Sie Ihre wichtigsten Interessenträger, wie Sie sie einbinden, ihre Interessen und Sichtweisen und wie diese Ihre Strategie beeinflussen."
+  },
+  "ESRS-006": {
+    "label": "Wesentliche Auswirkungen, Risiken und Chancen; aktuelle und erwartete finanzielle Effekte und Resilienz",
+    "hint": "Beschreiben Sie wesentliche Auswirkungen, Risiken und Chancen, ihre aktuellen und erwarteten finanziellen Effekte (Beträge oder Spannen) und die Resilienz von Strategie und Geschäftsmodell."
+  },
+  "ESRS-007": {
+    "label": "Methodik der Ermittlung und Bewertung, Schwellen, Eingangsdaten, Interessenträger und Entscheidungsprozess",
+    "hint": "Beschreiben Sie, wie Sie Auswirkungen, Risiken und Chancen ermitteln und bewerten: Methode, Schwellenwerte, Eingangsdaten, beteiligte Interessenträger und Entscheidungsfindung."
+  },
+  "ESRS-008": {
+    "label": "Liste wesentlicher Auswirkungen, Risiken und Chancen sowie einbezogener oder ausgelassener Themen und Angabepflichten mit Begründung",
+    "hint": "Führen Sie wesentliche Auswirkungen, Risiken und Chancen sowie die einbezogenen oder ausgelassenen Themen und Angabepflichten mit Begründung auf."
+  },
+  "ESRS-009": {
+    "label": "Definition, Methodik, Annahmen, Datenquellen und Validierung unternehmensspezifischer Kennzahlen",
+    "hint": "Geben Sie für jede unternehmensspezifische Kennzahl Definition, Methodik, Annahmen, Datenquellen und Validierung an."
+  },
+  "ESRS-010": {
+    "label": "Richtlinien zu Klimaschutz und Klimaanpassung",
+    "hint": "Beschreiben Sie Ihre Richtlinien zum Klimaschutz und zur Anpassung an den Klimawandel: was sie abdecken und wer dafür verantwortlich ist."
+  },
+  "ESRS-011": {
+    "label": "Maßnahmen nach Dekarbonisierungshebeln, zugewiesene Mittel, erreichte und erwartete THG-Reduktionen",
+    "hint": "Geben Sie die erreichte oder erwartete Emissionsminderung in tCO2e an und beschreiben Sie die Maßnahmen nach Dekarbonisierungshebeln und die zugewiesenen Mittel."
+  },
+  "ESRS-012": {
+    "label": "Ergebnisse der Resilienzanalyse, Fähigkeit zur Anpassung von Strategie und Geschäftsmodell, Zeithorizonte",
+    "hint": "Beschreiben Sie Ergebnisse und Folgen der Klimaresilienzanalyse, die Fähigkeit zur Anpassung von Strategie und Geschäftsmodell sowie die betrachteten Zeithorizonte und Szenarien."
+  },
+  "ESRS-013": {
+    "label": "THG-Entnahme und -Speicherung im eigenen Betrieb und in der Wertschöpfungskette; CO2-Zertifikate außerhalb der Kette; Methoden",
+    "hint": "Geben Sie in tCO2e die THG-Entnahme und -Speicherung im eigenen Betrieb und in der Wertschöpfungskette, CO2-Zertifikate außerhalb der Kette und die angewandten Methoden an."
+  },
+  "ESRS-014": {
+    "label": "Art, Umfang, Preis und erfasste Mengen der internen CO2-Bepreisung; Übereinstimmung mit dem Jahresabschluss",
+    "hint": "Beschreiben Sie Ihre interne CO2-Bepreisung: Art, Umfang, Preis je tCO2e, erfasste Mengen und Übereinstimmung mit dem Jahresabschluss."
+  },
+  "ESRS-015": {
+    "label": "Physischen und transitorischen Risiken ausgesetzte Vermögenswerte und Umsätze sowie Chancen; aktuelle und erwartete Effekte",
+    "hint": "Beschreiben Sie Vermögenswerte und Umsätze, die physischen und transitorischen Klimarisiken ausgesetzt sind, sowie Chancen; geben Sie aktuelle und erwartete finanzielle Effekte an (Beträge oder Spannen)."
+  },
+  "ESRS-016": {
+    "label": "Richtlinien zu Verschmutzung, Vorfällen, besorgniserregenden Stoffen (SoC/SVHC) und Mikroplastik",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Verschmutzung, Vorfällen, besorgniserregenden und besonders besorgniserregenden Stoffen (SoC/SVHC) und Mikroplastik."
+  },
+  "ESRS-017": {
+    "label": "Wichtigste Maßnahmen und Mittel zur Vermeidung, Verringerung und Beseitigung von Verschmutzung",
+    "hint": "Beschreiben Sie die wichtigsten Maßnahmen zur Vermeidung, Verringerung und Beseitigung von Verschmutzung und die dafür eingesetzten Mittel, einschließlich Beträgen."
+  },
+  "ESRS-018": {
+    "label": "Ziele und Fortschritt nach Schadstoff, Medium und Standort",
+    "hint": "Beschreiben Sie Ihre Ziele zur Verschmutzung nach Schadstoff, Medium und Standort und den Fortschritt (Mengen und Prozent)."
+  },
+  "ESRS-019": {
+    "label": "Hergestellte, verwendete, beschaffte, emittierte oder den Standort verlassende Mengen nach Gefahrenklasse",
+    "hint": "Geben Sie die Mengen besorgniserregender und besonders besorgniserregender Stoffe an, die hergestellt, verwendet, beschafft, emittiert werden oder den Standort verlassen, nach Gefahrenklasse, in kg oder t."
+  },
+  "ESRS-020": {
+    "label": "Richtlinien zu Wasserentnahme, -verbrauch, -ableitung und Gebieten mit Wasserstress",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Wasserentnahme, -verbrauch und -ableitung, insbesondere in Gebieten mit Wasserstress."
+  },
+  "ESRS-021": {
+    "label": "Wichtigste Maßnahmen und Mittel, insbesondere in Gebieten mit Wasserstress",
+    "hint": "Beschreiben Sie die wichtigsten Maßnahmen im Bereich Wasser und die eingesetzten Mittel, insbesondere in Gebieten mit Wasserstress."
+  },
+  "ESRS-022": {
+    "label": "Ziele zu Wasserentnahme, -verbrauch, -ableitung und Gebieten mit Wasserstress",
+    "hint": "Beschreiben Sie Ihre Ziele zu Wasserentnahme, -verbrauch, -ableitung und Gebieten mit Wasserstress (m³ oder %) und den Fortschritt."
+  },
+  "ESRS-023": {
+    "label": "Vereinbarkeit von Strategie und Geschäftsmodell mit Biodiversitätszielen; Plan, Abhängigkeiten und Resilienz",
+    "hint": "Beschreiben Sie, wie Strategie und Geschäftsmodell mit den Biodiversitätszielen vereinbar sind, Ihren Übergangsplan, Abhängigkeiten von Ökosystemen und die Resilienz."
+  },
+  "ESRS-024": {
+    "label": "Richtlinien zu Treibern, Auswirkungen, Abhängigkeiten und sensiblen Standorten",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Treibern des Biodiversitätsverlusts, Auswirkungen, Abhängigkeiten und sensiblen Standorten."
+  },
+  "ESRS-025": {
+    "label": "Minderungshierarchie, Wiederherstellung und Ausgleich, Maßnahmen und Mittel",
+    "hint": "Beschreiben Sie Ihre Biodiversitätsmaßnahmen nach der Minderungshierarchie, Wiederherstellung und Ausgleich sowie die eingesetzten Mittel (Beträge, Flächen)."
+  },
+  "ESRS-026": {
+    "label": "Ziele, ökologische Schwellenwerte und wissenschaftliche Grundlage, Geografie und Ausgleich",
+    "hint": "Beschreiben Sie Ihre Biodiversitätsziele, ökologische Schwellenwerte und ihre wissenschaftliche Grundlage, den geografischen Geltungsbereich und die Nutzung von Ausgleichsmaßnahmen."
+  },
+  "ESRS-027": {
+    "label": "Richtlinien zu Ressourcenzuflüssen und -abflüssen, Ökodesign und Abfallhierarchie",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Ressourcenzuflüssen und -abflüssen, Ökodesign und Abfallhierarchie."
+  },
+  "ESRS-028": {
+    "label": "Wichtigste Maßnahmen und Mittel für Kreislaufwirtschaft und Abfallvermeidung",
+    "hint": "Beschreiben Sie die wichtigsten Maßnahmen für Kreislaufwirtschaft und Abfallvermeidung und die eingesetzten Mittel."
+  },
+  "ESRS-029": {
+    "label": "Ziele zu zirkulären Materialien, Haltbarkeit und Recyclingfähigkeit von Produkten und Abfällen",
+    "hint": "Beschreiben Sie Ihre Ziele zum Anteil zirkulärer Materialien, zur Haltbarkeit und Recyclingfähigkeit von Produkten und zu Abfällen (% oder t) und den Fortschritt."
+  },
+  "ESRS-030": {
+    "label": "Ziele zu wesentlichen Auswirkungen, Risiken und Chancen in Bezug auf die Belegschaft",
+    "hint": "Beschreiben Sie Ihre Ziele zu wesentlichen Auswirkungen, Risiken und Chancen in Bezug auf die eigene Belegschaft und den Fortschritt."
+  },
+  "ESRS-031": {
+    "label": "Mitarbeitende ohne soziale Absicherung bei Krankheit, Arbeitslosigkeit, Unfall oder Invalidität und Mutterschaft",
+    "hint": "Geben Sie Anzahl oder Anteil der Mitarbeitenden an, die bei Krankheit, Arbeitslosigkeit, Arbeitsunfall oder Invalidität und Mutterschaft nicht sozial abgesichert sind."
+  },
+  "ESRS-032": {
+    "label": "Anteil der Mitarbeitenden mit Behinderungen (vorbehaltlich rechtlicher Beschränkungen)",
+    "hint": "Geben Sie den Anteil der Mitarbeitenden mit Behinderungen in Prozent an, soweit die Angabe rechtlich zulässig ist."
+  },
+  "ESRS-033": {
+    "label": "Anspruchsberechtigte Mitarbeitende und Inanspruchnahme familienbezogener Urlaube nach Geschlecht",
+    "hint": "Geben Sie Anzahl oder Anteil der Mitarbeitenden mit Anspruch auf familienbezogenen Urlaub und den Anteil derer an, die ihn genommen haben, nach Geschlecht."
+  },
+  "ESRS-034": {
+    "label": "Richtlinien, erfasste Gruppen und Menschenrechtsverpflichtungen",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Arbeitskräften in der Wertschöpfungskette, die erfassten Gruppen und Ihre Menschenrechtsverpflichtungen."
+  },
+  "ESRS-035": {
+    "label": "Einbindungsprozesse, Beschwerdekanäle, Schutz vor Vergeltung und Abhilfe",
+    "hint": "Beschreiben Sie, wie Sie Arbeitskräfte in der Wertschöpfungskette einbinden, welche Beschwerdekanäle es gibt und wie Schutz vor Vergeltung und Abhilfe gewährleistet werden."
+  },
+  "ESRS-036": {
+    "label": "Maßnahmen, Mittel, schwerwiegende Vorfälle und Wirksamkeit",
+    "hint": "Beschreiben Sie Maßnahmen und Mittel in Bezug auf Arbeitskräfte in der Wertschöpfungskette, schwerwiegende Vorfälle (Anzahl, Beträge) und die Wirksamkeit."
+  },
+  "ESRS-037": {
+    "label": "Qualitative und quantitative Ziele und Fortschritt",
+    "hint": "Beschreiben Sie qualitative und quantitative Ziele in Bezug auf Arbeitskräfte in der Wertschöpfungskette und den Fortschritt."
+  },
+  "ESRS-038": {
+    "label": "Richtlinien, erfasste Gruppen und Orte, einschließlich indigener Völker",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu betroffenen Gemeinschaften, die erfassten Gruppen und Orte, einschließlich indigener Völker."
+  },
+  "ESRS-039": {
+    "label": "Einbindung, Beschwerdekanäle, Schutz und Abhilfe",
+    "hint": "Beschreiben Sie, wie Sie betroffene Gemeinschaften einbinden, welche Beschwerdekanäle es gibt und wie Schutz und Abhilfe gewährleistet werden."
+  },
+  "ESRS-040": {
+    "label": "Wichtigste Maßnahmen und Mittel, schwerwiegende Auswirkungen und Vorfälle, Wirksamkeit",
+    "hint": "Beschreiben Sie die wichtigsten Maßnahmen und Mittel in Bezug auf betroffene Gemeinschaften, schwerwiegende Auswirkungen und Vorfälle (Anzahl, Beträge) und die Wirksamkeit."
+  },
+  "ESRS-041": {
+    "label": "Qualitative und quantitative Ziele und Fortschritt",
+    "hint": "Beschreiben Sie qualitative und quantitative Ziele in Bezug auf betroffene Gemeinschaften und den Fortschritt."
+  },
+  "ESRS-042": {
+    "label": "Richtlinien und erfasste Gruppen zu Information, Sicherheit und Inklusion",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Verbrauchern und Endnutzern: Information, Sicherheit, Inklusion und die erfassten Gruppen."
+  },
+  "ESRS-043": {
+    "label": "Einbindung, Beschwerdekanäle, Schutz und Abhilfe",
+    "hint": "Beschreiben Sie, wie Sie Verbraucher und Endnutzer einbinden, welche Beschwerdekanäle es gibt und wie Schutz und Abhilfe gewährleistet werden."
+  },
+  "ESRS-044": {
+    "label": "Maßnahmen und Mittel, schwerwiegende Vorfälle und Wirksamkeit",
+    "hint": "Beschreiben Sie Maßnahmen und Mittel in Bezug auf Verbraucher und Endnutzer, schwerwiegende Vorfälle (Anzahl, Beträge) und die Wirksamkeit."
+  },
+  "ESRS-045": {
+    "label": "Qualitative und quantitative Ziele und Fortschritt",
+    "hint": "Beschreiben Sie qualitative und quantitative Ziele in Bezug auf Verbraucher und Endnutzer und den Fortschritt."
+  },
+  "ESRS-046": {
+    "label": "Unternehmenskultur, Korruptionsbekämpfung, Hinweisgeberschutz, Tierwohl und Lieferantenrichtlinien",
+    "hint": "Beschreiben Sie Ihre Richtlinien zu Unternehmenskultur, Korruptionsbekämpfung, Hinweisgeberschutz, Tierwohl und Lieferanten."
+  },
+  "ESRS-047": {
+    "label": "Schulungen, Untersuchungen, Lieferantenmanagement und Abhilfe: Maßnahmen und Mittel",
+    "hint": "Beschreiben Sie Maßnahmen und Mittel im Bereich Unternehmensführung: Schulungen, Untersuchungen, Lieferantenmanagement und Abhilfe (Anzahl, %)."
+  },
+  "ESRS-048": {
+    "label": "Ziele und Fortschritt bei wesentlichen Fragen der Unternehmensführung",
+    "hint": "Beschreiben Sie Ihre Ziele zu wesentlichen Fragen der Unternehmensführung und den Fortschritt."
+  },
+  "ESRS-049": {
+    "label": "Politische Zuwendungen, Lobbytätigkeiten, Themen und verantwortliche Vertreter",
+    "hint": "Geben Sie politische Zuwendungen (Beträge) an und beschreiben Sie Lobbytätigkeiten, deren Themen und die verantwortlichen Vertreter des Unternehmens."
+  },
+  "ESRS-050": {
+    "label": "Durchschnittliche Zahlungsfrist, Standardbedingungen und verspätete Zahlungen, insbesondere an KMU",
+    "hint": "Geben Sie die durchschnittliche Zahlungsfrist in Tagen, die Standardzahlungsbedingungen und den Anteil verspäteter Zahlungen an, insbesondere an KMU."
+  }
+}

@@ -1,0 +1,218 @@
+/* Lead dialog — Demo and VESG Pro forms (ТЗ §11, §13). */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-6) var(--space-4);
+  overflow-y: auto;
+  background: rgba(17, 24, 39, 0.55);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+  max-width: 34rem;
+  margin: auto;
+  padding: var(--space-8);
+  background: #fff;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    padding: 0;
+  }
+  .panel {
+    max-width: none;
+    min-height: 100%;
+    border-radius: 0;
+    padding: var(--space-6) var(--space-4) var(--space-10);
+  }
+}
+
+/* 44×44 target — §13 prefers that size for primary controls, and a close button
+   in a modal is one of them. */
+.close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  color: var(--gray-500);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s var(--ease-out);
+}
+.close:hover {
+  background: var(--gray-100);
+  color: var(--gray-900);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+  color: var(--gray-900);
+  padding-right: var(--space-10);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--gray-500);
+  margin-bottom: var(--space-6);
+}
+
+/* Error summary. `:empty` keeps it out of the layout until it has something to
+   say, without a `display` toggle that would fight the live region. */
+.summary {
+  margin-bottom: var(--space-5);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--red-200);
+  border-left: 3px solid var(--red-500);
+  border-radius: var(--radius-md);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+.summary:empty {
+  display: none;
+}
+
+.field {
+  margin-bottom: var(--space-4);
+}
+
+.label {
+  display: block;
+  margin-bottom: var(--space-1-5);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+}
+
+.requiredMark {
+  font-weight: var(--fw-normal);
+  color: var(--gray-500);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: var(--space-2-5) var(--space-3);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background: #fff;
+  color: var(--gray-900);
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  /* 24 CSS px is the §13 minimum target; 44 is the comfortable one. */
+  min-height: 44px;
+  transition:
+    border-color 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
+}
+.textarea {
+  min-height: 88px;
+  resize: vertical;
+  font-family: inherit;
+}
+.input:focus-visible,
+.select:focus-visible,
+.textarea:focus-visible {
+  outline: none;
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 3px var(--blue-100);
+}
+
+/* The error state is a border AND a message under the field — never colour on
+   its own (§13). */
+.inputError {
+  border-color: var(--red-500);
+}
+
+.error {
+  margin-top: var(--space-1-5);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--red-700);
+}
+
+.consentBlock {
+  margin: var(--space-6) 0;
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.checkRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--gray-600);
+  cursor: pointer;
+}
+.checkRow input {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--blue-500);
+  cursor: pointer;
+}
+
+.inlineLink {
+  color: var(--blue-600);
+  text-decoration: underline;
+}
+
+.submit {
+  width: 100%;
+}
+
+.success {
+  padding: var(--space-6) 0;
+  text-align: center;
+}
+.success .subtitle {
+  margin-bottom: var(--space-6);
+}
+
+/* Honeypot. Positioned off-screen rather than `display:none`: a bot that skips
+   hidden inputs is exactly the bot this is meant to catch. `aria-hidden` and
+   `tabindex="-1"` keep it away from assistive tech and from the tab order. */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .close,
+  .input,
+  .select,
+  .textarea {
+    transition: none;
+  }
+}

@@ -1,0 +1,357 @@
+/* `/inventory` (T3.5). Same conventions as the organisation and factors pages:
+   one breakpoint (1024px for the table/drawer split, 768px for the field grid),
+   base rules are the mobile defaults, every responsive override is grouped at
+   the bottom, and colours/space/radii come from the globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.headerGrow {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+.subsectionTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+  margin-bottom: var(--space-2);
+}
+
+/* ── The tab strip: five Scope-1 categories + the two Scope-2 halves ── */
+.tabStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.tabButton,
+.tabButtonActive {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  transition: all 0.2s var(--ease-out);
+}
+
+.tabButton:hover {
+  background: var(--gray-50);
+}
+
+.tabButtonActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+  color: var(--gray-900);
+  font-weight: var(--fw-semibold);
+}
+
+.tabScope {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── The table / drawer split ──────────────────────────────── */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-800);
+}
+
+.rowActive td {
+  background: var(--blue-50);
+}
+
+.linkButton {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--blue-600);
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+}
+
+/* ── The detail drawer ─────────────────────────────────────── */
+.drawer {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  background: var(--white, #fff);
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.drawerHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.iconButton {
+  border: 0;
+  background: transparent;
+  color: var(--gray-500);
+  cursor: pointer;
+  padding: var(--space-1);
+  border-radius: var(--radius-lg);
+}
+
+.iconButton:hover {
+  background: var(--gray-50);
+}
+
+/* ── Forms ─────────────────────────────────────────────────── */
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+/* A disabled fieldset is how the read-only view is expressed: the data stays
+   visible and selectable, and every control inside stops accepting input. */
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.field {
+  min-width: 0;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.inlineForm {
+  border: 1px dashed var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.inlineFormTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+  margin-bottom: var(--space-3);
+}
+
+.reason {
+  margin-top: var(--space-4);
+}
+
+/* ── VR-2: the inline hints, and what is deferred to the server ── */
+.hintList {
+  list-style: none;
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--amber-700, var(--gray-600));
+}
+
+.hintList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+}
+
+.hintIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--amber-500);
+}
+
+.deferred,
+.calculated {
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-3);
+}
+
+.calculatedBody {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+/* ── The version chain (LC-10) ─────────────────────────────── */
+.history {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.historyList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.historyItem,
+.historyItemActive {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+}
+
+.historyItemActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.historyButton {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+}
+
+.historyHead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.historyNo {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.historyTag {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 0 var(--space-2);
+}
+
+.historyMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.historyReason {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+  font-style: italic;
+}
+
+/* ── Notes, refusals, plan locks ───────────────────────────── */
+
+.readOnlyBanner {
+  margin-bottom: var(--space-4);
+}
+
+.saveStatus {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.refusal {
+  list-style: none;
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+.refusal li + li {
+  margin-top: var(--space-1);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .twoCol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+}

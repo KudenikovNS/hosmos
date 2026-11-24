@@ -1,0 +1,253 @@
+{
+  "tCO2e": {
+    "ru": "тCO2e",
+    "de": "tCO2e",
+    "it": "tCO2e",
+    "hr": "tCO2e",
+    "sr": "tCO2e"
+  },
+  "Narrative": {
+    "ru": "Текст",
+    "sl": "Opis",
+    "de": "Text",
+    "it": "Testo",
+    "hr": "Opis",
+    "sr": "Опис"
+  },
+  "MWh": {
+    "ru": "МВт·ч",
+    "de": "MWh",
+    "it": "MWh",
+    "hr": "MWh",
+    "sr": "MWh"
+  },
+  "Metric-dependent": {
+    "ru": "Зависит от показателя",
+    "sl": "Odvisno od kazalnika",
+    "de": "Abhängig von der Kennzahl",
+    "it": "Dipende dalla metrica",
+    "hr": "Ovisi o pokazatelju",
+    "sr": "Зависи од показатеља"
+  },
+  "ha": {
+    "ru": "га",
+    "de": "ha",
+    "it": "ha",
+    "hr": "ha",
+    "sr": "ха"
+  },
+  "mass unit": {
+    "ru": "Единица массы",
+    "sl": "Enota mase",
+    "de": "Masseneinheit",
+    "it": "Unità di massa",
+    "hr": "Jedinica mase",
+    "sr": "Јединица масе"
+  },
+  "m3": {
+    "ru": "м³",
+    "sl": "m³",
+    "de": "m³",
+    "it": "m³",
+    "hr": "m³",
+    "sr": "м³"
+  },
+  "Narrative + currency": {
+    "ru": "Текст + валюта",
+    "sl": "Opis + valuta",
+    "de": "Text + Währung",
+    "it": "Testo + valuta",
+    "hr": "Opis + valuta",
+    "sr": "Опис + валута"
+  },
+  "hours": {
+    "ru": "Часы",
+    "sl": "Ure",
+    "de": "Stunden",
+    "it": "Ore",
+    "hr": "Sati",
+    "sr": "Сати"
+  },
+  "Narrative + count/currency": {
+    "ru": "Текст + количество/валюта",
+    "sl": "Opis + število/valuta",
+    "de": "Text + Anzahl/Währung",
+    "it": "Testo + numero/valuta",
+    "hr": "Opis + broj/valuta",
+    "sr": "Опис + број/валута"
+  },
+  "Count / %": {
+    "ru": "Количество / %",
+    "sl": "Število / %",
+    "de": "Anzahl / %",
+    "it": "Numero / %",
+    "hr": "Broj / %",
+    "sr": "Број / %"
+  },
+  "Narrative / scenarios": {
+    "ru": "Текст / сценарии",
+    "sl": "Opis / scenariji",
+    "de": "Text / Szenarien",
+    "it": "Testo / scenari",
+    "hr": "Opis / scenariji",
+    "sr": "Опис / сценарији"
+  },
+  "Currency/tCO2e + tCO2e": {
+    "ru": "Валюта/тCO2e + тCO2e",
+    "sl": "Valuta/tCO2e + tCO2e",
+    "de": "Währung/tCO2e + tCO2e",
+    "it": "Valuta/tCO2e + tCO2e",
+    "hr": "Valuta/tCO2e + tCO2e",
+    "sr": "Валута/tCO2e + tCO2e"
+  },
+  "Quantity + % + narrative": {
+    "ru": "Количество + % + текст",
+    "sl": "Količina + % + opis",
+    "de": "Menge + % + Text",
+    "it": "Quantità + % + testo",
+    "hr": "Količina + % + opis",
+    "sr": "Количина + % + опис"
+  },
+  "Narrative + currency/area": {
+    "ru": "Текст + валюта/площадь",
+    "sl": "Opis + valuta/površina",
+    "de": "Text + Währung/Fläche",
+    "it": "Testo + valuta/superficie",
+    "hr": "Opis + valuta/površina",
+    "sr": "Опис + валута/површина"
+  },
+  "% + narrative": {
+    "ru": "% + текст",
+    "sl": "% + opis",
+    "de": "% + Text",
+    "it": "% + testo",
+    "hr": "% + opis",
+    "sr": "% + опис"
+  },
+  "tCO2e + currency + narrative": {
+    "ru": "тCO2e + валюта + текст",
+    "sl": "tCO2e + valuta + opis",
+    "de": "tCO2e + Währung + Text",
+    "it": "tCO2e + valuta + testo",
+    "hr": "tCO2e + valuta + opis",
+    "sr": "tCO2e + валута + опис"
+  },
+  "currency": {
+    "ru": "Валюта",
+    "sl": "Valuta",
+    "de": "Währung",
+    "it": "Valuta",
+    "hr": "Valuta",
+    "sr": "Валута"
+  },
+  "Currency / range / narrative": {
+    "ru": "Валюта / диапазон / текст",
+    "sl": "Valuta / razpon / opis",
+    "de": "Währung / Spanne / Text",
+    "it": "Valuta / intervallo / testo",
+    "hr": "Valuta / raspon / opis",
+    "sr": "Валута / распон / опис"
+  },
+  "Days / % / currency": {
+    "ru": "Дни / % / валюта",
+    "sl": "Dnevi / % / valuta",
+    "de": "Tage / % / Währung",
+    "it": "Giorni / % / valuta",
+    "hr": "Dani / % / valuta",
+    "sr": "Дани / % / валута"
+  },
+  "kg / t": {
+    "ru": "кг / т",
+    "de": "kg / t",
+    "it": "kg / t",
+    "hr": "kg / t",
+    "sr": "кг / т"
+  },
+  "Narrative / list": {
+    "ru": "Текст / список",
+    "sl": "Opis / seznam",
+    "de": "Text / Liste",
+    "it": "Testo / elenco",
+    "hr": "Opis / popis",
+    "sr": "Опис / списак"
+  },
+  "tCO2e/EUR": {
+    "ru": "тCO2e/EUR",
+    "de": "tCO2e/EUR",
+    "it": "tCO2e/EUR",
+    "hr": "tCO2e/EUR",
+    "sr": "tCO2e/EUR"
+  },
+  "Narrative / methodology": {
+    "ru": "Текст / методика",
+    "sl": "Opis / metodologija",
+    "de": "Text / Methodik",
+    "it": "Testo / metodologia",
+    "hr": "Opis / metodologija",
+    "sr": "Опис / методологија"
+  },
+  "Narrative + count/%": {
+    "ru": "Текст + количество/%",
+    "sl": "Opis + število/%",
+    "de": "Text + Anzahl/%",
+    "it": "Testo + numero/%",
+    "hr": "Opis + broj/%",
+    "sr": "Опис + број/%"
+  },
+  "Narrative + metadata": {
+    "ru": "Текст + метаданные",
+    "sl": "Opis + metapodatki",
+    "de": "Text + Metadaten",
+    "it": "Testo + metadati",
+    "hr": "Opis + metapodaci",
+    "sr": "Опис + метаподаци"
+  },
+  "% / t / narrative": {
+    "ru": "% / т / текст",
+    "sl": "% / t / opis",
+    "de": "% / t / Text",
+    "it": "% / t / testo",
+    "hr": "% / t / opis",
+    "sr": "% / т / опис"
+  },
+  "Currency + narrative": {
+    "ru": "Валюта + текст",
+    "sl": "Valuta + opis",
+    "de": "Währung + Text",
+    "it": "Valuta + testo",
+    "hr": "Valuta + opis",
+    "sr": "Валута + опис"
+  },
+  "Narrative / cross-reference": {
+    "ru": "Текст / перекрёстная ссылка",
+    "sl": "Opis / navzkrižni sklic",
+    "de": "Text / Querverweis",
+    "it": "Testo / rinvio",
+    "hr": "Opis / unakrsna uputa",
+    "sr": "Опис / унакрсна референца"
+  },
+  "Structured index": {
+    "ru": "Структурированный указатель",
+    "sl": "Strukturirano kazalo",
+    "de": "Strukturiertes Verzeichnis",
+    "it": "Indice strutturato",
+    "hr": "Strukturirano kazalo",
+    "sr": "Структурирани индекс"
+  },
+  "Narrative + currency/ranges": {
+    "ru": "Текст + валюта/диапазоны",
+    "sl": "Opis + valuta/razponi",
+    "de": "Text + Währung/Spannen",
+    "it": "Testo + valuta/intervalli",
+    "hr": "Opis + valuta/rasponi",
+    "sr": "Опис + валута/распони"
+  },
+  "m³ / % + narrative": {
+    "ru": "м³ / % + текст",
+    "sl": "m³ / % + opis",
+    "de": "m³ / % + Text",
+    "it": "m³ / % + testo",
+    "hr": "m³ / % + opis",
+    "sr": "м³ / % + опис"
+  }
+}

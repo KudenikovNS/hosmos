@@ -1,0 +1,237 @@
+/* Scope-3 spend-line editor (T2.4). Matches the calculator's card visual style
+   using the shared design tokens. */
+
+.spanFull {
+  margin-top: var(--space-6);
+}
+@media (min-width: 1024px) {
+  .spanFull {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+.title {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.subtitle {
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.warnBox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--amber-50);
+  color: var(--amber-600);
+}
+.warnText {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  background: var(--gray-50);
+}
+.lineCat {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+.lineLabel {
+  flex: 1;
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+}
+.lineAmount {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--gray-900);
+  white-space: nowrap;
+}
+.removeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-1);
+  border: none;
+  background: transparent;
+  color: var(--gray-400);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+.removeBtn:hover:not(:disabled) {
+  color: var(--red-500, #ef4444);
+  background: var(--gray-100);
+}
+.removeBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.lineUnpriced {
+  flex-shrink: 0;
+}
+
+.empty {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+
+/* The "nothing can price spend" explanation, standing where the add-row would
+   have been. Amber, not red: nothing is broken and nothing the user typed is
+   wrong — the factor library simply carries no spend factors, and the way out is
+   an administrative one. Same anatomy as `/review`'s PlanNote (icon, title,
+   body, hint), tokens only. */
+.unpriceable {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--amber-200);
+  background: var(--amber-50);
+  border-radius: var(--radius-lg);
+}
+.unpriceableIcon {
+  color: var(--amber-600);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.unpriceableTitle {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.unpriceableBody {
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.unpriceableHint {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-600);
+}
+
+.addRow {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.commodityField {
+  flex: 2;
+  min-width: 220px;
+}
+.amountField {
+  flex: 1;
+  min-width: 120px;
+}
+.currencyField {
+  flex: 1;
+  min-width: 120px;
+}
+
+.errorMsg {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--red-600, #dc2626);
+}
+
+.footnote {
+  margin-top: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .addRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .commodityField,
+  .amountField,
+  .currencyField {
+    min-width: 0;
+  }
+  .addBtn {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "cat    remove"
+      "label  label"
+      "amount badge";
+    align-items: center;
+    gap: var(--space-1) var(--space-2);
+  }
+  .lineUnpriced {
+    grid-area: badge;
+    justify-self: end;
+  }
+  .lineCat {
+    grid-area: cat;
+  }
+  .removeBtn {
+    grid-area: remove;
+    justify-self: end;
+  }
+  .lineLabel {
+    grid-area: label;
+  }
+  .lineAmount {
+    grid-area: amount;
+  }
+}

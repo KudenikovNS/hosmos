@@ -1,0 +1,76 @@
+/* One language control everywhere: a bordered pill with the globe, the
+   language's own name and a chevron. The native <select> lies over it,
+   invisible but hit-testable — the pill is the visual, the select the
+   behaviour. */
+.trigger,
+.block {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1-5);
+  min-height: 36px;
+  padding: 0 var(--space-2-5) 0 var(--space-3);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  background: #fff;
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+  line-height: 1;
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease-out),
+    background 0.2s var(--ease-out),
+    color 0.2s var(--ease-out);
+}
+.trigger:hover,
+.block:hover {
+  border-color: var(--gray-300);
+  background: var(--gray-50);
+  color: var(--gray-900);
+}
+.trigger:focus-within,
+.block:focus-within {
+  outline: 2px solid var(--blue-500);
+  outline-offset: 2px;
+}
+.trigger[data-pending],
+.block[data-pending] {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  justify-content: flex-start;
+}
+
+.icon {
+  flex: none;
+  color: var(--gray-400);
+}
+.name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chevron {
+  flex: none;
+  color: var(--gray-400);
+}
+
+.select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px; /* iOS: no zoom on focus */
+}
+.select:disabled {
+  cursor: default;
+}

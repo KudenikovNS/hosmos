@@ -1,0 +1,491 @@
+{
+  "landing": {
+    "meta": {
+      "title": "Hosmos: rendicontazione ESG VSME per le PMI | Piani da 300 € l'anno",
+      "description": "Raccogli i dati ESG, calcola Scope 1 e 2 e prepara un report VSME in Hosmos. Piani Starter, Pro ed Enterprise, più il percorso separato VESG Pro."
+    },
+    "nav": {
+      "aria": "Navigazione principale",
+      "features": "Funzionalità",
+      "process": "Come funziona",
+      "pricing": "Prezzi",
+      "vesg": "VESG",
+      "faq": "FAQ",
+      "open": "Apri il menu",
+      "close": "Chiudi il menu",
+      "skipToContent": "Vai al contenuto",
+      "logIn": "Accedi",
+      "articles": "Articoli"
+    },
+    "cta": {
+      "demo": "Prenota una demo",
+      "vesg": "Verifica l'idoneità VESG",
+      "enterprise": "Parliamo di Enterprise",
+      "whiteLabel": "Parliamo di White Label",
+      "learnVesg": "Scopri VESG Pro"
+    },
+    "hero": {
+      "eyebrow": "RENDICONTAZIONE ESG VSME VOLONTARIA PER LE PMI",
+      "title": "Raccogli i tuoi dati ESG e prepara un report VSME in un'unica piattaforma.",
+      "subtitle": "Hosmos aiuta le PMI a organizzare i dati secondo il VSME, calcolare Scope 1 e 2, stimare le categorie Scope 3 rilevanti e preparare output PDF ed Excel per la verifica interna e la revisione indipendente.",
+      "microcopy": "Abbonamento annuale da {price} IVA esclusa. Nessuna promessa di contributo o di giudizio di revisione."
+    },
+    "outcome": {
+      "title": "Da fogli di calcolo sparsi a un processo guidato",
+      "now": "Oggi",
+      "withHosmos": "Con Hosmos",
+      "rows": [
+        {
+          "now": "I dati sono sparsi tra fogli di calcolo, fatture ed email.",
+          "with": "Un'unica struttura per entità giuridiche, siti e periodi."
+        },
+        {
+          "now": "Non è chiaro cosa richieda davvero il VSME.",
+          "with": "Passi guidati B1–B11 e C1–C9 per il piano scelto."
+        },
+        {
+          "now": "I calcoli sono difficili da documentare.",
+          "with": "Fonte, fattore, metodo ed evidenza accanto alla cifra."
+        },
+        {
+          "now": "Il report viene assemblato a mano.",
+          "with": "Esportazione controllata in PDF ed Excel per la revisione."
+        }
+      ]
+    },
+    "features": {
+      "title": "Dai dati grezzi a un insieme di materiali che qualcuno può verificare",
+      "subtitle": "Sei aree che coprono il percorso dalla raccolta dei dati all'esportazione per la revisione indipendente.",
+      "items": [
+        {
+          "key": "guidedVsme",
+          "title": "VSME guidato",
+          "text": "La struttura delle informative VSME Basic B1–B11; Comprehensive C1–C9 da Pro in su.",
+          "status": "included"
+        },
+        {
+          "key": "ghg",
+          "title": "Calcoli GHG",
+          "text": "Scope 1 e 2 in ogni piano. Scope 3 alla profondità coperta dal tuo piano.",
+          "status": "included"
+        },
+        {
+          "key": "evidence",
+          "title": "Traccia delle evidenze",
+          "text": "Conserva fonte, periodo, unità, fattore, metodo di calcolo e file a supporto.",
+          "status": "included"
+        },
+        {
+          "key": "entities",
+          "title": "Entità e siti",
+          "text": "Separa i dati per entità giuridica e sito; i limiti sono visibili prima di scegliere un piano.",
+          "status": "included"
+        },
+        {
+          "key": "suppliers",
+          "title": "Registro fornitori",
+          "text": "Un registro dei tuoi fornitori con i loro dati ESG su Pro ed Enterprise. Lo compila la tua azienda; non inviamo questionari ai fornitori.",
+          "status": "addOn"
+        },
+        {
+          "key": "exports",
+          "title": "Esportazioni",
+          "text": "PDF ed Excel in ogni piano. Altri formati compaiono solo quando sono davvero pronti.",
+          "status": "included"
+        }
+      ],
+      "badge": {
+        "included": "Incluso",
+        "estimated": "Stimato",
+        "addOn": "Dipende dal piano",
+        "comingLater": "In seguito",
+        "aria": "Stato della funzionalità: {status}"
+      }
+    },
+    "process": {
+      "title": "Cinque passi dai confini di rendicontazione all'esportazione",
+      "subtitle": "Ogni passo corrisponde a una schermata della piattaforma e a un risultato concreto.",
+      "resultLabel": "Risultato",
+      "steps": [
+        {
+          "title": "Definisci il perimetro",
+          "action": "Entità giuridiche, siti, periodo, valuta e metodo di consolidamento.",
+          "result": "L'ambito di rendicontazione è definito."
+        },
+        {
+          "title": "Compila il VSME",
+          "action": "Informative guidate B1–B11; C1–C9 a seconda del piano.",
+          "result": "Stato di completezza e un elenco delle lacune."
+        },
+        {
+          "title": "Aggiungi i dati di attività",
+          "action": "Energia, combustibili, viaggi di lavoro, acquisti e le loro fonti.",
+          "result": "Una base verificabile per i calcoli."
+        },
+        {
+          "title": "Verifica i calcoli",
+          "action": "Fattore, unità, metodo, flag stimato/effettivo ed evidenza.",
+          "result": "Controllo qualità prima dell'esportazione."
+        },
+        {
+          "title": "Esporta",
+          "action": "PDF ed Excel, più un pacchetto per la revisione indipendente.",
+          "result": "Materiale per ulteriori verifiche."
+        }
+      ],
+      "boundaryTitle": "Dove finisce la nostra responsabilità",
+      "boundary": "Hosmos prepara i dati e i materiali. La revisione indipendente di limited assurance è svolta da una società di revisione autorizzata con un contratto separato. Anche la pubblicazione su AJPES è un passo separato."
+    },
+    "depth": {
+      "title": "VSME e Scope 3: profondità per piano",
+      "subtitle": "La stessa tabella regola la pagina dei prezzi e il contratto: nessuna promessa che un piano non copra.",
+      "colPlan": "Piano",
+      "colVsme": "VSME",
+      "colScope3": "Scope 3",
+      "colBoundaries": "Confini organizzativi",
+      "colOutput": "Fornitori e output",
+      "vsmeBasic": "Basic B1–B11",
+      "vsmeBasicComprehensive": "Basic e Comprehensive C1–C9",
+      "entityLimit": "{count, plural, one {# entità giuridica} other {# entità giuridiche}}",
+      "entityLimitUpTo": "Fino a {count, plural, one {# entità giuridica} other {# entità giuridiche}}",
+      "siteLimit": "fino a {count, plural, one {# sito} other {# siti}}",
+      "siteUnlimited": "siti senza limite",
+      "outputStarter": "Nessun registro fornitori; fino a 5 posti team; PDF ed Excel",
+      "outputPro": "Registro fornitori; consolidamento di gruppo; fino a 15 posti team; PDF ed Excel",
+      "outputEnterprise": "Registro fornitori; consolidamento di gruppo; posti team illimitati; PDF ed Excel",
+      "whiteLabelNote": "White Label non è un quarto livello di prezzo; è una configurazione contrattuale separata per i partner.",
+      "estimatedNote": "Lo stato «stimato» resta visibile nell'interfaccia e nell'esportazione.",
+      "tableAria": "Confronto della profondità VSME e Scope 3 per piano",
+      "scope3Spend": "Stima basata sulla spesa per le categorie Scope 3 1 e 2 (beni e servizi acquistati, beni capitali), riportata fuori dai totali Scope 1+2"
+    },
+    "pricing": {
+      "title": "Scegli la profondità di rendicontazione",
+      "subtitle": "Vendiamo un abbonamento annuale, quindi non c'è un'opzione mensile.",
+      "perYear": "l'anno",
+      "vatNote": "IVA esclusa",
+      "highlighted": "Per team in crescita",
+      "planName": {
+        "starter": "Starter",
+        "pro": "Pro",
+        "enterprise": "Enterprise"
+      },
+      "planSummary": {
+        "starter": "Un primo report VSME volontario per una singola entità giuridica.",
+        "pro": "Informative Comprehensive, appendice ESRS semplificati e registro fornitori.",
+        "enterprise": "Un gruppo fino a 10 entità giuridiche, siti e posti team illimitati."
+      },
+      "notes": [
+        "Tutti i prezzi sono IVA esclusa e si riferiscono a un abbonamento software di 12 mesi.",
+        "Implementazione, preparazione esperta del report, revisione indipendente e pubblicazione su AJPES non sono inclusi salvo esplicita indicazione in un'offerta separata."
+      ],
+      "whiteLabelTitle": "Ti serve la piattaforma con il tuo marchio?",
+      "whiteLabelText": "White Label è una configurazione contrattuale separata per i partner e non fa parte di Enterprise. Non pubblichiamo un prezzo."
+    },
+    "vesg": {
+      "eyebrow": "UN PERCORSO SEPARATO",
+      "title": "Ti serve la preparazione esperta di un report VSME per il percorso VESG?",
+      "intro": "Hosmos VESG Pro unisce un anno di accesso al piano SaaS Pro alla preparazione esperta di un report VSME. È un'offerta commerciale separata: non un nuovo livello SaaS, né una garanzia che il voucher venga concesso.",
+      "tableAria": "Composizione del prezzo del primo anno di Hosmos VESG Pro",
+      "rowSaas": "SaaS Pro, 12 mesi",
+      "rowExpert": "Preparazione esperta del report VSME",
+      "rowTotal": "Hosmos VESG Pro, totale",
+      "totalSuffix": "+ IVA",
+      "rowReview": "Revisione indipendente da parte di una società di revisione autorizzata",
+      "rowReviewValue": "Contratto e prezzo separati",
+      "rowAjpes": "Pubblicazione su AJPES",
+      "rowAjpesValue": "Separata",
+      "conditionsTitle": "Condizioni SPS",
+      "conditions": "Le condizioni SPS pubblicate prevedono un cofinanziamento del {percent}% dei costi ammissibili, con un contributo minimo di {min} e massimo di {max}. Il programma è aperto fino al {openUntil}. SPS decide sulla domanda; il contributo non è garantito. Non affermiamo che una licenza Hosmos sia automaticamente un costo ammissibile o rimborsabile.",
+      "conditionsStale": "Al momento non pubblichiamo le condizioni del programma VESG perché non le abbiamo riverificate. Controlla le condizioni attuali, le percentuali di cofinanziamento e i costi ammissibili nella documentazione SPS applicabile.",
+      "checkedAt": "Condizioni verificate il {date}.",
+      "sourceLink": "Pagina ufficiale SPS VESG",
+      "formNote": "Esamineremo i tuoi dati di partenza e ti contatteremo per discutere il percorso. Non valutiamo le domande e non decidiamo sull'ammissibilità."
+    },
+    "trust": {
+      "title": "Cosa puoi verificare e dove sono i limiti",
+      "subtitle": "Invece di stime e loghi, citiamo fonti che puoi aprire da solo.",
+      "sourcesTitle": "Fonti",
+      "efragLink": "Standard EFRAG VSME (Allegato I)",
+      "efragNote": "Terminologia delle informative e struttura Basic / Comprehensive. Versione della metodologia verificata il {date}.",
+      "spsLink": "SPS – il voucher VESG",
+      "spsNote": "Condizioni del programma verificate il {date}.",
+      "auditTrailTitle": "Traccia delle evidenze",
+      "auditTrailNote": "Ogni cifra porta con sé fonte, periodo, unità, fattore, metodo di calcolo ed evidenza allegata. È un campo verificabile nel prodotto, non l'affermazione che un audit sia incluso.",
+      "limitsTitle": "Cosa è Hosmos e cosa non è",
+      "allowed": "Cosa affermiamo",
+      "forbidden": "Cosa non affermiamo",
+      "rows": [
+        {
+          "allowed": "Ti aiutiamo a preparare un report VSME.",
+          "forbidden": "CSRD-ready in 30 minuti."
+        },
+        {
+          "allowed": "Fino al 60% dei costi ammissibili alle condizioni SPS.",
+          "forbidden": "Un contributo garantito."
+        },
+        {
+          "allowed": "Materiale per una revisione indipendente.",
+          "forbidden": "Audit incluso."
+        },
+        {
+          "allowed": "Una stima Scope 3 basata sulla spesa per le categorie 1 e 2.",
+          "forbidden": "Scope 3 completo a 15 categorie."
+        },
+        {
+          "allowed": "White Label per contratto.",
+          "forbidden": "White Label come parte di Enterprise."
+        },
+        {
+          "allowed": "Annunciamo una funzionalità quando è davvero pronta.",
+          "forbidden": "Promesse su XBRL/iXBRL, CDP, SBTi o TCFD."
+        }
+      ],
+      "legal": "Hosmos non fornisce servizi di revisione e non decide sulla concessione di un contributo. La completezza e la correttezza del risultato dipendono dai dati di origine del cliente. Le condizioni VESG possono cambiare; controlla la documentazione SPS applicabile."
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Le domande commerciali e regolatorie che emergono prima di una demo.",
+      "items": [
+        {
+          "q": "Che cos'è il VSME?",
+          "a": "Uno standard europeo volontario di rendicontazione di sostenibilità per micro, piccole e medie imprese non quotate. Hosmos struttura la raccolta dei dati alla profondità VSME che scegli."
+        },
+        {
+          "q": "Hosmos sostituisce un revisore?",
+          "a": "No. La piattaforma aiuta a preparare dati, calcoli ed esportazione. La revisione indipendente è svolta da una società di revisione autorizzata con un contratto separato."
+        },
+        {
+          "q": "Quali categorie Scope 3 sono coperte?",
+          "a": "Ogni piano stima le categorie 1 e 2 (beni e servizi acquistati, beni capitali) dalla spesa annua con i fattori EXIOBASE. La stima è riportata separatamente dai totali Scope 1 e 2 ed è contrassegnata come stima. Le altre 13 categorie non sono coperte."
+        },
+        {
+          "q": "Cosa include l'abbonamento annuale?",
+          "a": "L'accesso alle funzionalità del piano scelto per 12 mesi. Servizi esperti, revisione indipendente e pubblicazione su AJPES non sono inclusi salvo indicazione separata."
+        },
+        {
+          "q": "Che cos'è Hosmos VESG Pro?",
+          "a": "Un percorso separato per il primo anno: SaaS Pro a 1.000 € più la preparazione esperta del report VSME a 2.000 €, per un totale di 3.000 € IVA esclusa. Non è un livello SaaS aggiuntivo."
+        },
+        {
+          "q": "Hosmos garantisce un contributo SPS?",
+          "a": "No. SPS decide sulla domanda e sull'ammissibilità dei costi. Secondo le condizioni pubblicate, è possibile un cofinanziamento del 60% dei costi ammissibili entro limiti stabiliti."
+        },
+        {
+          "q": "La pubblicazione su AJPES e la revisione indipendente sono incluse?",
+          "a": "No. Entrambe sono concordate e pagate separatamente."
+        },
+        {
+          "q": "Supportate XBRL, iXBRL, CDP, SBTi o TCFD?",
+          "a": "Non promettiamo queste funzionalità in questa pagina finché non sono davvero pronte e verificate. Potranno essere abilitate in seguito."
+        },
+        {
+          "q": "In cosa Enterprise differisce da White Label?",
+          "a": "Enterprise è un piano SaaS per un gruppo fino a 10 entità giuridiche con siti e posti team illimitati. White Label è una configurazione contrattuale separata con il marchio di un partner."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Guarda la piattaforma sui tuoi dati",
+      "subtitle": "Ti guideremo tra le informative guidate, i calcoli e l'esportazione. Se ti serve la preparazione esperta del report, parliamo del percorso VESG Pro.",
+      "note": "Abbonamento annuale da {price} IVA esclusa. Nessuna promessa di contributo o di giudizio di revisione."
+    },
+    "footer": {
+      "tagline": "Una piattaforma per la rendicontazione ESG VSME volontaria per le piccole e medie imprese.",
+      "by": "di HelpH d.o.o.",
+      "sectionProduct": "Prodotto",
+      "sectionLegal": "Legale",
+      "sectionSources": "Fonti",
+      "terms": "Termini e privacy",
+      "contact": "Contatti",
+      "copyright": "© {year} HelpH d.o.o. Tutti i diritti riservati.",
+      "disclaimer": "Hosmos non fornisce servizi di revisione e non decide sulla concessione di un contributo."
+    },
+    "form": {
+      "demoTitle": "Prenota una demo",
+      "demoSubtitle": "Compila il modulo e ti contatteremo per una dimostrazione dal vivo sui tuoi dati.",
+      "vesgTitle": "Verifica l'idoneità VESG",
+      "vesgSubtitle": "Esamineremo i tuoi dati di partenza e ti contatteremo per discutere il percorso. Non è una valutazione di ammissibilità.",
+      "close": "Chiudi il modulo",
+      "required": "obbligatorio",
+      "submit": "Invia richiesta",
+      "submitVesg": "Parliamo di VESG Pro",
+      "submitting": "Invio …",
+      "name": "Nome e cognome",
+      "email": "Email di lavoro",
+      "company": "Azienda",
+      "country": "Paese",
+      "entityCount": "Numero di entità giuridiche",
+      "siteCount": "Numero di siti",
+      "interest": "Mi interessa",
+      "size": "Dimensione dell'azienda",
+      "hasEmployee": "Avete almeno un dipendente?",
+      "period": "Periodo di rendicontazione e scadenza preferita",
+      "comment": "Commento",
+      "inSlovenia": "L'azienda è registrata in Slovenia?",
+      "choose": "Seleziona …",
+      "options": {
+        "entities1": "1",
+        "entities2to3": "2–3",
+        "entities4to10": "4–10",
+        "entities10plus": "più di 10",
+        "yes": "Sì",
+        "no": "No",
+        "unknown": "Non lo so",
+        "sizeMicro": "Micro",
+        "sizeSmall": "Piccola",
+        "sizeMedium": "Media",
+        "sizeOther": "Altro",
+        "interestStarter": "Starter",
+        "interestPro": "Pro",
+        "interestEnterprise": "Enterprise",
+        "interestWhiteLabel": "White Label"
+      },
+      "consent": "Acconsento al trattamento dei miei dati personali in conformità con l'informativa sulla privacy.",
+      "consentLink": "informativa sulla privacy",
+      "marketing": "Vorrei ricevere occasionalmente novità sul prodotto. (facoltativo)",
+      "honeypotLabel": "Lascia vuoto questo campo.",
+      "errors": {
+        "required": "Questo campo è obbligatorio.",
+        "email": "Inserisci un indirizzo email di lavoro valido.",
+        "consent": "Ci serve il tuo consenso prima di poter inviare la richiesta.",
+        "tooLong": "Questo testo è troppo lungo.",
+        "server": "Non è stato possibile inviare la richiesta. Riprova, oppure scrivi all'indirizzo nel piè di pagina.",
+        "rateLimited": "Questa richiesta è stata inviata troppe volte. Riprova tra qualche minuto.",
+        "summaryOne": "Il modulo contiene {n} errore.",
+        "summaryTwo": "Il modulo contiene {n} errori.",
+        "summaryFew": "Il modulo contiene {n} errori.",
+        "summaryOther": "Il modulo contiene {n} errori."
+      },
+      "successTitle": "Richiesta inviata",
+      "successBody": "Risponderemo all'indirizzo email indicato, di norma entro due giorni lavorativi.",
+      "successClose": "Chiudi"
+    },
+    "noscript": "L'invio del modulo richiede JavaScript. Ogni prezzo, condizione e fonte in questa pagina è leggibile anche senza; puoi inviare la richiesta anche via email.",
+    "v2": {
+      "triggers": {
+        "eyebrow": "QUANDO DIVENTA URGENTE",
+        "title": "I quattro motivi per cui le aziende si rivolgono a noi",
+        "subtitle": "Se uno di questi ti descrive, un report VSME è una questione di scadenze, non di teoria.",
+        "items": [
+          {
+            "key": "bank",
+            "title": "La richiesta di una banca",
+            "text": "Per finanziare o rinnovare un prestito, la banca chiede dati di sostenibilità nella struttura VSME."
+          },
+          {
+            "key": "client",
+            "title": "Il questionario di un grande cliente",
+            "text": "Un cliente sta valutando i suoi fornitori e si aspetta un report che qualcuno possa verificare."
+          },
+          {
+            "key": "tender",
+            "title": "Gare e catene di fornitura",
+            "text": "Partecipi a gare in cui i criteri di sostenibilità fanno parte del punteggio."
+          },
+          {
+            "key": "vesg",
+            "title": "Il voucher VESG",
+            "text": "Stai facendo domanda per il voucher SPS, che richiede un report con revisione indipendente."
+          }
+        ]
+      },
+      "preview": {
+        "caption": "Esempio: informative VSME in Hosmos",
+        "exampleNote": "I dati mostrati sono un esempio, non il risultato di un'azienda reale.",
+        "period": "Periodo di rendicontazione",
+        "periodValue": "01.01.2024 – 31.12.2024",
+        "progress": "Avanzamento del report",
+        "moduleBasic": "VSME Basic (B1–B11)",
+        "emissions": "Emissioni di gas serra",
+        "scope1": "Scope 1",
+        "scope1Note": "Emissioni dirette",
+        "scope2": "Scope 2",
+        "scope2Note": "Indirette, da energia",
+        "scope3": "Scope 3",
+        "scope3Note": "Categorie stimate",
+        "actual": "Effettivo",
+        "estimated": "Stimato",
+        "evidence": "Evidenze",
+        "evidenceValue": "23 / 29 informative",
+        "disclosures": [
+          "B1 · Base di preparazione",
+          "B2 · Pratiche, politiche e iniziative future",
+          "B3 · Energia ed emissioni di gas serra",
+          "B4 · Inquinamento di aria, acqua e suolo",
+          "B5 · Biodiversità",
+          "B6 · Acqua",
+          "B7 · Uso delle risorse, economia circolare e rifiuti",
+          "B8 · Caratteristiche generali della forza lavoro",
+          "B9 · Salute e sicurezza della forza lavoro",
+          "B10 · Retribuzione, contrattazione e formazione",
+          "B11 · Condanne e sanzioni per corruzione"
+        ]
+      },
+      "stepPreview": {
+        "label": "Cosa vedi sullo schermo",
+        "steps": [
+          {
+            "caption": "Confini di rendicontazione",
+            "rows": [
+              ["Entità giuridiche", "3"],
+              ["Siti", "5"],
+              ["Anno base", "2024"],
+              ["Metodo di consolidamento", "Controllo operativo"]
+            ]
+          },
+          {
+            "caption": "Struttura delle informative",
+            "rows": [
+              ["Basic (B1–B11)", "82%"],
+              ["Comprehensive (C1–C9)", "Per piano"],
+              ["Contrassegnate non applicabili", "3"]
+            ]
+          },
+          {
+            "caption": "Dati di attività",
+            "rows": [
+              ["Elettricità (Scope 2)", "370,0 MWh"],
+              ["Fonte del fattore", "SI, 2024"],
+              ["Metodo", "Location-based"],
+              ["Evidenza", "Fattura, PDF"]
+            ]
+          },
+          {
+            "caption": "Controllo qualità",
+            "rows": [
+              ["Completezza delle informative", "76%"],
+              ["Note aperte", "2"],
+              ["Valori stimati", "Segnalati"]
+            ]
+          },
+          {
+            "caption": "Esportazione",
+            "rows": [
+              ["Report PDF", "Pronto"],
+              ["Excel con i dati", "Pronto"],
+              ["Pacchetto per la revisione", "Pronto"]
+            ]
+          }
+        ]
+      },
+      "depthPricing": {
+        "title": "Profondità di rendicontazione e prezzo in un unico posto",
+        "subtitle": "Le schede dei piani dicono quanto costa un piano e a chi è rivolto; il confronto elenca cosa copre ciascuno. Stesse cifre, una sola vista.",
+        "matrixHeading": "Cosa copre il piano"
+      },
+      "vesgEquation": {
+        "outsideTitle": "Cosa non include il prezzo",
+        "plus": "e",
+        "equals": "in totale"
+      },
+      "finalCta": {
+        "note": "Rispondiamo entro due giorni lavorativi. Una demo è una conversazione davanti a uno schermo, non una telefonata di vendita."
+      }
+    },
+    "articles": {
+      "title": "Articoli sulla rendicontazione",
+      "lead": "Testi brevi per un'azienda che rendiconta per la prima volta: cos'è lo standard, quali dati raccogliere e com'è il percorso verso il primo report.",
+      "all": "Tutti gli articoli"
+    }
+  }
+}

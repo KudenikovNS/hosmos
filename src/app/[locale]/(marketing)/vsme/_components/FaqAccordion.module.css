@@ -1,0 +1,84 @@
+/* FAQ accordion (ТЗ §10). */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-200);
+}
+
+.item {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.headerWrap {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 60px;
+  padding: var(--space-4) 0;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  color: var(--gray-900);
+}
+.header:hover .question {
+  color: var(--blue-600);
+}
+
+.question {
+  font-size: var(--text-base);
+  line-height: 1.5;
+  font-weight: var(--fw-semibold);
+  transition: color 200ms var(--ease-out);
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--gray-500);
+  transition: transform 200ms var(--ease-out);
+}
+.iconOpen {
+  transform: rotate(45deg);
+  color: var(--blue-500);
+}
+
+.panel {
+  padding-bottom: var(--space-5);
+  animation: reveal 200ms var(--ease-out);
+}
+
+.answer {
+  max-width: 44rem;
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--gray-600);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .question,
+  .icon {
+    transition: none;
+  }
+  .panel {
+    animation: none;
+  }
+}

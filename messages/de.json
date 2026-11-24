@@ -1,0 +1,2240 @@
+{
+  "common": {
+    "upgrade": "Upgrade",
+    "total": "Gesamt",
+    "user": "Benutzer",
+    "language": "Sprache",
+    "loading": "Wird geladen...",
+    "selectPlaceholder": "Auswählen...",
+    "help": "Hilfe",
+    "noLegalEntity": {
+      "title": "Noch keine juristische Person angelegt",
+      "description": "Öffnen Sie <organisation>Organisation</organisation> und legen Sie eine juristische Person an, um mit der Berichtsvorbereitung zu beginnen."
+    },
+    "noReportingPeriod": {
+      "title": "Noch kein Berichtszeitraum",
+      "description": "Beginnen Sie auf der Seite „<organisation>Organisation</organisation>“: Legen Sie die juristische Person und den ersten Berichtszeitraum an."
+    },
+    "noReportRevision": {
+      "title": "Erstellen Sie einen Berichtsentwurf",
+      "description": "Für „{period}“ gibt es noch keinen Entwurf. Öffnen Sie „<organisation>Organisation</organisation>“, wählen Sie diesen Zeitraum und klicken Sie auf „{action}“."
+    },
+    "noInventoryData": {
+      "title": "Geben Sie zuerst die Berichtsdaten ein",
+      "description": "Öffnen Sie „<inventory>Daten</inventory>“ und fügen Sie Zeilen für den ausgewählten Zeitraum hinzu. Kehren Sie dann hierher zurück, um Dokumente anzuhängen und die Datenqualität zu bewerten."
+    },
+    "reportApprovalRequired": {
+      "title": "Der Bericht wurde noch nicht freigegeben",
+      "description": "Für „{period}“ liegt noch keine freigegebene Berichtsrevision vor. Öffnen Sie „<review>Prüfung und Freigabe</review>“, schließen Sie die Prüfung ab und geben Sie den Bericht frei, bevor Sie eine Datei erstellen."
+    },
+    "notices": {
+      "loadFailed": "Dieser Bereich konnte nicht geladen werden. Versuchen Sie es gleich noch einmal.",
+      "accessChanged": "Ihre Zugriffsrechte haben sich geändert. Laden Sie die Seite neu, um fortzufahren.",
+      "planRequiredTitle": "Ihr Plan enthält dies nicht",
+      "planRequiredBody": "Der Server hat die Änderung abgelehnt, weil der Plan sie nicht abdeckt. Ein Upgrade schaltet sie frei.",
+      "upgrade": "Plan upgraden",
+      "ruleUnknown": "Die Änderung wurde von Regel {code} abgelehnt.",
+      "field": "Prüfen Sie den Wert des Feldes „{field}“.",
+      "generic": "Die Änderung konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "noCompany": {
+      "title": "Unternehmen anlegen",
+      "subtitle": "Ihr Konto ist noch mit keinem Unternehmen verknüpft.",
+      "cardTitle": "Arbeitsbereich des Unternehmens",
+      "body": "Das Unternehmen ist der Arbeitsbereich für Ihre Daten, Berechnungen und Berichte. Geben Sie seinen Namen ein, um zu beginnen; Sie werden sein Administrator.",
+      "nameLabel": "Unternehmensname",
+      "namePlaceholder": "Muster GmbH",
+      "create": "Unternehmen anlegen",
+      "nameRequired": "Geben Sie den Unternehmensnamen ein.",
+      "failed": "Das Unternehmen konnte nicht angelegt werden. Bitte versuchen Sie es erneut.",
+      "suspended": "Ihr Zugang zum Unternehmen ist gesperrt. Wenden Sie sich an dessen Administrator.",
+      "invited": "Wenn Kollegen Sie in ihr Unternehmen eingeladen haben, öffnen Sie den Link aus der Einladungs-E-Mail, statt ein neues anzulegen."
+    }
+  },
+  "metadata": {
+    "title": "Hosmos — ESG-Plattform für KMU",
+    "description": "ESG-Kennzahlen berechnen, nichtfinanzielle Daten verwalten und Berichte nach EU-Standards automatisch erstellen. Einstieg in unter 30 Minuten."
+  },
+  "nav": {
+    "readiness": "Bereitschaft",
+    "dashboard": "Dashboard",
+    "governance": "Governance",
+    "supplyChain": "Lieferkette",
+    "goals": "Ziele & OKR",
+    "settings": "Einstellungen",
+    "organisation": "Organisation",
+    "factors": "Emissionsfaktoren",
+    "inventory": "Daten",
+    "disclosures": "Angaben",
+    "scope3": "Scope 3 (Ausgaben)",
+    "evidence": "Nachweise & Qualität",
+    "review": "Prüfung & Freigabe",
+    "reports": "Berichte",
+    "vesg": "VESG-Gutschein"
+  },
+  "topbar": {
+    "notifications": "Benachrichtigungen",
+    "activeCompany": "Aktives Unternehmen",
+    "switchError": "Unternehmen konnte nicht gewechselt werden — Ihr Zugriff hat sich möglicherweise geändert. Bitte Seite neu laden.",
+    "unsavedSwitch": "Einige Änderungen konnten nicht gespeichert werden. Bleiben Sie, um sie zu korrigieren, oder wechseln Sie, ohne diese Änderungen zu speichern.",
+    "stay": "Bleiben",
+    "discardAndSwitch": "Ohne Speichern wechseln",
+    "switchRecovery": "Das aktive Unternehmen konnte nicht bestätigt werden. Laden Sie die Seite vor dem Bearbeiten neu.",
+    "reload": "Seite neu laden",
+    "detachedSaveError": "Änderungen im geschlossenen Formular konnten nicht gespeichert werden. Öffnen Sie es erneut und beheben Sie den Fehler. Der Entwurf bleibt in diesem Tab erhalten."
+  },
+  "sidebar": {
+    "closeMenu": "Menü schließen",
+    "openMenu": "Menü öffnen",
+    "expandSidebar": "Seitenleiste ausklappen",
+    "collapseSidebar": "Seitenleiste einklappen",
+    "mainNavigation": "Hauptnavigation",
+    "logout": "Abmelden",
+    "logoutFailed": "Abmelden fehlgeschlagen. Prüfen Sie die Verbindung und versuchen Sie es erneut.",
+    "accountMenu": "Kontomenü"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Wo Ihr Bericht steht und worauf er wartet.",
+    "period": {
+      "title": "Berichtszeitraum",
+      "subtitle": "Angezeigt wird der Status der aktuellen Revision des Zeitraums.",
+      "noRevision": "Dieser Zeitraum hat noch keine Revision. Datenzeilen gehören zu einer Revision — starten Sie eine auf der Seite „Organisation“.",
+      "revision": "Revision {no} — die, an der gerade gearbeitet wird.",
+      "factorSet": "Faktorensatz {version}"
+    },
+    "periodStatus": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "inReview": "In Prüfung",
+      "approved": "Freigegeben",
+      "locked": "Gesperrt",
+      "reopened": "Wiedereröffnet"
+    },
+    "rows": {
+      "title": "Erfasste Daten",
+      "subtitle": "Aktuelle Versionen dieser Revision. Eine bearbeitete Zeile zählt einmal, in ihrer neuesten Version.",
+      "count": "{count} Zeilen",
+      "empty": "Für diese Revision wurde noch nichts erfasst.",
+      "scope": "Scope",
+      "total": "Zeilen",
+      "approved": "Freigegeben",
+      "draft": "Wartet auf Freigabe",
+      "all": "Alle Daten",
+      "scopes": {
+        "scope1": "Scope 1 — eigene Quellen",
+        "scope2": "Scope 2 — eingekaufte Energie",
+        "disclosures": "Angaben"
+      }
+    },
+    "validation": {
+      "title": "Validierung",
+      "subtitle": "Was die Regeln zu dieser Revision bereits gesagt haben. Das Öffnen dieser Seite prüft nichts erneut.",
+      "blocking": "{count, plural, =0 {Nichts blockiert} one {# blockierender Befund} other {# blockierende Befunde}}",
+      "warnings": "{count, plural, =0 {Keine Warnungen.} one {# Warnung — einen Blick wert, aber nichts wird dadurch aufgehalten.} other {# Warnungen — einen Blick wert, aber nichts wird dadurch aufgehalten.}}",
+      "notRun": "Noch keine Regel hat diese Revision geprüft. Prüfungen laufen beim Speichern, Einreichen oder Freigeben von Daten.",
+      "clean": "Nichts hält diese Revision auf."
+    },
+    "emissions": {
+      "title": "Emissionssummen",
+      "subtitle": "Die Zahlen des letzten freigegebenen Berechnungslaufs. Diese Seite liest sie nur — hier ändert sich keine Zahl.",
+      "revisionStatus": {
+        "approved": "Freigegeben",
+        "locked": "Gesperrt"
+      },
+      "revision": "Revision {no} — die freigegebene Revision, aus der diese Zahlen stammen.",
+      "calculatedAt": "Berechnet am {at} (UTC).",
+      "noApproved": "Noch keine freigegebene Berechnung",
+      "noApprovedBody": "Es wurde noch nichts für die Berichterstattung freigegeben, daher gibt es keine Summen — nicht null Tonnen, sondern gar keine Zahl. Erfassen Sie Ihre Scope-1- und Scope-2-Zeilen und lassen Sie sie freigeben, dann erscheinen die Summen hier.",
+      "noTotals": "Keine Summen vorhanden",
+      "noTotalsBody": "Summen erscheinen, sobald diese freigegebene Revision eine abgeschlossene Berechnung hat. Die Zeilen dahinter liegen in der Datenerfassung.",
+      "noRun": "Diese Revision wurde freigegeben, aber nie berechnet, daher hat sie keine Summen veröffentlicht.",
+      "failed": "{count, plural, one {# Zeile dieses Laufs konnte nicht berechnet werden, daher wurde gar keine Summe veröffentlicht — eine Summe, die sie stillschweigend ausließe, wäre zu klein.} other {# Zeilen dieses Laufs konnten nicht berechnet werden, daher wurde gar keine Summe veröffentlicht — eine Summe, die sie stillschweigend ausließe, wäre zu klein.}}",
+      "stale": "Die Daten hinter diesem Lauf haben sich nach der Berechnung geändert ({sources}). Unten stehen die freigegebenen Zahlen; damit sie die aktuellen Daten beschreiben, ist eine neue Berechnung nötig.",
+      "historicalContextMissing": "Die ursprünglichen Eingaben dieser älteren Berechnung wurden nicht gespeichert. Die Emissionssummen sind verfügbar, historische Umsätze, Intensitäten und die Energieaufteilung lassen sich jedoch nicht bestätigen. Eine offene Revision kann neu berechnet werden; eine gesperrte Revision benötigt verifizierte historische Eingaben.",
+      "staleSource": {
+        "rows": "erfasste Zeilen",
+        "period": "der Berichtszeitraum",
+        "period_scope": "die Berichtsgrenze",
+        "organisation": "Organisationsdaten",
+        "fx": "Wechselkurse",
+        "context": "fehlender historischer Berechnungskontext",
+        "formula": "Umrechnung der Ausgabeeinheit des Faktors"
+      },
+      "noFigure": "Keine Zahl veröffentlicht",
+      "kpi": {
+        "scope1": "Scope 1 — eigene Quellen",
+        "scope2Lb": "Scope 2 — standortbasiert",
+        "scope2Mb": "Scope 2 — marktbasiert",
+        "energy": "Energieverbrauch",
+        "intensity": "Intensität — standortbasiert",
+        "coverage": "Was diese Zahlen abdecken"
+      },
+      "units": {
+        "tCO2e": "t CO₂e",
+        "MWh": "MWh",
+        "intensityEur": "t CO₂e / EUR"
+      },
+      "coverage": {
+        "legalEntities": "{included} von {total} juristischen Personen",
+        "facilities": "{included} von {total} Standorten"
+      },
+      "outputUnitCorrectionRequired": "Diese ältere Berechnung hat die Ausgabeeinheiten des Faktors nicht in Kilogramm umgerechnet. Berechnen Sie eine offene Revision neu; erstellen Sie für eine gesperrte Revision eine Korrekturrevision. Gespeicherte Werte wurden nicht überschrieben."
+    },
+    "links": {
+      "organisation": "Organisation und Grenzen",
+      "organisationBody": "Juristische Personen, Standorte, Berichtszeiträume und was innerhalb der Grenze liegt.",
+      "inventory": "Datenerfassung",
+      "inventoryBody": "Scope-1- und Scope-2-Zeilen dieser Revision erfassen und freigeben."
+    },
+    "errors": {
+      "accessChanged": "Ihre Zugriffsrechte haben sich geändert. Laden Sie die Seite neu, um fortzufahren.",
+      "loadFailed": "Das Dashboard konnte nicht geladen werden. Versuchen Sie es gleich noch einmal."
+    }
+  },
+  "billing": {
+    "title": "Abrechnung",
+    "subtitle": "Abonnement upgraden",
+    "panelTitle": "Plan upgraden",
+    "panelSubtitle": "Sichere Kartenzahlung über Revolut",
+    "periodMonthly": "Monatlich",
+    "periodAnnual": "Jährlich",
+    "perMonth": "/ Monat",
+    "perYear": "/ Jahr",
+    "highlightFull": "Umfassendes Modul, vereinfachte ESRS, Lieferantenregister",
+    "highlightCore": "Basismodul, PDF und Excel",
+    "continueToPayment": "Weiter zur Zahlung",
+    "youArePaying": "Sie zahlen",
+    "billingDetails": "Rechnungsdaten",
+    "cardholderName": "Name des Karteninhabers",
+    "city": "Stadt",
+    "postcode": "Postleitzahl",
+    "street": "Straße",
+    "country": "Land",
+    "cardDetails": "Kartendaten",
+    "payAmount": "{amount} bezahlen",
+    "secureNote": "Ihre Karte wird direkt bei Revolut eingegeben — wir sehen sie nie. Die Karte wird für künftige Verlängerungen gespeichert.",
+    "errCardDeclined": "Ihre Karte konnte nicht verarbeitet werden. Bitte prüfen Sie die Angaben und versuchen Sie es erneut.",
+    "errFormLoad": "Das Zahlungsformular konnte nicht geladen werden. Bitte erneut versuchen.",
+    "errNetwork": "Netzwerkfehler — bitte Verbindung prüfen und erneut versuchen.",
+    "errSessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+    "errCheckoutStart": "Der Bezahlvorgang konnte nicht gestartet werden. Bitte erneut versuchen.",
+    "countries": {
+      "SI": "Slowenien",
+      "AT": "Österreich",
+      "DE": "Deutschland",
+      "HR": "Kroatien",
+      "IT": "Italien",
+      "GB": "Vereinigtes Königreich",
+      "FR": "Frankreich",
+      "NL": "Niederlande",
+      "US": "Vereinigte Staaten"
+    },
+    "return": {
+      "subtitle": "Zahlungsbestätigung",
+      "freeTitle": "Keine Zahlung nötig",
+      "freeBody": "Sie nutzen den kostenlosen Plan, es war nichts zu berechnen. Ein Upgrade auf einen bezahlten Plan ist jederzeit in den Einstellungen möglich.",
+      "paidTitle": "Zahlung eingegangen",
+      "paidBody": "Danke — Ihre Zahlung wurde erfolgreich übermittelt. Ihr Abonnement wird aktiviert und ist in Kürze bereit.",
+      "paidNote": "Die Aktivierung wird von Revolut im Hintergrund bestätigt. Wenn Ihr Plan nach einigen Minuten nicht aktualisiert ist, laden Sie die Einstellungen neu.",
+      "goToDashboard": "Zum Dashboard",
+      "viewSettings": "Einstellungen anzeigen"
+    }
+  },
+  "featureGate": {
+    "defaultTitle": "Dies ist eine kostenpflichtige Funktion",
+    "subtitle": "Upgraden Sie Ihren Plan, um diesen Bereich freizuschalten.",
+    "requires": "Erfordert",
+    "upgrade": "Upgrade"
+  },
+  "governance": {
+    "title": "Governance",
+    "subtitle": "ESRS G1 — Unternehmensführung",
+    "gateTitle": "Governance ist eine kostenpflichtige Funktion",
+    "completion": "Vollständigkeit der G-Parameter",
+    "groupMeta": "{done} von {total} erledigt",
+    "save": "Governance-Daten speichern",
+    "saving": "Wird gespeichert...",
+    "saved": "Gespeichert",
+    "unsaved": "Ungespeicherte Änderungen",
+    "saveError": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
+    "footnote": "Diese Governance-Parameter entsprechen den Angabepflichten von ESRS G1 (Unternehmensführung). Der Erfüllungsstand wird in erstellte ESRS-Berichte aufgenommen.",
+    "catBoard": "Vorstand & Führung",
+    "catEthics": "Ethik & Korruptionsbekämpfung",
+    "catData": "Datenschutz & Privatsphäre",
+    "catRisk": "Risikomanagement",
+    "items": {
+      "boardComposition": "Zusammensetzung des Vorstands dokumentiert",
+      "independentDirectors": "Unabhängige Direktoren benannt",
+      "boardDiversity": "Diversitätsrichtlinie für den Vorstand",
+      "execCompensation": "Offenlegung der Vorstandsvergütung",
+      "esgCommittee": "ESG-Ausschuss des Vorstands",
+      "codeOfEthics": "Ethikkodex veröffentlicht",
+      "antiCorruption": "Antikorruptionsrichtlinie",
+      "whistleblowing": "Hinweisgeberkanal aktiv",
+      "conflictOfInterest": "Richtlinie zu Interessenkonflikten",
+      "politicalContributions": "Richtlinie zu politischen Spenden",
+      "antiBriberyTraining": "Schulung gegen Bestechung absolviert",
+      "gdprAssessment": "DSGVO-Konformitätsbewertung",
+      "dpa": "Auftragsverarbeitungsvertrag (AVV)",
+      "privacyPolicy": "Datenschutzerklärung veröffentlicht",
+      "breachNotification": "Prozess zur Meldung von Datenpannen",
+      "dpoAppointed": "Datenschutzbeauftragter benannt",
+      "dataRetention": "Richtlinie zur Datenaufbewahrung",
+      "riskRegister": "Risikoregister wird geführt",
+      "riskMethodology": "Methodik der Risikobewertung",
+      "continuityPlan": "Notfall- und Kontinuitätsplan",
+      "internalAudit": "Interne Revision",
+      "complianceMonitoring": "Überwachung der Regelkonformität"
+    }
+  },
+  "supplyChain": {
+    "title": "Lieferketten-Hub",
+    "subtitle": "ESG-Angaben der Lieferanten — Scope 3 Kat. 1 (nur Angabe)",
+    "gateTitle": "Der Lieferketten-Hub ist eine kostenpflichtige Funktion",
+    "totalSuppliers": "Lieferanten gesamt",
+    "certifiedCount": "Zertifiziert",
+    "highCriticalRisk": "Hohes / kritisches Risiko",
+    "avgScore": "Ø ESG-Score",
+    "addSupplierForm": "Lieferanten hinzufügen",
+    "editSupplier": "Lieferanten bearbeiten",
+    "fieldName": "Name des Lieferanten",
+    "fieldCountry": "Land",
+    "fieldCountryPlaceholder": "Deutschland",
+    "fieldCategory": "Kategorie",
+    "fieldCategoryPlaceholder": "Rohstoffe",
+    "fieldRiskLevel": "Risikostufe",
+    "fieldSpend": "Ausgaben (EUR)",
+    "fieldEmissions": "Emissionen (t CO₂e)",
+    "fieldTier": "Stufe",
+    "fieldEsgScore": "ESG-Score (0–100)",
+    "fieldEsgScorePlaceholder": "z. B. 78",
+    "fieldCertification": "Zertifizierung",
+    "certifiedSupplier": "Zertifizierter Lieferant",
+    "fieldNotes": "Notizen",
+    "fieldNotesPlaceholder": "Optionaler Kontext",
+    "saving": "Wird gespeichert...",
+    "saveChanges": "Änderungen speichern",
+    "addSupplier": "Lieferanten hinzufügen",
+    "cancel": "Abbrechen",
+    "saved": "Gespeichert",
+    "errNoName": "Ein Lieferant braucht einen Namen.",
+    "errValidation": "Einige Werte sind ungültig. Prüfen Sie die Risikostufe und die nicht negativen Zahlen.",
+    "errSave": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
+    "errDelete": "Löschen fehlgeschlagen. Bitte erneut versuchen.",
+    "okCreated": "Lieferant hinzugefügt",
+    "okUpdated": "Lieferant aktualisiert",
+    "okDeleted": "Lieferant entfernt",
+    "suppliers": "Lieferanten",
+    "emptyList": "Noch keine Lieferanten. Fügen Sie oben den ersten hinzu. Diese Zahlen sind <strong>reine Angaben</strong> — sie fließen nicht in den Scope-3-Fußabdruck ein.",
+    "thCompany": "Unternehmen",
+    "thCountry": "Land",
+    "thRisk": "Risiko",
+    "thScore": "ESG-Score",
+    "thCertified": "Zertifiziert",
+    "thActions": "Aktionen",
+    "riskLevels": {
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "critical": "Kritisch"
+    }
+  },
+  "goals": {
+    "title": "Ziele & OKR",
+    "subtitle": "Reduktionsziele und ihr Fortschritt",
+    "gateTitle": "Ziele & OKR ist eine kostenpflichtige Funktion",
+    "addTitle": "Ziel hinzufügen",
+    "editTitle": "Ziel bearbeiten",
+    "fieldTitle": "Titel",
+    "fieldTitlePlaceholder": "Scope 1 um 30 % senken",
+    "fieldDescription": "Beschreibung",
+    "fieldDescriptionPlaceholder": "Optionaler Kontext",
+    "fieldCategory": "Kategorie",
+    "fieldStatus": "Status",
+    "fieldUnit": "Einheit",
+    "sbtiAligned": "Wissenschaftsbasiertes Ziel (eigene Angabe des Unternehmens)",
+    "fieldBaselineYear": "Basisjahr",
+    "fieldBaselineValue": "Basiswert",
+    "fieldTargetYear": "Zieljahr",
+    "fieldTargetValue": "Zielwert",
+    "fieldCurrentValue": "Aktueller Wert",
+    "saving": "Wird gespeichert...",
+    "saveChanges": "Änderungen speichern",
+    "addGoal": "Ziel hinzufügen",
+    "cancel": "Abbrechen",
+    "saved": "Gespeichert",
+    "errNoTitle": "Ein Ziel braucht einen Titel.",
+    "errValidation": "Einige Werte sind ungültig. Prüfen Sie Kategorie, Status, Jahre und Zahlen.",
+    "errSave": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
+    "errDelete": "Löschen fehlgeschlagen. Bitte erneut versuchen.",
+    "okCreated": "Ziel erstellt",
+    "okUpdated": "Ziel aktualisiert",
+    "okDeleted": "Ziel gelöscht",
+    "listTitle": "Ihre Ziele",
+    "emptyList": "Noch keine Ziele. Fügen Sie oben Ihr erstes Nachhaltigkeitsziel hinzu — <strong>Emissionsziele</strong> fließen in die ESRS-E1-4-Ziele Ihres Berichts ein.",
+    "baseline": "Basis",
+    "current": "Aktuell",
+    "target": "Ziel",
+    "targetReached": "Ziel erreicht!",
+    "progress": "{pct} % Fortschritt",
+    "categories": {
+      "emissions": "Emissionen",
+      "energy": "Energie",
+      "waste": "Abfall",
+      "social": "Soziales",
+      "governance": "Governance",
+      "supply_chain": "Lieferkette",
+      "water": "Wasser",
+      "biodiversity": "Biodiversität"
+    },
+    "statuses": {
+      "not_started": "Nicht begonnen",
+      "on_track": "Im Plan",
+      "at_risk": "Gefährdet",
+      "behind": "Im Rückstand",
+      "completed": "Abgeschlossen"
+    }
+  },
+  "roles": {
+    "esg_admin": "Administrator",
+    "data_owner": "Dateneigner",
+    "contributor": "Mitwirkender",
+    "reviewer": "Prüfer",
+    "approver": "Freigeber",
+    "auditor": "Auditor"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Unternehmensprofil, Team, Abrechnung & Integrationen",
+    "trialTitle": "Sie nutzen die kostenlose Testphase",
+    "trialDesc": "Die Module Scope 3, Personal und Governance, ESRS-Berichte und mehr sind gesperrt. Mit einem Upgrade schalten Sie alle Funktionen frei — Ihre Daten bleiben erhalten.",
+    "upgradeNow": "Jetzt upgraden",
+    "companyProfile": "Unternehmensprofil",
+    "companyName": "Unternehmensname",
+    "industry": "Branche",
+    "country": "Land",
+    "naceCode": "NACE-Code",
+    "employees": "Beschäftigte",
+    "industries": {
+      "manufacturing": "Produktion",
+      "it": "IT & Technologie",
+      "retail": "Einzelhandel",
+      "construction": "Bauwesen",
+      "transport": "Transport",
+      "healthcare": "Gesundheitswesen",
+      "financial": "Finanzdienstleistungen",
+      "other": "Sonstiges"
+    },
+    "countries": {
+      "slovenia": "Slowenien",
+      "austria": "Österreich",
+      "germany": "Deutschland",
+      "croatia": "Kroatien",
+      "italy": "Italien",
+      "czech": "Tschechien",
+      "slovakia": "Slowakei",
+      "hungary": "Ungarn"
+    },
+    "teamMembers": "Teammitglieder",
+    "unlimited": "Unbegrenzt",
+    "maxMembers": "Max. {count}",
+    "billingPlan": "Abrechnung & Plan",
+    "planNameSuffix": "Plan {name}",
+    "free": "Kostenlos",
+    "changePlan": "Plan wechseln",
+    "managePlan": "Plan verwalten",
+    "featScope3": "Scope 3",
+    "featSocial": "Personal & Soziales",
+    "featGovernance": "Governance",
+    "featSupplyChain": "Lieferkette",
+    "featGoals": "Ziele & OKR",
+    "featDataExport": "Datenexport",
+    "planPeriod": {
+      "trial": "30 Tage",
+      "monthly": "/ Monat",
+      "annual": "/ Jahr"
+    },
+    "planHighlight": {
+      "trial": "Scope 1+2, 1 Bericht",
+      "starter": "Basic B1–B11, 1 juristische Person, 3 Standorte",
+      "pro": "Comprehensive C1–C9, vereinfachte ESRS, Lieferantenregister",
+      "enterprise": "Bis zu 10 juristische Personen, unbegrenzte Standorte und Plätze"
+    },
+    "modalTitle": "Wählen Sie Ihren Plan",
+    "modalSubtitle": "Upgrades gelten sofort; Downgrades greifen zur Verlängerung. Ihre Daten werden nie gelöscht.",
+    "current": "Aktuell",
+    "scope12": "Scope 1 + 2",
+    "reportFormats": "{count} Berichtsformate",
+    "currentPlanBtn": "Aktueller Plan",
+    "upgradeToPlan": "Auf {name} upgraden",
+    "switchToPlan": "Zu {name} wechseln",
+    "downgradeToPlan": "Auf {name} herabstufen",
+    "defaultCurrency": "Standardwährung",
+    "readonlyHint": "Ihr Abonnement ist schreibgeschützt — upgraden Sie, um das Unternehmensprofil zu bearbeiten.",
+    "periodMonthly": "Monatlich",
+    "periodAnnual": "Jährlich",
+    "periodLocked": "Der Abrechnungszeitraum ({period}) bleibt bei einem Planwechsel unverändert.",
+    "subCancelsOn": "Endet am {date}",
+    "subDowngradesAt": "Herabstufung auf {name} zur Verlängerung ({date})",
+    "subRenewsOn": "Verlängert sich am {date} · {period}",
+    "resumePlan": "Fortsetzen",
+    "cancelPlan": "Plan kündigen",
+    "msgCancelScheduled": "Ihr bezahlter Plan endet am Ende des laufenden Zeitraums — danach wechseln Sie in die kostenlose Testphase.",
+    "msgScheduleFailed": "Die Änderung konnte nicht geplant werden. Bitte erneut versuchen.",
+    "msgChangeFailed": "Der Plan konnte nicht geändert werden. Bitte erneut versuchen.",
+    "msgDowngradeScheduled": "Herabstufung geplant — Sie wechseln am Ende des laufenden Zeitraums zu {name}.",
+    "msgCancelFailed": "Der Plan konnte nicht gekündigt werden. Bitte erneut versuchen.",
+    "msgResumeFailed": "Der Plan konnte nicht fortgesetzt werden. Bitte erneut versuchen.",
+    "msgResumeDone": "Ihr Plan wurde fortgesetzt.",
+    "close": "Schließen",
+    "langRegion": "Sprache & Region",
+    "interfaceLang": "Sprache der Oberfläche",
+    "reportLangNote": "Die Berichtssprache wählen Sie beim Erstellen eines Berichts auf der Seite „Berichte“: Englisch oder Slowenisch.",
+    "dataIntegrations": "Datenintegrationen",
+    "integrationsSubtitle": "Buchhaltungssysteme anbinden oder Rechnungen hochladen, um Emissionsdaten automatisch zu übernehmen",
+    "integrationDesc": {
+      "xero": "Cloud-Buchhaltung",
+      "quickbooks": "Buchhaltung von Intuit",
+      "csv_import": "Manueller Datei-Upload",
+      "pdf_scan": "PDF-Rechnungen hochladen",
+      "sage": "Buchhaltung & Lohn",
+      "odoo": "Open-Source-ERP",
+      "open_banking": "Banktransaktionen",
+      "sap_b1": "SAP für KMU",
+      "1c": "Buchhaltung GUS"
+    },
+    "connected": "Verbunden",
+    "connect": "Verbinden",
+    "invoiceScanner": "Rechnungsscanner",
+    "scannerSubtitle": "PDF-Rechnungen hochladen — die KI extrahiert Emissionsdaten automatisch",
+    "dropzoneTitle": "PDF-Rechnungen hier ablegen oder zum Hochladen klicken",
+    "dropzoneSubtitle": "Strom-, Gas-, Tankbelege, Reiserechnungen",
+    "recentUploads": "Letzte Uploads",
+    "statusApproved": "Freigegeben",
+    "statusReview": "In Prüfung",
+    "statusExtracted": "Extrahiert",
+    "saveSettings": "Einstellungen speichern",
+    "savedNote": "Gespeichert!",
+    "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+    "saveFailed": "Das Unternehmensprofil konnte nicht gespeichert werden. Bitte erneut versuchen.",
+    "team": {
+      "overSeat": "Ihr Team hat {used} Mitglieder, Ihr Plan erlaubt {limit}. Upgraden Sie oder entfernen Sie Mitglieder, um im Sitzlimit zu bleiben.",
+      "accessChanged": "Ihr Zugriff hat sich geändert — bitte laden Sie die Seite neu.",
+      "loadingMembers": "Teammitglieder werden geladen…",
+      "loadMembersError": "Teammitglieder konnten nicht geladen werden — bitte erneut versuchen.",
+      "noMembers": "Noch keine Teammitglieder.",
+      "grantDisclosure": "In Ihrem Unternehmen gibt es keinen eigenen Freigeber, daher geben Sie Ihre eigenen Daten frei. Diese Selbstfreigabe wird im Bericht offengelegt. Weisen Sie die Rolle „Freigeber“ einer Kollegin oder einem Kollegen zu, damit Daten unabhängig abgezeichnet werden.",
+      "errLastAdmin": "Ein Unternehmen muss mindestens einen Administrator behalten.",
+      "errGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+      "errInviteInvalid": "Diese E-Mail kann nicht eingeladen werden — die Person ist vielleicht bereits Mitglied oder hat eine offene Einladung.",
+      "planRequiredShort": "Zusammenarbeit im Team ist ab dem Starter-Plan verfügbar.",
+      "you": "Sie",
+      "suspended": "Gesperrt",
+      "roleForMember": "Rolle für {name}",
+      "remove": "Entfernen",
+      "inviteHeading": "Kollegin oder Kollegen einladen",
+      "inviteeEmailLabel": "E-Mail der eingeladenen Person",
+      "inviteEmailPlaceholder": "name@firma.de",
+      "inviteeRoleLabel": "Rolle der eingeladenen Person",
+      "sendInvite": "Einladung senden",
+      "upgradeNote": "Zusammenarbeit im Team ist ab dem Starter-Plan verfügbar. Upgraden Sie, um Kolleginnen und Kollegen einzuladen und Ihren ESG-Arbeitsbereich zu teilen.",
+      "upgradePlan": "Plan upgraden",
+      "loadingInvites": "Einladungen werden geladen…",
+      "loadInvitesError": "Einladungen konnten nicht geladen werden — bitte erneut versuchen.",
+      "noInvites": "Keine offenen Einladungen.",
+      "inviteLinkFor": "Einladungslink für {email}",
+      "inviteLinkWarn": "Kopieren Sie diesen Link jetzt — aus Sicherheitsgründen wird er nur einmal angezeigt und kann nicht erneut abgerufen werden.",
+      "inviteLinkLabel": "Einladungslink",
+      "copied": "Kopiert",
+      "copy": "Kopieren",
+      "dismiss": "Ausblenden",
+      "invitedAs": "Eingeladen als {role}",
+      "pending": "Ausstehend",
+      "resend": "Erneut senden",
+      "revoke": "Widerrufen",
+      "okRoleChanged": "Rolle aktualisiert",
+      "okRemoved": "Mitglied entfernt",
+      "okRevoked": "Einladung widerrufen"
+    }
+  },
+  "invite": {
+    "loading": "Einladung wird geladen…",
+    "unavailableTitle": "Einladung nicht verfügbar",
+    "invalidMessage": "Dieser Einladungslink ist ungültig. Er ist vielleicht abgelaufen, bereits verwendet oder widerrufen. Bitten Sie die einladende Person um einen neuen.",
+    "errorTitle": "Einladung konnte nicht geladen werden",
+    "errorBody": "Etwas ist schiefgelaufen. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "tryAgain": "Erneut versuchen",
+    "acceptedTitle": "Sie sind dabei!",
+    "acceptedBody": "Sie sind {company} beigetreten. Weiter zum Dashboard…",
+    "previewTitle": "Sie wurden eingeladen",
+    "fieldCompany": "Unternehmen",
+    "fieldRole": "Rolle",
+    "fieldInvitedBy": "Eingeladen von",
+    "signInPrompt": "Melden Sie sich an, um diese Einladung anzunehmen.",
+    "signInButton": "Anmelden und annehmen",
+    "acceptButton": "Einladung annehmen",
+    "seatLimit": "Dieses Team hat sein Sitzlimit erreicht. Bitten Sie einen Administrator, einen Sitz freizugeben oder den Plan zu upgraden, und versuchen Sie es erneut.",
+    "acceptError": "Beim Annehmen der Einladung ist etwas schiefgelaufen. Bitte erneut versuchen."
+  },
+  "auth": {
+    "welcomeBack": "Willkommen zurück",
+    "loginSubtitle": "Melden Sie sich in Ihrem ESG-Dashboard an",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "passwordPlaceholder": "Passwort eingeben",
+    "rememberMe": "Angemeldet bleiben",
+    "forgotPassword": "Passwort vergessen?",
+    "logIn": "Anmelden",
+    "noAccount": "Noch kein Konto?",
+    "startFreeTrial": "Kostenlos testen",
+    "visualTitle": "Ein VSME-Bericht mit einer Quelle hinter jeder Zahl",
+    "feat1": "VSME-Basic-Angaben B1–B11",
+    "feat2": "Berechnung von Scope 1 und Scope 2 auf einem fixierten Faktorensatz",
+    "feat3": "Nachweis an jedem Datenpunkt",
+    "feat4": "PDF und Excel für interne Prüfung und unabhängige Durchsicht",
+    "quote": "Die Plattform bereitet Daten und Unterlagen vor. Die unabhängige Prüfung führt eine zugelassene Prüfungsgesellschaft im Rahmen eines separaten Vertrags durch.",
+    "quoteRole": "So ist die Verantwortung verteilt",
+    "passwordMin8Error": "Das Passwort muss mindestens 8 Zeichen haben",
+    "checkEmailTitle": "Prüfen Sie Ihre E-Mails",
+    "checkEmailText": "Wir haben einen Bestätigungslink an <b>{email}</b> gesendet. Klicken Sie darauf, um Ihr Konto zu aktivieren.",
+    "verifiedTitle": "E-Mail bestätigt",
+    "verifiedText": "Ihre Adresse ist bestätigt und Sie sind angemeldet. Fahren Sie in Ihrem Arbeitsbereich fort.",
+    "verifiedContinue": "Weiter",
+    "verifyInvalidTitle": "Bestätigungslink ungültig",
+    "verifyInvalidText": "Dieser Bestätigungslink kann nicht mehr verwendet werden: Er wurde möglicherweise schon benutzt, oder Sie sind mit einem anderen Konto angemeldet. Melden Sie sich an, um fortzufahren.",
+    "verifyExpiredText": "Dieser Bestätigungslink ist abgelaufen. Melden Sie sich an, um fortzufahren.",
+    "backToLogin": "Zurück zur Anmeldung",
+    "startTrialTitle": "Starten Sie Ihre kostenlose Testphase",
+    "startTrialSubtitle": "30 Tage kostenlos. Keine Kreditkarte nötig.",
+    "fullName": "Vollständiger Name",
+    "workEmail": "Geschäftliche E-Mail",
+    "companyName": "Unternehmensname",
+    "passwordMin8Placeholder": "Mind. 8 Zeichen",
+    "createAccount": "Konto erstellen",
+    "termsAgree": "Mit dem Erstellen eines Kontos stimmen Sie unseren Nutzungsbedingungen und der Datenschutzerklärung zu.",
+    "haveAccount": "Sie haben bereits ein Konto?",
+    "genericError": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "emailPlaceholder": "max@firma.de",
+    "forgotTitle": "Passwort vergessen?",
+    "forgotSubtitle": "Geben Sie Ihre E-Mail ein, wir senden Ihnen einen Link zum Zurücksetzen.",
+    "forgotSubmit": "Link zum Zurücksetzen senden",
+    "forgotSuccessText": "Falls ein Konto für <b>{email}</b> existiert, haben wir einen Link zum Zurücksetzen des Passworts gesendet. Der Link läuft in 1 Stunde ab.",
+    "rememberedPassword": "Passwort wieder eingefallen?",
+    "resetInvalidTitle": "Link ungültig oder abgelaufen",
+    "resetInvalidText": "Dieser Link zum Zurücksetzen ist nicht mehr gültig. Links laufen nach 1 Stunde ab und sind nur einmal nutzbar. Fordern Sie einen neuen an, um fortzufahren.",
+    "resetRequestNew": "Neuen Link anfordern",
+    "resetSuccessTitle": "Passwort aktualisiert",
+    "resetSuccessText": "Ihr Passwort wurde zurückgesetzt. Weiterleitung zur Anmeldung…",
+    "resetTitle": "Neues Passwort festlegen",
+    "resetSubtitle": "Wählen Sie ein neues Passwort für Ihr Konto.",
+    "passwordsMismatch": "Die Passwörter stimmen nicht überein",
+    "newPassword": "Neues Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordPlaceholder": "Neues Passwort wiederholen",
+    "resetSubmit": "Passwort zurücksetzen",
+    "invalidCredentials": "Ungültige E-Mail oder ungültiges Passwort.",
+    "createAccountError": "Das Konto konnte nicht erstellt werden.",
+    "companyCreateError": "Ihr Konto wurde erstellt, aber das Unternehmen konnte nicht angelegt werden. Bitte versuchen Sie es erneut.",
+    "companyRetry": "Erneut versuchen",
+    "fullNamePlaceholder": "Max Mustermann",
+    "companyNamePlaceholder": "Muster GmbH"
+  },
+  "terms": {
+    "backToHome": "Zur Startseite",
+    "pageTitle": "Nutzungsbedingungen & Datenschutz",
+    "lastUpdated": "Zuletzt aktualisiert: 15. März 2025 · Gültig ab: 15. März 2025",
+    "quickTerms": "Nutzungsbedingungen",
+    "quickPrivacy": "Datenschutzerklärung",
+    "footerTermsPrivacy": "Nutzungsbedingungen & Datenschutz",
+    "footerContact": "Kontakt"
+  },
+  "validation": {
+    "VAL-001": "Die Organisation braucht Name, Land und Registrierungsnummer",
+    "VAL-002": "Land, Währung und NACE-Code müssen aus den aktuellen Referenzlisten stammen",
+    "VAL-003": "Die Gruppenhierarchie darf keine Zyklen enthalten",
+    "VAL-004": "„Gültig ab“ darf nicht nach „Gültig bis“ liegen",
+    "VAL-005": "Der Standort muss zu einer aktiven juristischen Person gehören",
+    "VAL-006": "Koordinaten müssen im zulässigen Bereich liegen (−90…90 / −180…180)",
+    "VAL-007": "Die Aktivität liegt außerhalb der Betriebsdaten des Standorts",
+    "VAL-008": "Das Startdatum des Zeitraums muss vor dem Enddatum liegen",
+    "VAL-009": "Berichtszeiträume überschneiden sich",
+    "VAL-010": "Eine gesperrte Revision kann nicht geändert werden",
+    "VAL-011": "Der Aktivitätswert muss 0 oder größer sein",
+    "VAL-012": "Die Datendaten liegen außerhalb des Berichtszeitraums",
+    "VAL-013": "Dieses Dokument wurde möglicherweise bereits hochgeladen",
+    "VAL-014": "Die Einheit wird für diesen Aktivitätstyp nicht unterstützt",
+    "VAL-015": "Die gewählte Methode erfordert einen Eingabewert (Brennstoff oder Aktivität)",
+    "VAL-016": "Unvollständige Flottenmethode: Distanz erfordert einen Fahrzeugtyp, Kraftstoff erfordert Liter",
+    "VAL-017": "Biogenes CO₂ muss getrennt von fossilem CO₂ ausgewiesen werden",
+    "VAL-018": "Die Kältemittel-Massenbilanz ist negativ",
+    "VAL-019": "Kein Emissionsfaktor oder GWP für dieses Kältemittel im Faktorensatz",
+    "VAL-020": "Der Energieverbrauch muss 0 oder größer sein",
+    "VAL-021": "Scope 2 erfordert das Land des Standorts",
+    "VAL-022": "Das abgedeckte Volumen übersteigt den zugeordneten Verbrauch",
+    "VAL-023": "Der Zertifikatszeitraum passt nicht zum Berichtszeitraum",
+    "VAL-024": "Marktbasierte Bilanz: abgedeckt plus Restmix muss dem Verbrauch entsprechen",
+    "VAL-031": "Ein Faktor mit diesem Schlüssel existiert bereits",
+    "VAL-032": "Die Gültigkeit des Faktors ist widersprüchlich (gültig ab / gültig bis / Anwendungsjahr)",
+    "VAL-033": "Ein Faktor darf nicht null sein, es sei denn, null ist ausdrücklich gültig",
+    "VAL-034": "Die Summe der Details stimmt nicht mit dem Gesamtwert überein (Toleranz 0,5 %)",
+    "VAL-035": "Unvollständige Herkunft: Quelle, Faktor und Formelversion sind erforderlich",
+    "VAL-036": "Die Nachweisdatei fehlt oder ist nicht lesbar",
+    "VAL-037": "Der Nachweis deckt nicht den gesamten Zeitraum ab",
+    "VAL-038": "Erforderliche Datenqualitätsbewertungen fehlen",
+    "VAL-039": "Eine manuelle Übersteuerung der Datenqualität erfordert eine Begründung",
+    "VAL-040": "Funktionstrennung: Die Daten wurden von der Person freigegeben, die sie erfasst hat",
+    "VAL-041": "Freigabevoraussetzungen: keine kritischen Fehler und keine Lücken in den Nachweisen",
+    "VAL-101": "Eine ausgeschlossene Einheit erfordert einen Ausschlussgrund",
+    "VAL-102": "Ein konsolidierter Bericht braucht mindestens zwei einbezogene Einheiten und eine bestimmte Muttergesellschaft",
+    "VAL-103": "Jede einbezogene Einheit braucht vor dem Sperren oder Rendern eine eingetragene Anschrift",
+    "VAL-104": "Eine Zeile ohne Standort erfordert eine Begründung",
+    "VAL-105": "Starter-Plan: mehr als 3 einbezogene Standorte — der Abschluss des Berichts erfordert ein Upgrade",
+    "VAL-106": "Berechnungsrelevante Felder von Zeitraum und Grenze können nur geändert werden, solange die aktuelle Revision Entwurf oder abgelehnt ist",
+    "VAL-107": "Mit einer schwächeren Faktorbasis bepreist, als der fixierte Satz bietet"
+  },
+  "organisation": {
+    "title": "Organisation & Grenzen",
+    "subtitle": "Juristische Personen, Standorte, Anlagen, Berichtszeiträume und die Grenze jedes Zeitraums.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können die Organisation ansehen, Änderungen erfordern jedoch die Berechtigung zur Unternehmensverwaltung.",
+    "actions": {
+      "cancel": "Abbrechen"
+    },
+    "wizard": {
+      "title": "Organisation einrichten",
+      "subtitle": "Legen Sie die Muttergesellschaft an, der jeder Bericht zugeordnet wird.",
+      "seededNote": "Aus Ihrem Unternehmensprofil vorbelegt — prüfen Sie die Werte vor dem Bestätigen.",
+      "create": "Organisation anlegen",
+      "needsAdmin": "Es wurde noch keine Organisation eingerichtet. Ein Administrator muss sie anlegen."
+    },
+    "profile": {
+      "title": "Organisationsprofil",
+      "subtitle": "Die Muttergesellschaft: Identität, Größe und Berichtswährung."
+    },
+    "group": {
+      "title": "Gruppe und juristische Personen",
+      "subtitle": "Gültigkeitsdaten und Konsolidierungsmethode bestimmen den Beitrag jeder Einheit.",
+      "empty": "Noch keine juristischen Personen.",
+      "root": "Mutter",
+      "member": "Mitglied",
+      "addSubsidiary": "Tochtergesellschaft hinzufügen",
+      "createSubsidiary": "Tochtergesellschaft anlegen",
+      "subsidiaryLockedTitle": "Ihr Plan hat sein Limit an juristischen Personen erreicht",
+      "subsidiaryLockedBody": "Upgraden Sie, um weitere Einheiten zur Gruppe hinzuzufügen.",
+      "outsidePeriod": "Diese Daten decken den Berichtszeitraum {period} nicht ab, daher erscheint dieser Rechtsträger nicht in dessen Bericht."
+    },
+    "facilities": {
+      "title": "Standortregister",
+      "subtitle": "Jeder Standort der Organisation, innerhalb oder außerhalb der Grenze.",
+      "empty": "Noch keine Standorte.",
+      "addTitle": "Standort hinzufügen",
+      "add": "Standort hinzufügen",
+      "lockedTitle": "Ihr Plan erlaubt {limit} Standorte",
+      "lockedBody": "Upgraden Sie, um weitere Standorte zu registrieren; die vorhandenen bleiben unverändert.",
+      "boundaryFor": "Innerhalb der Grenze: {name}"
+    },
+    "assets": {
+      "title": "Anlagenregister",
+      "subtitle": "Fahrzeuge, Gebäude, Ausrüstung und Zähler, jeweils einer Einheit zugeordnet.",
+      "empty": "Noch keine Anlagen.",
+      "addTitle": "Anlage hinzufügen",
+      "add": "Anlage hinzufügen",
+      "remove": "Entfernen",
+      "removeConfirm": "„{name}“ aus dem Register entfernen?",
+      "removeYes": "Entfernen",
+      "removeNo": "Behalten"
+    },
+    "periods": {
+      "title": "Berichtszeiträume",
+      "subtitle": "Jeder Zeitraum fixiert den Faktorensatz, mit dem seine Zahlen berechnet werden.",
+      "empty": "Noch keine Berichtszeiträume.",
+      "add": "Neuer Zeitraum",
+      "addTitle": "Berichtszeitraum anlegen",
+      "create": "Zeitraum anlegen",
+      "factorSet": "Faktorensatz {version}",
+      "configureTitle": "{name} konfigurieren",
+      "methodology": "Methodik {version}",
+      "consolidatedLockedTitle": "Konsolidierte Berichterstattung ist eine kostenpflichtige Funktion",
+      "consolidatedLockedBody": "Ihr Plan berichtet jeweils über eine juristische Person. Upgraden Sie, um über die Gruppe als Ganzes zu berichten.",
+      "startRevision": "Erste Revision starten",
+      "startRevisionHint": "Zeilen, Angaben und Nachweise gehören zu einer Revision — solange keine existiert, kann für diesen Zeitraum nichts erfasst werden."
+    },
+    "boundary": {
+      "title": "Grenze des Zeitraums",
+      "subtitle": "Über welche juristischen Personen der Zeitraum berichtet — und warum die anderen draußen sind.",
+      "noPeriod": "Legen Sie zuerst einen Berichtszeitraum an.",
+      "forPeriod": "Grenze von {name}",
+      "noEntities": "Keine juristischen Personen für die Grenze vorhanden.",
+      "reasonRequired": "Für eine ausgeschlossene Einheit erforderlich."
+    },
+    "counters": {
+      "entities": "{used} von {limit} juristischen Personen",
+      "entitiesUnlimited": "{used} juristische Personen",
+      "facilities": "{used} von {limit} Standorten",
+      "facilitiesUnlimited": "{used} Standorte",
+      "assets": "{used} Anlagen",
+      "periods": "{used} Zeiträume"
+    },
+    "save": {
+      "saving": "Wird gespeichert…",
+      "saved": "Alle Änderungen gespeichert",
+      "dirty": "Ungespeicherte Änderungen",
+      "refused": "Nicht gespeichert — siehe Hinweis unten",
+      "confirm": "Änderungen speichern"
+    },
+    "errors": {
+      "rejected": "Einer der Werte verweist auf etwas, das es für dieses Unternehmen nicht gibt."
+    },
+    "fields": {
+      "organisationName": "Name der Organisation",
+      "registrationNumber": "Registrierungsnummer",
+      "vatNumber": "USt-IdNr.",
+      "registeredAddress": "Eingetragene Anschrift",
+      "country": "Land",
+      "naceCode": "NACE-Code",
+      "reportingCurrency": "Berichtswährung",
+      "employeeCount": "Beschäftigte",
+      "averageFte": "Durchschnittliche VZÄ",
+      "turnover": "Umsatz",
+      "groupStructureType": "Gruppenstruktur",
+      "consolidationMethod": "Konsolidierungsmethode",
+      "ownershipPercentage": "Beteiligung %",
+      "effectiveFrom": "Gültig ab",
+      "effectiveTo": "Gültig bis",
+      "facilityName": "Name des Standorts",
+      "facility": "Standort",
+      "legalEntity": "Juristische Person",
+      "facilityType": "Typ",
+      "tenure": "Besitzverhältnis",
+      "openingDate": "Eröffnungsdatum",
+      "includedInBoundary": "In der Grenze",
+      "assetName": "Anlage",
+      "assetType": "Anlagentyp",
+      "identifier": "Kennung",
+      "periodName": "Name des Zeitraums",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "reportingYear": "Berichtsjahr",
+      "baseYear": "Basisjahr",
+      "reportingBasis": "Berichtsgrundlage",
+      "comparativePeriod": "Vergleichszeitraum",
+      "boundaryStatus": "Status",
+      "exclusionReason": "Ausschlussgrund"
+    },
+    "hints": {
+      "country": "Zweibuchstabiger Ländercode, z. B. SI.",
+      "currency": "Dreibuchstabiger Währungscode, z. B. EUR.",
+      "identifier": "Kennzeichen, Serien- oder Zählernummer."
+    },
+    "enums": {
+      "groupStructureType": {
+        "standalone": "Eigenständig",
+        "parent": "Muttergesellschaft",
+        "subsidiary": "Tochtergesellschaft"
+      },
+      "consolidationMethod": {
+        "operational_control": "Operative Kontrolle",
+        "financial_control": "Finanzielle Kontrolle",
+        "equity_share": "Kapitalanteil"
+      },
+      "facilityType": {
+        "office": "Büro",
+        "plant": "Werk",
+        "warehouse": "Lager",
+        "store": "Filiale",
+        "farm": "Betrieb (Landwirtschaft)",
+        "other": "Sonstiges"
+      },
+      "tenure": {
+        "owned": "Eigentum",
+        "leased": "Gemietet",
+        "managed": "Verwaltet",
+        "shared": "Geteilt"
+      },
+      "assetType": {
+        "vehicle": "Fahrzeug",
+        "building": "Gebäude",
+        "equipment": "Ausrüstung",
+        "generator": "Generator",
+        "meter": "Zähler",
+        "other": "Sonstiges"
+      },
+      "reportingBasis": {
+        "individual": "Einzelne Einheit",
+        "consolidated": "Konsolidierte Gruppe"
+      },
+      "applicabilityStatus": {
+        "included": "Einbezogen",
+        "excluded": "Ausgeschlossen",
+        "not_applicable": "Nicht anwendbar",
+        "not_assessed": "Nicht bewertet"
+      },
+      "periodStatus": {
+        "draft": "Entwurf",
+        "submitted": "Eingereicht",
+        "inReview": "In Prüfung",
+        "approved": "Freigegeben",
+        "locked": "Gesperrt",
+        "reopened": "Wiedereröffnet"
+      }
+    },
+    "tree": {
+      "title": "Organisationsbaum",
+      "subtitle": "Mutter, Töchter, Standorte und Anlagen in einer Ansicht — was der Plan zählt und was der Bericht abdeckt.",
+      "inBoundary": "in der Grenze",
+      "outsideBoundary": "außerhalb der Grenze",
+      "assetsNoSite": "Anlagen ohne Standortzuordnung",
+      "noAddress": "keine eingetragene Anschrift"
+    },
+    "help": {
+      "organisationName": "Der Firmenname genau so, wie er im Unternehmensregister (AJPES) eingetragen ist.",
+      "registrationNumber": "Registrierungsnummer der Organisation aus dem Register — zehn Ziffern, z. B. 5150949000.",
+      "vatNumber": "USt-IdNr. (DDV), z. B. SI73291978. Leer lassen, wenn das Unternehmen nicht umsatzsteuerpflichtig ist.",
+      "registeredAddress": "Die eingetragene Adresse aus dem Register: Straße, Hausnummer, Postleitzahl und Ort.",
+      "country": "Land des Unternehmenssitzes als zweistelliger Code — SI für Slowenien.",
+      "naceCode": "Code der Haupttätigkeit, z. B. 10.13. Er steht im Registereintrag; verwenden Sie die detaillierteste verfügbare Stufe.",
+      "reportingCurrency": "Währung, in der die Geldbeträge des Berichts angegeben sind. Für Slowenien ist dies EUR.",
+      "employeeCount": "Anzahl der Beschäftigten zum Ende des Berichtszeitraums (Personenzahl).",
+      "averageFte": "Durchschnittliche Vollzeitäquivalente im Zeitraum, aus der Lohnabrechnung — z. B. 347,72.",
+      "turnover": "Nettoumsatzerlöse für denselben Zeitraum aus dem Jahresabschluss, in der Berichtswährung.",
+      "groupStructureType": "Eigenständiges Unternehmen, Muttergesellschaft einer Gruppe oder Tochtergesellschaft.",
+      "consolidationMethod": "Wie die Zahlen dieser Einheit in den Konzernbericht einfließen: nach Eigentumsanteil, finanzieller Kontrolle oder operativer Kontrolle.",
+      "ownershipPercentage": "Anteil der Muttergesellschaft an dieser Einheit in Prozent — 100 bei einer hundertprozentigen Tochtergesellschaft.",
+      "effectiveFrom": "Datum, an dem diese Einheit Teil der Gruppe wurde. Leer lassen, wenn sie es schon immer war.",
+      "effectiveTo": "Datum des Austritts aus der Gruppe. Solange die Einheit noch dazugehört, leer lassen; ein Datum hier schließt sie aus künftigen Berichten aus, nicht aus vergangenen.",
+      "legalEntity": "Die juristische Person, zu der dieser Datensatz gehört. Jeder Standort, jede Anlage und jede Datenzeile gehört zu genau einer.",
+      "facilityName": "Der intern verwendete Name der Anlage — «Werk Trnovlje», «Lager Koper».",
+      "facilityType": "Um was für eine Anlage es sich handelt: Werk, Büro, Lager, Geschäft oder Sonstiges.",
+      "tenure": "Ob Sie die Anlage besitzen, mieten oder nur verwalten.",
+      "openingDate": "Datum, seit dem die Anlage unter Ihrer Kontrolle betrieben wird. Leer lassen, wenn dies vor dem Berichtszeitraum lag.",
+      "facility": "Die Anlage, zu der dieser Eintrag gehört. Leer lassen, wenn er keiner einzelnen Anlage zugeordnet ist.",
+      "assetName": "Name des Fahrzeugs, Gebäudes, der Maschine oder des Zählers — «Transporter 1», «Heizraum».",
+      "assetType": "Um was für einen Eintrag es sich handelt: Fahrzeug, Gebäude, Anlage, Generator, Zähler oder Sonstiges.",
+      "identifier": "Kennzeichen, Seriennummer oder Zählernummer — was auch immer es auf der Rechnung identifiziert.",
+      "periodName": "Bezeichnung, an der Sie den Bericht wiedererkennen, z. B. «Jahr 2024».",
+      "startDate": "Erster Tag des Berichtszeitraums, in der Regel der 1. Januar.",
+      "endDate": "Letzter Tag des Berichtszeitraums, in der Regel der 31. Dezember.",
+      "reportingYear": "Das Jahr, auf das sich der Bericht bezieht — das Jahr, in dem der Zeitraum endet.",
+      "baseYear": "Das Jahr, an dem spätere Reduktionen gemessen werden. Beim ersten Bericht ist dies meist das Berichtsjahr selbst.",
+      "reportingBasis": "Einzeln — nur dieses Unternehmen. Konsolidiert — das Unternehmen zusammen mit seinen Tochtergesellschaften.",
+      "comparativePeriod": "Ein früherer Zeitraum zum Vergleich. Beim ersten Bericht leer lassen.",
+      "boundaryStatus": "Ob diese Einheit für diesen Zeitraum innerhalb der Berichtsgrenze liegt oder mit Begründung ausgeschlossen ist.",
+      "exclusionReason": "Warum die Einheit für diesen Zeitraum ausgeschlossen ist. Der Text erscheint im Bericht, formulieren Sie ihn daher klar."
+    }
+  },
+  "factors": {
+    "title": "Emissionsfaktoren",
+    "subtitle": "Faktorensätze, woraus jeder besteht, und die Freigabe, die aus einem Entwurf eine Version macht, die ein Zeitraum fixieren kann.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können die Faktorenbibliothek ansehen; eine Version freizugeben oder Faktoren hinzuzufügen erfordert die Berechtigung für eigene Faktoren.",
+    "actions": {
+      "cancel": "Abbrechen"
+    },
+    "status": {
+      "draft": "Entwurf",
+      "active": "Freigegeben",
+      "archived": "Archiviert"
+    },
+    "sets": {
+      "title": "Faktorensätze",
+      "subtitle": "Ein freigegebener Satz wird nie bearbeitet — eine Änderung an einer Zahl ist immer eine neue Version.",
+      "empty": "Es wurde noch kein Faktorensatz angelegt.",
+      "factorCount": "{count} Faktoren",
+      "published": "freigegeben am {date}",
+      "unpublished": "noch nicht freigegeben",
+      "release": "Freigeben",
+      "archive": "Archivieren",
+      "newVersion": "Neue Version",
+      "newVersionTitle": "Neue Version dieses Satzes",
+      "createEmpty": "Neuer leerer Satz",
+      "createTitle": "Neuer Faktorensatz",
+      "create": "Anlegen",
+      "copyOf": "{name} (neue Version)",
+      "copyExplain": "Der neue Satz beginnt als Entwurf mit einer Kopie jedes Faktors des gewählten Satzes. Bearbeiten Sie ihn dort und geben Sie ihn frei — die Version, die Zeiträume bereits fixiert haben, bleibt unverändert."
+    },
+    "provenance": {
+      "title": "Quellen und Lizenzen",
+      "empty": "Dieser Satz enthält noch keine Faktoren und nennt daher keine Quellen."
+    },
+    "factors": {
+      "title": "Faktoren von {set}",
+      "listTitle": "Faktoren",
+      "draftNote": "Dieser Satz ist ein Entwurf: Seine Faktoren können über die API noch hinzugefügt und korrigiert werden.",
+      "frozenNote": "Dieser Satz ist freigegeben, seine Faktoren sind eingefroren. Legen Sie eine neue Version an, um eine Zahl zu ändern.",
+      "search": "Suche",
+      "searchHint": "Faktorcode, Name oder Aktivitätstyp",
+      "empty": "Kein Faktor entspricht diesem Filter.",
+      "range": "{from}–{to} von {total}",
+      "previous": "Zurück",
+      "next": "Weiter"
+    },
+    "fields": {
+      "code": "Satzcode",
+      "name": "Name",
+      "description": "Beschreibung",
+      "sourceName": "Quelle",
+      "sourceVersion": "Version",
+      "licence": "Lizenz",
+      "factorCount": "Faktoren",
+      "activityType": "Aktivitätstyp",
+      "geography": "Geografie",
+      "applicableYear": "Jahr",
+      "factorValue": "Wert",
+      "inputUnit": "Pro Einheit"
+    },
+    "refusals": {
+      "NEW_VERSION_ONLY": "Dieser Satz wurde freigegeben und kann nicht geändert werden. Legen Sie stattdessen eine neue Version an — die Zeiträume, die diesen fixiert haben, reproduzieren weiterhin genau wie heute.",
+      "CODE_TAKEN": "Ein Faktorensatz mit diesem Code existiert bereits. Wählen Sie einen anderen Code.",
+      "COPY_SOURCE_UNKNOWN": "Der Satz, aus dem Sie kopieren wollten, existiert nicht."
+    },
+    "errors": {
+      "rejected": "Einer der Werte verweist auf etwas, das nicht existiert."
+    }
+  },
+  "inventory": {
+    "title": "Daten",
+    "subtitle": "Scope-1- und Scope-2-Aktivitätsdaten der Revision, an der Sie arbeiten. Jede Bearbeitung schreibt eine neue Version — nichts wird überschrieben.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können den gesamten Datenbestand lesen. Zeilen hinzuzufügen oder zu ändern erfordert die Berechtigung zur Datenerfassung, und die Revision muss offen sein.",
+    "actions": {
+      "new": "Zeile hinzufügen",
+      "newTitle": "Zeile hinzufügen: {tab}",
+      "approve": "Zeile freigeben",
+      "upgrade": "Upgrade"
+    },
+    "scopes": {
+      "scope1": "Scope 1",
+      "scope2": "Scope 2"
+    },
+    "tabs": {
+      "stationary": "Stationäre Verbrennung",
+      "mobile": "Mobile Verbrennung",
+      "fugitive": "Diffuse Emissionen",
+      "process": "Prozessemissionen",
+      "onsite": "Eigenerzeugung",
+      "energy": "Eingekaufte Energie",
+      "instruments": "Vertragliche Instrumente"
+    },
+    "revision": {
+      "title": "Berichtszeitraum und Revision",
+      "subtitle": "Zeilen gehören zu einer Revision, nicht zu einem Zeitraum. Genau eine Revision eines Zeitraums ist die aktuelle, und nur sie wird bearbeitet.",
+      "period": "Berichtszeitraum",
+      "badge": "Revision {no} — {status}",
+      "frozenBody": "Diese Revision ist nicht mehr offen, ihre Zeilen können nicht geändert werden. Starten Sie eine neue Revision, um eine Zahl neu anzugeben.",
+      "status": {
+        "draft": "Entwurf",
+        "submitted": "Eingereicht",
+        "in_review": "In Prüfung",
+        "approved": "Freigegeben",
+        "rejected": "Zurückgegeben",
+        "locked": "Gesperrt"
+      }
+    },
+    "queue": {
+      "label": "Nur Zeilen zeigen, die auf Freigabe warten",
+      "badge": "{count} wartend"
+    },
+    "table": {
+      "subtitle": "Nur aktuelle Versionen. Eine bearbeitete Zeile erscheint einmal, in ihrer neuesten Version.",
+      "count": "{count} Zeilen",
+      "empty": "Für diese Revision wurde noch keine Zeile dieser Art erfasst.",
+      "label": "Quelle",
+      "kind": "Typ",
+      "site": "Standort",
+      "period": "Monat",
+      "quantity": "Menge",
+      "state": "Zustand",
+      "noSite": "Kein Standort (siehe Notizen)",
+      "unknownSite": "Standort außerhalb dieser Liste",
+      "unnamed": "Unbenannte Zeile",
+      "wholePeriod": "Gesamter Zeitraum",
+      "truncated": "Mehr liefert eine Anfrage nicht. Grenzen Sie Revision oder Reiter ein, um den Rest zu sehen.",
+      "hint": {
+        "scope1": "Direkte Emissionen aus Quellen, die das Unternehmen besitzt oder kontrolliert — verbrannter Brennstoff, entwichenes Kältemittel, Prozesschemie.",
+        "scope2": "Indirekte Emissionen aus eingekaufter Energie, plus die Zertifikate hinter einer marktbasierten Zahl."
+      }
+    },
+    "state": {
+      "draft": "Entwurf",
+      "approved": "Freigegeben"
+    },
+    "drawer": {
+      "title": "Zeilendetails",
+      "subtitle": "{tab} — jede Version dieser Zeile, die älteste zuerst.",
+      "close": "Zeilendetails schließen",
+      "supersededNote": "Sie sehen eine ältere Version dieser Zeile. Sie bleibt für den Prüfpfad erhalten und kann nicht geändert werden.",
+      "tombstoneNote": "Diese Zeile wurde gelöscht. Die Version bleibt in der Datenbank, damit eine einmal berichtete Zahl lesbar bleibt."
+    },
+    "approve": {
+      "hint": "Die Freigabe schreibt eine neue Version und hält fest, wer freigegeben hat."
+    },
+    "changeReason": {
+      "required": "Diese Zeile ist freigegeben, eine Änderung muss begründet werden. Füllen Sie dies aus, um zu speichern."
+    },
+    "checks": {
+      "deferredTitle": "Beim Speichern geprüft",
+      "deferredBody": "Diese beiden werden gegen den Faktorensatz entschieden, den der Zeitraum fixiert hat und den diese Seite nicht kennt. Sie werden auf dem Server geprüft; die Antwort erscheint hier, falls die Zeile abgelehnt wird."
+    },
+    "calculated": {
+      "title": "Von der Berechnung aufgelöst",
+      "location": "Standortbasierter Faktor: {value}",
+      "market": "Marktbasierter Faktor: {value}",
+      "pending": "noch nicht aufgelöst"
+    },
+    "history": {
+      "title": "Versionsverlauf",
+      "empty": "Diese Zeile hat noch keinen Verlauf.",
+      "version": "Version {no}",
+      "revisionNo": "Revision {no}",
+      "revisionOther": "eine frühere Revision",
+      "current": "aktuell",
+      "tombstone": "gelöscht",
+      "carriedOver": "übernommen aus {revision}",
+      "writtenBy": "Geschrieben von {who} am {when}",
+      "approvedBy": "Freigegeben von {who} am {when}",
+      "reason": "Grund: {reason}",
+      "unknownUser": "eine Person, die das Unternehmen verlassen hat",
+      "truncated": "Die Kette ist länger, als eine Anfrage abläuft — dies ist ihr jüngster Teil."
+    },
+    "fields": {
+      "legal_entity_id": "Juristische Person",
+      "facility_id": "Standort",
+      "year_month": "Monat",
+      "unit": "Einheit",
+      "notes": "Notizen",
+      "change_reason": "Grund der Änderung",
+      "source_name": "Name der Quelle",
+      "activity_type": "Aktivitätstyp",
+      "activity_value": "Menge",
+      "method": "Berechnungsmethode",
+      "biogenic_flag": "Biogen",
+      "refrigerant_added": "Kältemittel nachgefüllt",
+      "refrigerant_recovered": "Kältemittel rückgewonnen",
+      "equipment_capacity": "Füllmenge der Anlage",
+      "opening_stock": "Anfangsbestand",
+      "closing_stock": "Endbestand",
+      "leakage_rate": "Leckagerate",
+      "energy_type": "Energieträger",
+      "consumption": "Verbrauch",
+      "supplier": "Lieferant",
+      "meter_asset_id": "Zähler",
+      "renewable_share": "Erneuerbarer Anteil",
+      "instrument_type": "Instrumententyp",
+      "certificate_id": "Zertifikats-ID",
+      "covered_volume": "Abgedecktes Volumen",
+      "production_country": "Erzeugungsland",
+      "technology": "Erzeugungstechnologie",
+      "generation_period_start": "Erzeugt ab",
+      "generation_period_end": "Erzeugt bis",
+      "cancellation_date": "Entwertet am",
+      "quality_criteria_status": "Qualitätskriterien",
+      "residual_mix_volume": "Volumen Restmix"
+    },
+    "hints": {
+      "year_month": "Leer lassen, wenn die Zeile den gesamten Zeitraum abdeckt.",
+      "notes": "Erforderlich, wenn die Zeile keinen Standort nennt — das ist die dokumentierte Ausnahme.",
+      "production_country": "Zweibuchstabiger Ländercode, z. B. SI.",
+      "change_reason": "Wird in der neuen Version festgehalten und vom Prüfer gelesen."
+    },
+    "enums": {
+      "kind": {
+        "stationary_combustion": "Stationäre Verbrennung",
+        "mobile_combustion": "Mobile Verbrennung",
+        "fugitive_emissions": "Diffuse Emissionen",
+        "process_emissions": "Prozessemissionen",
+        "onsite_generation": "Eigenerzeugung",
+        "electricity": "Strom",
+        "district_heating": "Fernwärme",
+        "steam": "Dampf",
+        "cooling": "Kälte",
+        "GoO": "Herkunftsnachweis",
+        "REGO": "REGO",
+        "REC": "Erneuerbare-Energien-Zertifikat",
+        "PPA": "Stromabnahmevertrag (PPA)",
+        "green_tariff": "Ökostromtarif",
+        "supplier_product": "Lieferantenprodukt"
+      },
+      "energyType": {
+        "electricity": "Strom",
+        "district_heating": "Fernwärme",
+        "steam": "Dampf",
+        "cooling": "Kälte"
+      },
+      "method": {
+        "supplier_specific": "Lieferantenspezifisch",
+        "activity_based": "Aktivitätsbasiert",
+        "fuel_based": "Brennstoffbasiert",
+        "distance_based": "Distanzbasiert",
+        "average_data": "Durchschnittsdaten",
+        "hybrid": "Hybrid",
+        "spend_based": "Ausgabenbasiert",
+        "engineering_estimate": "Ingenieurschätzung",
+        "mass_balance": "Massenbilanz"
+      },
+      "instrumentType": {
+        "GoO": "Herkunftsnachweis",
+        "REGO": "REGO",
+        "REC": "Erneuerbare-Energien-Zertifikat",
+        "PPA": "Stromabnahmevertrag (PPA)",
+        "green_tariff": "Ökostromtarif",
+        "supplier_product": "Lieferantenprodukt"
+      },
+      "technology": {
+        "wind": "Wind",
+        "solar": "Solar",
+        "hydro": "Wasserkraft",
+        "biomass": "Biomasse",
+        "geothermal": "Geothermie",
+        "nuclear": "Kernkraft",
+        "other": "Sonstiges"
+      },
+      "qualityCriteria": {
+        "pass": "Erfüllt die Kriterien",
+        "fail": "Erfüllt die Kriterien nicht",
+        "review": "Prüfung erforderlich"
+      }
+    },
+    "errors": {
+      "rejected": "Die Änderung wurde abgelehnt. Jemand hat diese Zeile inzwischen geändert, oder einer der Werte verweist auf etwas, das es nicht mehr gibt — neu laden und erneut versuchen."
+    },
+    "help": {
+      "legal_entity_id": "Die juristische Person, zu der der Verbrauch gehört.",
+      "facility_id": "Die Anlage, zu der der Verbrauch gehört — das Werk, Büro oder Geschäft, das ihn verursacht hat.",
+      "year_month": "Monat, auf den sich der Verbrauch bezieht, z. B. 2024-01. Leer lassen, wenn der Wert den gesamten Zeitraum abdeckt.",
+      "unit": "Einheit des eingegebenen Werts — kWh, MWh, Liter, m³, kg oder Tonnen. Sie muss mit der Rechnung übereinstimmen.",
+      "notes": "Alles, was der Prüfer wissen sollte: von welcher Rechnung der Wert stammt oder dass es sich um eine Schätzung handelt.",
+      "change_reason": "Grund für die Änderung eines bereits genehmigten Werts. Er bleibt in der Berichtshistorie erhalten.",
+      "source_name": "Was die Emissionen verursacht hat — «Gaskessel», «Lieferwagen», «Gabelstapler».",
+      "activity_type": "Der Brennstoff oder Stoff selbst: Erdgas, Diesel, Benzin, Flüssiggas (LPG), Holz, ein Kältemittel.",
+      "activity_value": "Wie viel im Zeitraum verbraucht wurde, in der gewählten Einheit — die Zahl von der Rechnung oder dem Zähler.",
+      "method": "Wie der Wert ermittelt wurde: aus Kraftstoffrechnungen, aus gefahrenen Kilometern oder aus einer Kältemittel-Massenbilanz.",
+      "refrigerant_added": "Im Zeitraum in die Anlage nachgefülltes Kältemittel, in kg — aus dem Wartungsbericht.",
+      "refrigerant_recovered": "Im Zeitraum aus der Anlage zurückgewonnenes Kältemittel, in kg.",
+      "equipment_capacity": "Gesamte Kältemittelfüllmenge der Anlage, in kg — steht auf dem Typenschild.",
+      "opening_stock": "Kältemittelbestand in Ihrem eigenen Lager zu Beginn des Zeitraums, in kg.",
+      "closing_stock": "Kältemittelbestand in Ihrem eigenen Lager am Ende des Zeitraums, in kg.",
+      "leakage_rate": "Angenommene Leckagerate der Anlage, in Prozent der Füllmenge pro Jahr. Nur verwenden, wenn keine Wartungsdaten vorliegen.",
+      "energy_type": "Was eingekauft wurde: Strom, Fernwärme, Dampf oder Kälte.",
+      "consumption": "Wie viel im Zeitraum eingekauft wurde, gemäß Rechnung des Lieferanten.",
+      "supplier": "Wer es geliefert hat — das auf der Rechnung genannte Unternehmen.",
+      "meter_asset_id": "Der Zähler, von dem dieser Messwert stammt, sofern Zähler im Anlagenregister geführt werden.",
+      "renewable_share": "Anteil der erneuerbaren Energie am eingekauften Strom, in Prozent, sofern vom Lieferanten angegeben.",
+      "instrument_type": "Art des Vertragsdokuments: Herkunftsnachweis, Ökostromtarif oder Stromabnahmevertrag (PPA).",
+      "certificate_id": "Kennung des Zertifikats oder Vertrags, damit er zurückverfolgt werden kann.",
+      "covered_volume": "Wie viel Energie das Dokument abdeckt, in derselben Einheit wie der zugehörige Verbrauch.",
+      "technology": "Die im Dokument genannte Erzeugungstechnologie: Wasserkraft, Solar, Wind, Biomasse usw.",
+      "production_country": "Land der Energieerzeugung, wie im Dokument angegeben.",
+      "residual_mix_volume": "Energie, die mit dem Reststrommix (residual mix) auszuweisen ist — der Teil, den kein Dokument abdeckt.",
+      "quality_criteria_status": "Ob das Dokument die marktbasierten Qualitätskriterien erfüllt; wählen Sie im Zweifel «unbekannt» statt zu raten.",
+      "generation_period_start": "Erster Tag des Erzeugungszeitraums der Energie, laut Dokument.",
+      "generation_period_end": "Letzter Tag dieses Erzeugungszeitraums.",
+      "cancellation_date": "Datum, an dem das Zertifikat im Register auf Ihren Namen entwertet wurde."
+    }
+  },
+  "scope3": {
+    "page": {
+      "title": "Ausgabenbasiertes Scope 3",
+      "subtitle": "Eingekaufte Waren & Dienstleistungen und Investitionsgüter, geschätzt aus den Jahresausgaben",
+      "estimateTitle": "Eine Schätzung außerhalb Ihrer Brutto-Summen Scope 1+2",
+      "estimateBody": "Diese Zahlen entstehen aus Jahresausgaben mal EXIOBASE-Branchendurchschnitten je 1000 € — eine Screening-Methode des GHG Protocol für die Kategorien 1 und 2. Sie werden als Scope 3 berichtet und bewusst NICHT zu den Brutto-Summen Scope 1 und Scope 2 addiert, die nur aus gemessener, unter „Daten“ erfasster Aktivität bestehen."
+    },
+    "editor": {
+      "gateTitle": "Ausgabenbasiertes Scope 3 ist eine kostenpflichtige Funktion",
+      "title": "Ausgabenbasiertes Scope 3 (Kat. 1 & 2)",
+      "subtitle": "Jahresausgaben für eingekaufte Waren & Investitionsgüter je Warengruppe · EXIOBASE-Faktoren je 1000 € · serverseitig in EUR umgerechnet ({year})",
+      "cat1": "Kat. 1 · Eingekaufte Waren",
+      "cat2": "Kat. 2 · Investitionsgüter",
+      "catN": "Kat. {n}",
+      "empty": "Noch keine Ausgabenzeilen — fügen Sie unten eine Warengruppe hinzu. Ohne Zeilen bleiben die Scope-3-Kategorien 1 & 2 bei 0.",
+      "emptyUnpriceable": "Keine Ausgabenzeilen für {year}, und keine können hinzugefügt werden, solange der geltende Faktorensatz keine Ausgabenfaktoren trägt.",
+      "unpriceableTitle": "Der Faktorensatz dieses Zeitraums kann Ausgaben nicht bepreisen",
+      "unpriceableBody": "Der für {year} geltende Faktorensatz — {name} ({code}) — trägt keine Ausgabenfaktoren je 1000 €, und kein anderer aktiver Satz tut es. Ausgabenzeilen können erst hinzugefügt oder bepreist werden, wenn ein Satz mit solchen Faktoren veröffentlicht und diesem Zeitraum zugewiesen ist.",
+      "unpriceableBodyNoSet": "Kein aktiver Faktorensatz trägt Ausgabenfaktoren je 1000 €, daher kann nichts hier Erfasste für {year} bepreist werden. Ausgabenzeilen können wieder hinzugefügt werden, sobald ein Satz mit solchen Faktoren veröffentlicht und diesem Zeitraum zugewiesen ist.",
+      "unpriceableLines": "Bereits erfasste Zeilen bleiben genau so erhalten, wie Sie sie eingegeben haben, und werden als unbepreist gezeigt — nicht als null. Eine Zahl, die nicht ermittelt werden kann, ist keine Zahl null.",
+      "unpriced": "Unbepreist",
+      "unpricedHint": "Für diese Warengruppe ist kein Ausgabenfaktor verfügbar, daher liefert diese Zeile gar keine Zahl — keine Null.",
+      "remove": "{label} entfernen",
+      "commodity": "Warengruppe",
+      "commodityOption": "{cat} — {label}",
+      "amount": "Jahresausgaben",
+      "currency": "Währung",
+      "add": "Hinzufügen",
+      "update": "Aktualisieren",
+      "footnote": "Der Client sendet nur Warengruppe, Betrag und Währung; der EXIOBASE-Faktor und der Jahreswechselkurs werden auf dem Server angewendet, und eine Neuberechnung nimmt das Ergebnis in Ihre Scope-3-Summe auf. Eine Währung ohne Kurs für {year} speichert die Zeile, trägt aber 0 bei, mit Warnung.",
+      "errNegative": "Ausgaben müssen eine nicht negative Zahl sein.",
+      "errValidation": "Prüfen Sie Warengruppe, Betrag und Währung.",
+      "errSave": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
+      "errRemove": "Entfernen fehlgeschlagen. Bitte erneut versuchen.",
+      "okAdded": "Ausgabenzeile hinzugefügt",
+      "okUpdated": "Ausgabenzeile aktualisiert",
+      "okRemoved": "Ausgabenzeile entfernt"
+    },
+    "refusals": {
+      "NO_SPEND_FACTORS": "Der geltende Faktorensatz trägt keine Ausgabenfaktoren je 1000 €, daher konnte diese Ausgabenzeile nicht bepreist werden und wurde nicht gespeichert."
+    }
+  },
+  "disclosures": {
+    "title": "Angaben",
+    "subtitle": "Die erzählenden und zahlenmäßigen Datenpunkte des VSME (B1–B11, C1–C9) und der vereinfachten ESRS. Jeder Datenpunkt zeigt seinen Zustand, sodass klar ist, warum eine Stelle im Bericht leer ist.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können jede Angabe lesen. Eine zu beantworten erfordert die Berechtigung zur Datenerfassung, und die Revision muss offen sein.",
+    "noCatalogue": "Der Kennzahlenkatalog konnte nicht gelesen werden, es gibt noch nichts auszufüllen.",
+    "scope": {
+      "title": "Berichtszeitraum, Revision und Einheit",
+      "subtitle": "Eine Angabe gehört zu einer Revision und zu einer juristischen Person. Genau eine Revision eines Zeitraums ist die aktuelle, und nur sie wird bearbeitet.",
+      "badge": "Revision {no} — {status}",
+      "period": "Berichtszeitraum",
+      "entity": "Juristische Person",
+      "noPeriod": "Dieses Unternehmen hat noch keinen Berichtszeitraum. Legen Sie einen auf der Seite „Organisation“ an, bevor Sie Angaben beantworten.",
+      "noRevision": "Dieser Zeitraum hat noch keine Revision. Starten Sie eine auf der Seite „Organisation“ — eine Angabe gehört zu einer Revision.",
+      "frozenBody": "Diese Revision ist nicht mehr offen, ihre Antworten können nicht geändert werden. Starten Sie eine neue Revision, um eine Angabe neu zu fassen."
+    },
+    "revisionStatus": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Freigegeben",
+      "rejected": "Zurückgegeben",
+      "locked": "Gesperrt"
+    },
+    "recordState": {
+      "draft": "Entwurf",
+      "approved": "Freigegeben"
+    },
+    "state": {
+      "filled": "Erfasst",
+      "not_collected": "Nicht erfasst",
+      "not_applicable": "Nicht anwendbar"
+    },
+    "requirement": {
+      "mandatory": "Verpflichtend",
+      "conditional": "Bedingt",
+      "voluntary": "Freiwillig"
+    },
+    "moduleBasic": "Basismodul — Teil jedes VSME-Berichts.",
+    "moduleComprehensive": "Umfassendes Modul — in den Plänen enthalten, die es abdecken.",
+    "sectionCount": "{filled} von {total}",
+    "metricCount": "{count} Datenpunkte",
+    "appliesWhen": "Wann ausfüllen: {condition}",
+    "severalRecords": "Für diese juristische Person gibt es zu diesem Datenpunkt {count} Einträge. Hier wird der erste bearbeitet; die übrigen bleiben unverändert.",
+    "unsupportedType": "Für diesen Datenpunkt ist der Wertetyp „{type}“ angegeben, den das System nicht speichern kann. Er kann erst beantwortet werden, wenn der Katalogeintrag korrigiert ist.",
+    "versionNote": "Gespeicherte Version: {state}. Beim Speichern entsteht eine neue Version; die alte bleibt im Verlauf.",
+    "controls": {
+      "yes": "Ja",
+      "no": "Nein",
+      "codeHint": "Der Code oder Name, den der Standard verlangt, genau so, wie er im Bericht erscheinen soll.",
+      "codeListHint": "Ein Wert pro Zeile.",
+      "total": "{metric} — gesamt",
+      "breakdownTitle": "Aufschlüsselung nach {dimensions}",
+      "breakdownOptional": "Die Aufschlüsselung wird berichtet, wenn die Daten verfügbar sind. Eine Summe allein ist eine vollständige Antwort.",
+      "breakdownRequired": "Diese Kennzahl wird mit Aufschlüsselung berichtet.",
+      "dimension": "Dimension",
+      "partLabel": "Teil",
+      "partAmount": "Wert",
+      "addPart": "Teil hinzufügen",
+      "removePart": "Diesen Teil entfernen",
+      "other": "Sonstiges…",
+      "otherLabel": "Ihre Antwort"
+    },
+    "changeReason": {
+      "label": "Grund der Änderung",
+      "hint": "Die gespeicherte Version ist freigegeben, daher muss die neue Version sagen, warum sie abweicht.",
+      "required": "Eine freigegebene Antwort kann nur mit Begründung ersetzt werden."
+    },
+    "faults": {
+      "empty": "Noch nichts zu speichern — diese Kennzahl ist noch nicht erfasst.",
+      "total_required": "Für die Aufschlüsselung ist eine Summe nötig: Sie ist der Wert, der in den Bericht übernommen wird.",
+      "not_a_number": "Die Summe und jeder Teil der Aufschlüsselung müssen Zahlen sein."
+    },
+    "actions": {
+      "save": "Antwort speichern",
+      "saveEdit": "Neue Version speichern",
+      "approve": "Freigeben"
+    },
+    "locked": {
+      "title": "Umfassendes Modul",
+      "body": "Dieser Datenpunkt gehört zum umfassenden Modul, das Ihr Plan nicht enthält. Er bleibt sichtbar, damit Sie sehen, was das Upgrade enthält; der Server nimmt keinen Wert dafür an.",
+      "cta": "Upgrade"
+    },
+    "unreadableValue": "Für diesen Datenpunkt ist ein Wert gespeichert, den dieses Formular nicht anzeigen kann: Er liegt in einem Format vor, das die Formularfelder nicht unterstützen. Speichern hier ersetzt ihn.",
+    "moduleSimplifiedEsrs": "Vereinfachte ESRS — die Datenpunkte, die C(2026)5010 über VSME hinaus verlangt; in den Plänen enthalten, die sie abdecken.",
+    "groups": {
+      "vsme": "VSME — B1–B11, C1–C9",
+      "esrs": "Vereinfachte ESRS — ESRS 2, E1–E5, S1–S4, G1"
+    },
+    "lockedEsrs": {
+      "title": "Vereinfachte ESRS",
+      "body": "Dieser Datenpunkt gehört zur Ebene der vereinfachten ESRS, die Ihr Plan nicht enthält. Er bleibt sichtbar, damit Sie sehen, was das Upgrade enthält; der Server nimmt keinen Wert dafür an.",
+      "cta": "Upgrade"
+    },
+    "dataSource": "Wo die Daten üblicherweise liegen: {source}",
+    "esrsRef": "ESRS {reference}",
+    "suggestion": {
+      "label": "Aus Ihren Organisationsdaten:",
+      "use": "Übernehmen"
+    },
+    "notApplicable": {
+      "before": "Trifft nicht zu? Markieren Sie es mit Begründung als nicht zutreffend auf",
+      "link": "der Seite Bereitschaft"
+    },
+    "guidanceTitle": "Was der Standard sagt",
+    "howTo": {
+      "title": "So füllen Sie die Angaben aus",
+      "step1": "Wählen Sie oben Zeitraum und Rechtsträger, dann eine Angabe (B1, B2 …) in der Leiste.",
+      "step2": "Geben Sie für jeden Datenpunkt den Wert ein; die Zeile unter dem Feld sagt, was hineingehört. Kennt die Plattform die Antwort bereits aus «Organisation», klicken Sie «Übernehmen».",
+      "step3": "Trifft ein Datenpunkt nicht zu, markieren Sie ihn auf der Seite Bereitschaft als nicht zutreffend, statt ihn leer zu lassen.",
+      "step4": "Speichern Sie jede Antwort, fügen Sie unter «Nachweise und Qualität» einen Beleg hinzu und geben Sie sie frei: nur freigegebene Werte kommen in den Bericht."
+    },
+    "sectionLocked": "Nicht in Ihrem Paket",
+    "lockedLegend": "Gesperrte Gruppen gehören zu einem höheren Paket; ihre Datenpunkte bleiben sichtbar, damit Sie sehen, was das Upgrade enthält.",
+    "restate": {
+      "title": "Neue Revision starten",
+      "hint": "Eine gesperrte Revision behält den Bericht, den sie erzeugt hat. Für weitere Antworten öffnen Sie eine neue Revision auf ihrer Grundlage und nennen den Grund.",
+      "reason": "Grund der Neudarstellung",
+      "action": "Neue Revision öffnen"
+    },
+    "dimensions": {
+      "energy_source": "Energiequelle"
+    }
+  },
+  "evidence": {
+    "title": "Nachweise & Datenqualität",
+    "subtitle": "Die Dokumente hinter den Zahlen: hochladen, an die Zeilen anhängen, die sie belegen, die Datenqualität bewerten und nachlesen, was sich tatsächlich geändert hat.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können die gesamte Bibliothek lesen. Ein Dokument hochzuladen, an eine Zeile anzuhängen oder zu bewerten erfordert die Berechtigung zur Datenerfassung.",
+    "actions": {
+      "upgrade": "Upgrade"
+    },
+    "revisionStatus": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Freigegeben",
+      "rejected": "Zurückgegeben",
+      "locked": "Gesperrt"
+    },
+    "rowState": {
+      "draft": "Entwurf",
+      "approved": "Freigegeben"
+    },
+    "scope": {
+      "title": "Berichtszeitraum und Revision",
+      "subtitle": "Ein Nachweis hängt an einer Zeile, und eine Zeile gehört zu einer Revision. Sobald die Revision gesperrt ist, sind ihre Dokumente, Verknüpfungen und Qualitätsbewertungen mit ihr eingefroren.",
+      "period": "Berichtszeitraum",
+      "badge": "Revision {no} — {status}",
+      "noPeriod": "Dieses Unternehmen hat noch keinen Berichtszeitraum. Legen Sie einen auf der Seite „Organisation“ an, bevor Sie Nachweise anhängen.",
+      "noRevision": "Dieser Zeitraum hat noch keine Revision. Starten Sie eine auf der Seite „Organisation“ — Nachweise hängen an den Zeilen einer Revision."
+    },
+    "library": {
+      "title": "Dokumentenbibliothek",
+      "subtitle": "Jede Datei, die dieses Unternehmen hochgeladen hat, neueste zuerst. Identische Dateien werden einmal gespeichert; zwei Uploads derselben Rechnung sind trotzdem zwei Datensätze.",
+      "count": "{count} Dokumente",
+      "empty": "Kein Dokument entspricht diesen Filtern.",
+      "name": "Datei",
+      "type": "Art",
+      "issuer": "Ausgestellt von",
+      "coverage": "Deckt ab",
+      "usage": "Verwendet für",
+      "noCoverage": "Kein Zeitraum angegeben",
+      "coverageRange": "{from} – {to}",
+      "unused": "Noch nicht angehängt",
+      "usedBy": "{count} Zeilen"
+    },
+    "filters": {
+      "text": "Suche",
+      "textPlaceholder": "Dateiname oder Aussteller",
+      "fileType": "Dateiart",
+      "confidentiality": "Vertraulichkeit",
+      "usage": "Anhang",
+      "usageValues": {
+        "any": "Alle Dokumente",
+        "linked": "An eine Zeile angehängt",
+        "unlinked": "Nie angehängt"
+      }
+    },
+    "upload": {
+      "dropTitle": "Datei hier ablegen",
+      "dropBody": "PDF, Excel, CSV oder ein Bild, bis zu {limit} MB in Ihrem Plan.",
+      "choose": "Datei auswählen",
+      "submit": "Hochladen",
+      "busy": "Wird hochgeladen…",
+      "stored": "„{name}“ wurde hochgeladen und liegt jetzt in der Bibliothek.",
+      "planTitle": "Diese Datei ist größer, als Ihr Plan hochlädt",
+      "planBody": "Ihr Plan nimmt Dateien bis {limit} MB an. Nichts wurde hochgeladen und nichts berechnet — ein größerer Plan hebt das Limit.",
+      "duplicateTitle": "Dieselbe Datei liegt bereits in der Bibliothek",
+      "duplicateBody": "Beide Datensätze bleiben erhalten, die Datei selbst wird nur einmal gespeichert. War der frühere Datensatz gemeint, verwenden Sie ihn und entfernen die gerade hochgeladene Kopie.",
+      "duplicateUnknown": "Der frühere Datensatz ist nicht in der Liste, die Sie gerade sehen.",
+      "reuse": "Stattdessen „{name}“ verwenden",
+      "typeTitle": "Dieser Dateityp wird nicht angenommen",
+      "typeBody": "Laden Sie eines davon hoch: {formats}. Eine Word-Datei oder ein HEIC-Foto muss umgewandelt werden — am schnellsten als PDF drucken."
+    },
+    "document": {
+      "download": "Herunterladen",
+      "uploadedAt": "Hochgeladen",
+      "size": "Größe",
+      "sizeValue": "{kb} kB",
+      "hash": "Inhaltsfingerabdruck",
+      "usedBy": "Wo dieses Dokument verwendet wird",
+      "usedByNone": "Dieses Dokument ist noch nirgends angehängt.",
+      "usedByRow": "{name} · {month}",
+      "usedByOther": "Eine Zeile außerhalb der Revision, die Sie gerade sehen",
+      "delete": "Dokument löschen",
+      "deleteHint": "Die Datei und jeder Anhang daran verschwinden. Ein Dokument, auf das sich ein gesperrter Bericht stützt, kann nicht gelöscht werden.",
+      "bytesKept": "Der Datensatz wurde entfernt. Die Datei selbst blieb erhalten, weil ein anderer Datensatz dieses Unternehmens denselben Inhalt hält."
+    },
+    "rows": {
+      "title": "Zeilen dieser Revision",
+      "subtitle": "Finden Sie die Zahl, die ein Dokument belegt, und hängen Sie es an. Eine Zeile, die schon Nachweise hat, sagt es.",
+      "search": "Zeile finden",
+      "searchPlaceholder": "Name, Art oder Monat",
+      "count": "{count} Zeilen",
+      "empty": "Keine Zeile dieser Revision entspricht der Suche.",
+      "noRevision": "Wählen Sie einen Zeitraum mit Revision, um seine Zeilen zu sehen.",
+      "noEvidence": "Keine Nachweise",
+      "evidenceCount": "{count} Dokumente",
+      "truncated": "Mehr vom Datenbestand liefert eine Anfrage nicht. Grenzen Sie die Suche ein, um den Rest zu sehen."
+    },
+    "row": {
+      "title": "Zeilendetails",
+      "subtitle": "{kind} · {month}",
+      "unnamed": "Unbenannte Zeile",
+      "wholePeriod": "Gesamter Zeitraum",
+      "close": "Zeilendetails schließen",
+      "evidence": "Nachweise für diese Zeile",
+      "noEvidence": "An dieser Zeile hängt noch nichts.",
+      "unlink": "Lösen",
+      "attach": "„{name}“ anhängen",
+      "attachNone": "Wählen Sie oben ein Dokument zum Anhängen",
+      "alreadyLinked": "Dieses Dokument hing bereits an dieser Zeile — nichts wurde geändert.",
+      "readOnly": "Nachweise anzuhängen erfordert die Berechtigung zur Datenerfassung.",
+      "frozen": "Diese Revision ist nicht mehr offen, ihre Nachweise können nicht geändert werden.",
+      "unknownDocument": "Ein Dokument, das nicht mehr in der Bibliothek liegt"
+    },
+    "dq": {
+      "title": "Datenqualität",
+      "unscored": "nicht bewertet",
+      "scoreOf": "{value} von {max}",
+      "noTier": "Keine Stufe gesetzt",
+      "overridden": "Von einem Prüfer gesetzt",
+      "overrideReason": "Grund der Übersteuerung: {reason}",
+      "assessedAt": "Zuletzt bewertet {when}.",
+      "lockedByOverride": "Ein Prüfer hat diese Werte manuell gesetzt. Ändern oder Löschen erfordert die Prüfberechtigung.",
+      "frozen": "Diese Revision ist nicht mehr offen, ihre Qualitätswerte können nicht geändert werden.",
+      "none": "Niemand hat diese Zeile bisher bewertet.",
+      "pedigreeHint": "1 ist am stärksten, 5 am schwächsten.",
+      "commentHint": "Beschreiben Sie, wie die Zahl ermittelt wurde — das liest der Prüfer.",
+      "overrideLabel": "Diese Werte manuell statt nach den Regeln setzen",
+      "overrideHint": "Mit Ihrem Namen festgehalten und von jedem gelesen, der den Bericht prüft.",
+      "overrideRequired": "Eine Übersteuerung muss begründet werden. Füllen Sie dies aus, um zu speichern."
+    },
+    "timeline": {
+      "title": "Was sich geändert hat",
+      "empty": "Diese Zeile hat noch keinen Verlauf.",
+      "version": "Version {no}",
+      "current": "aktuell",
+      "tombstone": "gelöscht",
+      "carriedOver": "aus einer anderen Revision übernommen",
+      "writtenBy": "Geschrieben von {who} am {when}",
+      "approvedBy": "Freigegeben von {who} am {when}",
+      "reason": "Grund: {reason}",
+      "unknownUser": "eine Person, die das Unternehmen verlassen hat",
+      "auditBy": "Erfasst für {who} am {when}",
+      "selfApproved": "Dieselbe Person hat diese Zahl erfasst und freigegeben.",
+      "chainTruncated": "Die Kette ist länger, als eine Anfrage abläuft — dies ist ihr jüngster Teil.",
+      "auditHidden": "Audit-Einträge werden Rollen mit Audit-Zugriff angezeigt. Der Versionsverlauf oben ist auch ohne sie vollständig.",
+      "auditWindow": "Audit-Einträge, die älter sind als das gelesene Fenster, werden nicht angezeigt. Der Versionsverlauf oben ist auch ohne sie vollständig.",
+      "action": {
+        "create": "Erstellt",
+        "update": "Aktualisiert",
+        "delete": "Gelöscht",
+        "approve_row": "Freigegeben"
+      }
+    },
+    "fields": {
+      "file": "Datei",
+      "file_name": "Dateiname",
+      "file_type": "Dateiart",
+      "issuer": "Ausgestellt von",
+      "document_date": "Dokumentdatum",
+      "coverage_start": "Deckt ab ab",
+      "coverage_end": "Deckt ab bis",
+      "confidentiality": "Vertraulichkeit",
+      "retention_date": "Aufbewahren bis",
+      "documentId": "Dokument",
+      "objectId": "Zeile",
+      "objectType": "Art der Zeile",
+      "reliability_score": "Zuverlässigkeit",
+      "temporal_score": "Aktualität",
+      "geographical_score": "Geografie",
+      "technology_score": "Technologie",
+      "completeness_score": "Vollständigkeit",
+      "coverage_score": "Abdeckung",
+      "estimate_uncertainty": "Unsicherheit",
+      "quality_tier": "Qualitätsstufe",
+      "quality_comment": "Wie diese Zahl ermittelt wurde",
+      "is_overridden": "Manuelle Übersteuerung",
+      "override_reason": "Grund der Übersteuerung"
+    },
+    "hints": {
+      "coverage_start": "Der erste Tag, für den das Dokument Nachweis ist.",
+      "coverage_end": "Der letzte Tag, den es abdeckt. Eine Zeile außerhalb dieses Fensters wird trotzdem angehängt, mit Hinweis.",
+      "retention_date": "Wann diese Datei verworfen werden darf, falls eine Regel es vorsieht."
+    },
+    "enums": {
+      "fileType": {
+        "pdf": "PDF",
+        "xlsx": "Tabelle",
+        "csv": "CSV",
+        "image": "Bild",
+        "other": "Sonstiges"
+      },
+      "confidentiality": {
+        "public": "Öffentlich",
+        "internal": "Intern",
+        "confidential": "Vertraulich"
+      },
+      "qualityTier": {
+        "high_primary": "Primärdaten",
+        "medium_calculated": "Berechnet",
+        "low_proxy": "Näherung",
+        "estimate": "Schätzung"
+      },
+      "kind": {
+        "stationary_combustion": "Stationäre Verbrennung",
+        "mobile_combustion": "Mobile Verbrennung",
+        "fugitive_emissions": "Diffuse Emissionen",
+        "process_emissions": "Prozessemissionen",
+        "onsite_generation": "Eigenerzeugung",
+        "electricity": "Strom",
+        "district_heating": "Fernwärme",
+        "steam": "Dampf",
+        "cooling": "Kälte",
+        "GoO": "Herkunftsnachweis",
+        "REGO": "REGO",
+        "REC": "Erneuerbare-Energien-Zertifikat",
+        "PPA": "Stromabnahmevertrag",
+        "green_tariff": "Ökostromtarif",
+        "supplier_product": "Lieferantenprodukt",
+        "text": "Text",
+        "number": "Zahl",
+        "boolean": "Ja / nein",
+        "date": "Datum"
+      }
+    },
+    "errors": {
+      "rejected": "Die Änderung wurde abgelehnt. Das Dokument oder die Zeile wurde inzwischen möglicherweise geändert — neu laden und erneut versuchen."
+    }
+  },
+  "review": {
+    "title": "Prüfung & Freigabe",
+    "subtitle": "Die Zeilen, die darauf warten, dass jemand hinter ihnen steht, und die Berichtsrevision, zu der sie gehören. Geben Sie frei, was richtig ist, geben Sie zurück, was nicht stimmt, und sperren Sie den Bericht, wenn er fertig ist.",
+    "loadingSection": "Wird geladen…",
+    "readOnlyNote": "Sie können die Warteschlange und den Verlauf lesen. Zeilen freizugeben, den Bericht freizugeben und zu sperren erfordert die Freigabeberechtigung.",
+    "actions": {
+      "title": "Diese Revision weiterbewegen",
+      "submit": "Zur Prüfung einreichen",
+      "start_review": "Zur Prüfung übernehmen",
+      "approve": "Bericht freigeben",
+      "reject": "Zurückgeben",
+      "lock": "Bericht sperren",
+      "abandon": "Diesen Entwurf verwerfen",
+      "upgrade": "Upgrade",
+      "noneAvailable": "Aus dem aktuellen Zustand können Sie mit dieser Revision nichts tun.",
+      "lockedNothing": "Dieser Bericht ist gesperrt. Nichts darin kann geändert werden — eine Korrektur startet eine neue Revision.",
+      "commentHint": "Der Autor liest dies, um zu wissen, was zu korrigieren ist — nennen Sie also die Zahl und das Problem.",
+      "commentRequired": "Einen Bericht zurückzugeben erfordert eine Begründung.",
+      "resumeHint": "Diese Revision wurde zurückgegeben. Das Bearbeiten einer ihrer Zeilen auf der Seite „Daten“ versetzt sie zurück in den Entwurf — es gibt dafür keinen eigenen Button."
+    },
+    "fields": {
+      "comment": "Warum sie zurückgegeben wird",
+      "change_reason": "Warum der Bericht neu gefasst wird",
+      "seedFrom": "Revision, aus der kopiert wird",
+      "id": "Kennung",
+      "action": "Aktion"
+    },
+    "scope": {
+      "title": "Berichtszeitraum und Revision",
+      "subtitle": "Ein Zeitraum hält mehrere Revisionen, und genau eine davon ist aktuell. Die Prüfung arbeitet immer an der aktuellen.",
+      "period": "Berichtszeitraum",
+      "noPeriod": "Dieses Unternehmen hat noch keinen Berichtszeitraum. Legen Sie einen auf der Seite „Organisation“ an, bevor es etwas zu prüfen gibt.",
+      "noRevision": "Dieser Zeitraum hat noch keine Revision. Starten Sie eine auf der Seite „Organisation“."
+    },
+    "queue": {
+      "title": "Warten auf Freigabe",
+      "subtitle": "Jede aktuelle Zeile dieser Revision, die noch ein Entwurf ist. Die Freigabe einer Zeile hält fest, wer hinter der Zahl steht; die Zeile selbst bleibt erhalten und wird nicht überschrieben.",
+      "count": "{count} Zeilen",
+      "empty": "Nichts in dieser Revision wartet auf Freigabe.",
+      "noRevision": "Wählen Sie einen Zeitraum mit Revision, um seine Warteschlange zu sehen.",
+      "selectAll": "Alle angezeigten Zeilen auswählen",
+      "approveSelected": "{count} ausgewählte freigeben",
+      "busy": "Freigabe, eine Zeile nach der anderen…",
+      "truncated": "Mehr von der Warteschlange liefert eine Anfrage nicht. Geben Sie diese frei, der Rest folgt.",
+      "bulkResult": "{approved} von {attempted} Zeilen freigegeben."
+    },
+    "row": {
+      "unnamed": "Unbenannte Zeile",
+      "wholePeriod": "Gesamter Zeitraum"
+    },
+    "revision": {
+      "title": "Die Berichtsrevision",
+      "subtitle": "Eine Revision, ein Status, ein Verlauf. Alles, was mit dem Bericht geschieht, geschieht hier.",
+      "none": "Es gibt noch keine Revision zu prüfen.",
+      "number": "Revision {no}",
+      "notCurrent": "Nicht mehr die aktuelle Revision",
+      "changeReason": "Grund dieser Revision: {reason}",
+      "reviewComment": "Zurückgegeben mit: {comment}",
+      "assignedTo": "Wird geprüft von {name}"
+    },
+    "timeline": {
+      "title": "Was damit geschehen ist",
+      "empty": "Mit dieser Revision ist noch nichts geschehen.",
+      "latestPassOnly": "Dies zeigt den jeweils letzten Zeitpunkt jedes Schritts. Die vollständige Spur aller Versuche liegt im Änderungsverlauf auf der Seite „Nachweise“.",
+      "steps": {
+        "created": "Gestartet",
+        "submitted": "Zur Prüfung eingereicht",
+        "reviewed": "Zurückgegeben",
+        "approved": "Freigegeben",
+        "locked": "Gesperrt"
+      }
+    },
+    "blocking": {
+      "title": "Was im Weg steht",
+      "clean": "Nichts blockiert diese Revision.",
+      "scope": "Geprüft auf Ebene: {scope}",
+      "openRow": "Zeile in der Warteschlange öffnen",
+      "openScreen": "{object} öffnen",
+      "noObject": "Diese Prüfung betrifft das Unternehmen als Ganzes und nicht einen Datensatz.",
+      "noAccess": "Dies betrifft ein Objekt ({object}), auf das Sie keinen Zugriff haben. Bitten Sie eine Person, die es verwaltet, es zu korrigieren."
+    },
+    "advisory": {
+      "title": "Hinweise",
+      "subtitle": "Diese halten die Revision nicht auf und bleiben nach der Freigabe gültig. Jeder ist eine offenlegungspflichtige Entscheidung der Berechnung, hier benannt, damit ein Prüfer sie bewusst unterschreibt statt sie im Bericht zu entdecken."
+    },
+    "result": {
+      "done": "Erledigt — {action}. Der Bericht ist jetzt {to}.",
+      "rowsPending": "{pending} von {total} Zeilen warten noch auf Freigabe. Geben Sie sie zuerst frei, dann reichen Sie ein.",
+      "needsComment": "Einen Bericht zurückzugeben erfordert eine Begründung.",
+      "blocked": "{count} Prüfungen sind nicht bestanden. Sie sind unten aufgeführt, jede mit dem, was zu korrigieren ist.",
+      "notAllowed": "Das ist nicht möglich, solange der Bericht {from} ist. Von hier aus können Sie: {allowed}.",
+      "nothing": "nichts",
+      "notCurrent": "Diese Revision ist nicht mehr die aktuelle, es gibt nichts zurückzugeben.",
+      "raced": "Jemand anderes hat diesen Bericht bewegt, während Sie ihn angesehen haben. Die Seite wurde aktualisiert — prüfen Sie den Status und versuchen Sie es erneut.",
+      "calculationMissing": "Diese Revision hat keine aktuelle abgeschlossene Berechnung. Starten Sie die Berechnung oben und wiederholen Sie die Aktion.",
+      "calculationFailed": "Die letzte Berechnung hat {failed} Zeilen nicht bepreist. Korrigieren, Berechnung erneut starten, dann freigeben."
+    },
+    "lock": {
+      "planTitle": "Diesen Bericht zu sperren erfordert einen größeren Plan",
+      "planBody": "Der Bericht deckt {facilities} Standorte ab, und Ihr Plan schließt Berichte mit bis zu {limit} ab.",
+      "planBodyUnknown": "Der Bericht deckt mehr Standorte ab, als Ihr Plan für Berichte abschließt.",
+      "planHint": "Nichts wurde berechnet und nichts geht verloren. Wechseln Sie zu einem Plan, der so viele Standorte abdeckt, oder nehmen Sie die zusätzlichen Standorte auf der Seite „Organisation“ aus der Grenze dieses Zeitraums."
+    },
+    "restate": {
+      "title": "Diesen Bericht neu fassen",
+      "body": "Ein gesperrter Bericht wird nie bearbeitet. Eine Korrektur ist eine neue Revision, gestartet aus den veröffentlichten Zahlen, und sie muss sagen, warum.",
+      "reasonHint": "Das liest ein Prüfer zuerst — seien Sie konkret.",
+      "reasonRequired": "Eine Neufassung muss begründet werden.",
+      "submit": "Neufassung starten",
+      "busy": "Zeilen werden kopiert…"
+    },
+    "selfApproval": {
+      "disclosure": "In diesem Unternehmen gibt es keinen separaten Freigebenden, Sie geben also Ihre eigenen Daten frei. Das wird im Bericht offengelegt. Geben Sie einer Kollegin oder einem Kollegen die Rolle „Freigebende Person“, damit die Zahlen unabhängig abgezeichnet werden."
+    },
+    "revisionStatus": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Freigegeben",
+      "rejected": "Zurückgegeben",
+      "locked": "Gesperrt"
+    },
+    "rowState": {
+      "draft": "Entwurf",
+      "approved": "Freigegeben"
+    },
+    "enums": {
+      "scope": {
+        "record": "die Zeile selbst",
+        "revision": "die Berichtsrevision",
+        "period": "der Berichtszeitraum",
+        "reference_org": "die Organisation und Referenzdaten"
+      },
+      "objectType": {
+        "emission_activity": "Scope-1-Zeile",
+        "purchased_energy_activity": "Zeile eingekaufte Energie",
+        "contractual_instrument": "Energievertrag",
+        "disclosure_record": "Angabe",
+        "legal_entity": "juristische Person",
+        "facility": "Standort",
+        "reporting_period": "Berichtszeitraum",
+        "period_scope": "Berichtsgrenze",
+        "document": "Dokument",
+        "evidence_link": "Nachweisanhang",
+        "dq_assessment": "Qualitätsbewertung",
+        "emission_factor": "Emissionsfaktor",
+        "report_revision": "Berichtsrevision"
+      },
+      "sourceTable": {
+        "emission_activity": "Scope 1",
+        "purchased_energy_activity": "Eingekaufte Energie",
+        "contractual_instrument": "Energievertrag",
+        "disclosure_record": "Angabe"
+      },
+      "kind": {
+        "stationary_combustion": "Stationäre Verbrennung",
+        "mobile_combustion": "Mobile Verbrennung",
+        "fugitive_emissions": "Diffuse Emissionen",
+        "process_emissions": "Prozessemissionen",
+        "onsite_generation": "Eigenerzeugung",
+        "electricity": "Strom",
+        "district_heating": "Fernwärme",
+        "steam": "Dampf",
+        "cooling": "Kälte",
+        "GoO": "Herkunftsnachweis",
+        "REGO": "REGO",
+        "REC": "Erneuerbare-Energien-Zertifikat",
+        "PPA": "Stromabnahmevertrag",
+        "green_tariff": "Ökostromtarif",
+        "supplier_product": "Lieferantenprodukt",
+        "text": "Text",
+        "number": "Zahl",
+        "boolean": "Ja / nein",
+        "date": "Datum"
+      }
+    },
+    "errors": {
+      "accessChanged": "Ihre Zugriffsrechte haben sich geändert. Laden Sie die Seite neu, um fortzufahren.",
+      "rejected": "Das existiert für dieses Unternehmen nicht.",
+      "ruleUnknown": "Prüfung {code} ist nicht bestanden."
+    },
+    "calculation": {
+      "title": "Berechnung",
+      "run": "Berechnung starten",
+      "hint": "Starten Sie die Berechnung nach der Freigabe der Zeilen und bei jeder Änderung der Eingaben. Vor dem Sperren der Revision ist sie auch ohne Emissionszeilen erforderlich.",
+      "done": "Berechnung abgeschlossen: {lines} Zeilen bepreist, {failed} fehlgeschlagen.",
+      "failed": "Berechnung fehlgeschlagen: {failed} von {lines} Zeilen konnten nicht bepreist werden. Korrigieren Sie die markierten Zeilen und starten Sie sie erneut.",
+      "concurrentModification": "Die Revision wurde gleichzeitig geändert. Starten Sie die Berechnung erneut."
+    }
+  },
+  "reports": {
+    "title": "Berichte",
+    "subtitle": "Erstellen Sie den VSME-Basisbericht aus einer freigegebenen Revision und bewahren Sie jede veröffentlichte Datei auf.",
+    "readOnlyNote": "Ihre Rolle kann veröffentlichte Berichte lesen, aber keine neuen erstellen.",
+    "scope": {
+      "title": "Worum es im Bericht geht",
+      "subtitle": "Ein Bericht entsteht aus einer Revision eines Berichtszeitraums — den Zahlen, die jemand freigegeben hat.",
+      "period": "Berichtszeitraum",
+      "noPeriod": "Noch kein Berichtszeitraum. Legen Sie einen unter „Organisation“ an.",
+      "noRevision": "Dieser Zeitraum hat noch keine Revisionen.",
+      "revisionNo": "Revision {no}",
+      "current": "aktuell",
+      "blocked": {
+        "not_approved": "Aus dieser Revision kann kein Bericht erstellt werden: Niemand hat diese Zahlen bisher freigegeben."
+      },
+      "blockedCta": "Zu Prüfung & Freigabe"
+    },
+    "revisionStatus": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Freigegeben",
+      "rejected": "Abgelehnt",
+      "locked": "Gesperrt"
+    },
+    "output": {
+      "title": "Die Datei",
+      "subtitle": "Wählen Sie Format und Sprache. Beides wird in der Datei festgehalten und kann danach nicht geändert werden.",
+      "format": "Format",
+      "language": "Berichtssprache",
+      "languageHint": "Die Sprache wird in die Datei geschrieben und mit ihr gespeichert. Ein späterer Wechsel der Oberflächensprache ändert einen bereits erstellten Bericht nicht.",
+      "render": "Bericht erstellen",
+      "done": "Erstellt: {file}. Er liegt in der Liste unten.",
+      "formatLockTitle": "{format} ist nicht in Ihrem Plan enthalten",
+      "formatLockBody": "Ihr Plan umfasst die Formate ohne Schloss. Ein Upgrade fügt die übrigen hinzu."
+    },
+    "formats": {
+      "pdf": "PDF",
+      "xlsx": "Excel (XLSX)"
+    },
+    "languages": {
+      "en": "Englisch",
+      "sl": "Slowenisch"
+    },
+    "gate": {
+      "revision_not_approved": "Diese Revision ist noch nicht freigegeben, es gibt also nichts zu veröffentlichen. Geben Sie sie zuerst unter „Prüfung & Freigabe“ frei.",
+      "no_green_run": "Die letzte Berechnung hat nicht jede Zeile bepreist. Korrigieren Sie die markierten Zeilen und berechnen Sie vor der Veröffentlichung erneut.",
+      "period_blocking_errors": "Gegen diesen Zeitraum stehen noch blockierende Validierungsbefunde. Beheben Sie sie zuerst unter „Prüfung & Freigabe“.",
+      "historical_context_missing": "Der historische Zeitraum und die Berichtsgrenze dieser gesperrten Revision wurden nicht gespeichert. Laden Sie einen archivierten Bericht herunter oder beginnen Sie eine neue Revision.",
+      "historical_formula_unsupported": "Diese gesperrte Revision verwendet eine ältere Berechnung mit fehlerhafter Behandlung der Ausgabeeinheiten. Erstellen Sie vor einem neuen Bericht eine Korrekturrevision. Vorhandene Archivdateien bleiben verfügbar."
+    },
+    "lock": {
+      "title": "Dieser Bericht wird in Ihrem Plan nicht abschließbar sein",
+      "body": "Der Zeitraum deckt {facilities} Standorte ab, und der Plan {plan} erlaubt {limit}. Der Bericht kann trotzdem erstellt werden — aber die Revision kann erst gesperrt werden, wenn die Zahl im Plan liegt.",
+      "hint": "Nehmen Sie Standorte aus der Grenze oder upgraden Sie."
+    },
+    "completeness": {
+      "title": "Was der Bericht abdecken wird",
+      "subtitle": "Genau das, was auf der Datei vermerkt wird — dieselbe Abdeckungsangabe, Anmerkung und Ausschlüsse.",
+      "loading": "Ermittle, was der Bericht abdecken wird…",
+      "noRevision": "Wählen Sie eine Revision, um zu sehen, was ihr Bericht abdecken würde.",
+      "inLanguage": "auf {language}",
+      "fullBody": "Alles in Ihrer Organisation ist in diesem Bericht enthalten. Er wird als vollständige Abdeckung gekennzeichnet.",
+      "excludedTitle": "Von Ihrem Plan ausgelassen ({count})"
+    },
+    "coverage": {
+      "full": "Vollständige Abdeckung",
+      "partial": "Teilweise Abdeckung"
+    },
+    "objectType": {
+      "legal_entity": "Juristische Person",
+      "facility": "Standort"
+    },
+    "renders": {
+      "title": "Veröffentlichte Berichte",
+      "subtitle": "Jede Datei, die dieses Unternehmen erstellt hat. Nichts hier wird je überschrieben — erneutes Erstellen fügt eine neue hinzu.",
+      "count": "{count} Dateien",
+      "loading": "Veröffentlichte Berichte werden geladen…",
+      "empty": "Es wurde noch nichts veröffentlicht.",
+      "download": "Herunterladen",
+      "hash": "SHA-256 {hash}",
+      "unknownPeriod": "Unbekannter Zeitraum",
+      "currentPeriodName": "aktueller Periodenname"
+    },
+    "actions": {
+      "upgrade": "Pläne ansehen"
+    },
+    "fields": {
+      "format": "Format",
+      "language": "Sprache"
+    },
+    "errors": {
+      "rejected": "Das existiert für dieses Unternehmen nicht."
+    }
+  },
+  "readiness": {
+    "title": "VSME-Bereitschaft",
+    "subtitle": "Welche Daten Sie bereits haben, was sich verteidigen lässt und was für das Basismodul noch zu sammeln ist.",
+    "errors": {
+      "accessChanged": "Ihr Zugriff hat sich geändert. Laden Sie die Seite neu, um fortzufahren.",
+      "loadFailed": "Die Bereitschaftsübersicht konnte nicht geladen werden. Versuchen Sie es gleich noch einmal."
+    },
+    "summary": {
+      "title": "Bereitschaft für {period}",
+      "module": {
+        "basic": "Basismodul",
+        "basic_comprehensive": "Basis- + umfassendes Modul"
+      },
+      "basis": {
+        "individual": "Einzelbasis",
+        "consolidated": "konsolidierte Basis"
+      },
+      "revision": "Revision {no}",
+      "readyOf": "{ready} von {applicable} anwendbaren Datenpunkten bereit",
+      "noRevision": "Dieser Zeitraum hat noch keine Revision, es wurde also nichts dafür erfasst.",
+      "noRevisionLink": "Organisationsseite öffnen",
+      "esrsModule": "+ vereinfachte ESRS"
+    },
+    "status": {
+      "draft": "Entwurf",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Freigegeben",
+      "rejected": "Abgelehnt",
+      "locked": "Gesperrt"
+    },
+    "datapoint": {
+      "ready": "Bereit",
+      "needs_data": "Daten fehlen",
+      "needs_evidence": "Nachweis fehlt",
+      "needs_confirmation": "Bestätigung fehlt",
+      "not_applicable": "Nicht anwendbar",
+      "sensitive_omitted": "Als sensibel ausgelassen",
+      "open_conditional": "Anwendbarkeit offen"
+    },
+    "datapointEvidence": "{count, plural, one {# Dokument} other {# Dokumente}}",
+    "requirement": {
+      "mandatory": "verpflichtend",
+      "conditional": "bedingt",
+      "voluntary": "freiwillig"
+    },
+    "source": {
+      "plan": "aus dem Plan",
+      "period": "aus dem Zeitraum",
+      "organisation": "aus der Organisation",
+      "calculation": "aus der Berechnung",
+      "disclosure": "als Angabe erfasst"
+    },
+    "action": {
+      "needs_data": "Daten erfassen",
+      "needs_evidence": "Dokument anhängen",
+      "needs_confirmation": "Zur Freigabe senden",
+      "open_conditional": "Beantworten oder Anwendbarkeit entscheiden"
+    },
+    "decision": {
+      "markNotApplicable": "Nicht anwendbar…",
+      "markSensitive": "Als sensibel auslassen…",
+      "withdraw": "Entscheidung zurückziehen",
+      "reasonFor": {
+        "not_applicable": "Warum gilt dieser Datenpunkt nicht?",
+        "sensitive_omitted": "Warum wird diese Angabe als vertraulich oder sensibel ausgelassen?"
+      },
+      "reasonHint": "Der Grund wird im Bericht gedruckt (B1 §24(b) bei sensiblen Auslassungen).",
+      "save": "Entscheidung festhalten",
+      "cancel": "Abbrechen",
+      "failed": "Die Entscheidung wurde nicht gespeichert. Die Revision ist möglicherweise gesperrt, oder Ihr Zugriff hat sich geändert."
+    },
+    "card": {
+      "readyOf": "{ready} von {applicable} bereit",
+      "open": "{count, plural, one {# offen} other {# offen}}",
+      "excluded": "{count, plural, one {# ausgeschlossen} other {# ausgeschlossen}}",
+      "datapoints": "{count, plural, one {# Datenpunkt} other {# Datenpunkte}}",
+      "work": "Bearbeiten"
+    },
+    "disclosures": {
+      "title": "Angaben"
+    },
+    "journey": {
+      "aria": "Berichtsschritte",
+      "title": "Ihr Weg zum Bericht",
+      "next": "Nächster Schritt:",
+      "steps": {
+        "organisation": "Unternehmen und Standorte",
+        "boundary": "Grenze",
+        "applicability": "Anwendbarkeit",
+        "data": "Daten",
+        "evidence": "Nachweise",
+        "calculation": "Berechnung",
+        "review": "Freigabe",
+        "report": "Bericht"
+      }
+    },
+    "esrs": {
+      "title": "Vereinfachte ESRS",
+      "regulatory": "Regulatorischer Status: {status}",
+      "intro": "{additional} zusätzliche Datenpunkte, die die vereinfachten ESRS über VSME hinaus verlangen; {mapped} Ihrer VSME-Datenpunkte bedienen bereits eine ESRS-Angabe ({mappedReady} bereit).",
+      "readyOf": "{ready} von {applicable} anwendbaren ESRS-Datenpunkten bereit",
+      "note": "Die meisten dieser Datenpunkte gelten nur, wo das Thema für das Unternehmen wesentlich ist. Entscheiden Sie die Anwendbarkeit je Datenpunkt, oder beantworten Sie ihn.",
+      "lockedTitle": "Vereinfachte ESRS sind nicht in Ihrem Plan",
+      "lockedBody": "Die vereinfachten ESRS (C(2026)5010) fügen {additional} Datenpunkte zu den {mapped} VSME-Datenpunkten hinzu, die bereits darauf abbilden. Pläne ab {plan} beurteilen sie hier, nehmen ihre Antworten an und drucken den Querverweis-Anhang im Bericht.",
+      "lockedCta": "Pläne ansehen"
+    },
+    "esrsRef": "ESRS {reference}",
+    "appliesWhen": "Gilt, wenn: {condition}"
+  },
+  "vesg": {
+    "title": "VESG-Gutschein-Bereitschaft",
+    "subtitle": "Die sechzehn Anforderungen des slowenischen SPS-Gutscheins für einen freiwilligen Nachhaltigkeitsbericht und was die Plattform zu jeder sehen kann. Kein Versprechen des Gutscheins: Die Förderfähigkeit weisen Sie nach, die Prüfung leistet eine zugelassene Wirtschaftsprüfungsgesellschaft, die Förderung gewährt der Fonds.",
+    "errors": {
+      "accessChanged": "Ihr Zugriff hat sich geändert. Laden Sie die Seite neu, um fortzufahren.",
+      "loadFailed": "Die Checkliste konnte nicht geladen werden. Versuchen Sie es gleich noch einmal."
+    },
+    "summary": {
+      "title": "VESG-Checkliste für {period}",
+      "figure": "{autoMet} von {autoTotal} Prüfungen erfüllt · {manualConfirmed} von {manualTotal} Bestätigungen erfasst",
+      "closes": "Der Aufruf ist offen bis {date} oder bis die Mittel erschöpft sind.",
+      "disclaimer": "HOSMOS bereitet die Daten und Unterlagen vor; es gewährt den Gutschein nicht und führt die unabhängige Prüfung nicht durch."
+    },
+    "status": {
+      "met": "Erfüllt",
+      "attention": "Handlungsbedarf",
+      "pending": "Zu bestätigen",
+      "confirmed": "Bestätigt",
+      "info": "Information"
+    },
+    "blocks": {
+      "eligibility": "Förderfähigkeit",
+      "funding": "Finanzierung",
+      "provider": "Dienstleister",
+      "independence": "Unabhängigkeit",
+      "standard": "Standard",
+      "publication": "Veröffentlichung",
+      "auditability": "Prüfbarkeit",
+      "versioning": "Versionierung",
+      "data_quality": "Datenqualität",
+      "social": "Soziales Modul",
+      "general_info": "Allgemeine Informationen",
+      "environmental": "Umwelt",
+      "comprehensive": "Umfassend",
+      "micro_logic": "Kleinstunternehmen-Logik",
+      "submission": "Einreichung"
+    },
+    "labels": {
+      "hosmos": "Was HOSMOS prüft",
+      "evidence": "Nachweis"
+    },
+    "workOn": "Bearbeiten",
+    "decision": {
+      "confirm": "Bestätigen",
+      "updateNote": "Notiz speichern",
+      "withdraw": "Zurückziehen",
+      "confirmedOn": "Bestätigt am {date}",
+      "readOnly": "Bestätigen erfordert die Berechtigung zur Datenerfassung.",
+      "noteHint": "Optional. Wird nirgends gedruckt; für die Antragsakte aufbewahrt.",
+      "failed": "Die Bestätigung wurde nicht gespeichert. Ihr Zugriff hat sich möglicherweise geändert."
+    },
+    "items": {
+      "eligibility_sme": {
+        "title": "Kleinst-, kleines oder mittleres Unternehmen mit Sitz in Slowenien",
+        "hosmos": "Land und Beschäftigtenzahl der berichtenden Einheit. Den KMU-Status selbst weist der Antragsteller nach.",
+        "evidence": "Handelsregisterauszug, KMU-Status",
+        "result": {
+          "met": "Sitz: {country}; Beschäftigte: {employees} — innerhalb der KMU-Grenze.",
+          "attention": "Sitz: {country}; Beschäftigte: {employees}. Setzen Sie das Land auf SI und erfassen Sie die Beschäftigtenzahl auf der Seite „Organisation“; mehr als 249 Beschäftigte liegen außerhalb der KMU-Definition."
+        }
+      },
+      "eligibility_employee": {
+        "title": "Mindestens ein Beschäftigter für die Dauer des Projekts",
+        "hosmos": "Beschäftigtenzahl oder durchschnittliche VZÄ der berichtenden Einheit und des Berichtszeitraums.",
+        "evidence": "Personal- oder Lohnnachweise",
+        "result": {
+          "met": "Beschäftigte erfasst: {employees}.",
+          "attention": "Keine Beschäftigtenzahl erfasst (Beschäftigte: {employees}). Tragen Sie sie auf der Seite „Organisation“ ein."
+        }
+      },
+      "funding": {
+        "title": "Kofinanzierung von 60 %; Zuschuss zwischen 1.000 und 9.999,99 EUR",
+        "hosmos": "Nichts — das Budget liegt außerhalb der Plattform. Nur förderfähige externe Leistungen zählen.",
+        "evidence": "Angebote, Rechnungen, Zahlungsnachweise",
+        "result": {
+          "pending": "Bestätigen Sie, sobald Angebot und Budget vorliegen.",
+          "confirmed": "Bestätigt."
+        },
+        "noteLabel": "Angebots- oder Budgetreferenz"
+      },
+      "provider": {
+        "title": "Der Bericht wird von einem externen Experten zum Marktpreis erstellt",
+        "hosmos": "Der Export eignet sich für einen externen Experten; Vertrag oder Auftrag liegen außerhalb von HOSMOS.",
+        "evidence": "Vertrag, Nachweis des Marktpreises",
+        "result": {
+          "pending": "Bestätigen Sie, sobald Vertrag oder Auftrag des Experten vorliegt.",
+          "confirmed": "Bestätigt."
+        },
+        "noteLabel": "Vertrags- oder Auftragsreferenz"
+      },
+      "independence": {
+        "title": "Unabhängige Prüfung durch eine zugelassene Wirtschaftsprüfungsgesellschaft; Ersteller und Prüfer sind nicht dieselbe Person",
+        "hosmos": "Eine gesperrte Revision, eine unveränderliche Berichtsausgabe und mindestens ein Mitglied mit prüfender Rolle (Prüfer, Freigebender, Auditor).",
+        "evidence": "Bericht über die prüferische Durchsicht",
+        "result": {
+          "met": "Gesperrte Revision: ja; unveränderliche Ausgaben: {renders}; prüfende Rollen: {reviewers}.",
+          "attention": "Gesperrte Revision: {locked, select, 1 {ja} other {nein}}; unveränderliche Ausgaben: {renders}; prüfende Rollen: {reviewers}. Sperren Sie die Revision, erstellen Sie den Bericht und laden Sie den Prüfer auf der Seite „Einstellungen“ ein."
+        }
+      },
+      "standard": {
+        "title": "Der Bericht folgt dem aktuellen VSME (oder den vereinfachten ESRS) und der Gesetzgebung",
+        "hosmos": "Jeder anwendbare Basis-Datenpunkt hat eine erfasste Antwort oder Entscheidung, mit Nachweis, wo eine Zahl ihn braucht.",
+        "evidence": "Vollständigkeitsmatrix und der Bericht",
+        "result": {
+          "met": "Bereitschaft {percent} %: kein offener Datenpunkt.",
+          "attention": "Bereitschaft {percent} %: {open} Datenpunkte offen, {needsEvidence} ohne Nachweis. Arbeiten Sie sie auf der Seite „Bereitschaft“ ab."
+        }
+      },
+      "publication": {
+        "title": "Der Bericht ist vor dem Auszahlungsantrag öffentlich auf AJPES verfügbar",
+        "hosmos": "Das endgültige PDF oder Berichtspaket von der Seite „Berichte“; die Veröffentlichung selbst geschieht auf AJPES.",
+        "evidence": "AJPES-Veröffentlichungsnachweis",
+        "result": {
+          "pending": "Bestätigen Sie, sobald der Bericht auf AJPES veröffentlicht ist, mit Link oder Datum.",
+          "confirmed": "Bestätigt."
+        },
+        "noteLabel": "AJPES-Link oder Veröffentlichungsdatum"
+      },
+      "auditability": {
+        "title": "Jeder Datenpunkt ist bis zur Quelle nachvollziehbar",
+        "hosmos": "Nachweisverknüpfungen an Datensätzen; Quelle, Zeitraum, Einheit, Methode, Schätzkennzeichen und Freigaben an jeder Zeile.",
+        "evidence": "Export des Prüfpfads",
+        "result": {
+          "met": "Nachweisverknüpfungen: {links}; Datenpunkte ohne Nachweis: 0.",
+          "attention": "Nachweisverknüpfungen: {links}; Datenpunkte, die noch Nachweis brauchen: {needsEvidence}. Hängen Sie die Dokumente auf der Seite „Nachweise“ an."
+        }
+      },
+      "versioning": {
+        "title": "Standard- und Methodikversion sind fixiert",
+        "hosmos": "Der vom Zeitraum fixierte Faktorensatz und die Formelversion der letzten Berechnung.",
+        "evidence": "Versionsprotokoll",
+        "result": {
+          "met": "Faktorensatz {factorSet}; Formelversion {formulaVersion}.",
+          "attention": "Faktorensatz {factorSet}; Formelversion {formulaVersion}. Fixieren Sie den Faktorensatz am Zeitraum und führen Sie die Berechnung aus."
+        }
+      },
+      "data_quality": {
+        "title": "Einheiten, Umrechnungen und Berechnungen sind reproduzierbar",
+        "hosmos": "Eine abgeschlossene, nicht veraltete Berechnung: Jede Zeile trägt Quelleinheit, Umrechnung und Faktor.",
+        "evidence": "Berechnungsprotokoll",
+        "result": {
+          "met": "Die letzte Berechnung ist vollständig und aktuell.",
+          "attention": "{calculated, select, 1 {Die Berechnung ist veraltet — Eingaben haben sich nach dem Lauf geändert.} other {Es wurde noch keine Berechnung ausgeführt.}} Führen Sie sie auf der Seite „Prüfung“ aus."
+        }
+      },
+      "social": {
+        "title": "Basis-Datenpunkte zu Belegschaft, Arbeitsschutz und Vergütung sind verfügbar",
+        "hosmos": "Bereitschaft von B8, B9 und B10.",
+        "evidence": "Personal- und Arbeitsschutznachweise",
+        "result": {
+          "met": "B8 {b8} %, B9 {b9} %, B10 {b10} %.",
+          "attention": "B8 {b8} %, B9 {b9} %, B10 {b10} %. Vervollständigen Sie sie auf der Seite „Angaben“."
+        }
+      },
+      "general_info": {
+        "title": "B1 und B2 werden vollständig in den Bericht exportiert",
+        "hosmos": "Bereitschaft von B1 (Grundlage der Erstellung) und B2 (Praktiken, Richtlinien, Initiativen).",
+        "evidence": "Berichtsexport",
+        "result": {
+          "met": "B1 {b1} %, B2 {b2} %.",
+          "attention": "B1 {b1} %, B2 {b2} %. B1 stammt von der Seite „Organisation“, B2 von „Angaben“."
+        }
+      },
+      "environmental": {
+        "title": "Basisdaten B3, B6 und B7 mit ihren Bedingungen",
+        "hosmos": "Bereitschaft von B3 (Energie und THG), B6 (Wasser) und B7 (Ressourcennutzung und Abfall).",
+        "evidence": "Umweltnachweise",
+        "result": {
+          "met": "B3 {b3} %, B6 {b6} %, B7 {b7} %.",
+          "attention": "B3 {b3} %, B6 {b6} %, B7 {b7} %. B3 stammt aus Datenbestand und Berechnung; B6 und B7 aus „Angaben“."
+        }
+      },
+      "comprehensive": {
+        "title": "C1–C9 können als zweites Modul aufgenommen werden",
+        "hosmos": "Ob der Plan das umfassende Modul enthält.",
+        "evidence": "Export des umfassenden Moduls",
+        "result": {
+          "info": "{available, select, 1 {Das umfassende Modul ist im Plan enthalten.} other {Das umfassende Modul ist nicht im Plan; für den Gutschein ist es optional.}}"
+        }
+      },
+      "micro_logic": {
+        "title": "Bei bis zu 10 Beschäftigten werden die freiwilligen Datenpunkte korrekt angewendet",
+        "hosmos": "Die Beschäftigtenzahl gegen die Kleinstunternehmensschwelle und die Anzahl freiwilliger Datenpunkte im Katalog.",
+        "evidence": "Protokoll der Größenregel",
+        "result": {
+          "info": "Beschäftigte: {employees} — {micro, select, 1 {ein Kleinstunternehmen: die {voluntary} freiwilligen Datenpunkte dürfen weggelassen werden} other {kein Kleinstunternehmen; {voluntary} freiwillige Datenpunkte sind optional wie für jedes Unternehmen}}."
+        }
+      },
+      "submission": {
+        "title": "Antrag über das SPS-ePortal",
+        "hosmos": "Nichts — ein Projektschritt außerhalb der Plattform. Der Aufruf ist offen bis {closes} oder bis die Mittel erschöpft sind.",
+        "evidence": "Antragspaket",
+        "result": {
+          "pending": "Bestätigen Sie, sobald der Antrag eingereicht ist; der Aufruf schließt am {closes}.",
+          "confirmed": "Bestätigt."
+        },
+        "noteLabel": "Antragsreferenz"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookies auf dieser Website",
+    "text": "Notwendige Cookies halten Sie angemeldet und merken sich Ihre Sprache; sie sind immer aktiv. Analyse-Cookies werden nur mit Ihrer Zustimmung verwendet, und die Website funktioniert ohne sie genau gleich.",
+    "necessary": "Nur notwendige",
+    "all": "Alle akzeptieren",
+    "policy": "Cookie-Richtlinie",
+    "settings": "Cookie-Einstellungen"
+  },
+  "errorBoundary": {
+    "title": "Dieser Bildschirm funktioniert nicht mehr",
+    "body": "Beim Aktualisieren der Seite ist etwas fehlgeschlagen. Gespeicherte Daten sind unberührt; nicht gespeicherte Eingaben sind verloren.",
+    "translated": "Die Seite wird vom Browser übersetzt. Die automatische Übersetzung schreibt die Seite unter der Anwendung um und zerstört sie, sobald Sie tippen. Schalten Sie die Übersetzung für diese Website ab und wählen Sie die Sprache oben rechts — die Anwendung gibt es auf Englisch, Slowenisch, Russisch, Deutsch, Italienisch, Serbisch und Kroatisch.",
+    "retry": "Erneut versuchen",
+    "reload": "Seite neu laden",
+    "digest": "Fehlercode: {digest}"
+  }
+}

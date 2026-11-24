@@ -1,0 +1,452 @@
+{
+  "Всегда": {
+    "en": "Always",
+    "sl": "Vedno",
+    "ru": "Всегда",
+    "de": "Immer",
+    "it": "Sempre",
+    "hr": "Uvijek",
+    "sr": "Увек"
+  },
+  "Если компания решила раскрывать Scope 3 и категория значима": {
+    "en": "If the company chooses to disclose Scope 3 and the category is significant",
+    "sl": "Če podjetje razkriva obseg 3 in je kategorija pomembna",
+    "ru": "Если компания раскрывает Scope 3 и категория значима",
+    "de": "Wenn das Unternehmen Scope 3 offenlegt und die Kategorie wesentlich ist",
+    "it": "Se l'impresa rendiconta lo Scope 3 e la categoria è significativa",
+    "hr": "Ako poduzeće objavljuje Scope 3 i kategorija je značajna",
+    "sr": "Ако предузеће обелодањује Scope 3 и категорија је значајна"
+  },
+  "Если выбран Comprehensive": {
+    "en": "If the Comprehensive module is chosen",
+    "sl": "Če je izbran celoviti modul",
+    "ru": "Если выбран расширенный модуль",
+    "de": "Wenn das umfassende Modul gewählt wurde",
+    "it": "Se è scelto il modulo completo",
+    "hr": "Ako je odabran sveobuhvatni modul",
+    "sr": "Ако је изабран свеобухватни модул"
+  },
+  "Если установлены GHG reduction targets": {
+    "en": "If GHG reduction targets are set",
+    "sl": "Če so postavljeni cilji zmanjšanja emisij TGP",
+    "ru": "Если установлены цели по сокращению выбросов ПГ",
+    "de": "Wenn THG-Reduktionsziele festgelegt sind",
+    "it": "Se sono fissati obiettivi di riduzione dei GHG",
+    "hr": "Ako su postavljeni ciljevi smanjenja emisija",
+    "sr": "Ако су постављени циљеви смањења емисија"
+  },
+  "Если выбран Comprehensive; actions если incidents=Yes": {
+    "en": "If the Comprehensive module is chosen; actions only if incidents occurred",
+    "sl": "Če je izbran celoviti modul; ukrepi le, če je prišlo do incidentov",
+    "ru": "Если выбран расширенный модуль; меры — если были инциденты",
+    "de": "Wenn das umfassende Modul gewählt wurde; Maßnahmen nur bei Vorfällen",
+    "it": "Se è scelto il modulo completo; azioni solo in caso di incidenti",
+    "hr": "Ako je odabran sveobuhvatni modul; mjere samo ako je bilo incidenata",
+    "sr": "Ако је изабран свеобухватни модул; мере само ако је било инцидената"
+  },
+  "Если выявлены climate hazards/transition events": {
+    "en": "If climate hazards or transition events were identified",
+    "sl": "Če so bile ugotovljene podnebne nevarnosti ali dogodki prehoda",
+    "ru": "Если выявлены климатические опасности или события перехода",
+    "de": "Wenn Klimagefahren oder Übergangsereignisse ermittelt wurden",
+    "it": "Se sono stati individuati pericoli climatici o eventi di transizione",
+    "hr": "Ako su utvrđene klimatske opasnosti ili tranzicijski događaji",
+    "sr": "Ако су утврђене климатске опасности или транзициони догађаји"
+  },
+  "Всегда; разбивка если данные доступны": {
+    "en": "Always; the breakdown if the data is available",
+    "sl": "Vedno; razčlenitev, če so podatki na voljo",
+    "ru": "Всегда; разбивка — если данные доступны",
+    "de": "Immer; Aufschlüsselung, wenn Daten verfügbar sind",
+    "it": "Sempre; la ripartizione se i dati sono disponibili",
+    "hr": "Uvijek; raščlamba ako su podaci dostupni",
+    "sr": "Увек; рашчлањивање ако су подаци доступни"
+  },
+  "Если активна в соответствующем секторе; benchmark question для Comprehensive": {
+    "en": "If the company is active in the sector concerned",
+    "sl": "Če podjetje deluje v zadevnem sektorju",
+    "ru": "Если компания работает в соответствующем секторе; вопрос об эталонных индексах — для расширенного модуля",
+    "de": "Wenn das Unternehmen im betreffenden Sektor tätig ist",
+    "it": "Se l'impresa opera nel settore interessato",
+    "hr": "Ako poduzeće djeluje u tom sektoru",
+    "sr": "Ако предузеће послује у том сектору"
+  },
+  "Если такие элементы существуют": {
+    "en": "If such items exist",
+    "sl": "Če taki elementi obstajajo",
+    "ru": "Если такие элементы существуют",
+    "de": "Wenn solche Elemente vorhanden sind",
+    "it": "Se tali elementi esistono",
+    "hr": "Ako takvi elementi postoje",
+    "sr": "Ако такви елементи постоје"
+  },
+  "Если соответствующие элементы заявлены в B2": {
+    "en": "If the related items are reported in B2",
+    "sl": "Če so povezani elementi navedeni v B2",
+    "ru": "Если соответствующие элементы заявлены в B2",
+    "de": "Wenn die entsprechenden Elemente in B2 angegeben sind",
+    "it": "Se gli elementi corrispondenti sono indicati in B2",
+    "hr": "Ako su odgovarajući elementi navedeni u B2",
+    "sr": "Ако су одговарајући елементи наведени у B2"
+  },
+  "Опционально": {
+    "en": "Optional",
+    "sl": "Neobvezno",
+    "ru": "По желанию",
+    "de": "Optional",
+    "it": "Facoltativo",
+    "hr": "Neobvezno",
+    "sr": "Необавезно"
+  },
+  "При 50+ сотрудниках": {
+    "en": "If the company has 50 or more employees",
+    "sl": "Če ima podjetje 50 ali več zaposlenih",
+    "ru": "При 50 и более сотрудниках",
+    "de": "Wenn das Unternehmen 50 oder mehr Mitarbeitende hat",
+    "it": "Se l'impresa ha 50 o più dipendenti",
+    "hr": "Ako poduzeće ima 50 ili više zaposlenika",
+    "sr": "Ако предузеће има 50 или више запослених"
+  },
+  "Если имеется": {
+    "en": "If available",
+    "sl": "Če obstaja",
+    "ru": "Если имеется",
+    "de": "Falls vorhanden",
+    "it": "Se disponibile",
+    "hr": "Ako postoji",
+    "sr": "Ако постоји"
+  },
+  "Если уже требуется законом/нац. нормами или добровольно по EMS": {
+    "en": "If already required by law or national rules, or reported voluntarily under an environmental management system",
+    "sl": "Če to že zahteva zakon ali nacionalni predpisi ali se poroča prostovoljno v okviru sistema ravnanja z okoljem",
+    "ru": "Если уже требуется законом или национальными нормами либо ведётся добровольно в системе экологического менеджмента",
+    "de": "Wenn bereits gesetzlich oder durch nationale Vorschriften vorgeschrieben oder freiwillig im Rahmen eines Umweltmanagementsystems berichtet",
+    "it": "Se già richiesto per legge o da norme nazionali, o rendicontato volontariamente in un sistema di gestione ambientale",
+    "hr": "Ako je već propisano zakonom ili nacionalnim pravilima ili se dobrovoljno izvještava u sustavu upravljanja okolišem",
+    "sr": "Ако је већ прописано законом или националним правилима или се добровољно извештава у систему управљања животном средином"
+  },
+  "Для консолидированного отчёта": {
+    "en": "For a consolidated report",
+    "sl": "Za konsolidirano poročilo",
+    "ru": "Для консолидированного отчёта",
+    "de": "Für einen konsolidierten Bericht",
+    "it": "Per un report consolidato",
+    "hr": "Za konsolidirani izvještaj",
+    "sr": "За консолидовани извештај"
+  },
+  "Если есть такие площадки": {
+    "en": "If the company has such sites",
+    "sl": "Če ima podjetje take lokacije",
+    "ru": "Если есть такие площадки",
+    "de": "Wenn das Unternehmen solche Standorte hat",
+    "it": "Se l'impresa ha tali siti",
+    "hr": "Ako poduzeće ima takve lokacije",
+    "sr": "Ако предузеће има такве локације"
+  },
+  "При наличии": {
+    "en": "If available",
+    "sl": "Če obstaja",
+    "ru": "При наличии",
+    "de": "Falls vorhanden",
+    "it": "Se disponibile",
+    "hr": "Ako postoji",
+    "sr": "Ако постоји"
+  },
+  "Если применимо": {
+    "en": "If applicable",
+    "sl": "Če je primerno",
+    "ru": "Если применимо",
+    "de": "Falls zutreffend",
+    "it": "Se applicabile",
+    "hr": "Ako je primjenjivo",
+    "sr": "Ако је применљиво"
+  },
+  "Если имеется и релевантно": {
+    "en": "If available and relevant",
+    "sl": "Če obstaja in je pomembno",
+    "ru": "Если имеется и уместно",
+    "de": "Falls vorhanden und relevant",
+    "it": "Se disponibile e pertinente",
+    "hr": "Ako postoji i relevantno je",
+    "sr": "Ако постоји и релевантно је"
+  },
+  "Если используется ссылка вместо повторного раскрытия": {
+    "en": "If a cross-reference is used instead of repeating the disclosure",
+    "sl": "Če se namesto ponovnega razkritja uporabi sklic",
+    "ru": "Если вместо повторного раскрытия используется ссылка",
+    "de": "Wenn statt einer Wiederholung auf eine Angabe verwiesen wird",
+    "it": "Se si rinvia a un'altra informativa invece di ripeterla",
+    "hr": "Ako se umjesto ponavljanja upućuje na drugu objavu",
+    "sr": "Ако се уместо понављања упућује на друго обелодањивање"
+  },
+  "Если есть площадки в high water-stress areas": {
+    "en": "If the company has sites in areas of high water stress",
+    "sl": "Če ima podjetje lokacije na območjih z visokim vodnim stresom",
+    "ru": "Если есть площадки в зонах высокого водного стресса",
+    "de": "Wenn das Unternehmen Standorte in Gebieten mit hohem Wasserstress hat",
+    "it": "Se l'impresa ha siti in aree ad alto stress idrico",
+    "hr": "Ako poduzeće ima lokacije u područjima visokog vodnog stresa",
+    "sr": "Ако предузеће има локације у подручјима високог водног стреса"
+  },
+  "При процессах со значительным водопотреблением": {
+    "en": "If production processes use significant amounts of water",
+    "sl": "Če proizvodni procesi porabijo znatne količine vode",
+    "ru": "При процессах со значительным водопотреблением",
+    "de": "Wenn Produktionsprozesse viel Wasser verbrauchen",
+    "it": "Se i processi produttivi usano molta acqua",
+    "hr": "Ako proizvodni procesi troše mnogo vode",
+    "sr": "Ако производни процеси троше много воде"
+  },
+  "Для секторов со значительными материальными потоками": {
+    "en": "For sectors with significant material flows",
+    "sl": "Za sektorje z znatnimi snovnimi tokovi",
+    "ru": "Для секторов со значительными материальными потоками",
+    "de": "Für Sektoren mit wesentlichen Materialströmen",
+    "it": "Per settori con flussi di materiali significativi",
+    "hr": "Za sektore sa značajnim tokovima materijala",
+    "sr": "За секторе са значајним токовима материјала"
+  },
+  "Если используется компанией": {
+    "en": "If used by the company",
+    "sl": "Če ga podjetje uporablja",
+    "ru": "Если используется компанией",
+    "de": "Wenn vom Unternehmen genutzt",
+    "it": "Se usato dall'impresa",
+    "hr": "Ako ga poduzeće koristi",
+    "sr": "Ако га предузеће користи"
+  },
+  "Если компания работает более чем в одной стране": {
+    "en": "If the company operates in more than one country",
+    "sl": "Če podjetje deluje v več kot eni državi",
+    "ru": "Если компания работает более чем в одной стране",
+    "de": "Wenn das Unternehmen in mehr als einem Land tätig ist",
+    "it": "Se l'impresa opera in più di un paese",
+    "hr": "Ako poduzeće posluje u više od jedne države",
+    "sr": "Ако предузеће послује у више од једне земље"
+  },
+  "Можно опустить при <150 HC; порог 100 с 07.06.2031": {
+    "en": "May be omitted below 150 employees (headcount); the threshold becomes 100 from 7 June 2031",
+    "sl": "Lahko se izpusti pri manj kot 150 zaposlenih (po številu oseb); od 7. 6. 2031 je prag 100",
+    "ru": "Можно не раскрывать при численности менее 150 человек; с 07.06.2031 порог — 100",
+    "de": "Kann unter 150 Mitarbeitenden (Kopfzahl) entfallen; ab 7. Juni 2031 liegt die Schwelle bei 100",
+    "it": "Può essere omesso sotto i 150 dipendenti (numero di persone); dal 7 giugno 2031 la soglia è 100",
+    "hr": "Može se izostaviti ispod 150 zaposlenika (broj osoba); od 7. lipnja 2031. prag je 100",
+    "sr": "Може се изоставити испод 150 запослених (број лица); од 7. јуна 2031. праг је 100"
+  },
+  "Если план принят": {
+    "en": "If a transition plan has been adopted",
+    "sl": "Če je bil sprejet načrt prehoda",
+    "ru": "Если план принят",
+    "de": "Wenn ein Übergangsplan angenommen wurde",
+    "it": "Se è stato adottato un piano di transizione",
+    "hr": "Ako je plan tranzicije donesen",
+    "sr": "Ако је план транзиције усвојен"
+  },
+  "High-climate-impact sector без плана": {
+    "en": "For a company in a high climate-impact sector that has no transition plan",
+    "sl": "Za podjetje v sektorju z velikim vplivom na podnebje, ki nima načrta prehoda",
+    "ru": "Сектор с высоким влиянием на климат, плана ещё нет",
+    "de": "Für ein Unternehmen in einem Sektor mit hoher Klimawirkung ohne Übergangsplan",
+    "it": "Per un'impresa di un settore ad alto impatto climatico senza piano di transizione",
+    "hr": "Za poduzeće u sektoru s velikim utjecajem na klimu bez plana tranzicije",
+    "sr": "За предузеће у сектору са великим утицајем на климу без плана транзиције"
+  },
+  "Если governance body существует": {
+    "en": "If a governance body exists",
+    "sl": "Če obstaja organ upravljanja",
+    "ru": "Если есть орган управления",
+    "de": "Wenn ein Leitungsorgan besteht",
+    "it": "Se esiste un organo di governo",
+    "hr": "Ako postoji upravljačko tijelo",
+    "sr": "Ако постоји управљачки орган"
+  },
+  "For disclosed metrics": {
+    "en": "For disclosed metrics",
+    "sl": "Za razkrite kazalnike",
+    "ru": "Для раскрываемых показателей",
+    "de": "Für offengelegte Kennzahlen",
+    "it": "Per le metriche rendicontate",
+    "hr": "Za objavljene pokazatelje",
+    "sr": "За обелодањене показатеље"
+  },
+  "If E5 material": {
+    "en": "If resource use and circular economy (E5) is material",
+    "sl": "Če je raba virov in krožno gospodarstvo (E5) pomembna tema",
+    "ru": "Если тема E5 существенна",
+    "de": "Wenn Ressourcennutzung und Kreislaufwirtschaft (E5) wesentlich sind",
+    "it": "Se l'uso delle risorse e l'economia circolare (E5) sono rilevanti",
+    "hr": "Ako su uporaba resursa i kružno gospodarstvo (E5) značajni",
+    "sr": "Ако су коришћење ресурса и циркуларна економија (E5) значајни"
+  },
+  "If affected communities material": {
+    "en": "If affected communities are a material topic",
+    "sl": "Če so prizadete skupnosti pomembna tema",
+    "ru": "Если тема затронутых сообществ существенна",
+    "de": "Wenn betroffene Gemeinschaften ein wesentliches Thema sind",
+    "it": "Se le comunità interessate sono un tema rilevante",
+    "hr": "Ako su pogođene zajednice značajna tema",
+    "sr": "Ако су погођене заједнице значајна тема"
+  },
+  "If applied": {
+    "en": "If applied",
+    "sl": "Če se uporablja",
+    "ru": "Если применяется",
+    "de": "Falls angewendet",
+    "it": "Se applicato",
+    "hr": "Ako se primjenjuje",
+    "sr": "Ако се примењује"
+  },
+  "If biodiversity material": {
+    "en": "If biodiversity is a material topic",
+    "sl": "Če je biotska raznovrstnost pomembna tema",
+    "ru": "Если тема биоразнообразия существенна",
+    "de": "Wenn Biodiversität ein wesentliches Thema ist",
+    "it": "Se la biodiversità è un tema rilevante",
+    "hr": "Ako je bioraznolikost značajna tema",
+    "sr": "Ако је биодиверзитет значајна тема"
+  },
+  "If business conduct material": {
+    "en": "If business conduct is a material topic",
+    "sl": "Če je poslovno ravnanje pomembna tema",
+    "ru": "Если тема деловой этики существенна",
+    "de": "Wenn Unternehmensführung ein wesentliches Thema ist",
+    "it": "Se la condotta aziendale è un tema rilevante",
+    "hr": "Ako je poslovno ponašanje značajna tema",
+    "sr": "Ако је пословно понашање значајна тема"
+  },
+  "If climate material": {
+    "en": "If climate change is a material topic",
+    "sl": "Če so podnebne spremembe pomembna tema",
+    "ru": "Если тема климата существенна",
+    "de": "Wenn Klimawandel ein wesentliches Thema ist",
+    "it": "Se il cambiamento climatico è un tema rilevante",
+    "hr": "Ako su klimatske promjene značajna tema",
+    "sr": "Ако су климатске промене значајна тема"
+  },
+  "If climate risks/opportunities material": {
+    "en": "If climate risks or opportunities are material",
+    "sl": "Če so podnebna tveganja ali priložnosti pomembni",
+    "ru": "Если климатические риски или возможности существенны",
+    "de": "Wenn Klimarisiken oder -chancen wesentlich sind",
+    "it": "Se i rischi o le opportunità climatici sono rilevanti",
+    "hr": "Ako su klimatski rizici ili prilike značajni",
+    "sr": "Ако су климатски ризици или прилике значајни"
+  },
+  "If consumers/end-users material": {
+    "en": "If consumers and end-users are a material topic",
+    "sl": "Če so potrošniki in končni uporabniki pomembna tema",
+    "ru": "Если тема потребителей и конечных пользователей существенна",
+    "de": "Wenn Verbraucher und Endnutzer ein wesentliches Thema sind",
+    "it": "Se consumatori e utilizzatori finali sono un tema rilevante",
+    "hr": "Ako su potrošači i krajnji korisnici značajna tema",
+    "sr": "Ако су потрошачи и крајњи корисници значајна тема"
+  },
+  "If material / contributions made": {
+    "en": "If material, or if contributions were made",
+    "sl": "Če je pomembno ali če so bili dani prispevki",
+    "ru": "Если тема существенна или взносы были",
+    "de": "Wenn wesentlich oder wenn Zuwendungen geleistet wurden",
+    "it": "Se rilevante o se sono stati versati contributi",
+    "hr": "Ako je značajno ili ako su dani doprinosi",
+    "sr": "Ако је значајно или ако су дати доприноси"
+  },
+  "If material and undertaking manufactures/formulates/imports/uses": {
+    "en": "If material and the company manufactures, formulates, imports or uses the substances",
+    "sl": "Če je pomembno in podjetje snovi proizvaja, pripravlja, uvaža ali uporablja",
+    "ru": "Если тема существенна и компания производит, составляет, импортирует или использует такие вещества",
+    "de": "Wenn wesentlich und das Unternehmen die Stoffe herstellt, formuliert, einführt oder verwendet",
+    "it": "Se rilevante e l'impresa produce, formula, importa o usa le sostanze",
+    "hr": "Ako je značajno i poduzeće proizvodi, formulira, uvozi ili koristi te tvari",
+    "sr": "Ако је значајно и предузеће производи, формулише, увози или користи те супстанце"
+  },
+  "If own workforce material": {
+    "en": "If own workforce is a material topic",
+    "sl": "Če so lastni zaposleni pomembna tema",
+    "ru": "Если тема собственного персонала существенна",
+    "de": "Wenn die eigene Belegschaft ein wesentliches Thema ist",
+    "it": "Se la forza lavoro propria è un tema rilevante",
+    "hr": "Ako je vlastita radna snaga značajna tema",
+    "sr": "Ако је сопствена радна снага значајна тема"
+  },
+  "If payment practices material": {
+    "en": "If payment practices are a material topic",
+    "sl": "Če so plačilne prakse pomembna tema",
+    "ru": "Если практика расчётов существенна",
+    "de": "Wenn Zahlungspraktiken ein wesentliches Thema sind",
+    "it": "Se le prassi di pagamento sono un tema rilevante",
+    "hr": "Ako su prakse plaćanja značajna tema",
+    "sr": "Ако су праксе плаћања значајна тема"
+  },
+  "If pollution material": {
+    "en": "If pollution is a material topic",
+    "sl": "Če je onesnaževanje pomembna tema",
+    "ru": "Если тема загрязнения существенна",
+    "de": "Wenn Umweltverschmutzung ein wesentliches Thema ist",
+    "it": "Se l'inquinamento è un tema rilevante",
+    "hr": "Ako je onečišćenje značajna tema",
+    "sr": "Ако је загађење значајна тема"
+  },
+  "If used/material": {
+    "en": "If used or material",
+    "sl": "Če se uporablja ali je pomembno",
+    "ru": "Если применяется или существенно",
+    "de": "Wenn genutzt oder wesentlich",
+    "it": "Se usato o rilevante",
+    "hr": "Ako se koristi ili je značajno",
+    "sr": "Ако се користи или је значајно"
+  },
+  "If value-chain workers material": {
+    "en": "If workers in the value chain are a material topic",
+    "sl": "Če so delavci v vrednostni verigi pomembna tema",
+    "ru": "Если тема работников цепочки создания стоимости существенна",
+    "de": "Wenn Arbeitskräfte in der Wertschöpfungskette ein wesentliches Thema sind",
+    "it": "Se i lavoratori della catena del valore sono un tema rilevante",
+    "hr": "Ako su radnici u lancu vrijednosti značajna tema",
+    "sr": "Ако су радници у ланцу вредности значајна тема"
+  },
+  "If water material": {
+    "en": "If water is a material topic",
+    "sl": "Če je voda pomembna tema",
+    "ru": "Если тема водных ресурсов существенна",
+    "de": "Wenn Wasser ein wesentliches Thema ist",
+    "it": "Se l'acqua è un tema rilevante",
+    "hr": "Ako je voda značajna tema",
+    "sr": "Ако је вода значајна тема"
+  },
+  "Mandatory": {
+    "en": "Mandatory",
+    "sl": "Obvezno",
+    "ru": "Обязательно",
+    "de": "Verpflichtend",
+    "it": "Obbligatorio",
+    "hr": "Obvezno",
+    "sr": "Обавезно"
+  },
+  "Mandatory for material IROs": {
+    "en": "Mandatory for material impacts, risks and opportunities",
+    "sl": "Obvezno za pomembne učinke, tveganja in priložnosti",
+    "ru": "Обязательно для существенных воздействий, рисков и возможностей",
+    "de": "Verpflichtend für wesentliche Auswirkungen, Risiken und Chancen",
+    "it": "Obbligatorio per impatti, rischi e opportunità rilevanti",
+    "hr": "Obvezno za značajne učinke, rizike i prilike",
+    "sr": "Обавезно за значајне утицаје, ризике и прилике"
+  },
+  "Mandatory if incentive schemes exist": {
+    "en": "Mandatory if incentive schemes exist",
+    "sl": "Obvezno, če obstajajo sheme spodbud",
+    "ru": "Обязательно, если есть схемы стимулирования",
+    "de": "Verpflichtend, wenn Anreizsysteme bestehen",
+    "it": "Obbligatorio se esistono sistemi di incentivi",
+    "hr": "Obvezno ako postoje sustavi poticaja",
+    "sr": "Обавезно ако постоје системи подстицаја"
+  },
+  "Mandatory if phase-in used": {
+    "en": "Mandatory if phase-in provisions are used",
+    "sl": "Obvezno, če se uporabljajo prehodne določbe",
+    "ru": "Обязательно, если применяются переходные положения",
+    "de": "Verpflichtend, wenn Übergangsbestimmungen genutzt werden",
+    "it": "Obbligatorio se si applicano disposizioni transitorie",
+    "hr": "Obvezno ako se koriste prijelazne odredbe",
+    "sr": "Обавезно ако се користе прелазне одредбе"
+  }
+}

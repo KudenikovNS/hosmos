@@ -1,0 +1,26 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--gray-50);
+}
+.main {
+  min-width: 0;
+  flex: 1;
+}
+
+/* Header slot for the company switcher. When the switcher self-hides (<2
+   memberships) the div has no children, so `:empty` collapses it entirely —
+   single-company users see no extra bar. */
+.appHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-3) var(--space-4);
+}
+@media (min-width: 768px) {
+  .appHeader {
+    padding: var(--space-3) var(--space-8);
+  }
+}
+.appHeader:empty {
+  display: none;
+}

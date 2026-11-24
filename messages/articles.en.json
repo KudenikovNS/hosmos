@@ -1,0 +1,354 @@
+{
+  "articles": {
+    "meta": {
+      "title": "Articles on sustainability reporting | Hosmos",
+      "description": "What VSME is, which data Scope 1 and 2 need, and how a first report actually goes — without promises the standard does not make."
+    },
+    "listTitle": "Articles on reporting",
+    "listLead": "Six pieces for a company reporting for the first time: what the standard is, which data to collect, what you will be asked, and what the road to a first report looks like.",
+    "backToList": "All articles",
+    "readingTime": "{minutes} min read",
+    "updated": "Updated {date}",
+    "ctaTitle": "Prepare the report in Hosmos",
+    "ctaBody": "Boundary, data, the Scope 1 and 2 calculation and the export to PDF and Excel — in one place, in Slovene or English.",
+    "ctaAction": "See the plans",
+    "items": {
+      "kaj-je-vsme": {
+        "title": "What VSME is, and who needs it",
+        "teaser": "The voluntary standard for small and medium companies: what it contains, why banks and large customers ask for it, and what the «Basic module» means.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VSME is the **voluntary sustainability reporting standard for non-listed small and medium-sized undertakings**, recommended by the European Commission in Recommendation (EU) 2025/1710. It is not a law and it does not apply to you by force of a regulation: you use it when somebody asks you for sustainability data, and you want to give it in a shape the recipient understands."
+          },
+          {
+            "type": "h3",
+            "text": "Why anyone asks for it"
+          },
+          {
+            "type": "p",
+            "text": "Small companies rarely report for themselves. The questions arrive from outside: a bank arranging a loan, a large customer running a tender, an insurer, sometimes a public call. Each of them used to bring its own questionnaire — and that is the problem VSME addresses: one set of datapoints you can send to all of them instead of filling five different forms."
+          },
+          {
+            "type": "h3",
+            "text": "What it is made of"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Basic module (B1–B11)** — basis for preparation, energy and greenhouse gas emissions, pollution, biodiversity, water, circular economy, workforce, health and safety, payment practices, business conduct. This is the core, and for most companies it is enough.",
+              "**Comprehensive module (C1–C9)** — further disclosures for those whose recipient asks for them: strategy, risks, targets, climate transition, workers in the value chain."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "At the start the company picks option A (Basic module only) or option B (Basic and Comprehensive). The choice holds for the whole reporting period and is written into the report itself."
+          },
+          {
+            "type": "h3",
+            "text": "What it is not"
+          },
+          {
+            "type": "p",
+            "text": "VSME does not make a company «CSRD compliant», and it is not an audit. A VSME report is your statement about your data. If somebody checks it later, they will look at the sources: invoices, meters, service reports. Which is why it pays to keep the evidence next to the figure from day one, rather than in a separate folder."
+          },
+          {
+            "type": "h3",
+            "text": "When to start"
+          },
+          {
+            "type": "p",
+            "text": "The worst moment for a first report is the week somebody demands one. Last year's data is then scattered across invoices, e-mail and one colleague's memory. A first report is worth preparing calmly, for a closed year, and extending afterwards."
+          }
+        ]
+      },
+      "podatki-za-obseg-1-in-2": {
+        "title": "Which data Scope 1 and Scope 2 need",
+        "teaser": "Fuel and electricity invoices, refrigerant service reports, meters. What exactly to collect, in which units, and where it usually goes wrong.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Emissions are split into scopes. **Scope 1** is what burns or leaks at your premises: fuel in boilers and ovens, fuel in your own vehicles, refrigerant escaping from cooling systems. **Scope 2** is the energy you buy: electricity, district heating, steam, cooling."
+          },
+          {
+            "type": "h3",
+            "text": "Scope 1 — what to look for"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Natural gas or heating oil**: the year's consumption from supplier invoices, in kWh, m³ or litres. Take the billed quantity rather than the estimated one when the invoice shows both.",
+              "**Fuel for vehicles and machines**: litres from fuel-card invoices or the pump log. If the vehicles run on company cards, that is the fastest source.",
+              "**Refrigerants**: kilograms topped up, from the service report, and the refrigerant type (R404A, for example). If there was no service, nothing was topped up and the figure is zero — that is an answer, not a gap."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Scope 2 — what to look for"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Electricity**: kWh from the invoices, per metering point. Keep the sites apart if you have more than one; the report shows them separately.",
+              "**District heating, steam, cooling**: the same, from the distributor's invoices.",
+              "**Guarantees of origin or a green tariff**: attach them if you have them. Without them the market-based figure is computed from the residual mix, which is usually the worse result."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Where it usually goes wrong"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Units.** kWh and m³ are not the same thing; for gas the difference depends on the calorific value. Enter the unit from the invoice and leave the conversion to the calculation.",
+              "**Missing months.** Eleven invoices instead of twelve is a common mistake. An empty month is not a zero — it is a missing figure, and the report says so.",
+              "**An estimate passed off as data.** Estimating is allowed, hiding it is not. Mark an estimate as an estimate and say how you arrived at it.",
+              "**Own generation.** Solar panels on your roof are not Scope 2; they are reported separately and do not reduce purchased energy on paper."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "How long it takes"
+          },
+          {
+            "type": "p",
+            "text": "For a company with one site and a few vehicles, collecting the data is usually a few hours spread over a few days, because you wait for an invoice or a service report. The second year is much faster: the sources are known and already entered."
+          }
+        ]
+      },
+      "prvo-porocilo-korak-za-korakom": {
+        "title": "A first report, step by step",
+        "teaser": "Boundary, period, data, evidence, review and release. The realistic order, and where skipping a step stops you.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A first report is a six-step project. The order is not decorative: each step is the condition for the next, and skipping one stops you only at the end, when fixing it costs more."
+          },
+          {
+            "type": "h3",
+            "text": "1. Draw the boundary"
+          },
+          {
+            "type": "p",
+            "text": "Which legal entities and which sites are in the report. A single-company business is done in five minutes; a group has to decide whether it reports individually or consolidated, and by which method."
+          },
+          {
+            "type": "h3",
+            "text": "2. Open the period"
+          },
+          {
+            "type": "p",
+            "text": "The reporting year, its first and last day, and the base year later reductions are measured against. The period also fixes the set of emission factors the calculation will use."
+          },
+          {
+            "type": "h3",
+            "text": "3. Collect the data"
+          },
+          {
+            "type": "p",
+            "text": "Invoices, meters, service reports — one row per source and month. Mark whatever is an estimate as an estimate straight away; nobody can reconstruct that later."
+          },
+          {
+            "type": "h3",
+            "text": "4. Attach the evidence"
+          },
+          {
+            "type": "p",
+            "text": "Every row needs its source: an invoice, a reading, a report. Evidence is not bureaucracy — it is the only thing that separates a report from a wish list when the bank asks where a number came from."
+          },
+          {
+            "type": "h3",
+            "text": "5. Review and approve"
+          },
+          {
+            "type": "p",
+            "text": "Someone goes through the rows and approves them, then the calculation runs. An approved row is never overwritten: a correction is a new version with a reason, and the old one stays in the history."
+          },
+          {
+            "type": "h3",
+            "text": "6. Release the report"
+          },
+          {
+            "type": "p",
+            "text": "The revision is locked and the report is produced as PDF and Excel. A locked revision does not change; if a figure is corrected later, a new revision opens and the report you already sent stays as it was."
+          },
+          {
+            "type": "h3",
+            "text": "What is realistic"
+          },
+          {
+            "type": "p",
+            "text": "For a small company's first report, count on a few days of work spread over two or three weeks — most of that is waiting for invoices and for colleagues to answer, not time in the software. Anyone promising a report in half an hour is counting the clicking, not the collecting."
+          }
+        ]
+      },
+      "kaj-vas-bo-vprasala-banka": {
+        "title": "What the bank or a large customer will ask",
+        "teaser": "The questionnaires arrive in different shapes, but the questions repeat. What they ask, why, and what to have ready before they ask.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Small companies almost never start reporting on their own. The trigger is an e-mail: the bank before renewing a loan, a large customer before a tender, an insurer, sometimes a public call. Attached is a spreadsheet with a few dozen questions and a deadline that is always too short."
+          },
+          {
+            "type": "h3",
+            "text": "What they ask"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Basic company data**: registration number, activity, headcount, revenue, sites. That is disclosure B1 of VSME, and it is the same in every questionnaire.",
+              "**Energy use and emissions**: how much electricity, gas and fuel you used, and what that means in emissions. This is where most companies stop, because the data exists on invoices and nowhere as one list.",
+              "**People and safety**: employees by contract type, accidents at work, training.",
+              "**Conduct**: the policies you have written down, and how you handle risk in the supply chain."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Why they ask"
+          },
+          {
+            "type": "p",
+            "text": "Not because they want your opinion of your own sustainability. The bank and the large customer report under their own rules and need numbers from suppliers to produce that report at all. So the questions are about data, not intentions — which is why «we are working on it» is not an answer."
+          },
+          {
+            "type": "h3",
+            "text": "What to prepare in advance"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**One place for the data.** Energy, fuel and service invoices collected by period, not by folder in an inbox.",
+              "**Scope 1 and 2 already calculated** for the last closed year, with the factors you used stated.",
+              "**Evidence next to the figures.** Every number needs a source you can show without half a day of searching.",
+              "**Company basics** that nobody has to copy out of the register again each time."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "How to answer faster"
+          },
+          {
+            "type": "p",
+            "text": "A VSME report is not a literal answer to a questionnaire, but it is the source the answers are copied from without guesswork. Once the data exists in one shape, the difference between «two weeks of panic» and «one afternoon» is exactly whether it has to be collected or only transferred."
+          },
+          {
+            "type": "p",
+            "text": "One practical thing more: ask for the deadline, and ask which version of the questionnaire is the current one. Companies regularly fill in a form the sender has already replaced."
+          }
+        ]
+      },
+      "dokazila-in-kakovost-podatkov": {
+        "title": "Evidence and data quality",
+        "teaser": "Why the invoice beside a figure matters more than the figure, what «estimate» means, and how both show up when somebody asks.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "A report without evidence is a list of claims. While nobody checks it the difference is invisible; the moment a bank or a customer asks where a number came from, it shows in a minute."
+          },
+          {
+            "type": "h3",
+            "text": "What counts as evidence"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**A supplier invoice** for electricity, gas, heat or fuel — the ordinary and the strongest source.",
+              "**A meter reading** with a photo or a printout, when the invoice for the period has not arrived yet.",
+              "**A service report** for cooling systems: how much refrigerant was topped up, and which one.",
+              "**An internal record** — a spreadsheet of kilometres driven, say — when there is nothing else. It is evidence, but weaker, and that has to be said."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Measured, calculated, estimated"
+          },
+          {
+            "type": "p",
+            "text": "Every figure is one of three. **Measured** comes off a meter or an invoice. **Calculated** is derived from something measured by a known rule: litres from kilometres and average consumption. **Estimated** is everything else. An estimate is not forbidden and is often the only option in the first year; what is forbidden is letting it look measured."
+          },
+          {
+            "type": "h3",
+            "text": "How to write it down"
+          },
+          {
+            "type": "p",
+            "text": "Next to every row, record where it came from: the invoice number, the reading date, the service date. If it is an estimate, say how you arrived at it — «three months averaged and multiplied by twelve» is enough. A year later nobody reconstructs that from memory, including you."
+          },
+          {
+            "type": "h3",
+            "text": "What it buys you"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**An answer in a minute** when somebody asks for the source.",
+              "**Comparability between years.** If last year was an estimate and this year is an invoice, a change in the number may be the method rather than the consumption — and you need to be able to show that.",
+              "**Less work next year.** The sources are written down, so the second year does not start with a search."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "How long to keep it"
+          },
+          {
+            "type": "p",
+            "text": "Keep the invoices and records a report is built from at least as long as the report itself stands, and in practice together with the accounting documentation. A report that points at evidence which no longer exists is worse than one that never promised any."
+          }
+        ]
+      },
+      "obseg-3-po-porabi-sredstev": {
+        "title": "Spend-based Scope 3: what it tells you and what it does not",
+        "teaser": "An estimate from purchasing can be useful and misleading at the same time. When to use it, how to read it, and why it is not added to Scope 1 and 2.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Scope 3 is the emissions that arise elsewhere: at suppliers, in transport, in the use of products. For a small company an exact calculation is usually impossible — the supplier data does not exist. Hence the spend-based estimate: how much money you spent in a purchasing category, multiplied by that category's average emission factor."
+          },
+          {
+            "type": "h3",
+            "text": "What such an estimate tells you"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**The order of magnitude.** Whether purchasing is ten times your own emissions or comparable with them.",
+              "**Where to look first.** The category with the largest spend is usually the largest source, and that answers the question of what to work on at all.",
+              "**A starting point with suppliers.** Asking one large supplier is sensible; asking all of them is a wasted month."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "What it does not tell you"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Nothing about your particular supplier.** The factor is an industry average; a supplier running on renewable electricity and one running on coal get the same number.",
+              "**Nothing about improvement.** Buy the same goods cheaper next year and the estimate falls while the emissions do not. A spend-based figure is therefore unfit for measuring progress.",
+              "**Nothing about precision.** The deviation can be large in either direction, and that is a property of the method, not a data-entry mistake."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Why it stands apart from Scope 1 and 2"
+          },
+          {
+            "type": "p",
+            "text": "Because it is a different kind of figure. Scope 1 and 2 are computed from consumption you can show on an invoice; spend-based Scope 3 is an estimate from averages. Adding them together would produce one number that is neither measured nor estimated, and neither half would be visible any more. In the report they therefore stand separately, and the estimate is marked as an estimate."
+          },
+          {
+            "type": "h3",
+            "text": "When to do it anyway"
+          },
+          {
+            "type": "p",
+            "text": "When somebody asks for Scope 3 and you have nothing. An estimate with a stated method is a better answer than an empty field — provided it is labelled as an estimate and says what it was built from."
+          }
+        ]
+      }
+    },
+    "footerNote": "© 2026 HelpH d.o.o. · Hosmos does not provide audit services and does not decide on subsidies."
+  }
+}

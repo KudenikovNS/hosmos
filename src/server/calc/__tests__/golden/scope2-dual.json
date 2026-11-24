@@ -1,0 +1,1471 @@
+{
+  "README": [
+    "GOLDEN FIXTURE — Scope 2 dual reporting (T5.3, CALC-5, TEST-3, О-11).",
+    "",
+    "A FIXED set of energy rows, contractual instruments and factors, with the",
+    "expected MWh and kgCO2e for every one of them. Every number in an",
+    "`arithmetic` block was worked out BY HAND from the formulas of spec §9 —",
+    "not by running `computeScope2` and recording what it printed, which would",
+    "prove only that the code agrees with itself. The arithmetic IS the proof:",
+    "a reader can check any figure here with a pencil and no trust in the",
+    "implementation, exactly as in `scope1-basic.json`.",
+    "",
+    "THE FACTOR VALUES ARE FIXTURE DATA, not the shipped `legacy-v1` set. The",
+    "grid values are DEFRA/AIB-shaped so the magnitudes read as plausible; the",
+    "residual-mix and supplier values are round on purpose, because the point of",
+    "this fixture is the MATCHING and a reader should not have to fight the",
+    "multiplication to check it. Note that `legacy-v1` carries NO residual-mix",
+    "rows at all today (see `RESIDUAL_MIX_ACTIVITY_TYPES` in `calc/scope2.ts`);",
+    "the ones here are what the set will look like once they are seeded, and the",
+    "`grid_average` fallback that stands in until then is exercised by the",
+    "district-heating row.",
+    "",
+    "VERSION HISTORY OF THIS FILE. Written against hosmos-calc-1.1.0. The",
+    "version moved to 1.2.0 when the `supplier_specific` rung stopped admitting",
+    "any `source_name='supplier'` factor for any row naming any supplier and",
+    "started requiring the two to name the SAME seller (migration 0007 added",
+    "`emission_factor.supplier_name`). NOT ONE NUMBER BELOW CHANGED. The only",
+    "row the rung touches is ea05, whose supplier is `Zelena Energija d.o.o.`;",
+    "factor f5 was ALREADY that company's own product factor — it said so in",
+    "`factorName` prose, which no resolver can read — so the fixture now states",
+    "the same fact in the column the resolver matches on, and ea05's",
+    "market-based line is still 50 000 kWh x 0.100 = 5 000 kgCO2e. What WOULD",
+    "have moved, and is the defect 0007 closes: before the column existed, a",
+    "row naming ANY OTHER supplier was also priced by f5 at 0.100 instead of by",
+    "the residual mix at 0.500.",
+    "",
+    "1.3.0 INSERTED A RUNG — unit distance, between geography and the",
+    "contextual/universal basis: a factor priced in the quantity the row was",
+    "ENTERED in (same unit, or one `unit_conversion` renames it onto at exactly",
+    "×1) beats any factor reached by a conversion that changes the number. It",
+    "DOES move shipped figures elsewhere (a `legacy-v1` gas bill in `kWh` used",
+    "to raise FACTORS_AMBIGUOUS and now resolves at ×1), so every line below",
+    "was re-checked against the new ladder. NOT ONE NUMBER BELOW CHANGED, and",
+    "the fixture makes the reason checkable with no code:",
+    "  - `conversions` here is kWh↔MWh only, ×0.001 and ×1000. NEITHER is ×1,",
+    "    so nothing is promoted to the `as_entered` rung by a renaming;",
+    "  - EVERY factor f1…f6 is priced in `kWh`, so for any given row all its",
+    "    candidates sit on the SAME distance rung — the MWh rows (ea01 ea02",
+    "    ea04 ea05 ea06 ea08 eb01…eb04) are all `converted` through ×1000, the",
+    "    kWh rows (ea03 ea07) are all the identity — and the rung therefore",
+    "    ties everywhere and decides nothing. ea05, the one row with two",
+    "    candidates (f1 the AIB grid average and f5 its own supplier's",
+    "    product), is still decided by geography: `supplier_specific` outranks",
+    "    `site_country`, exactly as before, and its market-based line is still",
+    "    50 000 kWh × 0.100 = 5 000 kgCO2e.",
+    "Only the version string moved here.",
+    "",
+    "1.4.0 GAVE THE CONVERSION BASIS A SCOPE (migration 0010): a",
+    "`unit_conversion` row belonging to the period's PINNED factor set outranks",
+    "a shared one, contextual still beating universal inside each scope. It",
+    "moves shipped figures elsewhere — Slovenian gas in `kWh` under `si-2025`",
+    "used to reach ARSO's factors through DEFRA's UK calorific values, two",
+    "routes 3.69% apart that tied into FACTORS_AMBIGUOUS — so every line below",
+    "was re-checked. NOT ONE NUMBER BELOW CHANGED, and the fixture makes the",
+    "reason checkable with no code: BOTH conversions here carry",
+    "`\"factorSetId\": null` and are therefore shared rows, and the period pins",
+    "a set that owns no conversion of its own, so kWh↔MWh sits on the",
+    "`universal` rung exactly as before and every MWh figure is still",
+    "consumption × 0.001 or × 1000. Only the version string moved here.",
+    "",
+    "WHAT THE FIXTURE COVERS, against the T5.3 acceptance:",
+    "  - EVERY energy row yields EXACTLY TWO lines, one per `reporting_basis`",
+    "    (К-20) — 8 rows in, 16 lines out;",
+    "  - AC-5: ea06 is covered 100% by a GoO, so its market-based figure is 0",
+    "    while its location-based figure is 28 800 kgCO2e;",
+    "  - the 150% over-claim: e002's single instrument claims 300 MWh against",
+    "    200 MWh of consumption, the matched volume is CAPPED at 200 and the",
+    "    balance records `overClaimed: true` — which is what VAL-022 blocks on;",
+    "  - the half-overlapping vintage: c104's window is 2024-07-04..2025-06-30,",
+    "    exactly half of which lies in the period, so 200 MWh contributes 100;",
+    "  - a vintage with NO overlap (c105, a 2023 certificate) contributes zero",
+    "    and, just as importantly, adds zero to VAL-022's numerator;",
+    "  - facility-bound BEFORE entity-level: c101 (bound to fa02) is sequence 0",
+    "    and takes its bite `own_facility`, c102 (entity-level) is sequence 1;",
+    "  - the balance closes: for every legal entity covered + residual =",
+    "    consumption, on the nose (VAL-024);",
+    "  - `location_factor_id` / `market_factor_id` are written back for all 8",
+    "    rows (§4.10's Calculated fields) — including as NULL for the row that",
+    "    could not be priced;",
+    "  - the market-factor ladder, all three rungs: `supplier_specific` (ea05),",
+    "    `residual_mix` (the SI and DE electricity rows) and `grid_average`",
+    "    (ea07, district heating — no attribute market exists to strip);",
+    "  - §0.7: ea08 sits in a country the set does not price and BOTH its lines",
+    "    carry `failed_missing_factor` with a NULL result. Never a 0.",
+    "  - CALC-1's four rejections, on both tables (eb01…eb04, cb01…cb02).",
+    "",
+    "1.5.0 normalises factor output units to kgCO2e before final rounding.",
+    "Every factor here already outputs kgCO2e; all hand-worked numbers are unchanged."
+  ],
+
+  "formulaVersion": "hosmos-calc-1.5.0",
+  "roundingRule": "half_up_6dp",
+  "roundingDecimals": 6,
+  "prorationDecimals": 6,
+
+  "period": {
+    "startDate": "2025-01-01",
+    "endDate": "2025-12-31",
+    "factorSetId": "22222222-2222-4222-8222-222222222222"
+  },
+
+  "conversions": [
+    {
+      "id": "00000000-0000-4000-8000-0000000000d1",
+      "fromUnit": "kWh",
+      "toUnit": "MWh",
+      "multiplier": "0.001",
+      "activityContext": null,
+      "factorSetId": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000d2",
+      "fromUnit": "MWh",
+      "toUnit": "kWh",
+      "multiplier": "1000",
+      "activityContext": null,
+      "factorSetId": null
+    }
+  ],
+
+  "factors": [
+    {
+      "id": "00000000-0000-4000-8000-0000000000f1",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "grid_si_location",
+      "factorName": "Slovenian grid, location-based",
+      "activityType": "grid:grid_electricity",
+      "geography": "SI",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-02-01",
+      "sourceName": "AIB",
+      "sourceVersion": "2025 v1.0",
+      "factorValue": "0.240",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000f2",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "grid_de_location",
+      "factorName": "German grid, location-based",
+      "activityType": "grid:grid_electricity",
+      "geography": "DE",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-02-01",
+      "sourceName": "AIB",
+      "sourceVersion": "2025 v1.0",
+      "factorValue": "0.350",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000f3",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "grid_si_residual",
+      "factorName": "Slovenian residual mix",
+      "activityType": "grid:residual_mix",
+      "geography": "SI",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-02-01",
+      "sourceName": "AIB",
+      "sourceVersion": "2025 v1.0",
+      "factorValue": "0.500",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000f4",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "heat_defra_default",
+      "factorName": "District heat (DEFRA default)",
+      "activityType": "heat:heat_defra_default",
+      "geography": "GLOBAL",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-01-15",
+      "sourceName": "DEFRA",
+      "sourceVersion": "2025 v1.0",
+      "factorValue": "0.16590",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000f5",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "supplier_zelena_si",
+      "factorName": "Zelena Energija, product factor",
+      "activityType": "grid:grid_electricity",
+      "geography": "SI",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-03-01",
+      "sourceName": "supplier",
+      "sourceVersion": "2025 disclosure",
+      "supplierName": "Zelena Energija d.o.o.",
+      "factorValue": "0.100",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000000f6",
+      "factorSetId": "22222222-2222-4222-8222-222222222222",
+      "factorCode": "grid_de_residual",
+      "factorName": "German residual mix",
+      "activityType": "grid:residual_mix",
+      "geography": "DE",
+      "inputUnit": "kWh",
+      "outputUnit": "kgCO2e",
+      "applicableYear": 2025,
+      "publicationDate": "2025-02-01",
+      "sourceName": "AIB",
+      "sourceVersion": "2025 v1.0",
+      "factorValue": "0.620",
+      "gwpBasis": "AR5",
+      "biogenicTreatment": null,
+      "status": "active",
+      "validFrom": null,
+      "validTo": null
+    }
+  ],
+
+  "rows": [
+    {
+      "id": "00000000-0000-4000-8000-00000000ea01",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa01",
+      "geography": "SI",
+      "yearMonth": "2025-03",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "400"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea02",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa02",
+      "geography": "SI",
+      "yearMonth": "2025-06",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "600"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea03",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e002",
+      "facilityId": "00000000-0000-4000-8000-00000000fa04",
+      "geography": "DE",
+      "yearMonth": "2025-09",
+      "unit": "kWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "200000"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea04",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "facilityId": "00000000-0000-4000-8000-00000000fa05",
+      "geography": "SI",
+      "yearMonth": null,
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "300"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea05",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e004",
+      "facilityId": "00000000-0000-4000-8000-00000000fa06",
+      "geography": "SI",
+      "yearMonth": "2025-04",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": "Zelena Energija d.o.o.",
+      "consumption": "50"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea06",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e005",
+      "facilityId": "00000000-0000-4000-8000-00000000fa07",
+      "geography": "SI",
+      "yearMonth": "2025-02",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "120"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea07",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e005",
+      "facilityId": "00000000-0000-4000-8000-00000000fa07",
+      "geography": "SI",
+      "yearMonth": "2025-02",
+      "unit": "kWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "district_heating",
+      "supplier": null,
+      "consumption": "40000"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000ea08",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e006",
+      "facilityId": "00000000-0000-4000-8000-00000000fa08",
+      "geography": "ZZ",
+      "yearMonth": "2025-05",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "10"
+    },
+
+    {
+      "id": "00000000-0000-4000-8000-00000000eb01",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa01",
+      "geography": "SI",
+      "yearMonth": "2025-03",
+      "unit": "MWh",
+      "state": "draft",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "9999"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000eb02",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa01",
+      "geography": "SI",
+      "yearMonth": "2025-03",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": true,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "9999"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000eb03",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa01",
+      "geography": "SI",
+      "yearMonth": "2025-03",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": "00000000-0000-4000-8000-00000000ea01",
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "9999"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000eb04",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa01",
+      "geography": "SI",
+      "yearMonth": "2024-12",
+      "unit": "MWh",
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "energyType": "electricity",
+      "supplier": null,
+      "consumption": "9999"
+    }
+  ],
+
+  "instruments": [
+    {
+      "id": "00000000-0000-4000-8000-00000000c101",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": "00000000-0000-4000-8000-00000000fa02",
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-SI-2025-FA02",
+      "coveredVolume": "200",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c102",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-SI-2025-GROUP",
+      "coveredVolume": "500",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c103",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e002",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-DE-2025-OVER",
+      "coveredVolume": "300",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c104",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-SI-2024H2",
+      "coveredVolume": "200",
+      "generationPeriodStart": "2024-07-04",
+      "generationPeriodEnd": "2025-06-30",
+      "residualMixVolume": "200"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c105",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-SI-2023",
+      "coveredVolume": "50",
+      "generationPeriodStart": "2023-01-01",
+      "generationPeriodEnd": "2023-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c106",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e004",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "supplier_product",
+      "certificateId": "ZELENA-PRODUCT-2025",
+      "coveredVolume": "50",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000c107",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e005",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-SI-2025-FULL",
+      "coveredVolume": "120",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+
+    {
+      "id": "00000000-0000-4000-8000-00000000cb01",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "draft",
+      "isDeleted": false,
+      "supersededById": null,
+      "instrumentType": "GoO",
+      "certificateId": "GOO-DRAFT",
+      "coveredVolume": "9999",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000cb02",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "facilityId": null,
+      "yearMonth": null,
+      "state": "approved",
+      "isDeleted": false,
+      "supersededById": "00000000-0000-4000-8000-00000000c102",
+      "instrumentType": "GoO",
+      "certificateId": "GOO-OLD-VERSION",
+      "coveredVolume": "9999",
+      "generationPeriodStart": "2025-01-01",
+      "generationPeriodEnd": "2025-12-31",
+      "residualMixVolume": null
+    }
+  ],
+
+  "expectedExcludedRows": [
+    {
+      "rowId": "00000000-0000-4000-8000-00000000eb01",
+      "reason": "not_approved",
+      "note": "state = 'draft' — CALC-1 takes approved rows only."
+    },
+    {
+      "rowId": "00000000-0000-4000-8000-00000000eb02",
+      "reason": "deleted",
+      "note": "is_deleted = true — a tombstone (К-21), not a consumption."
+    },
+    {
+      "rowId": "00000000-0000-4000-8000-00000000eb03",
+      "reason": "superseded",
+      "note": "superseded_by_id points at ea01 — an older version of it (D5)."
+    },
+    {
+      "rowId": "00000000-0000-4000-8000-00000000eb04",
+      "reason": "outside_period",
+      "note": "2024-12 ends before start_date 2025-01-01."
+    }
+  ],
+
+  "expectedExcludedInstruments": [
+    {
+      "rowId": "00000000-0000-4000-8000-00000000cb01",
+      "reason": "not_approved",
+      "note": "A draft certificate claims nothing — 9 999 MWh of it, in this case."
+    },
+    {
+      "rowId": "00000000-0000-4000-8000-00000000cb02",
+      "reason": "superseded",
+      "note": "The previous version of c102. Counting both would double the claim."
+    }
+  ],
+
+  "expectedSkippedInstruments": [
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c106",
+      "reason": "not_a_volume_claim",
+      "note": [
+        "`supplier_product` is the one InstrumentType that is NOT a cancelled",
+        "attribute certificate: it names a product whose factor the supplier",
+        "publishes, and that factor may be anything. Pricing it at zero because",
+        "it arrived in this table would be §0.7's forbidden substitution in a",
+        "certificate's clothes. It reaches the calculation the other way — ea05",
+        "names the same supplier, and CALC-2's `supplier_specific` rung prices",
+        "the WHOLE of that row's remainder at 0.100 kgCO2e/kWh."
+      ]
+    }
+  ],
+
+  "expectedRowVolumes": [
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea01",
+      "consumptionMwh": "400.000000",
+      "coveredMwh": "400.000000",
+      "residualMwh": "0.000000",
+      "arithmetic": [
+        "Entered in MWh, so the matching unit is reached by the identity and the",
+        "consumption is 400 MWh unchanged. c102 (entity-level, 500 MWh) reaches",
+        "this row first — the entity's rows are consumed in month order and",
+        "2025-03 precedes 2025-06 — and 400 is all it can take here:",
+        "  covered  = 400.000000",
+        "  residual = 400 − 400 = 0.000000"
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea02",
+      "consumptionMwh": "600.000000",
+      "coveredMwh": "300.000000",
+      "residualMwh": "300.000000",
+      "arithmetic": [
+        "Two instruments bite this row, in the order §9 fixes:",
+        "  c101, bound to fa02 which IS this row's facility, takes 200 first;",
+        "  c102 spills its remaining 500 − 400 = 100 onto it afterwards.",
+        "  covered  = 200 + 100 = 300.000000",
+        "  residual = 600 − 300 = 300.000000"
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea03",
+      "consumptionMwh": "200.000000",
+      "coveredMwh": "200.000000",
+      "residualMwh": "0.000000",
+      "arithmetic": [
+        "Entered in kWh, so CALC-3's universal row converts it for the matching:",
+        "  200 000 kWh × 0.001 MWh/kWh = 200.000 MWh",
+        "c103 claims 300 MWh against it and gets 200 — THE CAP. The row cannot",
+        "be more than fully covered, so:",
+        "  covered  = 200.000000",
+        "  residual = 200 − 200 = 0.000000",
+        "The 100 MWh c103 could not place is where VAL-022 comes from; see",
+        "`expectedEntities` for e002."
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea04",
+      "consumptionMwh": "300.000000",
+      "coveredMwh": "100.000000",
+      "residualMwh": "200.000000",
+      "arithmetic": [
+        "`year_month` is NULL — a whole-period row (DM-11), always inside the",
+        "window. Two instruments face it and only one lands anything:",
+        "  c105 (2023 vintage) overlaps the period by 0 days → 0 MWh;",
+        "  c104 (2024-07-04..2025-06-30) prorates 200 MWh to exactly 100.",
+        "  covered  = 0 + 100 = 100.000000",
+        "  residual = 300 − 100 = 200.000000"
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea05",
+      "consumptionMwh": "50.000000",
+      "coveredMwh": "0.000000",
+      "residualMwh": "50.000000",
+      "arithmetic": [
+        "e004's only instrument is a `supplier_product`, which claims no volume",
+        "at all, so nothing is covered and the whole 50 MWh is the remainder —",
+        "priced by the supplier's own factor rather than by a residual mix."
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea06",
+      "consumptionMwh": "120.000000",
+      "coveredMwh": "120.000000",
+      "residualMwh": "0.000000",
+      "arithmetic": [
+        "AC-5. c107 covers exactly 120 MWh of exactly 120 MWh of consumption:",
+        "  covered  = 120.000000",
+        "  residual = 120 − 120 = 0.000000",
+        "A residual of zero is what makes the market-based result zero below —",
+        "it is the ABSENCE of unmatched electricity, not a factor of zero found",
+        "in the set."
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea07",
+      "consumptionMwh": "40.000000",
+      "coveredMwh": "0.000000",
+      "residualMwh": "40.000000",
+      "arithmetic": [
+        "District heating. e005's GoO covers ELECTRICITY and cannot touch it:",
+        "the matching pool is the entity's electricity, per §9's denominator, so",
+        "  40 000 kWh × 0.001 = 40.000 MWh, covered 0, residual 40.000000",
+        "Letting a certificate cover heat would understate a carrier nobody",
+        "bought a certificate for."
+      ]
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea08",
+      "consumptionMwh": "10.000000",
+      "coveredMwh": "0.000000",
+      "residualMwh": "10.000000",
+      "arithmetic": [
+        "e006 holds no instruments, so the whole 10 MWh is residual. The volumes",
+        "are fine; it is the FACTOR that is missing (country ZZ), and the two",
+        "failures below are about that and nothing else."
+      ]
+    }
+  ],
+
+  "expectedMatches": [
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c101",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "rank": "facility_bound",
+      "sequence": 0,
+      "declaredVolumeMwh": "200",
+      "windowDays": 365,
+      "overlapDays": 365,
+      "proratedVolumeMwh": "200.000000",
+      "matchedVolumeMwh": "200.000000",
+      "allocations": [
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea02",
+          "volumeMwh": "200.000000",
+          "pass": "own_facility"
+        }
+      ],
+      "arithmetic": [
+        "SEQUENCE 0, AND THAT IS THE ASSERTION. c101 names fa02, c102 names no",
+        "facility, and §9 consumes facility-bound instruments first — so c101",
+        "sorts ahead of c102 whatever order the two arrived in.",
+        "Its window is the whole reporting year: 2025-01-01..2025-12-31 is 365",
+        "days and the overlap with the period is the same 365, so the volume",
+        "passes through UNPRORATED (no quotient is formed at all):",
+        "  200 MWh × 365/365 = 200.000000",
+        "It is then offered fa02's rows before anything else, and ea02 has 600",
+        "MWh free, so the whole 200 lands there as `own_facility`."
+      ]
+    },
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c102",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "rank": "entity_level",
+      "sequence": 1,
+      "declaredVolumeMwh": "500",
+      "windowDays": 365,
+      "overlapDays": 365,
+      "proratedVolumeMwh": "500.000000",
+      "matchedVolumeMwh": "500.000000",
+      "allocations": [
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea01",
+          "volumeMwh": "400.000000",
+          "pass": "entity_spill"
+        },
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea02",
+          "volumeMwh": "100.000000",
+          "pass": "entity_spill"
+        }
+      ],
+      "arithmetic": [
+        "Entity-level, so every allocation is `entity_spill` and the rows are",
+        "taken in month order:",
+        "  ea01 (2025-03) is empty and has 400 MWh free → 400",
+        "  ea02 (2025-06) has 600 − 200 (c101) = 400 free → the remaining 100",
+        "  500 − 400 − 100 = 0 left over",
+        "Note what the entity's total does NOT depend on: had c102 been consumed",
+        "first, it would have taken 400 from ea01 and 100 from ea02, and c101",
+        "would still have found 200 free at fa02. 700 MWh either way — the order",
+        "decides WHICH detail line carries the cover, never how much there is."
+      ]
+    },
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c103",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e002",
+      "rank": "entity_level",
+      "sequence": 0,
+      "declaredVolumeMwh": "300",
+      "windowDays": 365,
+      "overlapDays": 365,
+      "proratedVolumeMwh": "300.000000",
+      "matchedVolumeMwh": "200.000000",
+      "allocations": [
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea03",
+          "volumeMwh": "200.000000",
+          "pass": "entity_spill"
+        }
+      ],
+      "arithmetic": [
+        "THE CAP, IN ONE INSTRUMENT. Full-year vintage, so 300 MWh is claimed in",
+        "full; e002 bought 200 MWh; ea03 therefore absorbs 200 and 100 MWh of",
+        "the claim has nowhere to go:",
+        "  prorated = 300.000000, matched = 200.000000",
+        "The matched figure is what the market-based arithmetic uses, which is",
+        "why no residual can go negative. The GAP between the two is what",
+        "VAL-022 reports — see e002 in `expectedEntities`."
+      ]
+    },
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c105",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "rank": "entity_level",
+      "sequence": 0,
+      "declaredVolumeMwh": "50",
+      "windowDays": 365,
+      "overlapDays": 0,
+      "proratedVolumeMwh": "0.000000",
+      "matchedVolumeMwh": "0.000000",
+      "allocations": [],
+      "arithmetic": [
+        "A 2023 CERTIFICATE AGAINST A 2025 PERIOD. Its window",
+        "2023-01-01..2023-12-31 ends two years before the period begins, so",
+        "  overlap = 0 days,  0/365 × 50 MWh = 0.000000",
+        "It covers nothing AND adds nothing to VAL-022's numerator — an",
+        "instrument that cannot be claimed is not an over-claim.",
+        "It is sequence 0 nevertheless, ahead of c104: both are entity-level, so",
+        "the tie-break is the vintage start and 2023-01-01 precedes 2024-07-04.",
+        "Being first costs nothing here because it has nothing to spend."
+      ]
+    },
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c104",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "rank": "entity_level",
+      "sequence": 1,
+      "declaredVolumeMwh": "200",
+      "windowDays": 362,
+      "overlapDays": 181,
+      "proratedVolumeMwh": "100.000000",
+      "matchedVolumeMwh": "100.000000",
+      "allocations": [
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea04",
+          "volumeMwh": "100.000000",
+          "pass": "entity_spill"
+        }
+      ],
+      "arithmetic": [
+        "THE HALF-OVERLAPPING VINTAGE, and the window is picked so the halving",
+        "is exact and checkable rather than approximately a half.",
+        "  window: 2024-07-04 … 2025-06-30",
+        "    2024-07-04 is day 186 of a LEAP year (31+29+31+30+31+30 = 182 to",
+        "      the end of June, +4), and 2024 has 366 days, so",
+        "      366 − 186 + 1 = 181 days of the window fall in 2024;",
+        "    2025-01-01 … 2025-06-30 = 31+28+31+30+31+30 = 181 days fall in 2025.",
+        "    window = 181 + 181 = 362 days.",
+        "  overlap with 2025-01-01 … 2025-12-31 = the 2025 half = 181 days.",
+        "  prorated = 200 MWh × 181 ÷ 362 = 36 200 ÷ 362 = 100 EXACTLY",
+        "    (check: 100 × 362 = 36 200 ✓; and 181/362 = 1/2, so the answer is",
+        "     half of 200 by inspection as well)",
+        "The quotient is exact at 6 places, so `divideHalfUp` rounds nothing.",
+        "e003 consumes 300 MWh, so all 100 lands: matched = prorated."
+      ]
+    },
+    {
+      "instrumentId": "00000000-0000-4000-8000-00000000c107",
+      "legalEntityId": "00000000-0000-4000-8000-00000000e005",
+      "rank": "entity_level",
+      "sequence": 0,
+      "declaredVolumeMwh": "120",
+      "windowDays": 365,
+      "overlapDays": 365,
+      "proratedVolumeMwh": "120.000000",
+      "matchedVolumeMwh": "120.000000",
+      "allocations": [
+        {
+          "energyRowId": "00000000-0000-4000-8000-00000000ea06",
+          "volumeMwh": "120.000000",
+          "pass": "entity_spill"
+        }
+      ],
+      "arithmetic": [
+        "AC-5's instrument: 120 MWh of full-year GoO against 120 MWh of",
+        "electricity. Everything is claimed, everything lands, and e005's",
+        "district-heating row is not touched because it is not electricity."
+      ]
+    }
+  ],
+
+  "expectedEntities": [
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e001",
+      "consumptionMwh": "1000.000000",
+      "claimedMwh": "700.000000",
+      "coveredMwh": "700.000000",
+      "residualMwh": "300.000000",
+      "overClaimed": false,
+      "declaredResidualMwh": null,
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "consumption = 400 (ea01) + 600 (ea02) = 1 000 MWh. The three excluded",
+        "rows carry 9 999 MWh each and CALC-1 keeps every one of them out.",
+        "claimed  = 200 (c101) + 500 (c102) = 700 MWh, both full-year vintages.",
+        "The two excluded certificates would have added 19 998 MWh.",
+        "covered  = 700 (nothing is capped: 700 ≤ 1 000)",
+        "residual = 1 000 − 700 = 300 MWh",
+        "BALANCE (VAL-024): 700 + 300 = 1 000 ✓"
+      ]
+    },
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e002",
+      "consumptionMwh": "200.000000",
+      "claimedMwh": "300.000000",
+      "coveredMwh": "200.000000",
+      "residualMwh": "0.000000",
+      "overClaimed": true,
+      "declaredResidualMwh": null,
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "THE 150% CASE, WHERE THE CAP AND THE RULE BOTH DO THEIR JOB.",
+        "consumption = 200 000 kWh × 0.001 = 200 MWh",
+        "claimed     = 300 MWh  (150% of 200)",
+        "covered     = 200 MWh  ← CAPPED at the consumption",
+        "residual    = 200 − 200 = 0 MWh",
+        "overClaimed = claimed > consumption = 300 > 200 = true → VAL-022 fails",
+        "WITHOUT THE CAP the residual would be 200 − 300 = −100 MWh and the",
+        "market-based figure −100 × 1000 × 0.620 = −62 000 kgCO2e — a negative",
+        "emission netting against real ones elsewhere in a total.",
+        "WITHOUT THE RULE the cap would swallow the 100 MWh of certificates that",
+        "cover nothing and the report would look perfect.",
+        "BALANCE (VAL-024): 200 + 0 = 200 ✓ — the balance closes BECAUSE of the",
+        "cap, which is exactly why the over-claim needs its own rule to surface."
+      ]
+    },
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e003",
+      "consumptionMwh": "300.000000",
+      "claimedMwh": "100.000000",
+      "coveredMwh": "100.000000",
+      "residualMwh": "200.000000",
+      "overClaimed": false,
+      "declaredResidualMwh": "200.000000",
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "consumption = 300 MWh (ea04, a whole-period row)",
+        "claimed  = 0 (c105, no overlap) + 100 (c104, half its window) = 100 MWh",
+        "covered  = 100, residual = 300 − 100 = 200 MWh",
+        "DECLARED RESIDUAL: c104 states `residual_mix_volume = 200`, and the",
+        "calculation computes 200. They agree, so VAL-024's second clause passes;",
+        "had the preparer typed 250 the rule would fail even though the engine's",
+        "own arithmetic balances — that contradiction is the point of the column.",
+        "BALANCE (VAL-024): 100 + 200 = 300 ✓"
+      ]
+    },
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e004",
+      "consumptionMwh": "50.000000",
+      "claimedMwh": "0.000000",
+      "coveredMwh": "0.000000",
+      "residualMwh": "50.000000",
+      "overClaimed": false,
+      "declaredResidualMwh": null,
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "The `supplier_product` claims no volume, so the entity claims nothing:",
+        "  claimed = 0, covered = 0, residual = 50 − 0 = 50 MWh",
+        "BALANCE (VAL-024): 0 + 50 = 50 ✓"
+      ]
+    },
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e005",
+      "consumptionMwh": "120.000000",
+      "claimedMwh": "120.000000",
+      "coveredMwh": "120.000000",
+      "residualMwh": "0.000000",
+      "overClaimed": false,
+      "declaredResidualMwh": null,
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "consumption counts ELECTRICITY only: 120 MWh (ea06). The 40 MWh of",
+        "district heating (ea07) is outside the balance entirely — it has its own",
+        "two lines and no certificate can reach it.",
+        "claimed = covered = 120, residual = 0.",
+        "100% covered, which is AC-5. BALANCE: 120 + 0 = 120 ✓"
+      ]
+    },
+    {
+      "legalEntityId": "00000000-0000-4000-8000-00000000e006",
+      "consumptionMwh": "10.000000",
+      "claimedMwh": "0.000000",
+      "coveredMwh": "0.000000",
+      "residualMwh": "10.000000",
+      "overClaimed": false,
+      "declaredResidualMwh": null,
+      "unconvertibleRowIds": [],
+      "arithmetic": [
+        "No instruments at all: claimed 0, covered 0, residual 10 MWh.",
+        "BALANCE: 0 + 10 = 10 ✓ — the VOLUMES balance perfectly even though",
+        "neither of this row's lines can be priced. The balance is about MWh; the",
+        "missing factor is a different failure with a different status."
+      ]
+    }
+  ],
+
+  "expectedLines": [
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea01",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "400",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "96000.000000",
+      "arithmetic": [
+        "The Slovenian grid factor is priced per kWh and the meter reads MWh, so",
+        "CALC-3's universal row multiplies by 1 000. No supplier is passed to",
+        "CALC-2 on this line by construction — a location-based figure a contract",
+        "could move would not be location-based.",
+        "  400 MWh × 1 000 kWh/MWh = 400 000 kWh",
+        "  400 000 × 0.240 kgCO2e/kWh = 96 000",
+        "    (400 000 × 24 = 9 600 000, ÷100)",
+        "  half-up to 6 dp → 96000.000000"
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea01",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "0.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f3",
+      "marketFactorBasis": "residual_mix",
+      "coveredMwh": "400.000000",
+      "co2eResult": "0.000000",
+      "arithmetic": [
+        "The row is fully covered by c102, so the UNMATCHED volume — which is",
+        "what a market-based line prices — is nothing:",
+        "  0 MWh × 1 000 × 0.500 = 0.000000",
+        "The 400 covered MWh are priced at the certificate's zero and are absent",
+        "from `input_value` rather than multiplied by it, which is what keeps",
+        "`input × conversion × factor` re-derivable from the stored row."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea02",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "600",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "144000.000000",
+      "arithmetic": [
+        "  600 MWh × 1 000 = 600 000 kWh",
+        "  600 000 × 0.240 = 144 000   (600 000 × 24 = 14 400 000, ÷100)",
+        "  → 144000.000000",
+        "Unmoved by the two certificates: location-based never sees them."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea02",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "300.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f3",
+      "marketFactorBasis": "residual_mix",
+      "coveredMwh": "300.000000",
+      "co2eResult": "150000.000000",
+      "arithmetic": [
+        "300 of the 600 MWh were covered (200 by c101, 100 by c102), so the",
+        "residual mix prices the other 300:",
+        "  300 MWh × 1 000 = 300 000 kWh",
+        "  300 000 × 0.500 = 150 000",
+        "  → 150000.000000",
+        "Above the location-based share of the same electricity, as a residual",
+        "mix should be: 0.500 > 0.240 because the certificates took the clean",
+        "attributes out of the pool."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea03",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "200000",
+      "inputUnit": "kWh",
+      "conversionFactor": "1",
+      "conversionId": null,
+      "factorId": "00000000-0000-4000-8000-0000000000f2",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "70000.000000",
+      "arithmetic": [
+        "A German site, so CALC-2 resolves the DE grid row — the site's country,",
+        "not the parent's. The meter reads kWh and the factor is priced per kWh,",
+        "so the conversion is the identity and no `unit_conversion` row is cited:",
+        "  200 000 kWh × 1 × 0.350 = 70 000",
+        "  → 70000.000000"
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea03",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "0.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f6",
+      "marketFactorBasis": "residual_mix",
+      "coveredMwh": "200.000000",
+      "co2eResult": "0.000000",
+      "arithmetic": [
+        "The over-claim, seen from the row. 300 MWh were claimed against 200 MWh",
+        "of consumption; the cap grants 200, so the residual is 0:",
+        "  0 MWh × 1 000 × 0.620 = 0.000000",
+        "The row's market-based figure is legitimate ARITHMETIC and an illegitimate",
+        "CLAIM, and that is the whole reason VAL-022 exists beside the cap. Note",
+        "the line is still denominated in MWh while its location-based twin is in",
+        "kWh: the two prices two different quantities, the meter's and the",
+        "matching's."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea04",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "300",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "72000.000000",
+      "arithmetic": [
+        "  300 MWh × 1 000 = 300 000 kWh",
+        "  300 000 × 0.240 = 72 000   (300 000 × 24 = 7 200 000, ÷100)",
+        "  → 72000.000000"
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea04",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "200.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f3",
+      "marketFactorBasis": "residual_mix",
+      "coveredMwh": "100.000000",
+      "co2eResult": "100000.000000",
+      "arithmetic": [
+        "The half-overlapping certificate covered 100 of the 300 MWh:",
+        "  200 MWh × 1 000 = 200 000 kWh",
+        "  200 000 × 0.500 = 100 000",
+        "  → 100000.000000",
+        "Had the vintage window been read as covering the period in full — the",
+        "mistake proration prevents — the covered volume would have been 200 MWh",
+        "and this figure 50 000, understating the market-based result by half."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea05",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "50",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "12000.000000",
+      "arithmetic": [
+        "  50 MWh × 1 000 = 50 000 kWh",
+        "  50 000 × 0.240 = 12 000",
+        "  → 12000.000000",
+        "The row names a supplier whose factor IS in the set, and the",
+        "location-based line still resolves the country grid: CALC-2's supplier",
+        "rung is unreachable unless the query names the supplier, and this query",
+        "does not."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea05",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "supplier_specific",
+      "inputValue": "50.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f5",
+      "marketFactorBasis": "supplier_specific",
+      "coveredMwh": "0.000000",
+      "co2eResult": "5000.000000",
+      "arithmetic": [
+        "THE TOP RUNG OF THE MARKET LADDER. The query names the supplier and",
+        "f5's `supplier_name` names the SAME seller, so that row for SI outranks",
+        "both the country grid and the residual mix, and the WHOLE remainder is",
+        "priced at it:",
+        "  50 MWh × 1 000 = 50 000 kWh",
+        "  50 000 × 0.100 = 5 000",
+        "  → 5000.000000",
+        "`method_code` follows the rung: `supplier_specific`, not `average_data`.",
+        "Nothing was covered by a certificate here — the entity's only instrument",
+        "is a `supplier_product`, which is evidence FOR this factor rather than a",
+        "volume claim, so it appears in `expectedSkippedInstruments` and its",
+        "50 MWh are matched by nobody."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea06",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "120",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "28800.000000",
+      "arithmetic": [
+        "AC-5, THE HALF THAT MUST NOT BE ZERO.",
+        "  120 MWh × 1 000 = 120 000 kWh",
+        "  120 000 × 0.240 = 28 800   (120 000 × 24 = 2 880 000, ÷100)",
+        "  → 28800.000000",
+        "A guarantee of origin does not change the physics of the wire, so the",
+        "location-based figure is untouched by the 100% cover. A dual report",
+        "where BOTH figures went to zero would be the defect AC-5 is guarding",
+        "against."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea06",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "0.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f3",
+      "marketFactorBasis": "residual_mix",
+      "coveredMwh": "120.000000",
+      "co2eResult": "0.000000",
+      "arithmetic": [
+        "AC-5, THE HALF THAT MUST BE ZERO.",
+        "  0 MWh × 1 000 × 0.500 = 0.000000",
+        "This zero is a genuine one and is auditable: `coveredMwh` says 120 MWh",
+        "were covered, and `expectedMatches` names the certificate (c107) that",
+        "covered them. Contrast ea08 below, whose result is NULL — a figure",
+        "nobody could compute is never written as a 0 (§0.7)."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea07",
+      "reportingBasis": "location_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "40000",
+      "inputUnit": "kWh",
+      "conversionFactor": "1",
+      "conversionId": null,
+      "factorId": "00000000-0000-4000-8000-0000000000f4",
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": "6636.000000",
+      "arithmetic": [
+        "District heating resolves the carrier's DEFAULT published factor, which",
+        "is GLOBAL rather than per country — the seed prices heat that way.",
+        "  40 000 kWh × 1 × 0.16590 kgCO2e/kWh",
+        "  40 000 × 0.16 = 6 400",
+        "  40 000 × 0.0059 = 236        (40 000 × 59 = 2 360 000, ÷10⁴)",
+        "  sum = 6 636",
+        "  → 6636.000000"
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea07",
+      "reportingBasis": "market_based",
+      "calculationStatus": "ok",
+      "methodCode": "average_data",
+      "inputValue": "40.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1000",
+      "conversionId": "00000000-0000-4000-8000-0000000000d2",
+      "factorId": "00000000-0000-4000-8000-0000000000f4",
+      "marketFactorBasis": "grid_average",
+      "coveredMwh": "0.000000",
+      "co2eResult": "6636.000000",
+      "arithmetic": [
+        "THE LAST RUNG. No supplier is named, and district heating has no",
+        "residual mix — there is no attribute market to strip out of it — so the",
+        "market-based line falls to the location-based factor and SAYS SO",
+        "(`marketFactorBasis: 'grid_average'`), which is what lets a renderer",
+        "avoid printing a market-based claim the data does not support.",
+        "  40 MWh × 1 000 = 40 000 kWh",
+        "  40 000 × 0.16590 = 6 636",
+        "  → 6636.000000",
+        "IDENTICAL TO THE LOCATION-BASED FIGURE, and exactly so rather than",
+        "approximately: the two reached the same factor by different routes",
+        "(kWh × 1 and kWh × 0.001 × 1 000), and in exact decimal 0.001 × 1 000 is",
+        "1. In binary floating point it is not, and the two lines of the same",
+        "heat would disagree in the last place."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea08",
+      "reportingBasis": "location_based",
+      "calculationStatus": "failed_missing_factor",
+      "methodCode": "average_data",
+      "inputValue": "10",
+      "inputUnit": "MWh",
+      "conversionFactor": "1",
+      "conversionId": null,
+      "factorId": null,
+      "marketFactorBasis": null,
+      "coveredMwh": null,
+      "co2eResult": null,
+      "arithmetic": [
+        "§0.7 / AC-6. The set prices SI and DE electricity and nothing else, so a",
+        "site in ZZ resolves NOTHING and the line carries no number at all — not",
+        "0, not '0.000000'. A zero here would sum into a total that looks",
+        "complete and reach a signed report unaudited."
+      ]
+    },
+    {
+      "activityRowId": "00000000-0000-4000-8000-00000000ea08",
+      "reportingBasis": "market_based",
+      "calculationStatus": "failed_missing_factor",
+      "methodCode": "average_data",
+      "inputValue": "10.000000",
+      "inputUnit": "MWh",
+      "conversionFactor": "1",
+      "conversionId": null,
+      "factorId": null,
+      "marketFactorBasis": null,
+      "coveredMwh": "0.000000",
+      "co2eResult": null,
+      "arithmetic": [
+        "All three rungs miss: the row names no supplier, ZZ has no residual mix",
+        "and ZZ has no grid average either. The VOLUME is perfectly well known —",
+        "`input_value` is the 10 MWh nothing covered — which is what makes this a",
+        "FACTOR failure and not a matching one. Both lines of the row fail, and",
+        "one failed line is enough to make the whole run `failed` (CALC-6)."
+      ]
+    }
+  ],
+
+  "expectedWriteBacks": [
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea01",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f3"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea02",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f3"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea03",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f2",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f6"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea04",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f3"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea05",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f5"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea06",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f1",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f3"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea07",
+      "locationFactorId": "00000000-0000-4000-8000-0000000000f4",
+      "marketFactorId": "00000000-0000-4000-8000-0000000000f4"
+    },
+    {
+      "energyRowId": "00000000-0000-4000-8000-00000000ea08",
+      "locationFactorId": null,
+      "marketFactorId": null
+    }
+  ],
+
+  "expectedTotals": {
+    "locationBasedCo2e": "429436.000000",
+    "marketBasedCo2e": "261636.000000",
+    "lineCount": 16,
+    "okCount": 14,
+    "failedCount": 2,
+    "runStatus": "failed",
+    "arithmetic": [
+      "LOCATION-BASED — the seven priced lines, summed as stored:",
+      "     96 000   ea01",
+      "  + 144 000   ea02",
+      "  = 240 000",
+      "  +  70 000   ea03",
+      "  = 310 000",
+      "  +  72 000   ea04",
+      "  = 382 000",
+      "  +  12 000   ea05",
+      "  = 394 000",
+      "  +  28 800   ea06",
+      "  = 422 800",
+      "  +   6 636   ea07 (district heating)",
+      "  = 429 436",
+      "",
+      "MARKET-BASED — the same seven rows, priced on what was NOT covered:",
+      "          0   ea01 (fully covered)",
+      "  + 150 000   ea02",
+      "  = 150 000",
+      "  +       0   ea03 (covered to the cap)",
+      "  = 150 000",
+      "  + 100 000   ea04",
+      "  = 250 000",
+      "  +   5 000   ea05 (supplier factor)",
+      "  = 255 000",
+      "  +       0   ea06 (AC-5)",
+      "  = 255 000",
+      "  +   6 636   ea07 (no attribute market for heat)",
+      "  = 261 636",
+      "",
+      "Market-based below location-based (261 636 < 429 436) because 1 120 of",
+      "the 1 680 MWh of electricity carried certificates. ea08 contributes to",
+      "NEITHER total: it has no result at all, and its two failures are what",
+      "make the run `failed` and block approve, render and lock (CALC-6)."
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+.banner {
+  border-radius: var(--radius-2xl);
+  background: linear-gradient(to right, var(--blue-500), var(--violet-500));
+  padding: var(--space-5);
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+@media (min-width: 640px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-4);
+  }
+}
+
+.crown {
+  display: none;
+  opacity: 0.8;
+}
+@media (min-width: 640px) {
+  .crown {
+    display: block;
+  }
+}
+
+.body {
+  flex: 1;
+}
+
+.title {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+}
+@media (min-width: 640px) {
+  .title {
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+  }
+}
+
+.desc {
+  margin-top: 2px;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  opacity: 0.8;
+}
+@media (min-width: 640px) {
+  .desc {
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+  }
+}
+
+/* Doubled selector raises specificity so this wins over Button's base
+   variant regardless of stylesheet bundling order. */
+.actionBtn.actionBtn {
+  border: 0;
+  background: #fff;
+  color: var(--blue-600);
+}
+.actionBtn.actionBtn:hover:not(:disabled) {
+  background: var(--blue-50);
+}

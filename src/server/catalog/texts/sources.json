@@ -1,0 +1,66 @@
+{
+  "Corporate records, policies, board minutes, finance/legal/compliance registers": {
+    "sl": "Dokumentacija družbe, politike, zapisniki uprave, finančne, pravne in skladnostne evidence",
+    "ru": "Корпоративные документы, политики, протоколы органов управления, финансовые, юридические и комплаенс-реестры",
+    "de": "Unternehmensunterlagen, Richtlinien, Protokolle der Leitungsorgane, Finanz-, Rechts- und Compliance-Register",
+    "it": "Documenti societari, politiche, verbali degli organi, registri finanziari, legali e di compliance",
+    "hr": "Korporativna dokumentacija, politike, zapisnici uprave, financijski, pravni i registri usklađenosti",
+    "sr": "Корпоративна документација, политике, записници управе, финансијски, правни и регистри усклађености"
+  },
+  "HRIS, payroll, H&S, training, grievance and incident registers": {
+    "sl": "Kadrovska evidenca, plače, varnost in zdravje pri delu, usposabljanja, evidence pritožb in incidentov",
+    "ru": "Кадровая система, расчёт зарплаты, охрана труда, обучение, журналы жалоб и инцидентов",
+    "de": "Personalsystem, Lohnabrechnung, Arbeitsschutz, Schulungen, Beschwerde- und Vorfallregister",
+    "it": "Sistema HR, paghe, salute e sicurezza, formazione, registri di reclami e incidenti",
+    "hr": "Kadrovski sustav, obračun plaća, zaštita na radu, osposobljavanje, evidencije pritužbi i incidenata",
+    "sr": "Кадровски систем, обрачун зарада, безбедност и здравље на раду, обуке, евиденције притужби и инцидената"
+  },
+  "Permits, statutory filings, EMS and incident records": {
+    "sl": "Dovoljenja, zakonsko predpisana poročila, sistem ravnanja z okoljem in evidence incidentov",
+    "ru": "Разрешения, обязательная отчётность, система экологического менеджмента и журналы инцидентов",
+    "de": "Genehmigungen, gesetzliche Meldungen, Umweltmanagementsystem und Vorfallaufzeichnungen",
+    "it": "Autorizzazioni, dichiarazioni obbligatorie, sistema di gestione ambientale e registri degli incidenti",
+    "hr": "Dozvole, zakonom propisana izvješća, sustav upravljanja okolišem i evidencije incidenata",
+    "sr": "Дозволе, законом прописани извештаји, систем управљања животном средином и евиденције инцидената"
+  },
+  "Risk register, scenarios, finance and site data": {
+    "sl": "Register tveganj, scenariji, finančni podatki in podatki o lokacijah",
+    "ru": "Реестр рисков, сценарии, финансовые данные и данные по площадкам",
+    "de": "Risikoregister, Szenarien, Finanz- und Standortdaten",
+    "it": "Registro dei rischi, scenari, dati finanziari e dei siti",
+    "hr": "Registar rizika, scenariji, financijski podaci i podaci o lokacijama",
+    "sr": "Регистар ризика, сценарији, финансијски подаци и подаци о локацијама"
+  },
+  "Site register, coordinates and GIS screening": {
+    "sl": "Seznam lokacij, koordinate in pregled v GIS",
+    "ru": "Реестр площадок, координаты и проверка в ГИС",
+    "de": "Standortverzeichnis, Koordinaten und GIS-Prüfung",
+    "it": "Registro dei siti, coordinate e verifica GIS",
+    "hr": "Popis lokacija, koordinate i provjera u GIS-u",
+    "sr": "Списак локација, координате и провера у GIS"
+  },
+  "Utility/fuel bills, meters, procurement/travel data, GHG model": {
+    "sl": "Računi za energijo in gorivo, števci, podatki o nabavi in potovanjih, model emisij TGP",
+    "ru": "Счета за энергию и топливо, счётчики, данные о закупках и поездках, модель расчёта выбросов",
+    "de": "Energie- und Brennstoffrechnungen, Zähler, Beschaffungs- und Reisedaten, THG-Berechnungsmodell",
+    "it": "Bollette di energia e combustibili, contatori, dati su acquisti e viaggi, modello di calcolo dei GHG",
+    "hr": "Računi za energiju i gorivo, brojila, podaci o nabavi i putovanjima, model izračuna emisija",
+    "sr": "Рачуни за енергију и гориво, мерила, подаци о набавци и путовањима, модел обрачуна емисија"
+  },
+  "Waste notes, recycler invoices, material/procurement records": {
+    "sl": "Evidenčni listi odpadkov, računi predelovalcev, evidence materialov in nabave",
+    "ru": "Документы на передачу отходов, счета переработчиков, учёт материалов и закупок",
+    "de": "Abfallbegleitscheine, Rechnungen von Verwertern, Material- und Beschaffungsaufzeichnungen",
+    "it": "Formulari dei rifiuti, fatture dei riciclatori, registri di materiali e acquisti",
+    "hr": "Prateći listovi otpada, računi oporabitelja, evidencije materijala i nabave",
+    "sr": "Пратећи документи за отпад, рачуни оператера за рециклажу, евиденције материјала и набавке"
+  },
+  "Water bills/meters, withdrawal/discharge records": {
+    "sl": "Računi in števci za vodo, evidence odvzema in izpustov",
+    "ru": "Счета и счётчики воды, учёт водозабора и водоотведения",
+    "de": "Wasserrechnungen und -zähler, Aufzeichnungen zu Entnahme und Ableitung",
+    "it": "Bollette e contatori dell'acqua, registri di prelievo e scarico",
+    "hr": "Računi i vodomjeri, evidencije zahvaćanja i ispuštanja vode",
+    "sr": "Рачуни и водомери, евиденције захватања и испуштања воде"
+  }
+}

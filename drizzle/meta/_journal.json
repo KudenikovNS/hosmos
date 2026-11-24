@@ -1,0 +1,188 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1784013775712,
+      "tag": "0000_baseline",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784284576714,
+      "tag": "0001_billing",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784515200000,
+      "tag": "0002_data_integrity",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1784937600000,
+      "tag": "0003_users_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1785196800000,
+      "tag": "0004_data_model",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1785628800000,
+      "tag": "0005_drop_legacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1786060800000,
+      "tag": "0006_retire_report_gating",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1786492800000,
+      "tag": "0007_factor_supplier",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1787356800000,
+      "tag": "0009_factor_set_si_2025",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1787788800000,
+      "tag": "0010_set_scoped_conversions",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1788220800000,
+      "tag": "0011_retire_legacy_v1",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1788652800000,
+      "tag": "0012_fx_rates",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1789084800000,
+      "tag": "0013_marketing_leads",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1789430400000,
+      "tag": "0014_plan_prices_tz_v1",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1789516800000,
+      "tag": "0015_factor_set_si_2025_r2",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1789603200000,
+      "tag": "0016_disclosure_applicability",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1789689600000,
+      "tag": "0017_metric_catalog_sl",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1789776000000,
+      "tag": "0018_metric_catalog_title_sl",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1789862400000,
+      "tag": "0019_metric_catalog_esrs",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1789948800000,
+      "tag": "0020_factor_set_si_2025_r3",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1790035200000,
+      "tag": "0021_plans_simplified_esrs",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1790121600000,
+      "tag": "0022_vesg_decision",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1790208000000,
+      "tag": "0023_factor_set_si_2025_r4",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1790294400000,
+      "tag": "0024_factor_set_si_2025_r5",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1794182400000,
+      "tag": "0025_dq_assessment_tenant_key",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1794182400001,
+      "tag": "0026_calculation_run_context",
+      "breakpoints": true
+    }
+  ]
+}

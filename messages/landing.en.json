@@ -1,0 +1,491 @@
+{
+  "landing": {
+    "meta": {
+      "title": "Hosmos: VSME ESG reporting for SMEs | Plans from €300 a year",
+      "description": "Collect ESG data, calculate Scope 1 and 2, and prepare a VSME report in Hosmos. Starter, Pro and Enterprise plans plus the separate VESG Pro path."
+    },
+    "nav": {
+      "aria": "Primary navigation",
+      "features": "Features",
+      "process": "How it works",
+      "pricing": "Pricing",
+      "vesg": "VESG",
+      "faq": "FAQ",
+      "open": "Open menu",
+      "close": "Close menu",
+      "skipToContent": "Skip to content",
+      "logIn": "Log in",
+      "articles": "Articles"
+    },
+    "cta": {
+      "demo": "Book a demo",
+      "vesg": "Check VESG fit",
+      "enterprise": "Talk about Enterprise",
+      "whiteLabel": "Talk about White Label",
+      "learnVesg": "Learn about VESG Pro"
+    },
+    "hero": {
+      "eyebrow": "VOLUNTARY VSME ESG REPORTING FOR SMEs",
+      "title": "Collect your ESG data and prepare a VSME report in one platform.",
+      "subtitle": "Hosmos helps SMEs organise data along VSME, calculate Scope 1 and 2, estimate the relevant Scope 3 categories, and prepare PDF and Excel output for internal checking and independent review.",
+      "microcopy": "Annual subscription from {price} excluding VAT. No promise of a subsidy or an audit opinion."
+    },
+    "outcome": {
+      "title": "From scattered spreadsheets to a guided process",
+      "now": "Today",
+      "withHosmos": "With Hosmos",
+      "rows": [
+        {
+          "now": "Data is scattered across spreadsheets, invoices and email.",
+          "with": "One structure across legal entities, sites and periods."
+        },
+        {
+          "now": "It is unclear what VSME actually requires.",
+          "with": "Guided B1–B11 and C1–C9 steps for the plan you chose."
+        },
+        {
+          "now": "Calculations are hard to back up.",
+          "with": "Source, factor, method and evidence sit next to the figure."
+        },
+        {
+          "now": "The report is assembled by hand.",
+          "with": "Controlled PDF and Excel export for review."
+        }
+      ]
+    },
+    "features": {
+      "title": "From raw data to a set of materials someone can check",
+      "subtitle": "Six areas covering the path from data capture to export for independent review.",
+      "items": [
+        {
+          "key": "guidedVsme",
+          "title": "Guided VSME",
+          "text": "The VSME Basic B1–B11 disclosure structure; Comprehensive C1–C9 on Pro and above.",
+          "status": "included"
+        },
+        {
+          "key": "ghg",
+          "title": "GHG calculations",
+          "text": "Scope 1 and 2 on every plan. Scope 3 at the depth your plan covers.",
+          "status": "included"
+        },
+        {
+          "key": "evidence",
+          "title": "Evidence trail",
+          "text": "Store the source, period, unit, factor, calculation method and supporting file.",
+          "status": "included"
+        },
+        {
+          "key": "entities",
+          "title": "Entities and sites",
+          "text": "Separate data by legal entity and site; the limits are visible before you pick a plan.",
+          "status": "included"
+        },
+        {
+          "key": "suppliers",
+          "title": "Supplier registry",
+          "text": "A registry of your suppliers with their ESG data on Pro and Enterprise. Your company fills it in; we do not send questionnaires to suppliers.",
+          "status": "addOn"
+        },
+        {
+          "key": "exports",
+          "title": "Exports",
+          "text": "PDF and Excel on every plan. Other formats appear only once they are actually ready.",
+          "status": "included"
+        }
+      ],
+      "badge": {
+        "included": "Included",
+        "estimated": "Estimated",
+        "addOn": "Plan-dependent",
+        "comingLater": "Later",
+        "aria": "Capability status: {status}"
+      }
+    },
+    "process": {
+      "title": "Five steps from reporting boundaries to export",
+      "subtitle": "Each step maps to a screen in the platform and to a concrete result.",
+      "resultLabel": "Result",
+      "steps": [
+        {
+          "title": "Set the boundaries",
+          "action": "Legal entities, sites, period, currency and consolidation method.",
+          "result": "The reporting scope is defined."
+        },
+        {
+          "title": "Fill in VSME",
+          "action": "Guided disclosures B1–B11; C1–C9 depending on the plan.",
+          "result": "Completeness status and a list of gaps."
+        },
+        {
+          "title": "Add activity data",
+          "action": "Energy, fuels, business travel, purchases and their sources.",
+          "result": "A verifiable basis for the calculations."
+        },
+        {
+          "title": "Check the calculations",
+          "action": "Factor, unit, method, estimated-or-actual flag and evidence.",
+          "result": "Quality control before export."
+        },
+        {
+          "title": "Export",
+          "action": "PDF and Excel, plus a package for independent review.",
+          "result": "Material for further checking."
+        }
+      ],
+      "boundaryTitle": "Where our responsibility ends",
+      "boundary": "Hosmos prepares the data and the materials. An independent limited-assurance review is performed by a licensed audit firm under a separate contract. Publication in AJPES is a separate step as well."
+    },
+    "depth": {
+      "title": "VSME and Scope 3: depth by plan",
+      "subtitle": "The same table governs the pricing page and the contract — no promise a plan does not cover.",
+      "colPlan": "Plan",
+      "colVsme": "VSME",
+      "colScope3": "Scope 3",
+      "colBoundaries": "Organisational boundaries",
+      "colOutput": "Suppliers and output",
+      "vsmeBasic": "Basic B1–B11",
+      "vsmeBasicComprehensive": "Basic and Comprehensive C1–C9",
+      "entityLimit": "{count, plural, one {# legal entity} other {# legal entities}}",
+      "entityLimitUpTo": "Up to {count, plural, one {# legal entity} other {# legal entities}}",
+      "siteLimit": "up to {count, plural, one {# site} other {# sites}}",
+      "siteUnlimited": "sites with no limit",
+      "outputStarter": "No supplier registry; up to 5 team seats; PDF and Excel",
+      "outputPro": "Supplier registry; group consolidation; up to 15 team seats; PDF and Excel",
+      "outputEnterprise": "Supplier registry; group consolidation; unlimited team seats; PDF and Excel",
+      "whiteLabelNote": "White Label is not a fourth pricing tier; it is a separate contractual configuration for partners.",
+      "estimatedNote": "The “estimated” status stays visible in the interface and in the export.",
+      "tableAria": "Comparison of VSME and Scope 3 depth by plan",
+      "scope3Spend": "Spend-based estimate for Scope 3 categories 1 and 2 (purchased goods and services, capital goods), reported outside the Scope 1+2 totals"
+    },
+    "pricing": {
+      "title": "Choose your reporting depth",
+      "subtitle": "We sell an annual subscription, so there is no monthly toggle.",
+      "perYear": "a year",
+      "vatNote": "excl. VAT",
+      "highlighted": "For growing teams",
+      "planName": {
+        "starter": "Starter",
+        "pro": "Pro",
+        "enterprise": "Enterprise"
+      },
+      "planSummary": {
+        "starter": "A first voluntary VSME report for a single legal entity.",
+        "pro": "Comprehensive disclosures, the simplified-ESRS appendix and a supplier registry.",
+        "enterprise": "A group of up to 10 legal entities, unlimited sites and team seats."
+      },
+      "notes": [
+        "All prices exclude VAT and apply to a 12-month software subscription.",
+        "Implementation, expert report preparation, independent review and AJPES publication are not included unless a separate offer says so explicitly."
+      ],
+      "whiteLabelTitle": "Need the platform under your own brand?",
+      "whiteLabelText": "White Label is a separate contractual configuration for partners and is not part of Enterprise. We do not publish a price for it."
+    },
+    "vesg": {
+      "eyebrow": "A SEPARATE PATH",
+      "title": "Need expert preparation of a VSME report for the VESG path?",
+      "intro": "Hosmos VESG Pro combines a year of access to the SaaS Pro plan with expert preparation of a VSME report. It is a separate commercial offer — not a new SaaS tier, and not a guarantee that a voucher will be granted.",
+      "tableAria": "Composition of the Hosmos VESG Pro first-year price",
+      "rowSaas": "SaaS Pro, 12 months",
+      "rowExpert": "Expert preparation of the VSME report",
+      "rowTotal": "Hosmos VESG Pro, total",
+      "totalSuffix": "+ VAT",
+      "rowReview": "Independent review by a licensed audit firm",
+      "rowReviewValue": "Separate contract and price",
+      "rowAjpes": "Publication in AJPES",
+      "rowAjpesValue": "Separate",
+      "conditionsTitle": "SPS conditions",
+      "conditions": "The published SPS conditions state co-financing of {percent}% of eligible costs, with a subsidy of at least {min} and at most {max}. The programme is open until {openUntil}. SPS decides on the application; a subsidy is not guaranteed. We do not claim that a Hosmos licence is automatically an eligible or reimbursable cost.",
+      "conditionsStale": "We are not publishing the VESG programme conditions right now because we have not re-verified them. Check the current conditions, co-financing rates and eligible costs in the applicable SPS documentation.",
+      "checkedAt": "Conditions verified on {date}.",
+      "sourceLink": "Official SPS VESG page",
+      "formNote": "We will look at your starting data and get in touch to discuss the path. We do not assess applications and do not decide on eligibility."
+    },
+    "trust": {
+      "title": "What you can verify, and where the limits are",
+      "subtitle": "Instead of estimates and logos, we cite sources you can open yourself.",
+      "sourcesTitle": "Sources",
+      "efragLink": "EFRAG VSME Standard (Annex I)",
+      "efragNote": "Disclosure terminology and the Basic / Comprehensive structure. Methodology version verified on {date}.",
+      "spsLink": "SPS – the VESG voucher",
+      "spsNote": "Programme conditions verified on {date}.",
+      "auditTrailTitle": "Evidence trail",
+      "auditTrailNote": "Every figure carries its source, period, unit, factor, calculation method and attached evidence. That is a verifiable field in the product, not a claim that an audit is included.",
+      "limitsTitle": "What Hosmos is and is not",
+      "allowed": "What we claim",
+      "forbidden": "What we do not claim",
+      "rows": [
+        {
+          "allowed": "We help you prepare a VSME report.",
+          "forbidden": "CSRD-ready in 30 minutes."
+        },
+        {
+          "allowed": "Up to 60% of eligible costs under SPS conditions.",
+          "forbidden": "A guaranteed subsidy."
+        },
+        {
+          "allowed": "Material for an independent review.",
+          "forbidden": "Audit included."
+        },
+        {
+          "allowed": "A spend-based Scope 3 estimate for categories 1 and 2.",
+          "forbidden": "Full 15-category Scope 3."
+        },
+        {
+          "allowed": "White Label by contract.",
+          "forbidden": "White Label as part of Enterprise."
+        },
+        {
+          "allowed": "We announce a feature once it is actually ready.",
+          "forbidden": "Promises of XBRL/iXBRL, CDP, SBTi or TCFD."
+        }
+      ],
+      "legal": "Hosmos does not provide audit services and does not decide on the award of a subsidy. The completeness and correctness of the result depend on the client's source data. VESG conditions may change; check the applicable SPS documentation."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "The commercial and regulatory questions that come up before a demo.",
+      "items": [
+        {
+          "q": "What is VSME?",
+          "a": "A voluntary European sustainability reporting standard for non-listed micro, small and medium-sized enterprises. Hosmos structures data collection at the VSME depth you choose."
+        },
+        {
+          "q": "Does Hosmos replace an auditor?",
+          "a": "No. The platform helps prepare the data, the calculations and the export. An independent review is performed by a licensed audit firm under a separate contract."
+        },
+        {
+          "q": "Which Scope 3 categories are covered?",
+          "a": "Every plan estimates categories 1 and 2 (purchased goods and services, capital goods) from your annual spend with EXIOBASE factors. The estimate is reported separately from the Scope 1 and 2 totals and is marked as an estimate. The other 13 categories are not covered."
+        },
+        {
+          "q": "What does the annual subscription include?",
+          "a": "Access to the features of the chosen plan for 12 months. Expert services, independent review and AJPES publication are not included unless stated separately."
+        },
+        {
+          "q": "What is Hosmos VESG Pro?",
+          "a": "A separate first-year path: SaaS Pro at €1,000 plus expert preparation of the VSME report at €2,000 — €3,000 excluding VAT in total. It is not an additional SaaS tier."
+        },
+        {
+          "q": "Does Hosmos guarantee an SPS subsidy?",
+          "a": "No. SPS decides on the application and on the eligibility of costs. Under the published conditions, co-financing of 60% of eligible costs is possible within set limits."
+        },
+        {
+          "q": "Are AJPES publication and independent review included?",
+          "a": "No. Both are arranged and paid for separately."
+        },
+        {
+          "q": "Do you support XBRL, iXBRL, CDP, SBTi or TCFD?",
+          "a": "We do not promise these capabilities on this page until they are actually ready and verified. They may be enabled later."
+        },
+        {
+          "q": "How does Enterprise differ from White Label?",
+          "a": "Enterprise is a SaaS plan for a group of up to 10 legal entities with unlimited sites and team seats. White Label is a separate contractual configuration under a partner's brand."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "See the platform on your own data",
+      "subtitle": "We will walk you through the guided disclosures, the calculations and the export. If you need expert report preparation, let's talk about the VESG Pro path.",
+      "note": "Annual subscription from {price} excluding VAT. No promise of a subsidy or an audit opinion."
+    },
+    "footer": {
+      "tagline": "A platform for voluntary VSME ESG reporting for small and medium-sized enterprises.",
+      "by": "by HelpH d.o.o.",
+      "sectionProduct": "Product",
+      "sectionLegal": "Legal",
+      "sectionSources": "Sources",
+      "terms": "Terms and privacy",
+      "contact": "Contact",
+      "copyright": "© {year} HelpH d.o.o. All rights reserved.",
+      "disclaimer": "Hosmos does not provide audit services and does not decide on the award of a subsidy."
+    },
+    "form": {
+      "demoTitle": "Book a demo",
+      "demoSubtitle": "Fill in the form and we will get in touch with a live walkthrough on your data.",
+      "vesgTitle": "Check VESG fit",
+      "vesgSubtitle": "We will look at your starting data and get in touch to discuss the path. This is not an eligibility assessment.",
+      "close": "Close the form",
+      "required": "required",
+      "submit": "Send enquiry",
+      "submitVesg": "Discuss VESG Pro",
+      "submitting": "Sending …",
+      "name": "Full name",
+      "email": "Work email",
+      "company": "Company",
+      "country": "Country",
+      "entityCount": "Number of legal entities",
+      "siteCount": "Number of sites",
+      "interest": "I'm interested in",
+      "size": "Company size",
+      "hasEmployee": "Do you have at least one employee?",
+      "period": "Reporting period and preferred deadline",
+      "comment": "Comment",
+      "inSlovenia": "Is the company registered in Slovenia?",
+      "choose": "Select …",
+      "options": {
+        "entities1": "1",
+        "entities2to3": "2–3",
+        "entities4to10": "4–10",
+        "entities10plus": "more than 10",
+        "yes": "Yes",
+        "no": "No",
+        "unknown": "I don't know",
+        "sizeMicro": "Micro",
+        "sizeSmall": "Small",
+        "sizeMedium": "Medium",
+        "sizeOther": "Other",
+        "interestStarter": "Starter",
+        "interestPro": "Pro",
+        "interestEnterprise": "Enterprise",
+        "interestWhiteLabel": "White Label"
+      },
+      "consent": "I agree to the processing of my personal data in line with the privacy policy.",
+      "consentLink": "privacy policy",
+      "marketing": "I would like occasional product news. (optional)",
+      "honeypotLabel": "Please leave this field empty.",
+      "errors": {
+        "required": "This field is required.",
+        "email": "Enter a valid work email address.",
+        "consent": "We need your consent before we can send the enquiry.",
+        "tooLong": "This entry is too long.",
+        "server": "The enquiry could not be sent. Try again, or write to the address in the footer.",
+        "rateLimited": "That enquiry was sent too many times. Try again in a few minutes.",
+        "summaryOne": "The form has {n} error.",
+        "summaryTwo": "The form has {n} errors.",
+        "summaryFew": "The form has {n} errors.",
+        "summaryOther": "The form has {n} errors."
+      },
+      "successTitle": "Enquiry sent",
+      "successBody": "We will reply to the email address you gave, normally within two working days.",
+      "successClose": "Close"
+    },
+    "noscript": "Sending the form requires JavaScript. Every price, condition and source on this page is readable without it; you can also send your enquiry by email.",
+    "v2": {
+      "triggers": {
+        "eyebrow": "WHEN THIS BECOMES URGENT",
+        "title": "The four reasons companies come to us",
+        "subtitle": "If one of them describes you, a VSME report is a question of deadlines, not theory.",
+        "items": [
+          {
+            "key": "bank",
+            "title": "A bank's requirement",
+            "text": "To finance or renew a loan, the bank asks for sustainability data in the VSME structure."
+          },
+          {
+            "key": "client",
+            "title": "A large customer's questionnaire",
+            "text": "A client is assessing its suppliers and expects a report someone can check."
+          },
+          {
+            "key": "tender",
+            "title": "Tenders and supply chains",
+            "text": "You bid in tenders where sustainability criteria are part of the score."
+          },
+          {
+            "key": "vesg",
+            "title": "The VESG voucher",
+            "text": "You are applying for the SPS voucher, which requires a report with an independent review."
+          }
+        ]
+      },
+      "preview": {
+        "caption": "Example: VSME disclosures in Hosmos",
+        "exampleNote": "The data shown is an example, not a real company's result.",
+        "period": "Reporting period",
+        "periodValue": "01.01.2024 – 31.12.2024",
+        "progress": "Report progress",
+        "moduleBasic": "VSME Basic (B1–B11)",
+        "emissions": "Greenhouse gas emissions",
+        "scope1": "Scope 1",
+        "scope1Note": "Direct emissions",
+        "scope2": "Scope 2",
+        "scope2Note": "Indirect, from energy",
+        "scope3": "Scope 3",
+        "scope3Note": "Estimated categories",
+        "actual": "Actual",
+        "estimated": "Estimated",
+        "evidence": "Evidence",
+        "evidenceValue": "23 / 29 disclosures",
+        "disclosures": [
+          "B1 · Basis for preparation",
+          "B2 · Practices, policies and future initiatives",
+          "B3 · Energy and greenhouse gas emissions",
+          "B4 · Pollution of air, water and soil",
+          "B5 · Biodiversity",
+          "B6 · Water",
+          "B7 · Resource use, circular economy and waste",
+          "B8 · Workforce general characteristics",
+          "B9 · Workforce health and safety",
+          "B10 · Remuneration, bargaining and training",
+          "B11 · Convictions and fines for corruption"
+        ]
+      },
+      "stepPreview": {
+        "label": "What you see on screen",
+        "steps": [
+          {
+            "caption": "Reporting boundaries",
+            "rows": [
+              ["Legal entities", "3"],
+              ["Sites", "5"],
+              ["Base year", "2024"],
+              ["Consolidation method", "Operational control"]
+            ]
+          },
+          {
+            "caption": "Disclosure structure",
+            "rows": [
+              ["Basic (B1–B11)", "82%"],
+              ["Comprehensive (C1–C9)", "By plan"],
+              ["Marked not applicable", "3"]
+            ]
+          },
+          {
+            "caption": "Activity data",
+            "rows": [
+              ["Electricity (Scope 2)", "370.0 MWh"],
+              ["Factor source", "SI, 2024"],
+              ["Method", "Location-based"],
+              ["Evidence", "Invoice, PDF"]
+            ]
+          },
+          {
+            "caption": "Quality control",
+            "rows": [
+              ["Disclosure completeness", "76%"],
+              ["Open notes", "2"],
+              ["Estimated values", "Flagged"]
+            ]
+          },
+          {
+            "caption": "Export",
+            "rows": [
+              ["PDF report", "Ready"],
+              ["Excel with data", "Ready"],
+              ["Review package", "Ready"]
+            ]
+          }
+        ]
+      },
+      "depthPricing": {
+        "title": "Reporting depth and price in one place",
+        "subtitle": "The plan cards say what a plan costs and whom it is for; the comparison lists what each one covers. Same figures, one view.",
+        "matrixHeading": "What the plan covers"
+      },
+      "vesgEquation": {
+        "outsideTitle": "What the price does not include",
+        "plus": "and",
+        "equals": "in total"
+      },
+      "finalCta": {
+        "note": "We reply within two working days. A demo is a conversation over a screen, not a sales call."
+      }
+    },
+    "articles": {
+      "title": "Articles on reporting",
+      "lead": "Short pieces for a company reporting for the first time: what the standard is, which data to collect, and how a first report goes.",
+      "all": "All articles"
+    }
+  }
+}

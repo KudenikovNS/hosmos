@@ -1,0 +1,449 @@
+{
+  "VSME-001": {
+    "hint": "Choose OPTION A (Basic Module only) or OPTION B (Basic and Comprehensive Modules) for this reporting period."
+  },
+  "VSME-002": {
+    "hint": "List each disclosure item omitted due to classified or sensitive information, one per line."
+  },
+  "VSME-003": {
+    "hint": "Select whether this report covers the undertaking alone or the undertaking together with its subsidiaries (consolidated)."
+  },
+  "VSME-004": {
+    "hint": "List every subsidiary included in the consolidated report, one per line (only if you selected consolidated reporting)."
+  },
+  "VSME-005": {
+    "hint": "Enter the registered address of each subsidiary listed above, e.g. street, postal code, city, country."
+  },
+  "VSME-006": {
+    "hint": "Select the undertaking's legal form as registered under national law (e.g. d.o.o., d.d., s.p.)."
+  },
+  "VSME-007": {
+    "hint": "Choose the NACE code for the undertaking's main activity, at the most detailed level available; add further codes if relevant, one per line."
+  },
+  "VSME-008": {
+    "hint": "Enter the balance sheet total in EUR for the same reporting period as this report, taken from the financial statements, e.g. 1,250,000."
+  },
+  "VSME-009": {
+    "hint": "Enter turnover (net sales revenue) in EUR for the same reporting period, taken from the financial statements, e.g. 3,400,000."
+  },
+  "VSME-010": {
+    "hint": "Enter the number of employees as headcount or full-time equivalents (FTE), e.g. 42, and state which method you used."
+  },
+  "VSME-011": {
+    "hint": "Enter the country where the undertaking carries out its main activity, e.g. Slovenia."
+  },
+  "VSME-012": {
+    "hint": "List each significant asset's location (address, postal code, city, country), one per line."
+  },
+  "VSME-013": {
+    "hint": "Enter the coordinates (latitude, longitude) for each site owned, leased or managed, e.g. 46.0569, 14.5058."
+  },
+  "VSME-014": {
+    "hint": "Enter the name of the sustainability-related certification or label held, e.g. EU Ecolabel."
+  },
+  "VSME-015": {
+    "hint": "Enter the name of the body that issued the certification or label, e.g. a certification agency."
+  },
+  "VSME-016": {
+    "hint": "Enter the date the certification or label was issued or last renewed."
+  },
+  "VSME-017": {
+    "hint": "Enter the rating or score received, if the certification or label provides one, e.g. \"Gold\" or \"85/100\"."
+  },
+  "VSME-018": {
+    "hint": "Select Yes/No whether the undertaking has sustainability practices in place, then describe them (issue addressed, action, target, timeframe)."
+  },
+  "VSME-019": {
+    "hint": "Select Yes/No whether the undertaking has sustainability policies in place, then describe them (issue addressed, action, target, timeframe)."
+  },
+  "VSME-020": {
+    "hint": "Select Yes/No whether the sustainability policies are publicly available, and provide the public URL if so."
+  },
+  "VSME-021": {
+    "hint": "Select Yes/No whether the undertaking has future sustainability initiatives or forward-looking plans, then describe them (issue, action, target, timeframe)."
+  },
+  "VSME-022": {
+    "hint": "Select Yes/No whether the undertaking has set targets to monitor implementation and progress, then describe them (issue, target value, timeframe, responsible person)."
+  },
+  "VSME-023": {
+    "hint": "Enter renewable electricity consumption in MWh, e.g. 120.5; split by energy source (e.g. solar, wind) if the data is obtainable, one row per source."
+  },
+  "VSME-024": {
+    "hint": "Enter non-renewable electricity consumption in MWh, e.g. 340.0; split by energy source if obtainable, one row per source."
+  },
+  "VSME-025": {
+    "hint": "Enter renewable fuel consumption in MWh, e.g. 85.0; split by energy source (e.g. biomass, biogas) if obtainable, one row per source."
+  },
+  "VSME-026": {
+    "hint": "Enter non-renewable fuel consumption in MWh, e.g. 210.0 (from fuel purchase records); split by energy source if obtainable."
+  },
+  "VSME-027": {
+    "hint": "Enter total renewable energy consumption (electricity plus fuels) in MWh, e.g. 205.5; split by energy source if obtainable."
+  },
+  "VSME-028": {
+    "hint": "Enter total non-renewable energy consumption (electricity plus fuels) in MWh, e.g. 550.0; split by energy source if obtainable."
+  },
+  "VSME-029": {
+    "hint": "Enter total energy consumption (renewable plus non-renewable) in MWh, e.g. 755.5, usually from utility bills and fuel records."
+  },
+  "VSME-030": {
+    "hint": "Enter gross Scope 1 GHG emissions in tCO2e from owned or controlled sources (e.g. fuel combustion), e.g. 45.2."
+  },
+  "VSME-031": {
+    "hint": "Enter Scope 2 emissions in tCO2e from purchased electricity, heat, steam or cooling, calculated with the location-based grid emission factor, e.g. 30.8."
+  },
+  "VSME-032": {
+    "hint": "This value is usually calculated automatically as (Scope 1 + Scope 2 location-based) divided by turnover in EUR; enter the result in tCO2e/EUR if calculating manually."
+  },
+  "VSME-033": {
+    "hint": "List each pollutant emitted to air with quantity and unit (e.g. NOx, 1.2 t/year), one per line; only required if pollution reporting is legally required for you."
+  },
+  "VSME-034": {
+    "hint": "List each pollutant emitted to water with quantity and unit (e.g. COD, 0.8 t/year), one per line; only required if pollution reporting is legally required for you."
+  },
+  "VSME-035": {
+    "hint": "List each pollutant emitted to soil with quantity and unit, one per line; only required if pollution reporting is legally required for you."
+  },
+  "VSME-036": {
+    "hint": "Enter the public URL where the pollutant information is published, if you report it via an external public source."
+  },
+  "VSME-037": {
+    "hint": "Enter the number of sites your company owns, leases or manages that are in or near a recognised biodiversity-sensitive area. Enter a whole number, e.g. 2."
+  },
+  "VSME-038": {
+    "hint": "Enter the total area of the sites identified in the previous field, in hectares (ha). Use site plans or land registry data, e.g. 12.5."
+  },
+  "VSME-039": {
+    "hint": "Enter the total land area used by your company across all sites, in hectares (ha), e.g. 8.3. Use consistent site boundaries for every year."
+  },
+  "VSME-040": {
+    "hint": "Enter the total sealed (built-up, paved or otherwise impermeable) area across all sites, in hectares (ha), e.g. 3.1."
+  },
+  "VSME-041": {
+    "hint": "Enter the nature-oriented (green, restored or naturally managed) area located on your sites, in hectares (ha), e.g. 1.8."
+  },
+  "VSME-042": {
+    "hint": "Enter the nature-oriented area your company manages outside its own sites (e.g. offset or restoration areas), in hectares (ha), e.g. 0.5."
+  },
+  "VSME-043": {
+    "hint": "Enter the total water withdrawn by your company from all sources, in cubic metres (m3). Use water meters or utility bills, e.g. 1250."
+  },
+  "VSME-044": {
+    "hint": "Enter the portion of total water withdrawal (m3) taken at sites located in areas of high water stress, e.g. 400."
+  },
+  "VSME-045": {
+    "hint": "Enter water consumption in cubic metres (m3): total water withdrawal minus water discharged back from significant production processes, e.g. 300."
+  },
+  "VSME-046": {
+    "hint": "Select Yes/No whether your company applies circular-economy principles (e.g. prevention, reuse, repair, recycling) to its products, materials and waste, and briefly describe how."
+  },
+  "VSME-047": {
+    "hint": "Enter the total mass of waste generated in the reporting period, in tonnes, split by waste type and treatment route, e.g. 45.2."
+  },
+  "VSME-048": {
+    "hint": "Enter the mass of non-hazardous waste generated, in tonnes, from waste records or transfer notes, e.g. 38.0."
+  },
+  "VSME-049": {
+    "hint": "Enter the mass of hazardous waste generated, in tonnes, from waste records or transfer notes, e.g. 7.2."
+  },
+  "VSME-050": {
+    "hint": "Enter the mass of waste diverted to recycling or reuse (not landfilled or incinerated), in tonnes, e.g. 20.5."
+  },
+  "VSME-051": {
+    "hint": "Enter the annual mass of relevant materials used in production, in tonnes (or another consistent mass unit), e.g. 150.0. Applies mainly if material flows are significant."
+  },
+  "VSME-052": {
+    "hint": "Enter the number of employees with permanent contracts, as headcount or FTE (pick one basis and use it consistently), e.g. 24."
+  },
+  "VSME-053": {
+    "hint": "Enter the number of employees with fixed-term contracts, as headcount or FTE (same basis as for permanent employees), e.g. 6."
+  },
+  "VSME-054": {
+    "hint": "Enter the number of female employees, as headcount or FTE, from your HR/payroll records, e.g. 15."
+  },
+  "VSME-055": {
+    "hint": "Enter the number of male employees, as headcount or FTE, from your HR/payroll records, e.g. 18."
+  },
+  "VSME-056": {
+    "hint": "Enter the number of employees whose gender is other or not reported, as headcount or FTE, e.g. 1."
+  },
+  "VSME-057": {
+    "hint": "Enter the number of employees by the country of their employment contract, as headcount or FTE; add one row per country, e.g. 30."
+  },
+  "VSME-058": {
+    "hint": "Enter the employee turnover rate as a percentage: employees who left during the period divided by the average number of employees, times 100, e.g. 12.5."
+  },
+  "VSME-059": {
+    "hint": "Enter the number of recordable work-related accidents among employees during the reporting period, e.g. 3."
+  },
+  "VSME-060": {
+    "hint": "Enter the accident rate: recordable work-related accidents divided by total hours worked, multiplied by 200,000, e.g. 8.4."
+  },
+  "VSME-061": {
+    "hint": "Enter the number of employee deaths caused by work-related injuries during the reporting period, e.g. 0."
+  },
+  "VSME-062": {
+    "hint": "Enter the number of employee deaths caused by work-related ill health during the reporting period, e.g. 0."
+  },
+  "VSME-063": {
+    "hint": "Select Yes/No whether all employees are paid at or above the applicable statutory or collectively agreed minimum wage in each country."
+  },
+  "VSME-064": {
+    "hint": "Enter the gender pay gap as a percentage, using average gross hourly pay of female vs male employees, e.g. 9.5."
+  },
+  "VSME-065": {
+    "hint": "Enter the share of employees covered by collective bargaining agreements as a percentage: covered employees divided by total employees, times 100, e.g. 65.0."
+  },
+  "VSME-066": {
+    "hint": "Enter the average annual training hours per female employee, from HR/training records, e.g. 14.5."
+  },
+  "VSME-067": {
+    "hint": "Enter the average annual training hours per male employee, from HR/training records, e.g. 12.0."
+  },
+  "VSME-068": {
+    "hint": "Enter the average annual training hours per employee whose gender is other or not reported, from HR/training records, e.g. 10.0."
+  },
+  "VSME-069": {
+    "hint": "Enter the number of final convictions for anti-corruption or anti-bribery law violations during the reporting period, e.g. 0."
+  },
+  "VSME-070": {
+    "hint": "Enter the total amount of fines for anti-corruption or anti-bribery law violations, in EUR, e.g. 5000."
+  },
+  "VSME-071": {
+    "hint": "Enter a short description of the significant groups of products and/or services your company offers, consistent with your business model description."
+  },
+  "VSME-072": {
+    "hint": "Enter a short description of the significant markets (countries or regions) in which your company operates, consistent with your business model description."
+  },
+  "VSME-073": {
+    "hint": "Describe your main customer and supplier relationships in a few sentences: include the estimated number, sectors and geographies of key suppliers, and name the main customer or distribution groups."
+  },
+  "VSME-074": {
+    "hint": "Briefly describe the parts of your business strategy that relate to sustainability issues, using the same scope and terms as your business model description."
+  },
+  "VSME-075": {
+    "hint": "Describe your sustainability practices using the C2 template: for each practice give the linked sustainability issue, scope, objective, responsible level, target, timeframe and implementation status."
+  },
+  "VSME-076": {
+    "hint": "Describe your sustainability policies using the C2 template: for each policy give the linked sustainability issue, scope, objective, responsible level, target, timeframe and implementation status."
+  },
+  "VSME-077": {
+    "hint": "Describe planned future sustainability initiatives using the C2 template: for each one give the linked sustainability issue, scope, objective, responsible level, target, timeframe and implementation status."
+  },
+  "VSME-078": {
+    "hint": "Describe your sustainability targets using the C2 template: for each target give the linked sustainability issue, scope, objective, responsible level, target value, timeframe and implementation status."
+  },
+  "VSME-079": {
+    "hint": "Enter the job title or body (e.g. CEO, sustainability committee, management board) that is most senior and accountable for implementing each practice, policy or initiative."
+  },
+  "VSME-080": {
+    "hint": "Enter total category 1 (purchased goods and services) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-081": {
+    "hint": "Enter total category 2 (capital goods) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-082": {
+    "hint": "Enter category 3 (fuel- and energy-related activities not included in Scope 1 or 2) emissions in tCO2e, calculated from documented quantities and conversion or calorific factors. E.g. 18.2"
+  },
+  "VSME-083": {
+    "hint": "Enter total category 4 (upstream transportation and distribution) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-084": {
+    "hint": "Enter total category 5 (waste generated in operations) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-085": {
+    "hint": "Enter total category 6 (business travel) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-086": {
+    "hint": "Enter total category 7 (employee commuting) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-087": {
+    "hint": "Enter total category 8 (upstream leased assets) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-088": {
+    "hint": "Enter total category 9 (downstream transportation and distribution) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-089": {
+    "hint": "Enter total category 10 (processing of sold products) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-090": {
+    "hint": "Enter total category 11 (use of sold products) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-091": {
+    "hint": "Enter total category 12 (end-of-life treatment of sold products) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-092": {
+    "hint": "Enter total category 13 (downstream leased assets) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-093": {
+    "hint": "Enter total category 14 (franchises) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-094": {
+    "hint": "Enter total category 15 (investments) emissions in tCO2e (e.g. 125.4), only if you have screened all 15 GHG Protocol Scope 3 categories, found this one significant, and documented your calculation method."
+  },
+  "VSME-095": {
+    "hint": "Enter the target year for this GHG reduction target (a single year, e.g. 2030)."
+  },
+  "VSME-096": {
+    "hint": "Enter the emissions value you plan to reach in the target year, using the unit selected for this target (e.g. tCO2e). E.g. 850"
+  },
+  "VSME-097": {
+    "hint": "Enter the base year against which progress toward the target is measured (a single year, e.g. 2020)."
+  },
+  "VSME-098": {
+    "hint": "Enter the emissions value in the base year, using the same unit as the target (e.g. tCO2e). E.g. 1200"
+  },
+  "VSME-099": {
+    "hint": "Select the unit in which this target is expressed, for example tCO2e (absolute) or % reduction."
+  },
+  "VSME-100": {
+    "hint": "Enter what share of your Scope 1 emissions this target covers, as a percentage. E.g. 100"
+  },
+  "VSME-101": {
+    "hint": "Enter what share of your Scope 2 emissions this target covers, as a percentage. E.g. 100"
+  },
+  "VSME-102": {
+    "hint": "Enter what share of your significant Scope 3 emissions this target covers, as a percentage. E.g. 60"
+  },
+  "VSME-103": {
+    "hint": "Describe in a few sentences the main actions planned or under way to reach this emissions target (e.g. switching to renewable energy, fleet electrification)."
+  },
+  "VSME-104": {
+    "hint": "Describe your climate transition plan: key measures, investments and milestones for reducing emissions and adapting your business model, if your undertaking operates in a high climate-impact sector."
+  },
+  "VSME-105": {
+    "hint": "Select Yes if you plan to adopt a climate transition plan (note the expected year in a related description field), or No if none is planned. Mainly relevant if you operate in a high climate-impact sector without an existing plan."
+  },
+  "VSME-106": {
+    "hint": "Select one or more physical climate hazards relevant to your assets, activities or value chain (e.g. flooding, heat stress, drought), one per line."
+  },
+  "VSME-107": {
+    "hint": "Select one or more climate transition risks relevant to your business (e.g. policy or regulatory changes, market shifts, technology changes), one per line."
+  },
+  "VSME-108": {
+    "hint": "Describe how exposed and sensitive your assets, activities and value chain are to the hazards and transition events identified, including the time horizon (short, medium or long term) and any adaptation actions."
+  },
+  "VSME-109": {
+    "hint": "Describe which physical climate hazards and transition events affect the undertaking and how exposed and sensitive its assets, activities and value chain are."
+  },
+  "VSME-110": {
+    "hint": "Select the time horizon(s) that apply to the identified hazards and transition events: short-term, medium-term or long-term."
+  },
+  "VSME-111": {
+    "hint": "Describe the adaptation actions taken or planned to address the identified climate hazards and transition events."
+  },
+  "VSME-112": {
+    "hint": "Describe the potential adverse financial effects that the identified climate hazards and transition events could have on the undertaking."
+  },
+  "VSME-113": {
+    "hint": "Select the risk level that best describes the undertaking's exposure to the identified climate hazards and transition events."
+  },
+  "VSME-114": {
+    "hint": "Enter the ratio of female to male managers, calculated as the number of female managers divided by the number of male managers (e.g. 0.8)."
+  },
+  "VSME-115": {
+    "hint": "Enter the number of self-employed persons, without their own personnel, who work exclusively for the undertaking (e.g. 5)."
+  },
+  "VSME-116": {
+    "hint": "Enter the number of temporary agency workers engaged by the undertaking during the reporting period (e.g. 12)."
+  },
+  "VSME-117": {
+    "hint": "Select Yes if the undertaking has an approved code of conduct or human rights policy covering its own workforce, otherwise select No."
+  },
+  "VSME-118": {
+    "hint": "Select Yes if the undertaking has a policy addressing child labour, otherwise select No."
+  },
+  "VSME-119": {
+    "hint": "Select Yes if the undertaking has a policy addressing forced labour, otherwise select No."
+  },
+  "VSME-120": {
+    "hint": "Select Yes if the undertaking has a policy addressing human trafficking, otherwise select No."
+  },
+  "VSME-121": {
+    "hint": "Select Yes if the undertaking has a policy addressing discrimination, otherwise select No."
+  },
+  "VSME-122": {
+    "hint": "Select Yes if the undertaking has a policy addressing accident prevention, otherwise select No."
+  },
+  "VSME-123": {
+    "hint": "Select Yes if the undertaking has a policy addressing other human rights topics not listed above, otherwise select No."
+  },
+  "VSME-124": {
+    "hint": "Select Yes if the undertaking has a complaints-handling mechanism for its own workforce, otherwise select No."
+  },
+  "VSME-125": {
+    "hint": "Select Yes if there were confirmed incidents of child labour in the own workforce during the reporting period, otherwise select No."
+  },
+  "VSME-126": {
+    "hint": "Select Yes if there were confirmed incidents of forced labour in the own workforce during the reporting period, otherwise select No."
+  },
+  "VSME-127": {
+    "hint": "Select Yes if there were confirmed incidents of human trafficking in the own workforce during the reporting period, otherwise select No."
+  },
+  "VSME-128": {
+    "hint": "Select Yes if there were confirmed incidents of discrimination in the own workforce during the reporting period, otherwise select No."
+  },
+  "VSME-129": {
+    "hint": "Select Yes if there were other confirmed severe human rights incidents during the reporting period, otherwise select No."
+  },
+  "VSME-130": {
+    "hint": "Describe the actions and remediation measures taken to address the confirmed human rights incidents."
+  },
+  "VSME-131": {
+    "hint": "Select Yes if there were confirmed severe human rights incidents involving workers in the value chain, otherwise select No."
+  },
+  "VSME-132": {
+    "hint": "Select Yes if there were confirmed severe human rights incidents involving affected communities, otherwise select No."
+  },
+  "VSME-133": {
+    "hint": "Select Yes if there were confirmed severe human rights incidents involving consumers or end-users, otherwise select No."
+  },
+  "VSME-134": {
+    "hint": "Enter the undertaking's revenue from controversial weapons for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-135": {
+    "hint": "Enter the undertaking's revenue from the cultivation and production of tobacco for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-136": {
+    "hint": "Enter the undertaking's revenue from fossil fuels (coal) for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-137": {
+    "hint": "Enter the undertaking's revenue from fossil fuels (oil) for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-138": {
+    "hint": "Enter the undertaking's revenue from fossil fuels (gas) for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-139": {
+    "hint": "Enter the undertaking's revenue from the production of chemicals such as pesticides and agrochemical products for the reporting period, in EUR (e.g. 0 if none)."
+  },
+  "VSME-140": {
+    "hint": "Select Yes if the undertaking is excluded from EU Paris-aligned benchmarks under the applicable criteria, otherwise select No."
+  },
+  "VSME-141": {
+    "hint": "Enter the gender diversity ratio of the highest governance body, calculated as the number of female members divided by the number of male members, as a percentage (e.g. 40%)."
+  },
+  "ESRS-001": {
+    "hint": "Describe which phase-in provisions you use and which material topics, policies, actions, targets and metrics you keep reporting during the phase-in."
+  },
+  "ESRS-002": {
+    "hint": "Describe the share of variable remuneration linked to sustainability, how it works and who approved it."
+  },
+  "ESRS-003": {
+    "hint": "Map the main elements of your due diligence process and point to the disclosures where each is described."
+  },
+  "ESRS-004": {
+    "hint": "Describe the processes, main risks, controls, findings and remediation for your sustainability reporting."
+  },
+  "ESRS-005": {
+    "hint": "Name your key stakeholders, how you engage them, their interests and views, and how these influence your strategy."
+  },
+  "ESRS-007": {
+    "hint": "Describe how you identify and assess impacts, risks and opportunities: method, thresholds, inputs, stakeholders involved and how decisions are made."
+  },
+  "ESRS-008": {
+    "hint": "List your material impacts, risks and opportunities and the topics and disclosure requirements included or omitted, with reasons."
+  },
+  "ESRS-009": {
+    "hint": "For each entity-specific metric, give its definition, methodology, assumptions, data sources and how it is validated."
+  }
+}

@@ -1,0 +1,35 @@
+/* `/inventory/scope-3` (T3.6). The page is one note plus the moved editor, which
+   brings its own stylesheet — so the only thing declared here is the note that
+   places the figures OUTSIDE the gross Scope 1+2 totals. Informational blue, not
+   amber: nothing is wrong and nothing is locked; the reader is being told what
+   kind of number this is. Tokens only, as everywhere else. */
+
+.estimateNote {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  border: 1px solid var(--blue-200);
+  background: var(--blue-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+}
+
+.estimateIcon {
+  color: var(--blue-500);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.estimateTitle {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.estimateBody {
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-600);
+}

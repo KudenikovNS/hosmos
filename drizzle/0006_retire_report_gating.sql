@@ -1,0 +1,49 @@
+-- 0006_retire_report_gating.sql — THE LEGACY REPORT-GATING KEYS LEAVE
+-- `plans.features` (plan T5.8; spec О-15, PG-2).
+--
+-- WHAT GOES AND WHY. `features->'reports'` (a list of framework ids: gri, esrs,
+-- cdp, ungc, taxonomy, tcfd) and `features->'maxReportsPerMonth'` (a render
+-- quota) come from the pre-Phase-1 product, where a "report" was a framework you
+-- subscribed to. Phase 1 renders exactly ONE pack — VSME Basic — and prices the
+-- FORMAT of it (`reportFormats`, PG-2) while DISCLOSING what the plan leaves out
+-- (`excluded_by_plan` / `coverage_claim`, D14). The last consumer of the old
+-- keys, the legacy `/reports` page, was deleted in T3.8; `canAccessReport()`,
+-- `getRequiredPlan()` and `requireReport()` go in the same commit as this file,
+-- and `PlanFeatures` loses both fields.
+--
+-- WHY THE ROW HAS TO BE TOUCHED AT ALL, given the code no longer reads it.
+-- `planRowsToFeatures` builds the runtime matrix by spreading the STORED config
+-- over the code defaults, so a key that survives in `plans.features` survives in
+-- `getEntitlements().features` — an entitlement object carrying `reports:
+-- ["gri"]` that nothing may consult is exactly the "two near-homonymous
+-- mechanisms" О-15 refuses to keep. The catalogue is the runtime source of truth
+-- (§6.2); it must stop offering a gate that no longer exists.
+--
+-- WHY A NEW MIGRATION AND NOT AN EDIT TO 0004. By S5, `0004_data_model.sql` is
+-- long applied in production. The drizzle migrator records WHICH migrations ran
+-- (`drizzle.__drizzle_migrations`, one row per journal entry) and never
+-- re-executes a file whose row is already there — it applies by JOURNAL, not by
+-- content. Anything appended to 0004 today would therefore run on a fresh
+-- database and never on the server that matters. This project has verified that
+-- behaviour empirically; the rule it produced is: a change to already-shipped
+-- data is a NEW numbered migration, always.
+--
+-- IDEMPOTENT BY THE OPERATOR ITSELF. `jsonb - 'key'` returns the object
+-- unchanged when the key is absent, so:
+--   • a second run is a no-op (the keys are already gone);
+--   • a database where 0004 ran but the keys were NEVER present — the realistic
+--     production case, where `plans` was populated by 0004's own INSERT from
+--     `PLAN_SEED` at a commit that still had them, or by a hand-applied 0001
+--     fallback that did — lands on the same rows either way;
+--   • a row carrying only ONE of the two keys loses that one and keeps the rest.
+-- `UPDATE` with no WHERE is deliberate: all four plans are subject to the same
+-- retirement, and a `WHERE features ? 'reports'` filter would only make the
+-- statement's no-op case implicit instead of explicit. `updated_at` is left
+-- alone for the same reason `0004` leaves it alone on a no-change upsert — the
+-- column tracks catalogue EDITS an administrator made, not schema maintenance.
+--
+-- Hand-authored like every migration here: `drizzle-kit generate` is never run
+-- (§0.4, ./README.md) and `meta/_journal.json` carries a hand-written `idx: 6`
+-- entry.
+
+UPDATE plans SET features = features - 'reports' - 'maxReportsPerMonth';

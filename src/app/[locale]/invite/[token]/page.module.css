@@ -1,0 +1,123 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-6);
+  background: var(--gray-50);
+}
+
+.panel {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-2xl, 20px);
+  background: var(--surface, #fff);
+  padding: var(--space-8);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+.brandText {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.stateBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+}
+
+.iconCircle,
+.iconCircleOk,
+.iconCircleWarn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+}
+.iconCircle {
+  background: var(--blue-50);
+  color: var(--blue-500);
+}
+.iconCircleOk {
+  background: var(--green-50);
+  color: var(--green-600);
+}
+.iconCircleWarn {
+  background: var(--amber-50);
+  color: var(--amber-600);
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+}
+.body {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.muted {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--gray-400);
+}
+
+.detailCard {
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-xl);
+  background: var(--gray-50);
+  padding: var(--space-4);
+}
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) 0;
+}
+.detailRow + .detailRow {
+  border-top: 1px solid var(--gray-100);
+}
+.detailIcon {
+  color: var(--gray-400);
+}
+.detailLabel {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+.detailValue {
+  margin-left: auto;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.error {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--red-600);
+}
+
+.action {
+  width: 100%;
+  margin-top: var(--space-2);
+}

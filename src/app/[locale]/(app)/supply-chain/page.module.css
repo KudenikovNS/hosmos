@@ -1,0 +1,274 @@
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+.summaryCard {
+  text-align: center;
+}
+.summaryLabel {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+  margin-bottom: var(--space-1);
+}
+.summaryValue {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+}
+.valueGray {
+  color: var(--gray-900);
+}
+.valueGreen {
+  color: var(--green-600);
+}
+.valueYellow {
+  color: var(--yellow-600);
+}
+.valueBlue {
+  color: var(--blue-600);
+}
+.btnIcon {
+  margin-right: var(--space-2);
+}
+
+/* ── Suppliers table ───────────────────────────────────────── */
+.tableTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+}
+.tableScroll {
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+}
+.headRow {
+  border-bottom: 1px solid var(--gray-100);
+}
+.th {
+  text-align: left;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  padding-bottom: var(--space-3);
+}
+.thRight {
+  text-align: right;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  padding-bottom: var(--space-3);
+}
+.row {
+  border-bottom: 1px solid var(--gray-50);
+  transition: all 0.2s var(--ease-out);
+}
+.row:hover {
+  background: var(--gray-50);
+}
+.td {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+.tdCountry {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.tdRight {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  text-align: right;
+}
+.company {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.companyIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--blue-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconBlue {
+  color: var(--blue-500);
+}
+.companyName {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+}
+.badgeIcon {
+  margin-right: var(--space-1);
+}
+.score {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.scoreEmpty {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* ── Add / edit form ───────────────────────────────────────── */
+.formCard {
+  margin-bottom: var(--space-5);
+}
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.formTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+.formFull {
+  grid-column: 1 / -1;
+}
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-top: var(--space-6);
+}
+.toggleRow input {
+  width: 1rem;
+  height: 1rem;
+}
+.toggleLabel {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-700);
+}
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+.errorMsg {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--red-600, #dc2626);
+}
+.emptyList {
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  color: var(--gray-500);
+}
+.rowActions {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .summaryGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .summaryCard.summaryCard {
+    padding: var(--space-2);
+  }
+  .tableCard.tableCard {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 1024px) {
+  .tableScroll {
+    overflow-x: visible;
+  }
+  .table {
+    display: block;
+  }
+  .table tbody {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  .table thead {
+    display: none;
+  }
+  .row {
+    display: block;
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-xl);
+    padding: var(--space-3);
+  }
+  /* Company cell = card heading */
+  .row .td:not([data-label]) {
+    display: block;
+    padding: 0 0 var(--space-2);
+    margin-bottom: var(--space-2);
+    border-bottom: 1px solid var(--gray-50);
+  }
+  /* Labeled fields: label left, value right */
+  .td[data-label],
+  .tdCountry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-1-5) 0;
+  }
+  .td[data-label]::before,
+  .tdCountry::before {
+    content: attr(data-label);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--gray-400);
+  }
+  .tdRight {
+    display: block;
+    padding: var(--space-2) 0 0;
+  }
+  .tdRight button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .table tbody {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

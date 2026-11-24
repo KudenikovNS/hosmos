@@ -1,0 +1,292 @@
+-- 0011_retire_legacy_v1.sql — THE END OF `legacy-v1`, AND THE CLEAN SLATE THAT
+-- HAS TO PRECEDE IT.
+--
+-- WHAT THIS DOES, IN ONE SENTENCE. It empties every operational row the product
+-- has ever written — the whole of the reporting chain, from the boundary down to
+-- the renders — and then deletes factor set `legacy-v1`, so that `si-2025` is the
+-- only factor set in the database and the only one a period can pin.
+--
+-- WHY, AND WHY NOW. `legacy-v1` is the library the platform shipped with: 440
+-- rows flattened out of the pre-Phase-1 `emission_factors` table (0004), a mix of
+-- DEFRA/DESNZ UK figures, AIB residual mixes, IEA, EXIOBASE and national
+-- statistics agencies. 0009 replaced it as the DEFAULT with `si-2025`, the set
+-- built from the client's own workbook, and left `legacy-v1` active and
+-- selectable because periods pinned it. The decision recorded here is the next
+-- step and a deliberate one: THE PRODUCT MOVES ONTO THE REAL REFERENCE DATA AND
+-- THE LEGACY LIBRARY GOES. A British emission factor printed under a Slovenian
+-- company's name is not a fallback, it is a wrong number with a citation, and
+-- keeping the set selectable keeps that outcome one dropdown away.
+--
+-- ╔═══════════════════════════════════════════════════════════════════════════╗
+-- ║ WHY EMPTYING THE OPERATIONAL DATA IS SAFE — READ THIS BEFORE THE SQL      ║
+-- ╚═══════════════════════════════════════════════════════════════════════════╝
+-- THE PRODUCT IS PRE-LAUNCH. There is no customer in the database. Every row in
+-- the tables below was written by us — development fixtures and the showcase
+-- demo — and the demo is REGENERATED after this migration by
+-- `scripts/demo-seed.mjs`, which drives the product's own `/api/*` routes and so
+-- rebuilds every one of these rows exactly as a user would have. Nothing that
+-- anyone will ever want is destroyed here. This is the same reasoning 0005 wrote
+-- down when it dropped the five legacy tables (О-2), and it is the last time it
+-- will be available: after launch this migration would be unwritable.
+--
+-- THE ALTERNATIVE WAS NOT "KEEP THE DATA". It was "keep `legacy-v1`", because
+-- the data and the set cannot be separated — see the FK wall below. Retiring the
+-- set with the rows still in place is not a thing the database permits, and
+-- making it permit that (adding `ON DELETE CASCADE` to the three FKs that refuse)
+-- would trade a one-off pre-launch cleanup for the permanent loss of the AC-8
+-- reproducibility guarantee. THOSE FKs ARE NOT WEAKENED BY THIS MIGRATION.
+--
+-- ── EMPTIED, IN FULL (16 tables) ────────────────────────────────────────────
+--   report_render               every rendered PDF/XLSX instance (DM-30). The
+--                               FILES on disk under DOCUMENTS_DIR are NOT
+--                               removed by SQL and are orphaned by this; they
+--                               are unreferenced bytes in a throwaway directory.
+--   calculation                 every immutable result row and factor snapshot
+--                               (DM-29) — the rows that cite `legacy-v1`'s
+--                               factors by id.
+--   validation_result           every stored rule outcome. Recomputable by
+--                               definition (0004 says so: this is why its
+--                               `revision_id` may CASCADE while `calculation`'s
+--                               may not).
+--   evidence_link               every document↔row link (DM-25). See the note
+--                               on `document` below — the DOCUMENTS SURVIVE.
+--   dq_assessment               every per-row-version data-quality assessment
+--                               (DM-27); they address input-row versions that
+--                               cease to exist three statements later.
+--   emission_activity           ┐ the four input tables (§4.9–4.12) — the whole
+--   purchased_energy_activity   │ append-only version chain, drafts and approved
+--   contractual_instrument      │ versions alike. `purchased_energy_activity`
+--   disclosure_record           ┘ also holds the two direct factor references.
+--   report_revision             every revision, including LOCKED ones.
+--   period_scope                every boundary decision (К-6).
+--   reporting_period            every period — and with it every pin (К-24).
+--   asset                       ┐
+--   facility                    │ the organisational boundary (К-1…К-7).
+--   legal_entity                ┘
+--
+-- ── KEPT, DELIBERATELY ──────────────────────────────────────────────────────
+--   companies, "user", profiles, company_members, company_invitations,
+--   plans, plan_prices, company_subscription, payments, payment_events
+--                               — accounts, tenancy and billing. Named as
+--                               out of scope: a person's login and a company's
+--                               subscription have nothing to do with a factor
+--                               set, and deleting them would log real people
+--                               out of a product they are about to be shown.
+--   document                    — DM-26 IS EXPLICIT: discarding a revision never
+--                               deletes a document. A document is company
+--                               evidence, not revision output; its bytes are on
+--                               disk and its row is the only handle on them. The
+--                               LINKS go (their targets are gone); the documents
+--                               stay, and `demo-seed.mjs` re-links them by name
+--                               on the next run.
+--   audit_log                   — append-only history of what was done, by whom.
+--                               It records events that really happened; some of
+--                               its `entity_id`s now name rows that no longer
+--                               exist, which is the normal condition of an audit
+--                               trail and not a defect.
+--   scope3_spend, scope3_results, supply_chain_data, goals
+--                               — per-company data outside the Phase-1 model.
+--                               They hang off `companies`, not off a revision,
+--                               and no FK ties them to a factor set. READ THE
+--                               SCOPE-3 NOTE BELOW: `scope3_spend` survives this
+--                               migration but stops being priceable, and that
+--                               consequence is deliberate and reported, not
+--                               papered over here.
+--   metric_catalog, currencies, fx_rates, plans.features
+--                               — reference data that is not `legacy-v1`.
+--   factor_set `si-2025` and its 23 factors, and the 38 SHARED unit conversions
+--                               — see the cascade note.
+--
+-- ╔═══════════════════════════════════════════════════════════════════════════╗
+-- ║ THE ORDER, AND WHERE IT COMES FROM                                        ║
+-- ╚═══════════════════════════════════════════════════════════════════════════╝
+-- IT IS NOT A GUESS AND IT IS NOT A CASCADE. Three foreign keys in this graph
+-- are declared with NO `ON DELETE` clause, which in Postgres means NO ACTION:
+-- the database REFUSES the delete rather than following it. That refusal is the
+-- AC-8 reproducibility guarantee expressed in DDL — a locked report cannot have
+-- the factors that produced it deleted out from under it — and
+-- `reproducibility.integration.test.ts` proves it deliberately. Verified on a
+-- seeded database before this file was written:
+--
+--   DELETE FROM factor_set WHERE code='legacy-v1';
+--     ERROR: violates foreign key constraint "reporting_period_factor_set_id_fkey"
+--            on table "reporting_period"                        -- 0004:243
+--   DELETE FROM emission_factor;
+--     ERROR: violates foreign key constraint "calculation_factor_id_fkey"
+--            on table "calculation"                             -- 0004:684
+--   DELETE FROM reporting_period;
+--     ERROR: violates foreign key constraint "emission_activity_revision_id_fkey"
+--            on table "emission_activity"                       -- via 0004:336
+--
+-- So the dependent rows are deleted EXPLICITLY, child before parent, and the
+-- order below is read off `pg_constraint` rather than off memory. The relevant
+-- edges, all of them NO ACTION unless marked:
+--
+--   report_render.revision_id       → report_revision
+--   calculation.revision_id         → report_revision
+--   calculation.factor_id           → emission_factor
+--   validation_result.revision_id   → report_revision   (CASCADE, done anyway)
+--   <input>.revision_id             → report_revision           (all four)
+--   <input>.legal_entity_id/.facility_id/.asset_id → boundary   (all four)
+--   purchased_energy_activity.location_factor_id → emission_factor
+--   purchased_energy_activity.market_factor_id   → emission_factor
+--   purchased_energy_activity.meter_asset_id     → asset
+--   report_revision.period_id       → reporting_period   (CASCADE, done anyway)
+--   period_scope.period_id          → reporting_period   (CASCADE, done anyway)
+--   period_scope.legal_entity_id    → legal_entity
+--   reporting_period.factor_set_id  → factor_set
+--   asset.facility_id / asset.legal_entity_id, facility.legal_entity_id
+--
+-- SELF-REFERENCES ARE NOT A PROBLEM AND NEED NO ORDERING.
+-- `report_revision.seeded_from_revision_id`, `reporting_period.comparative_period_id`,
+-- `legal_entity.parent_legal_entity_id` and the `previous_version_id` /
+-- `superseded_by_id` pair on each of the four input tables all point INTO their
+-- own table. A NO ACTION constraint is checked at END OF STATEMENT, and one
+-- unqualified `DELETE FROM t` empties the table in a single statement — by the
+-- time the check runs there is no surviving row left to dangle. (This is the
+-- same mechanism 0004's own comment relies on for tenant deletion.)
+--
+-- WHY `DELETE` AND NOT `TRUNCATE ... CASCADE`. `TRUNCATE` on a table another
+-- table references demands CASCADE, and CASCADE would silently reach whatever
+-- happens to be attached — including tables this migration has just promised to
+-- keep. The point of writing sixteen statements out is that the blast radius is
+-- READABLE. Nothing is emptied that is not named here, in this file, in order.
+--
+-- ╔═══════════════════════════════════════════════════════════════════════════╗
+-- ║ THE TWO CASCADES — CHECKED, NOT ASSUMED                                   ║
+-- ╚═══════════════════════════════════════════════════════════════════════════╝
+-- The final statement deletes ONE row and relies on two `ON DELETE CASCADE`
+-- edges into `factor_set`. Both were read off `pg_constraint` (`confdeltype='c'`)
+-- and both were watched firing on a seeded database:
+--
+--   emission_factor.factor_set_id  (0004:74)   — 440 rows go. This is the one
+--                                                that matters: it is the factor
+--                                                library itself.
+--   unit_conversion.factor_set_id  (0010:192)  — ARMED, AND IT DELETES NOTHING,
+--                                                because `legacy-v1` owns no
+--                                                set-scoped conversion.
+--
+-- THAT SECOND LINE IS NOT A DEFECT AND MUST NOT BE "FIXED" BY DELETING MORE.
+-- 0010 introduced `factor_set_id` on `unit_conversion` and populated it for
+-- `si-2025`'s ten natural-gas rows ONLY; the 38 rows 0004 shipped stayed
+-- `factor_set_id IS NULL`, which in 0010's vocabulary means "shared by every
+-- set". `legacy-v1` therefore never owned a conversion row — it resolved against
+-- the shared table, exactly as 0010's header records — and the cascade finds
+-- nothing to take. The 38 shared rows SURVIVE, deliberately: `si-2025` resolves
+-- kg↔t, kWh↔MWh↔GJ, L↔m3 and its non-gas contexts through them, and deleting
+-- them because their `notes` column says "derived from factor set legacy-v1"
+-- would break the set this migration exists to promote.
+--
+-- ╔═══════════════════════════════════════════════════════════════════════════╗
+-- ║ IDEMPOTENCE                                                               ║
+-- ╚═══════════════════════════════════════════════════════════════════════════╝
+-- Every statement is an unqualified `DELETE`, and an unqualified `DELETE` on an
+-- empty table affects zero rows and raises nothing. A second run is therefore a
+-- no-op, and so is a run on a database that never had `legacy-v1`: the last
+-- statement matches by `code` and deletes zero rows when no such set exists.
+--
+-- NOTHING HERE READS THE SET. There is no `WHERE factor_set_id = (SELECT id FROM
+-- factor_set WHERE code='legacy-v1')` anywhere — a construct that would collapse
+-- to `WHERE factor_set_id = NULL` (deleting nothing, silently) the moment the set
+-- was already gone, leaving half a cleanup behind and no error to notice it by.
+-- The deletes stand on their own; the set delete is the last statement and the
+-- only one that names `legacy-v1` at all.
+--
+-- ╔═══════════════════════════════════════════════════════════════════════════╗
+-- ║ WHAT THIS BREAKS, STATED HERE RATHER THAN DISCOVERED LATER                ║
+-- ╚═══════════════════════════════════════════════════════════════════════════╝
+-- SCOPE-3 SPEND STOPS WORKING, AND IT STOPS QUIETLY. The 16 `scope3_spend:*`
+-- EXIOBASE per-€1000 factors exist ONLY in `legacy-v1`; the client workbook
+-- `si-2025` was built from contains no spend factor at all, by design (it is a
+-- national Scope-1/2 set). After this migration `activeFactorSetId`
+-- (`src/server/scope3/factors.ts`) — "the newest active set that actually carries
+-- spend factors" — finds none and returns `null`, WHICH IS THE BRANCH IT WAS
+-- WRITTEN FOR and it does not throw. The consequences, verified end to end:
+--
+--   • `listSpendCommodities` returns `[]`, so `GET /api/scope3-spend` still
+--     answers 200 with an EMPTY commodity list and the editor's dropdown is bare;
+--   • `POST /api/scope3-spend` refuses EVERY write with `VALIDATION` (422),
+--     because the commodity key it validates against comes from that same list;
+--   • `recalculateScope3Spend` loads no factor rows, so every stored spend line
+--     contributes 0 and pushes the D4 warning `no spend factor for <key> <year>`,
+--     and the `scope3_results` rows for categories 1 and 2 are DELETED as "no
+--     longer supported" the next time anything triggers a recalculation;
+--   • the `scope3_spend` LINES THEMSELVES SURVIVE this migration — the money a
+--     company entered is not thrown away, it is merely unpriceable.
+--
+-- Nothing in this file causes that beyond deleting the set, and nothing in this
+-- file hides it. Making the refusal legible IN THE UI is the next task's work;
+-- what this header owes the reader is the exact behaviour, which is: null,
+-- cleanly, then zeros with warnings.
+--
+-- `db:seed` STILL BUILDS `legacy-v1`, ON PURPOSE, AND ONLY OFF-SERVER.
+-- `src/server/db/seed.ts` and `seed-data/factor-set-v1.ts` are unchanged by this
+-- migration. The deploy ships `.next/standalone`, `scripts/migrate.mjs` and
+-- `drizzle/` and NEVER `seed.ts` or `tsx` (О-13), so no production or staging
+-- database can get the set back: there, this file is final. On a developer
+-- machine and in CI, `npm run db:seed` re-creates it — and that is wanted for
+-- now, because roughly forty integration suites pin their fixtures and their
+-- expected numbers to its factors (`natural_gas` in `kWh_gross`,
+-- `wood_logs_biogenic`, `car_petrol_medium`, the eight EXIOBASE commodities),
+-- none of which `si-2025`'s fourteen activity types can express. Retiring the
+-- set in the database and retiring it from the test corpus are two different
+-- jobs; this is the first, and the second is not made harder by leaving the seed
+-- alone. What that means concretely: after `db:migrate` ALONE — which is what the
+-- server runs — `SELECT code FROM factor_set` returns exactly one row, `si-2025`.
+--
+-- ── ROLLBACK IS FORWARD ONLY (R-8) ──────────────────────────────────────────
+-- There is no down-migration and writing one would be a lie: it could re-insert
+-- `legacy-v1` from 0004's own generated block (the rows are still in the tree,
+-- ids and all) but not one row of the operational data, which is exactly the
+-- half nobody could reconstruct. Pre-launch that is an acceptable trade and it is
+-- the trade being made knowingly.
+--
+-- Hand-authored like every migration here (`drizzle-kit generate` is never run,
+-- §0.4 / ./README.md) with a hand-written `idx: 11` in `meta/_journal.json`.
+-- `idx: 8` stays reserved for `0008_fx_rates` on its own branch: a migration's
+-- number is taken when it is WRITTEN, and renumbering one at merge time would
+-- change its `when`, which a database that already ran it cannot survive.
+
+-- ── 1. derived artefacts — they cite revisions and factors by id ────────────
+DELETE FROM report_render;
+DELETE FROM calculation;
+
+-- ── 2. computed and annotative rows hanging off revisions and input rows ────
+-- `validation_result` would CASCADE from the revision; it is written out so the
+-- reader does not have to know that to know the table ends up empty. The rows of
+-- scope `reference_org` carry no `revision_id` and would NOT have cascaded —
+-- they are the ones that address `emission_factor` rows about to disappear.
+DELETE FROM validation_result;
+-- Polymorphic, both of them: `(linked_object_type, linked_object_id)` and
+-- `(object_type, object_id)` are not foreign keys, so nothing would have stopped
+-- these from outliving their targets as unresolvable pointers.
+DELETE FROM evidence_link;
+DELETE FROM dq_assessment;
+
+-- ── 3. the four input tables (§4.9–4.12) ────────────────────────────────────
+-- Before the revisions they belong to and before the boundary they name; and
+-- `purchased_energy_activity` before the factors, since it is the one input
+-- table that references `emission_factor` directly (К-20, location/market).
+DELETE FROM emission_activity;
+DELETE FROM purchased_energy_activity;
+DELETE FROM contractual_instrument;
+DELETE FROM disclosure_record;
+
+-- ── 4. revisions, then the periods that hold them ───────────────────────────
+DELETE FROM report_revision;
+DELETE FROM period_scope;
+DELETE FROM reporting_period;   -- releases every `factor_set` pin (К-24)
+
+-- ── 5. the organisational boundary, leaf to root ────────────────────────────
+DELETE FROM asset;
+DELETE FROM facility;
+DELETE FROM legal_entity;
+
+-- ── 6. and now the set itself ───────────────────────────────────────────────
+-- One row. Its 440 factors go with it through `emission_factor.factor_set_id`
+-- ON DELETE CASCADE (0004:74); `unit_conversion.factor_set_id` (0010) cascades
+-- too and finds nothing, because this set owns no set-scoped conversion — see
+-- the header. Matching by `code` rather than by the literal uuid keeps the
+-- statement true on any database, and deletes zero rows on one where the set is
+-- already gone.
+DELETE FROM factor_set WHERE code = 'legacy-v1';

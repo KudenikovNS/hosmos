@@ -1,0 +1,2547 @@
+{
+  "common": {
+    "upgrade": "Upgrade",
+    "total": "Total",
+    "user": "User",
+    "language": "Language",
+    "loading": "Loading...",
+    "selectPlaceholder": "Select...",
+    "help": "Help",
+    "noLegalEntity": {
+      "title": "No legal entity yet",
+      "description": "Open <organisation>Organisation</organisation> and create a legal entity to start preparing your report."
+    },
+    "noReportingPeriod": {
+      "title": "No reporting period yet",
+      "description": "Start on the <organisation>Organisation</organisation> screen: create the legal entity and the first reporting period."
+    },
+    "noReportRevision": {
+      "title": "Create a report draft",
+      "description": "There is no draft for “{period}” yet. Open <organisation>Organisation</organisation>, select this period and click “{action}”."
+    },
+    "noInventoryData": {
+      "title": "Enter the report data first",
+      "description": "Open <inventory>Data</inventory> and add rows for the selected period. Then return here to attach documents and assess data quality."
+    },
+    "reportApprovalRequired": {
+      "title": "The report has not been approved yet",
+      "description": "There is no approved report revision for “{period}” yet. Open <review>Review and approval</review>, complete the checks and approve the report before generating a file."
+    },
+    "notices": {
+      "loadFailed": "This section could not be loaded. Try again in a moment.",
+      "accessChanged": "Your access rights changed. Refresh the page to continue.",
+      "planRequiredTitle": "Your plan does not include this",
+      "planRequiredBody": "The server refused this change because the plan does not cover it. Upgrading enables it.",
+      "upgrade": "Upgrade plan",
+      "ruleUnknown": "The change was refused by rule {code}.",
+      "field": "Check the value of the “{field}” field.",
+      "generic": "The change could not be saved. Try again."
+    },
+    "noCompany": {
+      "title": "Create your company",
+      "subtitle": "Your account is not linked to a company yet.",
+      "cardTitle": "Company workspace",
+      "body": "The company is the workspace for your data, calculations and reports. Enter its name to start; you will become its administrator.",
+      "nameLabel": "Company Name",
+      "namePlaceholder": "Acme Manufacturing",
+      "create": "Create company",
+      "nameRequired": "Enter the company name.",
+      "failed": "The company could not be created. Please try again.",
+      "suspended": "Your access to your company is suspended. Contact its administrator.",
+      "invited": "If colleagues invited you to their company, open the link in the invitation email instead of creating a new one."
+    }
+  },
+  "metadata": {
+    "title": "Hosmos — ESG Platform for SMEs",
+    "description": "Calculate ESG indicators, manage non-financial data, and auto-generate reports compliant with EU standards. Onboarding in under 30 minutes."
+  },
+  "nav": {
+    "readiness": "Readiness",
+    "dashboard": "Dashboard",
+    "governance": "Governance",
+    "supplyChain": "Supply Chain",
+    "goals": "Goals & OKR",
+    "settings": "Settings",
+    "organisation": "Organisation",
+    "factors": "Emission factors",
+    "inventory": "Inventory",
+    "disclosures": "Disclosures",
+    "scope3": "Scope 3 (spend)",
+    "evidence": "Evidence & quality",
+    "review": "Review & approval",
+    "reports": "Reports",
+    "vesg": "VESG voucher"
+  },
+  "topbar": {
+    "notifications": "Notifications",
+    "activeCompany": "Active company",
+    "switchError": "Couldn't switch company — your access may have changed. Please refresh.",
+    "unsavedSwitch": "Some changes could not be saved. Stay to correct them, or switch without saving those changes.",
+    "stay": "Stay",
+    "discardAndSwitch": "Switch without saving",
+    "switchRecovery": "The active company could not be confirmed. Reload the page before editing.",
+    "reload": "Reload page",
+    "detachedSaveError": "Changes in the closed form could not be saved. Reopen it to correct the error. Your draft is kept in this tab."
+  },
+  "sidebar": {
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "mainNavigation": "Main navigation",
+    "logout": "Log out",
+    "logoutFailed": "Couldn't log out. Check your connection and try again.",
+    "accountMenu": "Account menu"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Where your report stands, and what it is waiting for.",
+    "period": {
+      "title": "Reporting period",
+      "subtitle": "The status shown is the status of the period's current revision.",
+      "noRevision": "This period has no revision yet. A revision is what activity rows belong to — start one on the Organisation screen.",
+      "revision": "Revision {no} — the one currently being worked on.",
+      "factorSet": "factor set {version}"
+    },
+    "periodStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "inReview": "In review",
+      "approved": "Approved",
+      "locked": "Locked",
+      "reopened": "Reopened"
+    },
+    "rows": {
+      "title": "Entered data",
+      "subtitle": "Current versions in this revision. An edited row is counted once, under its newest version.",
+      "count": "{count} rows",
+      "empty": "Nothing has been entered for this revision yet.",
+      "scope": "Scope",
+      "total": "Rows",
+      "approved": "Approved",
+      "draft": "Awaiting approval",
+      "all": "All data",
+      "scopes": {
+        "scope1": "Scope 1 — own sources",
+        "scope2": "Scope 2 — purchased energy",
+        "disclosures": "Disclosures"
+      }
+    },
+    "validation": {
+      "title": "Validation",
+      "subtitle": "What the rules have already said about this revision. Nothing is re-checked by opening this page.",
+      "blocking": "{count, plural, =0 {Nothing blocking} one {# blocking finding} other {# blocking findings}}",
+      "warnings": "{count, plural, =0 {No warnings.} one {# warning — worth a look, but nothing is held up by it.} other {# warnings — worth a look, but nothing is held up by them.}}",
+      "notRun": "No rule has been checked against this revision yet. Checks run when data is saved, submitted or approved.",
+      "clean": "Nothing is holding this revision back."
+    },
+    "emissions": {
+      "title": "Emission totals",
+      "subtitle": "The figures of the last approved calculation run. This page only reads them — nothing on it changes a number.",
+      "revisionStatus": {
+        "approved": "Approved",
+        "locked": "Locked"
+      },
+      "revision": "Revision {no} — the approved revision these figures come from.",
+      "calculatedAt": "Calculated {at} (UTC).",
+      "noApproved": "No approved calculation yet",
+      "noApprovedBody": "Nothing has been approved for reporting, so there are no totals to show — not zero tonnes, no figure at all. Enter your Scope 1 and Scope 2 rows and have them approved, and the totals appear here.",
+      "noTotals": "No totals to show",
+      "noTotalsBody": "Totals appear once this approved revision has a completed calculation. Data entry is where the rows they are built from live.",
+      "noRun": "This revision was approved but has never been calculated, so it published no totals.",
+      "failed": "{count, plural, one {# line of this run could not be calculated, so no total was published at all — a total that quietly left it out would be too small.} other {# lines of this run could not be calculated, so no total was published at all — a total that quietly left them out would be too small.}}",
+      "stale": "The data behind this run changed after it ran ({sources}). The figures below are the ones that were approved; a new calculation is needed before they describe the current data.",
+      "historicalContextMissing": "The original inputs of this older calculation were not saved. Emission totals remain available, but historical turnover, intensity and energy split cannot be confirmed. An open revision can be recalculated; a locked revision needs verified historical inputs.",
+      "staleSource": {
+        "rows": "entered rows",
+        "period": "the reporting period",
+        "period_scope": "the reporting boundary",
+        "organisation": "organisation details",
+        "fx": "exchange rates",
+        "context": "missing historical calculation context",
+        "formula": "factor output-unit conversion"
+      },
+      "noFigure": "No figure published",
+      "kpi": {
+        "scope1": "Scope 1 — own sources",
+        "scope2Lb": "Scope 2 — location-based",
+        "scope2Mb": "Scope 2 — market-based",
+        "energy": "Energy consumed",
+        "intensity": "Intensity — location-based",
+        "coverage": "What these figures cover"
+      },
+      "units": {
+        "tCO2e": "t CO₂e",
+        "MWh": "MWh",
+        "intensityEur": "t CO₂e / EUR"
+      },
+      "coverage": {
+        "legalEntities": "{included} of {total} legal entities",
+        "facilities": "{included} of {total} sites"
+      },
+      "outputUnitCorrectionRequired": "This older calculation did not convert the factor’s output units to kilograms. Recalculate an open revision; for a locked revision, create a restatement. The saved figures have not been rewritten."
+    },
+    "links": {
+      "organisation": "Organisation and boundaries",
+      "organisationBody": "Legal entities, sites, reporting periods and what is inside the boundary.",
+      "inventory": "Data entry",
+      "inventoryBody": "Enter and approve the Scope 1 and Scope 2 rows of this revision."
+    },
+    "errors": {
+      "accessChanged": "Your access rights changed. Refresh the page to continue.",
+      "loadFailed": "The dashboard could not be loaded. Try again in a moment."
+    }
+  },
+  "billing": {
+    "title": "Billing",
+    "subtitle": "Upgrade your subscription",
+    "panelTitle": "Upgrade your plan",
+    "panelSubtitle": "Secure card payment powered by Revolut",
+    "periodMonthly": "Monthly",
+    "periodAnnual": "Annual",
+    "perMonth": "/ month",
+    "perYear": "/ year",
+    "highlightFull": "Comprehensive module, simplified ESRS, supplier registry",
+    "highlightCore": "Basic module, PDF and Excel",
+    "continueToPayment": "Continue to payment",
+    "youArePaying": "You're paying",
+    "billingDetails": "Billing details",
+    "cardholderName": "Cardholder name",
+    "city": "City",
+    "postcode": "Postcode",
+    "street": "Street",
+    "country": "Country",
+    "cardDetails": "Card details",
+    "payAmount": "Pay {amount}",
+    "secureNote": "Your card is entered directly with Revolut — we never see it. This card is saved for future subscription renewals.",
+    "errCardDeclined": "We couldn't process your card. Please check the details and try again.",
+    "errFormLoad": "Could not load the payment form. Please try again.",
+    "errNetwork": "Network error — please check your connection and try again.",
+    "errSessionExpired": "Your session has expired. Please sign in again.",
+    "errCheckoutStart": "We couldn't start your checkout. Please try again.",
+    "countries": {
+      "SI": "Slovenia",
+      "AT": "Austria",
+      "DE": "Germany",
+      "HR": "Croatia",
+      "IT": "Italy",
+      "GB": "United Kingdom",
+      "FR": "France",
+      "NL": "Netherlands",
+      "US": "United States"
+    },
+    "return": {
+      "subtitle": "Checkout confirmation",
+      "freeTitle": "No payment needed",
+      "freeBody": "You're on the free plan, so there was nothing to charge. You can upgrade to a paid plan any time from your settings.",
+      "paidTitle": "Payment received",
+      "paidBody": "Thanks — your payment was submitted successfully. Your subscription is being activated and will be ready shortly.",
+      "paidNote": "Activation is confirmed by Revolut in the background. If your plan isn't updated within a few minutes, please refresh your settings.",
+      "goToDashboard": "Go to dashboard",
+      "viewSettings": "View settings"
+    }
+  },
+  "featureGate": {
+    "defaultTitle": "This is a paid feature",
+    "subtitle": "Upgrade your plan to unlock this section.",
+    "requires": "Requires",
+    "upgrade": "Upgrade"
+  },
+  "governance": {
+    "title": "Governance",
+    "subtitle": "ESRS G1 — Business Conduct",
+    "gateTitle": "Governance is a paid feature",
+    "completion": "G-parameters completion",
+    "groupMeta": "{done} of {total} completed",
+    "save": "Save Governance Data",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "unsaved": "Unsaved changes",
+    "saveError": "Failed to save. Please try again.",
+    "footnote": "These governance parameters map to ESRS G1 (Business Conduct) disclosure requirements. Completion status is included in ESRS reports when generated.",
+    "catBoard": "Board & Leadership",
+    "catEthics": "Ethics & Anti-corruption",
+    "catData": "Data Protection & Privacy",
+    "catRisk": "Risk Management",
+    "items": {
+      "boardComposition": "Board composition documented",
+      "independentDirectors": "Independent directors identified",
+      "boardDiversity": "Board diversity policy",
+      "execCompensation": "Executive compensation disclosure",
+      "esgCommittee": "Board ESG committee",
+      "codeOfEthics": "Code of ethics published",
+      "antiCorruption": "Anti-corruption policy",
+      "whistleblowing": "Whistleblowing channel active",
+      "conflictOfInterest": "Conflict of interest policy",
+      "politicalContributions": "Political contributions policy",
+      "antiBriberyTraining": "Anti-bribery training completed",
+      "gdprAssessment": "GDPR compliance assessment",
+      "dpa": "Data Processing Agreement (DPA)",
+      "privacyPolicy": "Privacy policy published",
+      "breachNotification": "Data breach notification process",
+      "dpoAppointed": "DPO appointed",
+      "dataRetention": "Data retention policy",
+      "riskRegister": "Risk register maintained",
+      "riskMethodology": "Risk assessment methodology",
+      "continuityPlan": "Business continuity plan",
+      "internalAudit": "Internal audit function",
+      "complianceMonitoring": "Regulatory compliance monitoring"
+    }
+  },
+  "supplyChain": {
+    "title": "Supply Chain Hub",
+    "subtitle": "Supplier ESG disclosure — Scope 3 Cat.1 (disclosure only)",
+    "gateTitle": "Supply Chain Hub is a paid feature",
+    "totalSuppliers": "Total Suppliers",
+    "certifiedCount": "Certified",
+    "highCriticalRisk": "High / Critical Risk",
+    "avgScore": "Avg ESG Score",
+    "addSupplierForm": "Add a supplier",
+    "editSupplier": "Edit supplier",
+    "fieldName": "Supplier name",
+    "fieldCountry": "Country",
+    "fieldCountryPlaceholder": "Germany",
+    "fieldCategory": "Category",
+    "fieldCategoryPlaceholder": "Raw materials",
+    "fieldRiskLevel": "Risk level",
+    "fieldSpend": "Spend (EUR)",
+    "fieldEmissions": "Emissions (tCO₂e)",
+    "fieldTier": "Tier",
+    "fieldEsgScore": "ESG score (0–100)",
+    "fieldEsgScorePlaceholder": "e.g. 78",
+    "fieldCertification": "Certification",
+    "certifiedSupplier": "Certified supplier",
+    "fieldNotes": "Notes",
+    "fieldNotesPlaceholder": "Optional context",
+    "saving": "Saving...",
+    "saveChanges": "Save changes",
+    "addSupplier": "Add supplier",
+    "cancel": "Cancel",
+    "saved": "Saved",
+    "errNoName": "A supplier needs a name.",
+    "errValidation": "Some values are invalid. Check the risk level and the non-negative numbers.",
+    "errSave": "Failed to save. Please try again.",
+    "errDelete": "Failed to delete. Please try again.",
+    "okCreated": "Supplier added",
+    "okUpdated": "Supplier updated",
+    "okDeleted": "Supplier removed",
+    "suppliers": "Suppliers",
+    "emptyList": "No suppliers yet. Add your first supplier above. These figures are <strong>disclosure only</strong> — they do not feed the Scope-3 footprint.",
+    "thCompany": "Company",
+    "thCountry": "Country",
+    "thRisk": "Risk",
+    "thScore": "ESG Score",
+    "thCertified": "Certified",
+    "thActions": "Actions",
+    "riskLevels": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    }
+  },
+  "goals": {
+    "title": "Goals & OKR",
+    "subtitle": "Reduction targets and their progress",
+    "gateTitle": "Goals & OKR is a paid feature",
+    "addTitle": "Add a goal",
+    "editTitle": "Edit goal",
+    "fieldTitle": "Title",
+    "fieldTitlePlaceholder": "Reduce Scope 1 by 30%",
+    "fieldDescription": "Description",
+    "fieldDescriptionPlaceholder": "Optional context",
+    "fieldCategory": "Category",
+    "fieldStatus": "Status",
+    "fieldUnit": "Unit",
+    "sbtiAligned": "Science-based target (company's own statement)",
+    "fieldBaselineYear": "Baseline year",
+    "fieldBaselineValue": "Baseline value",
+    "fieldTargetYear": "Target year",
+    "fieldTargetValue": "Target value",
+    "fieldCurrentValue": "Current value",
+    "saving": "Saving...",
+    "saveChanges": "Save changes",
+    "addGoal": "Add goal",
+    "cancel": "Cancel",
+    "saved": "Saved",
+    "errNoTitle": "A goal needs a title.",
+    "errValidation": "Some values are invalid. Check the category, status, years and numbers.",
+    "errSave": "Failed to save. Please try again.",
+    "errDelete": "Failed to delete. Please try again.",
+    "okCreated": "Goal created",
+    "okUpdated": "Goal updated",
+    "okDeleted": "Goal deleted",
+    "listTitle": "Your goals",
+    "emptyList": "No goals yet. Add your first sustainability target above — <strong>emissions</strong> goals feed the ESRS E1-4 targets in your report.",
+    "baseline": "Baseline",
+    "current": "Current",
+    "target": "Target",
+    "targetReached": "Target reached!",
+    "progress": "{pct}% progress",
+    "categories": {
+      "emissions": "Emissions",
+      "energy": "Energy",
+      "waste": "Waste",
+      "social": "Social",
+      "governance": "Governance",
+      "supply_chain": "Supply chain",
+      "water": "Water",
+      "biodiversity": "Biodiversity"
+    },
+    "statuses": {
+      "not_started": "Not started",
+      "on_track": "On track",
+      "at_risk": "At risk",
+      "behind": "Behind",
+      "completed": "Completed"
+    }
+  },
+  "roles": {
+    "esg_admin": "Admin",
+    "data_owner": "Data Owner",
+    "contributor": "Contributor",
+    "reviewer": "Reviewer",
+    "approver": "Approver",
+    "auditor": "Auditor"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Company profile, team, billing & integrations",
+    "trialTitle": "You're on the Free Trial",
+    "trialDesc": "The Scope 3, People and Governance modules, ESRS reports and more are locked. Upgrade to unlock all features — your data will be preserved.",
+    "upgradeNow": "Upgrade Now",
+    "companyProfile": "Company Profile",
+    "companyName": "Company Name",
+    "industry": "Industry",
+    "country": "Country",
+    "naceCode": "NACE Code",
+    "employees": "Employees",
+    "industries": {
+      "manufacturing": "Manufacturing",
+      "it": "IT & Technology",
+      "retail": "Retail",
+      "construction": "Construction",
+      "transport": "Transport",
+      "healthcare": "Healthcare",
+      "financial": "Financial Services",
+      "other": "Other"
+    },
+    "countries": {
+      "slovenia": "Slovenia",
+      "austria": "Austria",
+      "germany": "Germany",
+      "croatia": "Croatia",
+      "italy": "Italy",
+      "czech": "Czech Republic",
+      "slovakia": "Slovakia",
+      "hungary": "Hungary"
+    },
+    "teamMembers": "Team Members",
+    "unlimited": "Unlimited",
+    "maxMembers": "Max {count}",
+    "billingPlan": "Billing & Plan",
+    "planNameSuffix": "{name} Plan",
+    "free": "Free",
+    "changePlan": "Change Plan",
+    "managePlan": "Manage Plan",
+    "featScope3": "Scope 3",
+    "featSocial": "People & Social",
+    "featGovernance": "Governance",
+    "featSupplyChain": "Supply Chain",
+    "featGoals": "Goals & OKR",
+    "featDataExport": "Data Export",
+    "planPeriod": {
+      "trial": "30 days",
+      "monthly": "/ month",
+      "annual": "/ year"
+    },
+    "planHighlight": {
+      "trial": "Scope 1+2, 1 report",
+      "starter": "Basic B1–B11, 1 legal entity, 3 sites",
+      "pro": "Comprehensive C1–C9, simplified ESRS, supplier registry",
+      "enterprise": "Up to 10 legal entities, unlimited sites and seats"
+    },
+    "modalTitle": "Choose Your Plan",
+    "modalSubtitle": "Upgrades apply right away; downgrades take effect at renewal. Your data is never deleted.",
+    "current": "Current",
+    "scope12": "Scope 1 + 2",
+    "reportFormats": "{count} report formats",
+    "currentPlanBtn": "Current Plan",
+    "upgradeToPlan": "Upgrade to {name}",
+    "switchToPlan": "Switch to {name}",
+    "downgradeToPlan": "Downgrade to {name}",
+    "defaultCurrency": "Default Currency",
+    "readonlyHint": "Your subscription is read-only — upgrade to edit your company profile.",
+    "periodMonthly": "Monthly",
+    "periodAnnual": "Annual",
+    "periodLocked": "Billing period ({period}) stays the same on an in-place plan change.",
+    "subCancelsOn": "Cancels on {date}",
+    "subDowngradesAt": "Downgrades to {name} at renewal ({date})",
+    "subRenewsOn": "Renews on {date} · {period}",
+    "resumePlan": "Resume",
+    "cancelPlan": "Cancel plan",
+    "msgCancelScheduled": "Your paid plan will end at the end of the current period — you'll move to the free Trial then.",
+    "msgScheduleFailed": "Couldn't schedule the change. Please try again.",
+    "msgChangeFailed": "Couldn't change your plan. Please try again.",
+    "msgDowngradeScheduled": "Downgrade scheduled — you'll move to {name} at the end of your current period.",
+    "msgCancelFailed": "Couldn't cancel your plan. Please try again.",
+    "msgResumeFailed": "Couldn't resume your plan. Please try again.",
+    "msgResumeDone": "Your plan has been resumed.",
+    "close": "Close",
+    "langRegion": "Language & Region",
+    "interfaceLang": "Interface Language",
+    "reportLangNote": "The report language is chosen when you generate a report on the Reports page: English or Slovenian.",
+    "dataIntegrations": "Data Integrations",
+    "integrationsSubtitle": "Connect accounting systems or upload invoices for automatic emission data",
+    "integrationDesc": {
+      "xero": "Cloud accounting",
+      "quickbooks": "Intuit accounting",
+      "csv_import": "Manual file upload",
+      "pdf_scan": "Upload PDF invoices",
+      "sage": "Accounting & payroll",
+      "odoo": "Open-source ERP",
+      "open_banking": "Bank transactions",
+      "sap_b1": "SAP for SMEs",
+      "1c": "CIS accounting"
+    },
+    "connected": "Connected",
+    "connect": "Connect",
+    "invoiceScanner": "Invoice Scanner",
+    "scannerSubtitle": "Upload PDF invoices — AI extracts emission data automatically",
+    "dropzoneTitle": "Drop PDF invoices here or click to upload",
+    "dropzoneSubtitle": "Electricity bills, gas bills, fuel receipts, travel invoices",
+    "recentUploads": "Recent Uploads",
+    "statusApproved": "Approved",
+    "statusReview": "Review",
+    "statusExtracted": "Extracted",
+    "saveSettings": "Save Settings",
+    "savedNote": "Saved!",
+    "sessionExpired": "Your session has expired. Please sign in again.",
+    "saveFailed": "Failed to save company profile. Please try again.",
+    "team": {
+      "overSeat": "Your team has {used} members but your plan allows {limit}. Upgrade your plan or remove members to stay within your seat limit.",
+      "accessChanged": "Your access has changed — please refresh the page.",
+      "loadingMembers": "Loading team members…",
+      "loadMembersError": "Couldn't load team members — please try again.",
+      "noMembers": "No team members yet.",
+      "grantDisclosure": "There is no dedicated approver in your company, so you approve your own data. This self-approval is disclosed in the report. Assign the Approver role to a colleague to have data signed off independently.",
+      "errLastAdmin": "A company must keep at least one admin.",
+      "errGeneric": "Something went wrong. Please try again.",
+      "errInviteInvalid": "That email can't be invited — they may already be a member or already have a pending invitation.",
+      "planRequiredShort": "Team collaboration is available from the Starter plan.",
+      "you": "you",
+      "suspended": "Suspended",
+      "roleForMember": "Role for {name}",
+      "remove": "Remove",
+      "inviteHeading": "Invite a teammate",
+      "inviteeEmailLabel": "Invitee email",
+      "inviteEmailPlaceholder": "name@company.com",
+      "inviteeRoleLabel": "Invitee role",
+      "sendInvite": "Send invite",
+      "upgradeNote": "Team collaboration is available from the Starter plan. Upgrade to invite teammates and share your ESG workspace.",
+      "upgradePlan": "Upgrade plan",
+      "loadingInvites": "Loading invitations…",
+      "loadInvitesError": "Couldn't load invitations — please try again.",
+      "noInvites": "No pending invitations.",
+      "inviteLinkFor": "Invitation link for {email}",
+      "inviteLinkWarn": "Copy this link now — for security it is shown only once and can't be retrieved again.",
+      "inviteLinkLabel": "Invitation link",
+      "copied": "Copied",
+      "copy": "Copy",
+      "dismiss": "Dismiss",
+      "invitedAs": "Invited as {role}",
+      "pending": "Pending",
+      "resend": "Resend",
+      "revoke": "Revoke",
+      "okRoleChanged": "Role updated",
+      "okRemoved": "Member removed",
+      "okRevoked": "Invitation revoked"
+    }
+  },
+  "invite": {
+    "loading": "Loading invitation…",
+    "unavailableTitle": "Invitation unavailable",
+    "invalidMessage": "This invitation link isn't valid. It may have expired, already been used, or been revoked. Ask whoever invited you to send a new one.",
+    "errorTitle": "Couldn't load invitation",
+    "errorBody": "Something went wrong. Please check your connection and try again.",
+    "tryAgain": "Try again",
+    "acceptedTitle": "You're in!",
+    "acceptedBody": "You've joined {company}. Taking you to your dashboard…",
+    "previewTitle": "You've been invited",
+    "fieldCompany": "Company",
+    "fieldRole": "Role",
+    "fieldInvitedBy": "Invited by",
+    "signInPrompt": "Sign in to accept this invitation.",
+    "signInButton": "Sign in to accept",
+    "acceptButton": "Accept invitation",
+    "seatLimit": "This team has reached its seat limit. Ask an administrator to free a seat or upgrade the plan, then try again.",
+    "acceptError": "Something went wrong accepting the invitation. Please try again."
+  },
+  "auth": {
+    "welcomeBack": "Welcome back",
+    "loginSubtitle": "Log in to your ESG dashboard",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "logIn": "Log in",
+    "noAccount": "Don't have an account?",
+    "startFreeTrial": "Start free trial",
+    "visualTitle": "A VSME report with a source behind every figure",
+    "feat1": "VSME Basic disclosures B1–B11",
+    "feat2": "Scope 1 and Scope 2 calculation on a pinned factor set",
+    "feat3": "Evidence attached to every data point",
+    "feat4": "PDF and Excel for internal checking and independent review",
+    "quote": "The platform prepares the data and the materials. The independent review is performed by a licensed audit firm under a separate contract.",
+    "quoteRole": "How responsibility is divided",
+    "passwordMin8Error": "Password must be at least 8 characters",
+    "checkEmailTitle": "Check your email",
+    "checkEmailText": "We sent a confirmation link to <b>{email}</b>. Click it to activate your account.",
+    "verifiedTitle": "Email confirmed",
+    "verifiedText": "Your address is confirmed and you are signed in. Continue in your workspace.",
+    "verifiedContinue": "Continue",
+    "verifyInvalidTitle": "Confirmation link not valid",
+    "verifyInvalidText": "This confirmation link can no longer be used: it may have been used already, or you are signed in to a different account. Sign in to continue.",
+    "verifyExpiredText": "This confirmation link has expired. Sign in to continue.",
+    "backToLogin": "Back to Login",
+    "startTrialTitle": "Start your free trial",
+    "startTrialSubtitle": "30 days free. No credit card required.",
+    "fullName": "Full Name",
+    "workEmail": "Work Email",
+    "companyName": "Company Name",
+    "passwordMin8Placeholder": "Min 8 characters",
+    "createAccount": "Create Account",
+    "termsAgree": "By creating an account, you agree to our Terms and Privacy Policy.",
+    "haveAccount": "Already have an account?",
+    "genericError": "Something went wrong. Please try again.",
+    "emailPlaceholder": "john@company.com",
+    "forgotTitle": "Forgot your password?",
+    "forgotSubtitle": "Enter your email and we’ll send you a reset link.",
+    "forgotSubmit": "Send reset link",
+    "forgotSuccessText": "If an account exists for <b>{email}</b>, we sent a link to reset your password. The link expires in 1 hour.",
+    "rememberedPassword": "Remembered your password?",
+    "resetInvalidTitle": "Link invalid or expired",
+    "resetInvalidText": "This password reset link is no longer valid. Reset links expire after 1 hour and can only be used once. Request a new one to continue.",
+    "resetRequestNew": "Request a new link",
+    "resetSuccessTitle": "Password updated",
+    "resetSuccessText": "Your password has been reset. Redirecting you to the login page…",
+    "resetTitle": "Set a new password",
+    "resetSubtitle": "Choose a new password for your account.",
+    "passwordsMismatch": "Passwords do not match",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Repeat the new password",
+    "resetSubmit": "Reset password",
+    "invalidCredentials": "Invalid email or password.",
+    "createAccountError": "Could not create account.",
+    "companyCreateError": "Your account was created, but your company could not be set up. Please try again.",
+    "companyRetry": "Try again",
+    "fullNamePlaceholder": "John Doe",
+    "companyNamePlaceholder": "Acme Manufacturing"
+  },
+  "terms": {
+    "backToHome": "Back to Home",
+    "pageTitle": "Terms & Privacy",
+    "lastUpdated": "Last updated: March 15, 2025 · Effective date: March 15, 2025",
+    "quickTerms": "Terms of Service",
+    "quickPrivacy": "Privacy Policy",
+    "footerTermsPrivacy": "Terms & Privacy",
+    "footerContact": "Contact"
+  },
+  "validation": {
+    "VAL-001": "Organisation must have a name, country and registration number",
+    "VAL-002": "Country, currency and NACE code must come from the current reference lists",
+    "VAL-003": "The group hierarchy must not contain cycles",
+    "VAL-004": "Effective from must not be later than effective to",
+    "VAL-005": "The facility must belong to an active legal entity",
+    "VAL-006": "Coordinates must be within range (−90…90 / −180…180)",
+    "VAL-007": "The activity falls outside the facility's operating dates",
+    "VAL-008": "The period's start date must be before its end date",
+    "VAL-009": "Reporting periods overlap",
+    "VAL-010": "A locked revision cannot be changed",
+    "VAL-011": "The activity value must be 0 or greater",
+    "VAL-012": "The data dates fall outside the reporting period",
+    "VAL-013": "This document may already have been uploaded",
+    "VAL-014": "The unit is not supported for this activity type",
+    "VAL-015": "The selected method requires an input value (fuel or activity)",
+    "VAL-016": "Incomplete fleet method: distance requires a vehicle type, fuel requires litres",
+    "VAL-017": "Biogenic CO₂ must be disclosed separately from fossil CO₂",
+    "VAL-018": "The refrigerant mass balance is negative",
+    "VAL-019": "No emission factor or GWP for this refrigerant in the factor set",
+    "VAL-020": "Energy consumption must be 0 or greater",
+    "VAL-021": "Scope 2 requires the country of the facility",
+    "VAL-022": "Covered volume exceeds the matched consumption",
+    "VAL-023": "The certificate period does not match the reporting period",
+    "VAL-024": "Market-based balance: covered plus residual must equal consumption",
+    "VAL-031": "A factor with this key already exists",
+    "VAL-032": "Factor validity is inconsistent (valid from / valid to / applicable year)",
+    "VAL-033": "A factor must not be zero unless the zero is explicitly valid",
+    "VAL-034": "The sum of the details does not match the total (tolerance 0.5%)",
+    "VAL-035": "Incomplete lineage: source, factor and formula version are required",
+    "VAL-036": "The evidence file is missing or unreadable",
+    "VAL-037": "Evidence does not cover the whole period",
+    "VAL-038": "Required data-quality scores are missing",
+    "VAL-039": "A manual data-quality override requires a reason",
+    "VAL-040": "Segregation of duties: the data was approved by the person who entered it",
+    "VAL-041": "Approval prerequisites: no critical errors and no gaps in evidence",
+    "VAL-101": "An excluded entity requires an exclusion reason",
+    "VAL-102": "A consolidated report needs at least two included entities and a designated parent",
+    "VAL-103": "Every included entity needs a registered address before locking or rendering",
+    "VAL-104": "A row without a facility requires a note explaining why",
+    "VAL-105": "Starter plan: more than 3 included facilities — completing the report requires an upgrade",
+    "VAL-106": "Calculation-relevant period and boundary fields can only be changed while the current revision is a draft or rejected",
+    "VAL-107": "Priced by a weaker factor basis than the pinned set offers"
+  },
+  "organisation": {
+    "title": "Organisation & boundaries",
+    "subtitle": "Legal entities, sites, assets, reporting periods and the boundary of each period.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can view the organisation, but changing it needs the company-management permission.",
+    "actions": {
+      "cancel": "Cancel"
+    },
+    "wizard": {
+      "title": "Set up your organisation",
+      "subtitle": "Create the parent legal entity every report is attributed to.",
+      "seededNote": "Prefilled from your company profile — check the values before confirming.",
+      "create": "Create organisation",
+      "needsAdmin": "No organisation has been set up yet. An administrator has to create it."
+    },
+    "profile": {
+      "title": "Organisation profile",
+      "subtitle": "The parent legal entity: identity, size and reporting currency."
+    },
+    "group": {
+      "title": "Group and legal entities",
+      "subtitle": "Effective dates and the consolidation method decide what each entity contributes.",
+      "empty": "No legal entities yet.",
+      "root": "Parent",
+      "member": "Member",
+      "addSubsidiary": "Add a subsidiary",
+      "createSubsidiary": "Create subsidiary",
+      "subsidiaryLockedTitle": "Your plan is at its limit of legal entities",
+      "subsidiaryLockedBody": "Upgrade to add more entities to the group.",
+      "outsidePeriod": "These dates do not cover the reporting period {period}, so this entity will not appear in its report."
+    },
+    "facilities": {
+      "title": "Facility registry",
+      "subtitle": "Every site of the organisation, whether or not it is inside the boundary.",
+      "empty": "No facilities yet.",
+      "addTitle": "Add a facility",
+      "add": "Add facility",
+      "lockedTitle": "Your plan allows {limit} facilities",
+      "lockedBody": "Upgrade to register more sites; the ones you already have stay untouched.",
+      "boundaryFor": "Inside the boundary: {name}"
+    },
+    "assets": {
+      "title": "Asset registry",
+      "subtitle": "Vehicles, buildings, equipment and meters, each attributed to an entity.",
+      "empty": "No assets yet.",
+      "addTitle": "Add an asset",
+      "add": "Add asset",
+      "remove": "Remove",
+      "removeConfirm": "Remove “{name}” from the register?",
+      "removeYes": "Remove",
+      "removeNo": "Keep"
+    },
+    "periods": {
+      "title": "Reporting periods",
+      "subtitle": "Each period pins the factor set its numbers are calculated with.",
+      "empty": "No reporting periods yet.",
+      "add": "New period",
+      "addTitle": "Create a reporting period",
+      "create": "Create period",
+      "factorSet": "factor set {version}",
+      "configureTitle": "Configure {name}",
+      "methodology": "Methodology {version}",
+      "consolidatedLockedTitle": "Consolidated reporting is a paid feature",
+      "consolidatedLockedBody": "Your plan reports one legal entity at a time. Upgrade to report the group as a whole.",
+      "startRevision": "Start the first revision",
+      "startRevisionHint": "Rows, disclosures and evidence belong to a revision — nothing can be entered for this period until one exists."
+    },
+    "boundary": {
+      "title": "Period boundary",
+      "subtitle": "Which legal entities the period reports on — and why the others are out.",
+      "noPeriod": "Create a reporting period first.",
+      "forPeriod": "Boundary of {name}",
+      "noEntities": "No legal entities to place inside the boundary.",
+      "reasonRequired": "Required for an excluded entity."
+    },
+    "counters": {
+      "entities": "{used} of {limit} legal entities",
+      "entitiesUnlimited": "{used} legal entities",
+      "facilities": "{used} of {limit} facilities",
+      "facilitiesUnlimited": "{used} facilities",
+      "assets": "{used} assets",
+      "periods": "{used} periods"
+    },
+    "save": {
+      "saving": "Saving…",
+      "saved": "All changes saved",
+      "dirty": "Unsaved changes",
+      "refused": "Not saved — see the note below",
+      "confirm": "Save changes"
+    },
+    "errors": {
+      "rejected": "One of the values refers to something that does not exist for this company."
+    },
+    "fields": {
+      "organisationName": "Organisation name",
+      "registrationNumber": "Registration number",
+      "vatNumber": "VAT number",
+      "registeredAddress": "Registered address",
+      "country": "Country",
+      "naceCode": "NACE code",
+      "reportingCurrency": "Reporting currency",
+      "employeeCount": "Employees",
+      "averageFte": "Average FTE",
+      "turnover": "Turnover",
+      "groupStructureType": "Group structure",
+      "consolidationMethod": "Consolidation method",
+      "ownershipPercentage": "Ownership %",
+      "effectiveFrom": "Effective from",
+      "effectiveTo": "Effective to",
+      "facilityName": "Facility name",
+      "facility": "Facility",
+      "legalEntity": "Legal entity",
+      "facilityType": "Type",
+      "tenure": "Tenure",
+      "openingDate": "Opening date",
+      "includedInBoundary": "In boundary",
+      "assetName": "Asset",
+      "assetType": "Asset type",
+      "identifier": "Identifier",
+      "periodName": "Period name",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "reportingYear": "Reporting year",
+      "baseYear": "Base year",
+      "reportingBasis": "Reporting basis",
+      "comparativePeriod": "Comparative period",
+      "boundaryStatus": "Status",
+      "exclusionReason": "Exclusion reason"
+    },
+    "hints": {
+      "country": "Two-letter country code, e.g. SI.",
+      "currency": "Three-letter currency code, e.g. EUR.",
+      "identifier": "Plate, serial or meter number."
+    },
+    "enums": {
+      "groupStructureType": {
+        "standalone": "Standalone",
+        "parent": "Parent company",
+        "subsidiary": "Subsidiary"
+      },
+      "consolidationMethod": {
+        "operational_control": "Operational control",
+        "financial_control": "Financial control",
+        "equity_share": "Equity share"
+      },
+      "facilityType": {
+        "office": "Office",
+        "plant": "Plant",
+        "warehouse": "Warehouse",
+        "store": "Store",
+        "farm": "Farm",
+        "other": "Other"
+      },
+      "tenure": {
+        "owned": "Owned",
+        "leased": "Leased",
+        "managed": "Managed",
+        "shared": "Shared"
+      },
+      "assetType": {
+        "vehicle": "Vehicle",
+        "building": "Building",
+        "equipment": "Equipment",
+        "generator": "Generator",
+        "meter": "Meter",
+        "other": "Other"
+      },
+      "reportingBasis": {
+        "individual": "Individual entity",
+        "consolidated": "Consolidated group"
+      },
+      "applicabilityStatus": {
+        "included": "Included",
+        "excluded": "Excluded",
+        "not_applicable": "Not applicable",
+        "not_assessed": "Not assessed"
+      },
+      "periodStatus": {
+        "draft": "Draft",
+        "submitted": "Submitted",
+        "inReview": "In review",
+        "approved": "Approved",
+        "locked": "Locked",
+        "reopened": "Reopened"
+      }
+    },
+    "tree": {
+      "title": "Organisation tree",
+      "subtitle": "Parent, subsidiaries, sites and assets in one view — what the plan counts, and what the report will cover.",
+      "inBoundary": "in boundary",
+      "outsideBoundary": "outside boundary",
+      "assetsNoSite": "Assets not attributed to a site",
+      "noAddress": "no registered address"
+    },
+    "help": {
+      "organisationName": "The legal name exactly as it stands in the company register (AJPES).",
+      "registrationNumber": "The organisation's registration number from the register — ten digits, e.g. 5150949000.",
+      "vatNumber": "VAT identification number, e.g. SI73291978. Leave empty if the company is not VAT registered.",
+      "registeredAddress": "The registered address from the register: street, number, postcode and town.",
+      "country": "Country of the registered seat, as a two-letter code — SI for Slovenia.",
+      "naceCode": "Code of the main activity, e.g. 10.13. It is in the register entry; use the most detailed level you have.",
+      "reportingCurrency": "Currency the report's money figures are in. For Slovenia this is EUR.",
+      "employeeCount": "Number of people employed at the end of the reporting period, as a headcount.",
+      "averageFte": "Average full-time equivalents over the period, from payroll — e.g. 347.72.",
+      "turnover": "Net sales revenue for the same period, taken from the annual accounts, in the reporting currency.",
+      "groupStructureType": "Standalone company, the parent of a group, or a subsidiary of one.",
+      "consolidationMethod": "How this entity's figures enter the group report: by ownership share, by financial control or by operational control.",
+      "ownershipPercentage": "Share the parent holds in this entity, in percent — 100 for a wholly owned subsidiary.",
+      "effectiveFrom": "Date this entity became part of the group. Leave empty if it always has been.",
+      "effectiveTo": "Date it left the group. Leave empty while it is still part of it; a date here removes it from later reports, not from past ones.",
+      "legalEntity": "The legal entity this record belongs to. Every site, asset and data row is owned by one.",
+      "facilityName": "Name you use for the site internally — «Plant Trnovlje», «Warehouse Koper».",
+      "facilityType": "What the site is: plant, office, warehouse, shop or other.",
+      "tenure": "Whether you own the site, lease it, or only manage it.",
+      "openingDate": "Date the site started operating under your control. Leave empty if it was before the reporting period.",
+      "facility": "Site this entry belongs to. Leave empty for something that is not tied to one site.",
+      "assetName": "Name of the vehicle, building, machine or meter — «Van 1», «Boiler room».",
+      "assetType": "What the entry is: vehicle, building, equipment, generator, meter or other.",
+      "identifier": "Registration plate, serial number or meter number — whatever identifies it on a bill.",
+      "periodName": "Name you will recognise the report by, e.g. «Year 2024».",
+      "startDate": "First day of the reporting period, usually 1 January.",
+      "endDate": "Last day of the reporting period, usually 31 December.",
+      "reportingYear": "The year the report is about — the year the period ends in.",
+      "baseYear": "The year later reductions are measured against. For a first report it is usually the reporting year itself.",
+      "reportingBasis": "Individual — this company alone. Consolidated — the company together with its subsidiaries.",
+      "comparativePeriod": "An earlier period to compare against. Leave empty for a first report.",
+      "boundaryStatus": "Whether this entity is inside the report's boundary for this period, or excluded with a reason.",
+      "exclusionReason": "Why the entity is left out of this period. It is printed in the report, so say it plainly."
+    }
+  },
+  "factors": {
+    "title": "Emission factors",
+    "subtitle": "Factor sets, what each one is built from, and the release that turns a draft into a version a period can pin.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can view the factor library, but releasing a version or adding factors needs the custom-factors permission.",
+    "actions": {
+      "cancel": "Cancel"
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Released",
+      "archived": "Archived"
+    },
+    "sets": {
+      "title": "Factor sets",
+      "subtitle": "A released set is never edited — a change to a number is always a new version.",
+      "empty": "No factor set has been created yet.",
+      "factorCount": "{count} factors",
+      "published": "released {date}",
+      "unpublished": "not released yet",
+      "release": "Release",
+      "archive": "Archive",
+      "newVersion": "New version",
+      "newVersionTitle": "New version of this set",
+      "createEmpty": "New empty set",
+      "createTitle": "New factor set",
+      "create": "Create",
+      "copyOf": "{name} (new version)",
+      "copyExplain": "The new set starts as a draft holding a copy of every factor of the one you picked. Edit it there, then release it — the version periods have already pinned stays untouched."
+    },
+    "provenance": {
+      "title": "Sources and licences",
+      "empty": "This set holds no factors yet, so it names no sources."
+    },
+    "factors": {
+      "title": "Factors of {set}",
+      "listTitle": "Factors",
+      "draftNote": "This set is a draft: its factors can still be added and corrected through the API.",
+      "frozenNote": "This set is released, so its factors are frozen. Make a new version to change a number.",
+      "search": "Search",
+      "searchHint": "Factor code, name or activity type",
+      "empty": "No factor matches this filter.",
+      "range": "{from}–{to} of {total}",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "fields": {
+      "code": "Set code",
+      "name": "Name",
+      "description": "Description",
+      "sourceName": "Source",
+      "sourceVersion": "Version",
+      "licence": "Licence",
+      "factorCount": "Factors",
+      "activityType": "Activity type",
+      "geography": "Geography",
+      "applicableYear": "Year",
+      "factorValue": "Value",
+      "inputUnit": "Per unit"
+    },
+    "refusals": {
+      "NEW_VERSION_ONLY": "That set has been released, so it cannot be changed. Create a new version instead — the periods that pinned this one keep reproducing exactly as they do today.",
+      "CODE_TAKEN": "A factor set with that code already exists. Pick another code.",
+      "COPY_SOURCE_UNKNOWN": "The set you asked to copy from does not exist."
+    },
+    "errors": {
+      "rejected": "One of the values refers to something that does not exist."
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "subtitle": "Scope 1 and Scope 2 activity data for the revision you are working on. Every edit writes a new version — nothing is overwritten.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can read the whole inventory. Adding or changing a row needs the data-entry permission, and the revision has to be open.",
+    "actions": {
+      "new": "Add row",
+      "newTitle": "Add a {tab} row",
+      "approve": "Approve row",
+      "upgrade": "Upgrade"
+    },
+    "scopes": {
+      "scope1": "Scope 1",
+      "scope2": "Scope 2"
+    },
+    "tabs": {
+      "stationary": "Stationary combustion",
+      "mobile": "Mobile combustion",
+      "fugitive": "Fugitive emissions",
+      "process": "Process emissions",
+      "onsite": "On-site generation",
+      "energy": "Purchased energy",
+      "instruments": "Contractual instruments"
+    },
+    "revision": {
+      "title": "Reporting period and revision",
+      "subtitle": "Rows belong to a revision, not to a period. Exactly one revision of a period is the current one, and only that one is edited.",
+      "period": "Reporting period",
+      "badge": "Revision {no} — {status}",
+      "frozenBody": "This revision is no longer open, so its rows cannot be changed. Start a new revision to restate a figure.",
+      "status": {
+        "draft": "Draft",
+        "submitted": "Submitted",
+        "in_review": "In review",
+        "approved": "Approved",
+        "rejected": "Sent back",
+        "locked": "Locked"
+      }
+    },
+    "queue": {
+      "label": "Show only rows waiting for approval",
+      "badge": "{count} waiting"
+    },
+    "table": {
+      "subtitle": "Current versions only. An edited row appears once, under its newest version.",
+      "count": "{count} rows",
+      "empty": "No row of this kind has been entered for this revision yet.",
+      "label": "Source",
+      "kind": "Type",
+      "site": "Site",
+      "period": "Month",
+      "quantity": "Quantity",
+      "state": "State",
+      "noSite": "No site (see notes)",
+      "unknownSite": "Site outside this list",
+      "unnamed": "Unnamed row",
+      "wholePeriod": "Whole period",
+      "truncated": "This is as much of the inventory as one request returns. Narrow the revision or the tab to see the rest.",
+      "hint": {
+        "scope1": "Direct emissions from sources the company owns or controls — fuel burned, refrigerant lost, process chemistry.",
+        "scope2": "Indirect emissions from the energy the company buys, plus the certificates that back a market-based figure."
+      }
+    },
+    "state": {
+      "draft": "Draft",
+      "approved": "Approved"
+    },
+    "drawer": {
+      "title": "Row detail",
+      "subtitle": "{tab} — every version of this row, oldest first.",
+      "close": "Close the row detail",
+      "supersededNote": "You are looking at an older version of this row. It is kept for the audit trail and cannot be changed.",
+      "tombstoneNote": "This row was deleted. The version stays in the database so a figure that was once reported remains readable."
+    },
+    "approve": {
+      "hint": "Approving writes a new version and records who approved it."
+    },
+    "changeReason": {
+      "required": "This row is approved, so a change to it has to say why. Fill this in to save."
+    },
+    "checks": {
+      "deferredTitle": "Checked when you save",
+      "deferredBody": "These two are decided against the factor set the period is pinned to, which this screen does not hold. They are checked on the server, and the answer appears here if the row is refused."
+    },
+    "calculated": {
+      "title": "Resolved by the calculation",
+      "location": "Location-based factor: {value}",
+      "market": "Market-based factor: {value}",
+      "pending": "not resolved yet"
+    },
+    "history": {
+      "title": "Version history",
+      "empty": "This row has no history yet.",
+      "version": "Version {no}",
+      "revisionNo": "revision {no}",
+      "revisionOther": "an earlier revision",
+      "current": "current",
+      "tombstone": "deleted",
+      "carriedOver": "carried over from {revision}",
+      "writtenBy": "Written by {who} on {when}",
+      "approvedBy": "Approved by {who} on {when}",
+      "reason": "Reason: {reason}",
+      "unknownUser": "a user who has left the company",
+      "truncated": "The chain is longer than we walk in one request — this is its most recent part."
+    },
+    "fields": {
+      "legal_entity_id": "Legal entity",
+      "facility_id": "Site",
+      "year_month": "Month",
+      "unit": "Unit",
+      "notes": "Notes",
+      "change_reason": "Reason for the change",
+      "source_name": "Source name",
+      "activity_type": "Activity type",
+      "activity_value": "Quantity",
+      "method": "Calculation method",
+      "biogenic_flag": "Biogenic",
+      "refrigerant_added": "Refrigerant added",
+      "refrigerant_recovered": "Refrigerant recovered",
+      "equipment_capacity": "Equipment charge",
+      "opening_stock": "Opening stock",
+      "closing_stock": "Closing stock",
+      "leakage_rate": "Leakage rate",
+      "energy_type": "Energy carrier",
+      "consumption": "Consumption",
+      "supplier": "Supplier",
+      "meter_asset_id": "Meter",
+      "renewable_share": "Renewable share",
+      "instrument_type": "Instrument type",
+      "certificate_id": "Certificate id",
+      "covered_volume": "Volume covered",
+      "production_country": "Country of production",
+      "technology": "Generation technology",
+      "generation_period_start": "Generated from",
+      "generation_period_end": "Generated until",
+      "cancellation_date": "Cancelled on",
+      "quality_criteria_status": "Quality criteria",
+      "residual_mix_volume": "Residual mix volume"
+    },
+    "hints": {
+      "year_month": "Leave empty when the row covers the whole period.",
+      "notes": "Required when the row names no site — that is the documented exception.",
+      "production_country": "Two-letter country code, e.g. SI.",
+      "change_reason": "Recorded on the new version and read by the reviewer."
+    },
+    "enums": {
+      "kind": {
+        "stationary_combustion": "Stationary combustion",
+        "mobile_combustion": "Mobile combustion",
+        "fugitive_emissions": "Fugitive emissions",
+        "process_emissions": "Process emissions",
+        "onsite_generation": "On-site generation",
+        "electricity": "Electricity",
+        "district_heating": "District heating",
+        "steam": "Steam",
+        "cooling": "Cooling",
+        "GoO": "Guarantee of origin",
+        "REGO": "REGO",
+        "REC": "Renewable energy certificate",
+        "PPA": "Power purchase agreement",
+        "green_tariff": "Green tariff",
+        "supplier_product": "Supplier product"
+      },
+      "energyType": {
+        "electricity": "Electricity",
+        "district_heating": "District heating",
+        "steam": "Steam",
+        "cooling": "Cooling"
+      },
+      "method": {
+        "supplier_specific": "Supplier-specific",
+        "activity_based": "Activity-based",
+        "fuel_based": "Fuel-based",
+        "distance_based": "Distance-based",
+        "average_data": "Average data",
+        "hybrid": "Hybrid",
+        "spend_based": "Spend-based",
+        "engineering_estimate": "Engineering estimate",
+        "mass_balance": "Mass balance"
+      },
+      "instrumentType": {
+        "GoO": "Guarantee of origin",
+        "REGO": "REGO",
+        "REC": "Renewable energy certificate",
+        "PPA": "Power purchase agreement",
+        "green_tariff": "Green tariff",
+        "supplier_product": "Supplier product"
+      },
+      "technology": {
+        "wind": "Wind",
+        "solar": "Solar",
+        "hydro": "Hydro",
+        "biomass": "Biomass",
+        "geothermal": "Geothermal",
+        "nuclear": "Nuclear",
+        "other": "Other"
+      },
+      "qualityCriteria": {
+        "pass": "Meets the criteria",
+        "fail": "Does not meet the criteria",
+        "review": "Needs review"
+      }
+    },
+    "errors": {
+      "rejected": "The change was refused. Someone may have changed this row in the meantime, or one of the values points at something that is no longer there — reload and try again."
+    },
+    "help": {
+      "legal_entity_id": "The legal entity the consumption belongs to.",
+      "facility_id": "The site the consumption belongs to — the plant, office or shop that used it.",
+      "year_month": "Month the consumption belongs to, e.g. 2024-01. Leave empty for a figure that covers the whole period.",
+      "unit": "Unit of the figure you entered — kWh, MWh, litres, m³, kg or tonnes. It must match the bill.",
+      "notes": "Anything the reviewer should know: which bill this comes from, or that the figure is an estimate.",
+      "change_reason": "Why an already approved figure is being changed. It stays in the history of the report.",
+      "source_name": "What produced the emissions — «Gas boilers», «Delivery vans», «Forklifts».",
+      "activity_type": "The fuel or substance itself: natural gas, diesel, petrol, LPG, wood, a refrigerant.",
+      "activity_value": "How much was used in the period, in the unit you pick — the number from the bill or the meter.",
+      "method": "How the figure was obtained: from fuel bills, from distance driven, or from a refrigerant mass balance.",
+      "refrigerant_added": "Refrigerant topped up into the equipment during the period, in kg — from the service report.",
+      "refrigerant_recovered": "Refrigerant recovered from the equipment during the period, in kg.",
+      "equipment_capacity": "Total refrigerant charge the equipment holds when full, in kg — it is on the nameplate.",
+      "opening_stock": "Refrigerant in your own store at the start of the period, in kg.",
+      "closing_stock": "Refrigerant in your own store at the end of the period, in kg.",
+      "leakage_rate": "Leakage assumed for the equipment, in percent of its charge per year. Use it only when no service data exists.",
+      "energy_type": "What was bought: electricity, district heating, steam or cooling.",
+      "consumption": "How much was bought in the period, as the supplier's invoice states it.",
+      "supplier": "Who supplied it — the company on the invoice.",
+      "meter_asset_id": "The meter this reading comes from, if you keep meters in the asset register.",
+      "renewable_share": "Share of the purchased energy that is renewable, in percent, if the supplier states it.",
+      "instrument_type": "Type of contractual document: a guarantee of origin, a green tariff or a power purchase agreement.",
+      "certificate_id": "Identifier of the certificate or contract, so it can be traced back.",
+      "covered_volume": "How much energy the document covers, in the same unit as the consumption it belongs to.",
+      "technology": "The generation technology the document names: hydro, solar, wind, biomass and so on.",
+      "production_country": "Country the energy was produced in, as stated on the document.",
+      "residual_mix_volume": "Energy left to be reported with the residual mix — the part no document covers.",
+      "quality_criteria_status": "Whether the document meets the market-based quality criteria; say «unknown» rather than guessing.",
+      "generation_period_start": "First day of the period the energy was generated in, as the document states.",
+      "generation_period_end": "Last day of that generation period.",
+      "cancellation_date": "Date the certificate was cancelled in the registry in your name."
+    }
+  },
+  "scope3": {
+    "page": {
+      "title": "Spend-based Scope 3",
+      "subtitle": "Purchased goods & services and capital goods, estimated from annual spend",
+      "estimateTitle": "An estimate, outside your gross Scope 1+2 totals",
+      "estimateBody": "These figures come from annual spend multiplied by EXIOBASE industry averages per €1000 — a GHG Protocol screening method for categories 1 and 2. They are reported as Scope 3 and are deliberately NOT added to the gross Scope 1 and Scope 2 totals, which are built only from measured activity entered under Inventory."
+    },
+    "editor": {
+      "gateTitle": "Spend-based Scope 3 is a paid feature",
+      "title": "Spend-based Scope 3 (cat 1 & 2)",
+      "subtitle": "Annual purchased-goods & capital-goods spend per commodity · EXIOBASE per-€1000 factors · converted to EUR server-side ({year})",
+      "cat1": "Cat 1 · Purchased goods",
+      "cat2": "Cat 2 · Capital goods",
+      "catN": "Cat {n}",
+      "empty": "No spend lines yet — add a commodity below. With no lines, Scope-3 categories 1 & 2 stay at 0.",
+      "emptyUnpriceable": "No spend lines for {year}, and none can be added while the factor set in force carries no spend factors.",
+      "unpriceableTitle": "This period's factor set cannot price spend",
+      "unpriceableBody": "The factor set in force for {year} — {name} ({code}) — carries no per-€1000 spend factors, and no other active factor set carries any either. Spend lines cannot be added or priced until a factor set that has them is published and pinned to this period.",
+      "unpriceableBodyNoSet": "No active factor set carries per-€1000 spend factors, so nothing entered here can be priced for {year}. Spend lines can be added again once a factor set that has them is published and pinned to this period.",
+      "unpriceableLines": "Lines already entered are kept exactly as you entered them and are shown as unpriced — not as zero. A figure that cannot be produced is not a figure of nought.",
+      "unpriced": "Unpriced",
+      "unpricedHint": "No spend factor is available for this commodity, so this line produces no figure at all — not a zero.",
+      "remove": "Remove {label}",
+      "commodity": "Commodity",
+      "commodityOption": "{cat} — {label}",
+      "amount": "Annual spend",
+      "currency": "Currency",
+      "add": "Add",
+      "update": "Update",
+      "footnote": "The client sends only commodity, amount and currency; the EXIOBASE factor and the annual FX rate are applied on the server, and a recalculation folds the result into your Scope-3 total. A currency without an FX rate for {year} saves the line but contributes 0 with a warning.",
+      "errNegative": "Spend must be a non-negative number.",
+      "errValidation": "Check the commodity, amount and currency.",
+      "errSave": "Failed to save. Please try again.",
+      "errRemove": "Failed to remove. Please try again.",
+      "okAdded": "Spend line added",
+      "okUpdated": "Spend line updated",
+      "okRemoved": "Spend line removed"
+    },
+    "refusals": {
+      "NO_SPEND_FACTORS": "The factor set in force carries no per-€1000 spend factors, so this spend line cannot be priced and was not saved."
+    }
+  },
+  "disclosures": {
+    "title": "Disclosures",
+    "subtitle": "The narrative and figure datapoints of VSME (B1–B11, C1–C9) and of the simplified ESRS. Every datapoint shows its state, so it is clear why a spot in the report is empty.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can read every disclosure. Answering one needs the data-entry permission, and the revision has to be open.",
+    "noCatalogue": "The metric catalogue could not be read, so there is nothing to fill in yet.",
+    "scope": {
+      "title": "Reporting period, revision and entity",
+      "subtitle": "A disclosure belongs to a revision and to a legal entity. Exactly one revision of a period is the current one, and only that one is edited.",
+      "badge": "Revision {no} — {status}",
+      "period": "Reporting period",
+      "entity": "Legal entity",
+      "noPeriod": "This company has no reporting period yet. Create one on the Organisation screen before answering disclosures.",
+      "noRevision": "This period has no revision yet. Start one on the Organisation screen — a disclosure belongs to a revision.",
+      "frozenBody": "This revision is no longer open, so its answers cannot be changed. Start a new revision to restate a disclosure."
+    },
+    "revisionStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Sent back",
+      "locked": "Locked"
+    },
+    "recordState": {
+      "draft": "Draft",
+      "approved": "Approved"
+    },
+    "state": {
+      "filled": "Collected",
+      "not_collected": "Not collected",
+      "not_applicable": "Not applicable"
+    },
+    "requirement": {
+      "mandatory": "Mandatory",
+      "conditional": "Conditional",
+      "voluntary": "Voluntary"
+    },
+    "moduleBasic": "Basic module — part of every VSME report.",
+    "moduleComprehensive": "Comprehensive module — included on plans that cover it.",
+    "sectionCount": "{filled} of {total}",
+    "metricCount": "{count} datapoints",
+    "appliesWhen": "When to fill in: {condition}",
+    "severalRecords": "This datapoint has {count} records for this legal entity. The first one is edited here; the others stay as they are.",
+    "unsupportedType": "This datapoint declares the value type “{type}”, which the system cannot store. It can be answered once the catalogue entry is fixed.",
+    "versionNote": "Stored version: {state}. Saving creates a new version and keeps the old one in the history.",
+    "controls": {
+      "yes": "Yes",
+      "no": "No",
+      "codeHint": "The code or name the standard asks for, exactly as it should appear in the report.",
+      "codeListHint": "One value per line.",
+      "total": "{metric} — total",
+      "breakdownTitle": "Breakdown by {dimensions}",
+      "breakdownOptional": "The breakdown is reported if the data is obtainable. A total on its own is a complete answer.",
+      "breakdownRequired": "This metric is reported with its breakdown.",
+      "dimension": "Dimension",
+      "partLabel": "Part",
+      "partAmount": "Value",
+      "addPart": "Add a part",
+      "removePart": "Remove this part",
+      "other": "Other…",
+      "otherLabel": "Your answer"
+    },
+    "changeReason": {
+      "label": "Reason for the change",
+      "hint": "The stored version is approved, so the new version has to say why it differs.",
+      "required": "An approved answer can only be superseded with a reason."
+    },
+    "faults": {
+      "empty": "There is nothing to save yet — this metric is still not collected.",
+      "total_required": "The breakdown needs a total: that is the figure that goes into the report.",
+      "not_a_number": "The total and every part of the breakdown have to be numbers."
+    },
+    "actions": {
+      "save": "Save answer",
+      "saveEdit": "Save new version",
+      "approve": "Approve"
+    },
+    "locked": {
+      "title": "Comprehensive module",
+      "body": "This datapoint belongs to the Comprehensive module, which your plan does not include. It stays visible so you can see what the upgrade contains; the server does not accept a value for it.",
+      "cta": "Upgrade"
+    },
+    "unreadableValue": "This datapoint has a stored value that this form cannot display: it was saved in a format the form fields do not support. Saving here will replace it.",
+    "moduleSimplifiedEsrs": "Simplified ESRS — the datapoints C(2026)5010 asks for beyond VSME; included on plans that cover it.",
+    "groups": {
+      "vsme": "VSME — B1–B11, C1–C9",
+      "esrs": "Simplified ESRS — ESRS 2, E1–E5, S1–S4, G1"
+    },
+    "lockedEsrs": {
+      "title": "Simplified ESRS",
+      "body": "This datapoint belongs to the simplified ESRS layer, which your plan does not include. It stays visible so you can see what the upgrade contains; the server does not accept a value for it.",
+      "cta": "Upgrade"
+    },
+    "dataSource": "Where the data usually is: {source}",
+    "esrsRef": "ESRS {reference}",
+    "suggestion": {
+      "label": "From your organisation data:",
+      "use": "Use this"
+    },
+    "notApplicable": {
+      "before": "Doesn't apply to you? Mark it as not applicable, with a reason, on",
+      "link": "the Readiness screen"
+    },
+    "guidanceTitle": "What the standard says",
+    "howTo": {
+      "title": "How to fill in the disclosures",
+      "step1": "Pick the period and the legal entity above, then a disclosure (B1, B2 …) from the strip.",
+      "step2": "For each datapoint enter the value; the line under the field says what belongs there. Where the platform already knows the answer from Organisation, press «Use this».",
+      "step3": "If a datapoint doesn't apply to you, mark it as not applicable on the Readiness screen instead of leaving it blank.",
+      "step4": "Save each answer, attach the evidence on «Evidence and quality», and approve it: only approved values go into the report."
+    },
+    "sectionLocked": "Not in your plan",
+    "lockedLegend": "Locked groups are part of a higher plan; their datapoints stay visible so you can see what the upgrade contains.",
+    "restate": {
+      "title": "Start a new revision",
+      "hint": "A locked revision keeps the report it produced. To record more answers, open a new revision seeded from this one and say why.",
+      "reason": "Why the report is being revised",
+      "action": "Open a new revision"
+    },
+    "dimensions": {
+      "energy_source": "energy source"
+    }
+  },
+  "evidence": {
+    "title": "Evidence & data quality",
+    "subtitle": "The documents behind the figures: upload them, attach them to the rows they back, score how good the data is, and read what has actually changed.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can read the whole library. Uploading a document, attaching it to a row or scoring one needs the data-entry permission.",
+    "actions": {
+      "upgrade": "Upgrade"
+    },
+    "revisionStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Sent back",
+      "locked": "Locked"
+    },
+    "rowState": {
+      "draft": "Draft",
+      "approved": "Approved"
+    },
+    "scope": {
+      "title": "Reporting period and revision",
+      "subtitle": "Evidence is attached to a row, and a row belongs to a revision. Once the revision is locked, its documents, links and quality scores are frozen with it.",
+      "period": "Reporting period",
+      "badge": "Revision {no} — {status}",
+      "noPeriod": "This company has no reporting period yet. Create one on the Organisation screen before attaching evidence.",
+      "noRevision": "This period has no revision yet. Start one on the Organisation screen — evidence is attached to the rows of a revision."
+    },
+    "library": {
+      "title": "Document library",
+      "subtitle": "Every file this company has uploaded, newest first. Identical files are stored once; two uploads of the same invoice are still two records.",
+      "count": "{count} documents",
+      "empty": "No document matches these filters.",
+      "name": "File",
+      "type": "Kind",
+      "issuer": "Issued by",
+      "coverage": "Covers",
+      "usage": "Used for",
+      "noCoverage": "No period stated",
+      "coverageRange": "{from} – {to}",
+      "unused": "Not attached yet",
+      "usedBy": "{count} rows"
+    },
+    "filters": {
+      "text": "Search",
+      "textPlaceholder": "File name or issuer",
+      "fileType": "Kind of file",
+      "confidentiality": "Confidentiality",
+      "usage": "Attachment",
+      "usageValues": {
+        "any": "All documents",
+        "linked": "Attached to a row",
+        "unlinked": "Never attached"
+      }
+    },
+    "upload": {
+      "dropTitle": "Drop a file here",
+      "dropBody": "PDF, Excel, CSV or an image, up to {limit} MB on your plan.",
+      "choose": "Choose a file",
+      "submit": "Upload",
+      "busy": "Uploading…",
+      "stored": "“{name}” was uploaded and is now in the library.",
+      "planTitle": "This file is larger than your plan uploads",
+      "planBody": "Your plan accepts files up to {limit} MB. Nothing was uploaded and nothing was charged — a larger plan raises the limit.",
+      "duplicateTitle": "The same file is already in the library",
+      "duplicateBody": "Both records are kept and the file itself is stored only once. If the earlier record is the one you meant, use it and remove the copy you have just uploaded.",
+      "duplicateUnknown": "The earlier record is not in the list you are looking at.",
+      "reuse": "Use “{name}” instead",
+      "typeTitle": "This file type is not accepted",
+      "typeBody": "Upload one of: {formats}. A Word file or a phone photo in HEIC has to be converted — printing to PDF is usually the quickest way."
+    },
+    "document": {
+      "download": "Download",
+      "uploadedAt": "Uploaded",
+      "size": "Size",
+      "sizeValue": "{kb} kB",
+      "hash": "Content fingerprint",
+      "usedBy": "Where this document is used",
+      "usedByNone": "This document is not attached to anything yet.",
+      "usedByRow": "{name} · {month}",
+      "usedByOther": "A row outside the revision you are looking at",
+      "delete": "Delete the document",
+      "deleteHint": "The file and every attachment to it go. A document a locked report relies on cannot be deleted.",
+      "bytesKept": "The record was removed. The file itself stayed, because another record of this company holds the same content."
+    },
+    "rows": {
+      "title": "Rows of this revision",
+      "subtitle": "Find the figure a document backs, then attach it. A row that already has evidence says so.",
+      "search": "Find a row",
+      "searchPlaceholder": "Name, kind or month",
+      "count": "{count} rows",
+      "empty": "No row of this revision matches that search.",
+      "noRevision": "Pick a period with a revision to see its rows.",
+      "noEvidence": "No evidence",
+      "evidenceCount": "{count} documents",
+      "truncated": "This is as much of the inventory as one request returns. Narrow the search to see the rest."
+    },
+    "row": {
+      "title": "Row detail",
+      "subtitle": "{kind} · {month}",
+      "unnamed": "Unnamed row",
+      "wholePeriod": "Whole period",
+      "close": "Close the row detail",
+      "evidence": "Evidence for this row",
+      "noEvidence": "Nothing is attached to this row yet.",
+      "unlink": "Detach",
+      "attach": "Attach “{name}”",
+      "attachNone": "Pick a document above to attach",
+      "alreadyLinked": "That document was already attached to this row — nothing changed.",
+      "readOnly": "Attaching evidence needs the data-entry permission.",
+      "frozen": "This revision is no longer open, so its evidence cannot be changed.",
+      "unknownDocument": "A document that is no longer in the library"
+    },
+    "dq": {
+      "title": "Data quality",
+      "unscored": "not scored",
+      "scoreOf": "{value} of {max}",
+      "noTier": "No tier set",
+      "overridden": "Set by a reviewer",
+      "overrideReason": "Override reason: {reason}",
+      "assessedAt": "Last assessed {when}.",
+      "lockedByOverride": "A reviewer set these scores by hand. Changing or clearing them needs the review permission.",
+      "frozen": "This revision is no longer open, so its quality scores cannot be changed.",
+      "none": "Nobody has scored this row yet.",
+      "pedigreeHint": "1 is the strongest, 5 the weakest.",
+      "commentHint": "Say how the figure was obtained — this is what a reviewer reads.",
+      "overrideLabel": "Set these scores by hand instead of by the rules",
+      "overrideHint": "Recorded with your name and read by anyone auditing the report.",
+      "overrideRequired": "An override has to say why. Fill this in to save."
+    },
+    "timeline": {
+      "title": "What has changed",
+      "empty": "This row has no history yet.",
+      "version": "Version {no}",
+      "current": "current",
+      "tombstone": "deleted",
+      "carriedOver": "carried over from another revision",
+      "writtenBy": "Written by {who} on {when}",
+      "approvedBy": "Approved by {who} on {when}",
+      "reason": "Reason: {reason}",
+      "unknownUser": "a user who has left the company",
+      "auditBy": "Recorded for {who} on {when}",
+      "selfApproved": "The same person entered and approved this figure.",
+      "chainTruncated": "The chain is longer than we walk in one request — this is its most recent part.",
+      "auditHidden": "Audit entries are shown to roles with audit access. The version history above is complete without them.",
+      "auditWindow": "Audit entries older than the window we read are not shown. The version history above is complete without them.",
+      "action": {
+        "create": "Created",
+        "update": "Updated",
+        "delete": "Deleted",
+        "approve_row": "Approved"
+      }
+    },
+    "fields": {
+      "file": "File",
+      "file_name": "File name",
+      "file_type": "Kind of file",
+      "issuer": "Issued by",
+      "document_date": "Document date",
+      "coverage_start": "Covers from",
+      "coverage_end": "Covers until",
+      "confidentiality": "Confidentiality",
+      "retention_date": "Keep until",
+      "documentId": "Document",
+      "objectId": "Row",
+      "objectType": "Kind of row",
+      "reliability_score": "Reliability",
+      "temporal_score": "Timeliness",
+      "geographical_score": "Geography",
+      "technology_score": "Technology",
+      "completeness_score": "Completeness",
+      "coverage_score": "Coverage",
+      "estimate_uncertainty": "Uncertainty",
+      "quality_tier": "Quality tier",
+      "quality_comment": "How this figure was obtained",
+      "is_overridden": "Manual override",
+      "override_reason": "Reason for the override"
+    },
+    "hints": {
+      "coverage_start": "The first day the document is evidence for.",
+      "coverage_end": "The last day it covers. A row outside this window is attached anyway, with a note.",
+      "retention_date": "When this file may be discarded, if a rule says so."
+    },
+    "enums": {
+      "fileType": {
+        "pdf": "PDF",
+        "xlsx": "Spreadsheet",
+        "csv": "CSV",
+        "image": "Image",
+        "other": "Other"
+      },
+      "confidentiality": {
+        "public": "Public",
+        "internal": "Internal",
+        "confidential": "Confidential"
+      },
+      "qualityTier": {
+        "high_primary": "Primary data",
+        "medium_calculated": "Calculated",
+        "low_proxy": "Proxy",
+        "estimate": "Estimate"
+      },
+      "kind": {
+        "stationary_combustion": "Stationary combustion",
+        "mobile_combustion": "Mobile combustion",
+        "fugitive_emissions": "Fugitive emissions",
+        "process_emissions": "Process emissions",
+        "onsite_generation": "On-site generation",
+        "electricity": "Electricity",
+        "district_heating": "District heating",
+        "steam": "Steam",
+        "cooling": "Cooling",
+        "GoO": "Guarantee of origin",
+        "REGO": "REGO",
+        "REC": "Renewable energy certificate",
+        "PPA": "Power purchase agreement",
+        "green_tariff": "Green tariff",
+        "supplier_product": "Supplier product",
+        "text": "Narrative",
+        "number": "Number",
+        "boolean": "Yes / no",
+        "date": "Date"
+      }
+    },
+    "errors": {
+      "rejected": "The change was refused. The document or the row may have been changed in the meantime — reload and try again."
+    }
+  },
+  "review": {
+    "title": "Review & approval",
+    "subtitle": "The rows waiting for someone to stand behind them, and the report revision they belong to. Approve what is right, send back what is not, and lock the report when it is done.",
+    "loadingSection": "Loading…",
+    "readOnlyNote": "You can read the queue and the history. Approving rows, approving the report and locking it need the approval permission.",
+    "actions": {
+      "title": "Move this revision on",
+      "submit": "Submit for review",
+      "start_review": "Take up for review",
+      "approve": "Approve the report",
+      "reject": "Send back",
+      "lock": "Lock the report",
+      "abandon": "Abandon this draft",
+      "upgrade": "Upgrade",
+      "noneAvailable": "There is nothing you can do to this revision from its current state.",
+      "lockedNothing": "This report is locked. Nothing in it can be changed — a correction starts a new revision.",
+      "commentHint": "The author reads this to know what to fix, so name the figure and the problem.",
+      "commentRequired": "Sending a report back has to say why.",
+      "resumeHint": "This revision was sent back. Editing any of its rows on the Inventory screen puts it back into draft — there is no separate button for that."
+    },
+    "fields": {
+      "comment": "Why it is being sent back",
+      "change_reason": "Why the report is being restated",
+      "seedFrom": "Revision to copy from",
+      "id": "Identifier",
+      "action": "Action"
+    },
+    "scope": {
+      "title": "Reporting period and revision",
+      "subtitle": "A period holds several revisions and exactly one of them is current. Review always works on the current one.",
+      "period": "Reporting period",
+      "noPeriod": "This company has no reporting period yet. Create one on the Organisation screen before there is anything to review.",
+      "noRevision": "This period has no revision yet. Start one on the Organisation screen."
+    },
+    "queue": {
+      "title": "Waiting for approval",
+      "subtitle": "Every current row of this revision that is still a draft. Approving a row records who stands behind the figure; the row itself is kept, not overwritten.",
+      "count": "{count} rows",
+      "empty": "Nothing in this revision is waiting for approval.",
+      "noRevision": "Pick a period with a revision to see its queue.",
+      "selectAll": "Select every row shown",
+      "approveSelected": "Approve {count} selected",
+      "busy": "Approving, one row at a time…",
+      "truncated": "This is as much of the queue as one request returns. Approve these and the rest will follow.",
+      "bulkResult": "{approved} of {attempted} rows approved."
+    },
+    "row": {
+      "unnamed": "Unnamed row",
+      "wholePeriod": "Whole period"
+    },
+    "revision": {
+      "title": "The report revision",
+      "subtitle": "One revision, one status, one history. Everything that happens to the report happens here.",
+      "none": "There is no revision to review yet.",
+      "number": "Revision {no}",
+      "notCurrent": "No longer the current revision",
+      "changeReason": "Reason for this revision: {reason}",
+      "reviewComment": "Sent back with: {comment}",
+      "assignedTo": "Being reviewed by {name}"
+    },
+    "timeline": {
+      "title": "What has happened to it",
+      "empty": "Nothing has happened to this revision yet.",
+      "latestPassOnly": "This shows the latest time each step happened. The complete trail of every attempt is in the change history on the Evidence screen.",
+      "steps": {
+        "created": "Started",
+        "submitted": "Submitted for review",
+        "reviewed": "Sent back",
+        "approved": "Approved",
+        "locked": "Locked"
+      }
+    },
+    "blocking": {
+      "title": "What is in the way",
+      "clean": "Nothing is blocking this revision.",
+      "scope": "Checked at: {scope}",
+      "openRow": "Open the row in the queue",
+      "openScreen": "Open the {object}",
+      "noObject": "This check is about the company as a whole rather than about one record.",
+      "noAccess": "This is about a {object} you do not have access to. Ask a colleague who administers it to fix it."
+    },
+    "advisory": {
+      "title": "Advisory findings",
+      "subtitle": "These do not stop this revision and will still be true when it is approved. Each is a disclosable choice the calculation made, named here so a reviewer signs it knowingly rather than discovering it in the report."
+    },
+    "result": {
+      "done": "Done — {action}. The report is now {to}.",
+      "rowsPending": "{pending} of {total} rows are still waiting for approval. Approve them first, then submit.",
+      "needsComment": "Sending a report back has to say why.",
+      "blocked": "{count} checks did not pass. They are listed below, each with the thing to fix.",
+      "notAllowed": "That is not possible while the report is {from}. From here you can: {allowed}.",
+      "nothing": "nothing",
+      "notCurrent": "This revision is no longer the current one, so there is nothing to hand back.",
+      "raced": "Somebody else moved this report while you were looking at it. The page has been refreshed — check the status and try again.",
+      "calculationMissing": "This revision has no up-to-date completed calculation. Run the calculation above and repeat the action.",
+      "calculationFailed": "The latest calculation did not price {failed} lines. Fix them, run the calculation again, then approve."
+    },
+    "lock": {
+      "planTitle": "Locking this report needs a larger plan",
+      "planBody": "The report covers {facilities} sites and your plan closes reports with up to {limit}.",
+      "planBodyUnknown": "The report covers more sites than your plan closes reports with.",
+      "planHint": "Nothing has been charged and nothing is lost. Either move to a plan that covers this many sites, or take the extra sites out of this period's boundary on the Organisation screen."
+    },
+    "restate": {
+      "title": "Restate this report",
+      "body": "A locked report is never edited. A correction is a new revision, started from the numbers that were published, and it has to say why.",
+      "reasonHint": "This is what an auditor reads first, so be specific.",
+      "reasonRequired": "A restatement has to say why.",
+      "submit": "Start the restatement",
+      "busy": "Copying the rows…"
+    },
+    "selfApproval": {
+      "disclosure": "There is no separate approver in this company, so you are approving your own data. This is disclosed in the report. Give a colleague the Approver role to have the figures signed off independently."
+    },
+    "revisionStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Sent back",
+      "locked": "Locked"
+    },
+    "rowState": {
+      "draft": "Draft",
+      "approved": "Approved"
+    },
+    "enums": {
+      "scope": {
+        "record": "the row itself",
+        "revision": "the report revision",
+        "period": "the reporting period",
+        "reference_org": "the organisation and reference data"
+      },
+      "objectType": {
+        "emission_activity": "Scope 1 row",
+        "purchased_energy_activity": "purchased energy row",
+        "contractual_instrument": "energy contract",
+        "disclosure_record": "disclosure",
+        "legal_entity": "legal entity",
+        "facility": "site",
+        "reporting_period": "reporting period",
+        "period_scope": "reporting boundary",
+        "document": "document",
+        "evidence_link": "evidence attachment",
+        "dq_assessment": "quality assessment",
+        "emission_factor": "emission factor",
+        "report_revision": "report revision"
+      },
+      "sourceTable": {
+        "emission_activity": "Scope 1",
+        "purchased_energy_activity": "Purchased energy",
+        "contractual_instrument": "Energy contract",
+        "disclosure_record": "Disclosure"
+      },
+      "kind": {
+        "stationary_combustion": "Stationary combustion",
+        "mobile_combustion": "Mobile combustion",
+        "fugitive_emissions": "Fugitive emissions",
+        "process_emissions": "Process emissions",
+        "onsite_generation": "On-site generation",
+        "electricity": "Electricity",
+        "district_heating": "District heating",
+        "steam": "Steam",
+        "cooling": "Cooling",
+        "GoO": "Guarantee of origin",
+        "REGO": "REGO",
+        "REC": "Renewable energy certificate",
+        "PPA": "Power purchase agreement",
+        "green_tariff": "Green tariff",
+        "supplier_product": "Supplier product",
+        "text": "Narrative",
+        "number": "Number",
+        "boolean": "Yes / no",
+        "date": "Date"
+      }
+    },
+    "errors": {
+      "accessChanged": "Your access rights have changed. Refresh the page to continue.",
+      "rejected": "That does not exist for this company.",
+      "ruleUnknown": "Check {code} did not pass."
+    },
+    "calculation": {
+      "title": "Calculation",
+      "run": "Run the calculation",
+      "hint": "Run the calculation after approving the rows and whenever inputs change. Before locking the revision it is required even when there are no emission rows.",
+      "done": "Calculation completed: {lines} lines priced, {failed} failed.",
+      "failed": "Calculation failed: {failed} of {lines} lines could not be priced. Fix the flagged rows and run it again.",
+      "concurrentModification": "The revision was changed at the same time. Run the calculation again."
+    }
+  },
+  "render": {
+    "history": {
+      "factorSetNameMissing": "Factor set — historical name not recorded",
+      "partial": "This is a partial historical reconstruction. Original report descriptions, catalogue disclosures and comparisons were not preserved. Only verified historical information is shown; current organisation details have not been substituted. Use the archived report for the original complete content.",
+      "companyNameMissing": "Company — historical name not recorded",
+      "periodNameMissing": "Reporting period — historical name not recorded",
+      "entityNameMissing": "Legal entity — historical name not recorded",
+      "relationshipsMissing": "The historical group structure was not recorded.",
+      "notRecorded": "Historical value not recorded"
+    },
+    "document": {
+      "title": "VSME Basic sustainability report",
+      "subtitle": "Voluntary sustainability reporting standard for non-listed small and medium-sized undertakings, Basic module.",
+      "preparedFor": "Prepared for",
+      "reportingPeriod": "Reporting period",
+      "reportingYear": "Reporting year",
+      "revision": "Report revision",
+      "revisionNo": "Revision {number} ({status})",
+      "reportingBasisLabel": "Reporting basis",
+      "methodologyVersion": "Methodology version",
+      "factorSet": "Emission factor set",
+      "language": "Report language",
+      "generatedAt": "Generated on",
+      "page": "Page {page} of {pages}",
+      "titleReadiness": "VSME Basic readiness report (draft)",
+      "statusGaps": "Status of this document: readiness report — a draft. {count} mandatory Basic datapoints have no recorded answer yet; they are listed in the gap plan. Read the figures as the current state of the data, not as a finished disclosure.",
+      "statusReady": "Status of this document: every applicable Basic datapoint has a recorded answer or a recorded decision.",
+      "titleComprehensive": "VSME Basic and Comprehensive sustainability report",
+      "subtitleComprehensive": "Voluntary sustainability reporting standard for non-listed small and medium-sized undertakings, Basic and Comprehensive modules."
+    },
+    "common": {
+      "notCollected": "not collected",
+      "notCalculated": "not published — no completed calculation run"
+    },
+    "units": {
+      "tco2e": "t CO2e",
+      "mwh": "MWh",
+      "intensity": "t CO2e per EUR of turnover",
+      "eur": "EUR"
+    },
+    "sections": {
+      "title": "VSME Basic sustainability report",
+      "executiveSummary": "Executive summary",
+      "basis": "B1 — Basis for preparation",
+      "methodology": "Methodology",
+      "energyEmissions": "B3 — Energy and greenhouse gas emissions",
+      "scope3": "Scope 3 coverage statement",
+      "disclosures": "Other Basic disclosures (B2, B4–B11)",
+      "dataQuality": "Data quality",
+      "completeness": "Exclusions and completeness",
+      "disclaimer": "Disclaimer",
+      "evidence": "Appendix — evidence register",
+      "gapPlan": "Gap plan — what is still needed for the Basic module",
+      "esrsIndex": "Appendix — simplified ESRS cross-reference",
+      "comprehensive": "Comprehensive module disclosures (C1–C9)",
+      "titleComprehensive": "VSME Basic and Comprehensive sustainability report"
+    },
+    "executive": {
+      "intro": "The figures below come from the calculation run named in the methodology section. Gross totals cover Scope 1 and Scope 2 only; Scope 3 is estimated separately and is not added to them.",
+      "noRun": "This revision has no completed calculation run, so no emission figure is published here. Every figure below reads «not published» — it is not a zero, and it must not be read as one.",
+      "failedRun": "The calculation run did not complete: {failed} of {lines} lines could not be priced. No total is published, because the sum of the lines that did compute would look like an inventory while silently omitting the emissions nobody could price.",
+      "scope1": "Scope 1 — direct emissions",
+      "scope1Biogenic": "Scope 1 — biogenic CO2, reported separately",
+      "scope2LocationBased": "Scope 2 — location-based",
+      "scope2MarketBased": "Scope 2 — market-based",
+      "energyTotal": "Total energy consumption",
+      "intensityLocationBased": "Emission intensity — location-based",
+      "intensityMarketBased": "Emission intensity — market-based",
+      "qualified": "Some figures below are withheld rather than estimated: the calculation publishes no number it cannot derive from recorded data. What is missing, and what it costs this report, is set out under «{section}».",
+      "basisQualified": "Some figures below rest on a weaker factor than the pinned factor set holds: a factor for the site's own country, or for the record's own year, exists in that set but the unit or the year of the record could not reach it. Nothing is withheld and nothing is estimated — every substitution is named, with the factor it was made instead of, under «{section}».",
+      "coverage": "Legal entities in the boundary",
+      "coverageValue": "{included} of {total} included",
+      "comparative": "Comparison with the previous reporting period",
+      "noComparative": "No comparative period is set for this reporting period, so no year-on-year comparison is shown.",
+      "columns": {
+        "figure": "Figure"
+      }
+    },
+    "basis": {
+      "intro": "This report is prepared for {company} on a {basis} basis. The reporting boundary below lists every legal entity considered for this period, whether it was included or not.",
+      "boundaryFrozen": "The boundary shown is the one frozen when this revision was locked. Later changes to the live organisation do not move it, and cannot move the figures in this report.",
+      "boundaryLive": "The boundary shown is the live one for this reporting period. Locking the revision freezes it.",
+      "boundaryHeading": "Reporting boundary",
+      "subsidiariesHeading": "Subsidiaries and their registered addresses",
+      "noSubsidiaries": "No subsidiary is recorded for this reporting period; the boundary consists of the reporting undertaking alone.",
+      "columns": {
+        "entity": "Legal entity",
+        "registration": "Registration number",
+        "address": "Registered address",
+        "status": "Status in the boundary",
+        "exclusionReason": "Reason for exclusion",
+        "ownership": "Ownership",
+        "consolidation": "Consolidation method"
+      },
+      "status": {
+        "included": "included",
+        "excluded": "excluded",
+        "not_applicable": "not applicable",
+        "not_assessed": "not assessed"
+      },
+      "reportingBasis": {
+        "individual": "individual",
+        "consolidated": "consolidated"
+      },
+      "consolidation": {
+        "operational_control": "operational control",
+        "financial_control": "financial control",
+        "equity_share": "equity share"
+      }
+    },
+    "methodology": {
+      "version": "Methodology version",
+      "factorSet": "Emission factor set",
+      "factorSource": "Factor sources used by this run",
+      "gwpBasis": "Global warming potentials",
+      "factorBasis": "Basis of the factors applied",
+      "basisEntry": "{tier} — {geography}, {year}, {source} ({lines} calculation lines)",
+      "anyYear": "no year",
+      "tier": {
+        "supplier_specific": "Supplier-specific factor",
+        "site_country": "National factor",
+        "global": "Global default"
+      },
+      "consolidation": "Consolidation approach",
+      "formulaVersion": "Formula version",
+      "roundingRule": "Rounding rule",
+      "calculatedAt": "Calculation run performed at",
+      "scope1Heading": "Direct emission sources assessed",
+      "scope1Intro": "Every one of the five direct emission source categories is addressed below, including those this organisation does not have. A category that is simply absent from a report cannot be told apart from a category nobody looked at, which is why an absence is stated here rather than left blank.",
+      "columns": {
+        "category": "Source category",
+        "statement": "Assessment"
+      },
+      "categories": {
+        "stationary_combustion": "Stationary combustion",
+        "mobile_combustion": "Mobile combustion",
+        "fugitive_emissions": "Fugitive emissions (refrigerants and other leakage)",
+        "process_emissions": "Process emissions",
+        "onsite_generation": "On-site energy generation"
+      },
+      "categoryAssessed": "Assessed. {rows} activity records were collected for {category}, of which {calculated} were priced by the calculation run.",
+      "categoryNotPresent": "Not present at this organisation. No {category} activity occurs within the reporting boundary, so no data was collected and no emission is reported for it.",
+      "substitutionHeading": "Factors the calculation passed over",
+      "substitutionIntro": "Every figure in this report was priced by the only factor of the pinned set the recorded data could reach. Where the set also holds a factor that would have priced a line better — one for the site's own country, or one for the record's own year — the substitution is stated below rather than left for a reader to discover. Nothing here was withheld and nothing was estimated; what changed is the strength of the basis, and this is what it changed to.",
+      "substitution": {
+        "unit_unreachable": "{activity}: {lines} calculation lines entered in {enteredUnit} were priced by the {chosenGeography} factor ({chosenSource}). The pinned set also holds a {betterGeography} factor for this activity ({betterSource}, {betterYear}), published per {betterUnits}; no conversion reaches those units from {enteredUnit}, so it could not be applied. The figure is the {chosenGeography} default, not the {betterGeography} measurement.",
+        "year_mismatch": "{activity}: {lines} calculation lines for {year} were priced by the {chosenGeography} factor ({chosenSource}). The pinned set holds a {betterGeography} factor for this activity ({betterSource}), but only for {betterYear}. A factor published for another year is a different measurement, not an approximation of this one, so it was not substituted — and the figure is therefore the {chosenGeography} default rather than the {betterGeography} measurement."
+      }
+    },
+    "energy": {
+      "intro": "Energy consumption and greenhouse gas emissions for the reporting boundary, on both Scope 2 accounting bases.",
+      "totalMwh": "Total energy consumption",
+      "renewableMwh": "of which renewable",
+      "nonRenewableMwh": "of which non-renewable",
+      "scope1": "Scope 1 — direct emissions",
+      "scope1Biogenic": "Scope 1 — biogenic CO2",
+      "scope2LocationBased": "Scope 2 — location-based",
+      "scope2MarketBased": "Scope 2 — market-based",
+      "turnover": "Turnover used for the intensity",
+      "intensityLocationBased": "Intensity — location-based",
+      "intensityMarketBased": "Intensity — market-based",
+      "entityNameMissing": "Legal entity — historical name not recorded",
+      "byEntityHeading": "By legal entity",
+      "noEntities": "No legal entity is included in the boundary, so there is nothing to break the totals down by."
+    },
+    "scope3": {
+      "method": "Scope 3 is not measured for this report. The figures below are spend-based estimates: reported expenditure multiplied by an economic emission factor for the commodity purchased.",
+      "categoriesCovered": "Categories covered by the estimate: {count}.",
+      "excludedFromTotals": "These estimates are EXCLUDED from the gross Scope 1 and Scope 2 totals reported above. Adding them to those totals would set an estimate beside an inventory and count neither correctly.",
+      "none": "No spend-based Scope 3 estimate is recorded for this reporting year.",
+      "columns": {
+        "category": "Category",
+        "name": "Description",
+        "tco2e": "Estimated emissions",
+        "quality": "Data quality"
+      }
+    },
+    "disclosures": {
+      "intro": "The remaining Basic module disclosures, as recorded for this revision. A metric nobody answered is printed as «not collected» rather than omitted, so a reader can tell an absent answer from a zero.",
+      "noCatalogue": "The disclosure catalogue holds no Basic metric outside the sections above.",
+      "collectedOf": "{collected} of {total} metrics of {code} have a recorded answer.",
+      "columns": {
+        "metric": "Metric",
+        "value": "Recorded answer",
+        "unit": "Unit",
+        "requirement": "Requirement"
+      },
+      "notApplicable": "not applicable — {reason}",
+      "sensitiveOmitted": "omitted as classified or sensitive — {reason}"
+    },
+    "dataQuality": {
+      "intro": "{assessed} of the {rows} current records in this revision carry a data quality assessment.",
+      "averagePedigree": "Mean pedigree score across the assessed records",
+      "pedigreeUnit": "of 5",
+      "overridden": "Assessments overridden by a preparer",
+      "unassessed": "Records with no assessment",
+      "columns": {
+        "tier": "Quality tier",
+        "rows": "Records"
+      },
+      "tier": {
+        "high_primary": "High — primary data",
+        "medium_calculated": "Medium — calculated",
+        "low_proxy": "Low — proxy",
+        "estimate": "Estimate",
+        "none": "No tier recorded"
+      }
+    },
+    "qualifications": {
+      "heading": "Figures withheld or qualified",
+      "intro": "The calculation publishes no figure it cannot derive from recorded data. Where a figure is missing above, it was withheld rather than estimated, and the reason is stated below with the number of records concerned.",
+      "none": "No figure in this report was withheld by the calculation: every input the published figures needed was recorded.",
+      "reason": {
+        "historical_context_missing": "The original calculation context was not recorded. Historical turnover, intensity and energy split are unavailable; current organisation details and exchange rates have not been substituted.",
+        "fx_rate_missing": "{count} included legal entities report in a currency for which no exchange rate to the euro is recorded for {year}. The turnover and both emission intensities are therefore not published — converting at 1:1 would have reported another currency as euros, understating the intensity by whatever the true rate is.",
+        "turnover_missing": "{count} included legal entities have no turnover recorded. The intensity denominator would be short by their revenue, so no intensity is published: an emissions-per-euro figure computed over part of the group reads as if it covered all of it.",
+        "currency_missing": "{count} included legal entities have no reporting currency recorded, so their turnover cannot be converted to euros and no intensity is published.",
+        "energy_unconvertible": "{count} energy records are entered in a unit that no conversion reaches, so their volume never became MWh. No energy figure — neither the total nor the split — is published for the entities and sites those records belong to.",
+        "renewable_share_missing": "{count} energy records state no renewable share. Their volume is still counted in the total energy consumption, but the renewable / non-renewable split is withheld: putting unstated energy on the non-renewable line would claim, of energy whose provenance nobody recorded, that it was certainly not renewable.",
+        "line_outside_boundary": "{count} calculation lines belong to a legal entity that is not in the boundary aggregated here. They are inside the totals and inside no per-entity breakdown, which is the accounting gap the reconciliation reports.",
+        "factor_basis_downgraded": "{count} calculation lines were priced by a weaker basis than the pinned factor set offers: a factor for the site's own country, or for the record's own year, exists in the set, but the unit or the year of the record could not reach it. Those figures are published and not withheld; each substitution is named in the methodology section, with the factor that was passed over."
+      }
+    },
+    "completeness": {
+      "conformity": {
+        "full": "This report is presented as a full and complete VSME Basic module disclosure: every legal entity of the reporting boundary is included, and nothing has been withheld from it by a subscription limit.",
+        "partial": "Coverage of this report is PARTIAL. Parts of the reporting undertaking are outside it, and the report must not be read as a complete account of the group."
+      },
+      "note": "Completeness note: {note}",
+      "noteMissing": "Coverage is partial, but no completeness note was recorded — what is missing has not been stated.",
+      "planNote": "The {plan} subscription plan does not cover the whole undertaking: {details}. These records exist in this account but are outside this report.",
+      "planNoteEntities": "{excluded} of {total} legal entities are outside it (the plan covers {limit})",
+      "planNoteFacilities": "{excluded} of {total} sites are outside it (the plan covers {limit})",
+      "boundaryHeading": "Entities outside the reporting boundary",
+      "noneExcluded": "Every legal entity considered for this period is inside the reporting boundary.",
+      "planHeading": "Entities and sites left out by the subscription plan",
+      "noneByPlan": "Nothing was left out of this report because of a subscription limit.",
+      "columns": {
+        "type": "Kind",
+        "name": "Name"
+      },
+      "failedLines": "{failed} of {lines} calculation lines could not be priced, so no total is published for this run."
+    },
+    "disclaimer": {
+      "intro": "The following four statements are part of this report and are stored with it.",
+      "offsets": "Carbon offsets, credits and other compensation instruments are excluded from the gross totals in this report. Gross emissions are reported before any compensation, and no purchased reduction has been netted against them.",
+      "scope3": "Scope 3 figures in this report are spend-based estimates, not measurements, and they sit outside the gross Scope 1 and Scope 2 totals. They are indicative of magnitude and are not comparable with a measured inventory.",
+      "coverage": {
+        "full": "The reporting boundary of this report holds every legal entity known for the period, and nothing was left out of it by a subscription limit.",
+        "partial": "Coverage of this report is partial: {excluded} entities or sites known to the undertaking are outside it. Stated reason: {note}"
+      },
+      "notFullVsme": "This document is not a full VSME report. It becomes one only when every applicable environmental, social and governance datapoint of the standard has been disclosed; until then it is a disclosure of what has been collected so far."
+    },
+    "evidence": {
+      "intro": "{count} documents support the records in this revision. The hash pins the file the report was prepared against.",
+      "none": "No evidence document is linked to the records in this revision.",
+      "columns": {
+        "file": "File",
+        "type": "Type",
+        "hash": "SHA-256",
+        "uploaded": "Uploaded",
+        "links": "Records supported"
+      }
+    },
+    "gapPlan": {
+      "intro": "{answered} of {applicable} applicable datapoints have a recorded answer; {open} are still open. Each open datapoint below names the disclosure it belongs to and what has to happen for it to be recorded.",
+      "nothingOpen": "No applicable datapoint is open.",
+      "columns": {
+        "metric": "Datapoint",
+        "requirement": "Requirement",
+        "action": "What is needed",
+        "decision": "Decision",
+        "reason": "Reason"
+      },
+      "actionMandatory": "Collect the data, attach the source document and record the answer.",
+      "actionConditional": "Decide whether the condition applies; record the answer or the decision.",
+      "decisionsHeading": "Recorded decisions: not applicable and sensitive omissions (B1 §24(b))",
+      "noDecisions": "No datapoint has been declared not applicable or omitted as sensitive.",
+      "decisionNotApplicable": "Not applicable",
+      "decisionSensitive": "Omitted as classified or sensitive"
+    },
+    "esrsIndex": {
+      "notIncluded": "The simplified-ESRS cross-reference is not part of this report: the company's plan does not include the simplified-ESRS layer.",
+      "intro": "How the datapoints of this VSME report relate to the simplified ESRS (Commission Delegated Regulation C(2026)5010). The cross-reference is an aid to a reader who also works with ESRS; it does not make this report an ESRS sustainability statement.",
+      "regulatory": "Regulatory status of the simplified ESRS: {status}",
+      "crossHeading": "VSME datapoints that also serve an ESRS disclosure",
+      "crossIntro": "{answered} of {total} mapped VSME datapoints have a recorded answer or decision.",
+      "additionalHeading": "Additional datapoints the simplified ESRS asks for",
+      "additionalIntro": "{answered} of {total} additional datapoints have a recorded answer or decision. Most apply only where the topic is material for the undertaking.",
+      "columns": {
+        "reference": "ESRS reference",
+        "datapoint": "Datapoint",
+        "status": "Status",
+        "appliesWhen": "Applies when",
+        "answer": "Recorded answer"
+      },
+      "answered": "answered",
+      "decided": "decision recorded",
+      "open": "open",
+      "noRows": "None."
+    },
+    "comprehensive": {
+      "intro": "The Comprehensive module disclosures C1–C9, as recorded for this revision. Like the Basic module, every catalogue metric is printed: a metric nobody answered says «not collected» rather than disappearing, so a reader can tell an absent answer from a zero.",
+      "notIncluded": "The Comprehensive module (C1–C9) is not part of this report: the company's plan includes the Basic module only.",
+      "noCatalogue": "The disclosure catalogue holds no Comprehensive metric."
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "Produce the VSME Basic report from an approved revision, and keep every file you have published.",
+    "readOnlyNote": "Your role can read published reports but not produce new ones.",
+    "scope": {
+      "title": "What the report is about",
+      "subtitle": "A report is made from one revision of one reporting period — the numbers somebody has approved.",
+      "period": "Reporting period",
+      "noPeriod": "No reporting period yet. Create one in Organisation.",
+      "noRevision": "This period has no revisions yet.",
+      "revisionNo": "Revision {no}",
+      "current": "current",
+      "blocked": {
+        "not_approved": "No report can be made from this revision: nobody has approved these numbers yet."
+      },
+      "blockedCta": "Go to Review & approval"
+    },
+    "revisionStatus": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "locked": "Locked"
+    },
+    "output": {
+      "title": "The file",
+      "subtitle": "Choose the format and the language. Both are recorded on the file and cannot be changed afterwards.",
+      "format": "Format",
+      "language": "Report language",
+      "languageHint": "The language is written into the file and stored with it. Switching the interface language later does not change a report you have already produced.",
+      "render": "Produce the report",
+      "done": "Produced: {file}. It is in the list below.",
+      "formatLockTitle": "{format} is not included in your plan",
+      "formatLockBody": "Your plan sells the formats shown without a padlock. An upgrade adds the rest."
+    },
+    "formats": {
+      "pdf": "PDF",
+      "xlsx": "Excel (XLSX)"
+    },
+    "languages": {
+      "en": "English",
+      "sl": "Slovenian"
+    },
+    "gate": {
+      "revision_not_approved": "This revision is not approved yet, so there is nothing to publish. Approve it in Review & approval first.",
+      "no_green_run": "The latest calculation did not price every line. Fix the flagged rows and calculate again before publishing.",
+      "period_blocking_errors": "Blocking validation findings still stand against this period. Clear them in Review & approval first.",
+      "historical_context_missing": "The historical period and boundary were not recorded for this locked revision. Download an archived report or start a new revision.",
+      "historical_formula_unsupported": "This locked revision used an older calculation with unsupported output-unit handling. Create a restatement before generating a new report. Existing archived files remain available."
+    },
+    "lock": {
+      "title": "This report will not be closable on your plan",
+      "body": "The period covers {facilities} sites and the {plan} plan allows {limit}. The report can still be produced — but the revision cannot be locked until the count is within the plan.",
+      "hint": "Exclude sites from the boundary, or upgrade."
+    },
+    "completeness": {
+      "title": "What the report will cover",
+      "subtitle": "Exactly what will be stamped on the file — the same coverage claim, note and exclusions.",
+      "loading": "Working out what the report will cover…",
+      "noRevision": "Choose a revision to see what its report would cover.",
+      "inLanguage": "in {language}",
+      "fullBody": "Everything in your organisation is inside this report. It will be marked as full coverage.",
+      "excludedTitle": "Left out by your plan ({count})"
+    },
+    "coverage": {
+      "full": "Full coverage",
+      "partial": "Partial coverage"
+    },
+    "objectType": {
+      "legal_entity": "Legal entity",
+      "facility": "Site"
+    },
+    "renders": {
+      "title": "Published reports",
+      "subtitle": "Every file this company has produced. Nothing here is ever overwritten — producing again adds a new one.",
+      "count": "{count} files",
+      "loading": "Loading published reports…",
+      "empty": "Nothing has been published yet.",
+      "download": "Download",
+      "hash": "SHA-256 {hash}",
+      "unknownPeriod": "Unknown period",
+      "currentPeriodName": "current period name"
+    },
+    "actions": {
+      "upgrade": "See plans"
+    },
+    "fields": {
+      "format": "format",
+      "language": "language"
+    },
+    "errors": {
+      "rejected": "That does not exist for this company."
+    }
+  },
+  "readiness": {
+    "title": "VSME readiness",
+    "subtitle": "Which data you already have, what can be defended, and what still needs to be collected for the Basic Module.",
+    "errors": {
+      "accessChanged": "Your access has changed. Reload the page to continue.",
+      "loadFailed": "We could not load the readiness overview. Try again in a moment."
+    },
+    "summary": {
+      "title": "Readiness for {period}",
+      "module": {
+        "basic": "Basic Module",
+        "basic_comprehensive": "Basic + Comprehensive Module"
+      },
+      "basis": {
+        "individual": "individual basis",
+        "consolidated": "consolidated basis"
+      },
+      "revision": "revision {no}",
+      "readyOf": "{ready} of {applicable} applicable datapoints ready",
+      "noRevision": "This period has no revision yet, so nothing has been entered against it.",
+      "noRevisionLink": "Open the organisation screen",
+      "esrsModule": "+ simplified ESRS"
+    },
+    "status": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "locked": "Locked"
+    },
+    "datapoint": {
+      "ready": "Ready",
+      "needs_data": "Needs data",
+      "needs_evidence": "Needs evidence",
+      "needs_confirmation": "Needs confirmation",
+      "not_applicable": "Not applicable",
+      "sensitive_omitted": "Omitted as sensitive",
+      "open_conditional": "Applicability undecided"
+    },
+    "datapointEvidence": "{count, plural, one {# document} other {# documents}}",
+    "requirement": {
+      "mandatory": "mandatory",
+      "conditional": "conditional",
+      "voluntary": "voluntary"
+    },
+    "source": {
+      "plan": "from the plan",
+      "period": "from the period",
+      "organisation": "from the organisation",
+      "calculation": "from the calculation",
+      "disclosure": "entered as a disclosure"
+    },
+    "action": {
+      "needs_data": "Enter the data",
+      "needs_evidence": "Attach a document",
+      "needs_confirmation": "Send for approval",
+      "open_conditional": "Answer or decide applicability"
+    },
+    "decision": {
+      "markNotApplicable": "Not applicable…",
+      "markSensitive": "Omit as sensitive…",
+      "withdraw": "Withdraw the decision",
+      "reasonFor": {
+        "not_applicable": "Why does this datapoint not apply?",
+        "sensitive_omitted": "Why is this disclosure omitted as classified or sensitive?"
+      },
+      "reasonHint": "The reason is printed in the report (B1 §24(b) for sensitive omissions).",
+      "save": "Record the decision",
+      "cancel": "Cancel",
+      "failed": "The decision was not saved. The revision may be locked, or your access changed."
+    },
+    "card": {
+      "readyOf": "{ready} of {applicable} ready",
+      "open": "{count, plural, one {# undecided} other {# undecided}}",
+      "excluded": "{count, plural, one {# excluded} other {# excluded}}",
+      "datapoints": "{count, plural, one {# datapoint} other {# datapoints}}",
+      "work": "Work on it"
+    },
+    "disclosures": {
+      "title": "Disclosures"
+    },
+    "journey": {
+      "aria": "Reporting steps",
+      "title": "Your path to the report",
+      "next": "Next step:",
+      "steps": {
+        "organisation": "Company and sites",
+        "boundary": "Boundary",
+        "applicability": "Applicability",
+        "data": "Data",
+        "evidence": "Evidence",
+        "calculation": "Calculation",
+        "review": "Approval",
+        "report": "Report"
+      }
+    },
+    "esrs": {
+      "title": "Simplified ESRS",
+      "regulatory": "Regulatory status: {status}",
+      "intro": "{additional} additional datapoints the simplified ESRS asks for beyond VSME; {mapped} of your VSME datapoints already serve an ESRS disclosure ({mappedReady} ready).",
+      "readyOf": "{ready} of {applicable} applicable ESRS datapoints ready",
+      "note": "Most of these datapoints apply only where the topic is material for the company. Decide applicability per datapoint, or answer it.",
+      "lockedTitle": "Simplified ESRS is not in your plan",
+      "lockedBody": "The simplified ESRS (C(2026)5010) adds {additional} datapoints to the {mapped} VSME datapoints that already map onto it. Plans from {plan} judge them here, accept their answers and print the cross-reference appendix in the report.",
+      "lockedCta": "See plans"
+    },
+    "esrsRef": "ESRS {reference}",
+    "appliesWhen": "Applies when: {condition}"
+  },
+  "vesg": {
+    "title": "VESG voucher readiness",
+    "subtitle": "The sixteen requirements of the Slovenian SPS voucher for a voluntary sustainability report, and what the platform can see about each. Not a promise of the voucher: eligibility is yours to prove, the review is a licensed audit firm's, the grant is the fund's.",
+    "errors": {
+      "accessChanged": "Your access has changed. Reload the page to continue.",
+      "loadFailed": "We could not load the checklist. Try again in a moment."
+    },
+    "summary": {
+      "title": "VESG checklist for {period}",
+      "figure": "{autoMet} of {autoTotal} checks met · {manualConfirmed} of {manualTotal} confirmations recorded",
+      "closes": "The call is open until {date} or until the funds are exhausted.",
+      "disclaimer": "HOSMOS prepares the data and the materials; it does not grant the voucher and does not perform the independent review."
+    },
+    "status": {
+      "met": "Met",
+      "attention": "Needs attention",
+      "pending": "To confirm",
+      "confirmed": "Confirmed",
+      "info": "Information"
+    },
+    "blocks": {
+      "eligibility": "Eligibility",
+      "funding": "Funding",
+      "provider": "Provider",
+      "independence": "Independence",
+      "standard": "Standard",
+      "publication": "Publication",
+      "auditability": "Auditability",
+      "versioning": "Versioning",
+      "data_quality": "Data quality",
+      "social": "Social module",
+      "general_info": "General information",
+      "environmental": "Environmental",
+      "comprehensive": "Comprehensive",
+      "micro_logic": "Micro-undertaking logic",
+      "submission": "Submission"
+    },
+    "labels": {
+      "hosmos": "What HOSMOS checks",
+      "evidence": "Evidence"
+    },
+    "workOn": "Work on it",
+    "decision": {
+      "confirm": "Confirm",
+      "updateNote": "Save the note",
+      "withdraw": "Withdraw",
+      "confirmedOn": "Confirmed on {date}",
+      "readOnly": "Confirming needs the data-entry permission.",
+      "noteHint": "Optional. Printed nowhere; kept for the application file.",
+      "failed": "The confirmation was not saved. Your access may have changed."
+    },
+    "items": {
+      "eligibility_sme": {
+        "title": "Micro, small or medium-sized enterprise with its seat in Slovenia",
+        "hosmos": "The reporting entity's country and headcount. SME status itself is the applicant's to prove.",
+        "evidence": "Company registration, SME status",
+        "result": {
+          "met": "Seat: {country}; employees: {employees} — within the SME ceiling.",
+          "attention": "Seat: {country}; employees: {employees}. Set the country to SI and record the headcount on the Organisation screen; more than 249 employees is outside the SME definition."
+        }
+      },
+      "eligibility_employee": {
+        "title": "At least one employee for the duration of the project",
+        "hosmos": "The headcount or average FTE of the reporting entity and the reporting period.",
+        "evidence": "HR or payroll evidence",
+        "result": {
+          "met": "Employees recorded: {employees}.",
+          "attention": "No headcount recorded (employees: {employees}). Enter it on the Organisation screen."
+        }
+      },
+      "funding": {
+        "title": "Co-financing of 60 %; subsidy between EUR 1,000 and EUR 9,999.99",
+        "hosmos": "Nothing — the budget is outside the platform. Only eligible external services count.",
+        "evidence": "Offers, invoices, proof of payment",
+        "result": {
+          "pending": "Confirm once the offer and the budget are in place.",
+          "confirmed": "Confirmed."
+        },
+        "noteLabel": "Offer or budget reference"
+      },
+      "provider": {
+        "title": "The report is prepared by an external expert at market price",
+        "hosmos": "The export is fit for an external expert; the contract or order is outside HOSMOS.",
+        "evidence": "Contract, evidence of market price",
+        "result": {
+          "pending": "Confirm once the expert's contract or order exists.",
+          "confirmed": "Confirmed."
+        },
+        "noteLabel": "Contract or order reference"
+      },
+      "independence": {
+        "title": "An independent review by an authorised audit firm; preparer and reviewer are not the same person",
+        "hosmos": "A locked revision, an immutable report render, and at least one member with a reviewing role (reviewer, approver, auditor).",
+        "evidence": "Limited assurance report",
+        "result": {
+          "met": "Locked revision: yes; immutable renders: {renders}; reviewing roles: {reviewers}.",
+          "attention": "Locked revision: {locked, select, 1 {yes} other {no}}; immutable renders: {renders}; reviewing roles: {reviewers}. Lock the revision, produce the report and invite the reviewer on the Settings screen."
+        }
+      },
+      "standard": {
+        "title": "The report follows the current VSME (or the simplified ESRS) and the legislation",
+        "hosmos": "Every applicable Basic datapoint has a recorded answer or decision, with evidence where a figure needs it.",
+        "evidence": "Completeness matrix and the report",
+        "result": {
+          "met": "Readiness {percent} %: no open datapoint.",
+          "attention": "Readiness {percent} %: {open} datapoints open, {needsEvidence} without evidence. Work through them on the Readiness screen."
+        }
+      },
+      "publication": {
+        "title": "The report is publicly available on AJPES before the payment claim",
+        "hosmos": "The final PDF or report package from the Reports screen; the publication itself happens on AJPES.",
+        "evidence": "AJPES publication proof",
+        "result": {
+          "pending": "Confirm once the report is published on AJPES, with the link or date.",
+          "confirmed": "Confirmed."
+        },
+        "noteLabel": "AJPES link or publication date"
+      },
+      "auditability": {
+        "title": "Every datapoint is traceable to its source",
+        "hosmos": "Evidence links on records; source, period, unit, method, estimate flag and approvals on every row.",
+        "evidence": "Audit trail export",
+        "result": {
+          "met": "Evidence links: {links}; datapoints without evidence: 0.",
+          "attention": "Evidence links: {links}; datapoints still needing evidence: {needsEvidence}. Attach the documents on the Evidence screen."
+        }
+      },
+      "versioning": {
+        "title": "The standard and the methodology version are fixed",
+        "hosmos": "The factor set pinned by the period and the formula version of the latest calculation.",
+        "evidence": "Version log",
+        "result": {
+          "met": "Factor set {factorSet}; formula version {formulaVersion}.",
+          "attention": "Factor set {factorSet}; formula version {formulaVersion}. Pin the factor set on the period and run the calculation."
+        }
+      },
+      "data_quality": {
+        "title": "Units, conversions and calculations are reproducible",
+        "hosmos": "A completed calculation that is not stale: every line carries its source unit, conversion and factor.",
+        "evidence": "Calculation log",
+        "result": {
+          "met": "The latest calculation is complete and current.",
+          "attention": "{calculated, select, 1 {The calculation is stale — inputs changed after it ran.} other {No calculation has been run.}} Run it on the Review screen."
+        }
+      },
+      "social": {
+        "title": "Basic workforce, health-and-safety and remuneration datapoints are available",
+        "hosmos": "Readiness of B8, B9 and B10.",
+        "evidence": "HR and H&S evidence",
+        "result": {
+          "met": "B8 {b8} %, B9 {b9} %, B10 {b10} %.",
+          "attention": "B8 {b8} %, B9 {b9} %, B10 {b10} %. Complete them on the Disclosures screen."
+        }
+      },
+      "general_info": {
+        "title": "B1 and B2 export completely into the report",
+        "hosmos": "Readiness of B1 (basis for preparation) and B2 (practices, policies, initiatives).",
+        "evidence": "Report export",
+        "result": {
+          "met": "B1 {b1} %, B2 {b2} %.",
+          "attention": "B1 {b1} %, B2 {b2} %. B1 comes from the Organisation screen, B2 from Disclosures."
+        }
+      },
+      "environmental": {
+        "title": "Basic B3, B6 and B7 data with their conditions",
+        "hosmos": "Readiness of B3 (energy and GHG), B6 (water) and B7 (resource use and waste).",
+        "evidence": "Environmental evidence",
+        "result": {
+          "met": "B3 {b3} %, B6 {b6} %, B7 {b7} %.",
+          "attention": "B3 {b3} %, B6 {b6} %, B7 {b7} %. B3 comes from the inventory and the calculation; B6 and B7 from Disclosures."
+        }
+      },
+      "comprehensive": {
+        "title": "C1–C9 may be included as a second module",
+        "hosmos": "Whether the plan includes the Comprehensive module.",
+        "evidence": "Comprehensive export",
+        "result": {
+          "info": "{available, select, 1 {The Comprehensive module is included in the plan.} other {The Comprehensive module is not in the plan; it is optional for the voucher.}}"
+        }
+      },
+      "micro_logic": {
+        "title": "For up to 10 employees the voluntary datapoints are applied correctly",
+        "hosmos": "The headcount against the micro threshold and the count of voluntary datapoints in the catalogue.",
+        "evidence": "Employee-size rule log",
+        "result": {
+          "info": "Employees: {employees} — {micro, select, 1 {a micro-undertaking: the {voluntary} voluntary datapoints may be omitted} other {not a micro-undertaking; {voluntary} voluntary datapoints are optional as for every undertaking}}."
+        }
+      },
+      "submission": {
+        "title": "Application through the SPS ePortal",
+        "hosmos": "Nothing — a project step outside the platform. The call is open until {closes} or until the funds are exhausted.",
+        "evidence": "Application package",
+        "result": {
+          "pending": "Confirm once the application is submitted; the call closes on {closes}.",
+          "confirmed": "Confirmed."
+        },
+        "noteLabel": "Application reference"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Cookies on this site",
+    "text": "Necessary cookies keep you signed in and remember your language; they are always on. Analytics cookies are used only if you agree, and the site works exactly the same without them.",
+    "necessary": "Only necessary",
+    "all": "Accept all",
+    "policy": "Cookie policy",
+    "settings": "Cookie settings"
+  },
+  "errorBoundary": {
+    "title": "This screen stopped working",
+    "body": "Something in the page failed while it was updating. Your saved data is untouched; anything you had typed and not saved is lost.",
+    "translated": "The page is being translated by the browser. Automatic translation rewrites the page under the app and breaks it as soon as you type. Turn the translation off for this site and pick your language with the switcher in the top right — the app speaks English, Slovene, Russian, German, Italian, Serbian and Croatian.",
+    "retry": "Try again",
+    "reload": "Reload the page",
+    "digest": "Error code: {digest}"
+  }
+}

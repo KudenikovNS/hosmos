@@ -1,0 +1,379 @@
+/* `/inventory/disclosures` (T3.5b). Same conventions as the inventory,
+   organisation and factors pages: one breakpoint (768px for the field grid),
+   base rules are the mobile defaults, every responsive override is grouped at
+   the bottom, and colours/space/radii come from the globals.css tokens only. */
+
+/* ── Icons and layout shared with the section shell ────────── */
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+
+.headerGrow {
+  flex: 1;
+  min-width: 0;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.readOnlyBanner {
+  margin-bottom: var(--space-4);
+}
+
+/* ── The section strip: B1…B11, then C1…C9 ─────────────────── */
+.sectionStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.sectionGroup {
+  margin-bottom: var(--space-2);
+}
+
+.sectionGroupLabel {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: var(--space-2);
+}
+
+.esrsRef {
+  color: var(--violet-700);
+}
+
+.sectionButton,
+.sectionButtonActive {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2) var(--space-3);
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  transition: all 0.2s var(--ease-out);
+}
+
+.sectionButton:hover {
+  background: var(--gray-50);
+}
+
+.sectionButtonActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+  color: var(--gray-900);
+  font-weight: var(--fw-semibold);
+}
+
+.sectionCode {
+  font-weight: var(--fw-semibold);
+}
+
+.sectionCount {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+/* ── One metric ────────────────────────────────────────────── */
+.metricList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.metric {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+}
+
+.metricHead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.metricTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.metricMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+.metricActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.metricVersion {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+/* A disabled fieldset is how the read-only view is expressed: the data stays
+   visible and selectable, and every control inside stops accepting input. */
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.guidance {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.controlHint {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  margin-top: var(--space-1);
+}
+
+.reason {
+  margin-top: var(--space-3);
+}
+
+.fault {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--amber-700, var(--gray-700));
+}
+
+/* ── The controls the catalogue asks for ───────────────────── */
+.textareaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.textareaLabel {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--gray-700);
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  font-size: var(--text-sm);
+  color: var(--gray-900);
+  background: transparent;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--blue-300);
+  outline-offset: 1px;
+}
+
+/* ── The breakdown editor (S1): one total, N parts ─────────── */
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.breakdownTitle {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+}
+
+.breakdownRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  gap: var(--space-2);
+}
+
+.rowButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  align-self: start;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: transparent;
+  color: var(--gray-600);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+}
+
+.rowButton:hover:not(:disabled) {
+  background: var(--gray-50);
+}
+
+.rowButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ── PG-5/PG-6: a locked metric stays visible and explains itself ── */
+.planLock {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  border: 1px solid var(--amber-200);
+  background: var(--amber-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+}
+
+.planLockIcon {
+  color: var(--amber-500);
+  flex-shrink: 0;
+}
+
+.planLockMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.planLockTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.planLockBody {
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+}
+
+.planLockCta {
+  flex-shrink: 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .twoCol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .breakdownRow {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  }
+}
+
+/* ── Партия 18: how to fill, choices, suggestions, guidance ─────────────── */
+.howTo {
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+}
+.howToTitle {
+  cursor: pointer;
+  font-weight: 600;
+}
+.howToSteps {
+  margin: var(--space-2) 0 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 6px;
+  line-height: 1.5;
+}
+.choiceGroup {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.choiceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 6px;
+}
+.choiceItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.suggestion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-top: var(--space-2);
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--blue-50);
+}
+.suggestionText {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.suggestionLabel {
+  font-weight: 600;
+}
+
+/* ── Партия 21: locked groups on the strip, and the way out of a locked revision ── */
+.sectionButtonLocked {
+  composes: sectionButton;
+  opacity: 0.65;
+}
+.sectionLockIcon {
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+.restate {
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  display: grid;
+  gap: var(--space-2);
+}
+.restateTitle {
+  margin: 0;
+  font-weight: 600;
+}
+.restateActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Партия 22 — the datapoint's help popover. */
+.helpLine {
+  display: block;
+}
+.helpLabel {
+  font-weight: 600;
+}

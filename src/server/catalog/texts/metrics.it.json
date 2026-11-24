@@ -1,0 +1,907 @@
+{
+  "VSME-001": {
+    "label": "Opzione di rendicontazione scelta",
+    "hint": "Seleziona OPTION A (solo modulo di base) o OPTION B (modulo di base e completo) per questo periodo di rendicontazione.",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Seleziona OPTION A (solo modulo di base) o OPTION B (modulo di base e completo) e conserva la scelta per il periodo di rendicontazione."
+  },
+  "VSME-002": {
+    "label": "Informativa omessa per informazioni sensibili",
+    "hint": "Elenca ogni informativa omessa per informazioni riservate o sensibili, una per riga.",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Individua ogni informativa omessa e documenta che l'omissione è dovuta a informazioni riservate o sensibili."
+  },
+  "VSME-003": {
+    "label": "Base di redazione del report",
+    "hint": "Indica se il report riguarda solo l'impresa o l'impresa con le sue controllate (consolidato).",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Indica se il report riguarda solo l'impresa o anche le sue controllate e applica la stessa base in tutto il report."
+  },
+  "VSME-004": {
+    "label": "Elenco delle controllate",
+    "hint": "Elenca tutte le controllate incluse nel report consolidato, una per riga (solo per report consolidato).",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Per un report consolidato elenca ogni controllata inclusa con la sede legale e collegala al perimetro di rendicontazione."
+  },
+  "VSME-005": {
+    "label": "Sede legale della controllata",
+    "hint": "Indica la sede legale di ogni controllata elencata: via, CAP, città, paese.",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Per un report consolidato elenca ogni controllata inclusa con la sede legale e collegala al perimetro di rendicontazione."
+  },
+  "VSME-006": {
+    "label": "Forma giuridica",
+    "hint": "Seleziona la forma giuridica dell'impresa registrata secondo la legge nazionale, ad es. d.o.o., d.d., s.p.",
+    "guidance": "Guida VSME, par. 68: seleziona la forma giuridica riconosciuta dalla legge del paese dell'impresa."
+  },
+  "VSME-007": {
+    "label": "Codice NACE",
+    "hint": "Seleziona il codice NACE dell'attività principale al livello più dettagliato; aggiungi altri codici se pertinenti, uno per riga.",
+    "guidance": "Guida VSME, parr. 69–70: seleziona il codice NACE che meglio rappresenta l'attività principale, al livello più dettagliato disponibile, aggiungendo altri codici se pertinenti."
+  },
+  "VSME-008": {
+    "label": "Totale di bilancio",
+    "hint": "Indica il totale di bilancio in EUR per lo stesso periodo del report, dal bilancio d'esercizio, ad es. 1250000.",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Usa il valore dello stesso periodo del report di sostenibilità, indica la valuta e riconcilialo con il bilancio."
+  },
+  "VSME-009": {
+    "label": "Fatturato",
+    "hint": "Indica il fatturato (ricavi netti delle vendite) in EUR per lo stesso periodo, dal bilancio d'esercizio, ad es. 3400000.",
+    "guidance": "La guida al modulo di base non prevede un'istruzione di compilazione specifica per questo dato. Usa il valore dello stesso periodo del report di sostenibilità, indica la valuta e riconcilialo con il bilancio."
+  },
+  "VSME-010": {
+    "label": "Numero di dipendenti",
+    "hint": "Indica il numero di dipendenti per numero di persone o in equivalenti a tempo pieno (FTE), ad es. 42, e il metodo usato.",
+    "guidance": "Guida VSME, parr. 71–72: indica se il dato è per numero di persone o in equivalenti a tempo pieno (FTE). Calcola gli FTE dall'orario contrattuale e registra la data di riferimento o il periodo di media."
+  },
+  "VSME-011": {
+    "label": "Paese principale di attività",
+    "hint": "Indica il paese in cui l'impresa svolge l'attività principale, ad es. Slovenia.",
+    "guidance": "Guida VSME, par. 73: riporta per ogni sito significativo indirizzo, codice postale, città, paese e coordinate."
+  },
+  "VSME-012": {
+    "label": "Ubicazione degli attivi significativi",
+    "hint": "Indica l'ubicazione di ogni attivo significativo (indirizzo, CAP, città, paese), una per riga.",
+    "guidance": "Guida VSME, par. 73: riporta per ogni sito significativo indirizzo, codice postale, città, paese e coordinate."
+  },
+  "VSME-013": {
+    "label": "Geolocalizzazione dei siti",
+    "hint": "Indica le coordinate (latitudine, longitudine) di ogni sito di proprietà, in locazione o gestito, ad es. 46.0569, 14.5058.",
+    "guidance": "Guida VSME, parr. 74–76: registra la geolocalizzazione come punto per un singolo sito o come poligono per un'area; copri tutti i siti di proprietà, in locazione o gestiti."
+  },
+  "VSME-014": {
+    "label": "Certificazione o marchio",
+    "hint": "Indica il nome della certificazione o del marchio di sostenibilità posseduto, ad es. EU Ecolabel.",
+    "guidance": "Guida VSME, par. 77: registra nome della certificazione o del marchio, ente emittente, data ed eventuale punteggio; conserva la documentazione."
+  },
+  "VSME-015": {
+    "label": "Ente emittente",
+    "hint": "Indica l'ente che ha rilasciato la certificazione o il marchio, ad es. un organismo di certificazione.",
+    "guidance": "Guida VSME, par. 77: registra nome della certificazione o del marchio, ente emittente, data ed eventuale punteggio; conserva la documentazione."
+  },
+  "VSME-016": {
+    "label": "Data della certificazione",
+    "hint": "Indica la data di rilascio o dell'ultimo rinnovo della certificazione o del marchio.",
+    "guidance": "Guida VSME, par. 77: registra nome della certificazione o del marchio, ente emittente, data ed eventuale punteggio; conserva la documentazione."
+  },
+  "VSME-017": {
+    "label": "Punteggio della certificazione",
+    "hint": "Indica il punteggio o la valutazione ricevuti, se previsti, ad es. «Gold» o «85/100».",
+    "guidance": "Guida VSME, par. 77: registra nome della certificazione o del marchio, ente emittente, data ed eventuale punteggio; conserva la documentazione."
+  },
+  "VSME-018": {
+    "label": "Pratiche di sostenibilità",
+    "hint": "Seleziona Sì/No se l'impresa ha pratiche di sostenibilità e, in caso affermativo, le descrivi (tema, azione, obiettivo, tempistica).",
+    "guidance": "Guida VSME, parr. 78–80: registra ogni voce in modo strutturato: tema di sostenibilità affrontato, azione o impegno ed eventuali obiettivo, responsabile, tempistica e URL pubblico."
+  },
+  "VSME-019": {
+    "label": "Politiche di sostenibilità",
+    "hint": "Seleziona Sì/No se l'impresa ha politiche di sostenibilità e, in caso affermativo, le descrivi (tema, azione, obiettivo, tempistica).",
+    "guidance": "Guida VSME, parr. 78–80: registra ogni voce in modo strutturato: tema di sostenibilità affrontato, azione o impegno ed eventuali obiettivo, responsabile, tempistica e URL pubblico."
+  },
+  "VSME-020": {
+    "label": "Disponibilità pubblica delle politiche",
+    "hint": "Seleziona Sì/No se le politiche di sostenibilità sono pubbliche e, in caso affermativo, indica l'URL.",
+    "guidance": "Guida VSME, parr. 78–80: registra ogni voce in modo strutturato: tema di sostenibilità affrontato, azione o impegno ed eventuali obiettivo, responsabile, tempistica e URL pubblico."
+  },
+  "VSME-021": {
+    "label": "Iniziative future",
+    "hint": "Seleziona Sì/No se l'impresa ha iniziative o piani di sostenibilità futuri e, in caso affermativo, li descrivi (tema, azione, obiettivo, tempistica).",
+    "guidance": "Guida VSME, parr. 78–80: registra ogni voce in modo strutturato: tema di sostenibilità affrontato, azione o impegno ed eventuali obiettivo, responsabile, tempistica e URL pubblico."
+  },
+  "VSME-022": {
+    "label": "Obiettivi",
+    "hint": "Seleziona Sì/No se sono stati fissati obiettivi per monitorare attuazione e progressi e, in caso affermativo, li descrivi (tema, valore obiettivo, tempistica, responsabile).",
+    "guidance": "Guida VSME, parr. 78–80: registra ogni voce in modo strutturato: tema di sostenibilità affrontato, azione o impegno ed eventuali obiettivo, responsabile, tempistica e URL pubblico."
+  },
+  "VSME-023": {
+    "label": "Consumo di elettricità da fonti rinnovabili",
+    "hint": "Indica il consumo di elettricità rinnovabile in MWh, ad es. 120.5; se i dati sono disponibili, ripartito per fonte (solare, eolico ecc.), una riga per fonte.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-024": {
+    "label": "Consumo di elettricità da fonti non rinnovabili",
+    "hint": "Indica il consumo di elettricità non rinnovabile in MWh, ad es. 340.0; se i dati sono disponibili, ripartito per fonte.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-025": {
+    "label": "Consumo di combustibili rinnovabili",
+    "hint": "Indica il consumo di combustibili rinnovabili in MWh, ad es. 85.0; se i dati sono disponibili, ripartito per fonte (biomassa, biogas ecc.).",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-026": {
+    "label": "Consumo di combustibili non rinnovabili",
+    "hint": "Indica il consumo di combustibili non rinnovabili in MWh, ad es. 210.0 (dai documenti di acquisto); se i dati sono disponibili, ripartito per fonte.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-027": {
+    "label": "Totale energia rinnovabile",
+    "hint": "Indica il consumo totale di energia rinnovabile (elettricità e combustibili) in MWh, ad es. 205.5; se i dati sono disponibili, ripartito per fonte.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-028": {
+    "label": "Totale energia non rinnovabile",
+    "hint": "Indica il consumo totale di energia non rinnovabile (elettricità e combustibili) in MWh, ad es. 550.0; se i dati sono disponibili, ripartito per fonte.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-029": {
+    "label": "Consumo totale di energia",
+    "hint": "Indica il consumo totale di energia (rinnovabile e non) in MWh, ad es. 755.5, di solito da bollette e documenta dei combustibili.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-030": {
+    "label": "Emissioni lorde di GHG Scope 1",
+    "hint": "Indica le emissioni lorde Scope 1 in tCO2e da fonti di proprietà o controllate (ad es. combustione di carburanti), ad es. 45.2.",
+    "guidance": "Guida VSME, parr. 90–108: definisci il perimetro organizzativo, includi tutte le fonti dirette di emissione di proprietà o controllate, calcola CO2, CH4, N2O e altri gas pertinenti in tCO2e e conserva dati di attività, fonte dei fattori, base GWP e versione del calcolo."
+  },
+  "VSME-031": {
+    "label": "Emissioni Scope 2 (location-based)",
+    "hint": "Indica le emissioni Scope 2 in tCO2e da elettricità, calore, vapore o raffrescamento acquistati, calcolate con il fattore di rete (location-based), ad es. 30.8.",
+    "guidance": "Guida VSME, parr. 90–109: calcola elettricità, calore, vapore e raffrescamento acquistati con il metodo location-based; conserva consumi, area geografica, anno e fattore di rete. Lo Scope 2 market-based può essere riportato a parte se esistono dati contrattuali affidabili."
+  },
+  "VSME-032": {
+    "label": "Intensità di GHG",
+    "hint": "Di solito calcolata automaticamente: (Scope 1 + Scope 2 location-based) diviso il fatturato in EUR. Se calcoli a mano, inserisci il risultato in tCO2e/EUR.",
+    "guidance": "Guida VSME, parr. 90–103: dividi le emissioni lorde Scope 1 e Scope 2 location-based per il fatturato in EUR dello stesso periodo; non sottrarre compensazioni o assorbimenti."
+  },
+  "VSME-033": {
+    "label": "Emissioni di inquinanti in aria",
+    "hint": "Elenca ogni inquinante emesso in aria con quantità e unità (ad es. NOx, 1.2 t/anno), uno per riga; solo se questa rendicontazione è obbligatoria per te.",
+    "guidance": "Guida VSME, parr. 110–133: verifica prima che la rendicontazione degli inquinanti sia richiesta per legge o svolta in un sistema di gestione ambientale. Registra ogni inquinante separatamente con matrice, quantità, unità, impianto, metodo e periodo; è possibile rinviare a una fonte pubblica."
+  },
+  "VSME-034": {
+    "label": "Scarichi di inquinanti in acqua",
+    "hint": "Elenca ogni inquinante scaricato in acqua con quantità e unità (ad es. COD, 0.8 t/anno), uno per riga; solo se questa rendicontazione è obbligatoria per te.",
+    "guidance": "Guida VSME, parr. 110–133: verifica prima che la rendicontazione degli inquinanti sia richiesta per legge o svolta in un sistema di gestione ambientale. Registra ogni inquinante separatamente con matrice, quantità, unità, impianto, metodo e periodo; è possibile rinviare a una fonte pubblica."
+  },
+  "VSME-035": {
+    "label": "Emissioni di inquinanti nel suolo",
+    "hint": "Elenca ogni inquinante rilasciato nel suolo con quantità e unità, uno per riga; solo se questa rendicontazione è obbligatoria per te.",
+    "guidance": "Guida VSME, parr. 110–133: verifica prima che la rendicontazione degli inquinanti sia richiesta per legge o svolta in un sistema di gestione ambientale. Registra ogni inquinante separatamente con matrice, quantità, unità, impianto, metodo e periodo; è possibile rinviare a una fonte pubblica."
+  },
+  "VSME-036": {
+    "label": "Link pubblico alle informazioni sugli inquinanti",
+    "hint": "Indica l'URL pubblico in cui sono pubblicate le informazioni sugli inquinanti, se le rendiconti tramite una fonte pubblica.",
+    "guidance": "Guida VSME, parr. 110–133: verifica prima che la rendicontazione degli inquinanti sia richiesta per legge o svolta in un sistema di gestione ambientale. Registra ogni inquinante separatamente con matrice, quantità, unità, impianto, metodo e periodo; è possibile rinviare a una fonte pubblica."
+  },
+  "VSME-037": {
+    "label": "Siti in o vicino ad aree sensibili per la biodiversità",
+    "hint": "Indica con un numero intero quanti siti di proprietà, in locazione o gestiti si trovano in o vicino ad aree sensibili per la biodiversità riconosciute, ad es. 2.",
+    "guidance": "Guida VSME, parr. 134–137: verifica per ogni sito di proprietà, in locazione o gestito la vicinanza ad aree sensibili per la biodiversità riconosciute; indica numero di siti e superficie in ettari e conserva i dati geospaziali."
+  },
+  "VSME-038": {
+    "label": "Superficie dei siti in o vicino ad aree sensibili per la biodiversità",
+    "hint": "Indica la superficie totale dei siti del campo precedente in ettari (ha), da planimetrie o dati catastali, ad es. 12.5.",
+    "guidance": "Guida VSME, parr. 134–137: verifica per ogni sito di proprietà, in locazione o gestito la vicinanza ad aree sensibili per la biodiversità riconosciute; indica numero di siti e superficie in ettari e conserva i dati geospaziali."
+  },
+  "VSME-039": {
+    "label": "Uso totale del suolo",
+    "hint": "Indica la superficie totale di suolo usata dall'impresa in tutti i siti, in ettari (ha), ad es. 8.3. Usa ogni anno gli stessi perimetri.",
+    "guidance": "Guida VSME, parr. 138–141: calcola la superficie in ettari con perimetri dei siti e definizioni di uso del suolo coerenti; distingui superfici impermeabilizzate e orientate alla natura e documenta il metodo di mappatura."
+  },
+  "VSME-040": {
+    "label": "Superficie impermeabilizzata",
+    "hint": "Indica la superficie impermeabilizzata totale (edificata, pavimentata o comunque impermeabile) in ettari (ha), ad es. 3.1.",
+    "guidance": "Guida VSME, parr. 138–141: calcola la superficie in ettari con perimetri dei siti e definizioni di uso del suolo coerenti; distingui superfici impermeabilizzate e orientate alla natura e documenta il metodo di mappatura."
+  },
+  "VSME-041": {
+    "label": "Superficie orientata alla natura nel sito",
+    "hint": "Indica la superficie orientata alla natura (verde, ripristinata o gestita in modo naturale) nei tuoi siti, in ettari (ha), ad es. 1.8.",
+    "guidance": "Guida VSME, parr. 138–141: calcola la superficie in ettari con perimetri dei siti e definizioni di uso del suolo coerenti; distingui superfici impermeabilizzate e orientate alla natura e documenta il metodo di mappatura."
+  },
+  "VSME-042": {
+    "label": "Superficie orientata alla natura fuori sito",
+    "hint": "Indica la superficie orientata alla natura gestita fuori dai tuoi siti (ad es. aree di compensazione o ripristino), in ettari (ha), ad es. 0.5.",
+    "guidance": "Guida VSME, parr. 138–141: calcola la superficie in ettari con perimetri dei siti e definizioni di uso del suolo coerenti; distingui superfici impermeabilizzate e orientate alla natura e documenta il metodo di mappatura."
+  },
+  "VSME-043": {
+    "label": "Prelievo idrico totale",
+    "hint": "Indica il prelievo idrico totale da tutte le fonti in metri cubi (m³), da contatori o bollette, ad es. 1250.",
+    "guidance": "Guida VSME, parr. 142–149 e 154–158: ricava il prelievo idrico da contatori o bollette quando possibile; per locali condivisi usa un metodo di ripartizione documentato (superficie, dipendenti o altro criterio rappresentativo). Indica in m³."
+  },
+  "VSME-044": {
+    "label": "Prelievo idrico in aree ad alto stress idrico",
+    "hint": "Indica la quota del prelievo (m³) effettuata in siti situati in aree ad alto stress idrico, ad es. 400.",
+    "guidance": "Guida VSME, parr. 142–158: determina lo stress idrico di ogni sito con dati di un'autorità locale o di uno strumento riconosciuto e indica separatamente in m³ il prelievo nei siti ad alto stress idrico."
+  },
+  "VSME-045": {
+    "label": "Consumo idrico",
+    "hint": "Indica il consumo idrico in metri cubi (m³): prelievo meno acqua restituita dai processi produttivi significativi, ad es. 300.",
+    "guidance": "Guida VSME, parr. 150–155: calcola il consumo idrico come prelievo meno scarico per i processi produttivi significativi; indica in m³ e conserva le evidenze di contatori, bollette o stime."
+  },
+  "VSME-046": {
+    "label": "Applicazione dei principi dell'economia circolare",
+    "hint": "Seleziona Sì/No se l'impresa applica principi di economia circolare (prevenzione, riutilizzo, riparazione, riciclo) e descrivi brevemente come.",
+    "guidance": "Guida VSME, par. 159: spiega brevemente come i principi dell'economia circolare sono applicati a prodotti, materiali e rifiuti (prevenzione, riutilizzo, riparazione, riciclo o altre pratiche)."
+  },
+  "VSME-047": {
+    "label": "Rifiuti totali prodotti",
+    "hint": "Indica la massa totale dei rifiuti prodotti nel periodo in tonnellate, ripartita per tipo e trattamento, ad es. 45.2.",
+    "guidance": "Guida VSME, parr. 160–172: indica i rifiuti in tonnellate per tipo e modalità di trattamento. Distingua rifiuti pericolosi e non pericolosi, usa se possibile l'Elenco europeo dei rifiuti e riconcilia i totali con i formulari di trasporto."
+  },
+  "VSME-048": {
+    "label": "Rifiuti non pericolosi",
+    "hint": "Indica la massa dei rifiuti non pericolosi prodotti in tonnellate, da registra o formulari, ad es. 38.0.",
+    "guidance": "Guida VSME, parr. 160–172: indica i rifiuti in tonnellate per tipo e modalità di trattamento. Distingua rifiuti pericolosi e non pericolosi, usa se possibile l'Elenco europeo dei rifiuti e riconcilia i totali con i formulari di trasporto."
+  },
+  "VSME-049": {
+    "label": "Rifiuti pericolosi",
+    "hint": "Indica la massa dei rifiuti pericolosi prodotti in tonnellate, da registra o formulari, ad es. 7.2.",
+    "guidance": "Guida VSME, parr. 160–172: indica i rifiuti in tonnellate per tipo e modalità di trattamento. Distingua rifiuti pericolosi e non pericolosi, usa se possibile l'Elenco europeo dei rifiuti e riconcilia i totali con i formulari di trasporto."
+  },
+  "VSME-050": {
+    "label": "Rifiuti avviati a riciclo o riutilizzo",
+    "hint": "Indica la massa dei rifiuti avviati a riciclo o riutilizzo (non in discarica né inceneriti) in tonnellate, ad es. 20.5.",
+    "guidance": "Guida VSME, parr. 160–172: indica i rifiuti in tonnellate per tipo e modalità di trattamento. Distingua rifiuti pericolosi e non pericolosi, usa se possibile l'Elenco europeo dei rifiuti e riconcilia i totali con i formulari di trasporto."
+  },
+  "VSME-051": {
+    "label": "Flusso annuo di massa dei materiali usati",
+    "hint": "Indica la massa annua dei materiali rilevanti usati nella produzione in tonnellate (o altra unità di massa coerente), ad es. 150.0.",
+    "guidance": "Guida VSME, parr. 173–174: indica la massa annua dei materiali rilevanti se i flussi di materiali sono significativi; definisci processi e categorie inclusi e usa un'unità di massa coerente."
+  },
+  "VSME-052": {
+    "label": "Dipendenti a tempo indeterminato",
+    "hint": "Indica il numero di dipendenti a tempo indeterminato per numero di persone o FTE (una sola base, sempre la stessa), ad es. 24.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-053": {
+    "label": "Dipendenti a tempo determinato",
+    "hint": "Indica il numero di dipendenti a tempo determinato, sulla stessa base dei dipendenti a tempo indeterminato, ad es. 6.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-054": {
+    "label": "Dipendenti — donne",
+    "hint": "Indica il numero di dipendenti donne per numero di persone o FTE, dai registra del personale o paghe, ad es. 15.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-055": {
+    "label": "Dipendenti — uomini",
+    "hint": "Indica il numero di dipendenti uomini per numero di persone o FTE, dai registra del personale o paghe, ad es. 18.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-056": {
+    "label": "Dipendenti — altro genere o non indicato",
+    "hint": "Indica il numero di dipendenti con genere altro o non indicato, per numero di persone o FTE, ad es. 1.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-057": {
+    "label": "Dipendenti per paese del contratto",
+    "hint": "Indica il numero di dipendenti per paese del contratto di lavoro, per numero di persone o FTE, una riga per paese, ad es. 30.",
+    "guidance": "Guida VSME, parr. 175–181: usa sempre la stessa base — numero di persone o FTE — e riconcilia la ripartizione con l'organico totale. Applica le definizioni contrattuali nazionali e registra la data o il periodo di media."
+  },
+  "VSME-058": {
+    "label": "Tasso di turnover",
+    "hint": "Indica il tasso di turnover in percentuale: dipendenti usciti nel periodo diviso il numero medio di dipendenti, per 100, ad es. 12.5.",
+    "guidance": "Guida VSME, parr. 182–183: calcola il tasso di turnover come dipendenti usciti nel periodo diviso il numero medio di dipendenti, per 100; conserva numeratore e denominatore."
+  },
+  "VSME-059": {
+    "label": "Infortuni sul lavoro registrabili",
+    "hint": "Indica il numero di infortuni sul lavoro registrabili tra i dipendenti nel periodo, ad es. 3.",
+    "guidance": "Guida VSME, parr. 187–191: applica in modo coerente la definizione di «correlato al lavoro» al lavoro in sede, al telelavoro e ai viaggi di lavoro; conserva la classificazione dei casi e le evidenze."
+  },
+  "VSME-060": {
+    "label": "Tasso di infortuni registrabili",
+    "hint": "Indica il tasso: infortuni registrabili diviso le ore lavorate totali, per 200 000, ad es. 8.4.",
+    "guidance": "Guida VSME, parr. 184–186: calcola il tasso come infortuni registrabili diviso le ore lavorate totali, per 200 000; conserva registra degli infortuni e ore lavorate."
+  },
+  "VSME-061": {
+    "label": "Decessi per infortuni sul lavoro",
+    "hint": "Indica il numero di decessi di dipendenti dovuti a infortuni sul lavoro nel periodo, ad es. 0.",
+    "guidance": "Guida VSME, parr. 187–191: applica in modo coerente la definizione di «correlato al lavoro» al lavoro in sede, al telelavoro e ai viaggi di lavoro; conserva la classificazione dei casi e le evidenze."
+  },
+  "VSME-062": {
+    "label": "Decessi per malattie professionali",
+    "hint": "Indica il numero di decessi di dipendenti dovuti a malattie professionali nel periodo, ad es. 0.",
+    "guidance": "Guida VSME, parr. 187–191: applica in modo coerente la definizione di «correlato al lavoro» al lavoro in sede, al telelavoro e ai viaggi di lavoro; conserva la classificazione dei casi e le evidenze."
+  },
+  "VSME-063": {
+    "label": "Rispetto del salario minimo",
+    "hint": "Seleziona Sì/No se tutti i dipendenti ricevono almeno il salario minimo legale o contrattuale applicabile in ciascun paese.",
+    "guidance": "Guida VSME, parr. 192–193: confronta la retribuzione più bassa applicabile con il salario minimo legale o contrattuale di ciascun paese; se opportuno escluda tirocinanti e apprendisti."
+  },
+  "VSME-064": {
+    "label": "Divario retributivo di genere in percentuale",
+    "hint": "Indica il divario retributivo di genere in percentuale, sulla base della retribuzione oraria lorda media di donne e uomini, ad es. 9.5.",
+    "guidance": "Guida VSME, parr. 194–201: includi tutti i dipendenti, calcola la retribuzione oraria lorda media per genere e applica la formula VSME del divario percentuale; documenta le voci retributive incluse e la conversione dell'orario."
+  },
+  "VSME-065": {
+    "label": "Copertura della contrattazione collettiva",
+    "hint": "Indica la quota di dipendenti coperti da contratti collettivi in percentuale: coperti diviso totale, per 100, ad es. 65.0.",
+    "guidance": "Guida VSME, parr. 202–205: dividi i dipendenti coperti da contratti collettivi per il totale dei dipendenti e moltiplica per 100; conta tutti i coperti, iscritti o meno a un sindacato."
+  },
+  "VSME-066": {
+    "label": "Ore medie di formazione — donne",
+    "hint": "Indica le ore medie annue di formazione per dipendente donna, dai registra del personale o della formazione, ad es. 12.5.",
+    "guidance": "Guida VSME, parr. 192–205: calcola le ore medie di formazione dai registra paghe o del personale del periodo, con definizioni coerenti di dipendente e genere; conserva numeratore, denominatore e base di calcolo."
+  },
+  "VSME-067": {
+    "label": "Ore medie di formazione — uomini",
+    "hint": "Indica le ore medie annue di formazione per dipendente uomo, dai registra del personale o della formazione, ad es. 12.5.",
+    "guidance": "Guida VSME, parr. 192–205: calcola le ore medie di formazione dai registra paghe o del personale del periodo, con definizioni coerenti di dipendente e genere; conserva numeratore, denominatore e base di calcolo."
+  },
+  "VSME-068": {
+    "label": "Ore medie di formazione — altro genere o non indicato",
+    "hint": "Indica le ore medie annue di formazione per dipendente di genere altro o non indicato, dai registra del personale o della formazione, ad es. 12.5.",
+    "guidance": "Guida VSME, parr. 192–205: calcola le ore medie di formazione dai registra paghe o del personale del periodo, con definizioni coerenti di dipendente e genere; conserva numeratore, denominatore e base di calcolo."
+  },
+  "VSME-069": {
+    "label": "Condanne per corruzione e concussione",
+    "hint": "Indica il numero di condanne definitive per violazioni delle leggi anticorruzione nel periodo, ad es. 0.",
+    "guidance": "Guida VSME, parr. 206–209: considera le condanne definitive e le sanzioni pecuniarie obbligatorie ai sensi delle leggi anticorruzione nel periodo; conserva riferimenti normativi ed evidenze."
+  },
+  "VSME-070": {
+    "label": "Sanzioni per corruzione e concussione",
+    "hint": "Indica l'importo totale delle sanzioni per violazioni delle leggi anticorruzione in EUR, ad es. 5000.",
+    "guidance": "Guida VSME, parr. 206–209: considera le condanne definitive e le sanzioni pecuniarie obbligatorie ai sensi delle leggi anticorruzione nel periodo; conserva riferimenti normativi ed evidenze."
+  },
+  "VSME-071": {
+    "label": "Gruppi significativi di prodotti e servizi",
+    "hint": "Descrivi brevemente i gruppi significativi di prodotti e/o servizi offerti, in modo coerente con la descrizione del modello di business.",
+    "guidance": "La Guida al modulo completo (par. 212) non prevede un'istruzione dettagliata specifica. Descrivi il punto in modo conciso, con lo stesso perimetro e la stessa terminologia della descrizione del modello di business e della strategia."
+  },
+  "VSME-072": {
+    "label": "Mercati significativi",
+    "hint": "Descrivi brevemente i mercati significativi (paesi o regioni) in cui l'impresa opera.",
+    "guidance": "La Guida al modulo completo (par. 212) non prevede un'istruzione dettagliata specifica. Descrivi il punto in modo conciso, con lo stesso perimetro e la stessa terminologia della descrizione del modello di business e della strategia."
+  },
+  "VSME-073": {
+    "label": "Principali rapporti commerciali",
+    "hint": "Descrivi in poche frasi i principali rapporti con clienti e fornitori: numero stimato, settori e aree dei fornitori chiave e principali gruppi di clienti o canali di distribuzione.",
+    "guidance": "Guida al modulo completo, par. 212: descrivi i principali rapporti con clienti e fornitori; indica numero stimato, settori e aree geografiche dei fornitori chiave e i principali gruppi di clienti o canali di distribuzione."
+  },
+  "VSME-074": {
+    "label": "Legame della strategia con i temi di sostenibilità",
+    "hint": "Descrivi brevemente gli elementi della strategia aziendale legati ai temi di sostenibilità, con la stessa terminologia della descrizione del modello di business.",
+    "guidance": "La Guida al modulo completo (par. 212) non prevede un'istruzione dettagliata specifica. Descrivi il punto in modo conciso, con lo stesso perimetro e la stessa terminologia della descrizione del modello di business e della strategia."
+  },
+  "VSME-075": {
+    "label": "Descrizione dettagliata delle pratiche",
+    "hint": "Descrivi le pratiche di sostenibilità con il modello C2: per ciascuna tema, perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione.",
+    "guidance": "Guida al modulo completo, par. 213: usa il modello strutturato C2; collega ogni voce al tema di sostenibilità e registra perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione."
+  },
+  "VSME-076": {
+    "label": "Descrizione dettagliata delle politiche",
+    "hint": "Descrivi le politiche di sostenibilità con il modello C2: per ciascuna tema, perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione.",
+    "guidance": "Guida al modulo completo, par. 213: usa il modello strutturato C2; collega ogni voce al tema di sostenibilità e registra perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione."
+  },
+  "VSME-077": {
+    "label": "Descrizione dettagliata delle iniziative future",
+    "hint": "Descrivi le iniziative pianificate con il modello C2: per ciascuna tema, perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione.",
+    "guidance": "Guida al modulo completo, par. 213: usa il modello strutturato C2; collega ogni voce al tema di sostenibilità e registra perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione."
+  },
+  "VSME-078": {
+    "label": "Descrizione dettagliata degli obiettivi",
+    "hint": "Descrivi gli obiettivi di sostenibilità con il modello C2: per ciascuno tema, perimetro, scopo, livello responsabile, valore obiettivo, tempistica e stato di attuazione.",
+    "guidance": "Guida al modulo completo, par. 213: usa il modello strutturato C2; collega ogni voce al tema di sostenibilità e registra perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione."
+  },
+  "VSME-079": {
+    "label": "Livello più alto responsabile",
+    "hint": "Indica la funzione o l'organo (ad es. amministratore delegato, comitato di sostenibilità, consiglio di amministrazione) responsabile dell'attuazione di ogni pratica, politica o iniziativa.",
+    "guidance": "Guida al modulo completo, par. 213: usa il modello strutturato C2; collega ogni voce al tema di sostenibilità e registra perimetro, scopo, livello responsabile, obiettivo, tempistica e stato di attuazione."
+  },
+  "VSME-080": {
+    "label": "Scope 3, categoria 1: Beni e servizi acquistati",
+    "hint": "Indica le emissioni della categoria 1 («Beni e servizi acquistati») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-081": {
+    "label": "Scope 3, categoria 2: Beni strumentali",
+    "hint": "Indica le emissioni della categoria 2 («Beni strumentali») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-082": {
+    "label": "Scope 3, categoria 3: Attività legate a combustibili ed energia",
+    "hint": "Indica le emissioni della categoria 3 (attività legate a combustibili ed energia non incluse in Scope 1 o 2) in tCO2e, calcolate da quantità documentate e fattori di conversione, ad es. 18.2.",
+    "guidance": "Guida VSME, parr. 81–89: indica il consumo come energia finale in MWh. Conserva quantità e unità originali, converti con un potere calorifico o fattore documentato e non compensare l'energia consumata con quella prodotta."
+  },
+  "VSME-083": {
+    "label": "Scope 3, categoria 4: Trasporto e distribuzione a monte",
+    "hint": "Indica le emissioni della categoria 4 («Trasporto e distribuzione a monte») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-084": {
+    "label": "Scope 3, categoria 5: Rifiuti prodotti nelle attività",
+    "hint": "Indica le emissioni della categoria 5 («Rifiuti prodotti nelle attività») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-085": {
+    "label": "Scope 3, categoria 6: Viaggi di lavoro",
+    "hint": "Indica le emissioni della categoria 6 («Viaggi di lavoro») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-086": {
+    "label": "Scope 3, categoria 7: Pendolarismo dei dipendenti",
+    "hint": "Indica le emissioni della categoria 7 («Pendolarismo dei dipendenti») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-087": {
+    "label": "Scope 3, categoria 8: Beni in leasing a monte",
+    "hint": "Indica le emissioni della categoria 8 («Beni in leasing a monte») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-088": {
+    "label": "Scope 3, categoria 9: Trasporto e distribuzione a valle",
+    "hint": "Indica le emissioni della categoria 9 («Trasporto e distribuzione a valle») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-089": {
+    "label": "Scope 3, categoria 10: Lavorazione dei prodotti venduti",
+    "hint": "Indica le emissioni della categoria 10 («Lavorazione dei prodotti venduti») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-090": {
+    "label": "Scope 3, categoria 11: Uso dei prodotti venduti",
+    "hint": "Indica le emissioni della categoria 11 («Uso dei prodotti venduti») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-091": {
+    "label": "Scope 3, categoria 12: Trattamento di fine vita dei prodotti venduti",
+    "hint": "Indica le emissioni della categoria 12 («Trattamento di fine vita dei prodotti venduti») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-092": {
+    "label": "Scope 3, categoria 13: Beni in leasing a valle",
+    "hint": "Indica le emissioni della categoria 13 («Beni in leasing a valle») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-093": {
+    "label": "Scope 3, categoria 14: Franchising",
+    "hint": "Indica le emissioni della categoria 14 («Franchising») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-094": {
+    "label": "Scope 3, categoria 15: Investimenti",
+    "hint": "Indica le emissioni della categoria 15 («Investimenti») in tCO2e, ad es. 125.4 — solo se hai esaminato tutte le 15 categorie Scope 3 del GHG Protocol, hai ritenuto significativa questa e hai documentato il metodo di calcolo.",
+    "guidance": "Guida al modulo completo, parr. 214–215: esamina le 15 categorie Scope 3 del GHG Protocol, individua quelle significative, documenta il metodo di calcolo e riporta questa categoria solo nell'ambito di una valutazione Scope 3 completa e con perimetro chiaro."
+  },
+  "VSME-095": {
+    "label": "Anno obiettivo",
+    "hint": "Indica l'anno obiettivo di questo target di riduzione dei GHG (un solo anno, ad es. 2030).",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-096": {
+    "label": "Valore nell'anno obiettivo",
+    "hint": "Indica il valore di emissioni da raggiungere nell'anno obiettivo nell'unità del target (ad es. tCO2e), ad es. 850.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-097": {
+    "label": "Anno di base",
+    "hint": "Indica l'anno di base rispetto al quale si misurano i progressi (un solo anno, ad es. 2020).",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-098": {
+    "label": "Valore nell'anno di base",
+    "hint": "Indica il valore di emissioni nell'anno di base nella stessa unità del target (ad es. tCO2e), ad es. 1200.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-099": {
+    "label": "Unità del target",
+    "hint": "Seleziona l'unità del target, ad es. tCO2e (assoluto) o % di riduzione.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-100": {
+    "label": "Quota delle emissioni Scope 1 coperta dal target",
+    "hint": "Indica in percentuale quale quota delle emissioni Scope 1 è coperta dal target, ad es. 100.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-101": {
+    "label": "Quota delle emissioni Scope 2 coperta dal target",
+    "hint": "Indica in percentuale quale quota delle emissioni Scope 2 è coperta dal target, ad es. 100.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-102": {
+    "label": "Quota delle emissioni Scope 3 significative coperta dal target",
+    "hint": "Indica in percentuale quale quota delle emissioni Scope 3 significative è coperta dal target, ad es. 60.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-103": {
+    "label": "Azioni principali per raggiungere il target",
+    "hint": "Descrivi in poche frasi le principali azioni pianificate o in corso per raggiungere il target (ad es. passaggio a energia rinnovabile, elettrificazione della flotta).",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-104": {
+    "label": "Piano di transizione climatica",
+    "hint": "Se l'impresa opera in un settore ad alto impatto climatico, descrivi il piano di transizione: misure, investimenti e tappe principali.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-105": {
+    "label": "Se e quando sarà adottato un piano di transizione climatica",
+    "hint": "Seleziona «Sì» se intendi adottare un piano di transizione climatica (indica l'anno previsto nella descrizione), o «No» se non è previsto.",
+    "guidance": "Guida al modulo completo, parr. 216–227: definisci obiettivi assoluti per Scope 1 e Scope 2 e, se pertinente, per le emissioni Scope 3 significative; registra anno e valore di base, anno e valore obiettivo, unità, copertura e azioni principali. Tenga separate le emissioni lorde da assorbimenti, emissioni evitate e compensazioni."
+  },
+  "VSME-106": {
+    "label": "Pericoli climatici fisici",
+    "hint": "Indica i pericoli climatici fisici rilevanti per attivi, attività o catena del valore (ad es. alluvioni, calore, siccità), uno per riga.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-107": {
+    "label": "Eventi di transizione climatica",
+    "hint": "Indica i rischi di transizione rilevanti per l'attività (ad es. cambiamenti normativi, di mercato o tecnologici), uno per riga.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-108": {
+    "label": "Valutazione dell'esposizione di attivi, attività e catena del valore",
+    "hint": "Descrivi esposizione e sensibilità di attivi, attività e catena del valore ai pericoli e agli eventi individuati, con orizzonte temporale e azioni di adattamento.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-109": {
+    "label": "Valutazione della sensibilità",
+    "hint": "Descrivi quali pericoli climatici ed eventi di transizione riguardano l'impresa e quanto è esposta e sensibile.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-110": {
+    "label": "Orizzonte temporale del rischio",
+    "hint": "Seleziona l'orizzonte temporale dei pericoli ed eventi individuati: breve, medio o lungo termine.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-111": {
+    "label": "Azioni di adattamento",
+    "hint": "Descrivi le azioni di adattamento adottate o pianificate per i pericoli climatici e gli eventi di transizione individuati.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-112": {
+    "label": "Potenziali effetti finanziari negativi",
+    "hint": "Descrivi i potenziali effetti finanziari negativi dei pericoli climatici e degli eventi di transizione individuati sull'impresa.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-113": {
+    "label": "Livello di rischio",
+    "hint": "Seleziona il livello di rischio che descrive meglio l'esposizione dell'impresa.",
+    "guidance": "Guida al modulo completo, parr. 228–230: individua i pericoli climatici fisici e gli eventi di transizione, valuti esposizione e sensibilità di attivi, attività e catena del valore, assegnali a un orizzonte di breve, medio o lungo termine e documenta le azioni di adattamento."
+  },
+  "VSME-114": {
+    "label": "Rapporto donne/uomini a livello dirigenziale",
+    "hint": "Indica il rapporto tra dirigenti donne e uomini: numero di donne diviso numero di uomini, ad es. 0.8.",
+    "guidance": "Guida al modulo completo, parr. 231–236: dividi il numero di dirigenti donne per il numero di dirigenti uomini; indica il livello dirigenziale usato e conserva le evidenze del personale."
+  },
+  "VSME-115": {
+    "label": "Lavoratori autonomi senza personale che lavorano solo per l'impresa",
+    "hint": "Indica il numero di lavoratori autonomi senza personale proprio che lavorano esclusivamente per l'impresa, ad es. 5.",
+    "guidance": "Guida al modulo completo, parr. 231–236: determina il numero secondo le definizioni della guida e conserva le evidenze del personale."
+  },
+  "VSME-116": {
+    "label": "Lavoratori tramite agenzia",
+    "hint": "Indica il numero di lavoratori temporanei tramite agenzia impiegati nel periodo, ad es. 12.",
+    "guidance": "Guida al modulo completo, parr. 231–236: determina il numero secondo le definizioni della guida e conserva le evidenze del personale."
+  },
+  "VSME-117": {
+    "label": "Codice di condotta o politica sui diritti umani per la forza lavoro propria",
+    "hint": "Seleziona «Sì» se l'impresa ha un codice di condotta o una politica sui diritti umani approvati per la propria forza lavoro, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-118": {
+    "label": "La politica copre il lavoro minorile",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica sul lavoro minorile, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-119": {
+    "label": "La politica copre il lavoro forzato",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica sul lavoro forzato, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-120": {
+    "label": "La politica copre la tratta di esseri umani",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica sulla tratta di esseri umani, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-121": {
+    "label": "La politica copre la discriminazione",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica sulla discriminazione, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-122": {
+    "label": "La politica copre la prevenzione degli infortuni",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica di prevenzione degli infortuni, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-123": {
+    "label": "La politica copre altri temi dei diritti umani",
+    "hint": "Seleziona «Sì» se l'impresa ha una politica su altri temi dei diritti umani non elencati sopra, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-124": {
+    "label": "Meccanismo di reclamo per la forza lavoro propria",
+    "hint": "Seleziona «Sì» se l'impresa ha un meccanismo di gestione dei reclami per la propria forza lavoro, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 237: rispondi Sì o No sulla base di un codice di condotta approvato, di una politica sui diritti umani, di un processo di due diligence o di una procedura di reclamo; registra responsabile del documento, data di approvazione e ambito."
+  },
+  "VSME-125": {
+    "label": "Casi confermati di lavoro minorile",
+    "hint": "Seleziona «Sì» se nel periodo ci sono stati casi confermati di lavoro minorile nella forza lavoro propria, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-126": {
+    "label": "Casi confermati di lavoro forzato",
+    "hint": "Seleziona «Sì» se nel periodo ci sono stati casi confermati di lavoro forzato nella forza lavoro propria, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-127": {
+    "label": "Casi confermati di tratta di esseri umani",
+    "hint": "Seleziona «Sì» se nel periodo ci sono stati casi confermati di tratta di esseri umani nella forza lavoro propria, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-128": {
+    "label": "Casi confermati di discriminazione",
+    "hint": "Seleziona «Sì» se nel periodo ci sono stati casi confermati di discriminazione nella forza lavoro propria, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-129": {
+    "label": "Altri gravi incidenti relativi ai diritti umani",
+    "hint": "Seleziona «Sì» se nel periodo ci sono stati altri gravi incidenti confermati relativi ai diritti umani, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-130": {
+    "label": "Azioni sugli incidenti",
+    "hint": "Descrivi le azioni e le misure correttive adottate per gli incidenti confermati relativi ai diritti umani.",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-131": {
+    "label": "Incidenti riguardanti i lavoratori della catena del valore",
+    "hint": "Seleziona «Sì» se ci sono stati gravi incidenti confermati relativi ai diritti umani riguardanti i lavoratori della catena del valore, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-132": {
+    "label": "Incidenti riguardanti le comunità interessate",
+    "hint": "Seleziona «Sì» se ci sono stati gravi incidenti confermati relativi ai diritti umani riguardanti le comunità interessate, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-133": {
+    "label": "Incidenti riguardanti consumatori e utilizzatori finali",
+    "hint": "Seleziona «Sì» se ci sono stati gravi incidenti confermati relativi ai diritti umani riguardanti consumatori o utilizzatori finali, altrimenti «No».",
+    "guidance": "Guida al modulo completo, par. 238: un caso è confermato se supportato da un'azione legale o da un reclamo registrato tramite un meccanismo formale; descrivi le misure correttive se richiesto."
+  },
+  "VSME-134": {
+    "label": "Ricavi da armi controverse",
+    "hint": "Indica i ricavi dell'impresa derivanti da armi controverse nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-135": {
+    "label": "Ricavi da coltivazione e produzione di tabacco",
+    "hint": "Indica i ricavi dell'impresa derivanti da coltivazione e produzione di tabacco nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-136": {
+    "label": "Ricavi da combustibili fossili — carbone",
+    "hint": "Indica i ricavi dell'impresa derivanti da combustibili fossili (carbone) nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-137": {
+    "label": "Ricavi da combustibili fossili — petrolio",
+    "hint": "Indica i ricavi dell'impresa derivanti da combustibili fossili (petrolio) nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-138": {
+    "label": "Ricavi da combustibili fossili — gas",
+    "hint": "Indica i ricavi dell'impresa derivanti da combustibili fossili (gas) nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-139": {
+    "label": "Ricavi dalla produzione di sostanze chimiche (pesticidi, agrochimici)",
+    "hint": "Indica i ricavi dell'impresa derivanti da produzione di sostanze chimiche come pesticidi e prodotti agrochimici nel periodo di rendicontazione, in EUR (0 se nessuno).",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera nel settore, quindi indica i ricavi dello stesso esercizio, riconciliati con il fatturato totale."
+  },
+  "VSME-140": {
+    "label": "Esclusione dagli indici di riferimento UE allineati con l'accordo di Parigi",
+    "hint": "Seleziona «Sì» se l'impresa è esclusa dagli indici di riferimento UE allineati con l'accordo di Parigi secondo i criteri applicabili, altrimenti «No».",
+    "guidance": "Guida al modulo completo, parr. 239–241: verifica con le definizioni giuridiche e i codici NACE indicati se l'impresa opera in settori che comportano l'esclusione e indica se è esclusa dagli indici di riferimento UE allineati con l'accordo di Parigi."
+  },
+  "VSME-141": {
+    "label": "Diversità di genere nel massimo organo di governo",
+    "hint": "Indica il rapporto di genere nel massimo organo di governo: numero di donne diviso numero di uomini, in percentuale, ad es. 40.",
+    "guidance": "Guida al modulo completo, parr. 242–244: individua il massimo organo di governo e calcola il rapporto di genere come numero di donne diviso numero di uomini; conserva il numero dei membri e la data."
+  },
+  "ESRS-001": {
+    "label": "Disposizioni transitorie (phase-in) applicate; temi rilevanti, politiche, azioni, obiettivi e metriche mantenuti durante il phase-in",
+    "hint": "Descrivi quali disposizioni transitorie applichi e quali temi rilevanti, politiche, azioni, obiettivi e metriche continui a rendicontare durante il phase-in."
+  },
+  "ESRS-002": {
+    "label": "Quota della remunerazione variabile legata alla sostenibilità, caratteristiche e approvazione",
+    "hint": "Indica la quota della remunerazione variabile legata alla sostenibilità in percentuale e descrivi come funziona il sistema e chi lo ha approvato."
+  },
+  "ESRS-003": {
+    "label": "Mappa degli elementi principali della due diligence con rinvii alle informative",
+    "hint": "Associa gli elementi principali del processo di due diligence alle informative in cui ciascuno è descritto."
+  },
+  "ESRS-004": {
+    "label": "Processi, rischi, controlli, rilievi e misure correttive",
+    "hint": "Descrivi processi, rischi principali, controlli, rilievi e misure correttive della rendicontazione di sostenibilità."
+  },
+  "ESRS-005": {
+    "label": "Stakeholder chiave, coinvolgimento, interessi e influenza sulla strategia",
+    "hint": "Indica gli stakeholder chiave, come li coinvolgi, i loro interessi e punti di vista e come influenzano la strategia."
+  },
+  "ESRS-006": {
+    "label": "Impatti, rischi e opportunità rilevanti; effetti finanziari attuali e attesi e resilienza",
+    "hint": "Descrivi impatti, rischi e opportunità rilevanti, i loro effetti finanziari attuali e attesi (importi o intervalli) e la resilienza di strategia e modello di business."
+  },
+  "ESRS-007": {
+    "label": "Metodologia di individuazione e valutazione, soglie, input, stakeholder e processo decisionale",
+    "hint": "Descrivi come individua e valuta impatti, rischi e opportunità: metodo, soglie, input, stakeholder coinvolti e processo decisionale."
+  },
+  "ESRS-008": {
+    "label": "Elenco di impatti, rischi e opportunità rilevanti, temi e obblighi di informativa inclusi o omessi, con motivazione",
+    "hint": "Elenca impatti, rischi e opportunità rilevanti e i temi e gli obblighi di informativa inclusi o omessi, con le motivazioni."
+  },
+  "ESRS-009": {
+    "label": "Definizione, metodologia, ipotesi, fonti dei dati e convalida delle metriche specifiche dell'impresa",
+    "hint": "Per ogni metrica specifica dell'impresa indica definizione, metodologia, ipotesi, fonti dei dati e modalità di convalida."
+  },
+  "ESRS-010": {
+    "label": "Politiche di mitigazione e adattamento ai cambiamenti climatici",
+    "hint": "Descrivi le politiche di mitigazione e adattamento ai cambiamenti climatici: cosa coprono e chi ne è responsabile."
+  },
+  "ESRS-011": {
+    "label": "Azioni per leva di decarbonizzazione, risorse assegnate, riduzioni di GHG ottenute e attese",
+    "hint": "Indica la riduzione delle emissioni ottenuta o attesa in tCO2e e descrivi le azioni per leva di decarbonizzazione e le risorse assegnate."
+  },
+  "ESRS-012": {
+    "label": "Risultati dell'analisi di resilienza, capacità di adattare strategia e modello di business, orizzonti temporali",
+    "hint": "Descrivi risultati e implicazioni dell'analisi di resilienza climatica, la capacità di adattare strategia e modello di business e gli orizzonti e scenari considerati."
+  },
+  "ESRS-013": {
+    "label": "Assorbimenti e stoccaggio di GHG nelle attività proprie e nella catena del valore; crediti di carbonio esterni; metodologie",
+    "hint": "Indica in tCO2e assorbimenti e stoccaggio di GHG nelle attività proprie e nella catena del valore, i crediti di carbonio esterni alla catena e le metodologie."
+  },
+  "ESRS-014": {
+    "label": "Tipo, ambito, prezzo e volumi della determinazione interna del prezzo del carbonio; coerenza con il bilancio",
+    "hint": "Descrivi il prezzo interno del carbonio applicato: tipo, ambito, prezzo per tCO2e, volumi coperti e coerenza con il bilancio."
+  },
+  "ESRS-015": {
+    "label": "Attivi e ricavi esposti a rischi fisici e di transizione e opportunità; effetti attuali e attesi",
+    "hint": "Descrivi attivi e ricavi esposti a rischi climatici fisici e di transizione e le opportunità; indica gli effetti finanziari attuali e attesi (importi o intervalli)."
+  },
+  "ESRS-016": {
+    "label": "Politiche su inquinamento, incidenti, sostanze preoccupanti (SoC/SVHC) e microplastiche",
+    "hint": "Descrivi le politiche su inquinamento, incidenti, sostanze preoccupanti ed estremamente preoccupanti (SoC/SVHC) e microplastiche."
+  },
+  "ESRS-017": {
+    "label": "Azioni e risorse principali per prevenire, ridurre e bonificare l'inquinamento",
+    "hint": "Descrivi le principali azioni per prevenire, ridurre e bonificare l'inquinamento e le risorse dedicate, inclusi gli importi."
+  },
+  "ESRS-018": {
+    "label": "Obiettivi e progressi per inquinante, matrice e sito",
+    "hint": "Descrivi gli obiettivi sull'inquinamento per inquinante, matrice e sito e i progressi (quantità e percentuali)."
+  },
+  "ESRS-019": {
+    "label": "Quantità prodotte, usate, acquistate, emesse o in uscita dai siti per classe di pericolo",
+    "hint": "Indica le quantità di sostanze preoccupanti ed estremamente preoccupanti prodotte, usate, acquistate, emesse o in uscita dai siti, per classe di pericolo, in kg o t."
+  },
+  "ESRS-020": {
+    "label": "Politiche su prelievo, consumo, scarico idrico e aree a stress idrico",
+    "hint": "Descrivi le politiche su prelievo, consumo e scarico idrico, in particolare nelle aree a stress idrico."
+  },
+  "ESRS-021": {
+    "label": "Azioni e risorse principali, in particolare nelle aree a stress idrico",
+    "hint": "Descrivi le principali azioni sull'acqua e le risorse dedicate, in particolare nelle aree a stress idrico."
+  },
+  "ESRS-022": {
+    "label": "Obiettivi su prelievo, consumo, scarico e aree a stress idrico",
+    "hint": "Descrivi gli obiettivi su prelievo, consumo, scarico e aree a stress idrico (m³ o %) e i progressi."
+  },
+  "ESRS-023": {
+    "label": "Compatibilità di strategia e modello di business con gli obiettivi di biodiversità; piano, dipendenze e resilienza",
+    "hint": "Descrivi quanto strategia e modello di business sono compatibili con gli obiettivi di biodiversità, il piano di transizione, le dipendenze dagli ecosistemi e la resilienza."
+  },
+  "ESRS-024": {
+    "label": "Politiche su fattori, impatti, dipendenze e siti sensibili",
+    "hint": "Descrivi le politiche sui fattori di perdita di biodiversità, gli impatti, le dipendenze e i siti sensibili."
+  },
+  "ESRS-025": {
+    "label": "Gerarchia di mitigazione, ripristino e compensazioni, azioni e risorse",
+    "hint": "Descrivi le azioni per la biodiversità secondo la gerarchia di mitigazione, il ripristino e le compensazioni e le risorse dedicate (importi, superfici)."
+  },
+  "ESRS-026": {
+    "label": "Obiettivi, soglie ecologiche e base scientifica, area geografica e compensazioni",
+    "hint": "Descrivi gli obiettivi di biodiversità, le soglie ecologiche e la loro base scientifica, l'ambito geografico e l'uso di compensazioni."
+  },
+  "ESRS-027": {
+    "label": "Politiche su flussi di risorse in entrata e in uscita, ecodesign e gerarchia dei rifiuti",
+    "hint": "Descrivi le politiche su flussi di risorse in entrata e in uscita, ecodesign e gerarchia dei rifiuti."
+  },
+  "ESRS-028": {
+    "label": "Azioni e risorse principali per la circolarità e la prevenzione dei rifiuti",
+    "hint": "Descrivi le principali azioni per la circolarità e la prevenzione dei rifiuti e le risorse dedicate."
+  },
+  "ESRS-029": {
+    "label": "Obiettivi su materiali circolari, durabilità e riciclabilità dei prodotti e rifiuti",
+    "hint": "Descrivi gli obiettivi sulla quota di materiali circolari, sulla durabilità e riciclabilità dei prodotti e sui rifiuti (% o t) e i progressi."
+  },
+  "ESRS-030": {
+    "label": "Obiettivi su impatti, rischi e opportunità rilevanti relativi alla forza lavoro",
+    "hint": "Descrivi gli obiettivi su impatti, rischi e opportunità rilevanti relativi alla forza lavoro propria e i progressi."
+  },
+  "ESRS-031": {
+    "label": "Dipendenti senza protezione sociale per malattia, disoccupazione, infortunio o disabilità e maternità",
+    "hint": "Indica numero o quota dei dipendenti non coperti da protezione sociale per malattia, disoccupazione, infortunio sul lavoro o disabilità e maternità."
+  },
+  "ESRS-032": {
+    "label": "Percentuale di dipendenti con disabilità (nel rispetto dei limiti di legge)",
+    "hint": "Indica la percentuale di dipendenti con disabilità, se la legge consente di comunicarla."
+  },
+  "ESRS-033": {
+    "label": "Dipendenti aventi diritto e fruizione dei congedi familiari per genere",
+    "hint": "Indica numero o quota dei dipendenti aventi diritto a congedi familiari e la quota di chi li ha fruiti, per genere."
+  },
+  "ESRS-034": {
+    "label": "Politiche, gruppi coperti e impegni sui diritti umani",
+    "hint": "Descrivi le politiche sui lavoratori della catena del valore, i gruppi coperti e gli impegni sui diritti umani."
+  },
+  "ESRS-035": {
+    "label": "Processi di coinvolgimento, canali di reclamo, protezione da ritorsioni e rimedi",
+    "hint": "Descrivi come coinvolgi i lavoratori della catena del valore, quali canali di reclamo esistono e come sono garantiti protezione da ritorsioni e rimedi."
+  },
+  "ESRS-036": {
+    "label": "Azioni, risorse, incidenti gravi ed efficacia",
+    "hint": "Descrivi azioni e risorse relative ai lavoratori della catena del valore, gli incidenti gravi (numero, importi) e l'efficacia delle misure."
+  },
+  "ESRS-037": {
+    "label": "Obiettivi qualitativi e quantitativi e progressi",
+    "hint": "Descrivi gli obiettivi qualitativi e quantitativi relativi ai lavoratori della catena del valore e i progressi."
+  },
+  "ESRS-038": {
+    "label": "Politiche, gruppi e luoghi coperti, compresi i popoli indigeni",
+    "hint": "Descrivi le politiche sulle comunità interessate, i gruppi e i luoghi coperti, compresi i popoli indigeni."
+  },
+  "ESRS-039": {
+    "label": "Coinvolgimento, canali di reclamo, protezione e rimedi",
+    "hint": "Descrivi come coinvolgi le comunità interessate, quali canali di reclamo esistono e come sono garantiti protezione e rimedi."
+  },
+  "ESRS-040": {
+    "label": "Azioni e risorse principali, impatti e incidenti gravi, efficacia",
+    "hint": "Descrivi le principali azioni e risorse relative alle comunità interessate, gli impatti e gli incidenti gravi (numero, importi) e l'efficacia."
+  },
+  "ESRS-041": {
+    "label": "Obiettivi qualitativi e quantitativi e progressi",
+    "hint": "Descrivi gli obiettivi qualitativi e quantitativi relativi alle comunità interessate e i progressi."
+  },
+  "ESRS-042": {
+    "label": "Politiche e gruppi coperti su informazione, sicurezza e inclusione",
+    "hint": "Descrivi le politiche su consumatori e utilizzatori finali: informazione, sicurezza, inclusione e gruppi coperti."
+  },
+  "ESRS-043": {
+    "label": "Coinvolgimento, canali di reclamo, protezione e rimedi",
+    "hint": "Descrivi come coinvolgi consumatori e utilizzatori finali, quali canali di reclamo esistono e come sono garantiti protezione e rimedi."
+  },
+  "ESRS-044": {
+    "label": "Azioni e risorse, incidenti gravi ed efficacia",
+    "hint": "Descrivi azioni e risorse relative a consumatori e utilizzatori finali, gli incidenti gravi (numero, importi) e l'efficacia."
+  },
+  "ESRS-045": {
+    "label": "Obiettivi qualitativi e quantitativi e progressi",
+    "hint": "Descrivi gli obiettivi qualitativi e quantitativi relativi a consumatori e utilizzatori finali e i progressi."
+  },
+  "ESRS-046": {
+    "label": "Cultura aziendale, anticorruzione, segnalanti, benessere animale e politiche verso i fornitori",
+    "hint": "Descrivi le politiche su cultura aziendale, anticorruzione, tutela dei segnalanti, benessere animale e fornitori."
+  },
+  "ESRS-047": {
+    "label": "Formazione, indagini, gestione dei fornitori e misure correttive: azioni e risorse",
+    "hint": "Descrivi azioni e risorse di condotta aziendale: formazione, indagini, gestione dei fornitori e misure correttive (numero, %)."
+  },
+  "ESRS-048": {
+    "label": "Obiettivi e progressi sulle questioni rilevanti di condotta aziendale",
+    "hint": "Descrivi gli obiettivi sulle questioni rilevanti di condotta aziendale e i progressi."
+  },
+  "ESRS-049": {
+    "label": "Contributi politici, attività di lobbying, temi e rappresentanti responsabili",
+    "hint": "Indica i contributi politici (importi) e descrivi le attività di lobbying, i temi e i rappresentanti responsabili dell'impresa."
+  },
+  "ESRS-050": {
+    "label": "Tempi medi di pagamento, condizioni standard e ritardi, in particolare verso le PMI",
+    "hint": "Indica i tempi medi di pagamento in giorni, le condizioni standard e la quota di pagamenti in ritardo, in particolare verso le PMI."
+  }
+}

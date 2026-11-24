@@ -1,0 +1,766 @@
+{
+  "VSME-001": {
+    "hint": "Izberite OPTION A (samo osnovni modul) ali OPTION B (osnovni in celoviti modul) za to poročevalsko obdobje.",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Izberite OPTION A (samo osnovni modul) ali OPTION B (osnovni in celoviti modul) ter shranite izbiro za poročevalsko obdobje."
+  },
+  "VSME-002": {
+    "hint": "Navedite vsako razkritje, izpuščeno zaradi zaupnih ali občutljivih informacij, vsako v svojo vrstico.",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Navedite vsako izpuščeno razkritje in dokumentirajte, da je izpustitev posledica zaupnih ali občutljivih informacij."
+  },
+  "VSME-003": {
+    "hint": "Izberite, ali poročilo zajema samo podjetje ali podjetje skupaj s hčerinskimi družbami (konsolidirano).",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Navedite, ali poročilo zajema samo podjetje ali podjetje in njegove hčerinske družbe, ter to podlago dosledno uporabljajte v celotnem poročilu."
+  },
+  "VSME-004": {
+    "hint": "Navedite vse hčerinske družbe, vključene v konsolidirano poročilo, vsako v svojo vrstico (samo če ste izbrali konsolidirano poročanje).",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Pri konsolidiranem poročilu navedite vsako vključeno hčerinsko družbo in njen registrirani naslov ter jo povežite s poročevalskim obsegom."
+  },
+  "VSME-005": {
+    "hint": "Vpišite registrirani naslov vsake zgoraj navedene hčerinske družbe, npr. ulica, poštna številka, kraj, država.",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Pri konsolidiranem poročilu navedite vsako vključeno hčerinsko družbo in njen registrirani naslov ter jo povežite s poročevalskim obsegom."
+  },
+  "VSME-006": {
+    "hint": "Izberite pravno obliko podjetja, kot je registrirana po nacionalni zakonodaji (npr. d.o.o., d.d., s.p.).",
+    "guidance": "Navodilo, odst. 68: izberite pravno obliko, priznano po nacionalni zakonodaji države podjetja."
+  },
+  "VSME-007": {
+    "hint": "Izberite kodo NACE za glavno dejavnost podjetja, na najbolj podrobni razpoložljivi ravni; po potrebi dodajte še druge kode, vsako v svojo vrstico.",
+    "guidance": "Navodilo, odst. 69–70: izberite kodo NACE, ki najbolje predstavlja glavno dejavnost podjetja; uporabite najbolj podrobno razpoložljivo raven in po potrebi dodajte dodatne kode."
+  },
+  "VSME-008": {
+    "hint": "Vpišite bilančno vsoto v EUR za isto poročevalsko obdobje kot to poročilo, iz računovodskih izkazov, npr. 1.250.000.",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Uporabite vrednost za isto poročevalsko obdobje kot trajnostno poročilo, navedite valuto in jo uskladite z računovodskimi izkazi."
+  },
+  "VSME-009": {
+    "hint": "Vpišite prihodke od prodaje (čisti prihodki od prodaje) v EUR za isto poročevalsko obdobje, iz računovodskih izkazov, npr. 3.400.000.",
+    "guidance": "V navodilih za osnovni modul za to podatkovno točko ni posebnega navodila za izpolnjevanje. Uporabite vrednost za isto poročevalsko obdobje kot trajnostno poročilo, navedite valuto in jo uskladite z računovodskimi izkazi."
+  },
+  "VSME-010": {
+    "hint": "Vpišite število zaposlenih po številu oseb ali ekvivalentu polnega delovnega časa (FTE), npr. 42, in navedite uporabljeno metodo.",
+    "guidance": "Navodilo, odst. 71–72: navedite, ali je vrednost izražena v številu oseb ali FTE. FTE izračunajte iz pogodbenega delovnega časa in zabeležite referenčni datum ali obdobje povprečenja."
+  },
+  "VSME-011": {
+    "hint": "Vpišite državo, v kateri podjetje opravlja svojo glavno dejavnost, npr. Slovenija.",
+    "guidance": "Navodilo, odst. 73: za vsako pomembno lokacijo navedite podatke, vključno z naslovom, poštno številko, krajem, državo in koordinatami."
+  },
+  "VSME-012": {
+    "hint": "Navedite lokacijo vsakega pomembnega sredstva (naslov, poštna številka, kraj, država), vsako v svojo vrstico.",
+    "guidance": "Navodilo, odst. 73: za vsako pomembno lokacijo navedite podatke, vključno z naslovom, poštno številko, krajem, državo in koordinatami."
+  },
+  "VSME-013": {
+    "hint": "Vpišite koordinate (zemljepisna širina, dolžina) za vsako lokacijo v lasti, najemu ali upravljanju, npr. 46,0569, 14,5058.",
+    "guidance": "Navodilo, odst. 74–76: geolokacijo shranite kot prostorsko točko za posamezno lokacijo ali kot koordinate poligona za območje; zajemite vse lokacije v lasti, najemu ali upravljanju."
+  },
+  "VSME-014": {
+    "hint": "Vpišite ime certifikata ali oznake, povezane s trajnostnostjo, npr. EU Ecolabel.",
+    "guidance": "Navodilo, odst. 77: zabeležite ime certifikata ali oznake, izdajatelja, datum in, kjer je relevantno, oceno; hranite dokazila."
+  },
+  "VSME-015": {
+    "hint": "Vpišite naziv organizacije, ki je izdala certifikat ali oznako, npr. certifikacijski organ.",
+    "guidance": "Navodilo, odst. 77: zabeležite ime certifikata ali oznake, izdajatelja, datum in, kjer je relevantno, oceno; hranite dokazila."
+  },
+  "VSME-016": {
+    "hint": "Vpišite datum izdaje ali zadnje obnovitve certifikata ali oznake.",
+    "guidance": "Navodilo, odst. 77: zabeležite ime certifikata ali oznake, izdajatelja, datum in, kjer je relevantno, oceno; hranite dokazila."
+  },
+  "VSME-017": {
+    "hint": "Vpišite oceno ali rezultat, če ga certifikat ali oznaka vsebuje, npr. \"Gold\" ali \"85/100\".",
+    "guidance": "Navodilo, odst. 77: zabeležite ime certifikata ali oznake, izdajatelja, datum in, kjer je relevantno, oceno; hranite dokazila."
+  },
+  "VSME-018": {
+    "hint": "Izberite Da/Ne, ali ima podjetje vzpostavljene trajnostne prakse, nato jih opišite (obravnavano vprašanje, ukrep, cilj, časovni okvir).",
+    "guidance": "Navodilo, odst. 78–80: za trajnostne prakse uporabite strukturiran zapis, opredelite obravnavano trajnostno vprašanje, opišite ukrep ali zavezo ter zabeležite morebitni cilj, odgovorno osebo, časovni okvir in javni URL."
+  },
+  "VSME-019": {
+    "hint": "Izberite Da/Ne, ali ima podjetje vzpostavljene trajnostne politike, nato jih opišite (obravnavano vprašanje, ukrep, cilj, časovni okvir).",
+    "guidance": "Navodilo, odst. 78–80: za trajnostne politike uporabite strukturiran zapis, opredelite obravnavano trajnostno vprašanje, opišite ukrep ali zavezo ter zabeležite morebitni cilj, odgovorno osebo, časovni okvir in javni URL."
+  },
+  "VSME-020": {
+    "hint": "Izberite Da/Ne, ali so trajnostne politike javno dostopne, in po potrebi navedite javni URL.",
+    "guidance": "Navodilo, odst. 78–80: za javno dostopnost trajnostnih politik uporabite strukturiran zapis, opredelite obravnavano trajnostno vprašanje, opišite ukrep ali zavezo ter zabeležite morebitni cilj, odgovorno osebo, časovni okvir in javni URL."
+  },
+  "VSME-021": {
+    "hint": "Izberite Da/Ne, ali ima podjetje prihodnje trajnostne pobude ali v prihodnost usmerjene načrte, nato jih opišite (vprašanje, ukrep, cilj, časovni okvir).",
+    "guidance": "Navodilo, odst. 78–80: za prihodnje trajnostne pobude ali v prihodnost usmerjene načrte uporabite strukturiran zapis, opredelite obravnavano trajnostno vprašanje, opišite ukrep ali zavezo ter zabeležite morebitni cilj, odgovorno osebo, časovni okvir in javni URL."
+  },
+  "VSME-022": {
+    "hint": "Izberite Da/Ne, ali je podjetje določilo cilje za spremljanje izvajanja in napredka, nato jih opišite (vprašanje, ciljna vrednost, časovni okvir, odgovorna oseba).",
+    "guidance": "Navodilo, odst. 78–80: za cilje za spremljanje izvajanja in napredka uporabite strukturiran zapis, opredelite obravnavano trajnostno vprašanje, opišite ukrep ali zavezo ter zabeležite morebitni cilj, odgovorno osebo, časovni okvir in javni URL."
+  },
+  "VSME-023": {
+    "hint": "Vpišite porabo električne energije iz obnovljivih virov v MWh, npr. 120,5; če je podatek dosegljiv, jo razčlenite po viru energije (npr. sončna, vetrna), z eno vrstico na vir.",
+    "guidance": "Navodilo, odst. 81–89: porabo električne energije iz obnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-024": {
+    "hint": "Vpišite porabo električne energije iz neobnovljivih virov v MWh, npr. 340,0; če je podatek dosegljiv, jo razčlenite po viru energije, z eno vrstico na vir.",
+    "guidance": "Navodilo, odst. 81–89: porabo električne energije iz neobnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-025": {
+    "hint": "Vpišite porabo goriv iz obnovljivih virov v MWh, npr. 85,0; če je podatek dosegljiv, jo razčlenite po viru energije (npr. biomasa, bioplin), z eno vrstico na vir.",
+    "guidance": "Navodilo, odst. 81–89: porabo goriv iz obnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-026": {
+    "hint": "Vpišite porabo goriv iz neobnovljivih virov v MWh, npr. 210,0 (iz evidenc nabave goriva); če je podatek dosegljiv, jo razčlenite po viru energije.",
+    "guidance": "Navodilo, odst. 81–89: porabo goriv iz neobnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-027": {
+    "hint": "Vpišite skupno porabo energije iz obnovljivih virov (elektrika in gorivo skupaj) v MWh, npr. 205,5; če je podatek dosegljiv, jo razčlenite po viru energije.",
+    "guidance": "Navodilo, odst. 81–89: skupno porabo energije iz obnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-028": {
+    "hint": "Vpišite skupno porabo energije iz neobnovljivih virov (elektrika in gorivo skupaj) v MWh, npr. 550,0; če je podatek dosegljiv, jo razčlenite po viru energije.",
+    "guidance": "Navodilo, odst. 81–89: skupno porabo energije iz neobnovljivih virov poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-029": {
+    "hint": "Vpišite skupno porabo energije (obnovljivi in neobnovljivi viri skupaj) v MWh, npr. 755,5, običajno iz računov za energente in evidenc porabe goriva.",
+    "guidance": "Navodilo, odst. 81–89: skupno porabo energije poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kalorično vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-030": {
+    "hint": "Vpišite bruto emisije TGP obsega 1 v tCO2e iz virov v lasti ali pod nadzorom podjetja (npr. zgorevanje goriva), npr. 45,2.",
+    "guidance": "Navodilo, odst. 90–108: opredelite organizacijsko mejo, vključite vse vire neposrednih emisij v lasti ali pod nadzorom, izračunajte CO2, CH4, N2O in druge relevantne pline v tCO2e ter hranite podatke o dejavnosti, viru faktorja, osnovi GWP in različici izračuna."
+  },
+  "VSME-031": {
+    "hint": "Vpišite emisije obsega 2 v tCO2e iz kupljene električne energije, toplote, pare ali hlajenja, izračunane z lokacijskim emisijskim faktorjem omrežja, npr. 30,8.",
+    "guidance": "Navodilo, odst. 90–109: kupljeno električno energijo, toploto, paro in hlajenje izračunajte po lokacijski metodi; hranite podatke o porabi, geografiji, poročevalskem letu in emisijskem faktorju omrežja. Obseg 2 po tržni metodi lahko prikažete ločeno, če obstajajo zanesljivi pogodbeni podatki."
+  },
+  "VSME-032": {
+    "hint": "Ta vrednost se običajno izračuna samodejno kot (obseg 1 + obseg 2 po lokacijski metodi) deljeno s prihodki od prodaje v EUR; če izračunavate ročno, vpišite rezultat v tCO2e/EUR.",
+    "guidance": "Navodilo, odst. 90–103: bruto emisije obsega 1 in emisije obsega 2 po lokacijski metodi delite s prihodki od prodaje v EUR za isto poročevalsko obdobje; ne odštevajte kompenzacij ali odvzemov."
+  },
+  "VSME-033": {
+    "hint": "Navedite vsako onesnaževalo, izpuščeno v zrak, s količino in enoto (npr. NOx, 1,2 t/leto), vsako v svojo vrstico; obvezno le, če je zanje poročanje o onesnaževanju zakonsko zahtevano.",
+    "guidance": "Navodilo, odst. 110–133: najprej preverite, ali je poročanje o onesnaževanju zakonsko zahtevano ali se izvaja v okviru sistema ravnanja z okoljem. Za onesnaževala, izpuščena v zrak, zabeležite vsako onesnaževalo posebej z medijem, količino, enoto, obratom, metodo in poročevalskim obdobjem; po potrebi navedite sklic na javni vir."
+  },
+  "VSME-034": {
+    "hint": "Navedite vsako onesnaževalo, izpuščeno v vodo, s količino in enoto (npr. KPK, 0,8 t/leto), vsako v svojo vrstico; obvezno le, če je zanje poročanje o onesnaževanju zakonsko zahtevano.",
+    "guidance": "Navodilo, odst. 110–133: najprej preverite, ali je poročanje o onesnaževanju zakonsko zahtevano ali se izvaja v okviru sistema ravnanja z okoljem. Za onesnaževala, izpuščena v vodo, zabeležite vsako onesnaževalo posebej z medijem, količino, enoto, obratom, metodo in poročevalskim obdobjem; po potrebi navedite sklic na javni vir."
+  },
+  "VSME-035": {
+    "hint": "Navedite vsako onesnaževalo, izpuščeno v tla, s količino in enoto, vsako v svojo vrstico; obvezno le, če je zanje poročanje o onesnaževanju zakonsko zahtevano.",
+    "guidance": "Navodilo, odst. 110–133: najprej preverite, ali je poročanje o onesnaževanju zakonsko zahtevano ali se izvaja v okviru sistema ravnanja z okoljem. Za onesnaževala, izpuščena v tla, zabeležite vsako onesnaževalo posebej z medijem, količino, enoto, obratom, metodo in poročevalskim obdobjem; po potrebi navedite sklic na javni vir."
+  },
+  "VSME-036": {
+    "hint": "Vpišite javni URL, kjer so objavljeni podatki o onesnaževalih, če jih poročate prek zunanjega javnega vira.",
+    "guidance": "Navodilo, odst. 110–133: najprej preverite, ali je poročanje o onesnaževanju zakonsko zahtevano ali se izvaja v okviru sistema ravnanja z okoljem. Za javno povezavo do sporočenih informacij o onesnaževalih zabeležite vsako onesnaževalo posebej z medijem, količino, enoto, obratom, metodo in poročevalskim obdobjem; po potrebi navedite sklic na javni vir."
+  },
+  "VSME-037": {
+    "hint": "Vpišite število lokacij v lasti, najemu ali upravljanju vašega podjetja, ki ležijo na občutljivih območjih biotske raznovrstnosti ali v njihovi bližini. Vnesite celo število, npr. 2.",
+    "guidance": "Smernice, odst. 134–137: preverite vsako lokacijo v lasti, najemu ali upravljanju glede na priznana občutljiva območja biotske raznovrstnosti; poročajte število lokacij in površino v hektarjih ter hranite geoprostorske dokaze."
+  },
+  "VSME-038": {
+    "hint": "Vpišite skupno površino lokacij iz prejšnjega polja, v hektarjih (ha). Uporabite načrte lokacij ali podatke zemljiške knjige, npr. 12,5.",
+    "guidance": "Smernice, odst. 134–137: preverite vsako lokacijo v lasti, najemu ali upravljanju glede na priznana občutljiva območja biotske raznovrstnosti; poročajte število lokacij in površino v hektarjih ter hranite geoprostorske dokaze."
+  },
+  "VSME-039": {
+    "hint": "Vpišite skupno površino zemljišč, ki jih uporablja vaše podjetje na vseh lokacijah, v hektarjih (ha), npr. 8,3. Uporabljajte enake meje lokacij vsako leto.",
+    "guidance": "Smernice, odst. 138–141: izračunajte skupno rabo zemljišč v hektarjih z uporabo doslednih mej lokacij in opredelitev rabe zemljišč; ločite pozidane in sonaravno urejene površine ter dokumentirajte metodo kartiranja."
+  },
+  "VSME-040": {
+    "hint": "Vpišite skupno pozidano površino (zazidano, tlakovano ali drugače nepropustno) na vseh lokacijah, v hektarjih (ha), npr. 3,1.",
+    "guidance": "Smernice, odst. 138–141: izračunajte skupno pozidano površino v hektarjih z uporabo doslednih mej lokacij in opredelitev rabe zemljišč; ločite pozidane in sonaravno urejene površine ter dokumentirajte metodo kartiranja."
+  },
+  "VSME-041": {
+    "hint": "Vpišite sonaravno urejeno površino (zelene, obnovljene ali naravno vzdrževane površine) na vaših lokacijah, v hektarjih (ha), npr. 1,8.",
+    "guidance": "Smernice, odst. 138–141: izračunajte sonaravno urejeno površino na lokaciji v hektarjih z uporabo doslednih mej lokacij in opredelitev rabe zemljišč; ločite pozidane in sonaravno urejene površine ter dokumentirajte metodo kartiranja."
+  },
+  "VSME-042": {
+    "hint": "Vpišite sonaravno urejeno površino, ki jo vaše podjetje upravlja zunaj svojih lokacij (npr. izravnalna ali obnovitvena območja), v hektarjih (ha), npr. 0,5.",
+    "guidance": "Smernice, odst. 138–141: izračunajte sonaravno urejeno površino zunaj lokacije v hektarjih z uporabo doslednih mej lokacij in opredelitev rabe zemljišč; ločite pozidane in sonaravno urejene površine ter dokumentirajte metodo kartiranja."
+  },
+  "VSME-043": {
+    "hint": "Vpišite skupno količino vode, ki jo je vaše podjetje odvzelo iz vseh virov, v kubičnih metrih (m3). Uporabite vodomere ali račune za vodo, npr. 1250.",
+    "guidance": "Smernice, odst. 142–149 in 154–158: kjer je mogoče, pridobite podatek o odvzemu vode iz vodomerov ali računov; za skupne prostore uporabite dokumentirano metodo porazdelitve na podlagi površine, zaposlenih ali drugega reprezentativnega kazalnika ter poročajte v m³."
+  },
+  "VSME-044": {
+    "hint": "Vpišite delež skupnega odvzema vode (v m3), ki se nanaša na lokacije na območjih z visokim vodnim stresom, npr. 400.",
+    "guidance": "Smernice, odst. 142–158: za vsako lokacijo določite status vodnega stresa s pomočjo priznanega organa ali orodja za oceno vodnega tveganja, nato ločeno poročajte odvzem vode za lokacije z visokim vodnim stresom v m³."
+  },
+  "VSME-045": {
+    "hint": "Vpišite porabo vode v kubičnih metrih (m3): skupni odvzem vode, zmanjšan za izpust vode iz pomembnih proizvodnih procesov, npr. 300.",
+    "guidance": "Smernice, odst. 150–155: izračunajte porabo vode kot odvzem vode, zmanjšan za izpust vode iz pomembnih proizvodnih procesov; poročajte v m³ in hranite dokaze iz vodomerov, računov ali ocen."
+  },
+  "VSME-046": {
+    "hint": "Izberite Da/Ne, ali vaše podjetje uporablja načela krožnega gospodarstva (npr. preprečevanje, ponovno uporabo, popravilo, recikliranje) pri izdelkih, materialih in odpadkih, ter na kratko opišite način.",
+    "guidance": "Smernice, odst. 159: na kratko pojasnite, kako se načela krožnega gospodarstva uporabljajo pri izdelkih, materialih in odpadkih, vključno s preprečevanjem, ponovno uporabo, popravilom, recikliranjem ali drugimi ustreznimi praksami."
+  },
+  "VSME-047": {
+    "hint": "Vpišite skupno količino nastalih odpadkov v poročevalskem obdobju, v tonah, razčlenjeno po vrsti odpadka in načinu ravnanja, npr. 45,2.",
+    "guidance": "Smernice, odst. 160–172: poročajte skupno letno količino nastalih odpadkov po vrsti odpadka in načinu ravnanja, v tonah. Ločite nevarne in nenevarne odpadke, kjer je mogoče uporabite Evropski katalog odpadkov in uskladite skupne vrednosti z evidencami o prepošiljanju odpadkov."
+  },
+  "VSME-048": {
+    "hint": "Vpišite količino nastalih nenevarnih odpadkov, v tonah, na podlagi evidenc o odpadkih ali listov o prepošiljanju, npr. 38,0.",
+    "guidance": "Smernice, odst. 160–172: poročajte nastale nenevarne odpadke po vrsti odpadka in načinu ravnanja, v tonah. Ločite nevarne in nenevarne odpadke, kjer je mogoče uporabite Evropski katalog odpadkov in uskladite skupne vrednosti z evidencami o prepošiljanju odpadkov."
+  },
+  "VSME-049": {
+    "hint": "Vpišite količino nastalih nevarnih odpadkov, v tonah, na podlagi evidenc o odpadkih ali listov o prepošiljanju, npr. 7,2.",
+    "guidance": "Smernice, odst. 160–172: poročajte nastale nevarne odpadke po vrsti odpadka in načinu ravnanja, v tonah. Ločite nevarne in nenevarne odpadke, kjer je mogoče uporabite Evropski katalog odpadkov in uskladite skupne vrednosti z evidencami o prepošiljanju odpadkov."
+  },
+  "VSME-050": {
+    "hint": "Vpišite količino odpadkov, preusmerjenih v recikliranje ali ponovno uporabo (torej ne na odlagališče ali sežig), v tonah, npr. 20,5.",
+    "guidance": "Smernice, odst. 160–172: poročajte odpadke, preusmerjene v recikliranje ali ponovno uporabo, po vrsti odpadka in načinu ravnanja, v tonah. Ločite nevarne in nenevarne odpadke, kjer je mogoče uporabite Evropski katalog odpadkov in uskladite skupne vrednosti z evidencami o prepošiljanju odpadkov."
+  },
+  "VSME-051": {
+    "hint": "Vpišite letno količino relevantnih materialov, uporabljenih v proizvodnji, v tonah (ali drugi dosledni masni enoti), npr. 150,0. Velja predvsem, če so masni tokovi materialov pomembni.",
+    "guidance": "Smernice, odst. 173–174: poročajte letno maso relevantnih uporabljenih materialov za podjetja s pomembnimi masnimi tokovi materialov; opredelite zajete procese in kategorije materialov ter uporabljajte dosledno masno enoto."
+  },
+  "VSME-052": {
+    "hint": "Vpišite število zaposlenih s pogodbo za nedoločen čas, izraženo v številu oseb ali FTE (izberite eno osnovo in jo dosledno uporabljajte), npr. 24.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene s pogodbo za nedoločen čas na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-053": {
+    "hint": "Vpišite število zaposlenih s pogodbo za določen čas, izraženo v številu oseb ali FTE (enaka osnova kot pri zaposlenih za nedoločen čas), npr. 6.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene s pogodbo za določen čas na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-054": {
+    "hint": "Vpišite število zaposlenih žensk, izraženo v številu oseb ali FTE, iz kadrovskih evidenc oz. obračuna plač, npr. 15.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene po spolu – ženske na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-055": {
+    "hint": "Vpišite število zaposlenih moških, izraženo v številu oseb ali FTE, iz kadrovskih evidenc oz. obračuna plač, npr. 18.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene po spolu – moški na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-056": {
+    "hint": "Vpišite število zaposlenih, katerih spol je drug ali ni sporočen, izraženo v številu oseb ali FTE, npr. 1.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene po spolu – drugo/ni sporočeno na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-057": {
+    "hint": "Vpišite število zaposlenih po državi pogodbe o zaposlitvi, izraženo v številu oseb ali FTE; dodajte eno vrstico na državo, npr. 30.",
+    "guidance": "Smernice, odst. 175–181: poročajte zaposlene po državi pogodbe o zaposlitvi na eni dosledni osnovi – število oseb ali FTE – in uskladite razčlenitev s celotno delovno silo. Uporabite nacionalne opredelitve pogodb ter shranite datum poročanja ali obdobje povprečenja."
+  },
+  "VSME-058": {
+    "hint": "Vpišite stopnjo fluktuacije zaposlenih v odstotkih: število zaposlenih, ki so odšli v obdobju, deljeno s povprečnim številom zaposlenih, pomnoženo s 100, npr. 12,5.",
+    "guidance": "Smernice, odst. 182–183: izračunajte stopnjo fluktuacije kot število zaposlenih, ki so odšli v poročevalskem obdobju, deljeno s povprečnim številom zaposlenih, pomnoženo s 100; hranite tako števec kot imenovalec."
+  },
+  "VSME-059": {
+    "hint": "Vpišite število evidentiranih nezgod pri delu med zaposlenimi v poročevalskem obdobju, npr. 3.",
+    "guidance": "Smernice, odst. 187–191: poročajte število evidentiranih nezgod pri delu za zaposlene, pri čemer dosledno uporabljajte opredelitve, povezane z delom, za delo na lokaciji, delo na daljavo in poslovna potovanja; hranite razvrstitev incidentov in dokaze."
+  },
+  "VSME-060": {
+    "hint": "Vpišite stopnjo nezgod: evidentirane nezgode pri delu, deljene s skupnim številom opravljenih delovnih ur, pomnožene z 200.000, npr. 8,4.",
+    "guidance": "Smernice, odst. 184–186: izračunajte stopnjo kot evidentirane nezgode pri delu, deljene s skupnim številom opravljenih delovnih ur, pomnožene z 200.000; hranite evidence nezgod in opravljenih delovnih ur."
+  },
+  "VSME-061": {
+    "hint": "Vpišite število smrtnih primerov zaposlenih zaradi poškodb pri delu v poročevalskem obdobju, npr. 0.",
+    "guidance": "Smernice, odst. 187–191: poročajte smrtne primere zaradi poškodb pri delu za zaposlene, pri čemer dosledno uporabljajte opredelitve, povezane z delom, za delo na lokaciji, delo na daljavo in poslovna potovanja; hranite razvrstitev incidentov in dokaze."
+  },
+  "VSME-062": {
+    "hint": "Vpišite število smrtnih primerov zaposlenih zaradi z delom povezanih bolezni v poročevalskem obdobju, npr. 0.",
+    "guidance": "Smernice, odst. 187–191: poročajte smrtne primere zaradi z delom povezanih bolezni za zaposlene, pri čemer dosledno uporabljajte opredelitve, povezane z delom, za delo na lokaciji, delo na daljavo in poslovna potovanja; hranite razvrstitev incidentov in dokaze."
+  },
+  "VSME-063": {
+    "hint": "Izberite Da/Ne, ali so vsi zaposleni plačani vsaj v višini veljavne zakonske ali kolektivno dogovorjene minimalne plače v vsaki državi.",
+    "guidance": "Smernice, odst. 192–193: primerjajte najnižje veljavno plačilo zaposlenega z zakonsko ali kolektivno dogovorjeno minimalno plačo v vsaki državi poročanja; po potrebi izključite pripravnike in vajence."
+  },
+  "VSME-064": {
+    "hint": "Vpišite razliko v plačah med spoloma v odstotkih, na podlagi povprečnega bruto urnega plačila žensk in moških, npr. 9,5.",
+    "guidance": "Smernice, odst. 194–201: vključite vse zaposlene, izračunajte povprečno bruto urno plačilo po spolu in uporabite formulo VSME za odstotno razliko; dokumentirajte vključene elemente plačila in pretvorbo delovnih ur."
+  },
+  "VSME-065": {
+    "hint": "Vpišite delež zaposlenih, zajetih v kolektivnih pogodbah, v odstotkih: zajeti zaposleni, deljeni s skupnim številom zaposlenih, pomnoženo s 100, npr. 65,0.",
+    "guidance": "Smernice, odst. 202–205: delite število zaposlenih, zajetih v kolektivnih pogodbah, s skupnim številom zaposlenih in pomnožite s 100; upoštevajte pogodbo za vse zajete zaposlene, ne glede na članstvo v sindikatu."
+  },
+  "VSME-066": {
+    "hint": "Vpišite povprečno letno število ur usposabljanja na zaposleno žensko, iz kadrovskih evidenc oz. evidenc usposabljanj, npr. 14,5.",
+    "guidance": "Smernice, odst. 192–205: izračunajte povprečno letno število ur usposabljanja na zaposlenega – ženske iz podatkov obračuna plač ali kadrovskih evidenc za poročevalsko obdobje, uporabite dosledne opredelitve zaposlenega in spola ter hranite števec, imenovalec in osnovo izračuna."
+  },
+  "VSME-067": {
+    "hint": "Vpišite povprečno letno število ur usposabljanja na zaposlenega moškega, iz kadrovskih evidenc oz. evidenc usposabljanj, npr. 12,0.",
+    "guidance": "Smernice, odst. 192–205: izračunajte povprečno letno število ur usposabljanja na zaposlenega – moški iz podatkov obračuna plač ali kadrovskih evidenc za poročevalsko obdobje, uporabite dosledne opredelitve zaposlenega in spola ter hranite števec, imenovalec in osnovo izračuna."
+  },
+  "VSME-068": {
+    "hint": "Vpišite povprečno letno število ur usposabljanja na zaposlenega, katerega spol je drug ali ni sporočen, iz kadrovskih evidenc oz. evidenc usposabljanj, npr. 10,0.",
+    "guidance": "Smernice, odst. 192–205: izračunajte povprečno letno število ur usposabljanja na zaposlenega – drugo/ni sporočeno iz podatkov obračuna plač ali kadrovskih evidenc za poročevalsko obdobje, uporabite dosledne opredelitve zaposlenega in spola ter hranite števec, imenovalec in osnovo izračuna."
+  },
+  "VSME-069": {
+    "hint": "Vpišite število pravnomočnih obsodb zaradi kršitev protikorupcijske zakonodaje ali zakonodaje proti podkupovanju v poročevalskem obdobju, npr. 0.",
+    "guidance": "Smernice, odst. 206–209: poročajte število obsodb zaradi kršitev protikorupcijske zakonodaje in zakonodaje proti podkupovanju za pravnomočne obsodbe ali obvezne denarne kazni po tej zakonodaji v poročevalskem obdobju; hranite pravne reference in dokaze."
+  },
+  "VSME-070": {
+    "hint": "Vpišite skupni znesek denarnih kazni zaradi kršitev protikorupcijske zakonodaje ali zakonodaje proti podkupovanju, v EUR, npr. 5000.",
+    "guidance": "Smernice, odst. 206–209: poročajte skupni znesek denarnih kazni zaradi kršitev protikorupcijske zakonodaje in zakonodaje proti podkupovanju za pravnomočne obsodbe ali obvezne denarne kazni po tej zakonodaji v poročevalskem obdobju; hranite pravne reference in dokaze."
+  },
+  "VSME-071": {
+    "hint": "Vpišite kratek opis pomembnih skupin izdelkov in/ali storitev, ki jih ponuja vaše podjetje, skladno z opisom vašega poslovnega modela.",
+    "guidance": "V odst. 212 celovitih smernic ni ločenega podrobnega navodila za izpolnjevanje te podatkovne točke. Na kratko opišite pomembne skupine ponujenih izdelkov in/ali storitev, pri čemer uporabite enak obseg in terminologijo kot pri poslovnem modelu in strategiji podjetja."
+  },
+  "VSME-072": {
+    "hint": "Vpišite kratek opis pomembnih trgov (držav ali regij), na katerih deluje vaše podjetje, skladno z opisom vašega poslovnega modela.",
+    "guidance": "V odst. 212 celovitih smernic ni ločenega podrobnega navodila za izpolnjevanje te podatkovne točke. Na kratko opišite pomembne trge, na katerih podjetje deluje, pri čemer uporabite enak obseg in terminologijo kot pri poslovnem modelu in strategiji podjetja."
+  },
+  "VSME-073": {
+    "hint": "V nekaj stavkih opišite svoje glavne odnose s kupci in dobavitelji: navedite okvirno število, sektorje in geografska območja ključnih dobaviteljev ter glavne kupce oziroma distribucijske skupine.",
+    "guidance": "Celovite smernice, odst. 212: opišite glavne odnose s kupci in dobavitelji; vključite ocenjeno število, sektorje in geografska območja ključnih dobaviteljev ter opredelite glavne kupce oziroma distribucijske skupine."
+  },
+  "VSME-074": {
+    "hint": "Na kratko opišite elemente poslovne strategije, ki se nanašajo na trajnostna vprašanja, pri tem uporabite enak obseg in izrazoslovje kot pri opisu poslovnega modela.",
+    "guidance": "V Celovitih smernicah, odst. 212, za to podatkovno točko ni posebnega podrobnega navodila za izpolnjevanje. Ključne elemente strategije, povezane s trajnostnimi vprašanji, opišite jedrnato, pri tem uporabite enak obseg in izrazoslovje kot pri opisu poslovnega modela in strategije podjetja."
+  },
+  "VSME-075": {
+    "hint": "Opišite svoje trajnostne prakse po predlogi C2: za vsako prakso navedite povezano trajnostno vprašanje, obseg, cilj, odgovorno raven, ciljno vrednost, časovni okvir in stanje izvajanja.",
+    "guidance": "Celovite smernice, odst. 213: za opis trajnostnih praks uporabite strukturirano predlogo C2; povežite jo z ustreznim trajnostnim vprašanjem ter zabeležite obseg, cilj, odgovorno raven, cilj, časovni okvir in stanje izvajanja."
+  },
+  "VSME-076": {
+    "hint": "Opišite svoje trajnostne politike po predlogi C2: za vsako politiko navedite povezano trajnostno vprašanje, obseg, cilj, odgovorno raven, ciljno vrednost, časovni okvir in stanje izvajanja.",
+    "guidance": "Celovite smernice, odst. 213: za opis trajnostnih politik uporabite strukturirano predlogo C2; povežite jo z ustreznim trajnostnim vprašanjem ter zabeležite obseg, cilj, odgovorno raven, cilj, časovni okvir in stanje izvajanja."
+  },
+  "VSME-077": {
+    "hint": "Opišite načrtovane prihodnje trajnostne pobude po predlogi C2: za vsako pobudo navedite povezano trajnostno vprašanje, obseg, cilj, odgovorno raven, ciljno vrednost, časovni okvir in stanje izvajanja.",
+    "guidance": "Celovite smernice, odst. 213: za opis prihodnjih trajnostnih pobud uporabite strukturirano predlogo C2; povežite jo z ustreznim trajnostnim vprašanjem ter zabeležite obseg, cilj, odgovorno raven, cilj, časovni okvir in stanje izvajanja."
+  },
+  "VSME-078": {
+    "hint": "Opišite svoje trajnostne cilje po predlogi C2: za vsak cilj navedite povezano trajnostno vprašanje, obseg, namen, odgovorno raven, ciljno vrednost, časovni okvir in stanje izvajanja.",
+    "guidance": "Celovite smernice, odst. 213: za opis trajnostnih ciljev uporabite strukturirano predlogo C2; povežite jih z ustreznim trajnostnim vprašanjem ter zabeležite obseg, cilj, odgovorno raven, cilj, časovni okvir in stanje izvajanja."
+  },
+  "VSME-079": {
+    "hint": "Vpišite naziv delovnega mesta ali organa (npr. direktor, odbor za trajnostnost, uprava), ki je najvišje odgovoren za izvajanje posamezne prakse, politike ali pobude.",
+    "guidance": "Celovite smernice, odst. 213: za najvišjo raven, odgovorno za izvajanje, uporabite strukturirano predlogo C2; povežite jo z ustreznim trajnostnim vprašanjem ter zabeležite obseg, cilj, odgovorno raven, cilj, časovni okvir in stanje izvajanja."
+  },
+  "VSME-080": {
+    "hint": "Vpišite skupne emisije kategorije 1 (kupljeno blago in storitve) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 1 – kupljeno blago in storitve, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-081": {
+    "hint": "Vpišite skupne emisije kategorije 2 (investicijsko blago) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 2 – investicijsko blago, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-082": {
+    "hint": "Vpišite emisije kategorije 3 (dejavnosti, povezane z gorivi in energijo, ki niso vključene v obseg 1 ali 2) v tCO2e, izračunane na podlagi dokumentiranih količin in pretvorbenih oz. kurilnih faktorjev. Npr. 18,2",
+    "guidance": "Smernice, odst. 81–89: obseg 3, kategorijo 3 – dejavnosti, povezane z gorivi in energijo, poročajte kot končno energijo v MWh. Ohranite izvirno količino in enoto, pretvorbo izvedite z dokumentirano kurilno vrednostjo ali pretvorbenim faktorjem in porabljene energije ne pobotajte s proizvedeno energijo."
+  },
+  "VSME-083": {
+    "hint": "Vpišite skupne emisije kategorije 4 (prevoz in distribucija v prvih fazah verige) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 4 – prevoz in distribucija v prvih fazah verige, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-084": {
+    "hint": "Vpišite skupne emisije kategorije 5 (odpadki, nastali pri poslovanju) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 5 – odpadki, nastali pri poslovanju, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-085": {
+    "hint": "Vpišite skupne emisije kategorije 6 (službena potovanja) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 6 – službena potovanja, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-086": {
+    "hint": "Vpišite skupne emisije kategorije 7 (prevoz zaposlenih na delo) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 7 – prevoz zaposlenih na delo, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-087": {
+    "hint": "Vpišite skupne emisije kategorije 8 (najeta sredstva v prvih fazah verige) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 8 – najeta sredstva v prvih fazah verige, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-088": {
+    "hint": "Vpišite skupne emisije kategorije 9 (prevoz in distribucija v zadnjih fazah verige) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 9 – prevoz in distribucija v zadnjih fazah verige, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-089": {
+    "hint": "Vpišite skupne emisije kategorije 10 (predelava prodanih izdelkov) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 10 – predelava prodanih izdelkov, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-090": {
+    "hint": "Vpišite skupne emisije kategorije 11 (uporaba prodanih izdelkov) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 11 – uporaba prodanih izdelkov, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-091": {
+    "hint": "Vpišite skupne emisije kategorije 12 (ravnanje s prodanimi izdelki ob koncu življenjske dobe) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 12 – ravnanje s prodanimi izdelki ob koncu življenjske dobe, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-092": {
+    "hint": "Vpišite skupne emisije kategorije 13 (najeta sredstva v zadnjih fazah verige) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 13 – najeta sredstva v zadnjih fazah verige, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-093": {
+    "hint": "Vpišite skupne emisije kategorije 14 (franšize) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 14 – franšize, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-094": {
+    "hint": "Vpišite skupne emisije kategorije 15 (naložbe) v tCO2e (npr. 125,4), le če ste to kategorijo pri pregledu vseh 15 kategorij obsega 3 protokola GHG opredelili kot pomembno in imate dokumentirano metodo izračuna.",
+    "guidance": "Celovite smernice, odst. 214–215: preglejte vseh 15 kategorij obsega 3 protokola GHG, opredelite pomembne kategorije, dokumentirajte metodo izračuna in razkrijte obseg 3, kategorijo 15 – naložbe, le kot del celovite in jasno opredeljene ocene obsega 3."
+  },
+  "VSME-095": {
+    "hint": "Vpišite ciljno leto za ta cilj zmanjšanja emisij TGP (eno leto, npr. 2030).",
+    "guidance": "Celovite smernice, odst. 216–227: za ciljno leto opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-096": {
+    "hint": "Vpišite vrednost emisij, ki jo želite doseči v ciljnem letu, v enoti, izbrani za ta cilj (npr. tCO2e). Npr. 850",
+    "guidance": "Celovite smernice, odst. 216–227: za vrednost v ciljnem letu opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-097": {
+    "hint": "Vpišite izhodiščno leto, glede na katerega se meri napredek pri doseganju cilja (eno leto, npr. 2020).",
+    "guidance": "Celovite smernice, odst. 216–227: za izhodiščno leto opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-098": {
+    "hint": "Vpišite vrednost emisij v izhodiščnem letu, v isti enoti kot cilj (npr. tCO2e). Npr. 1200",
+    "guidance": "Celovite smernice, odst. 216–227: za vrednost v izhodiščnem letu opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-099": {
+    "hint": "Izberite enoto, v kateri je cilj izražen, na primer tCO2e (absolutno) ali % zmanjšanja.",
+    "guidance": "Celovite smernice, odst. 216–227: za enoto, uporabljeno za cilj opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-100": {
+    "hint": "Vpišite, kolikšen delež vaših emisij obsega 1 ta cilj zajema, v odstotkih. Npr. 100",
+    "guidance": "Celovite smernice, odst. 216–227: za delež emisij obsega 1, ki jih cilj zajema opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-101": {
+    "hint": "Vpišite, kolikšen delež vaših emisij obsega 2 ta cilj zajema, v odstotkih. Npr. 100",
+    "guidance": "Celovite smernice, odst. 216–227: za delež emisij obsega 2, ki jih cilj zajema opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-102": {
+    "hint": "Vpišite, kolikšen delež vaših pomembnih emisij obsega 3 ta cilj zajema, v odstotkih. Npr. 60",
+    "guidance": "Celovite smernice, odst. 216–227: za delež pomembnih emisij obsega 3, ki jih cilj zajema opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-103": {
+    "hint": "V nekaj stavkih opišite glavne ukrepe, ki so načrtovani ali že potekajo za dosego tega cilja (npr. prehod na obnovljive vire energije, elektrifikacija voznega parka).",
+    "guidance": "Celovite smernice, odst. 216–227: za glavne ukrepe za dosego cilja opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-104": {
+    "hint": "Opišite svoj načrt podnebnega prehoda: ključne ukrepe, naložbe in mejnike za zmanjšanje emisij in prilagoditev poslovnega modela, če vaše podjetje deluje v sektorju z visokim vplivom na podnebje.",
+    "guidance": "Celovite smernice, odst. 216–227: za načrt podnebnega prehoda opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-105": {
+    "hint": "Izberite Da, če nameravate sprejeti načrt podnebnega prehoda (pričakovano leto navedite v opisnem polju), ali Ne, če ga ne nameravate sprejeti. Velja predvsem, če delujete v sektorju z visokim vplivom na podnebje in načrta še nimate.",
+    "guidance": "Celovite smernice, odst. 216–227: za ali in kdaj bo sprejet načrt podnebnega prehoda opredelite absolutne cilje za obseg 1 in obseg 2 ter, kjer je ustrezno, pomembne cilje za obseg 3; shranite izhodiščno leto/vrednost, ciljno leto/vrednost, enoto, obseg zajetja in glavne ukrepe. Bruto emisije ločujte od odvzemov, preprečenih emisij in kompenzacij."
+  },
+  "VSME-106": {
+    "hint": "Izberite eno ali več fizičnih podnebnih nevarnosti, pomembnih za vaša sredstva, dejavnosti ali vrednostno verigo (npr. poplave, vročinski stres, suša), vsako v svojo vrstico.",
+    "guidance": "Celovite smernice, odst. 228–230: opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratko-, srednje- ali dolgoročni časovni okvir ter dokumentirajte prilagoditvene ukrepe."
+  },
+  "VSME-107": {
+    "hint": "Izberite eno ali več tveganj podnebnega prehoda, pomembnih za vaše poslovanje (npr. spremembe politik ali predpisov, tržni premiki, tehnološke spremembe), vsako v svojo vrstico.",
+    "guidance": "Celovite smernice, odst. 228–230: opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratko-, srednje- ali dolgoročni časovni okvir ter dokumentirajte prilagoditvene ukrepe."
+  },
+  "VSME-108": {
+    "hint": "Opišite, kako so vaša sredstva, dejavnosti in vrednostna veriga izpostavljeni in občutljivi na opredeljene nevarnosti in dogodke prehoda, vključno s časovnim okvirom (kratkoročno, srednjeročno ali dolgoročno) in morebitnimi prilagoditvenimi ukrepi.",
+    "guidance": "Celovite smernice, odst. 228–230: opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratko-, srednje- ali dolgoročni časovni okvir ter dokumentirajte prilagoditvene ukrepe."
+  },
+  "VSME-109": {
+    "hint": "Opišite, katere fizične podnebne nevarnosti in dogodki prehoda vplivajo na podjetje ter kako izpostavljena in občutljiva so njegova sredstva, dejavnosti in vrednostna veriga.",
+    "guidance": "Celovite smernice, odst. 228–230: za oceno občutljivosti na podnebne nevarnosti in dogodke prehoda opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratkoročne, srednjeročne ali dolgoročne časovne okvire ter dokumentirajte ukrepe za prilagajanje."
+  },
+  "VSME-110": {
+    "hint": "Izberite časovni okvir za opredeljene nevarnosti in dogodke prehoda: kratkoročno, srednjeročno ali dolgoročno.",
+    "guidance": "Celovite smernice, odst. 228–230: za časovne okvire podnebnih nevarnosti in dogodkov prehoda opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratkoročne, srednjeročne ali dolgoročne časovne okvire ter dokumentirajte ukrepe za prilagajanje."
+  },
+  "VSME-111": {
+    "hint": "Opišite ukrepe za prilagajanje, ki so bili izvedeni ali so načrtovani za obravnavo opredeljenih podnebnih nevarnosti in dogodkov prehoda.",
+    "guidance": "Celovite smernice, odst. 228–230: za ukrepe za prilagajanje podnebnim spremembam opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratkoročne, srednjeročne ali dolgoročne časovne okvire ter dokumentirajte ukrepe za prilagajanje."
+  },
+  "VSME-112": {
+    "hint": "Opišite morebitne negativne finančne učinke, ki bi jih opredeljene podnebne nevarnosti in dogodki prehoda lahko imeli na podjetje.",
+    "guidance": "Celovite smernice, odst. 228–230: za morebitne negativne finančne učinke podnebnih tveganj opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratkoročne, srednjeročne ali dolgoročne časovne okvire ter dokumentirajte ukrepe za prilagajanje."
+  },
+  "VSME-113": {
+    "hint": "Izberite raven tveganja, ki najbolje opisuje izpostavljenost podjetja opredeljenim podnebnim nevarnostim in dogodkom prehoda.",
+    "guidance": "Celovite smernice, odst. 228–230: za raven podnebnega tveganja opredelite fizične nevarnosti in dogodke prehoda, ocenite izpostavljenost in občutljivost sredstev, dejavnosti in vrednostne verige, določite kratkoročne, srednjeročne ali dolgoročne časovne okvire ter dokumentirajte ukrepe za prilagajanje."
+  },
+  "VSME-114": {
+    "hint": "Vpišite razmerje med ženskami in moškimi na vodstveni ravni, izračunano kot število žensk na vodstvenih položajih deljeno s številom moških na vodstvenih položajih (npr. 0,8).",
+    "guidance": "Celovite smernice, odst. 231–236: izračunajte razmerje med ženskami in moškimi na vodstveni ravni v skladu z opredelitvami iz smernic. Za razmerje med spoloma na vodstveni ravni delite število žensk s številom moških na vodstvenih položajih; opredelite uporabljeno vodstveno raven in hranite dokazila iz kadrovske evidence."
+  },
+  "VSME-115": {
+    "hint": "Vpišite število samozaposlenih oseb brez lastnih zaposlenih, ki delajo izključno za podjetje (npr. 5).",
+    "guidance": "Celovite smernice, odst. 231–236: izračunajte število samozaposlenih brez lastnih zaposlenih, ki delajo izključno za podjetje, v skladu z opredelitvami iz smernic. Za razmerje med spoloma na vodstveni ravni delite število žensk s številom moških na vodstvenih položajih; opredelite uporabljeno vodstveno raven in hranite dokazila iz kadrovske evidence."
+  },
+  "VSME-116": {
+    "hint": "Vpišite število delavcev, zaposlenih prek agencij za začasno delo, ki so delali za podjetje v poročevalskem obdobju (npr. 12).",
+    "guidance": "Celovite smernice, odst. 231–236: izračunajte število delavcev, zaposlenih prek agencij za začasno delo, v skladu z opredelitvami iz smernic. Za razmerje med spoloma na vodstveni ravni delite število žensk s številom moških na vodstvenih položajih; opredelite uporabljeno vodstveno raven in hranite dokazila iz kadrovske evidence."
+  },
+  "VSME-117": {
+    "hint": "Izberite Da, če ima podjetje sprejet kodeks ravnanja ali politiko človekovih pravic za lastno delovno silo, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje o kodeksu ravnanja ali politiki človekovih pravic za lastno delovno silo odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-118": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava delo otrok, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema delo otrok odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-119": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava prisilno delo, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema prisilno delo odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-120": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava trgovino z ljudmi, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema trgovino z ljudmi odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-121": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava diskriminacijo, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema diskriminacijo odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-122": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava preprečevanje nezgod, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema preprečevanje nezgod odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-123": {
+    "hint": "Izberite Da, če ima podjetje politiko, ki obravnava druge teme človekovih pravic, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje ali politika zajema druge teme človekovih pravic odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-124": {
+    "hint": "Izberite Da, če ima podjetje vzpostavljen mehanizem za obravnavo pritožb lastne delovne sile, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 237: na vprašanje o mehanizmu za obravnavo pritožb lastne delovne sile odgovorite z Da/Ne, pri čemer kot dokazilo uporabite sprejet kodeks ravnanja, politiko človekovih pravic, postopek skrbnega pregleda ali pritožbeni postopek; shranite lastnika dokumenta, datum potrditve in obseg."
+  },
+  "VSME-125": {
+    "hint": "Izberite Da, če so bili v poročevalskem obdobju v lastni delovni sili potrjeni primeri dela otrok, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni primeri dela otrok v lastni delovni sili; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-126": {
+    "hint": "Izberite Da, če so bili v poročevalskem obdobju v lastni delovni sili potrjeni primeri prisilnega dela, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni primeri prisilnega dela v lastni delovni sili; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-127": {
+    "hint": "Izberite Da, če so bili v poročevalskem obdobju v lastni delovni sili potrjeni primeri trgovine z ljudmi, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni primeri trgovine z ljudmi v lastni delovni sili; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-128": {
+    "hint": "Izberite Da, če so bili v poročevalskem obdobju v lastni delovni sili potrjeni primeri diskriminacije, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni primeri diskriminacije v lastni delovni sili; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-129": {
+    "hint": "Izberite Da, če so bili v poročevalskem obdobju potrjeni drugi resni incidenti v zvezi s človekovimi pravicami, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni drugi resni incidenti v zvezi s človekovimi pravicami; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-130": {
+    "hint": "Opišite ukrepe in popravne aktivnosti, izvedene za obravnavo potrjenih incidentov na področju človekovih pravic.",
+    "guidance": "Celovite smernice, odst. 238: navedite ukrepe, sprejete za obravnavo potrjenih incidentov; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-131": {
+    "hint": "Izberite Da, če so bili potrjeni resni incidenti v zvezi s človekovimi pravicami, ki zadevajo delavce v vrednostni verigi, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni incidenti, ki zadevajo delavce v vrednostni verigi; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-132": {
+    "hint": "Izberite Da, če so bili potrjeni resni incidenti v zvezi s človekovimi pravicami, ki zadevajo prizadete skupnosti, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni incidenti, ki zadevajo prizadete skupnosti; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-133": {
+    "hint": "Izberite Da, če so bili potrjeni resni incidenti v zvezi s človekovimi pravicami, ki zadevajo potrošnike ali končne uporabnike, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 238: zabeležite, ali so bili potrjeni incidenti, ki zadevajo potrošnike in končne uporabnike; primer se šteje za potrjenega, kadar je podprt s pravnim ukrepom ali pritožbo, vloženo prek formalnega mehanizma, po potrebi pa opišite sanacijske ukrepe."
+  },
+  "VSME-134": {
+    "hint": "Vpišite prihodke podjetja od spornega orožja za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od spornega orožja in jih uskladite s celotnim prometom."
+  },
+  "VSME-135": {
+    "hint": "Vpišite prihodke podjetja od gojenja in proizvodnje tobaka za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od gojenja in proizvodnje tobaka in jih uskladite s celotnim prometom."
+  },
+  "VSME-136": {
+    "hint": "Vpišite prihodke podjetja od fosilnih goriv (premog) za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od fosilnih goriv – premoga in jih uskladite s celotnim prometom."
+  },
+  "VSME-137": {
+    "hint": "Vpišite prihodke podjetja od fosilnih goriv (nafta) za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od fosilnih goriv – nafte in jih uskladite s celotnim prometom."
+  },
+  "VSME-138": {
+    "hint": "Vpišite prihodke podjetja od fosilnih goriv (plin) za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od fosilnih goriv – plina in jih uskladite s celotnim prometom."
+  },
+  "VSME-139": {
+    "hint": "Vpišite prihodke podjetja od proizvodnje kemikalij, kot so pesticidi in agrokemični proizvodi, za poročevalsko obdobje, v EUR (npr. 0, če jih ni).",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte prihodke od proizvodnje kemikalij (pesticidi in agrokemični proizvodi) in jih uskladite s celotnim prometom."
+  },
+  "VSME-140": {
+    "hint": "Izberite Da, če je podjetje izključeno iz referenčnih vrednosti EU, usklajenih s Pariškim sporazumom, v skladu z veljavnimi merili, sicer izberite Ne.",
+    "guidance": "Celovite smernice, odst. 239–241: ugotovite, ali je podjetje dejavno v zadevnem sektorju, na podlagi navedenih pravnih in NACE opredelitev, nato za isto poslovno obdobje poročajte izključitev iz referenčnih vrednosti EU, usklajenih s Pariškim sporazumom, in jo uskladite s celotnim prometom."
+  },
+  "VSME-141": {
+    "hint": "Vpišite razmerje med spoloma v najvišjem organu upravljanja, izračunano kot število članic deljeno s številom članov, v odstotkih (npr. 40 %).",
+    "guidance": "Celovite smernice, odst. 242–244: opredelite najvišji organ odločanja in izračunajte razmerje med spoloma kot število članic, deljeno s številom članov; hranite število članov in datum poročanja."
+  },
+  "ESRS-001": {
+    "label": "Uporabljene prehodne določbe (phase-in); pomembne teme, politike, ukrepi, cilji in kazalniki, ohranjeni med prehodnim obdobjem",
+    "hint": "Opišite, katere prehodne določbe uporabljate in katere pomembne teme, politike, ukrepe, cilje in kazalnike med prehodnim obdobjem še naprej poročate."
+  },
+  "ESRS-002": {
+    "label": "Delež spremenljivih prejemkov, vezanih na trajnostnost, značilnosti in odobritev",
+    "hint": "Vnesite delež spremenljivih prejemkov, vezanih na trajnostnost, v odstotkih ter opišite, kako sistem deluje in kdo ga je odobril."
+  },
+  "ESRS-003": {
+    "label": "Pregled glavnih elementov skrbnega pregleda s sklici na razkritja",
+    "hint": "Glavne elemente postopka skrbnega pregleda povežite z razkritji, v katerih je posamezni element opisan."
+  },
+  "ESRS-004": {
+    "label": "Procesi, tveganja, kontrole, ugotovitve in odprava",
+    "hint": "Opišite procese, glavna tveganja, kontrole, ugotovitve in ukrepe za odpravo pri trajnostnem poročanju."
+  },
+  "ESRS-005": {
+    "label": "Ključni deležniki, vključevanje, interesi in vpliv na strategijo",
+    "hint": "Navedite ključne deležnike, kako jih vključujete, njihove interese in stališča ter kako vplivajo na strategijo."
+  },
+  "ESRS-006": {
+    "label": "Pomembni učinki, tveganja in priložnosti; sedanji in pričakovani finančni učinki ter odpornost",
+    "hint": "Opišite pomembne učinke, tveganja in priložnosti, njihove sedanje in pričakovane finančne učinke (zneski ali razponi) ter odpornost strategije in poslovnega modela."
+  },
+  "ESRS-007": {
+    "label": "Metodologija prepoznavanja in ocenjevanja, pragovi, vhodni podatki, deležniki in odločanje",
+    "hint": "Opišite, kako prepoznavate in ocenjujete učinke, tveganja in priložnosti: metodo, pragove, vhodne podatke, vključene deležnike in način odločanja."
+  },
+  "ESRS-008": {
+    "label": "Seznam pomembnih učinkov, tveganj in priložnosti ter vključenih ali izpuščenih tem in zahtev za razkritje, z razlogi",
+    "hint": "Navedite pomembne učinke, tveganja in priložnosti ter vključene ali izpuščene teme in zahteve za razkritje, z razlogi."
+  },
+  "ESRS-009": {
+    "label": "Opredelitev, metodologija, predpostavke, viri podatkov in preverjanje kazalnikov, specifičnih za podjetje",
+    "hint": "Za vsak kazalnik, specifičen za podjetje, navedite opredelitev, metodologijo, predpostavke, vire podatkov in način preverjanja."
+  },
+  "ESRS-010": {
+    "label": "Politike blaženja podnebnih sprememb in prilagajanja nanje",
+    "hint": "Opišite politike blaženja podnebnih sprememb in prilagajanja nanje: kaj zajemajo in kdo je zanje odgovoren."
+  },
+  "ESRS-011": {
+    "label": "Ukrepi po vzvodih razogljičenja, dodeljena sredstva, dosežena in pričakovana zmanjšanja emisij TGP",
+    "hint": "Vnesite doseženo ali pričakovano zmanjšanje emisij v tCO2e ter opišite ukrepe po vzvodih razogljičenja in dodeljena sredstva."
+  },
+  "ESRS-012": {
+    "label": "Rezultati analize odpornosti, sposobnost prilagoditve strategije in poslovnega modela, časovni okviri",
+    "hint": "Opišite rezultate in posledice analize podnebne odpornosti, sposobnost prilagoditve strategije in poslovnega modela ter upoštevane časovne okvire in scenarije."
+  },
+  "ESRS-013": {
+    "label": "Odvzemi in shranjevanje TGP v lastnem delovanju in vrednostni verigi; ogljični krediti zunaj verige; metodologije",
+    "hint": "Vnesite v tCO2e odvzeme in shranjevanje TGP v lastnem delovanju in vrednostni verigi, ogljične kredite zunaj verige in uporabljene metodologije."
+  },
+  "ESRS-014": {
+    "label": "Vrsta, obseg, cena in zajete količine notranjega oblikovanja cen ogljika; skladnost z računovodskimi izkazi",
+    "hint": "Opišite notranjo ceno ogljika: vrsto, obseg, ceno na tCO2e, zajete količine in skladnost z računovodskimi izkazi."
+  },
+  "ESRS-015": {
+    "label": "Sredstva in prihodki, izpostavljeni fizičnim in prehodnim tveganjem, ter priložnosti; sedanji in pričakovani učinki",
+    "hint": "Opišite sredstva in prihodke, izpostavljene fizičnim in prehodnim podnebnim tveganjem, ter priložnosti; navedite sedanje in pričakovane finančne učinke (zneski ali razponi)."
+  },
+  "ESRS-016": {
+    "label": "Politike glede onesnaževanja, incidentov, zaskrbljujočih snovi (SoC/SVHC) in mikroplastike",
+    "hint": "Opišite politike glede onesnaževanja, incidentov, zaskrbljujočih in zelo zaskrbljujočih snovi (SoC/SVHC) ter mikroplastike."
+  },
+  "ESRS-017": {
+    "label": "Glavni ukrepi in sredstva za preprečevanje, zmanjševanje in sanacijo onesnaževanja",
+    "hint": "Opišite glavne ukrepe za preprečevanje, zmanjševanje in sanacijo onesnaževanja ter sredstva zanje, vključno z zneski."
+  },
+  "ESRS-018": {
+    "label": "Cilji in napredek po onesnaževalu, mediju in lokaciji",
+    "hint": "Opišite cilje glede onesnaževanja po onesnaževalu, mediju in lokaciji ter napredek (količine in odstotki)."
+  },
+  "ESRS-019": {
+    "label": "Količine, proizvedene, uporabljene, nabavljene, izpuščene ali odpremljene z lokacij, po razredu nevarnosti",
+    "hint": "Vnesite količine zaskrbljujočih in zelo zaskrbljujočih snovi, ki se proizvajajo, uporabljajo, nabavljajo, izpuščajo ali zapuščajo lokacije, po razredu nevarnosti, v kg ali t."
+  },
+  "ESRS-020": {
+    "label": "Politike glede odvzema, porabe in izpusta vode ter območij z vodnim stresom",
+    "hint": "Opišite politike glede odvzema, porabe in izpusta vode, zlasti na območjih z vodnim stresom."
+  },
+  "ESRS-021": {
+    "label": "Glavni ukrepi in sredstva, zlasti na območjih z vodnim stresom",
+    "hint": "Opišite glavne ukrepe na področju vode in sredstva zanje, zlasti na območjih z vodnim stresom."
+  },
+  "ESRS-022": {
+    "label": "Cilji glede odvzema, porabe, izpusta vode in območij z vodnim stresom",
+    "hint": "Opišite cilje glede odvzema, porabe, izpusta vode in območij z vodnim stresom (m³ ali %) ter napredek."
+  },
+  "ESRS-023": {
+    "label": "Združljivost strategije in poslovnega modela s cilji biotske raznovrstnosti; načrt, odvisnosti in odpornost",
+    "hint": "Opišite, kako sta strategija in poslovni model združljiva s cilji biotske raznovrstnosti, svoj prehodni načrt, odvisnosti od ekosistemov in odpornost."
+  },
+  "ESRS-024": {
+    "label": "Politike glede dejavnikov, učinkov, odvisnosti in občutljivih lokacij",
+    "hint": "Opišite politike glede dejavnikov izgube biotske raznovrstnosti, učinkov, odvisnosti in občutljivih lokacij."
+  },
+  "ESRS-025": {
+    "label": "Hierarhija blažitve, obnova in izravnave, ukrepi in sredstva",
+    "hint": "Opišite ukrepe za biotsko raznovrstnost po hierarhiji blažitve, obnovo in izravnave ter sredstva (zneski, površine)."
+  },
+  "ESRS-026": {
+    "label": "Cilji, ekološki pragovi in znanstvena podlaga, geografija in izravnave",
+    "hint": "Opišite cilje za biotsko raznovrstnost, ekološke pragove in njihovo znanstveno podlago, geografski obseg in uporabo izravnav."
+  },
+  "ESRS-027": {
+    "label": "Politike glede vhodnih in izhodnih tokov virov, ekološkega oblikovanja in hierarhije ravnanja z odpadki",
+    "hint": "Opišite politike glede vhodnih in izhodnih tokov virov, ekološkega oblikovanja in hierarhije ravnanja z odpadki."
+  },
+  "ESRS-028": {
+    "label": "Glavni ukrepi in sredstva za krožnost in preprečevanje odpadkov",
+    "hint": "Opišite glavne ukrepe za krožno gospodarstvo in preprečevanje odpadkov ter sredstva zanje."
+  },
+  "ESRS-029": {
+    "label": "Cilji glede krožnih materialov, trajnosti in reciklabilnosti izdelkov ter odpadkov",
+    "hint": "Opišite cilje glede deleža krožnih materialov, trajnosti in reciklabilnosti izdelkov ter odpadkov (% ali t) in napredek."
+  },
+  "ESRS-030": {
+    "label": "Cilji glede pomembnih učinkov, tveganj in priložnosti v zvezi z zaposlenimi",
+    "hint": "Opišite cilje glede pomembnih učinkov, tveganj in priložnosti v zvezi z lastno delovno silo ter napredek."
+  },
+  "ESRS-031": {
+    "label": "Zaposleni brez socialne zaščite za bolezen, brezposelnost, poškodbo ali invalidnost in porodniški dopust",
+    "hint": "Vnesite število ali delež zaposlenih brez socialne zaščite v primeru bolezni, brezposelnosti, poškodbe pri delu ali invalidnosti in porodniškega dopusta."
+  },
+  "ESRS-032": {
+    "label": "Odstotek zaposlenih invalidov (ob upoštevanju pravnih omejitev)",
+    "hint": "Vnesite odstotek zaposlenih invalidov, če zakon dovoljuje razkritje."
+  },
+  "ESRS-033": {
+    "label": "Zaposleni, upravičeni do družinskih dopustov, in izraba teh dopustov po spolu",
+    "hint": "Vnesite število ali delež zaposlenih, upravičenih do družinskega dopusta, in delež tistih, ki so ga izrabili, po spolu."
+  },
+  "ESRS-034": {
+    "label": "Politike, zajete skupine in zaveze glede človekovih pravic",
+    "hint": "Opišite politike glede delavcev v vrednostni verigi, zajete skupine in zaveze glede človekovih pravic."
+  },
+  "ESRS-035": {
+    "label": "Postopki vključevanja, kanali za pritožbe, zaščita pred povračilnimi ukrepi in pravna sredstva",
+    "hint": "Opišite, kako vključujete delavce v vrednostni verigi, kateri kanali za pritožbe obstajajo ter kako sta zagotovljena zaščita pred povračilnimi ukrepi in pravno sredstvo."
+  },
+  "ESRS-036": {
+    "label": "Ukrepi, sredstva, resni incidenti in učinkovitost",
+    "hint": "Opišite ukrepe in sredstva v zvezi z delavci v vrednostni verigi, resne incidente (število, zneski) in učinkovitost ukrepov."
+  },
+  "ESRS-037": {
+    "label": "Kakovostni in količinski cilji ter napredek",
+    "hint": "Opišite kakovostne in količinske cilje v zvezi z delavci v vrednostni verigi ter napredek."
+  },
+  "ESRS-038": {
+    "label": "Politike, zajete skupine in kraji, vključno z avtohtonimi ljudstvi",
+    "hint": "Opišite politike glede prizadetih skupnosti, zajete skupine in kraje, vključno z avtohtonimi ljudstvi."
+  },
+  "ESRS-039": {
+    "label": "Vključevanje, kanali za pritožbe, zaščita in pravna sredstva",
+    "hint": "Opišite, kako vključujete prizadete skupnosti, kateri kanali za pritožbe obstajajo ter kako sta zagotovljena zaščita in pravno sredstvo."
+  },
+  "ESRS-040": {
+    "label": "Glavni ukrepi in sredstva, resni učinki in incidenti, učinkovitost",
+    "hint": "Opišite glavne ukrepe in sredstva v zvezi s prizadetimi skupnostmi, resne učinke in incidente (število, zneski) ter učinkovitost."
+  },
+  "ESRS-041": {
+    "label": "Kakovostni in količinski cilji ter napredek",
+    "hint": "Opišite kakovostne in količinske cilje v zvezi s prizadetimi skupnostmi ter napredek."
+  },
+  "ESRS-042": {
+    "label": "Politike in zajete skupine glede obveščanja, varnosti in vključenosti",
+    "hint": "Opišite politike glede potrošnikov in končnih uporabnikov: obveščanje, varnost, vključenost in zajete skupine."
+  },
+  "ESRS-043": {
+    "label": "Vključevanje, kanali za pritožbe, zaščita in pravna sredstva",
+    "hint": "Opišite, kako vključujete potrošnike in končne uporabnike, kateri kanali za pritožbe obstajajo ter kako sta zagotovljena zaščita in pravno sredstvo."
+  },
+  "ESRS-044": {
+    "label": "Ukrepi in sredstva, resni incidenti in učinkovitost",
+    "hint": "Opišite ukrepe in sredstva v zvezi s potrošniki in končnimi uporabniki, resne incidente (število, zneski) in učinkovitost."
+  },
+  "ESRS-045": {
+    "label": "Kakovostni in količinski cilji ter napredek",
+    "hint": "Opišite kakovostne in količinske cilje v zvezi s potrošniki in končnimi uporabniki ter napredek."
+  },
+  "ESRS-046": {
+    "label": "Korporativna kultura, boj proti korupciji, žvižgači, dobrobit živali in politike do dobaviteljev",
+    "hint": "Opišite politike glede korporativne kulture, boja proti korupciji, zaščite žvižgačev, dobrobiti živali in dobaviteljev."
+  },
+  "ESRS-047": {
+    "label": "Usposabljanje, preiskave, upravljanje dobaviteljev in odprava: ukrepi in sredstva",
+    "hint": "Opišite ukrepe in sredstva na področju poslovnega ravnanja: usposabljanje, preiskave, upravljanje dobaviteljev in odpravo (število, %)."
+  },
+  "ESRS-048": {
+    "label": "Cilji in napredek pri pomembnih vprašanjih poslovnega ravnanja",
+    "hint": "Opišite cilje pri pomembnih vprašanjih poslovnega ravnanja in napredek."
+  },
+  "ESRS-049": {
+    "label": "Politični prispevki, lobiranje, teme in odgovorni predstavniki",
+    "hint": "Navedite politične prispevke (zneski) ter opišite lobiranje, njegove teme in odgovorne predstavnike podjetja."
+  },
+  "ESRS-050": {
+    "label": "Povprečni plačilni rok, standardni pogoji in zamude pri plačilih, zlasti MSP",
+    "hint": "Vnesite povprečni plačilni rok v dneh, standardne plačilne pogoje in delež zamujenih plačil, zlasti malim in srednjim podjetjem."
+  }
+}

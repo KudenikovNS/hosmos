@@ -1,0 +1,284 @@
+/* `/dashboard` (T3.7) — the hub. Same conventions as the organisation and
+   inventory pages: base rules are the mobile defaults, the single responsive
+   override is grouped at the bottom, and colours/space/radii come from the
+   globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+.notices {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.card {
+  margin-bottom: var(--space-6);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.iconBox {
+  border-radius: var(--radius-xl);
+  padding: var(--space-2);
+  background: var(--gray-50);
+}
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+.iconGray {
+  color: var(--gray-400);
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.headerGrow {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* ── The period card's facts ───────────────────────────────── */
+.factTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.factMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  margin-top: var(--space-1);
+}
+
+/* ── The counters table ────────────────────────────────────── */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-800);
+}
+
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.totalRow td {
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  border-bottom: 0;
+}
+
+/* ── Validation ────────────────────────────────────────────── */
+.ruleList {
+  list-style: none;
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+.ruleList li + li {
+  margin-top: var(--space-1);
+}
+
+/* ── The KPI block (T5.9) ──────────────────────────────────── */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.kpi {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  min-width: 0;
+}
+
+.kpiLabel {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+  margin-bottom: var(--space-1);
+}
+
+.kpiValue {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.kpiUnit {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-normal);
+  color: var(--gray-500);
+}
+
+/* A figure no completed run published. WORDS, in the muted colour of an
+   absence — never a digit, and never the zero §0.7 forbids. */
+.kpiAbsent {
+  font-size: var(--text-sm);
+  line-height: var(--leading-lg);
+  color: var(--gray-400);
+}
+
+.kpiFraction {
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+  font-variant-numeric: tabular-nums;
+}
+
+/* CALC-6: the run is complete but its inputs moved. Amber, not red — the
+   figures are real, they are just not the newest ones possible. */
+.noteAmber {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--amber-50);
+  color: var(--amber-700);
+  font-size: var(--text-xs);
+  line-height: var(--leading-sm);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* §0.7: the run published NO total. Red, because a report cannot be made. */
+.noteRed {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  line-height: var(--leading-sm);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* ── Quick links (UI-6: where to go next) ──────────────────── */
+.linkGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.linkCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  text-decoration: none;
+  transition: all 0.2s var(--ease-out);
+}
+
+.linkCard:hover {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.linkMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.linkTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.linkBody {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.linkArrow {
+  flex-shrink: 0;
+  color: var(--gray-400);
+}
+
+/* ── Notes ─────────────────────────────────────────────────── */
+.mutedNote {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  padding: var(--space-2) 0;
+}
+
+.rowError {
+  font-size: var(--text-xs);
+  color: var(--red-600);
+  padding: var(--space-2) 0;
+}
+
+/* R-11: the session's rights moved — benign, never red. */
+.accessBanner {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .linkGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kpiGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

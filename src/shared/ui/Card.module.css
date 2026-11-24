@@ -1,0 +1,38 @@
+.card {
+  border-radius: var(--radius-2xl);
+  transition: all 0.3s var(--ease-out);
+}
+
+/* Variants */
+.default {
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+}
+.glass {
+  box-shadow: var(--shadow-sm);
+}
+.outlined {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+}
+
+/* Padding */
+.padSm {
+  padding: var(--space-4);
+}
+.padMd {
+  padding: var(--space-6);
+}
+.padLg {
+  padding: var(--space-8);
+}
+
+/* Hover */
+.hover {
+  cursor: pointer;
+}
+.hover:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}

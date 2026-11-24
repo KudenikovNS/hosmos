@@ -1,0 +1,631 @@
+{
+  "termsContent": {
+    "sections": [
+      {
+        "number": "1",
+        "title": "Sprejem pogojev",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Z dostopom do platforme Hosmos („Platforma“) ali njeno uporabo, ki jo upravlja družba HelpH D.O.O., družba, ustanovljena v Sloveniji („Družba“, „mi“, „nas“), se vi („Uporabnik“, „vi“) strinjate, da vas zavezujejo ti Pogoji uporabe („Pogoji“). Če se ne strinjate, morate takoj prenehati uporabljati Platformo."
+          },
+          {
+            "type": "p",
+            "text": "Ti Pogoji predstavljajo pravno zavezujoč dogovor med vami in Družbo. Z ustvarjanjem računa, dokončanjem uvodnega čarovnika ali naročilom na kateri koli paket potrjujete, da ste te Pogoje prebrali, razumeli in jih sprejeli v celoti."
+          }
+        ]
+      },
+      {
+        "number": "2",
+        "title": "Opis storitve",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hosmos je platforma B2B SaaS, zasnovana za mala in srednje velika podjetja (MSP), ki omogoča:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "izračun emisij toplogrednih plinov po obsegu 1, obsegu 2 in obsegu 3 (GHG Protocol),",
+              "upravljanje več kot 100 nefinančnih ESG parametrov (okolje, družba, upravljanje),",
+              "samodejno pripravo poročil o skladnosti v skladu s standardi CSRD/ESRS, GRI 2021, CDP Climate, UN Global Compact, EU Taksonomija, TCFD in SBTi,",
+              "upravljanje ESG vprašalnikov dobavne verige in spremljanje ciljev razogljičenja."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Razpoložljivost funkcij je odvisna od naročniškega paketa, ki ga izbere Uporabnik (Trial, Starter, Pro ali Enterprise)."
+          }
+        ]
+      },
+      {
+        "number": "3",
+        "title": "Registracija računa",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Za uporabo Platforme morate ustvariti račun in navesti točne in popolne podatke. Odgovorni ste za varovanje zaupnosti svojih prijavnih podatkov in za vse dejavnosti, ki se izvedejo prek vašega računa."
+          },
+          {
+            "type": "p",
+            "text": "Če sumite, da je prišlo do nepooblaščenega dostopa do vašega računa, nas morate o tem nemudoma obvestiti na [support@hosmos.io](mailto:support@hosmos.io)."
+          }
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Naročniški paketi in cene",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hosmos se prodaja kot **letna naročnina**: Starter (300 EUR na leto), Pro (1 000 EUR na leto) in Enterprise (2 000 EUR na leto), vsaka za 12-mesečno obdobje. Naročnini predhodi brezplačen 30-dnevni preizkus (Trial). Vse cene so brez DDV in drugih veljavnih davkov, razen če je navedeno drugače. Vsebina posameznega paketa je opredeljena na strani s ceniki in v primerjavi paketov znotraj Platforme; iste omejitve veljajo v pogodbi."
+          },
+          {
+            "type": "h4",
+            "text": "4.1 Pravica do spremembe cen"
+          },
+          {
+            "type": "p",
+            "text": "Družba si pridržuje pravico, da spremeni naročniške cene, funkcije, vključene v posamezen paket, in strukturo paketov. Take spremembe lahko med drugim vključujejo:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "prilagoditev letne naročnine za katerega koli ali vse pakete,",
+              "dodajanje, odstranjevanje ali prerazporeditev funkcij med paketi,",
+              "uvedbo novih paketov ali ukinitev obstoječih,",
+              "zaračunavanje dodatkov ali posebej dogovorjenih storitev."
+            ]
+          },
+          {
+            "type": "h4",
+            "text": "4.2 Obvestilo o spremembah cen"
+          },
+          {
+            "type": "p",
+            "text": "O vsaki spremembi cen vas bomo obvestili vsaj **30 dni vnaprej v pisni obliki** po e-pošti na naslov, povezan z vašim računom. V obvestilu bodo navedene nova cena, datum začetka veljavnosti in morebitne spremembe funkcij paketa."
+          },
+          {
+            "type": "h4",
+            "text": "4.3 Učinek sprememb cen"
+          },
+          {
+            "type": "p",
+            "text": "Sprememba cene velja od **naslednjega podaljšanja** naročnine, nikoli znotraj že plačanega obdobja. Če se z novo ceno ne strinjate, lahko naročnino prekličete pred datumom podaljšanja; naročnina se tedaj konča z iztekom tekočega obdobja."
+          },
+          {
+            "type": "h4",
+            "text": "4.4 Zaračunavanje, trajanje in vračila"
+          },
+          {
+            "type": "p",
+            "text": "Naročnina se zaračuna **vnaprej za celotno 12-mesečno obdobje** prek storitve Revolut ob začetku naročnine in ob vsakem podaljšanju. Platforma je poslovna storitev (B2B); naročnina za obdobje, ki se je že začelo, se **ne vrača**, niti v celoti niti delno, če Platformo prenehate uporabljati ali naročnino prekličete pred iztekom obdobja — preklic začne veljati ob koncu plačanega obdobja (razdelek 12). Preizkus (Trial) obstaja zato, da Platformo ocenite pred plačilom. Neuspešno plačilo podaljšanja sproži 7-dnevni odlog, po katerem je račun omejen na dostop samo za branje, dokler plačilo ni urejeno."
+          },
+          {
+            "type": "h4",
+            "text": "4.5 Podaljšanje"
+          },
+          {
+            "type": "p",
+            "text": "Če naročnine ne prekličete v nastavitvah računa pred datumom podaljšanja, se naročnina podaljša za nadaljnje 12-mesečno obdobje po ceni, ki velja takrat (razdelek 4.2). Na prihajajoče podaljšanje vas po e-pošti opomnimo vsaj 30 dni vnaprej."
+          }
+        ]
+      },
+      {
+        "number": "5",
+        "title": "Brezplačni preizkus",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Novi uporabniki prejmejo 30-dnevni brezplačni preizkus z dostopom do izračuna obsega 1 in obsega 2, uvodnega čarovnika in enega izvoza poročila v PDF. Za začetek preizkusa kreditna kartica ni potrebna."
+          },
+          {
+            "type": "p",
+            "text": "Ob koncu preizkusnega obdobja bo vaš račun omejen na dostop samo za branje. Za nadaljnjo uporabo Platforme se morate naročiti na plačljiv paket. Podatki preizkusa se hranijo 90 dni po izteku preizkusa."
+          }
+        ]
+      },
+      {
+        "number": "6",
+        "title": "Zbiranje, uporaba in deljenje podatkov",
+        "blocks": [
+          {
+            "type": "h4",
+            "text": "6.1 Podatki, ki jih posredujete",
+            "tight": true
+          },
+          {
+            "type": "p",
+            "text": "Posredujete korporativne ESG podatke, med drugim: porabo energije, podatke o emisijah, sestavo delovne sile, strukture upravljanja, podatke o dobaviteljih in druge nefinančne parametre. Ohranjate lastništvo nad vsemi podatki, ki jih pošljete."
+          },
+          {
+            "type": "h4",
+            "text": "6.2 Uporaba podatkov za analitiko in razvoj izdelka"
+          },
+          {
+            "type": "infobox",
+            "intro": "Z uporabo Platforme potrjujete in se strinjate, da lahko Družba uporablja vaše podatke v **združeni in anonimizirani obliki** za naslednje namene:",
+            "items": [
+              "**Analitika:** za pripravo primerjalnih meril panoge, povprečij emisij na ravni sektorja, indeksov uspešnosti ESG in združenih statističnih poročil.",
+              "**Razvoj izdelka:** za izboljšanje algoritmov Platforme, baz emisijskih faktorjev, metodologij izračuna, uporabniške izkušnje in nabora funkcij.",
+              "**Strojno učenje:** za učenje in izboljšanje internih modelov za validacijo podatkov, zaznavanje anomalij, samodejno razvrščanje ESG parametrov in napovedno analitiko.",
+              "**Raziskave in poročanje:** za objavo anonimiziranih panožnih poročil, strokovnih dokumentov in trajnostnih vpogledov, ki ne identificirajo posameznih podjetij."
+            ]
+          },
+          {
+            "type": "h4",
+            "text": "6.3 Deljenje podatkov s tretjimi osebami"
+          },
+          {
+            "type": "p",
+            "text": "Družba lahko združene in anonimizirane podatke deli z:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "raziskovalnimi ustanovami in panožnimi organi za namene primerjave ESG,",
+              "tehnološkimi partnerji in podobdelovalci, potrebnimi za delovanje Platforme (na podlagi pogodb o obdelavi podatkov),",
+              "regulativnimi organi, kadar to zahteva zakon."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Nikoli** ne bomo prodali posamično prepoznavnih podatkov vašega podjetja tretjim osebam. Vsi deljeni podatki bodo dovolj združeni in anonimizirani, tako da posameznega podjetja ni mogoče prepoznati."
+          },
+          {
+            "type": "h4",
+            "text": "6.4 Hramba podatkov"
+          },
+          {
+            "type": "p",
+            "text": "Vaši podatki se hranijo za čas trajanja vaše aktivne naročnine in še 12 mesecev po prenehanju računa. Kadar koli lahko zahtevate popoln izvoz ali izbris podatkov v skladu s svojimi pravicami po GDPR (glejte razdelek 9)."
+          }
+        ]
+      },
+      {
+        "number": "7",
+        "title": "Intelektualna lastnina",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Platforma, vključno z njeno zasnovo, kodo, algoritmi, bazami emisijskih faktorjev, predlogami poročil in vso povezano intelektualno lastnino, je v lasti družbe HelpH D.O.O. in zaščitena z veljavnimi zakoni o avtorskih pravicah, blagovnih znamkah in poslovnih skrivnostih."
+          },
+          {
+            "type": "p",
+            "text": "Podeljena vam je omejena, neizključna in neprenosljiva licenca za uporabo Platforme za čas trajanja vaše naročnine. Nad Platformo ne smete izvajati obratnega inženiringa, je dekompilirati ali iz nje ustvarjati izpeljanih del."
+          },
+          {
+            "type": "p",
+            "text": "Vsi združeni vpogledi, primerjalna merila ali izpeljani nabori podatkov, ki jih Družba ustvari iz anonimiziranih uporabniških podatkov, so intelektualna lastnina Družbe."
+          }
+        ]
+      },
+      {
+        "number": "8",
+        "title": "Sprejemljiva uporaba",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Strinjate se, da ne boste:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "posredovali zavestno lažnih, zavajajočih ali goljufivih ESG podatkov,",
+              "uporabljali Platforme za napačno prikazovanje okoljske ali družbene uspešnosti svojega podjetja (zeleno zavajanje),",
+              "poskušali pridobiti nepooblaščen dostop do računov ali podatkov drugih uporabnikov,",
+              "uporabljali samodejnih orodij za strganje, pridobivanje ali zbiranje podatkov s Platforme,",
+              "preprodajali dostopa do Platforme brez veljavne pogodbe Enterprise ali pogodbe o lastni blagovni znamki (white-label),",
+              "posegali v infrastrukturo ali varnostne mehanizme Platforme."
+            ]
+          }
+        ]
+      },
+      {
+        "number": "9",
+        "title": "GDPR in varstvo podatkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Družba obdeluje osebne in korporativne podatke v skladu s Splošno uredbo EU o varstvu podatkov (GDPR, Uredba 2016/679). Ključne določbe:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Lokacija podatkov:** vsi podatki so shranjeni znotraj Evropske unije.",
+              "**Pravna podlaga:** obdelava podatkov temelji na izvajanju pogodbe (čl. 6(1)(b)) in zakonitem interesu (čl. 6(1)(f)) za analitiko in razvoj izdelka.",
+              "**Vaše pravice:** imate pravico do dostopa, popravka, izbrisa, prenosljivosti in omejitve obdelave svojih podatkov. Za uveljavljanje teh pravic pišite na [privacy@hosmos.io](mailto:privacy@hosmos.io).",
+              "**Pogodba o obdelavi podatkov:** pogodba o obdelavi podatkov (DPA) je na voljo na zahtevo vsem plačljivim naročnikom, kot zahteva čl. 28 GDPR.",
+              "**Podobdelovalci:** vodimo posodobljen seznam podobdelovalcev, ki je na voljo na {{hosmos.io/sub-processors}}."
+            ]
+          }
+        ]
+      },
+      {
+        "number": "10",
+        "title": "Varnost",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Uvajamo varnostne ukrepe v skladu z industrijskimi standardi, med drugim: šifriranje AES-256 v mirovanju, TLS 1.3 pri prenosu, varnost na ravni vrstic za izolacijo podatkov, večfaktorsko avtentikacijo, nespremenljivo revizijsko beleženje in redno penetracijsko testiranje s strani tretjih oseb (OWASP Top 10)."
+          },
+          {
+            "type": "p",
+            "text": "Čeprav izvajamo vse razumne ukrepe za zaščito vaših podatkov, noben sistem ni popolnoma varen. Potrjujete, da podatke posredujete na lastno odgovornost."
+          }
+        ]
+      },
+      {
+        "number": "11",
+        "title": "Omejitev odgovornosti",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "V največjem obsegu, ki ga dovoljuje veljavno pravo:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Platforma je zagotovljena „takšna, kot je“, brez kakršnih koli jamstev, izrecnih ali naznačenih,",
+              "Družba ne odgovarja za posredno, naključno ali posledično škodo niti za kaznovalno odškodnino, ki bi nastala zaradi vaše uporabe Platforme,",
+              "skupna odgovornost Družbe ne presega skupnega zneska naročnin, ki ste jih plačali v 12 mesecih pred zahtevkom,",
+              "Družba ne jamči, da bodo izračuni ESG izpolnjevali posebne regulativne revizijske zahteve. Uporabniki so odgovorni za preverjanje točnosti podatkov pri usposobljenih strokovnjakih."
+            ]
+          }
+        ]
+      },
+      {
+        "number": "12",
+        "title": "Prekinitev",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Naročnino lahko kadar koli prekličete prek nastavitev računa ali s sporočilom na [support@hosmos.io](mailto:support@hosmos.io). Preklic začne veljati ob **koncu plačanega 12-mesečnega obdobja**; že plačana naročnina za to obdobje se ne vrača (razdelek 4.4), dostop pa ohranite do izteka obdobja."
+          },
+          {
+            "type": "p",
+            "text": "Družba lahko vaš račun zamrzne ali ukine, če kršite te Pogoje, izvajate goljufive dejavnosti ali po izteku odloga ne plačate naročnine."
+          },
+          {
+            "type": "p",
+            "text": "Po prekinitvi lahko svoje podatke izvozite v 30 dneh. Po tem obdobju se podatki hranijo v skladu z našo politiko hrambe podatkov (razdelek 6.4) in nato trajno izbrišejo."
+          }
+        ]
+      },
+      {
+        "number": "13",
+        "title": "Spremembe pogojev",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Družba si pridržuje pravico, da te Pogoje kadar koli spremeni. O bistvenih spremembah vas bomo obvestili po e-pošti vsaj 30 dni pred začetkom njihove veljavnosti. Vaša nadaljnja uporaba Platforme po datumu začetka veljavnosti pomeni sprejem posodobljenih Pogojev."
+          },
+          {
+            "type": "p",
+            "text": "Priporočamo, da te Pogoje redno pregledujete. Datum „Zadnja posodobitev“ na vrhu te strani označuje, kdaj so bili Pogoji nazadnje spremenjeni."
+          }
+        ]
+      },
+      {
+        "number": "14",
+        "title": "Veljavno pravo in reševanje sporov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Te Pogoje ureja in razlaga pravo Republike Slovenije. Vse spore, ki izhajajo iz teh Pogojev, rešujejo pristojna sodišča v Ljubljani, Slovenija."
+          },
+          {
+            "type": "p",
+            "text": "Pred začetkom pravnega postopka se obe strani strinjata, da bosta spore 30 dni poskušali reševati s pogajanji v dobri veri."
+          }
+        ]
+      },
+      {
+        "number": "15",
+        "title": "Kontaktni podatki",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Za vprašanja o teh Pogojih nas kontaktirajte:"
+          },
+          {
+            "type": "contact",
+            "lines": [
+              "**HelpH D.O.O.**",
+              "E-pošta: support@hosmos.io",
+              "Vprašanja o zasebnosti: privacy@hosmos.io",
+              "Spletna stran: hosmos.io"
+            ]
+          }
+        ]
+      }
+    ],
+    "privacyTitle": "Politika zasebnosti",
+    "privacyIntro": "Ta politika zasebnosti je sestavni del zgornjih Pogojev uporabe.",
+    "privacySections": [
+      {
+        "number": "P1",
+        "title": "Upravljavec podatkov",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Upravljavec podatkov je HelpH D.O.O., registriran v Republiki Sloveniji. Za vsa vprašanja v zvezi z zasebnostjo nas kontaktirajte na [privacy@hosmos.io](mailto:privacy@hosmos.io)."
+          }
+        ]
+      },
+      {
+        "number": "P2",
+        "title": "Podatki, ki jih zbiramo",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Zbiramo naslednje kategorije podatkov:"
+          },
+          {
+            "type": "h4",
+            "text": "Podatki o računu",
+            "tight": true
+          },
+          {
+            "type": "p",
+            "text": "Ime, e-poštni naslov, ime podjetja, delovno mesto in zgoščeno vrednost gesla. Zbrani so ob registraciji in so potrebni za delovanje vašega računa."
+          },
+          {
+            "type": "h4",
+            "text": "ESG podatki podjetja",
+            "tight": true
+          },
+          {
+            "type": "p",
+            "text": "Poraba energije, podatki o emisijah, podatki o voznem parku in prevozu, sestava delovne sile, strukture upravljanja, podatki o dobaviteljih in drugi nefinančni parametri, ki jih posredujete prek Platforme."
+          },
+          {
+            "type": "h4",
+            "text": "Podatki o uporabi",
+            "tight": true
+          },
+          {
+            "type": "p",
+            "text": "Obiskane strani, uporabljene funkcije, trajanje seje, vrsta naprave, vrsta brskalnika, naslov IP (anonimiziran po 30 dneh) in vzorci interakcije. Zbrani so samodejno za izboljšanje Platforme."
+          },
+          {
+            "type": "h4",
+            "text": "Podatki o zaračunavanju",
+            "tight": true
+          },
+          {
+            "type": "p",
+            "text": "Podatke o plačilnem sredstvu neposredno obdeluje Revolut in nikoli niso shranjeni na naših strežnikih. Hranimo le ID-je transakcij, vrsto paketa in zgodovino zaračunavanja."
+          }
+        ]
+      },
+      {
+        "number": "P3",
+        "title": "Kako uporabljamo vaše podatke",
+        "blocks": [
+          {
+            "type": "table",
+            "head": ["Namen", "Pravna podlaga (GDPR)"],
+            "rows": [
+              [
+                "Zagotavljanje Platforme in izračun ESG kazalnikov",
+                "čl. 6(1)(b) — izvajanje pogodbe"
+              ],
+              [
+                "Priprava poročil o skladnosti",
+                "čl. 6(1)(b) — izvajanje pogodbe"
+              ],
+              [
+                "Analitika in izboljšanje izdelka (združeno in anonimizirano)",
+                "čl. 6(1)(f) — zakoniti interes"
+              ],
+              [
+                "Učenje modelov strojnega učenja za validacijo in primerjavo podatkov",
+                "čl. 6(1)(f) — zakoniti interes"
+              ],
+              [
+                "Objava anonimiziranih panožnih raziskav in primerjalnih meril",
+                "čl. 6(1)(f) — zakoniti interes"
+              ],
+              [
+                "Zaračunavanje in obdelava plačil",
+                "čl. 6(1)(b) — izvajanje pogodbe"
+              ],
+              [
+                "Pošiljanje transakcijskih e-poštnih sporočil (računi, opozorila)",
+                "čl. 6(1)(b) — izvajanje pogodbe"
+              ],
+              [
+                "Skladnost z zakonskimi obveznostmi",
+                "čl. 6(1)(c) — zakonska obveznost"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "number": "P4",
+        "title": "Deljenje podatkov in tretje osebe",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Podatke delimo le v naslednjih primerih:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Podobdelovalci:** Neoserv (gostovanje), Supabase (baza podatkov), Revolut (plačila) in ponudnik storitev e-pošte. Vsi podobdelovalci imajo podpisane pogodbe o obdelavi podatkov.",
+              "**Združena analitika:** anonimizirane, združene podatke je mogoče deliti z raziskovalnimi ustanovami in panožnimi organi za primerjavo ESG. Posameznega podjetja ni mogoče prepoznati.",
+              "**Zakonske zahteve:** kadar to zahteva zakon, sodna odredba ali regulativni organ."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Vaših osebnih podatkov ali podatkov vašega podjetja **ne** prodajamo tretjim osebam. Vaših podatkov **ne** uporabljamo za oglaševalske namene."
+          }
+        ]
+      },
+      {
+        "number": "P5",
+        "title": "Shranjevanje in varnost podatkov",
+        "blocks": [
+          {
+            "type": "ul",
+            "items": [
+              "Vsi podatki so shranjeni znotraj **Evropske unije**",
+              "Šifriranje v mirovanju: AES-256",
+              "Šifriranje pri prenosu: TLS 1.3",
+              "Izolacija najemnikov: varnost na ravni vrstic PostgreSQL",
+              "Avtentikacija: OAuth 2.0 z izbirno večfaktorsko avtentikacijo (TOTP / WebAuthn)",
+              "Varnostne kopije: neprekinjene z RPO 1 h / RTO 4 h",
+              "Revizijsko beleženje: nespremenljivi, časovno žigosani dnevniki vseh dostopov do podatkov"
+            ]
+          }
+        ]
+      },
+      {
+        "number": "P6",
+        "title": "Vaše pravice",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Po GDPR imate naslednje pravice:"
+          },
+          {
+            "type": "rights",
+            "items": [
+              [
+                "Dostop",
+                "Zahtevate kopijo vseh podatkov, ki jih hranimo o vas"
+              ],
+              ["Popravek", "Popravite netočne ali nepopolne podatke"],
+              [
+                "Izbris",
+                "Zahtevate izbris svojih podatkov („pravica do pozabe“)"
+              ],
+              [
+                "Prenosljivost",
+                "Prejmete svoje podatke v strukturirani, strojno berljivi obliki (JSON/CSV)"
+              ],
+              [
+                "Omejitev",
+                "V določenih okoliščinah omejite obdelavo svojih podatkov"
+              ],
+              [
+                "Ugovor",
+                "Ugovarjate obdelavi, ki temelji na zakonitem interesu"
+              ],
+              [
+                "Preklic soglasja",
+                "Kadar obdelava temelji na soglasju, ga kadar koli prekličete"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Za uveljavljanje katere koli od teh pravic pišite na [privacy@hosmos.io](mailto:privacy@hosmos.io). Odgovorili bomo v 30 dneh."
+          }
+        ]
+      },
+      {
+        "number": "P7",
+        "id": "cookies",
+        "title": "Piškotki",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Hosmos brez vprašanja nastavi **nujno potrebne piškotke**, ker spletno mesto brez njih ne deluje (čl. 5(3) Direktive o zasebnosti in elektronskih komunikacijah; 225. člen ZEKom-2). **Analitične piškotke** nastavimo šele, ko v pasici izberete »Sprejmi vse«; z izbiro »Samo nujni« ostanejo izklopljeni in spletno mesto deluje povsem enako. Izbiro lahko kadar koli spremenite prek »Nastavitve piškotkov« v nogi strani ali v Nastavitvah."
+          },
+          {
+            "type": "table",
+            "head": ["Piškotek", "Namen", "Kategorija", "Trajanje"],
+            "rows": [
+              [
+                "better-auth.session_token",
+                "Ohranja vašo prijavo v račun",
+                "Nujno potreben",
+                "7 dni, podaljša se med uporabo"
+              ],
+              [
+                "NEXT_LOCALE",
+                "Zapomni si izbrani jezik vmesnika",
+                "Nujno potreben",
+                "Do zaprtja brskalnika"
+              ],
+              [
+                "hosmos-consent",
+                "Zapomni si vaš odgovor v pasici o piškotkih",
+                "Nujno potreben",
+                "6 mesecev"
+              ],
+              [
+                "_ga",
+                "Google Analytics: z naključno številko loči en brskalnik od drugega; nanjo niso vezani ime, e-pošta ali vsebina obrazcev",
+                "Analitični — le s soglasjem",
+                "2 leti"
+              ],
+              [
+                "_ga_FNT7ZJBFER",
+                "Google Analytics: ohranja stanje trenutnega obiska za spletno mesto hosmos.eu",
+                "Analitični — le s soglasjem",
+                "2 leti"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Uporabljamo **Google Analytics 4** (lastnost G-FNT7ZJBFER, obdelovalec Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irska) za štetje obiskov JAVNIH strani hosmos.eu — vstopne strani, strani VSME, teh pravil ter zaslonov za prijavo in registracijo. Strani znotraj računa (vaša organizacija, popis podatkov, razkritja, poročila) se ne merijo: z njih do Googla ne pride niti ogled strani niti seja niti kateri koli vaš identifikator. Naloži se ŠELE, ko izberete »Sprejmi vse«: do takrat se skripta sploh ne zahteva, piškotek se ne nastavi in noben zahtevek ne gre do Googla. Z izbiro »Samo nujni« — kadar koli, prek »Nastavitve piškotkov« v nogi strani — merjenje prenehamo. Preden se naslov strani pošlje, iz njega odstranimo poizvedbo in vse identifikatorje, zato se poroča »/sl/evidence/:id«, ne pa zapis, ki ste ga odprli. Lastnosti ne uporabljamo za oglaševanje, ponovno trženje ali izvoz občinstev; Google nastopa kot naš obdelovalec po 28. členu GDPR, prenosi v Združene države pa temeljijo na okviru EU-ZDA za zasebnost podatkov."
+          },
+          {
+            "type": "p",
+            "text": "Oglaševalskih piškotkov in piškotkov za sledenje med spletnimi mesti ne uporabljamo. Če priključimo drugo analitično orodje, ta razdelek pred zagonom dopolnimo z imeni njegovih piškotkov in trajanjem."
+          }
+        ]
+      },
+      {
+        "number": "P8",
+        "title": "Hramba podatkov",
+        "blocks": [
+          {
+            "type": "table",
+            "head": ["Vrsta podatkov", "Obdobje hrambe"],
+            "rows": [
+              ["Podatki o računu", "Trajanje naročnine + 12 mesecev"],
+              ["ESG podatki podjetja", "Trajanje naročnine + 12 mesecev"],
+              ["Podatki preizkusa (potekli)", "90 dni po izteku preizkusa"],
+              [
+                "Podatki o uporabi / analitiki",
+                "24 mesecev (anonimizirani po 30 dneh)"
+              ],
+              [
+                "Evidence zaračunavanja",
+                "Kot zahteva davčna zakonodaja (običajno 10 let)"
+              ],
+              ["Revizijski dnevniki", "36 mesecev"]
+            ]
+          }
+        ]
+      },
+      {
+        "number": "P9",
+        "title": "Spremembe te politike",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "To politiko zasebnosti lahko občasno posodobimo. O bistvenih spremembah vas bomo obvestili po e-pošti vsaj 30 dni pred začetkom njihove veljavnosti. Datum „Zadnja posodobitev“ na vrhu te strani označuje zadnjo spremembo."
+          }
+        ]
+      },
+      {
+        "number": "P10",
+        "title": "Nadzorni organ",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Če menite, da so bile vaše pravice do varstva podatkov kršene, imate pravico vložiti pritožbo pri Informacijskem pooblaščencu Republike Slovenije na {{www.ip-rs.si}} ali pri nadzornem organu v državi vašega prebivališča."
+          }
+        ]
+      }
+    ]
+  }
+}

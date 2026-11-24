@@ -1,0 +1,615 @@
+/* `/evidence` (T4.5). Same conventions as the organisation, factors, inventory
+   and disclosure pages: one breakpoint per concern (1024px for the list/panel
+   split, 768px for the field grids), base rules are the mobile defaults, every
+   responsive override is grouped at the bottom, and colours/space/radii come
+   from the globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.headerGrow {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+.subsectionTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* ── The upload panel (EV-0, EV-1) ─────────────────────────── */
+.upload {
+  border: 1px dashed var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.dropZone,
+.dropZoneActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  border: 1px dashed var(--gray-300);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+  transition: all 0.2s var(--ease-out);
+}
+
+.dropZoneActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.dropTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+}
+
+.dropBody {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+/* The native control is replaced by its own label, not hidden from assistive
+   technology: it stays focusable and reachable by keyboard. */
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.fileLabel {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.fileLabel:hover,
+.fileInput:focus-visible + .fileLabel {
+  background: var(--gray-50);
+  border-color: var(--blue-300);
+}
+
+.filePicked {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+/* An upload that WAS stored — never the error register (EV-1). */
+.storedNote {
+  margin-top: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--green-50, var(--gray-50));
+  padding: var(--space-3);
+}
+
+.storedTitle {
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+}
+
+.duplicate {
+  margin-top: var(--space-2);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-2);
+}
+
+.duplicateTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+}
+
+.duplicateList {
+  list-style: none;
+  margin-top: var(--space-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* ── Filters + the library table ───────────────────────────── */
+.filterGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-800);
+}
+
+.row td {
+  cursor: pointer;
+}
+
+.rowActive td {
+  background: var(--blue-50);
+  cursor: pointer;
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--blue-600);
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+}
+
+/* ── One document, whole (§4.16) ───────────────────────────── */
+.detail {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.detailHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.downloadLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--blue-600);
+}
+
+.factGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.factLabel {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+.factValue {
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+  overflow-wrap: anywhere;
+}
+
+.usageList,
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+}
+
+.linkList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: var(--space-1);
+}
+
+/* ── The row list / panel split ────────────────────────────── */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.rowList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.rowItem,
+.rowItemActive {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+}
+
+.rowItemActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.rowButton {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+}
+
+.rowName {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.rowMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.rowTags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.drawer {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  background: var(--white, #fff);
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.drawerHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.iconButton {
+  border: 0;
+  background: transparent;
+  color: var(--gray-500);
+  cursor: pointer;
+  padding: var(--space-1);
+  border-radius: var(--radius-lg);
+}
+
+.iconButton:hover {
+  background: var(--gray-50);
+}
+
+/* ── The DQ editor (§4.17) ─────────────────────────────────── */
+.dq {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.scoreBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.scoreLabel {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.override {
+  margin-top: var(--space-4);
+  border: 1px solid var(--violet-200, var(--gray-200));
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.overrideReason {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+  font-style: italic;
+}
+
+/* ── The change timeline (LC-10) ───────────────────────────── */
+.timeline {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.timelineList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.timelineVersion,
+.timelineAudit {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 2px solid var(--gray-200);
+  padding: var(--space-1) var(--space-3);
+}
+
+.timelineAudit {
+  border-left-color: var(--green-500, var(--green-600));
+}
+
+.timelineHead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.timelineNo {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.timelineTag {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 0 var(--space-2);
+}
+
+.timelineMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.timelineReason {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+  font-style: italic;
+}
+
+/* ── Forms, notes, refusals, plan explanations ─────────────── */
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hintList {
+  list-style: none;
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+}
+
+.hintList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+}
+
+.hintIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--blue-500);
+}
+
+.saveStatus {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.refusal {
+  list-style: none;
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+.refusal li + li {
+  margin-top: var(--space-1);
+}
+
+/* PG-5: a plan ceiling stays visible, explained, with a CTA — never an error. */
+.planLock {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  border: 1px solid var(--amber-200);
+  background: var(--amber-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.planLockIcon {
+  color: var(--amber-500);
+  flex-shrink: 0;
+}
+
+.planLockMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.planLockTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.planLockBody {
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+}
+
+.planLockCta {
+  flex-shrink: 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .twoCol,
+  .metaGrid,
+  .filterGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+  .metaGrid,
+  .filterGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ── Партия 24: «this format is not taken» ─────────────────────────────── */
+.typeNote {
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--amber-200, var(--gray-200));
+  border-radius: var(--radius-lg);
+  background: var(--amber-50, var(--gray-50));
+  color: var(--gray-800, var(--gray-700));
+  line-height: 1.55;
+}
+.typeTitle {
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: var(--gray-900);
+}

@@ -1,0 +1,360 @@
+/* `/organisation` (T2.7). One breakpoint (768px); base rules are the mobile
+   defaults and every responsive override is grouped at the bottom, as on the
+   settings page. Colours/space/radii come from the globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+.card {
+  margin-bottom: var(--space-6);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.iconBox {
+  border-radius: var(--radius-xl);
+  padding: var(--space-2);
+  background: var(--gray-50);
+}
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconViolet {
+  color: var(--violet-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+.iconOk {
+  color: var(--green-600);
+}
+.iconOff {
+  color: var(--red-500);
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.headerGrow {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerSubtitle {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-400);
+}
+
+/* ── Forms ─────────────────────────────────────────────────── */
+.formStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.twoCol,
+.fourCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+/* A disabled fieldset is how the read-only view is expressed: the data stays
+   visible and selectable, and every control inside stops accepting input. */
+.fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.inlineForm {
+  border: 1px dashed var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.inlineFormTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+  margin-bottom: var(--space-3);
+}
+
+.sectionActions {
+  margin-top: var(--space-4);
+}
+
+.subsection {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.subsectionTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+  margin-bottom: var(--space-1);
+}
+
+/* ── Rows ──────────────────────────────────────────────────── */
+.rowStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rowMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  text-align: left;
+}
+
+.rowTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.rowSubtitle {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.mutedNote {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  padding: var(--space-2) 0;
+}
+
+.readOnlyBanner {
+  margin-bottom: var(--space-4);
+}
+
+.entityRow,
+.boundaryRow {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+}
+
+.entityHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.boundaryRow {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-items: end;
+}
+
+.periodRow,
+.periodRowActive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+}
+
+.periodRow:hover {
+  background: var(--gray-50);
+}
+
+.periodRowActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+/* ── Tables ────────────────────────────────────────────────── */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-800);
+}
+
+/* ── Refusals, plan locks, save bar ────────────────────────── */
+.refusal {
+  list-style: none;
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+.refusal li + li {
+  margin-top: var(--space-1);
+}
+
+.saveBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.saveStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.spin {
+  animation: organisation-spin 1s linear infinite;
+}
+
+@keyframes organisation-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .twoCol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .fourCol {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .boundaryRow {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr);
+    align-items: end;
+  }
+}
+
+/* ── Organisation tree (OrgTree) ──────────────────────────── */
+.treeCounters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.tree,
+.treeChildren {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.treeChildren {
+  margin-left: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--gray-200);
+}
+
+.treeNode {
+  padding: var(--space-1) 0;
+}
+
+.treeRow,
+.treeLeaf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 32px;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.treeLeaf {
+  padding: var(--space-1) 0;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+}
+
+.treeLabel {
+  color: var(--gray-900);
+}
+
+.treeMeta {
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+}
+
+.treeWarn {
+  color: var(--amber-700);
+  font-size: var(--text-xs);
+}
+
+/* ── Партия 21: the asset register's editable rows ─────────────────────── */
+.rowList {
+  display: grid;
+  gap: var(--space-3);
+}
+.rowActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+.confirmRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+.dateWarning {
+  margin: var(--space-2) 0 0;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  background: var(--amber-50, var(--gray-50));
+  color: var(--gray-900);
+}

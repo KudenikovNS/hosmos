@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;600&family=DM+Serif+Display&family=Inter:wght@400;600&family=Playfair+Display:wght@400;500&display=swap");
+
+/* ── Reset (preflight-equivalent, replaces @tailwind base) ─────
+   Mirrors the parts of Tailwind v3 Preflight the app was built on:
+   border-box sizing, zeroed margins, unstyled headings/lists/links,
+   unstyled buttons, and block-level media. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+* {
+  margin: 0;
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+  padding: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+}
+:disabled {
+  cursor: default;
+}
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: var(--gray-400);
+}
+table {
+  border-collapse: collapse;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+
+  /* Brand — blue */
+  --blue-50: #e8f0fd;
+  --blue-100: #d1e1fb;
+  --blue-200: #a3c3f7;
+  --blue-300: #75a5f3;
+  --blue-400: #5b9cf6;
+  --blue-500: #1e6fd9;
+  --blue-600: #1859ae;
+  --blue-700: #124382;
+  --blue-800: #0c2d57;
+  --blue-900: #06172b;
+
+  /* Brand — violet */
+  --violet-50: #f0eaff;
+  --violet-100: #e1d5ff;
+  --violet-200: #c3abff;
+  --violet-300: #9b6fd4;
+  --violet-400: #8357ba;
+  --violet-500: #6b3fa0;
+  --violet-600: #563280;
+  --violet-700: #402660;
+  --violet-800: #2b1940;
+  --violet-900: #150d20;
+
+  /* Neutral — gray */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Semantic — red / green / amber / misc */
+  --red-50: #fef2f2;
+  --red-100: #fee2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --amber-50: #fffbeb;
+  --amber-100: #fef3c7;
+  --amber-200: #fde68a;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --amber-900: #78350f;
+  --yellow-500: #eab308;
+  --orange-500: #f97316;
+  --purple-50: #faf5ff;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  --green-200: #bbf7d0;
+  --cyan-50: #ecfeff;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --sky-400: #38bdf8;
+  --teal-400: #2dd4bf;
+
+  /* Typography */
+  /* Inter after DM Sans: DM Sans has no Cyrillic, Inter does (ru, sr). */
+  --font-sans: "DM Sans", "Inter", system-ui, sans-serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-mono: "DM Mono", monospace;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-semibold: 600;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --leading-xs: 16px;
+  --leading-sm: 20px;
+  --leading-base: 24px;
+  --leading-lg: 28px;
+  --leading-xl: 28px;
+  --leading-2xl: 32px;
+  --leading-3xl: 36px;
+  --leading-4xl: 40px;
+  --leading-5xl: 52px;
+
+  /* Spacing (4px scale) */
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Radii */
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Breakpoints (reference only — CSS @media can't read custom props).
+     Keep media queries in sync with these values across all modules. */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+}
+
+/* Cyrillic locales: DM Sans and DM Serif Display carry Latin only, and a
+   headline that mixes DM Serif for "ESG" with a fallback for "отчёт" reads
+   as two fonts. Inter and Playfair Display cover both scripts, so the whole
+   line is set in one face. Only the two font tokens change here — every
+   other token stays in :root for every locale. */
+html:lang(ru),
+html:lang(sr) {
+  --font-sans: "Inter", "DM Sans", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-normal);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ONE FAMILY IN THE PRODUCT (09.09.2026): headings are DM Sans 600, like every
+   card title and the report itself. The serif display face is a MARKETING
+   voice and lives only under `.marketing` (the `(marketing)` layout). */
+h1,
+h2 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+}
+
+.marketing h1,
+.marketing h2 {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-normal);
+  letter-spacing: 0;
+}
+
+/* The public pages read at a larger scale than the dense product UI (UX audit
+   10.09.2026 §10: body 16, cards 15–16, captions 13–14). The tokens are
+   re-declared under the wrapper, so every landing module inherits the scale
+   without a second set of class names. */
+.marketing {
+  --text-xs: 13px;
+  --leading-xs: 18px;
+  --text-sm: 14px;
+  --leading-sm: 20px;
+  --text-base: 16px;
+  --leading-base: 24px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(26, 26, 46, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Sonner toasts — align to our design tokens (font, radius, semantic colors). */
+[data-sonner-toaster] {
+  font-family: var(--font-sans);
+  --border-radius: var(--radius-lg);
+}
+
+[data-sonner-toaster] [data-sonner-toast] {
+  font-size: var(--text-sm);
+}
+
+/* richColors variants mapped onto our brand palette */
+[data-sonner-toaster] [data-sonner-toast][data-type="success"] {
+  --normal-bg: var(--green-50);
+  --normal-border: var(--green-200);
+  --normal-text: var(--green-700);
+}
+
+[data-sonner-toaster] [data-sonner-toast][data-type="error"] {
+  --normal-bg: var(--red-50);
+  --normal-border: var(--red-200);
+  --normal-text: var(--red-700);
+}
+
+[data-sonner-toaster] [data-sonner-toast][data-type="warning"] {
+  --normal-bg: var(--amber-50);
+  --normal-border: var(--amber-200);
+  --normal-text: var(--amber-700);
+}
+
+[data-sonner-toaster] [data-sonner-toast][data-type="info"] {
+  --normal-bg: var(--blue-50);
+  --normal-border: var(--blue-200);
+  --normal-text: var(--blue-700);
+}

@@ -1,0 +1,230 @@
+/* Process steps, variant 2 — same disclosure pattern as v1, plus a field-level
+   preview of what each step produces (ТЗ §5). */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  background: #fff;
+  overflow: hidden;
+}
+
+.headerWrap {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 60px;
+  padding: var(--space-4);
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  transition: background 200ms var(--ease-out);
+}
+.header:hover {
+  background: var(--gray-50);
+}
+
+.number {
+  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  line-height: 1.2;
+  color: var(--gray-300);
+  transition: color 200ms var(--ease-out);
+}
+.headerOpen .number {
+  color: var(--blue-500);
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+.headerTitle {
+  font-size: var(--text-base);
+  line-height: 1.4;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+/* The action line is visible on the collapsed row too: a closed accordion that
+   shows only five verbs makes the reader open all five to learn anything. */
+.headerAction {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--gray-500);
+}
+
+.chevron {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--gray-500);
+  transition: transform 200ms var(--ease-out);
+}
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.panel {
+  padding: 0 var(--space-4) var(--space-5);
+  animation: reveal 200ms var(--ease-out);
+}
+
+/* ── The mini screen ──────────────────────────────────────────────────────── */
+.preview {
+  padding: var(--space-4);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+}
+.previewLabel {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+}
+.previewCaption {
+  margin-top: 2px;
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+.previewRows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+.previewRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+.previewRow:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.previewField {
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  color: var(--gray-500);
+}
+.previewValue {
+  margin: 0;
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  text-align: right;
+}
+
+.result {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--gray-900);
+}
+.resultLabel {
+  display: block;
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: var(--space-1);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ≥1024 px — the open panel moves into a second column, pinned while the reader
+   works down the list. `display: contents` dissolves the <li> so its header and
+   panel become direct grid children (same technique as v1). */
+@media (min-width: 1024px) {
+  .list {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    /* Five step rows sized to their content plus a filler row: the panel spans
+       all six, so its extra height lands in the filler instead of being spread
+       between the steps (the gap the UX audit of 10.09.2026 §6 measured). */
+    grid-template-rows: repeat(5, max-content) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-3) var(--space-8);
+  }
+  .item {
+    display: contents;
+  }
+  .headerWrap {
+    grid-column: 1;
+  }
+  .header {
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    background: #fff;
+  }
+  .headerOpen {
+    border-color: var(--blue-300);
+    box-shadow: 0 0 0 1px var(--blue-200);
+    background: var(--blue-50);
+  }
+  .headerOpen:hover {
+    background: var(--blue-50);
+  }
+  .panel {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    align-self: start;
+    position: sticky;
+    top: 100px;
+    padding: var(--space-6);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-2xl);
+    background: #fff;
+  }
+  .preview {
+    background: var(--gray-50);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .number,
+  .chevron {
+    transition: none;
+  }
+  .panel {
+    animation: none;
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "landing": {
+    "meta": {
+      "title": "Hosmos: VSME ESG izvještavanje za MSP | Planovi od 300 € godišnje",
+      "description": "Prikupite ESG podatke, izračunajte Scope 1 i 2 i pripremite VSME izvještaj u Hosmosu. Planovi Starter, Pro i Enterprise, plus zaseban VESG Pro put."
+    },
+    "nav": {
+      "aria": "Glavna navigacija",
+      "features": "Funkcije",
+      "process": "Kako radi",
+      "pricing": "Cijene",
+      "vesg": "VESG",
+      "faq": "Pitanja",
+      "open": "Otvori izbornik",
+      "close": "Zatvori izbornik",
+      "skipToContent": "Prijeđi na sadržaj",
+      "logIn": "Prijava",
+      "articles": "Članci"
+    },
+    "cta": {
+      "demo": "Zakažite demo",
+      "vesg": "Provjerite VESG podobnost",
+      "enterprise": "Razgovarajmo o Enterpriseu",
+      "whiteLabel": "Razgovarajmo o White Labelu",
+      "learnVesg": "Saznajte o VESG Pro"
+    },
+    "hero": {
+      "eyebrow": "DOBROVOLJNO VSME ESG IZVJEŠTAVANJE ZA MSP",
+      "title": "Prikupite svoje ESG podatke i pripremite VSME izvještaj na jednoj platformi.",
+      "subtitle": "Hosmos pomaže MSP-ima organizirati podatke prema VSME-u, izračunati Scope 1 i 2, procijeniti relevantne kategorije Scope 3 i pripremiti PDF i Excel izlaz za internu provjeru i neovisni pregled.",
+      "microcopy": "Godišnja pretplata od {price} bez PDV-a. Bez obećanja subvencije ili revizorskog mišljenja."
+    },
+    "outcome": {
+      "title": "Od razbacanih tablica do vođenog procesa",
+      "now": "Danas",
+      "withHosmos": "S Hosmosom",
+      "rows": [
+        {
+          "now": "Podaci su razbacani po tablicama, računima i e-porukama.",
+          "with": "Jedna struktura kroz pravne osobe, lokacije i razdoblja."
+        },
+        {
+          "now": "Nejasno je što VSME zapravo zahtijeva.",
+          "with": "Vođeni koraci B1–B11 i C1–C9 za plan koji ste odabrali."
+        },
+        {
+          "now": "Izračune je teško potkrijepiti.",
+          "with": "Izvor, faktor, metoda i dokaz stoje uz brojku."
+        },
+        {
+          "now": "Izvještaj se sastavlja ručno.",
+          "with": "Kontrolirani PDF i Excel izvoz za pregled."
+        }
+      ]
+    },
+    "features": {
+      "title": "Od sirovih podataka do materijala koje netko može provjeriti",
+      "subtitle": "Šest područja koja pokrivaju put od prikupljanja podataka do izvoza za neovisni pregled.",
+      "items": [
+        {
+          "key": "guidedVsme",
+          "title": "Vođeni VSME",
+          "text": "Struktura VSME Basic objava B1–B11; Comprehensive C1–C9 na Pro planu i višima.",
+          "status": "included"
+        },
+        {
+          "key": "ghg",
+          "title": "GHG izračuni",
+          "text": "Scope 1 i 2 u svakom planu. Scope 3 u dubini koju vaš plan pokriva.",
+          "status": "included"
+        },
+        {
+          "key": "evidence",
+          "title": "Trag dokaza",
+          "text": "Sačuvajte izvor, razdoblje, jedinicu, faktor, metodu izračuna i prateću datoteku.",
+          "status": "included"
+        },
+        {
+          "key": "entities",
+          "title": "Pravne osobe i lokacije",
+          "text": "Razdvojite podatke po pravnoj osobi i lokaciji; ograničenja su vidljiva prije odabira plana.",
+          "status": "included"
+        },
+        {
+          "key": "suppliers",
+          "title": "Registar dobavljača",
+          "text": "Registar vaših dobavljača s njihovim ESG podacima na Pro i Enterprise planovima. Ispunjava ga vaša tvrtka; upitnike dobavljačima ne šaljemo.",
+          "status": "addOn"
+        },
+        {
+          "key": "exports",
+          "title": "Izvozi",
+          "text": "PDF i Excel u svakom planu. Drugi se formati pojavljuju tek kada su zaista spremni.",
+          "status": "included"
+        }
+      ],
+      "badge": {
+        "included": "Uključeno",
+        "estimated": "Procijenjeno",
+        "addOn": "Ovisi o planu",
+        "comingLater": "Kasnije",
+        "aria": "Status funkcije: {status}"
+      }
+    },
+    "process": {
+      "title": "Pet koraka od granica izvještavanja do izvoza",
+      "subtitle": "Svaki korak odgovara zaslonu na platformi i konkretnom rezultatu.",
+      "resultLabel": "Rezultat",
+      "steps": [
+        {
+          "title": "Postavite granice",
+          "action": "Pravne osobe, lokacije, razdoblje, valuta i metoda konsolidacije.",
+          "result": "Opseg izvještavanja je definiran."
+        },
+        {
+          "title": "Popunite VSME",
+          "action": "Vođene objave B1–B11; C1–C9 ovisno o planu.",
+          "result": "Status potpunosti i popis nedostataka."
+        },
+        {
+          "title": "Dodajte podatke o aktivnostima",
+          "action": "Energija, goriva, službena putovanja, nabave i njihovi izvori.",
+          "result": "Provjerljiva osnova za izračune."
+        },
+        {
+          "title": "Provjerite izračune",
+          "action": "Faktor, jedinica, metoda, oznaka procijenjeno/stvarno i dokaz.",
+          "result": "Kontrola kvalitete prije izvoza."
+        },
+        {
+          "title": "Izvezite",
+          "action": "PDF i Excel, plus paket za neovisni pregled.",
+          "result": "Materijal za daljnju provjeru."
+        }
+      ],
+      "boundaryTitle": "Gdje prestaje naša odgovornost",
+      "boundary": "Hosmos priprema podatke i materijale. Neovisni pregled s ograničenim uvjerenjem obavlja ovlašteno revizorsko društvo prema zasebnom ugovoru. Objavljivanje na AJPES-u također je zaseban korak."
+    },
+    "depth": {
+      "title": "VSME i Scope 3: dubina po planu",
+      "subtitle": "Ista tablica vrijedi za stranicu s cijenama i za ugovor — nema obećanja koje plan ne pokriva.",
+      "colPlan": "Plan",
+      "colVsme": "VSME",
+      "colScope3": "Scope 3",
+      "colBoundaries": "Organizacijske granice",
+      "colOutput": "Dobavljači i izlaz",
+      "vsmeBasic": "Basic B1–B11",
+      "vsmeBasicComprehensive": "Basic i Comprehensive C1–C9",
+      "entityLimit": "{count, plural, one {# pravna osoba} few {# pravne osobe} other {# pravnih osoba}}",
+      "entityLimitUpTo": "Do {count, plural, one {# pravna osoba} few {# pravne osobe} other {# pravnih osoba}}",
+      "siteLimit": "do {count, plural, one {# lokacija} few {# lokacije} other {# lokacija}}",
+      "siteUnlimited": "lokacije bez ograničenja",
+      "outputStarter": "Bez registra dobavljača; do 5 članova tima; PDF i Excel",
+      "outputPro": "Registar dobavljača; konsolidacija grupe; do 15 članova tima; PDF i Excel",
+      "outputEnterprise": "Registar dobavljača; konsolidacija grupe; neograničen broj članova tima; PDF i Excel",
+      "whiteLabelNote": "White Label nije četvrta cjenovna razina; to je zasebna ugovorna konfiguracija za partnere.",
+      "estimatedNote": "Status „procijenjeno“ ostaje vidljiv u sučelju i u izvozu.",
+      "tableAria": "Usporedba dubine VSME i Scope 3 po planu",
+      "scope3Spend": "Procjena Scope 3 na temelju troškova za kategorije 1 i 2 (kupljena roba i usluge, kapitalna dobra), prikazana izvan zbrojeva Scope 1+2"
+    },
+    "pricing": {
+      "title": "Odaberite dubinu izvještavanja",
+      "subtitle": "Prodajemo godišnju pretplatu, pa nema mjesečne opcije.",
+      "perYear": "godišnje",
+      "vatNote": "bez PDV-a",
+      "highlighted": "Za timove koji rastu",
+      "planName": {
+        "starter": "Starter",
+        "pro": "Pro",
+        "enterprise": "Enterprise"
+      },
+      "planSummary": {
+        "starter": "Prvi dobrovoljni VSME izvještaj za jednu pravnu osobu.",
+        "pro": "Comprehensive objave, prilog pojednostavljenog ESRS-a i registar dobavljača.",
+        "enterprise": "Grupa do 10 pravnih osoba, neograničen broj lokacija i članova tima."
+      },
+      "notes": [
+        "Sve su cijene bez PDV-a i odnose se na 12-mjesečnu softversku pretplatu.",
+        "Implementacija, stručna priprema izvještaja, neovisni pregled i objavljivanje na AJPES-u nisu uključeni osim ako zasebna ponuda to izričito ne navodi."
+      ],
+      "whiteLabelTitle": "Trebate platformu pod vlastitim brendom?",
+      "whiteLabelText": "White Label zasebna je ugovorna konfiguracija za partnere i nije dio Enterprise plana. Ne objavljujemo cijenu za nju."
+    },
+    "vesg": {
+      "eyebrow": "ZASEBAN PUT",
+      "title": "Trebate stručnu pripremu VSME izvještaja za VESG put?",
+      "intro": "Hosmos VESG Pro kombinira godinu dana pristupa SaaS Pro planu sa stručnom pripremom VSME izvještaja. To je zasebna komercijalna ponuda — ne nova SaaS razina i ne jamstvo da će vaučer biti odobren.",
+      "tableAria": "Sastav cijene Hosmos VESG Pro za prvu godinu",
+      "rowSaas": "SaaS Pro, 12 mjeseci",
+      "rowExpert": "Stručna priprema VSME izvještaja",
+      "rowTotal": "Hosmos VESG Pro, ukupno",
+      "totalSuffix": "+ PDV",
+      "rowReview": "Neovisni pregled ovlaštenog revizorskog društva",
+      "rowReviewValue": "Zaseban ugovor i cijena",
+      "rowAjpes": "Objavljivanje na AJPES-u",
+      "rowAjpesValue": "Zasebno",
+      "conditionsTitle": "Uvjeti SPS-a",
+      "conditions": "Objavljeni uvjeti SPS-a navode sufinanciranje od {percent}% prihvatljivih troškova, sa subvencijom od najmanje {min} i najviše {max}. Program je otvoren do {openUntil}. O prijavi odlučuje SPS; subvencija nije zajamčena. Ne tvrdimo da je Hosmos licencija automatski prihvatljiv ili nadoknadiv trošak.",
+      "conditionsStale": "Trenutačno ne objavljujemo uvjete VESG programa jer ih nismo ponovno provjerili. Provjerite aktualne uvjete, stope sufinanciranja i prihvatljive troškove u važećoj SPS dokumentaciji.",
+      "checkedAt": "Uvjeti provjereni {date}.",
+      "sourceLink": "Službena SPS VESG stranica",
+      "formNote": "Pogledat ćemo vaše početne podatke i javiti se da razgovaramo o putu. Ne ocjenjujemo prijave i ne odlučujemo o podobnosti."
+    },
+    "trust": {
+      "title": "Što možete provjeriti i gdje su granice",
+      "subtitle": "Umjesto procjena i logotipa, navodimo izvore koje sami možete otvoriti.",
+      "sourcesTitle": "Izvori",
+      "efragLink": "EFRAG VSME standard (Prilog I)",
+      "efragNote": "Terminologija objava i struktura Basic / Comprehensive. Verzija metodologije provjerena {date}.",
+      "spsLink": "SPS – VESG vaučer",
+      "spsNote": "Uvjeti programa provjereni {date}.",
+      "auditTrailTitle": "Trag dokaza",
+      "auditTrailNote": "Svaka brojka nosi svoj izvor, razdoblje, jedinicu, faktor, metodu izračuna i priložen dokaz. To je provjerljivo polje u proizvodu, a ne tvrdnja da je revizija uključena.",
+      "limitsTitle": "Što Hosmos jest, a što nije",
+      "allowed": "Što tvrdimo",
+      "forbidden": "Što ne tvrdimo",
+      "rows": [
+        {
+          "allowed": "Pomažemo vam pripremiti VSME izvještaj.",
+          "forbidden": "CSRD-ready za 30 minuta."
+        },
+        {
+          "allowed": "Do 60% prihvatljivih troškova pod uvjetima SPS-a.",
+          "forbidden": "Zajamčena subvencija."
+        },
+        {
+          "allowed": "Materijal za neovisni pregled.",
+          "forbidden": "Revizija uključena."
+        },
+        {
+          "allowed": "Procjena Scope 3 na temelju troškova za kategorije 1 i 2.",
+          "forbidden": "Puni Scope 3 s 15 kategorija."
+        },
+        {
+          "allowed": "White Label prema ugovoru.",
+          "forbidden": "White Label kao dio Enterprise plana."
+        },
+        {
+          "allowed": "Funkciju najavljujemo kada je zaista spremna.",
+          "forbidden": "Obećanja XBRL/iXBRL, CDP, SBTi ili TCFD."
+        }
+      ],
+      "legal": "Hosmos ne pruža revizorske usluge i ne odlučuje o dodjeli subvencije. Potpunost i točnost rezultata ovise o izvornim podacima klijenta. Uvjeti VESG-a mogu se promijeniti; provjerite važeću SPS dokumentaciju."
+    },
+    "faq": {
+      "title": "Česta pitanja",
+      "subtitle": "Komercijalna i regulatorna pitanja koja se javljaju prije demoa.",
+      "items": [
+        {
+          "q": "Što je VSME?",
+          "a": "Dobrovoljni europski standard izvještavanja o održivosti za mikro, mala i srednja poduzeća koja ne kotiraju na burzi. Hosmos strukturira prikupljanje podataka u VSME dubini koju odaberete."
+        },
+        {
+          "q": "Zamjenjuje li Hosmos revizora?",
+          "a": "Ne. Platforma pomaže u pripremi podataka, izračuna i izvoza. Neovisni pregled obavlja ovlašteno revizorsko društvo prema zasebnom ugovoru."
+        },
+        {
+          "q": "Koje su kategorije Scope 3 pokrivene?",
+          "a": "Svaki plan procjenjuje kategorije 1 i 2 (kupljena roba i usluge, kapitalna dobra) iz vaših godišnjih troškova uz EXIOBASE faktore. Procjena se prikazuje odvojeno od zbrojeva Scope 1 i 2 i označena je kao procjena. Ostalih 13 kategorija nije pokriveno."
+        },
+        {
+          "q": "Što uključuje godišnja pretplata?",
+          "a": "Pristup funkcijama odabranog plana na 12 mjeseci. Stručne usluge, neovisni pregled i objavljivanje na AJPES-u nisu uključeni osim ako nije zasebno navedeno."
+        },
+        {
+          "q": "Što je Hosmos VESG Pro?",
+          "a": "Zaseban put za prvu godinu: SaaS Pro za 1.000 € plus stručna priprema VSME izvještaja za 2.000 € — ukupno 3.000 € bez PDV-a. To nije dodatna SaaS razina."
+        },
+        {
+          "q": "Jamči li Hosmos SPS subvenciju?",
+          "a": "Ne. SPS odlučuje o prijavi i o prihvatljivosti troškova. Prema objavljenim uvjetima, moguće je sufinanciranje 60% prihvatljivih troškova u zadanim granicama."
+        },
+        {
+          "q": "Jesu li objavljivanje na AJPES-u i neovisni pregled uključeni?",
+          "a": "Ne. Oboje se dogovara i plaća zasebno."
+        },
+        {
+          "q": "Podržavate li XBRL, iXBRL, CDP, SBTi ili TCFD?",
+          "a": "Ne obećavamo ove mogućnosti na ovoj stranici dok nisu zaista spremne i provjerene. Mogu biti omogućene kasnije."
+        },
+        {
+          "q": "Po čemu se Enterprise razlikuje od White Labela?",
+          "a": "Enterprise je SaaS plan za grupu do 10 pravnih osoba s neograničenim brojem lokacija i članova tima. White Label je zasebna ugovorna konfiguracija pod brendom partnera."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pogledajte platformu na vlastitim podacima",
+      "subtitle": "Provest ćemo vas kroz vođene objave, izračune i izvoz. Ako vam treba stručna priprema izvještaja, razgovarajmo o VESG Pro putu.",
+      "note": "Godišnja pretplata od {price} bez PDV-a. Bez obećanja subvencije ili revizorskog mišljenja."
+    },
+    "footer": {
+      "tagline": "Platforma za dobrovoljno VSME ESG izvještavanje za mala i srednja poduzeća.",
+      "by": "od HelpH d.o.o.",
+      "sectionProduct": "Proizvod",
+      "sectionLegal": "Pravno",
+      "sectionSources": "Izvori",
+      "terms": "Uvjeti i privatnost",
+      "contact": "Kontakt",
+      "copyright": "© {year} HelpH d.o.o. Sva prava pridržana.",
+      "disclaimer": "Hosmos ne pruža revizorske usluge i ne odlučuje o dodjeli subvencije."
+    },
+    "form": {
+      "demoTitle": "Zakažite demo",
+      "demoSubtitle": "Ispunite obrazac i javit ćemo se s prikazom uživo na vašim podacima.",
+      "vesgTitle": "Provjerite VESG podobnost",
+      "vesgSubtitle": "Pogledat ćemo vaše početne podatke i javiti se da razgovaramo o putu. Ovo nije ocjena podobnosti.",
+      "close": "Zatvori obrazac",
+      "required": "obvezno",
+      "submit": "Pošalji upit",
+      "submitVesg": "Razgovarajmo o VESG Pro",
+      "submitting": "Slanje …",
+      "name": "Ime i prezime",
+      "email": "Poslovna e-pošta",
+      "company": "Tvrtka",
+      "country": "Država",
+      "entityCount": "Broj pravnih osoba",
+      "siteCount": "Broj lokacija",
+      "interest": "Zanima me",
+      "size": "Veličina tvrtke",
+      "hasEmployee": "Imate li barem jednog zaposlenika?",
+      "period": "Izvještajno razdoblje i željeni rok",
+      "comment": "Komentar",
+      "inSlovenia": "Je li tvrtka registrirana u Sloveniji?",
+      "choose": "Odaberite …",
+      "options": {
+        "entities1": "1",
+        "entities2to3": "2–3",
+        "entities4to10": "4–10",
+        "entities10plus": "više od 10",
+        "yes": "Da",
+        "no": "Ne",
+        "unknown": "Ne znam",
+        "sizeMicro": "Mikro",
+        "sizeSmall": "Malo",
+        "sizeMedium": "Srednje",
+        "sizeOther": "Ostalo",
+        "interestStarter": "Starter",
+        "interestPro": "Pro",
+        "interestEnterprise": "Enterprise",
+        "interestWhiteLabel": "White Label"
+      },
+      "consent": "Suglasan/na sam s obradom svojih osobnih podataka u skladu s politikom privatnosti.",
+      "consentLink": "politikom privatnosti",
+      "marketing": "Želim povremene novosti o proizvodu. (neobvezno)",
+      "honeypotLabel": "Molimo ostavite ovo polje prazno.",
+      "errors": {
+        "required": "Ovo je polje obvezno.",
+        "email": "Unesite valjanu poslovnu adresu e-pošte.",
+        "consent": "Potrebna nam je vaša suglasnost prije slanja upita.",
+        "tooLong": "Ovaj je unos predugačak.",
+        "server": "Upit se nije mogao poslati. Pokušajte ponovno ili pišite na adresu u podnožju.",
+        "rateLimited": "Ovaj je upit poslan previše puta. Pokušajte ponovno za nekoliko minuta.",
+        "summaryOne": "Obrazac ima {n} pogrešku.",
+        "summaryTwo": "Obrazac ima {n} pogreške.",
+        "summaryFew": "Obrazac ima {n} pogreške.",
+        "summaryOther": "Obrazac ima {n} pogrešaka."
+      },
+      "successTitle": "Upit poslan",
+      "successBody": "Odgovorit ćemo na navedenu adresu e-pošte, obično u roku od dva radna dana.",
+      "successClose": "Zatvori"
+    },
+    "noscript": "Slanje obrasca zahtijeva JavaScript. Svaka cijena, uvjet i izvor na ovoj stranici čitljivi su i bez njega; upit možete poslati i e-poštom.",
+    "v2": {
+      "triggers": {
+        "eyebrow": "KADA OVO POSTANE HITNO",
+        "title": "Četiri razloga zbog kojih nam se tvrtke obraćaju",
+        "subtitle": "Ako vas neki od njih opisuje, VSME izvještaj pitanje je rokova, a ne teorije.",
+        "items": [
+          {
+            "key": "bank",
+            "title": "Zahtjev banke",
+            "text": "Za financiranje ili obnovu kredita banka traži podatke o održivosti u VSME strukturi."
+          },
+          {
+            "key": "client",
+            "title": "Upitnik velikog kupca",
+            "text": "Kupac ocjenjuje svoje dobavljače i očekuje izvještaj koji netko može provjeriti."
+          },
+          {
+            "key": "tender",
+            "title": "Natječaji i lanci opskrbe",
+            "text": "Sudjelujete na natječajima gdje su kriteriji održivosti dio ocjene."
+          },
+          {
+            "key": "vesg",
+            "title": "VESG vaučer",
+            "text": "Prijavljujete se za SPS vaučer koji zahtijeva izvještaj s neovisnim pregledom."
+          }
+        ]
+      },
+      "preview": {
+        "caption": "Primjer: VSME objave u Hosmosu",
+        "exampleNote": "Prikazani su podaci primjer, a ne rezultat stvarne tvrtke.",
+        "period": "Izvještajno razdoblje",
+        "periodValue": "01.01.2024 – 31.12.2024",
+        "progress": "Napredak izvještaja",
+        "moduleBasic": "VSME Basic (B1–B11)",
+        "emissions": "Emisije stakleničkih plinova",
+        "scope1": "Scope 1",
+        "scope1Note": "Izravne emisije",
+        "scope2": "Scope 2",
+        "scope2Note": "Neizravne, iz energije",
+        "scope3": "Scope 3",
+        "scope3Note": "Procijenjene kategorije",
+        "actual": "Stvarno",
+        "estimated": "Procijenjeno",
+        "evidence": "Dokazi",
+        "evidenceValue": "23 / 29 objava",
+        "disclosures": [
+          "B1 · Osnova za pripremu",
+          "B2 · Prakse, politike i buduće inicijative",
+          "B3 · Energija i emisije stakleničkih plinova",
+          "B4 · Onečišćenje zraka, vode i tla",
+          "B5 · Bioraznolikost",
+          "B6 · Voda",
+          "B7 · Korištenje resursa, kružno gospodarstvo i otpad",
+          "B8 · Opće značajke radne snage",
+          "B9 · Zdravlje i sigurnost radne snage",
+          "B10 · Plaće, kolektivno pregovaranje i osposobljavanje",
+          "B11 · Osude i kazne za korupciju"
+        ]
+      },
+      "stepPreview": {
+        "label": "Što vidite na zaslonu",
+        "steps": [
+          {
+            "caption": "Granice izvještavanja",
+            "rows": [
+              ["Pravne osobe", "3"],
+              ["Lokacije", "5"],
+              ["Bazna godina", "2024"],
+              ["Metoda konsolidacije", "Operativna kontrola"]
+            ]
+          },
+          {
+            "caption": "Struktura objava",
+            "rows": [
+              ["Basic (B1–B11)", "82%"],
+              ["Comprehensive (C1–C9)", "Po planu"],
+              ["Označeno kao neprimjenjivo", "3"]
+            ]
+          },
+          {
+            "caption": "Podaci o aktivnostima",
+            "rows": [
+              ["Električna energija (Scope 2)", "370,0 MWh"],
+              ["Izvor faktora", "SI, 2024"],
+              ["Metoda", "Lokacijska"],
+              ["Dokaz", "Račun, PDF"]
+            ]
+          },
+          {
+            "caption": "Kontrola kvalitete",
+            "rows": [
+              ["Potpunost objava", "76%"],
+              ["Otvorene napomene", "2"],
+              ["Procijenjene vrijednosti", "Označene"]
+            ]
+          },
+          {
+            "caption": "Izvoz",
+            "rows": [
+              ["PDF izvještaj", "Spremno"],
+              ["Excel s podacima", "Spremno"],
+              ["Paket za pregled", "Spremno"]
+            ]
+          }
+        ]
+      },
+      "depthPricing": {
+        "title": "Dubina izvještavanja i cijena na jednom mjestu",
+        "subtitle": "Kartice planova kažu koliko plan košta i kome je namijenjen; usporedba navodi što svaki pokriva. Iste brojke, jedan prikaz.",
+        "matrixHeading": "Što plan pokriva"
+      },
+      "vesgEquation": {
+        "outsideTitle": "Što cijena ne uključuje",
+        "plus": "i",
+        "equals": "ukupno"
+      },
+      "finalCta": {
+        "note": "Odgovaramo u roku od dva radna dana. Demo je razgovor uz zaslon, a ne prodajni poziv."
+      }
+    },
+    "articles": {
+      "title": "Članci o izvještavanju",
+      "lead": "Kratki tekstovi za tvrtku koja izvještava prvi put: što je standard, koje podatke prikupiti i kako izgleda put do prvog izvješća.",
+      "all": "Svi članci"
+    }
+  }
+}

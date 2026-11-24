@@ -1,0 +1,498 @@
+/* `/readiness` — the VSME readiness hub. Mobile-first; tokens only; the single
+   responsive override is grouped at the bottom (design-system §2). */
+
+.banner {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--blue-50);
+  color: var(--blue-700);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.bannerError {
+  composes: banner;
+  background: var(--red-50);
+  color: var(--red-600);
+}
+
+/* ── Summary ─────────────────────────────────────────────────── */
+.summary {
+  background: var(--background);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.summaryHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.summaryTitle {
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+  color: var(--gray-900);
+}
+
+.summaryMeta {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+  margin-top: var(--space-1);
+}
+
+.summaryFigure {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.percent {
+  font-family: var(--font-mono);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-3xl);
+  font-weight: var(--fw-semibold);
+  color: var(--blue-700);
+}
+
+.percentLabel {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-600);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--gray-300);
+}
+.dot_needs_data {
+  background: var(--red-500);
+}
+.dot_needs_evidence {
+  background: var(--amber-500);
+}
+.dot_needs_confirmation {
+  background: var(--blue-500);
+}
+.dot_open_conditional {
+  background: var(--gray-400);
+}
+.dot_not_applicable {
+  background: var(--gray-300);
+}
+.dot_sensitive_omitted {
+  background: var(--violet-500);
+}
+
+.note {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+/* ── Journey ─────────────────────────────────────────────────── */
+.journey {
+  margin-bottom: var(--space-6);
+}
+
+.journeyHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.journeyTitle {
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.journeyNext {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.track {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: var(--space-1);
+}
+
+.step {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.stepLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--gray-200);
+  background: var(--background);
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.stepLink:focus-visible {
+  outline: 2px solid var(--blue-400);
+  outline-offset: 2px;
+}
+
+.stepIndex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  background: var(--gray-100);
+  color: var(--gray-600);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.step_done .stepLink {
+  border-color: var(--green-100);
+  color: var(--green-700);
+}
+.step_done .stepIndex {
+  background: var(--green-50);
+  color: var(--green-700);
+}
+.step_current .stepLink {
+  border-color: var(--blue-400);
+  background: var(--blue-50);
+  color: var(--blue-700);
+  font-weight: var(--fw-semibold);
+}
+.step_current .stepIndex {
+  background: var(--blue-500);
+  color: #fff;
+}
+.step_todo .stepLink {
+  color: var(--gray-500);
+}
+
+/* ── Disclosure grid ─────────────────────────────────────────── */
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+  margin-bottom: var(--space-3);
+}
+
+.sectionIcon {
+  color: var(--blue-500);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cardHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.cardHeadText {
+  min-width: 0;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.cardTitle {
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.cardMeta {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 44px;
+  padding: 0 var(--space-1);
+  border: 0;
+  background: none;
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.toggle:focus-visible,
+.linkButton:focus-visible,
+.workLink:focus-visible {
+  outline: 2px solid var(--blue-400);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}
+
+.chevron {
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.workLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 44px;
+  color: var(--blue-500);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.linkButton {
+  min-height: 44px;
+  padding: 0 var(--space-1);
+  border: 0;
+  background: none;
+  color: var(--blue-500);
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+.linkButton:disabled {
+  color: var(--gray-400);
+  cursor: default;
+}
+
+/* ── Simplified ESRS (партия 9) ──────────────────────────────── */
+.esrs {
+  margin-top: var(--space-8);
+}
+
+.esrsSummary {
+  background: var(--background);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.esrsRegulatory {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+
+.esrsLock {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  border: 1px solid var(--amber-200);
+  background: var(--amber-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+}
+
+.esrsLockIcon {
+  color: var(--amber-500);
+  flex-shrink: 0;
+}
+
+.esrsLockMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.esrsLockTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.esrsLockBody {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-600);
+  margin-top: var(--space-1);
+}
+
+.esrsLockCta {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.refChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-full);
+  background: var(--violet-50);
+  color: var(--violet-700);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+}
+
+.appliesWhen {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+
+/* ── Datapoints ──────────────────────────────────────────────── */
+.datapoints {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--gray-100);
+}
+
+.datapoint {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.datapointMain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.metricKey {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+.datapointTitle {
+  flex: 1 1 200px;
+  min-width: 0;
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+}
+
+.datapointMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--gray-500);
+}
+
+.reason {
+  color: var(--gray-700);
+}
+
+.datapointActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.decisionForm {
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.formError {
+  font-size: var(--text-xs);
+  color: var(--red-600);
+}
+
+/* ── Desktop ─────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chevron {
+    transition: none;
+  }
+}

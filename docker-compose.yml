@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:13 # = прод sh37.neoserv.si (13.23); паритет с 16 проверен 16.08.2026
+    environment:
+      POSTGRES_USER: hosmos
+      POSTGRES_PASSWORD: hosmos
+      POSTGRES_DB: hosmos
+    ports:
+      - "5432:5432"
+    volumes:
+      - hosmos_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hosmos"]
+      interval: 5s
+
+volumes:
+  hosmos_pgdata: {}

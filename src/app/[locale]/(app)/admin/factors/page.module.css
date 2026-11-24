@@ -1,0 +1,194 @@
+/* `/admin/factors` (T2.8). One breakpoint (768px); base rules are the mobile
+   defaults and the single responsive override is at the bottom, as on the
+   organisation page. Colours/space/radii come from the globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconViolet {
+  color: var(--violet-500);
+}
+
+/* ── Set rows ──────────────────────────────────────────────── */
+.rowStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.setRow,
+.setRowActive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  transition: all 0.2s var(--ease-out);
+}
+
+.setRow:hover {
+  background: var(--gray-50);
+}
+
+.setRowActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.rowMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rowActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.rowTitle {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.rowSubtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.code {
+  font-family: var(--font-mono, monospace);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+/* The release lifecycle, coloured by status (DM-21). */
+.statusPill {
+  border-radius: var(--radius-lg);
+  padding: 2px var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-semibold);
+  background: var(--gray-100);
+  color: var(--gray-600);
+}
+
+.statusPill[data-variant="green"] {
+  background: var(--green-50);
+  color: var(--green-700);
+}
+
+.statusPill[data-variant="yellow"] {
+  background: var(--amber-50);
+  color: var(--amber-700);
+}
+
+/* ── Forms ─────────────────────────────────────────────────── */
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.inlineForm {
+  border: 1px dashed var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.inlineFormTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-700);
+  margin-bottom: var(--space-3);
+}
+
+.sectionActions {
+  margin-top: var(--space-4);
+}
+
+.subsection {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--gray-200);
+  padding-top: var(--space-4);
+}
+
+.subsectionTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+  margin-bottom: var(--space-1);
+}
+
+/* ── Tables ────────────────────────────────────────────────── */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--gray-500);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--gray-800);
+  vertical-align: top;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+/* ── Notes and refusals ────────────────────────────────────── */
+
+.readOnlyBanner {
+  margin-bottom: var(--space-4);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .twoCol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

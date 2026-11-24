@@ -1,0 +1,426 @@
+/* `/review` (T4.6). Same conventions as the organisation, factors, inventory,
+   disclosure and evidence pages: one breakpoint per concern (1024px for the
+   queue/panel split), base rules are the mobile defaults, every responsive
+   override is grouped at the bottom, and colours/space/radii come from the
+   globals.css tokens only. */
+
+/* ── Card + section header ─────────────────────────────────── */
+
+.iconBlue {
+  color: var(--blue-500);
+}
+.iconGreen {
+  color: var(--green-600);
+}
+
+.subsectionTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+/* ── The approval queue (DM-14) ────────────────────────────── */
+.queueBar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  border: 1px dashed var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.rowList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.rowItem,
+.rowItemActive {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding-left: var(--space-2);
+}
+
+.rowItemActive {
+  border-color: var(--blue-300);
+  background: var(--blue-50);
+}
+
+.rowCheck {
+  margin-top: var(--space-3);
+  flex-shrink: 0;
+}
+
+.rowButton {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  min-width: 0;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+}
+
+.rowName {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.rowMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.rowTags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+/* The tally of one bulk run — both halves, always (see `_lib/bulk`). */
+.bulkReport {
+  margin-top: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  padding: var(--space-3);
+}
+
+.bulkTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-800);
+}
+
+.bulkRefusals {
+  list-style: none;
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* ── The revision panel (§5.1) ─────────────────────────────── */
+.revisionPanel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.revisionNo {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.reasonLine {
+  font-size: var(--text-xs);
+  color: var(--gray-700);
+  font-style: italic;
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.restate {
+  margin-top: var(--space-4);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+/* ── The status timeline (LC-10) ───────────────────────────── */
+.timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 2px solid var(--gray-200);
+  padding: var(--space-1) var(--space-3);
+}
+
+.timelineStep {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.timelineMeta {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+/* ── Blocking rules: what to fix, and where (VR-3) ─────────── */
+.blockingList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.blockingItem,
+.blockingItemHot {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* The rule that refused the LAST attempt — highlighted, never the only one shown. */
+.blockingItemHot {
+  border-color: var(--amber-200);
+  background: var(--amber-50);
+}
+
+.blockingIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--amber-500);
+}
+
+.blockingMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.blockingText {
+  font-size: var(--text-sm);
+  color: var(--gray-800);
+}
+
+.blockingMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.blockingNoLink {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--blue-600);
+  font-size: var(--text-sm);
+  text-align: left;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+}
+
+/* ── Notes, refusals, disclosures, plan explanations ───────── */
+.hintList {
+  list-style: none;
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+}
+
+.hintList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+}
+
+.mutedNote {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  padding: var(--space-2) 0;
+}
+
+.saveStatus {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.storedNote {
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--green-50, var(--gray-50));
+  color: var(--gray-800);
+  font-size: var(--text-sm);
+  padding: var(--space-3);
+}
+
+.refusal {
+  list-style: none;
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+.refusal li + li {
+  margin-top: var(--space-1);
+}
+
+/* A refusal that is one sentence — the named preconditions of §5.1. */
+.refusalLine,
+.refusalBlock {
+  margin-top: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--red-50);
+  color: var(--red-700);
+  font-size: var(--text-xs);
+  padding: var(--space-2) var(--space-3);
+}
+
+/* R-11: the session's rights moved — benign, never red. */
+.accessBanner {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+/* LC-7 — the self-approval disclosure. A statement, not a warning. */
+.disclosure {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  border: 1px solid var(--blue-200, var(--gray-200));
+  background: var(--blue-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  margin-top: var(--space-3);
+}
+
+.disclosureIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--blue-500);
+}
+
+/* PG-5: a plan ceiling stays visible, explained, with a CTA — never an error. */
+.planLock {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  border: 1px solid var(--amber-200);
+  background: var(--amber-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.planLockIcon {
+  color: var(--amber-500);
+  flex-shrink: 0;
+}
+
+.planLockMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.planLockTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--gray-900);
+}
+
+.planLockBody {
+  font-size: var(--text-xs);
+  color: var(--gray-600);
+}
+
+.planLockHint {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  margin-top: var(--space-1);
+}
+
+.planLockCta {
+  flex-shrink: 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}

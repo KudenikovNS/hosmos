@@ -1,0 +1,2240 @@
+{
+  "common": {
+    "upgrade": "Nadogradi",
+    "total": "Ukupno",
+    "user": "Korisnik",
+    "language": "Jezik",
+    "loading": "Učitavanje...",
+    "selectPlaceholder": "Odaberite...",
+    "help": "Pomoć",
+    "noLegalEntity": {
+      "title": "Pravna osoba još nije stvorena",
+      "description": "Otvorite <organisation>Organizaciju</organisation> i stvorite pravnu osobu kako biste započeli pripremu izvještaja."
+    },
+    "noReportingPeriod": {
+      "title": "Još nema izvještajnog razdoblja",
+      "description": "Počnite na zaslonu „<organisation>Organizacija</organisation>“: stvorite pravnu osobu i prvo izvještajno razdoblje."
+    },
+    "noReportRevision": {
+      "title": "Stvorite nacrt izvještaja",
+      "description": "Za razdoblje „{period}“ još nema nacrta. Otvorite „<organisation>Organizacija</organisation>“, odaberite to razdoblje i kliknite „{action}“."
+    },
+    "noInventoryData": {
+      "title": "Najprije unesite podatke izvještaja",
+      "description": "Otvorite „<inventory>Podaci</inventory>“ i dodajte retke za odabrano razdoblje. Zatim se vratite ovdje kako biste priložili dokumente i ocijenili kvalitetu podataka."
+    },
+    "reportApprovalRequired": {
+      "title": "Izvještaj još nije odobren",
+      "description": "Za razdoblje „{period}“ još nema odobrene revizije izvještaja. Otvorite „<review>Pregled i odobravanje</review>“, dovršite provjere i odobrite izvještaj prije izrade datoteke."
+    },
+    "notices": {
+      "loadFailed": "Ovaj se odjeljak nije mogao učitati. Pokušajte ponovno za trenutak.",
+      "accessChanged": "Vaša prava pristupa su se promijenila. Osvježite stranicu da biste nastavili.",
+      "planRequiredTitle": "Vaš plan ovo ne uključuje",
+      "planRequiredBody": "Poslužitelj je odbio ovu izmjenu jer je plan ne pokriva. Nadogradnja je omogućuje.",
+      "upgrade": "Nadogradi plan",
+      "ruleUnknown": "Izmjenu je odbilo pravilo {code}.",
+      "field": "Provjerite vrijednost polja „{field}“.",
+      "generic": "Izmjena se nije mogla spremiti. Pokušajte ponovno."
+    },
+    "noCompany": {
+      "title": "Izradite tvrtku",
+      "subtitle": "Vaš račun još nije povezan s tvrtkom.",
+      "cardTitle": "Radni prostor tvrtke",
+      "body": "Tvrtka je radni prostor za vaše podatke, izračune i izvješća. Unesite njezin naziv za početak; postat ćete njezin administrator.",
+      "nameLabel": "Naziv tvrtke",
+      "namePlaceholder": "Primjer d.o.o.",
+      "create": "Izradi tvrtku",
+      "nameRequired": "Unesite naziv tvrtke.",
+      "failed": "Tvrtku nije bilo moguće izraditi. Pokušajte ponovno.",
+      "suspended": "Vaš pristup tvrtki je obustavljen. Obratite se njezinu administratoru.",
+      "invited": "Ako su vas kolege pozvali u svoju tvrtku, otvorite poveznicu iz e-pošte s pozivnicom umjesto izrade nove."
+    }
+  },
+  "metadata": {
+    "title": "Hosmos — ESG platforma za MSP",
+    "description": "Izračunajte ESG pokazatelje, upravljajte nefinancijskim podacima i automatski generirajte izvještaje u skladu sa standardima EU. Početak rada za manje od 30 minuta."
+  },
+  "nav": {
+    "readiness": "Spremnost",
+    "dashboard": "Nadzorna ploča",
+    "governance": "Upravljanje",
+    "supplyChain": "Lanac opskrbe",
+    "goals": "Ciljevi i OKR",
+    "settings": "Postavke",
+    "organisation": "Organizacija",
+    "factors": "Emisijski faktori",
+    "inventory": "Podaci",
+    "disclosures": "Objave",
+    "scope3": "Scope 3 (troškovi)",
+    "evidence": "Dokazi i kvaliteta",
+    "review": "Pregled i odobrenje",
+    "reports": "Izvještaji",
+    "vesg": "VESG vaučer"
+  },
+  "topbar": {
+    "notifications": "Obavijesti",
+    "activeCompany": "Aktivna tvrtka",
+    "switchError": "Promjena tvrtke nije uspjela — vaš se pristup možda promijenio. Osvježite stranicu.",
+    "unsavedSwitch": "Neke promjene nije moguće spremiti. Ostanite i ispravite ih ili promijenite tvrtku bez spremanja tih promjena.",
+    "stay": "Ostani",
+    "discardAndSwitch": "Promijeni bez spremanja",
+    "switchRecovery": "Aktivnu tvrtku nije moguće potvrditi. Osvježite stranicu prije uređivanja.",
+    "reload": "Osvježi stranicu",
+    "detachedSaveError": "Promjene u zatvorenom obrascu nije moguće spremiti. Ponovno ga otvorite i ispravite pogrešku. Nacrt ostaje u ovoj kartici."
+  },
+  "sidebar": {
+    "closeMenu": "Zatvori izbornik",
+    "openMenu": "Otvori izbornik",
+    "expandSidebar": "Proširi bočnu traku",
+    "collapseSidebar": "Sažmi bočnu traku",
+    "mainNavigation": "Glavna navigacija",
+    "logout": "Odjava",
+    "logoutFailed": "Odjava nije uspjela. Provjerite vezu i pokušajte ponovno.",
+    "accountMenu": "Izbornik računa"
+  },
+  "dashboard": {
+    "title": "Nadzorna ploča",
+    "subtitle": "Dokle je stigao vaš izvještaj i što čeka.",
+    "period": {
+      "title": "Izvještajno razdoblje",
+      "subtitle": "Prikazan je status tekuće revizije razdoblja.",
+      "noRevision": "Ovo razdoblje još nema reviziju. Redci podataka pripadaju reviziji — pokrenite je na zaslonu „Organizacija“.",
+      "revision": "Revizija {no} — ona na kojoj se trenutačno radi.",
+      "factorSet": "skup faktora {version}"
+    },
+    "periodStatus": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "inReview": "U pregledu",
+      "approved": "Odobrena",
+      "locked": "Zaključana",
+      "reopened": "Ponovno otvorena"
+    },
+    "rows": {
+      "title": "Uneseni podaci",
+      "subtitle": "Tekuće verzije u ovoj reviziji. Izmijenjeni redak broji se jednom, u najnovijoj verziji.",
+      "count": "{count} redaka",
+      "empty": "Za ovu reviziju još ništa nije uneseno.",
+      "scope": "Scope",
+      "total": "Redaka",
+      "approved": "Odobreno",
+      "draft": "Čeka odobrenje",
+      "all": "Svi podaci",
+      "scopes": {
+        "scope1": "Scope 1 — vlastiti izvori",
+        "scope2": "Scope 2 — kupljena energija",
+        "disclosures": "Objave"
+      }
+    },
+    "validation": {
+      "title": "Validacija",
+      "subtitle": "Što su pravila već rekla o ovoj reviziji. Otvaranje ove stranice ništa ne provjerava ponovno.",
+      "blocking": "{count, plural, =0 {Ništa ne blokira} one {# blokirajući nalaz} few {# blokirajuća nalaza} other {# blokirajućih nalaza}}",
+      "warnings": "{count, plural, =0 {Nema upozorenja.} one {# upozorenje — vrijedi pogledati, ali ništa ne zadržava.} few {# upozorenja — vrijedi pogledati, ali ništa ne zadržavaju.} other {# upozorenja — vrijedi pogledati, ali ništa ne zadržavaju.}}",
+      "notRun": "Nijedno pravilo još nije provjerilo ovu reviziju. Provjere se izvršavaju pri spremanju, podnošenju ili odobravanju podataka.",
+      "clean": "Ništa ne zadržava ovu reviziju."
+    },
+    "emissions": {
+      "title": "Ukupne emisije",
+      "subtitle": "Brojke posljednjeg odobrenog izračuna. Ova ih stranica samo čita — ovdje se nijedan broj ne mijenja.",
+      "revisionStatus": {
+        "approved": "Odobrena",
+        "locked": "Zaključana"
+      },
+      "revision": "Revizija {no} — odobrena revizija iz koje potječu ove brojke.",
+      "calculatedAt": "Izračunato {at} (UTC).",
+      "noApproved": "Još nema odobrenog izračuna",
+      "noApprovedBody": "Ništa nije odobreno za izvještavanje, pa nema ukupnih vrijednosti — ne nula tona, nego nikakva brojka. Unesite retke Scope 1 i Scope 2, dajte ih na odobrenje i ukupne će se vrijednosti pojaviti ovdje.",
+      "noTotals": "Nema ukupnih vrijednosti",
+      "noTotalsBody": "Ukupne se vrijednosti pojavljuju kada ova odobrena revizija ima dovršen izračun. Redci iz kojih nastaju nalaze se u unosu podataka.",
+      "noRun": "Ova je revizija odobrena, ali nikada nije izračunata, pa nije objavila ukupne vrijednosti.",
+      "failed": "{count, plural, one {# redak ovog izračuna nije se mogao izračunati, pa ukupna vrijednost uopće nije objavljena — zbroj koji bi ga prešutno izostavio bio bi premalen.} few {# retka ovog izračuna nisu se mogla izračunati, pa ukupna vrijednost uopće nije objavljena — zbroj koji bi ih prešutno izostavio bio bi premalen.} other {# redaka ovog izračuna nije se moglo izračunati, pa ukupna vrijednost uopće nije objavljena — zbroj koji bi ih prešutno izostavio bio bi premalen.}}",
+      "stale": "Podaci iza ovog izračuna promijenjeni su nakon njegova izvršenja ({sources}). Brojke ispod su odobrene; potreban je novi izračun da bi opisivale trenutačne podatke.",
+      "historicalContextMissing": "Izvorni podaci ovog starijeg izračuna nisu spremljeni. Ukupne emisije ostaju dostupne, ali povijesni prihod, intenzitet i raspodjela energije ne mogu se potvrditi. Otvorena revizija može se ponovno izračunati; zaključana zahtijeva provjerene povijesne podatke.",
+      "staleSource": {
+        "rows": "uneseni redci",
+        "period": "izvještajno razdoblje",
+        "period_scope": "izvještajna granica",
+        "organisation": "podaci organizacije",
+        "fx": "tečajevi",
+        "context": "nedostaje povijesni kontekst izračuna",
+        "formula": "pretvorba izlazne jedinice faktora"
+      },
+      "noFigure": "Brojka nije objavljena",
+      "kpi": {
+        "scope1": "Scope 1 — vlastiti izvori",
+        "scope2Lb": "Scope 2 — lokacijski",
+        "scope2Mb": "Scope 2 — tržišni",
+        "energy": "Potrošena energija",
+        "intensity": "Intenzitet — lokacijski",
+        "coverage": "Što ove brojke obuhvaćaju"
+      },
+      "units": {
+        "tCO2e": "t CO₂e",
+        "MWh": "MWh",
+        "intensityEur": "t CO₂e / EUR"
+      },
+      "coverage": {
+        "legalEntities": "{included} od {total} pravnih osoba",
+        "facilities": "{included} od {total} lokacija"
+      },
+      "outputUnitCorrectionRequired": "Ovaj stariji izračun nije pretvorio izlazne jedinice faktora u kilograme. Otvorenu reviziju ponovno izračunajte; za zaključanu izradite novu reviziju s ispravkom. Spremljene vrijednosti nisu prepisane."
+    },
+    "links": {
+      "organisation": "Organizacija i granice",
+      "organisationBody": "Pravne osobe, lokacije, izvještajna razdoblja i što je unutar granice.",
+      "inventory": "Unos podataka",
+      "inventoryBody": "Unesite i odobrite retke Scope 1 i Scope 2 ove revizije."
+    },
+    "errors": {
+      "accessChanged": "Vaša prava pristupa su se promijenila. Osvježite stranicu da biste nastavili.",
+      "loadFailed": "Nadzorna ploča nije se mogla učitati. Pokušajte ponovno za trenutak."
+    }
+  },
+  "billing": {
+    "title": "Naplata",
+    "subtitle": "Nadogradite pretplatu",
+    "panelTitle": "Nadogradite plan",
+    "panelSubtitle": "Sigurno plaćanje karticom putem Revoluta",
+    "periodMonthly": "Mjesečno",
+    "periodAnnual": "Godišnje",
+    "perMonth": "/ mjesec",
+    "perYear": "/ godina",
+    "highlightFull": "Sveobuhvatni modul, pojednostavljeni ESRS, registar dobavljača",
+    "highlightCore": "Osnovni modul, PDF i Excel",
+    "continueToPayment": "Nastavi na plaćanje",
+    "youArePaying": "Plaćate",
+    "billingDetails": "Podaci za naplatu",
+    "cardholderName": "Ime vlasnika kartice",
+    "city": "Grad",
+    "postcode": "Poštanski broj",
+    "street": "Ulica",
+    "country": "Država",
+    "cardDetails": "Podaci o kartici",
+    "payAmount": "Plati {amount}",
+    "secureNote": "Kartica se unosi izravno u Revolut — mi je nikada ne vidimo. Ova se kartica čuva za buduća produljenja pretplate.",
+    "errCardDeclined": "Nismo mogli obraditi karticu. Provjerite podatke i pokušajte ponovno.",
+    "errFormLoad": "Obrazac za plaćanje nije se mogao učitati. Pokušajte ponovno.",
+    "errNetwork": "Mrežna pogreška — provjerite vezu i pokušajte ponovno.",
+    "errSessionExpired": "Vaša je sesija istekla. Prijavite se ponovno.",
+    "errCheckoutStart": "Nismo mogli pokrenuti plaćanje. Pokušajte ponovno.",
+    "countries": {
+      "SI": "Slovenija",
+      "AT": "Austrija",
+      "DE": "Njemačka",
+      "HR": "Hrvatska",
+      "IT": "Italija",
+      "GB": "Ujedinjeno Kraljevstvo",
+      "FR": "Francuska",
+      "NL": "Nizozemska",
+      "US": "Sjedinjene Države"
+    },
+    "return": {
+      "subtitle": "Potvrda plaćanja",
+      "freeTitle": "Plaćanje nije potrebno",
+      "freeBody": "Na besplatnom ste planu, pa nije bilo što naplatiti. Na plaćeni plan možete prijeći bilo kada iz postavki.",
+      "paidTitle": "Uplata zaprimljena",
+      "paidBody": "Hvala — vaša je uplata uspješno poslana. Pretplata se aktivira i uskoro će biti spremna.",
+      "paidNote": "Aktivaciju u pozadini potvrđuje Revolut. Ako se plan ne ažurira u roku od nekoliko minuta, osvježite postavke.",
+      "goToDashboard": "Na nadzornu ploču",
+      "viewSettings": "Prikaži postavke"
+    }
+  },
+  "featureGate": {
+    "defaultTitle": "Ovo je plaćena funkcija",
+    "subtitle": "Nadogradite plan da biste otključali ovaj odjeljak.",
+    "requires": "Zahtijeva",
+    "upgrade": "Nadogradi"
+  },
+  "governance": {
+    "title": "Upravljanje",
+    "subtitle": "ESRS G1 — poslovno ponašanje",
+    "gateTitle": "Upravljanje je plaćena funkcija",
+    "completion": "Popunjenost G-parametara",
+    "groupMeta": "{done} od {total} dovršeno",
+    "save": "Spremi podatke o upravljanju",
+    "saving": "Spremanje...",
+    "saved": "Spremljeno",
+    "unsaved": "Nespremljene izmjene",
+    "saveError": "Spremanje nije uspjelo. Pokušajte ponovno.",
+    "footnote": "Ovi parametri upravljanja odgovaraju zahtjevima objave ESRS G1 (poslovno ponašanje). Status popunjenosti uključuje se u ESRS izvještaje pri generiranju.",
+    "catBoard": "Uprava i rukovodstvo",
+    "catEthics": "Etika i borba protiv korupcije",
+    "catData": "Zaštita podataka i privatnost",
+    "catRisk": "Upravljanje rizicima",
+    "items": {
+      "boardComposition": "Sastav uprave dokumentiran",
+      "independentDirectors": "Neovisni direktori utvrđeni",
+      "boardDiversity": "Politika raznolikosti uprave",
+      "execCompensation": "Objava naknada rukovodstva",
+      "esgCommittee": "ESG odbor uprave",
+      "codeOfEthics": "Etički kodeks objavljen",
+      "antiCorruption": "Antikorupcijska politika",
+      "whistleblowing": "Kanal za zviždače aktivan",
+      "conflictOfInterest": "Politika o sukobu interesa",
+      "politicalContributions": "Politika političkih doprinosa",
+      "antiBriberyTraining": "Obuka protiv podmićivanja dovršena",
+      "gdprAssessment": "Procjena usklađenosti s GDPR-om",
+      "dpa": "Ugovor o obradi podataka (DPA)",
+      "privacyPolicy": "Politika privatnosti objavljena",
+      "breachNotification": "Proces obavještavanja o povredi podataka",
+      "dpoAppointed": "Imenovan DPO",
+      "dataRetention": "Politika čuvanja podataka",
+      "riskRegister": "Registar rizika se vodi",
+      "riskMethodology": "Metodologija procjene rizika",
+      "continuityPlan": "Plan kontinuiteta poslovanja",
+      "internalAudit": "Funkcija interne revizije",
+      "complianceMonitoring": "Praćenje regulatorne usklađenosti"
+    }
+  },
+  "supplyChain": {
+    "title": "Lanac opskrbe",
+    "subtitle": "ESG objava dobavljača — Scope 3 kat. 1 (samo objava)",
+    "gateTitle": "Lanac opskrbe je plaćena funkcija",
+    "totalSuppliers": "Ukupno dobavljača",
+    "certifiedCount": "Certificirani",
+    "highCriticalRisk": "Visok / kritičan rizik",
+    "avgScore": "Prosječna ESG ocjena",
+    "addSupplierForm": "Dodaj dobavljača",
+    "editSupplier": "Uredi dobavljača",
+    "fieldName": "Naziv dobavljača",
+    "fieldCountry": "Država",
+    "fieldCountryPlaceholder": "Njemačka",
+    "fieldCategory": "Kategorija",
+    "fieldCategoryPlaceholder": "Sirovine",
+    "fieldRiskLevel": "Razina rizika",
+    "fieldSpend": "Trošak (EUR)",
+    "fieldEmissions": "Emisije (t CO₂e)",
+    "fieldTier": "Razina",
+    "fieldEsgScore": "ESG ocjena (0–100)",
+    "fieldEsgScorePlaceholder": "npr. 78",
+    "fieldCertification": "Certifikacija",
+    "certifiedSupplier": "Certificirani dobavljač",
+    "fieldNotes": "Napomene",
+    "fieldNotesPlaceholder": "Neobvezni kontekst",
+    "saving": "Spremanje...",
+    "saveChanges": "Spremi izmjene",
+    "addSupplier": "Dodaj dobavljača",
+    "cancel": "Odustani",
+    "saved": "Spremljeno",
+    "errNoName": "Dobavljač mora imati naziv.",
+    "errValidation": "Neke vrijednosti nisu ispravne. Provjerite razinu rizika i nenegativne brojeve.",
+    "errSave": "Spremanje nije uspjelo. Pokušajte ponovno.",
+    "errDelete": "Brisanje nije uspjelo. Pokušajte ponovno.",
+    "okCreated": "Dobavljač dodan",
+    "okUpdated": "Dobavljač ažuriran",
+    "okDeleted": "Dobavljač uklonjen",
+    "suppliers": "Dobavljači",
+    "emptyList": "Još nema dobavljača. Dodajte prvog iznad. Ove su brojke <strong>samo objava</strong> — ne ulaze u Scope 3 otisak.",
+    "thCompany": "Tvrtka",
+    "thCountry": "Država",
+    "thRisk": "Rizik",
+    "thScore": "ESG ocjena",
+    "thCertified": "Certificiran",
+    "thActions": "Radnje",
+    "riskLevels": {
+      "low": "Nizak",
+      "medium": "Srednji",
+      "high": "Visok",
+      "critical": "Kritičan"
+    }
+  },
+  "goals": {
+    "title": "Ciljevi i OKR",
+    "subtitle": "Ciljevi smanjenja i njihov napredak",
+    "gateTitle": "Ciljevi i OKR su plaćena funkcija",
+    "addTitle": "Dodaj cilj",
+    "editTitle": "Uredi cilj",
+    "fieldTitle": "Naziv",
+    "fieldTitlePlaceholder": "Smanjiti Scope 1 za 30%",
+    "fieldDescription": "Opis",
+    "fieldDescriptionPlaceholder": "Neobvezni kontekst",
+    "fieldCategory": "Kategorija",
+    "fieldStatus": "Status",
+    "fieldUnit": "Jedinica",
+    "sbtiAligned": "Znanstveno utemeljen cilj (izjava tvrtke)",
+    "fieldBaselineYear": "Bazna godina",
+    "fieldBaselineValue": "Bazna vrijednost",
+    "fieldTargetYear": "Ciljna godina",
+    "fieldTargetValue": "Ciljna vrijednost",
+    "fieldCurrentValue": "Trenutačna vrijednost",
+    "saving": "Spremanje...",
+    "saveChanges": "Spremi izmjene",
+    "addGoal": "Dodaj cilj",
+    "cancel": "Odustani",
+    "saved": "Spremljeno",
+    "errNoTitle": "Cilj mora imati naziv.",
+    "errValidation": "Neke vrijednosti nisu ispravne. Provjerite kategoriju, status, godine i brojeve.",
+    "errSave": "Spremanje nije uspjelo. Pokušajte ponovno.",
+    "errDelete": "Brisanje nije uspjelo. Pokušajte ponovno.",
+    "okCreated": "Cilj stvoren",
+    "okUpdated": "Cilj ažuriran",
+    "okDeleted": "Cilj izbrisan",
+    "listTitle": "Vaši ciljevi",
+    "emptyList": "Još nema ciljeva. Dodajte prvi cilj održivosti iznad — ciljevi za <strong>emisije</strong> ulaze u ciljeve ESRS E1-4 vašeg izvještaja.",
+    "baseline": "Baza",
+    "current": "Trenutačno",
+    "target": "Cilj",
+    "targetReached": "Cilj dosegnut!",
+    "progress": "{pct}% napretka",
+    "categories": {
+      "emissions": "Emisije",
+      "energy": "Energija",
+      "waste": "Otpad",
+      "social": "Društveno",
+      "governance": "Upravljanje",
+      "supply_chain": "Lanac opskrbe",
+      "water": "Voda",
+      "biodiversity": "Bioraznolikost"
+    },
+    "statuses": {
+      "not_started": "Nije započeto",
+      "on_track": "Po planu",
+      "at_risk": "Ugroženo",
+      "behind": "Kasni",
+      "completed": "Dovršeno"
+    }
+  },
+  "roles": {
+    "esg_admin": "Administrator",
+    "data_owner": "Vlasnik podataka",
+    "contributor": "Suradnik",
+    "reviewer": "Pregledavatelj",
+    "approver": "Odobravatelj",
+    "auditor": "Revizor"
+  },
+  "settings": {
+    "title": "Postavke",
+    "subtitle": "Profil tvrtke, tim, naplata i integracije",
+    "trialTitle": "Koristite besplatno probno razdoblje",
+    "trialDesc": "Moduli Scope 3, Ljudi i Upravljanje, ESRS izvještaji i drugo su zaključani. Nadogradite plan da otključate sve funkcije — podaci ostaju sačuvani.",
+    "upgradeNow": "Nadogradi sada",
+    "companyProfile": "Profil tvrtke",
+    "companyName": "Naziv tvrtke",
+    "industry": "Djelatnost",
+    "country": "Država",
+    "naceCode": "NACE kod",
+    "employees": "Zaposlenici",
+    "industries": {
+      "manufacturing": "Proizvodnja",
+      "it": "IT i tehnologija",
+      "retail": "Maloprodaja",
+      "construction": "Građevinarstvo",
+      "transport": "Prijevoz",
+      "healthcare": "Zdravstvo",
+      "financial": "Financijske usluge",
+      "other": "Ostalo"
+    },
+    "countries": {
+      "slovenia": "Slovenija",
+      "austria": "Austrija",
+      "germany": "Njemačka",
+      "croatia": "Hrvatska",
+      "italy": "Italija",
+      "czech": "Češka",
+      "slovakia": "Slovačka",
+      "hungary": "Mađarska"
+    },
+    "teamMembers": "Članovi tima",
+    "unlimited": "Neograničeno",
+    "maxMembers": "Najviše {count}",
+    "billingPlan": "Naplata i plan",
+    "planNameSuffix": "Plan {name}",
+    "free": "Besplatno",
+    "changePlan": "Promijeni plan",
+    "managePlan": "Upravljaj planom",
+    "featScope3": "Scope 3",
+    "featSocial": "Ljudi i društveno",
+    "featGovernance": "Upravljanje",
+    "featSupplyChain": "Lanac opskrbe",
+    "featGoals": "Ciljevi i OKR",
+    "featDataExport": "Izvoz podataka",
+    "planPeriod": {
+      "trial": "30 dana",
+      "monthly": "/ mjesec",
+      "annual": "/ godina"
+    },
+    "planHighlight": {
+      "trial": "Scope 1+2, 1 izvještaj",
+      "starter": "Basic B1–B11, 1 pravna osoba, 3 lokacije",
+      "pro": "Comprehensive C1–C9, pojednostavljeni ESRS, registar dobavljača",
+      "enterprise": "Do 10 pravnih osoba, neograničen broj lokacija i članova"
+    },
+    "modalTitle": "Odaberite plan",
+    "modalSubtitle": "Nadogradnje vrijede odmah; prelazak na niži plan stupa na snagu pri produljenju. Vaši se podaci nikada ne brišu.",
+    "current": "Trenutačni",
+    "scope12": "Scope 1 + 2",
+    "reportFormats": "{count} formata izvještaja",
+    "currentPlanBtn": "Trenutačni plan",
+    "upgradeToPlan": "Prijeđi na {name}",
+    "switchToPlan": "Promijeni na {name}",
+    "downgradeToPlan": "Spusti na {name}",
+    "defaultCurrency": "Zadana valuta",
+    "readonlyHint": "Vaša je pretplata samo za čitanje — nadogradite plan da biste uređivali profil tvrtke.",
+    "periodMonthly": "Mjesečno",
+    "periodAnnual": "Godišnje",
+    "periodLocked": "Razdoblje naplate ({period}) ostaje isto pri promjeni plana.",
+    "subCancelsOn": "Otkazuje se {date}",
+    "subDowngradesAt": "Prelazak na {name} pri produljenju ({date})",
+    "subRenewsOn": "Produljuje se {date} · {period}",
+    "resumePlan": "Nastavi",
+    "cancelPlan": "Otkaži plan",
+    "msgCancelScheduled": "Plaćeni plan završit će na kraju tekućeg razdoblja — zatim prelazite na besplatni probni plan.",
+    "msgScheduleFailed": "Promjena se nije mogla zakazati. Pokušajte ponovno.",
+    "msgChangeFailed": "Plan se nije mogao promijeniti. Pokušajte ponovno.",
+    "msgDowngradeScheduled": "Prelazak na niži plan zakazan — prijeći ćete na {name} na kraju tekućeg razdoblja.",
+    "msgCancelFailed": "Plan se nije mogao otkazati. Pokušajte ponovno.",
+    "msgResumeFailed": "Plan se nije mogao nastaviti. Pokušajte ponovno.",
+    "msgResumeDone": "Vaš je plan nastavljen.",
+    "close": "Zatvori",
+    "langRegion": "Jezik i regija",
+    "interfaceLang": "Jezik sučelja",
+    "reportLangNote": "Jezik izvještaja odabire se pri njegovoj izradi na stranici »Izvještaji«: engleski ili slovenski.",
+    "dataIntegrations": "Integracije podataka",
+    "integrationsSubtitle": "Povežite računovodstvene sustave ili prenesite račune za automatske podatke o emisijama",
+    "integrationDesc": {
+      "xero": "Računovodstvo u oblaku",
+      "quickbooks": "Intuit računovodstvo",
+      "csv_import": "Ručni prijenos datoteka",
+      "pdf_scan": "Prijenos PDF računa",
+      "sage": "Računovodstvo i plaće",
+      "odoo": "ERP otvorenog koda",
+      "open_banking": "Bankovne transakcije",
+      "sap_b1": "SAP za MSP",
+      "1c": "Računovodstvo ZND"
+    },
+    "connected": "Povezano",
+    "connect": "Poveži",
+    "invoiceScanner": "Skener računa",
+    "scannerSubtitle": "Prenesite PDF račune — AI automatski izdvaja podatke o emisijama",
+    "dropzoneTitle": "Povucite PDF račune ovdje ili kliknite za prijenos",
+    "dropzoneSubtitle": "Računi za struju, plin, gorivo, putni računi",
+    "recentUploads": "Nedavni prijenosi",
+    "statusApproved": "Odobreno",
+    "statusReview": "Na pregledu",
+    "statusExtracted": "Izdvojeno",
+    "saveSettings": "Spremi postavke",
+    "savedNote": "Spremljeno!",
+    "sessionExpired": "Vaša je sesija istekla. Prijavite se ponovno.",
+    "saveFailed": "Profil tvrtke nije se mogao spremiti. Pokušajte ponovno.",
+    "team": {
+      "overSeat": "Vaš tim ima {used} članova, a plan dopušta {limit}. Nadogradite plan ili uklonite članove da ostanete unutar ograničenja.",
+      "accessChanged": "Vaš se pristup promijenio — osvježite stranicu.",
+      "loadingMembers": "Učitavanje članova tima…",
+      "loadMembersError": "Članovi tima nisu se mogli učitati — pokušajte ponovno.",
+      "noMembers": "Još nema članova tima.",
+      "grantDisclosure": "U vašoj tvrtki nema zasebnog odobravatelja, pa odobravate vlastite podatke. Ovo se samoodobravanje objavljuje u izvještaju. Dodijelite ulogu Odobravatelj kolegi da bi podaci bili neovisno potpisani.",
+      "errLastAdmin": "Tvrtka mora zadržati barem jednog administratora.",
+      "errGeneric": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+      "errInviteInvalid": "Ova se adresa ne može pozvati — možda je već član ili već ima poziv na čekanju.",
+      "planRequiredShort": "Timski rad dostupan je od plana Starter.",
+      "you": "vi",
+      "suspended": "Suspendiran",
+      "roleForMember": "Uloga za {name}",
+      "remove": "Ukloni",
+      "inviteHeading": "Pozovi kolegu",
+      "inviteeEmailLabel": "E-pošta pozvanog",
+      "inviteEmailPlaceholder": "ime@tvrtka.hr",
+      "inviteeRoleLabel": "Uloga pozvanog",
+      "sendInvite": "Pošalji poziv",
+      "upgradeNote": "Timski rad dostupan je od plana Starter. Nadogradite plan da biste pozivali kolege i dijelili ESG radni prostor.",
+      "upgradePlan": "Nadogradi plan",
+      "loadingInvites": "Učitavanje poziva…",
+      "loadInvitesError": "Pozivi se nisu mogli učitati — pokušajte ponovno.",
+      "noInvites": "Nema poziva na čekanju.",
+      "inviteLinkFor": "Poveznica poziva za {email}",
+      "inviteLinkWarn": "Kopirajte poveznicu sada — iz sigurnosnih razloga prikazuje se samo jednom i ne može se ponovno dobiti.",
+      "inviteLinkLabel": "Poveznica poziva",
+      "copied": "Kopirano",
+      "copy": "Kopiraj",
+      "dismiss": "Sakrij",
+      "invitedAs": "Pozvan kao {role}",
+      "pending": "Na čekanju",
+      "resend": "Pošalji ponovno",
+      "revoke": "Opozovi",
+      "okRoleChanged": "Uloga ažurirana",
+      "okRemoved": "Član uklonjen",
+      "okRevoked": "Poziv opozvan"
+    }
+  },
+  "invite": {
+    "loading": "Učitavanje poziva…",
+    "unavailableTitle": "Poziv nije dostupan",
+    "invalidMessage": "Ova poveznica poziva nije valjana. Možda je istekla, već iskorištena ili opozvana. Zamolite osobu koja vas je pozvala da pošalje novu.",
+    "errorTitle": "Poziv se nije mogao učitati",
+    "errorBody": "Nešto je pošlo po zlu. Provjerite vezu i pokušajte ponovno.",
+    "tryAgain": "Pokušaj ponovno",
+    "acceptedTitle": "U timu ste!",
+    "acceptedBody": "Pridružili ste se tvrtki {company}. Vodimo vas na nadzornu ploču…",
+    "previewTitle": "Pozvani ste",
+    "fieldCompany": "Tvrtka",
+    "fieldRole": "Uloga",
+    "fieldInvitedBy": "Pozvao",
+    "signInPrompt": "Prijavite se da biste prihvatili poziv.",
+    "signInButton": "Prijavi se i prihvati",
+    "acceptButton": "Prihvati poziv",
+    "seatLimit": "Ovaj je tim dosegnuo ograničenje mjesta. Zamolite administratora da oslobodi mjesto ili nadogradi plan, pa pokušajte ponovno.",
+    "acceptError": "Nešto je pošlo po zlu pri prihvaćanju poziva. Pokušajte ponovno."
+  },
+  "auth": {
+    "welcomeBack": "Dobro došli natrag",
+    "loginSubtitle": "Prijavite se na svoju ESG nadzornu ploču",
+    "email": "E-pošta",
+    "password": "Lozinka",
+    "passwordPlaceholder": "Unesite lozinku",
+    "rememberMe": "Zapamti me",
+    "forgotPassword": "Zaboravili ste lozinku?",
+    "logIn": "Prijava",
+    "noAccount": "Nemate račun?",
+    "startFreeTrial": "Započnite besplatni probni period",
+    "visualTitle": "VSME izvještaj s izvorom iza svake brojke",
+    "feat1": "Objave VSME Basic B1–B11",
+    "feat2": "Izračun Scope 1 i Scope 2 na fiksiranom skupu faktora",
+    "feat3": "Dokaz priložen uz svaku podatkovnu točku",
+    "feat4": "PDF i Excel za internu provjeru i neovisni pregled",
+    "quote": "Platforma priprema podatke i materijale. Neovisni pregled obavlja ovlašteno revizorsko društvo prema zasebnom ugovoru.",
+    "quoteRole": "Kako je podijeljena odgovornost",
+    "passwordMin8Error": "Lozinka mora imati najmanje 8 znakova",
+    "checkEmailTitle": "Provjerite e-poštu",
+    "checkEmailText": "Poslali smo poveznicu za potvrdu na <b>{email}</b>. Kliknite na nju da aktivirate račun.",
+    "verifiedTitle": "E-pošta potvrđena",
+    "verifiedText": "Vaša je adresa potvrđena i već ste prijavljeni. Nastavite u svom radnom prostoru.",
+    "verifiedContinue": "Nastavi",
+    "verifyInvalidTitle": "Poveznica za potvrdu nije valjana",
+    "verifyInvalidText": "Ova se poveznica za potvrdu više ne može koristiti: možda je već otvorena ili ste prijavljeni na drugi račun. Prijavite se za nastavak.",
+    "verifyExpiredText": "Poveznica za potvrdu je istekla. Prijavite se za nastavak.",
+    "backToLogin": "Natrag na prijavu",
+    "startTrialTitle": "Započnite besplatni probni period",
+    "startTrialSubtitle": "30 dana besplatno. Kreditna kartica nije potrebna.",
+    "fullName": "Ime i prezime",
+    "workEmail": "Poslovna e-pošta",
+    "companyName": "Naziv tvrtke",
+    "passwordMin8Placeholder": "Najmanje 8 znakova",
+    "createAccount": "Stvori račun",
+    "termsAgree": "Stvaranjem računa prihvaćate naše Uvjete i Politiku privatnosti.",
+    "haveAccount": "Već imate račun?",
+    "genericError": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+    "emailPlaceholder": "ivan@tvrtka.hr",
+    "forgotTitle": "Zaboravili ste lozinku?",
+    "forgotSubtitle": "Unesite e-poštu i poslat ćemo vam poveznicu za ponovno postavljanje.",
+    "forgotSubmit": "Pošalji poveznicu za ponovno postavljanje",
+    "forgotSuccessText": "Ako račun za <b>{email}</b> postoji, poslali smo poveznicu za ponovno postavljanje lozinke. Poveznica istječe za 1 sat.",
+    "rememberedPassword": "Sjetili ste se lozinke?",
+    "resetInvalidTitle": "Poveznica je nevažeća ili je istekla",
+    "resetInvalidText": "Ova poveznica za ponovno postavljanje lozinke više ne vrijedi. Poveznice istječu nakon 1 sata i mogu se iskoristiti samo jednom. Zatražite novu da biste nastavili.",
+    "resetRequestNew": "Zatraži novu poveznicu",
+    "resetSuccessTitle": "Lozinka ažurirana",
+    "resetSuccessText": "Vaša je lozinka ponovno postavljena. Preusmjeravamo vas na prijavu…",
+    "resetTitle": "Postavite novu lozinku",
+    "resetSubtitle": "Odaberite novu lozinku za svoj račun.",
+    "passwordsMismatch": "Lozinke se ne podudaraju",
+    "newPassword": "Nova lozinka",
+    "confirmPassword": "Potvrdite lozinku",
+    "confirmPasswordPlaceholder": "Ponovite novu lozinku",
+    "resetSubmit": "Ponovno postavi lozinku",
+    "invalidCredentials": "Nevažeća e-pošta ili lozinka.",
+    "createAccountError": "Račun se nije mogao stvoriti.",
+    "companyCreateError": "Račun je izrađen, ali tvrtku nije bilo moguće postaviti. Pokušajte ponovno.",
+    "companyRetry": "Pokušaj ponovno",
+    "fullNamePlaceholder": "Ivan Horvat",
+    "companyNamePlaceholder": "Primjer d.o.o."
+  },
+  "terms": {
+    "backToHome": "Natrag na početnu",
+    "pageTitle": "Uvjeti i privatnost",
+    "lastUpdated": "Posljednje ažuriranje: 15. ožujka 2025. · Stupa na snagu: 15. ožujka 2025.",
+    "quickTerms": "Uvjeti korištenja",
+    "quickPrivacy": "Politika privatnosti",
+    "footerTermsPrivacy": "Uvjeti i privatnost",
+    "footerContact": "Kontakt"
+  },
+  "validation": {
+    "VAL-001": "Organizacija mora imati naziv, državu i registracijski broj",
+    "VAL-002": "Država, valuta i NACE kod moraju biti s važećih referentnih popisa",
+    "VAL-003": "Hijerarhija grupe ne smije sadržavati cikluse",
+    "VAL-004": "„Vrijedi od“ ne smije biti poslije „vrijedi do“",
+    "VAL-005": "Lokacija mora pripadati aktivnoj pravnoj osobi",
+    "VAL-006": "Koordinate moraju biti u rasponu (−90…90 / −180…180)",
+    "VAL-007": "Aktivnost je izvan datuma rada lokacije",
+    "VAL-008": "Datum početka razdoblja mora biti prije datuma završetka",
+    "VAL-009": "Izvještajna razdoblja se preklapaju",
+    "VAL-010": "Zaključana revizija ne može se mijenjati",
+    "VAL-011": "Vrijednost aktivnosti mora biti 0 ili veća",
+    "VAL-012": "Datumi podataka su izvan izvještajnog razdoblja",
+    "VAL-013": "Ovaj je dokument možda već prenesen",
+    "VAL-014": "Jedinica nije podržana za ovu vrstu aktivnosti",
+    "VAL-015": "Odabrana metoda zahtijeva ulaznu vrijednost (gorivo ili aktivnost)",
+    "VAL-016": "Nepotpuna metoda za vozni park: udaljenost zahtijeva vrstu vozila, gorivo zahtijeva litre",
+    "VAL-017": "Biogeni CO₂ mora se objaviti odvojeno od fosilnog CO₂",
+    "VAL-018": "Bilanca mase rashladnog sredstva je negativna",
+    "VAL-019": "Nema emisijskog faktora ili GWP-a za ovo rashladno sredstvo u skupu faktora",
+    "VAL-020": "Potrošnja energije mora biti 0 ili veća",
+    "VAL-021": "Scope 2 zahtijeva državu lokacije",
+    "VAL-022": "Pokriveni obujam premašuje uparenu potrošnju",
+    "VAL-023": "Razdoblje certifikata ne odgovara izvještajnom razdoblju",
+    "VAL-024": "Tržišna bilanca: pokriveno plus rezidualno mora biti jednako potrošnji",
+    "VAL-031": "Faktor s ovim ključem već postoji",
+    "VAL-032": "Važenje faktora je nedosljedno (vrijedi od / vrijedi do / primjenjiva godina)",
+    "VAL-033": "Faktor ne smije biti nula osim ako je nula izričito valjana",
+    "VAL-034": "Zbroj detalja ne odgovara ukupnoj vrijednosti (tolerancija 0,5%)",
+    "VAL-035": "Nepotpuna provenijencija: izvor, faktor i verzija formule su obvezni",
+    "VAL-036": "Datoteka dokaza nedostaje ili je nečitljiva",
+    "VAL-037": "Dokaz ne pokriva cijelo razdoblje",
+    "VAL-038": "Nedostaju obvezne ocjene kvalitete podataka",
+    "VAL-039": "Ručna izmjena kvalitete podataka zahtijeva obrazloženje",
+    "VAL-040": "Podjela dužnosti: podatke je odobrila osoba koja ih je unijela",
+    "VAL-041": "Preduvjeti za odobrenje: nema kritičnih pogrešaka ni praznina u dokazima",
+    "VAL-101": "Isključena pravna osoba zahtijeva razlog isključenja",
+    "VAL-102": "Konsolidirani izvještaj zahtijeva najmanje dvije uključene pravne osobe i određenu matičnu",
+    "VAL-103": "Svaka uključena pravna osoba mora imati registriranu adresu prije zaključavanja ili generiranja",
+    "VAL-104": "Redak bez lokacije zahtijeva napomenu s objašnjenjem",
+    "VAL-105": "Plan Starter: više od 3 uključene lokacije — za dovršetak izvještaja potrebna je nadogradnja",
+    "VAL-106": "Polja razdoblja i granice bitna za izračun mogu se mijenjati samo dok je tekuća revizija nacrt ili odbijena",
+    "VAL-107": "Vrednovano slabijom osnovom faktora nego što fiksirani skup nudi"
+  },
+  "organisation": {
+    "title": "Organizacija i granice",
+    "subtitle": "Pravne osobe, lokacije, imovina, izvještajna razdoblja i granica svakog razdoblja.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete pregledati organizaciju, ali za izmjene je potrebna dozvola za upravljanje tvrtkom.",
+    "actions": {
+      "cancel": "Odustani"
+    },
+    "wizard": {
+      "title": "Postavite organizaciju",
+      "subtitle": "Stvorite matičnu pravnu osobu kojoj se pripisuje svaki izvještaj.",
+      "seededNote": "Popunjeno iz profila tvrtke — provjerite vrijednosti prije potvrde.",
+      "create": "Stvori organizaciju",
+      "needsAdmin": "Organizacija još nije postavljena. Mora je stvoriti administrator."
+    },
+    "profile": {
+      "title": "Profil organizacije",
+      "subtitle": "Matična pravna osoba: identitet, veličina i valuta izvještavanja."
+    },
+    "group": {
+      "title": "Grupa i pravne osobe",
+      "subtitle": "Datumi važenja i metoda konsolidacije određuju doprinos svake osobe.",
+      "empty": "Još nema pravnih osoba.",
+      "root": "Matična",
+      "member": "Član",
+      "addSubsidiary": "Dodaj ovisno društvo",
+      "createSubsidiary": "Stvori ovisno društvo",
+      "subsidiaryLockedTitle": "Vaš je plan dosegnuo ograničenje pravnih osoba",
+      "subsidiaryLockedBody": "Nadogradite plan da dodate još osoba u grupu.",
+      "outsidePeriod": "Ovi datumi ne pokrivaju izvještajno razdoblje {period}, pa se ova pravna osoba u njegovu izvješću neće pojaviti."
+    },
+    "facilities": {
+      "title": "Registar lokacija",
+      "subtitle": "Svaka lokacija organizacije, bila unutar granice ili izvan nje.",
+      "empty": "Još nema lokacija.",
+      "addTitle": "Dodaj lokaciju",
+      "add": "Dodaj lokaciju",
+      "lockedTitle": "Vaš plan dopušta {limit} lokacija",
+      "lockedBody": "Nadogradite plan da registrirate još lokacija; postojeće ostaju nepromijenjene.",
+      "boundaryFor": "Unutar granice: {name}"
+    },
+    "assets": {
+      "title": "Registar imovine",
+      "subtitle": "Vozila, zgrade, oprema i brojila, svako pripisano nekoj pravnoj osobi.",
+      "empty": "Još nema imovine.",
+      "addTitle": "Dodaj imovinu",
+      "add": "Dodaj imovinu",
+      "remove": "Ukloni",
+      "removeConfirm": "Ukloniti »{name}« iz registra?",
+      "removeYes": "Ukloni",
+      "removeNo": "Zadrži"
+    },
+    "periods": {
+      "title": "Izvještajna razdoblja",
+      "subtitle": "Svako razdoblje fiksira skup faktora kojim se računaju njegovi brojevi.",
+      "empty": "Još nema izvještajnih razdoblja.",
+      "add": "Novo razdoblje",
+      "addTitle": "Stvori izvještajno razdoblje",
+      "create": "Stvori razdoblje",
+      "factorSet": "skup faktora {version}",
+      "configureTitle": "Postavi {name}",
+      "methodology": "Metodologija {version}",
+      "consolidatedLockedTitle": "Konsolidirano izvještavanje je plaćena funkcija",
+      "consolidatedLockedBody": "Vaš plan izvještava za jednu pravnu osobu. Nadogradite plan da izvještavate za grupu u cjelini.",
+      "startRevision": "Započni prvu reviziju",
+      "startRevisionHint": "Redci, objave i dokazi pripadaju reviziji — dok je nema, za ovo razdoblje ništa se ne može unijeti."
+    },
+    "boundary": {
+      "title": "Granica razdoblja",
+      "subtitle": "O kojim pravnim osobama razdoblje izvještava — i zašto su ostale izvan.",
+      "noPeriod": "Prvo stvorite izvještajno razdoblje.",
+      "forPeriod": "Granica razdoblja {name}",
+      "noEntities": "Nema pravnih osoba koje bi se uključile u granicu.",
+      "reasonRequired": "Obvezno za isključenu osobu."
+    },
+    "counters": {
+      "entities": "{used} od {limit} pravnih osoba",
+      "entitiesUnlimited": "{used} pravnih osoba",
+      "facilities": "{used} od {limit} lokacija",
+      "facilitiesUnlimited": "{used} lokacija",
+      "assets": "{used} stavki imovine",
+      "periods": "{used} razdoblja"
+    },
+    "save": {
+      "saving": "Spremanje…",
+      "saved": "Sve izmjene spremljene",
+      "dirty": "Nespremljene izmjene",
+      "refused": "Nije spremljeno — vidite napomenu ispod",
+      "confirm": "Spremi izmjene"
+    },
+    "errors": {
+      "rejected": "Jedna od vrijednosti upućuje na nešto što ne postoji za ovu tvrtku."
+    },
+    "fields": {
+      "organisationName": "Naziv organizacije",
+      "registrationNumber": "Matični broj",
+      "vatNumber": "OIB / PDV broj",
+      "registeredAddress": "Sjedište",
+      "country": "Država",
+      "naceCode": "NACE kod",
+      "reportingCurrency": "Valuta izvještavanja",
+      "employeeCount": "Zaposlenici",
+      "averageFte": "Prosječan FTE",
+      "turnover": "Prihod",
+      "groupStructureType": "Struktura grupe",
+      "consolidationMethod": "Metoda konsolidacije",
+      "ownershipPercentage": "Vlasništvo %",
+      "effectiveFrom": "Vrijedi od",
+      "effectiveTo": "Vrijedi do",
+      "facilityName": "Naziv lokacije",
+      "facility": "Lokacija",
+      "legalEntity": "Pravna osoba",
+      "facilityType": "Vrsta",
+      "tenure": "Osnova korištenja",
+      "openingDate": "Datum otvaranja",
+      "includedInBoundary": "U granici",
+      "assetName": "Imovina",
+      "assetType": "Vrsta imovine",
+      "identifier": "Identifikator",
+      "periodName": "Naziv razdoblja",
+      "startDate": "Datum početka",
+      "endDate": "Datum završetka",
+      "reportingYear": "Izvještajna godina",
+      "baseYear": "Bazna godina",
+      "reportingBasis": "Osnova izvještavanja",
+      "comparativePeriod": "Usporedno razdoblje",
+      "boundaryStatus": "Status",
+      "exclusionReason": "Razlog isključenja"
+    },
+    "hints": {
+      "country": "Dvoslovni kod države, npr. SI.",
+      "currency": "Troslovni kod valute, npr. EUR.",
+      "identifier": "Registarska oznaka, serijski broj ili broj brojila."
+    },
+    "enums": {
+      "groupStructureType": {
+        "standalone": "Samostalno",
+        "parent": "Matično društvo",
+        "subsidiary": "Ovisno društvo"
+      },
+      "consolidationMethod": {
+        "operational_control": "Operativna kontrola",
+        "financial_control": "Financijska kontrola",
+        "equity_share": "Vlasnički udio"
+      },
+      "facilityType": {
+        "office": "Ured",
+        "plant": "Pogon",
+        "warehouse": "Skladište",
+        "store": "Trgovina",
+        "farm": "Farma",
+        "other": "Ostalo"
+      },
+      "tenure": {
+        "owned": "U vlasništvu",
+        "leased": "U najmu",
+        "managed": "Pod upravljanjem",
+        "shared": "Dijeljeno"
+      },
+      "assetType": {
+        "vehicle": "Vozilo",
+        "building": "Zgrada",
+        "equipment": "Oprema",
+        "generator": "Generator",
+        "meter": "Brojilo",
+        "other": "Ostalo"
+      },
+      "reportingBasis": {
+        "individual": "Pojedinačna osoba",
+        "consolidated": "Konsolidirana grupa"
+      },
+      "applicabilityStatus": {
+        "included": "Uključeno",
+        "excluded": "Isključeno",
+        "not_applicable": "Nije primjenjivo",
+        "not_assessed": "Nije procijenjeno"
+      },
+      "periodStatus": {
+        "draft": "Nacrt",
+        "submitted": "Podneseno",
+        "inReview": "U pregledu",
+        "approved": "Odobreno",
+        "locked": "Zaključano",
+        "reopened": "Ponovno otvoreno"
+      }
+    },
+    "tree": {
+      "title": "Stablo organizacije",
+      "subtitle": "Matična osoba, ovisna društva, lokacije i imovina u jednom prikazu — što plan broji i što će izvještaj obuhvatiti.",
+      "inBoundary": "u granici",
+      "outsideBoundary": "izvan granice",
+      "assetsNoSite": "Imovina bez pripisane lokacije",
+      "noAddress": "nema registriranog sjedišta"
+    },
+    "help": {
+      "organisationName": "Naziv tvrtke točno onako kako je upisan u poslovni registar (AJPES).",
+      "registrationNumber": "Matični broj organizacije iz registra — deset znamenki, npr. 5150949000.",
+      "vatNumber": "Identifikacijski broj za PDV (DDV), npr. SI73291978. Ostavite prazno ako tvrtka nije obveznik PDV-a.",
+      "registeredAddress": "Registrirana adresa iz registra: ulica, kućni broj, poštanski broj i mjesto.",
+      "country": "Zemlja registriranog sjedišta, kao dvoslovna oznaka — SI za Sloveniju.",
+      "naceCode": "Šifra glavne djelatnosti, npr. 10.13. Nalazi se u registarskom upisu; upotrijebite najdetaljniju razinu koju imate.",
+      "reportingCurrency": "Valuta u kojoj su izraženi novčani iznosi u izvještaju. Za Sloveniju je to EUR.",
+      "employeeCount": "Broj zaposlenih osoba na kraju izvještajnog razdoblja, iskazan brojem osoba.",
+      "averageFte": "Prosječan broj zaposlenih u ekvivalentu punog radnog vremena u razdoblju, iz obračuna plaća — npr. 347,72.",
+      "turnover": "Neto prihodi od prodaje za isto razdoblje, preuzeti iz godišnjih financijskih izvještaja, u valuti izvještavanja.",
+      "groupStructureType": "Samostalna tvrtka, matično društvo grupe ili društvo kći unutar grupe.",
+      "consolidationMethod": "Kako se podaci ovog subjekta unose u izvještaj grupe: prema vlasničkom udjelu, prema financijskoj kontroli ili prema operativnoj kontroli.",
+      "ownershipPercentage": "Udio koji matično društvo ima u ovom subjektu, u postocima — 100 za društvo kćer u potpunom vlasništvu.",
+      "effectiveFrom": "Datum kada je ovaj subjekt postao dio grupe. Ostavite prazno ako je oduvijek bio dio nje.",
+      "effectiveTo": "Datum izlaska iz grupe. Ostavite prazno dok je još dio nje; datum ovdje uklanja subjekt iz kasnijih izvještaja, ali ne i iz prijašnjih.",
+      "legalEntity": "Pravna osoba kojoj ovaj zapis pripada. Svaka lokacija, imovina i redak podataka pripada jednoj pravnoj osobi.",
+      "facilityName": "Naziv koji interno koristite za lokaciju — „Pogon Trnovlje”, „Skladište Koper“.",
+      "facilityType": "Što lokacija predstavlja: pogon, ured, skladište, trgovina ili drugo.",
+      "tenure": "Je li lokacija u vašem vlasništvu, najmu ili je samo upravljate njome.",
+      "openingDate": "Datum kada je lokacija počela poslovati pod vašom kontrolom. Ostavite prazno ako je to bilo prije izvještajnog razdoblja.",
+      "facility": "Lokacija kojoj ovaj unos pripada. Ostavite prazno za nešto što nije vezano uz jednu lokaciju.",
+      "assetName": "Naziv vozila, zgrade, stroja ili brojila — „Kombi 1”, „Kotlovnica“.",
+      "assetType": "Što je unos: vozilo, zgrada, oprema, generator, brojilo ili drugo.",
+      "identifier": "Registarska oznaka, serijski broj ili broj brojila — što god ga identificira na računu.",
+      "periodName": "Naziv po kojem ćete prepoznati izvještaj, npr. „Godina 2024“.",
+      "startDate": "Prvi dan izvještajnog razdoblja, obično 1. siječnja.",
+      "endDate": "Zadnji dan izvještajnog razdoblja, obično 31. prosinca.",
+      "reportingYear": "Godina na koju se izvještaj odnosi — godina u kojoj razdoblje završava.",
+      "baseYear": "Godina u odnosu na koju se mjere kasnija smanjenja. Za prvi izvještaj to je obično sama izvještajna godina.",
+      "reportingBasis": "Pojedinačno — samo ova tvrtka. Konsolidirano — tvrtka zajedno s društvima kćerima.",
+      "comparativePeriod": "Ranije razdoblje za usporedbu. Ostavite prazno za prvi izvještaj.",
+      "boundaryStatus": "Je li ovaj subjekt unutar granica izvještaja za ovo razdoblje ili je isključen uz naveden razlog.",
+      "exclusionReason": "Zašto je subjekt izostavljen iz ovog razdoblja. Tekst se ispisuje u izvještaju, stoga ga navedite jasno."
+    }
+  },
+  "factors": {
+    "title": "Emisijski faktori",
+    "subtitle": "Skupovi faktora, od čega je svaki sastavljen i izdanje koje nacrt pretvara u verziju koju razdoblje može fiksirati.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete pregledati knjižnicu faktora, ali za izdavanje verzije ili dodavanje faktora potrebna je dozvola za prilagođene faktore.",
+    "actions": {
+      "cancel": "Odustani"
+    },
+    "status": {
+      "draft": "Nacrt",
+      "active": "Izdano",
+      "archived": "Arhivirano"
+    },
+    "sets": {
+      "title": "Skupovi faktora",
+      "subtitle": "Izdani se skup nikada ne mijenja — promjena broja uvijek je nova verzija.",
+      "empty": "Još nije stvoren nijedan skup faktora.",
+      "factorCount": "{count} faktora",
+      "published": "izdano {date}",
+      "unpublished": "još nije izdano",
+      "release": "Izdaj",
+      "archive": "Arhiviraj",
+      "newVersion": "Nova verzija",
+      "newVersionTitle": "Nova verzija ovog skupa",
+      "createEmpty": "Novi prazan skup",
+      "createTitle": "Novi skup faktora",
+      "create": "Stvori",
+      "copyOf": "{name} (nova verzija)",
+      "copyExplain": "Novi skup počinje kao nacrt s kopijom svakog faktora odabranog skupa. Uredite ga ondje, pa ga izdajte — verzija koju su razdoblja već fiksirala ostaje nepromijenjena."
+    },
+    "provenance": {
+      "title": "Izvori i licencije",
+      "empty": "Ovaj skup još nema faktore, pa ne navodi izvore."
+    },
+    "factors": {
+      "title": "Faktori skupa {set}",
+      "listTitle": "Faktori",
+      "draftNote": "Ovaj je skup nacrt: njegovi se faktori još mogu dodavati i ispravljati putem API-ja.",
+      "frozenNote": "Ovaj je skup izdan, pa su mu faktori zamrznuti. Stvorite novu verziju da promijenite broj.",
+      "search": "Pretraživanje",
+      "searchHint": "Kod faktora, naziv ili vrsta aktivnosti",
+      "empty": "Nijedan faktor ne odgovara ovom filtru.",
+      "range": "{from}–{to} od {total}",
+      "previous": "Prethodna",
+      "next": "Sljedeća"
+    },
+    "fields": {
+      "code": "Kod skupa",
+      "name": "Naziv",
+      "description": "Opis",
+      "sourceName": "Izvor",
+      "sourceVersion": "Verzija",
+      "licence": "Licencija",
+      "factorCount": "Faktori",
+      "activityType": "Vrsta aktivnosti",
+      "geography": "Geografija",
+      "applicableYear": "Godina",
+      "factorValue": "Vrijednost",
+      "inputUnit": "Po jedinici"
+    },
+    "refusals": {
+      "NEW_VERSION_ONLY": "Ovaj je skup izdan, pa se ne može mijenjati. Umjesto toga stvorite novu verziju — razdoblja koja su fiksirala ovaj skup i dalje se reproduciraju točno kao danas.",
+      "CODE_TAKEN": "Skup faktora s tim kodom već postoji. Odaberite drugi kod.",
+      "COPY_SOURCE_UNKNOWN": "Skup iz kojeg želite kopirati ne postoji."
+    },
+    "errors": {
+      "rejected": "Jedna od vrijednosti upućuje na nešto što ne postoji."
+    }
+  },
+  "inventory": {
+    "title": "Podaci",
+    "subtitle": "Podaci o aktivnostima Scope 1 i Scope 2 za reviziju na kojoj radite. Svaka izmjena upisuje novu verziju — ništa se ne prepisuje.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete čitati cijeli inventar. Dodavanje ili izmjena retka zahtijeva dozvolu za unos podataka, a revizija mora biti otvorena.",
+    "actions": {
+      "new": "Dodaj redak",
+      "newTitle": "Dodaj redak: {tab}",
+      "approve": "Odobri redak",
+      "upgrade": "Nadogradi"
+    },
+    "scopes": {
+      "scope1": "Scope 1",
+      "scope2": "Scope 2"
+    },
+    "tabs": {
+      "stationary": "Stacionarno izgaranje",
+      "mobile": "Mobilno izgaranje",
+      "fugitive": "Fugitivne emisije",
+      "process": "Procesne emisije",
+      "onsite": "Vlastita proizvodnja",
+      "energy": "Kupljena energija",
+      "instruments": "Ugovorni instrumenti"
+    },
+    "revision": {
+      "title": "Izvještajno razdoblje i revizija",
+      "subtitle": "Redci pripadaju reviziji, a ne razdoblju. Točno jedna revizija razdoblja je tekuća i samo se ona uređuje.",
+      "period": "Izvještajno razdoblje",
+      "badge": "Revizija {no} — {status}",
+      "frozenBody": "Ova revizija više nije otvorena, pa se njezini redci ne mogu mijenjati. Pokrenite novu reviziju da ponovno iskažete brojku.",
+      "status": {
+        "draft": "Nacrt",
+        "submitted": "Podnesena",
+        "in_review": "U pregledu",
+        "approved": "Odobrena",
+        "rejected": "Vraćena",
+        "locked": "Zaključana"
+      }
+    },
+    "queue": {
+      "label": "Prikaži samo retke koji čekaju odobrenje",
+      "badge": "{count} čeka"
+    },
+    "table": {
+      "subtitle": "Samo tekuće verzije. Izmijenjeni redak pojavljuje se jednom, u najnovijoj verziji.",
+      "count": "{count} redaka",
+      "empty": "Za ovu reviziju još nije unesen nijedan redak ove vrste.",
+      "label": "Izvor",
+      "kind": "Vrsta",
+      "site": "Lokacija",
+      "period": "Mjesec",
+      "quantity": "Količina",
+      "state": "Stanje",
+      "noSite": "Bez lokacije (vidi napomene)",
+      "unknownSite": "Lokacija izvan ovog popisa",
+      "unnamed": "Redak bez naziva",
+      "wholePeriod": "Cijelo razdoblje",
+      "truncated": "Ovo je sve što jedan zahtjev vraća. Suzite reviziju ili karticu da vidite ostatak.",
+      "hint": {
+        "scope1": "Izravne emisije iz izvora koje tvrtka posjeduje ili kontrolira — izgorjelo gorivo, iscurjelo rashladno sredstvo, procesna kemija.",
+        "scope2": "Neizravne emisije iz kupljene energije, plus certifikati koji podupiru tržišnu brojku."
+      }
+    },
+    "state": {
+      "draft": "Nacrt",
+      "approved": "Odobreno"
+    },
+    "drawer": {
+      "title": "Detalji retka",
+      "subtitle": "{tab} — svaka verzija ovog retka, od najstarije.",
+      "close": "Zatvori detalje retka",
+      "supersededNote": "Gledate stariju verziju ovog retka. Čuva se radi revizijskog traga i ne može se mijenjati.",
+      "tombstoneNote": "Ovaj je redak izbrisan. Verzija ostaje u bazi da bi brojka koja je jednom bila izviještena ostala čitljiva."
+    },
+    "approve": {
+      "hint": "Odobravanje upisuje novu verziju i bilježi tko je odobrio."
+    },
+    "changeReason": {
+      "required": "Ovaj je redak odobren, pa izmjena mora navesti razlog. Popunite da biste spremili."
+    },
+    "checks": {
+      "deferredTitle": "Provjerava se pri spremanju",
+      "deferredBody": "Ova se dva odlučuju prema skupu faktora koji je razdoblje fiksiralo, a koji ovaj zaslon ne poznaje. Provjeravaju se na poslužitelju, a odgovor se ovdje pojavljuje ako je redak odbijen."
+    },
+    "calculated": {
+      "title": "Razriješeno izračunom",
+      "location": "Lokacijski faktor: {value}",
+      "market": "Tržišni faktor: {value}",
+      "pending": "još nije razriješeno"
+    },
+    "history": {
+      "title": "Povijest verzija",
+      "empty": "Ovaj redak još nema povijest.",
+      "version": "Verzija {no}",
+      "revisionNo": "revizija {no}",
+      "revisionOther": "ranija revizija",
+      "current": "tekuća",
+      "tombstone": "izbrisana",
+      "carriedOver": "prenesena iz {revision}",
+      "writtenBy": "Upisao {who} {when}",
+      "approvedBy": "Odobrio {who} {when}",
+      "reason": "Razlog: {reason}",
+      "unknownUser": "korisnik koji je napustio tvrtku",
+      "truncated": "Lanac je dulji nego što jedan zahtjev prolazi — ovo je njegov najnoviji dio."
+    },
+    "fields": {
+      "legal_entity_id": "Pravna osoba",
+      "facility_id": "Lokacija",
+      "year_month": "Mjesec",
+      "unit": "Jedinica",
+      "notes": "Napomene",
+      "change_reason": "Razlog izmjene",
+      "source_name": "Naziv izvora",
+      "activity_type": "Vrsta aktivnosti",
+      "activity_value": "Količina",
+      "method": "Metoda izračuna",
+      "biogenic_flag": "Biogeno",
+      "refrigerant_added": "Dodano rashladno sredstvo",
+      "refrigerant_recovered": "Povraćeno rashladno sredstvo",
+      "equipment_capacity": "Punjenje opreme",
+      "opening_stock": "Početna zaliha",
+      "closing_stock": "Završna zaliha",
+      "leakage_rate": "Stopa curenja",
+      "energy_type": "Energent",
+      "consumption": "Potrošnja",
+      "supplier": "Dobavljač",
+      "meter_asset_id": "Brojilo",
+      "renewable_share": "Udio obnovljivih",
+      "instrument_type": "Vrsta instrumenta",
+      "certificate_id": "ID certifikata",
+      "covered_volume": "Pokriveni obujam",
+      "production_country": "Država proizvodnje",
+      "technology": "Tehnologija proizvodnje",
+      "generation_period_start": "Proizvedeno od",
+      "generation_period_end": "Proizvedeno do",
+      "cancellation_date": "Poništeno",
+      "quality_criteria_status": "Kriteriji kvalitete",
+      "residual_mix_volume": "Obujam rezidualnog miksa"
+    },
+    "hints": {
+      "year_month": "Ostavite prazno kada redak pokriva cijelo razdoblje.",
+      "notes": "Obvezno kada redak ne navodi lokaciju — to je dokumentirana iznimka.",
+      "production_country": "Dvoslovni kod države, npr. SI.",
+      "change_reason": "Bilježi se u novoj verziji i čita ga pregledavatelj."
+    },
+    "enums": {
+      "kind": {
+        "stationary_combustion": "Stacionarno izgaranje",
+        "mobile_combustion": "Mobilno izgaranje",
+        "fugitive_emissions": "Fugitivne emisije",
+        "process_emissions": "Procesne emisije",
+        "onsite_generation": "Vlastita proizvodnja",
+        "electricity": "Električna energija",
+        "district_heating": "Daljinsko grijanje",
+        "steam": "Para",
+        "cooling": "Hlađenje",
+        "GoO": "Jamstvo podrijetla",
+        "REGO": "REGO",
+        "REC": "Certifikat obnovljive energije",
+        "PPA": "Ugovor o kupnji energije (PPA)",
+        "green_tariff": "Zelena tarifa",
+        "supplier_product": "Proizvod dobavljača"
+      },
+      "energyType": {
+        "electricity": "Električna energija",
+        "district_heating": "Daljinsko grijanje",
+        "steam": "Para",
+        "cooling": "Hlađenje"
+      },
+      "method": {
+        "supplier_specific": "Specifično za dobavljača",
+        "activity_based": "Na temelju aktivnosti",
+        "fuel_based": "Na temelju goriva",
+        "distance_based": "Na temelju udaljenosti",
+        "average_data": "Prosječni podaci",
+        "hybrid": "Hibridna",
+        "spend_based": "Na temelju troškova",
+        "engineering_estimate": "Inženjerska procjena",
+        "mass_balance": "Bilanca mase"
+      },
+      "instrumentType": {
+        "GoO": "Jamstvo podrijetla",
+        "REGO": "REGO",
+        "REC": "Certifikat obnovljive energije",
+        "PPA": "Ugovor o kupnji energije (PPA)",
+        "green_tariff": "Zelena tarifa",
+        "supplier_product": "Proizvod dobavljača"
+      },
+      "technology": {
+        "wind": "Vjetar",
+        "solar": "Solarna",
+        "hydro": "Hidro",
+        "biomass": "Biomasa",
+        "geothermal": "Geotermalna",
+        "nuclear": "Nuklearna",
+        "other": "Ostalo"
+      },
+      "qualityCriteria": {
+        "pass": "Ispunjava kriterije",
+        "fail": "Ne ispunjava kriterije",
+        "review": "Potreban pregled"
+      }
+    },
+    "errors": {
+      "rejected": "Izmjena je odbijena. Netko je možda u međuvremenu promijenio ovaj redak ili jedna od vrijednosti upućuje na nešto čega više nema — ponovno učitajte i pokušajte."
+    },
+    "help": {
+      "legal_entity_id": "Pravna osoba kojoj potrošnja pripada.",
+      "facility_id": "Lokacija kojoj potrošnja pripada — pogon, ured ili trgovina koja ju je koristila.",
+      "year_month": "Mjesec na koji se potrošnja odnosi, npr. 2024-01. Ostavite prazno za podatak koji obuhvaća cijelo razdoblje.",
+      "unit": "Jedinica unesenog podatka — kWh, MWh, litre, m³, kg ili tone. Mora se podudarati s računom.",
+      "notes": "Sve što bi recenzent trebao znati: s kojeg računa podatak dolazi ili da je riječ o procjeni.",
+      "change_reason": "Zašto se mijenja već odobreni podatak. Ostaje zabilježeno u povijesti izvještaja.",
+      "source_name": "Što je proizvelo emisije — „Plinski kotlovi”, „Dostavna vozila”, „Viličari“.",
+      "activity_type": "Vrsta goriva ili tvari: prirodni plin, dizel, benzin, UNP, drvo, rashladno sredstvo.",
+      "activity_value": "Koliko je utrošeno u razdoblju, u odabranoj jedinici — broj s računa ili brojila.",
+      "method": "Kako je podatak dobiven: iz računa za gorivo, iz prijeđene udaljenosti ili iz masene bilance rashladnog sredstva.",
+      "refrigerant_added": "Rashladno sredstvo dopunjeno u opremu tijekom razdoblja, u kg — prema servisnom izvještaju.",
+      "refrigerant_recovered": "Rashladno sredstvo izvađeno iz opreme tijekom razdoblja, u kg.",
+      "equipment_capacity": "Ukupna količina rashladnog sredstva koju oprema sadrži kad je puna, u kg — podatak je na natpisnoj pločici.",
+      "opening_stock": "Rashladno sredstvo na vlastitom skladištu na početku razdoblja, u kg.",
+      "closing_stock": "Rashladno sredstvo na vlastitom skladištu na kraju razdoblja, u kg.",
+      "leakage_rate": "Pretpostavljeno curenje opreme, u postotku njezine punine godišnje. Koristite ga samo kad servisni podaci ne postoje.",
+      "energy_type": "Što je kupljeno: električna energija, daljinsko grijanje, para ili hlađenje.",
+      "consumption": "Koliko je kupljeno u razdoblju, kako je navedeno na računu dobavljača.",
+      "supplier": "Tko je isporučitelj — tvrtka navedena na računu.",
+      "meter_asset_id": "Brojilo s kojeg dolazi ovo očitanje, ako brojila vodite u registru imovine.",
+      "renewable_share": "Udio kupljene energije koji je obnovljiv, u postocima, ako to dobavljač navodi.",
+      "instrument_type": "Vrsta ugovornog dokumenta: jamstvo podrijetla, zelena tarifa ili ugovor o otkupu električne energije.",
+      "certificate_id": "Identifikator certifikata ili ugovora, kako bi se mogao naknadno provjeriti.",
+      "covered_volume": "Koliko energije dokument pokriva, u istoj jedinici kao potrošnja na koju se odnosi.",
+      "technology": "Tehnologija proizvodnje koju dokument navodi: hidro, solarna, vjetar, biomasa i slično.",
+      "production_country": "Zemlja u kojoj je energija proizvedena, kako je navedeno u dokumentu.",
+      "residual_mix_volume": "Energija koja se izvještava s preostalom mješavinom — dio koji nijedan dokument ne pokriva.",
+      "quality_criteria_status": "Ispunjava li dokument kriterije kvalitete za tržišnu metodu; odaberite „nepoznato“ umjesto nagađanja.",
+      "generation_period_start": "Prvi dan razdoblja u kojem je energija proizvedena, kako navodi dokument.",
+      "generation_period_end": "Zadnji dan tog razdoblja proizvodnje.",
+      "cancellation_date": "Datum kada je certifikat poništen u registru na vaše ime."
+    }
+  },
+  "scope3": {
+    "page": {
+      "title": "Scope 3 na temelju troškova",
+      "subtitle": "Kupljena roba i usluge i kapitalna dobra, procijenjeni iz godišnjih troškova",
+      "estimateTitle": "Procjena, izvan vaših bruto zbrojeva Scope 1+2",
+      "estimateBody": "Ove brojke potječu iz godišnjih troškova pomnoženih prosjecima EXIOBASE po djelatnosti na 1000 € — metoda pregleda GHG protokola za kategorije 1 i 2. Izvještavaju se kao Scope 3 i namjerno se NE dodaju bruto zbrojevima Scope 1 i Scope 2, koji se grade samo iz izmjerene aktivnosti unesene u odjeljku „Podaci“."
+    },
+    "editor": {
+      "gateTitle": "Scope 3 na temelju troškova je plaćena funkcija",
+      "title": "Scope 3 na temelju troškova (kat. 1 i 2)",
+      "subtitle": "Godišnji troškovi kupljene robe i kapitalnih dobara po robnoj skupini · EXIOBASE faktori na 1000 € · pretvorba u EUR na poslužitelju ({year})",
+      "cat1": "Kat. 1 · Kupljena roba",
+      "cat2": "Kat. 2 · Kapitalna dobra",
+      "catN": "Kat. {n}",
+      "empty": "Još nema redaka troškova — dodajte robnu skupinu ispod. Bez redaka, kategorije 1 i 2 Scope 3 ostaju 0.",
+      "emptyUnpriceable": "Nema redaka troškova za {year}, a ne mogu se ni dodati dok važeći skup faktora ne sadrži faktore troškova.",
+      "unpriceableTitle": "Skup faktora ovog razdoblja ne može vrednovati troškove",
+      "unpriceableBody": "Skup faktora koji vrijedi za {year} — {name} ({code}) — ne sadrži faktore troškova na 1000 €, a ne sadrži ih ni jedan drugi aktivan skup. Redci troškova ne mogu se dodavati ni vrednovati dok se ne objavi i za ovo razdoblje ne fiksira skup koji ih ima.",
+      "unpriceableBodyNoSet": "Nijedan aktivan skup faktora ne sadrži faktore troškova na 1000 €, pa se ništa ovdje uneseno ne može vrednovati za {year}. Redci troškova ponovno će se moći dodavati kada se objavi i za ovo razdoblje fiksira skup koji ih ima.",
+      "unpriceableLines": "Već uneseni redci čuvaju se točno kako ste ih unijeli i prikazuju kao nevrednovani — ne kao nula. Brojka koja se ne može dobiti nije brojka nula.",
+      "unpriced": "Nevrednovano",
+      "unpricedHint": "Za ovu robnu skupinu nije dostupan faktor troškova, pa ovaj redak uopće ne daje brojku — ne nulu.",
+      "remove": "Ukloni {label}",
+      "commodity": "Robna skupina",
+      "commodityOption": "{cat} — {label}",
+      "amount": "Godišnji trošak",
+      "currency": "Valuta",
+      "add": "Dodaj",
+      "update": "Ažuriraj",
+      "footnote": "Klijent šalje samo robnu skupinu, iznos i valutu; EXIOBASE faktor i godišnji tečaj primjenjuju se na poslužitelju, a ponovni izračun uključuje rezultat u vaš zbroj Scope 3. Valuta bez tečaja za {year} sprema redak, ali doprinosi 0 uz upozorenje.",
+      "errNegative": "Trošak mora biti nenegativan broj.",
+      "errValidation": "Provjerite robnu skupinu, iznos i valutu.",
+      "errSave": "Spremanje nije uspjelo. Pokušajte ponovno.",
+      "errRemove": "Uklanjanje nije uspjelo. Pokušajte ponovno.",
+      "okAdded": "Redak troškova dodan",
+      "okUpdated": "Redak troškova ažuriran",
+      "okRemoved": "Redak troškova uklonjen"
+    },
+    "refusals": {
+      "NO_SPEND_FACTORS": "Važeći skup faktora ne sadrži faktore troškova na 1000 €, pa se ovaj redak troškova ne može vrednovati i nije spremljen."
+    }
+  },
+  "disclosures": {
+    "title": "Objave",
+    "subtitle": "Narativni i brojčani podaci standarda VSME (B1–B11, C1–C9) i pojednostavljenih ESRS. Svaki pokazatelj prikazuje svoje stanje, pa je jasno zašto je mjesto u izvještaju prazno.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete čitati svaku objavu. Odgovaranje zahtijeva dozvolu za unos podataka, a revizija mora biti otvorena.",
+    "noCatalogue": "Katalog pokazatelja nije se mogao učitati, pa još nema što popuniti.",
+    "scope": {
+      "title": "Izvještajno razdoblje, revizija i osoba",
+      "subtitle": "Objava pripada reviziji i pravnoj osobi. Točno jedna revizija razdoblja je tekuća i samo se ona uređuje.",
+      "badge": "Revizija {no} — {status}",
+      "period": "Izvještajno razdoblje",
+      "entity": "Pravna osoba",
+      "noPeriod": "Ova tvrtka još nema izvještajno razdoblje. Stvorite ga na zaslonu „Organizacija“ prije odgovaranja na objave.",
+      "noRevision": "Ovo razdoblje još nema reviziju. Pokrenite je na zaslonu „Organizacija“ — objava pripada reviziji.",
+      "frozenBody": "Ova revizija više nije otvorena, pa se njezini odgovori ne mogu mijenjati. Pokrenite novu reviziju da ponovno iskažete objavu."
+    },
+    "revisionStatus": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "in_review": "U pregledu",
+      "approved": "Odobrena",
+      "rejected": "Vraćena",
+      "locked": "Zaključana"
+    },
+    "recordState": {
+      "draft": "Nacrt",
+      "approved": "Odobreno"
+    },
+    "state": {
+      "filled": "Prikupljeno",
+      "not_collected": "Nije prikupljeno",
+      "not_applicable": "Nije primjenjivo"
+    },
+    "requirement": {
+      "mandatory": "Obvezno",
+      "conditional": "Uvjetno",
+      "voluntary": "Dobrovoljno"
+    },
+    "moduleBasic": "Osnovni modul — dio svakog VSME izvještaja.",
+    "moduleComprehensive": "Sveobuhvatni modul — uključen u planove koji ga pokrivaju.",
+    "sectionCount": "{filled} od {total}",
+    "metricCount": "{count} podatkovnih točaka",
+    "appliesWhen": "Kada ispuniti: {condition}",
+    "severalRecords": "Ovaj pokazatelj ima {count} zapisa za ovu pravnu osobu. Ovdje se uređuje prvi, ostali ostaju nepromijenjeni.",
+    "unsupportedType": "Za ovaj pokazatelj naveden je tip vrijednosti „{type}“ koji sustav ne može spremiti. Odgovor će biti moguć kada se stavka kataloga ispravi.",
+    "versionNote": "Spremljena verzija: {state}. Spremanjem nastaje nova verzija, a stara ostaje u povijesti.",
+    "controls": {
+      "yes": "Da",
+      "no": "Ne",
+      "codeHint": "Kod ili naziv koji standard traži, točno kako se treba pojaviti u izvještaju.",
+      "codeListHint": "Jedna vrijednost po retku.",
+      "total": "{metric} — ukupno",
+      "breakdownTitle": "Raščlamba: {dimensions}",
+      "breakdownOptional": "Raščlamba se iskazuje ako su podaci dostupni. Sam zbroj potpun je odgovor.",
+      "breakdownRequired": "Ovaj se pokazatelj iskazuje s raščlambom.",
+      "dimension": "Dimenzija",
+      "partLabel": "Dio",
+      "partAmount": "Vrijednost",
+      "addPart": "Dodaj dio",
+      "removePart": "Ukloni ovaj dio",
+      "other": "Drugo…",
+      "otherLabel": "Vaš odgovor"
+    },
+    "changeReason": {
+      "label": "Razlog izmjene",
+      "hint": "Spremljena je verzija odobrena, pa nova verzija mora reći zašto se razlikuje.",
+      "required": "Odobreni odgovor može se zamijeniti samo uz razlog."
+    },
+    "faults": {
+      "empty": "Još nema što spremiti — ovaj pokazatelj još nije prikupljen.",
+      "total_required": "Za raščlambu je potreban zbroj: upravo on ulazi u izvještaj.",
+      "not_a_number": "Zbroj i svaki dio raščlambe moraju biti brojevi."
+    },
+    "actions": {
+      "save": "Spremi odgovor",
+      "saveEdit": "Spremi novu verziju",
+      "approve": "Odobri"
+    },
+    "locked": {
+      "title": "Sveobuhvatni modul",
+      "body": "Ova podatkovna točka pripada sveobuhvatnom modulu koji vaš plan ne uključuje. Ostaje vidljiva da vidite što nadogradnja donosi; poslužitelj za nju ne prihvaća vrijednost.",
+      "cta": "Nadogradi"
+    },
+    "unreadableValue": "Ovaj pokazatelj ima spremljenu vrijednost koju obrazac ne može prikazati: spremljena je u formatu koji polja obrasca ne podržavaju. Ako spremite ovdje, bit će zamijenjena.",
+    "moduleSimplifiedEsrs": "Pojednostavljeni ESRS — podatkovne točke koje C(2026)5010 traži uz VSME; uključen u planove koji ga pokrivaju.",
+    "groups": {
+      "vsme": "VSME — B1–B11, C1–C9",
+      "esrs": "Pojednostavljeni ESRS — ESRS 2, E1–E5, S1–S4, G1"
+    },
+    "lockedEsrs": {
+      "title": "Pojednostavljeni ESRS",
+      "body": "Ova podatkovna točka pripada sloju pojednostavljenog ESRS-a koji vaš plan ne uključuje. Ostaje vidljiva da vidite što nadogradnja donosi; poslužitelj za nju ne prihvaća vrijednost.",
+      "cta": "Nadogradi"
+    },
+    "dataSource": "Gdje se podaci obično nalaze: {source}",
+    "esrsRef": "ESRS {reference}",
+    "suggestion": {
+      "label": "Iz podataka o organizaciji:",
+      "use": "Upotrijebi"
+    },
+    "notApplicable": {
+      "before": "Ne odnosi se na vas? Označite ga kao »ne primjenjuje se« s razlogom na",
+      "link": "zaslonu Spremnost"
+    },
+    "guidanceTitle": "Što kaže standard",
+    "howTo": {
+      "title": "Kako ispuniti objave",
+      "step1": "Gore odaberite razdoblje i pravnu osobu, zatim objavu (B1, B2 …) na traci.",
+      "step2": "Za svaki podatak unesite vrijednost; redak ispod polja kaže što u njega ide. Ako platforma odgovor već zna iz »Organizacije«, kliknite »Upotrijebi«.",
+      "step3": "Ako se podatak na vas ne odnosi, označite ga na zaslonu Spremnost kao »ne primjenjuje se« umjesto da ga ostavite praznim.",
+      "step4": "Spremite svaki odgovor, priložite dokaz na zaslonu »Dokazi i kvaliteta« i odobrite ga: u izvješće ulaze samo odobrene vrijednosti."
+    },
+    "sectionLocked": "Nije u vašem paketu",
+    "lockedLegend": "Zaključane skupine pripadaju višem paketu; njihovi podaci ostaju vidljivi da vidite što nadogradnja donosi.",
+    "restate": {
+      "title": "Započni novu reviziju",
+      "hint": "Zaključana revizija čuva izvješće koje je dala. Za nove odgovore otvorite novu reviziju na temelju ove i navedite razlog.",
+      "reason": "Razlog ponovnog navođenja",
+      "action": "Otvori novu reviziju"
+    },
+    "dimensions": {
+      "energy_source": "izvor energije"
+    }
+  },
+  "evidence": {
+    "title": "Dokazi i kvaliteta podataka",
+    "subtitle": "Dokumenti iza brojki: prenesite ih, priložite redcima koje potkrepljuju, ocijenite kvalitetu podataka i pročitajte što se zaista promijenilo.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete čitati cijelu knjižnicu. Prijenos dokumenta, prilaganje retku ili ocjenjivanje zahtijeva dozvolu za unos podataka.",
+    "actions": {
+      "upgrade": "Nadogradi"
+    },
+    "revisionStatus": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "in_review": "U pregledu",
+      "approved": "Odobrena",
+      "rejected": "Vraćena",
+      "locked": "Zaključana"
+    },
+    "rowState": {
+      "draft": "Nacrt",
+      "approved": "Odobreno"
+    },
+    "scope": {
+      "title": "Izvještajno razdoblje i revizija",
+      "subtitle": "Dokaz se prilaže retku, a redak pripada reviziji. Kada se revizija zaključa, njezini dokumenti, veze i ocjene kvalitete zamrzavaju se s njom.",
+      "period": "Izvještajno razdoblje",
+      "badge": "Revizija {no} — {status}",
+      "noPeriod": "Ova tvrtka još nema izvještajno razdoblje. Stvorite ga na zaslonu „Organizacija“ prije prilaganja dokaza.",
+      "noRevision": "Ovo razdoblje još nema reviziju. Pokrenite je na zaslonu „Organizacija“ — dokazi se prilažu redcima revizije."
+    },
+    "library": {
+      "title": "Knjižnica dokumenata",
+      "subtitle": "Svaka datoteka koju je ova tvrtka prenijela, najnovija prva. Identične datoteke čuvaju se jednom; dva prijenosa istog računa i dalje su dva zapisa.",
+      "count": "{count} dokumenata",
+      "empty": "Nijedan dokument ne odgovara ovim filtrima.",
+      "name": "Datoteka",
+      "type": "Vrsta",
+      "issuer": "Izdao",
+      "coverage": "Pokriva",
+      "usage": "Koristi se za",
+      "noCoverage": "Razdoblje nije navedeno",
+      "coverageRange": "{from} – {to}",
+      "unused": "Još nije priložen",
+      "usedBy": "{count} redaka"
+    },
+    "filters": {
+      "text": "Pretraživanje",
+      "textPlaceholder": "Naziv datoteke ili izdavatelj",
+      "fileType": "Vrsta datoteke",
+      "confidentiality": "Povjerljivost",
+      "usage": "Prilog",
+      "usageValues": {
+        "any": "Svi dokumenti",
+        "linked": "Priložen retku",
+        "unlinked": "Nikada priložen"
+      }
+    },
+    "upload": {
+      "dropTitle": "Povucite datoteku ovdje",
+      "dropBody": "PDF, Excel, CSV ili slika, do {limit} MB prema vašem planu.",
+      "choose": "Odaberite datoteku",
+      "submit": "Prenesi",
+      "busy": "Prijenos…",
+      "stored": "„{name}“ je prenesen i sada je u knjižnici.",
+      "planTitle": "Ova je datoteka veća nego što vaš plan prenosi",
+      "planBody": "Vaš plan prihvaća datoteke do {limit} MB. Ništa nije preneseno niti naplaćeno — veći plan podiže ograničenje.",
+      "duplicateTitle": "Ista je datoteka već u knjižnici",
+      "duplicateBody": "Oba se zapisa čuvaju, a sama se datoteka pohranjuje samo jednom. Ako ste mislili na raniji zapis, koristite njega i uklonite kopiju koju ste upravo prenijeli.",
+      "duplicateUnknown": "Raniji zapis nije na popisu koji gledate.",
+      "reuse": "Umjesto toga koristi „{name}“",
+      "typeTitle": "Ova vrsta datoteke se ne prihvaća",
+      "typeBody": "Učitajte jednu od ovih: {formats}. Word datoteku ili HEIC fotografiju treba pretvoriti — najbrže ispisom u PDF."
+    },
+    "document": {
+      "download": "Preuzmi",
+      "uploadedAt": "Preneseno",
+      "size": "Veličina",
+      "sizeValue": "{kb} kB",
+      "hash": "Otisak sadržaja",
+      "usedBy": "Gdje se ovaj dokument koristi",
+      "usedByNone": "Ovaj dokument još nije ničemu priložen.",
+      "usedByRow": "{name} · {month}",
+      "usedByOther": "Redak izvan revizije koju gledate",
+      "delete": "Izbriši dokument",
+      "deleteHint": "Datoteka i svaki njezin prilog nestaju. Dokument na koji se oslanja zaključani izvještaj ne može se izbrisati.",
+      "bytesKept": "Zapis je uklonjen. Sama je datoteka ostala, jer drugi zapis ove tvrtke sadrži isti sadržaj."
+    },
+    "rows": {
+      "title": "Redci ove revizije",
+      "subtitle": "Pronađite brojku koju dokument potkrepljuje, pa ga priložite. Redak koji već ima dokaze to i kaže.",
+      "search": "Pronađi redak",
+      "searchPlaceholder": "Naziv, vrsta ili mjesec",
+      "count": "{count} redaka",
+      "empty": "Nijedan redak ove revizije ne odgovara pretraživanju.",
+      "noRevision": "Odaberite razdoblje s revizijom da vidite njegove retke.",
+      "noEvidence": "Nema dokaza",
+      "evidenceCount": "{count} dokumenata",
+      "truncated": "Ovo je sve što jedan zahtjev vraća. Suzite pretraživanje da vidite ostatak."
+    },
+    "row": {
+      "title": "Detalji retka",
+      "subtitle": "{kind} · {month}",
+      "unnamed": "Redak bez naziva",
+      "wholePeriod": "Cijelo razdoblje",
+      "close": "Zatvori detalje retka",
+      "evidence": "Dokazi za ovaj redak",
+      "noEvidence": "Ovom retku još ništa nije priloženo.",
+      "unlink": "Odvoji",
+      "attach": "Priloži „{name}“",
+      "attachNone": "Odaberite dokument iznad da ga priložite",
+      "alreadyLinked": "Taj je dokument već bio priložen ovom retku — ništa se nije promijenilo.",
+      "readOnly": "Prilaganje dokaza zahtijeva dozvolu za unos podataka.",
+      "frozen": "Ova revizija više nije otvorena, pa se njezini dokazi ne mogu mijenjati.",
+      "unknownDocument": "Dokument koji više nije u knjižnici"
+    },
+    "dq": {
+      "title": "Kvaliteta podataka",
+      "unscored": "nije ocijenjeno",
+      "scoreOf": "{value} od {max}",
+      "noTier": "Razina nije postavljena",
+      "overridden": "Postavio pregledavatelj",
+      "overrideReason": "Razlog ručne izmjene: {reason}",
+      "assessedAt": "Posljednja ocjena {when}.",
+      "lockedByOverride": "Pregledavatelj je ručno postavio ove ocjene. Njihova izmjena ili brisanje zahtijeva dozvolu za pregled.",
+      "frozen": "Ova revizija više nije otvorena, pa se njezine ocjene kvalitete ne mogu mijenjati.",
+      "none": "Nitko još nije ocijenio ovaj redak.",
+      "pedigreeHint": "1 je najjače, 5 najslabije.",
+      "commentHint": "Opišite kako je brojka dobivena — to čita pregledavatelj.",
+      "overrideLabel": "Postavi ove ocjene ručno umjesto po pravilima",
+      "overrideHint": "Bilježi se s vašim imenom i čita ga svatko tko revidira izvještaj.",
+      "overrideRequired": "Ručna izmjena mora navesti razlog. Popunite da biste spremili."
+    },
+    "timeline": {
+      "title": "Što se promijenilo",
+      "empty": "Ovaj redak još nema povijest.",
+      "version": "Verzija {no}",
+      "current": "tekuća",
+      "tombstone": "izbrisana",
+      "carriedOver": "prenesena iz druge revizije",
+      "writtenBy": "Upisao {who} {when}",
+      "approvedBy": "Odobrio {who} {when}",
+      "reason": "Razlog: {reason}",
+      "unknownUser": "korisnik koji je napustio tvrtku",
+      "auditBy": "Zabilježeno za {who} {when}",
+      "selfApproved": "Ista je osoba unijela i odobrila ovu brojku.",
+      "chainTruncated": "Lanac je dulji nego što jedan zahtjev prolazi — ovo je njegov najnoviji dio.",
+      "auditHidden": "Stavke revizijskog traga prikazuju se ulogama s pristupom reviziji. Povijest verzija iznad potpuna je i bez njih.",
+      "auditWindow": "Stavke revizijskog traga starije od pročitanog prozora nisu prikazane. Povijest verzija iznad potpuna je i bez njih.",
+      "action": {
+        "create": "Stvoreno",
+        "update": "Ažurirano",
+        "delete": "Izbrisano",
+        "approve_row": "Odobreno"
+      }
+    },
+    "fields": {
+      "file": "Datoteka",
+      "file_name": "Naziv datoteke",
+      "file_type": "Vrsta datoteke",
+      "issuer": "Izdao",
+      "document_date": "Datum dokumenta",
+      "coverage_start": "Pokriva od",
+      "coverage_end": "Pokriva do",
+      "confidentiality": "Povjerljivost",
+      "retention_date": "Čuvati do",
+      "documentId": "Dokument",
+      "objectId": "Redak",
+      "objectType": "Vrsta retka",
+      "reliability_score": "Pouzdanost",
+      "temporal_score": "Ažurnost",
+      "geographical_score": "Geografija",
+      "technology_score": "Tehnologija",
+      "completeness_score": "Potpunost",
+      "coverage_score": "Pokrivenost",
+      "estimate_uncertainty": "Nesigurnost",
+      "quality_tier": "Razina kvalitete",
+      "quality_comment": "Kako je ova brojka dobivena",
+      "is_overridden": "Ručna izmjena",
+      "override_reason": "Razlog ručne izmjene"
+    },
+    "hints": {
+      "coverage_start": "Prvi dan za koji je dokument dokaz.",
+      "coverage_end": "Posljednji dan koji pokriva. Redak izvan ovog prozora ipak se prilaže, uz napomenu.",
+      "retention_date": "Kada se ova datoteka smije odbaciti, ako pravilo tako nalaže."
+    },
+    "enums": {
+      "fileType": {
+        "pdf": "PDF",
+        "xlsx": "Tablica",
+        "csv": "CSV",
+        "image": "Slika",
+        "other": "Ostalo"
+      },
+      "confidentiality": {
+        "public": "Javno",
+        "internal": "Interno",
+        "confidential": "Povjerljivo"
+      },
+      "qualityTier": {
+        "high_primary": "Primarni podaci",
+        "medium_calculated": "Izračunato",
+        "low_proxy": "Zamjenski",
+        "estimate": "Procjena"
+      },
+      "kind": {
+        "stationary_combustion": "Stacionarno izgaranje",
+        "mobile_combustion": "Mobilno izgaranje",
+        "fugitive_emissions": "Fugitivne emisije",
+        "process_emissions": "Procesne emisije",
+        "onsite_generation": "Vlastita proizvodnja",
+        "electricity": "Električna energija",
+        "district_heating": "Daljinsko grijanje",
+        "steam": "Para",
+        "cooling": "Hlađenje",
+        "GoO": "Jamstvo podrijetla",
+        "REGO": "REGO",
+        "REC": "Certifikat obnovljive energije",
+        "PPA": "Ugovor o kupnji energije",
+        "green_tariff": "Zelena tarifa",
+        "supplier_product": "Proizvod dobavljača",
+        "text": "Tekst",
+        "number": "Broj",
+        "boolean": "Da / ne",
+        "date": "Datum"
+      }
+    },
+    "errors": {
+      "rejected": "Izmjena je odbijena. Dokument ili redak možda su u međuvremenu promijenjeni — ponovno učitajte i pokušajte."
+    }
+  },
+  "review": {
+    "title": "Pregled i odobravanje",
+    "subtitle": "Redci koji čekaju da netko stane iza njih i revizija izvještaja kojoj pripadaju. Odobrite što je ispravno, vratite što nije i zaključajte izvještaj kada je gotov.",
+    "loadingSection": "Učitavanje…",
+    "readOnlyNote": "Možete čitati red čekanja i povijest. Odobravanje redaka, odobravanje izvještaja i zaključavanje zahtijevaju dozvolu za odobravanje.",
+    "actions": {
+      "title": "Pomakni ovu reviziju dalje",
+      "submit": "Podnesi na pregled",
+      "start_review": "Preuzmi na pregled",
+      "approve": "Odobri izvještaj",
+      "reject": "Vrati",
+      "lock": "Zaključaj izvještaj",
+      "abandon": "Odustani od ovog nacrta",
+      "upgrade": "Nadogradi",
+      "noneAvailable": "Iz trenutačnog stanja ništa ne možete učiniti s ovom revizijom.",
+      "lockedNothing": "Ovaj je izvještaj zaključan. Ništa se u njemu ne može promijeniti — ispravak pokreće novu reviziju.",
+      "commentHint": "Autor ovo čita da bi znao što ispraviti, pa navedite brojku i problem.",
+      "commentRequired": "Vraćanje izvještaja mora navesti razlog.",
+      "resumeHint": "Ova je revizija vraćena. Izmjena bilo kojeg njezina retka na zaslonu „Podaci“ vraća je u nacrt — za to ne postoji zaseban gumb."
+    },
+    "fields": {
+      "comment": "Zašto se vraća",
+      "change_reason": "Zašto se izvještaj ponovno iskazuje",
+      "seedFrom": "Revizija iz koje se kopira",
+      "id": "Identifikator",
+      "action": "Radnja"
+    },
+    "scope": {
+      "title": "Izvještajno razdoblje i revizija",
+      "subtitle": "Razdoblje sadrži više revizija i točno jedna je tekuća. Pregled uvijek radi na tekućoj.",
+      "period": "Izvještajno razdoblje",
+      "noPeriod": "Ova tvrtka još nema izvještajno razdoblje. Stvorite ga na zaslonu „Organizacija“ prije nego što bude što pregledati.",
+      "noRevision": "Ovo razdoblje još nema reviziju. Pokrenite je na zaslonu „Organizacija“."
+    },
+    "queue": {
+      "title": "Čeka odobrenje",
+      "subtitle": "Svaki tekući redak ove revizije koji je još nacrt. Odobravanje retka bilježi tko stoji iza brojke; sam se redak čuva, ne prepisuje.",
+      "count": "{count} redaka",
+      "empty": "Ništa u ovoj reviziji ne čeka odobrenje.",
+      "noRevision": "Odaberite razdoblje s revizijom da vidite njegov red čekanja.",
+      "selectAll": "Odaberi sve prikazane retke",
+      "approveSelected": "Odobri odabrane ({count})",
+      "busy": "Odobravanje, redak po redak…",
+      "truncated": "Ovo je sve što jedan zahtjev vraća. Odobrite ove, a ostali će uslijediti.",
+      "bulkResult": "Odobreno {approved} od {attempted} redaka."
+    },
+    "row": {
+      "unnamed": "Redak bez naziva",
+      "wholePeriod": "Cijelo razdoblje"
+    },
+    "revision": {
+      "title": "Revizija izvještaja",
+      "subtitle": "Jedna revizija, jedan status, jedna povijest. Sve što se događa izvještaju događa se ovdje.",
+      "none": "Još nema revizije za pregled.",
+      "number": "Revizija {no}",
+      "notCurrent": "Više nije tekuća revizija",
+      "changeReason": "Razlog ove revizije: {reason}",
+      "reviewComment": "Vraćena uz: {comment}",
+      "assignedTo": "Pregledava {name}"
+    },
+    "timeline": {
+      "title": "Što joj se dogodilo",
+      "empty": "Ovoj se reviziji još ništa nije dogodilo.",
+      "latestPassOnly": "Ovo prikazuje posljednje vrijeme svakog koraka. Potpun trag svakog pokušaja nalazi se u povijesti izmjena na zaslonu „Dokazi“.",
+      "steps": {
+        "created": "Pokrenuta",
+        "submitted": "Podnesena na pregled",
+        "reviewed": "Vraćena",
+        "approved": "Odobrena",
+        "locked": "Zaključana"
+      }
+    },
+    "blocking": {
+      "title": "Što stoji na putu",
+      "clean": "Ništa ne blokira ovu reviziju.",
+      "scope": "Provjereno na razini: {scope}",
+      "openRow": "Otvori redak u redu čekanja",
+      "openScreen": "Otvori {object}",
+      "noObject": "Ova se provjera odnosi na tvrtku u cjelini, a ne na jedan zapis.",
+      "noAccess": "Ovo se odnosi na objekt ({object}) kojemu nemate pristup. Zamolite kolegu koji njime upravlja da ga ispravi."
+    },
+    "advisory": {
+      "title": "Savjetodavni nalazi",
+      "subtitle": "Ovi ne zaustavljaju reviziju i ostat će točni i nakon odobrenja. Svaki je izbor izračuna koji se objavljuje, ovdje imenovan da bi ga pregledavatelj svjesno potpisao umjesto da ga otkrije u izvještaju."
+    },
+    "result": {
+      "done": "Gotovo — {action}. Izvještaj je sada {to}.",
+      "rowsPending": "{pending} od {total} redaka još čeka odobrenje. Prvo ih odobrite, pa podnesite.",
+      "needsComment": "Vraćanje izvještaja mora navesti razlog.",
+      "blocked": "{count} provjera nije prošlo. Navedene su ispod, svaka s onim što treba ispraviti.",
+      "notAllowed": "To nije moguće dok je izvještaj {from}. Odavde možete: {allowed}.",
+      "nothing": "ništa",
+      "notCurrent": "Ova revizija više nije tekuća, pa nema što vratiti.",
+      "raced": "Netko je drugi pomaknuo ovaj izvještaj dok ste ga gledali. Stranica je osvježena — provjerite status i pokušajte ponovno.",
+      "calculationMissing": "Ova revizija nema ažuran dovršen izračun. Pokrenite izračun iznad i ponovite radnju.",
+      "calculationFailed": "Posljednji izračun nije vrednovao {failed} redaka. Ispravite ih, ponovno pokrenite izračun i zatim odobrite."
+    },
+    "lock": {
+      "planTitle": "Zaključavanje ovog izvještaja zahtijeva veći plan",
+      "planBody": "Izvještaj pokriva {facilities} lokacija, a vaš plan zatvara izvještaje s najviše {limit}.",
+      "planBodyUnknown": "Izvještaj pokriva više lokacija nego što vaš plan zatvara.",
+      "planHint": "Ništa nije naplaćeno i ništa nije izgubljeno. Ili prijeđite na plan koji pokriva toliko lokacija, ili uklonite višak lokacija iz granice ovog razdoblja na zaslonu „Organizacija“."
+    },
+    "restate": {
+      "title": "Ponovno iskaži ovaj izvještaj",
+      "body": "Zaključani se izvještaj nikada ne uređuje. Ispravak je nova revizija, pokrenuta od objavljenih brojeva, i mora navesti razlog.",
+      "reasonHint": "Ovo revizor prvo čita, pa budite konkretni.",
+      "reasonRequired": "Ponovno iskazivanje mora navesti razlog.",
+      "submit": "Pokreni ponovno iskazivanje",
+      "busy": "Kopiranje redaka…"
+    },
+    "selfApproval": {
+      "disclosure": "U ovoj tvrtki nema zasebnog odobravatelja, pa odobravate vlastite podatke. To se objavljuje u izvještaju. Dodijelite kolegi ulogu Odobravatelj da bi brojke bile neovisno potpisane."
+    },
+    "revisionStatus": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "in_review": "U pregledu",
+      "approved": "Odobrena",
+      "rejected": "Vraćena",
+      "locked": "Zaključana"
+    },
+    "rowState": {
+      "draft": "Nacrt",
+      "approved": "Odobreno"
+    },
+    "enums": {
+      "scope": {
+        "record": "sam redak",
+        "revision": "revizija izvještaja",
+        "period": "izvještajno razdoblje",
+        "reference_org": "organizacija i referentni podaci"
+      },
+      "objectType": {
+        "emission_activity": "redak Scope 1",
+        "purchased_energy_activity": "redak kupljene energije",
+        "contractual_instrument": "energetski ugovor",
+        "disclosure_record": "objavu",
+        "legal_entity": "pravnu osobu",
+        "facility": "lokaciju",
+        "reporting_period": "izvještajno razdoblje",
+        "period_scope": "granicu izvještavanja",
+        "document": "dokument",
+        "evidence_link": "prilog dokaza",
+        "dq_assessment": "ocjenu kvalitete",
+        "emission_factor": "emisijski faktor",
+        "report_revision": "reviziju izvještaja"
+      },
+      "sourceTable": {
+        "emission_activity": "Scope 1",
+        "purchased_energy_activity": "Kupljena energija",
+        "contractual_instrument": "Energetski ugovor",
+        "disclosure_record": "Objava"
+      },
+      "kind": {
+        "stationary_combustion": "Stacionarno izgaranje",
+        "mobile_combustion": "Mobilno izgaranje",
+        "fugitive_emissions": "Fugitivne emisije",
+        "process_emissions": "Procesne emisije",
+        "onsite_generation": "Vlastita proizvodnja",
+        "electricity": "Električna energija",
+        "district_heating": "Daljinsko grijanje",
+        "steam": "Para",
+        "cooling": "Hlađenje",
+        "GoO": "Jamstvo podrijetla",
+        "REGO": "REGO",
+        "REC": "Certifikat obnovljive energije",
+        "PPA": "Ugovor o kupnji energije",
+        "green_tariff": "Zelena tarifa",
+        "supplier_product": "Proizvod dobavljača",
+        "text": "Tekst",
+        "number": "Broj",
+        "boolean": "Da / ne",
+        "date": "Datum"
+      }
+    },
+    "errors": {
+      "accessChanged": "Vaša prava pristupa su se promijenila. Osvježite stranicu da biste nastavili.",
+      "rejected": "To ne postoji za ovu tvrtku.",
+      "ruleUnknown": "Provjera {code} nije prošla."
+    },
+    "calculation": {
+      "title": "Izračun",
+      "run": "Pokreni izračun",
+      "hint": "Pokrenite izračun nakon odobrenja redaka i pri svakoj promjeni ulaznih podataka. Prije zaključavanja revizije obvezan je i bez redaka emisija.",
+      "done": "Izračun dovršen: {lines} redaka vrednovano, {failed} neuspjelih.",
+      "failed": "Izračun nije uspio: {failed} od {lines} redaka nije se moglo vrednovati. Ispravite označene retke i pokrenite ga ponovno.",
+      "concurrentModification": "Revizija je istodobno izmijenjena. Ponovite izračun."
+    }
+  },
+  "reports": {
+    "title": "Izvještaji",
+    "subtitle": "Izradite VSME Basic izvještaj iz odobrene revizije i sačuvajte svaku objavljenu datoteku.",
+    "readOnlyNote": "Vaša uloga može čitati objavljene izvještaje, ali ne i izrađivati nove.",
+    "scope": {
+      "title": "O čemu je izvještaj",
+      "subtitle": "Izvještaj se izrađuje iz jedne revizije jednog izvještajnog razdoblja — brojeva koje je netko odobrio.",
+      "period": "Izvještajno razdoblje",
+      "noPeriod": "Još nema izvještajnog razdoblja. Stvorite ga u odjeljku „Organizacija“.",
+      "noRevision": "Ovo razdoblje još nema revizije.",
+      "revisionNo": "Revizija {no}",
+      "current": "tekuća",
+      "blocked": {
+        "not_approved": "Iz ove se revizije ne može izraditi izvještaj: nitko još nije odobrio ove brojeve."
+      },
+      "blockedCta": "Idi na Pregled i odobravanje"
+    },
+    "revisionStatus": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "in_review": "U pregledu",
+      "approved": "Odobrena",
+      "rejected": "Odbijena",
+      "locked": "Zaključana"
+    },
+    "output": {
+      "title": "Datoteka",
+      "subtitle": "Odaberite format i jezik. Oboje se bilježi u datoteci i kasnije se ne može mijenjati.",
+      "format": "Format",
+      "language": "Jezik izvještaja",
+      "languageHint": "Jezik se upisuje u datoteku i čuva s njom. Kasnija promjena jezika sučelja ne mijenja već izrađen izvještaj.",
+      "render": "Izradi izvještaj",
+      "done": "Izrađeno: {file}. Nalazi se na popisu ispod.",
+      "formatLockTitle": "{format} nije uključen u vaš plan",
+      "formatLockBody": "Vaš plan uključuje formate prikazane bez lokota. Nadogradnja dodaje ostale."
+    },
+    "formats": {
+      "pdf": "PDF",
+      "xlsx": "Excel (XLSX)"
+    },
+    "languages": {
+      "en": "Engleski",
+      "sl": "Slovenski"
+    },
+    "gate": {
+      "revision_not_approved": "Ova revizija još nije odobrena, pa nema što objaviti. Prvo je odobrite u odjeljku „Pregled i odobravanje“.",
+      "no_green_run": "Posljednji izračun nije vrednovao svaki redak. Ispravite označene retke i ponovno izračunajte prije objavljivanja.",
+      "period_blocking_errors": "Za ovo razdoblje i dalje stoje blokirajući nalazi validacije. Prvo ih otklonite u odjeljku „Pregled i odobravanje“.",
+      "historical_context_missing": "Povijesno razdoblje i granica ove zaključane revizije nisu spremljeni. Preuzmite arhivirano izvješće ili pokrenite novu reviziju.",
+      "historical_formula_unsupported": "Ova zaključana revizija koristi stariji izračun s pogrešnom obradom izlaznih jedinica. Prije novog izvještaja izradite novu reviziju s ispravkom. Postojeće arhivske datoteke ostaju dostupne."
+    },
+    "lock": {
+      "title": "Ovaj se izvještaj neće moći zatvoriti na vašem planu",
+      "body": "Razdoblje pokriva {facilities} lokacija, a plan {plan} dopušta {limit}. Izvještaj se ipak može izraditi — ali revizija se ne može zaključati dok broj ne uđe u okvir plana.",
+      "hint": "Isključite lokacije iz granice ili nadogradite plan."
+    },
+    "completeness": {
+      "title": "Što će izvještaj obuhvatiti",
+      "subtitle": "Točno ono što će biti otisnuto na datoteci — ista izjava o pokrivenosti, napomena i isključenja.",
+      "loading": "Utvrđujemo što će izvještaj obuhvatiti…",
+      "noRevision": "Odaberite reviziju da vidite što bi njezin izvještaj obuhvatio.",
+      "inLanguage": "na jeziku: {language}",
+      "fullBody": "Sve u vašoj organizaciji unutar je ovog izvještaja. Bit će označen kao potpuna pokrivenost.",
+      "excludedTitle": "Izostavljeno vašim planom ({count})"
+    },
+    "coverage": {
+      "full": "Potpuna pokrivenost",
+      "partial": "Djelomična pokrivenost"
+    },
+    "objectType": {
+      "legal_entity": "Pravna osoba",
+      "facility": "Lokacija"
+    },
+    "renders": {
+      "title": "Objavljeni izvještaji",
+      "subtitle": "Svaka datoteka koju je ova tvrtka izradila. Ništa se ovdje nikada ne prepisuje — ponovna izrada dodaje novu.",
+      "count": "{count} datoteka",
+      "loading": "Učitavanje objavljenih izvještaja…",
+      "empty": "Još ništa nije objavljeno.",
+      "download": "Preuzmi",
+      "hash": "SHA-256 {hash}",
+      "unknownPeriod": "Nepoznato razdoblje",
+      "currentPeriodName": "trenutni naziv razdoblja"
+    },
+    "actions": {
+      "upgrade": "Pogledaj planove"
+    },
+    "fields": {
+      "format": "format",
+      "language": "jezik"
+    },
+    "errors": {
+      "rejected": "To ne postoji za ovu tvrtku."
+    }
+  },
+  "readiness": {
+    "title": "VSME spremnost",
+    "subtitle": "Koje podatke već imate, što se može obraniti i što još treba prikupiti za Osnovni modul.",
+    "errors": {
+      "accessChanged": "Vaš se pristup promijenio. Ponovno učitajte stranicu da biste nastavili.",
+      "loadFailed": "Pregled spremnosti nije se mogao učitati. Pokušajte ponovno za trenutak."
+    },
+    "summary": {
+      "title": "Spremnost za {period}",
+      "module": {
+        "basic": "Osnovni modul",
+        "basic_comprehensive": "Osnovni + Sveobuhvatni modul"
+      },
+      "basis": {
+        "individual": "pojedinačna osnova",
+        "consolidated": "konsolidirana osnova"
+      },
+      "revision": "revizija {no}",
+      "readyOf": "{ready} od {applicable} primjenjivih podatkovnih točaka spremno",
+      "noRevision": "Ovo razdoblje još nema reviziju, pa za njega ništa nije uneseno.",
+      "noRevisionLink": "Otvori zaslon organizacije",
+      "esrsModule": "+ pojednostavljeni ESRS"
+    },
+    "status": {
+      "draft": "Nacrt",
+      "submitted": "Podnesena",
+      "in_review": "U pregledu",
+      "approved": "Odobrena",
+      "rejected": "Odbijena",
+      "locked": "Zaključana"
+    },
+    "datapoint": {
+      "ready": "Spremno",
+      "needs_data": "Trebaju podaci",
+      "needs_evidence": "Treba dokaz",
+      "needs_confirmation": "Treba potvrda",
+      "not_applicable": "Nije primjenjivo",
+      "sensitive_omitted": "Izostavljeno kao osjetljivo",
+      "open_conditional": "Primjenjivost nije odlučena"
+    },
+    "datapointEvidence": "{count, plural, one {# dokument} few {# dokumenta} other {# dokumenata}}",
+    "requirement": {
+      "mandatory": "obvezno",
+      "conditional": "uvjetno",
+      "voluntary": "dobrovoljno"
+    },
+    "source": {
+      "plan": "iz plana",
+      "period": "iz razdoblja",
+      "organisation": "iz organizacije",
+      "calculation": "iz izračuna",
+      "disclosure": "uneseno kao objava"
+    },
+    "action": {
+      "needs_data": "Unesite podatke",
+      "needs_evidence": "Priložite dokument",
+      "needs_confirmation": "Pošaljite na odobrenje",
+      "open_conditional": "Odgovorite ili odlučite primjenjivost"
+    },
+    "decision": {
+      "markNotApplicable": "Nije primjenjivo…",
+      "markSensitive": "Izostavi kao osjetljivo…",
+      "withdraw": "Povuci odluku",
+      "reasonFor": {
+        "not_applicable": "Zašto se ova podatkovna točka ne primjenjuje?",
+        "sensitive_omitted": "Zašto je ova objava izostavljena kao povjerljiva ili osjetljiva?"
+      },
+      "reasonHint": "Razlog se tiska u izvještaju (B1 §24(b) za osjetljiva izostavljanja).",
+      "save": "Zabilježi odluku",
+      "cancel": "Odustani",
+      "failed": "Odluka nije spremljena. Revizija je možda zaključana ili se vaš pristup promijenio."
+    },
+    "card": {
+      "readyOf": "{ready} od {applicable} spremno",
+      "open": "{count, plural, one {# neodlučeno} few {# neodlučena} other {# neodlučenih}}",
+      "excluded": "{count, plural, one {# isključeno} few {# isključena} other {# isključenih}}",
+      "datapoints": "{count, plural, one {# podatkovna točka} few {# podatkovne točke} other {# podatkovnih točaka}}",
+      "work": "Radi na tome"
+    },
+    "disclosures": {
+      "title": "Objave"
+    },
+    "journey": {
+      "aria": "Koraci izvještavanja",
+      "title": "Vaš put do izvještaja",
+      "next": "Sljedeći korak:",
+      "steps": {
+        "organisation": "Tvrtka i lokacije",
+        "boundary": "Granica",
+        "applicability": "Primjenjivost",
+        "data": "Podaci",
+        "evidence": "Dokazi",
+        "calculation": "Izračun",
+        "review": "Odobravanje",
+        "report": "Izvještaj"
+      }
+    },
+    "esrs": {
+      "title": "Pojednostavljeni ESRS",
+      "regulatory": "Regulatorni status: {status}",
+      "intro": "{additional} dodatnih podatkovnih točaka koje pojednostavljeni ESRS traži uz VSME; {mapped} vaših VSME točaka već služi nekoj ESRS objavi ({mappedReady} spremno).",
+      "readyOf": "{ready} od {applicable} primjenjivih ESRS podatkovnih točaka spremno",
+      "note": "Većina se ovih točaka primjenjuje samo ondje gdje je tema materijalna za tvrtku. Odlučite primjenjivost po točki ili odgovorite na nju.",
+      "lockedTitle": "Pojednostavljeni ESRS nije u vašem planu",
+      "lockedBody": "Pojednostavljeni ESRS (C(2026)5010) dodaje {additional} podatkovnih točaka na {mapped} VSME točaka koje se već na njega mapiraju. Planovi od {plan} ih ovdje ocjenjuju, prihvaćaju njihove odgovore i tiskaju prilog s unakrsnim referencama u izvještaju.",
+      "lockedCta": "Pogledaj planove"
+    },
+    "esrsRef": "ESRS {reference}",
+    "appliesWhen": "Vrijedi kada: {condition}"
+  },
+  "vesg": {
+    "title": "Spremnost za VESG vaučer",
+    "subtitle": "Šesnaest zahtjeva slovenskog SPS vaučera za dobrovoljni izvještaj o održivosti i što platforma može vidjeti o svakom. Nije obećanje vaučera: podobnost dokazujete vi, pregled obavlja ovlašteno revizorsko društvo, sredstva dodjeljuje fond.",
+    "errors": {
+      "accessChanged": "Vaš se pristup promijenio. Ponovno učitajte stranicu da biste nastavili.",
+      "loadFailed": "Kontrolni popis nije se mogao učitati. Pokušajte ponovno za trenutak."
+    },
+    "summary": {
+      "title": "VESG kontrolni popis za {period}",
+      "figure": "{autoMet} od {autoTotal} provjera ispunjeno · {manualConfirmed} od {manualTotal} potvrda zabilježeno",
+      "closes": "Poziv je otvoren do {date} ili do iscrpljenja sredstava.",
+      "disclaimer": "HOSMOS priprema podatke i materijale; ne dodjeljuje vaučer i ne obavlja neovisni pregled."
+    },
+    "status": {
+      "met": "Ispunjeno",
+      "attention": "Zahtijeva pozornost",
+      "pending": "Za potvrdu",
+      "confirmed": "Potvrđeno",
+      "info": "Informacija"
+    },
+    "blocks": {
+      "eligibility": "Podobnost",
+      "funding": "Financiranje",
+      "provider": "Pružatelj usluge",
+      "independence": "Neovisnost",
+      "standard": "Standard",
+      "publication": "Objavljivanje",
+      "auditability": "Revidibilnost",
+      "versioning": "Verzioniranje",
+      "data_quality": "Kvaliteta podataka",
+      "social": "Socijalni modul",
+      "general_info": "Opće informacije",
+      "environmental": "Okoliš",
+      "comprehensive": "Sveobuhvatni",
+      "micro_logic": "Logika mikropoduzeća",
+      "submission": "Podnošenje"
+    },
+    "labels": {
+      "hosmos": "Što HOSMOS provjerava",
+      "evidence": "Dokaz"
+    },
+    "workOn": "Radi na tome",
+    "decision": {
+      "confirm": "Potvrdi",
+      "updateNote": "Spremi napomenu",
+      "withdraw": "Povuci",
+      "confirmedOn": "Potvrđeno {date}",
+      "readOnly": "Potvrđivanje zahtijeva dozvolu za unos podataka.",
+      "noteHint": "Neobvezno. Nigdje se ne tiska; čuva se za spis prijave.",
+      "failed": "Potvrda nije spremljena. Vaš se pristup možda promijenio."
+    },
+    "items": {
+      "eligibility_sme": {
+        "title": "Mikro, malo ili srednje poduzeće sa sjedištem u Sloveniji",
+        "hosmos": "Država i broj zaposlenih izvještajne osobe. Sam status MSP-a dokazuje podnositelj.",
+        "evidence": "Registracija tvrtke, status MSP-a",
+        "result": {
+          "met": "Sjedište: {country}; zaposlenih: {employees} — unutar praga MSP-a.",
+          "attention": "Sjedište: {country}; zaposlenih: {employees}. Postavite državu na SI i zabilježite broj zaposlenih na zaslonu „Organizacija“; više od 249 zaposlenih izvan je definicije MSP-a."
+        }
+      },
+      "eligibility_employee": {
+        "title": "Najmanje jedan zaposlenik tijekom trajanja projekta",
+        "hosmos": "Broj zaposlenih ili prosječan FTE izvještajne osobe i izvještajnog razdoblja.",
+        "evidence": "Kadrovski ili platni dokazi",
+        "result": {
+          "met": "Zabilježeno zaposlenih: {employees}.",
+          "attention": "Broj zaposlenih nije zabilježen (zaposlenih: {employees}). Unesite ga na zaslonu „Organizacija“."
+        }
+      },
+      "funding": {
+        "title": "Sufinanciranje od 60 %; subvencija između 1.000 i 9.999,99 EUR",
+        "hosmos": "Ništa — proračun je izvan platforme. Računaju se samo prihvatljive vanjske usluge.",
+        "evidence": "Ponude, računi, dokaz o plaćanju",
+        "result": {
+          "pending": "Potvrdite kada su ponuda i proračun spremni.",
+          "confirmed": "Potvrđeno."
+        },
+        "noteLabel": "Referenca ponude ili proračuna"
+      },
+      "provider": {
+        "title": "Izvještaj priprema vanjski stručnjak po tržišnoj cijeni",
+        "hosmos": "Izvoz je prikladan za vanjskog stručnjaka; ugovor ili narudžba izvan su HOSMOS-a.",
+        "evidence": "Ugovor, dokaz tržišne cijene",
+        "result": {
+          "pending": "Potvrdite kada postoji ugovor ili narudžba stručnjaka.",
+          "confirmed": "Potvrđeno."
+        },
+        "noteLabel": "Referenca ugovora ili narudžbe"
+      },
+      "independence": {
+        "title": "Neovisni pregled ovlaštenog revizorskog društva; sastavljač i pregledavatelj nisu ista osoba",
+        "hosmos": "Zaključana revizija, nepromjenjiv prikaz izvještaja i barem jedan član s ulogom pregleda (pregledavatelj, odobravatelj, revizor).",
+        "evidence": "Izvješće o ograničenom uvjerenju",
+        "result": {
+          "met": "Zaključana revizija: da; nepromjenjivih prikaza: {renders}; uloga pregleda: {reviewers}.",
+          "attention": "Zaključana revizija: {locked, select, 1 {da} other {ne}}; nepromjenjivih prikaza: {renders}; uloga pregleda: {reviewers}. Zaključajte reviziju, izradite izvještaj i pozovite pregledavatelja na zaslonu „Postavke“."
+        }
+      },
+      "standard": {
+        "title": "Izvještaj prati važeći VSME (ili pojednostavljeni ESRS) i propise",
+        "hosmos": "Svaka primjenjiva osnovna podatkovna točka ima zabilježen odgovor ili odluku, uz dokaz gdje ga brojka zahtijeva.",
+        "evidence": "Matrica potpunosti i izvještaj",
+        "result": {
+          "met": "Spremnost {percent} %: nema otvorenih podatkovnih točaka.",
+          "attention": "Spremnost {percent} %: otvorenih točaka: {open}, bez dokaza: {needsEvidence}. Obradite ih na zaslonu „Spremnost“."
+        }
+      },
+      "publication": {
+        "title": "Izvještaj je javno dostupan na AJPES-u prije zahtjeva za isplatu",
+        "hosmos": "Konačni PDF ili paket izvještaja sa zaslona „Izvještaji“; samo objavljivanje događa se na AJPES-u.",
+        "evidence": "Dokaz objave na AJPES-u",
+        "result": {
+          "pending": "Potvrdite kada je izvještaj objavljen na AJPES-u, s poveznicom ili datumom.",
+          "confirmed": "Potvrđeno."
+        },
+        "noteLabel": "AJPES poveznica ili datum objave"
+      },
+      "auditability": {
+        "title": "Svaka podatkovna točka sljediva je do izvora",
+        "hosmos": "Veze dokaza na zapisima; izvor, razdoblje, jedinica, metoda, oznaka procjene i odobrenja na svakom retku.",
+        "evidence": "Izvoz revizijskog traga",
+        "result": {
+          "met": "Veza dokaza: {links}; podatkovnih točaka bez dokaza: 0.",
+          "attention": "Veza dokaza: {links}; točaka kojima još treba dokaz: {needsEvidence}. Priložite dokumente na zaslonu „Dokazi“."
+        }
+      },
+      "versioning": {
+        "title": "Verzije standarda i metodologije su fiksirane",
+        "hosmos": "Skup faktora fiksiran za razdoblje i verzija formula posljednjeg izračuna.",
+        "evidence": "Dnevnik verzija",
+        "result": {
+          "met": "Skup faktora {factorSet}; verzija formula {formulaVersion}.",
+          "attention": "Skup faktora {factorSet}; verzija formula {formulaVersion}. Fiksirajte skup faktora za razdoblje i pokrenite izračun."
+        }
+      },
+      "data_quality": {
+        "title": "Jedinice, pretvorbe i izračuni su ponovljivi",
+        "hosmos": "Dovršen izračun koji nije zastario: svaki redak nosi izvornu jedinicu, pretvorbu i faktor.",
+        "evidence": "Dnevnik izračuna",
+        "result": {
+          "met": "Posljednji je izračun potpun i aktualan.",
+          "attention": "{calculated, select, 1 {Izračun je zastario — ulazi su se promijenili nakon što je izvršen.} other {Izračun još nije pokrenut.}} Pokrenite ga na zaslonu „Pregled“."
+        }
+      },
+      "social": {
+        "title": "Osnovne podatkovne točke o zaposlenicima, zaštiti na radu i plaćama su dostupne",
+        "hosmos": "Spremnost B8, B9 i B10.",
+        "evidence": "Kadrovski i ZNR dokazi",
+        "result": {
+          "met": "B8 {b8} %, B9 {b9} %, B10 {b10} %.",
+          "attention": "B8 {b8} %, B9 {b9} %, B10 {b10} %. Dopunite ih na zaslonu „Objave“."
+        }
+      },
+      "general_info": {
+        "title": "B1 i B2 u potpunosti se izvoze u izvještaj",
+        "hosmos": "Spremnost B1 (osnova za pripremu) i B2 (prakse, politike, inicijative).",
+        "evidence": "Izvoz izvještaja",
+        "result": {
+          "met": "B1 {b1} %, B2 {b2} %.",
+          "attention": "B1 {b1} %, B2 {b2} %. B1 dolazi sa zaslona „Organizacija“, B2 iz „Objava“."
+        }
+      },
+      "environmental": {
+        "title": "Osnovni podaci B3, B6 i B7 s njihovim uvjetima",
+        "hosmos": "Spremnost B3 (energija i GHG), B6 (voda) i B7 (korištenje resursa i otpad).",
+        "evidence": "Okolišni dokazi",
+        "result": {
+          "met": "B3 {b3} %, B6 {b6} %, B7 {b7} %.",
+          "attention": "B3 {b3} %, B6 {b6} %, B7 {b7} %. B3 dolazi iz inventara i izračuna; B6 i B7 iz „Objava“."
+        }
+      },
+      "comprehensive": {
+        "title": "C1–C9 mogu se uključiti kao drugi modul",
+        "hosmos": "Uključuje li plan Sveobuhvatni modul.",
+        "evidence": "Izvoz Sveobuhvatnog modula",
+        "result": {
+          "info": "{available, select, 1 {Sveobuhvatni modul uključen je u plan.} other {Sveobuhvatni modul nije u planu; za vaučer je neobvezan.}}"
+        }
+      },
+      "micro_logic": {
+        "title": "Za do 10 zaposlenih dobrovoljne se podatkovne točke primjenjuju ispravno",
+        "hosmos": "Broj zaposlenih u odnosu na prag mikropoduzeća i broj dobrovoljnih podatkovnih točaka u katalogu.",
+        "evidence": "Dnevnik pravila o veličini",
+        "result": {
+          "info": "Zaposlenih: {employees} — {micro, select, 1 {mikropoduzeće: {voluntary} dobrovoljnih podatkovnih točaka može se izostaviti} other {nije mikropoduzeće; {voluntary} dobrovoljnih podatkovnih točaka neobvezno je kao za svako poduzeće}}."
+        }
+      },
+      "submission": {
+        "title": "Prijava putem SPS ePortala",
+        "hosmos": "Ništa — korak projekta izvan platforme. Poziv je otvoren do {closes} ili do iscrpljenja sredstava.",
+        "evidence": "Paket prijave",
+        "result": {
+          "pending": "Potvrdite kada je prijava podnesena; poziv se zatvara {closes}.",
+          "confirmed": "Potvrđeno."
+        },
+        "noteLabel": "Referenca prijave"
+      }
+    }
+  },
+  "cookies": {
+    "title": "Kolačići na ovoj stranici",
+    "text": "Nužni kolačići održavaju prijavu i pamte vaš jezik; uvijek su uključeni. Analitički kolačići koriste se samo uz vašu suglasnost, a stranica bez njih radi potpuno isto.",
+    "necessary": "Samo nužni",
+    "all": "Prihvati sve",
+    "policy": "Politika kolačića",
+    "settings": "Postavke kolačića"
+  },
+  "errorBoundary": {
+    "title": "Ovaj je zaslon prestao raditi",
+    "body": "Tijekom osvježavanja stranice nešto je zakazalo. Spremljeni podaci su netaknuti; ono što ste unijeli i niste spremili je izgubljeno.",
+    "translated": "Stranicu prevodi preglednik. Automatsko prevođenje mijenja stranicu ispod aplikacije i kvari je čim počnete tipkati. Isključite prevođenje za ovo web-mjesto, a jezik odaberite prekidačem gore desno — aplikacija govori engleski, slovenski, ruski, njemački, talijanski, srpski i hrvatski.",
+    "retry": "Pokušaj ponovno",
+    "reload": "Osvježi stranicu",
+    "digest": "Kod pogreške: {digest}"
+  }
+}

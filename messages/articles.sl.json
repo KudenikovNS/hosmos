@@ -1,0 +1,354 @@
+{
+  "articles": {
+    "meta": {
+      "title": "Članki o trajnostnem poročanju | Hosmos",
+      "description": "Kaj je VSME, kateri podatki so potrebni za obseg 1 in 2 in kako pripraviti prvo poročilo — brez obljub, ki jih standard ne daje."
+    },
+    "listTitle": "Članki o poročanju",
+    "listLead": "Šest tekstov za podjetje, ki poroča prvič: kaj standard sploh je, katere podatke je treba zbrati, kaj vas bodo vprašali in kako izgleda pot do prvega poročila.",
+    "backToList": "Vsi članki",
+    "readingTime": "{minutes} min branja",
+    "updated": "Posodobljeno {date}",
+    "ctaTitle": "Poročilo pripravite v Hosmosu",
+    "ctaBody": "Meje, podatki, izračun obsega 1 in 2 ter izvoz v PDF in Excel — na enem mestu, v slovenščini.",
+    "ctaAction": "Poglejte pakete",
+    "items": {
+      "kaj-je-vsme": {
+        "title": "Kaj je VSME in kdo ga potrebuje",
+        "teaser": "Prostovoljni standard za mala in srednja podjetja: kaj vsebuje, zakaj ga zahtevajo banke in veliki kupci ter kaj pomeni »osnovni modul«.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "VSME je **prostovoljni standard trajnostnega poročanja za nekotirajoča mala in srednje velika podjetja**. Evropska komisija ga je priporočila z Priporočilom (EU) 2025/1710. Ni zakon in ne velja za vas po sili predpisa: uporabite ga, kadar nekdo od vas trajnostne podatke zahteva, in kadar jih želite dati v obliki, ki jo prejemnik razume."
+          },
+          {
+            "type": "h3",
+            "text": "Zakaj ga sploh kdo zahteva"
+          },
+          {
+            "type": "p",
+            "text": "Mala podjetja redko poročajo zase. Vprašanja pridejo od zunaj: banka pri kreditu, velik kupec pri razpisu, zavarovalnica, včasih javni razpis. Vsak od njih ima svoj obrazec, in prav to je bil problem, ki ga VSME rešuje — en nabor podatkovnih točk, ki ga lahko pošljete vsem namesto petih različnih vprašalnikov."
+          },
+          {
+            "type": "h3",
+            "text": "Iz česa je sestavljen"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Osnovni modul (B1–B11)** — podlaga za pripravo, energija in emisije toplogrednih plinov, onesnaževanje, biotska raznovrstnost, voda, krožno gospodarstvo, zaposleni, zdravje in varnost, plačila, poslovno ravnanje. To je jedro in za večino podjetij zadostuje.",
+              "**Celoviti modul (C1–C9)** — dodatna razkritja za tiste, ki jih prejemnik posebej zahteva: strategija, tveganja, cilji, podnebni prehod, delavci v vrednostni verigi."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Podjetje na začetku izbere, ali poroča po možnosti A (samo osnovni modul) ali po možnosti B (osnovni in celoviti). Izbira velja za celotno poročevalsko obdobje in se zapiše v samo poročilo."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj ni res"
+          },
+          {
+            "type": "p",
+            "text": "VSME ne naredi podjetja »skladnega s CSRD« in ni revizija. Poročilo po VSME je vaša izjava o vaših podatkih. Če jih pozneje kdo preverja, bo gledal vire: račune, števce, servisna poročila. Zato se izplača od prvega dne hraniti dokazila ob podatkih, ne v ločeni mapi."
+          },
+          {
+            "type": "h3",
+            "text": "Kdaj začeti"
+          },
+          {
+            "type": "p",
+            "text": "Najbolj neugoden trenutek za prvo poročilo je teden, ko ga nekdo zahteva. Podatki za preteklo leto so takrat raztreseni po računih, e-pošti in glavi enega sodelavca. Prvo poročilo je zato vredno pripraviti mirno, za zaključeno leto, in ga pozneje samo dopolnjevati."
+          }
+        ]
+      },
+      "podatki-za-obseg-1-in-2": {
+        "title": "Kateri podatki so potrebni za obseg 1 in 2",
+        "teaser": "Računi za gorivo in elektriko, servisna poročila za hladiva, števci. Kaj natanko zbrati, v kakšnih enotah in kje se najpogosteje zalomi.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Emisije se v poročilu delijo na obsege. **Obseg 1** je tisto, kar zgori ali izpuhti pri vas: gorivo v kotlih in pečeh, gorivo v vaših vozilih, hladivo, ki uide iz hladilnih sistemov. **Obseg 2** je energija, ki jo kupite: elektrika, daljinska toplota, para, hlad."
+          },
+          {
+            "type": "h3",
+            "text": "Obseg 1 — kaj poiskati"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Zemeljski plin ali kurilno olje**: letna poraba z računov dobavitelja, v kWh, m³ ali litrih. Vzemite obračunsko in ne ocenjeno količino, če je na računu oboje.",
+              "**Gorivo za vozila in stroje**: litri z računov kartic za gorivo ali iz evidence črpalke. Če vozila vozijo na službene kartice, je to najhitrejši vir.",
+              "**Hladiva**: kilogrami dolitega hladiva iz servisnih poročil in vrsta hladiva (na primer R404A). Če servisa ni bilo, dolivanja ni bilo in je vrednost nič — to je odgovor, ne vrzel."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Obseg 2 — kaj poiskati"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Elektrika**: kWh z računov, po odjemnih mestih. Ločite lokacije, če imate več kot eno; poročilo jih prikaže posebej.",
+              "**Daljinska toplota, para, hlad**: enako, z računov distributerja.",
+              "**Potrdila o izvoru ali zelena tarifa**: če jih imate, jih priložite. Brez njih se tržna metoda računa po preostali sestavi, kar je običajno slabši rezultat."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Kje se najpogosteje zalomi"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Enote.** kWh in m³ nista isto; pri plinu je razlika odvisna od kurilnosti. Vpišite enoto z računa in pustite pretvorbo izračunu.",
+              "**Manjkajoči meseci.** Enajst računov namesto dvanajstih je pogosta napaka. Prazen mesec ni nič — je manjkajoč podatek, in v poročilu se vidi.",
+              "**Ocena namesto podatka.** Oceniti se sme, prikriti ne. Označite oceno kot oceno in napišite, kako ste do nje prišli.",
+              "**Lastna proizvodnja elektrike.** Sončna elektrarna na strehi ni obseg 2; poroča se posebej in ne zmanjšuje kupljene energije na papirju."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Koliko časa to vzame"
+          },
+          {
+            "type": "p",
+            "text": "Za podjetje z eno lokacijo in nekaj vozili je zbiranje običajno nekaj ur, razpršenih čez nekaj dni, ker je treba počakati na račune ali servisno poročilo. Drugo leto je bistveno hitreje: viri so znani in vpisani."
+          }
+        ]
+      },
+      "prvo-porocilo-korak-za-korakom": {
+        "title": "Prvo poročilo korak za korakom",
+        "teaser": "Meje, obdobje, podatki, dokazila, pregled in izdaja. Realen vrstni red in kje vas bo ustavilo, če kakšen korak preskočite.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Prvo poročilo je projekt s šestimi koraki. Vrstni red ni okrasen: vsak korak je pogoj za naslednjega, in če enega preskočite, vas ustavi šele na koncu, ko je popravek dražji."
+          },
+          {
+            "type": "h3",
+            "text": "1. Določite meje"
+          },
+          {
+            "type": "p",
+            "text": "Katere pravne osebe in katere lokacije so v poročilu. Podjetje z eno družbo ima to opravljeno v petih minutah; skupina mora odločiti, ali poroča posamično ali konsolidirano, in po kateri metodi."
+          },
+          {
+            "type": "h3",
+            "text": "2. Odprite obdobje"
+          },
+          {
+            "type": "p",
+            "text": "Poročevalsko leto, začetni in končni datum ter izhodiščno leto, glede na katero boste pozneje merili zmanjšanja. Obdobje določi tudi nabor emisijskih faktorjev, s katerim se bo računalo."
+          },
+          {
+            "type": "h3",
+            "text": "3. Zberite podatke"
+          },
+          {
+            "type": "p",
+            "text": "Računi, števci, servisna poročila — po eni vrstici na vir in mesec. Kar je ocena, označite kot oceno takoj; pozneje tega nihče ne zna rekonstruirati."
+          },
+          {
+            "type": "h3",
+            "text": "4. Priložite dokazila"
+          },
+          {
+            "type": "p",
+            "text": "Vsaka vrstica potrebuje vir: račun, odčitek, poročilo. Dokazilo ni birokracija — je edino, kar ločuje poročilo od seznama želja, ko banka vpraša, od kod številka."
+          },
+          {
+            "type": "h3",
+            "text": "5. Pregled in odobritev"
+          },
+          {
+            "type": "p",
+            "text": "Nekdo pregleda vrstice in jih odobri, nato se zažene izračun. Odobrena vrstica se ne prepiše: popravek je nova različica z razlogom, stara pa ostane v zgodovini."
+          },
+          {
+            "type": "h3",
+            "text": "6. Izdaja poročila"
+          },
+          {
+            "type": "p",
+            "text": "Revizija se zaklene in poročilo se izdela v PDF in Excel. Zaklenjena revizija se ne spreminja; če se podatek pozneje popravi, se odpre nova revizija in prejšnje poročilo ostane takšno, kot je bilo poslano."
+          },
+          {
+            "type": "h3",
+            "text": "Koliko časa je realno"
+          },
+          {
+            "type": "p",
+            "text": "Za prvo poročilo majhnega podjetja računajte nekaj dni dela, razpršenih čez dva do tri tedne — večina tega je čakanje na račune in odgovore sodelavcev, ne delo v programu. Kdor obljublja poročilo v pol ure, računa čas klikanja, ne čas zbiranja podatkov."
+          }
+        ]
+      },
+      "kaj-vas-bo-vprasala-banka": {
+        "title": "Kaj vas bo vprašala banka ali veliki kupec",
+        "teaser": "Vprašalniki prihajajo v različnih oblikah, vprašanja pa se ponavljajo. Kaj sprašujejo, zakaj in kaj imeti pripravljeno, preden vprašajo.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Mala podjetja skoraj nikoli ne začnejo poročati sama od sebe. Povod je e-pošta: banka pred podaljšanjem kredita, veliki kupec pred razpisom, zavarovalnica, včasih javni razpis. Priloga je preglednica z nekaj deset vprašanji in rokom, ki je vedno prekratek."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj sprašujejo"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Osnovni podatki o podjetju**: matična številka, dejavnost, število zaposlenih, prihodki, lokacije. To je razdelek B1 standarda VSME in je pri vseh vprašalnikih enak.",
+              "**Poraba energije in emisije**: koliko elektrike, plina in goriva ste porabili in koliko emisij to pomeni. Tu se večina ustavi, ker podatek obstaja na računih, ne pa v enem seznamu.",
+              "**Zaposleni in varnost**: število zaposlenih po pogodbah, nezgode pri delu, usposabljanja.",
+              "**Ravnanje**: politike, ki jih imate zapisane, in kako ravnate s tveganji v dobavni verigi."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Zakaj sprašujejo"
+          },
+          {
+            "type": "p",
+            "text": "Ne zato, ker bi želeli vašo oceno trajnostnosti. Banka in veliki kupec sama poročata po svojih pravilih in potrebujeta številke od dobaviteljev, da svoje poročilo sploh lahko sestavita. Zato so vprašanja o podatkih, ne o namerah, in zato je odgovor »delamo na tem« neuporaben."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj pripraviti vnaprej"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Eno mesto za podatke.** Računi za energijo, gorivo in servise, zbrani po obdobjih, ne po mapah v e-pošti.",
+              "**Izračunane emisije obsega 1 in 2** za zadnje zaključeno leto, z navedbo uporabljenih faktorjev.",
+              "**Dokazila ob številkah.** Vsaka številka mora imeti vir, ki ga lahko pokažete, ne da bi iskali pol dneva.",
+              "**Osnovni podatki o podjetju**, ki jih ni treba vsakič znova prepisovati iz registra."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Kako odgovoriti hitreje"
+          },
+          {
+            "type": "p",
+            "text": "Poročilo po VSME ni odgovor na vprašalnik dobesedno, je pa vir, iz katerega odgovore prepišete brez ugibanja. Ko podatki obstajajo v eni obliki, je razlika med »dva tedna panike« in »eno popoldne« ravno v tem, ali jih je treba zbirati ali samo prenesti."
+          },
+          {
+            "type": "p",
+            "text": "In še ena praktična stvar: prosite za rok in vprašajte, katera različica vprašalnika je zadnja. Podjetja pogosto izpolnijo obrazec, ki ga je pošiljatelj medtem zamenjal."
+          }
+        ]
+      },
+      "dokazila-in-kakovost-podatkov": {
+        "title": "Dokazila in kakovost podatkov",
+        "teaser": "Zakaj je račun ob številki pomembnejši od same številke, kaj pomeni »ocena« in kako se to pozneje pozna pri vprašanjih.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Poročilo brez dokazil je seznam trditev. Dokler ga nihče ne preverja, je razlika nevidna; ko banka ali kupec vpraša, od kod številka, pa se pokaže v eni minuti."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj je dokazilo"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Račun dobavitelja** za elektriko, plin, toploto ali gorivo — najbolj običajen in najmočnejši vir.",
+              "**Odčitek števca** s fotografijo ali izpisom, kadar računa za obdobje še ni.",
+              "**Servisno poročilo** za hladilne sisteme: koliko hladiva je bilo dolitega in katero.",
+              "**Interna evidenca** — na primer preglednica prevoženih kilometrov — kadar drugega ni. Je dokazilo, a šibkejše, in to je treba povedati."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Izmerjeno, izračunano, ocenjeno"
+          },
+          {
+            "type": "p",
+            "text": "Vsak podatek je eno od treh. **Izmerjeno** pride s števca ali računa. **Izračunano** nastane iz izmerjenega po znanem pravilu: litri iz kilometrov in povprečne porabe. **Ocenjeno** je vse drugo. Ocena ni prepovedana in je pogosto edina možnost v prvem letu; prepovedano je videti kot izmerjeno."
+          },
+          {
+            "type": "h3",
+            "text": "Kako to zapisati"
+          },
+          {
+            "type": "p",
+            "text": "Ob vsaki vrstici zapišite, od kod je: številka računa, obdobje odčitka, datum servisa. Če je ocena, napišite, kako ste do nje prišli — »povprečje treh mesecev, pomnoženo z dvanajst« je dovolj. Čez leto dni tega nihče ne rekonstruira iz spomina, tudi vi ne."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj pridobite"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Odgovor v eni minuti**, ko kdo vpraša za vir.",
+              "**Primerljivost med leti.** Če je bila lani ocena, letos pa je račun, je razlika v številki lahko posledica metode, ne porabe — in to je treba znati pokazati.",
+              "**Manj dela drugo leto.** Viri so zapisani, zato se drugo leto ne iščejo znova."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Koliko hraniti"
+          },
+          {
+            "type": "p",
+            "text": "Račune in evidence, iz katerih je narejeno poročilo, hranite vsaj toliko, kolikor velja poročilo samo, praviloma pa skupaj z računovodsko dokumentacijo. Poročilo, ki se sklicuje na dokazilo, ki ga ni več, je slabše od poročila, ki dokazila nikoli ni obljubilo."
+          }
+        ]
+      },
+      "obseg-3-po-porabi-sredstev": {
+        "title": "Obseg 3 po porabi sredstev: kaj pove in česa ne",
+        "teaser": "Ocena emisij iz nabave je lahko koristna in zavajajoča hkrati. Kdaj jo uporabiti, kako jo brati in zakaj ni del seštevka obsegov 1 in 2.",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Obseg 3 so emisije, ki nastanejo drugje: pri dobaviteljih, v prevozu, pri uporabi izdelkov. Za malo podjetje je natančen izračun pogosto nemogoč — podatkov od dobaviteljev ni. Zato obstaja ocena po porabi sredstev: koliko ste porabili denarja v posamezni kategoriji nabave, pomnoženo s povprečnim emisijskim faktorjem te kategorije."
+          },
+          {
+            "type": "h3",
+            "text": "Kaj taka ocena pove"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Red velikosti.** Ali je nabava desetkrat večja od lastnih emisij ali primerljiva z njimi.",
+              "**Kje pogledati najprej.** Kategorija z največjim zneskom je običajno tudi največji vir, in to je odgovor na vprašanje, s čim se sploh ukvarjati.",
+              "**Izhodišče za pogovor z dobavitelji.** Vprašati enega velikega je smiselno; vprašati vse je zapravljen mesec."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Česa ne pove"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "**Ničesar o vašem konkretnem dobavitelju.** Faktor je povprečje panoge; dobavitelj, ki dela na zeleni elektriki, in tisti, ki dela na premogu, dobita isto številko.",
+              "**Ničesar o izboljšavi.** Če prihodnje leto kupite isto blago ceneje, se ocena zmanjša, emisije pa ne. Zato ocena po porabi ni primerna za merjenje napredka.",
+              "**Nič o natančnosti.** Odstopanja so lahko velika v obe smeri, in to je lastnost metode, ne napaka vnosa."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "Zakaj je ločena od obsegov 1 in 2"
+          },
+          {
+            "type": "p",
+            "text": "Ker je druge vrste podatek. Obsega 1 in 2 sta izračunana iz porabe, ki jo lahko pokažete na računu; obseg 3 po porabi sredstev je ocena iz povprečij. Seštevanje obojega bi dalo eno samo številko, ki ni ne izmerjena ne ocenjena, in nobena od obeh ne bi bila več razvidna. V poročilu zato stojita ločeno, ocena pa je označena kot ocena."
+          },
+          {
+            "type": "h3",
+            "text": "Kdaj jo vseeno narediti"
+          },
+          {
+            "type": "p",
+            "text": "Kadar vas nekdo vpraša po obsegu 3 in nimate ničesar. Ocena z jasno metodo je boljši odgovor kot prazno polje — pod pogojem, da je označena kot ocena in da je ob njej napisano, iz česa je narejena."
+          }
+        ]
+      }
+    },
+    "footerNote": "© 2026 HelpH d.o.o. · Hosmos ne opravlja revizijskih storitev in ne odloča o dodelitvi subvencije."
+  }
+}
